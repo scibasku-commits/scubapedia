@@ -1,0 +1,62 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = 'Scuba-pedia', description = 'La enciclopedia de destinos de buceo del mundo, curada por Viajes Scibasku.' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} — Scuba-pedia by Scibasku</title>
+  <meta name="description" content={description} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header style="background: #0d1b2a; border-bottom: 3px solid #0891b2;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0.75rem 1.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+      <a href="/destinos" style="text-decoration: none;">
+        <span style="font-size: 1.5rem; font-weight: 700; color: white; letter-spacing: -0.02em;">
+          🤿 Scuba-pedia
+        </span>
+        <span style="font-size: 0.8rem; color: #7dd3fc; margin-left: 0.75rem;">La enciclopedia del buceo</span>
+      </a>
+      <nav style="display: flex; gap: 1.5rem; align-items: center;">
+        <a href="/destinos" style="color: #7dd3fc; text-decoration: none; font-size: 0.875rem; font-weight: 500;">Destinos</a>
+        <a href="https://crucerobuceo.com" target="_blank" rel="noopener"
+           style="background: #0891b2; color: white; padding: 0.35rem 0.9rem; border-radius: 4px; text-decoration: none; font-size: 0.8rem; font-weight: 600;">
+          Reservar liveaboard →
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main>
+    <slot />
+  </main>
+
+  <!-- Footer -->
+  <footer style="background: #0d1b2a; color: #94a3b8; padding: 2rem 1.5rem; margin-top: 3rem; font-size: 0.8rem; text-align: center; border-top: 1px solid #1e3a5f;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <p style="margin-bottom: 0.5rem;">
+        © Viajes Scibasku · CICMA 2283 ·
+        <a href="https://crucerobuceo.com" style="color: #7dd3fc;">crucerobuceo.com</a> ·
+        <a href="https://viajesscibasku.com" style="color: #7dd3fc;">viajesscibasku.com</a>
+      </p>
+      <p style="color: #64748b;">
+        Todas las fichas están en estado borrador — contenido en construcción y revisión.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

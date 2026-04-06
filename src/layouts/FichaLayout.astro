@@ -1,0 +1,174 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import type { CollectionEntry } from 'astro:content';
+// Note: In Astro v6 glob loader, use entry.id (not entry.slug)
+
+interface Props {
+  entry: CollectionEntry<'buceo'>;
+}
+
+const { entry } = Astro.props;
+const fm = entry.data;
+
+// Cert badge class
+function certClass(cert: string): string {
+  const c = cert.toLowerCase();
+  if (c.includes('técnico') || c.includes('tecnico') || c.includes('tec ')) return 'cert-tech';
+  if (c.includes('aowd') || c.includes('advanced open')) return 'cert-aowd';
+  if (c.includes('advanced') || c.includes('avanzado')) return 'cert-advanced';
+  if (c.includes('ow') || c.includes('open water')) return 'cert-ow';
+  if (c.includes('no requerida') || c.includes('sin cert')) return 'cert-none';
+  return 'cert-ow';
+}
+
+// Breadcrumb
+const regionLabel = fm.region || 'Destinos';
+const paisLabel = fm.pais || '';
+---
+
+<BaseLayout title={fm.title} description={`Guía de buceo en ${fm.pais}: ${fm.visibilidad_media} visibilidad, ${fm.temperatura_agua_min}–${fm.temperatura_agua_max}°C. Cert. mínima: ${fm.certificacion_minima}.`}>
+
+  <div style="max-width: 1200px; margin: 0 auto; padding: 1.5rem;">
+
+    <!-- Breadcrumb -->
+    <nav style="font-size: 0.8rem; color: #64748b; margin-bottom: 1rem;">
+      <a href="/destinos" style="color: #0891b2; text-decoration: none;">Inicio</a>
+      <span style="margin: 0 0.4rem;">›</span>
+      <a href={`/destinos?region=${encodeURIComponent(regionLabel)}`} style="color: #0891b2; text-decoration: none;">{regionLabel}</a>
+      {paisLabel && <>
+        <span style="margin: 0 0.4rem;">›</span>
+        <span>{paisLabel}</span>
+      </>}
+    </nav>
+
+    <!-- Draft banner -->
+    {fm.status === 'draft' && (
+      <div class="draft-banner">
+        ⚠️ <strong>Borrador</strong> — Esta ficha está en construcción. Los datos son orientativos y están pendientes de verificación final.
+      </div>
+    )}
+
+    <!-- Title -->
+    <h1 style="font-size: 1.75rem; font-weight: 700; color: #0d1b2a; margin-bottom: 0.25rem; line-height: 1.3;">
+      {fm.title}
+    </h1>
+    <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 1.5rem;">
+      {fm.region} · {fm.pais} ·
+      <span class={`cert-badge ${certClass(fm.certificacion_minima)}`}>{fm.certificacion_minima}</span>
+      {fm.giora_estuvo && <span class="giora-badge" style="margin-left: 0.5rem;">✓ Giora estuvo aquí</span>}
+    </p>
+
+    <!-- Two-column layout: TOC left + content right -->
+    <div style="display: grid; grid-template-columns: 200px 1fr; gap: 2rem; align-items: start;">
+
+      <!-- Left: TOC (desktop only) -->
+      <aside style="display: none;" class="toc-sidebar">
+        <div class="toc">
+          <div class="toc-title">Contenido</div>
+          <a href="#resumen">Resumen</a>
+          <a href="#datos-técnicos">Datos técnicos</a>
+          <a href="#puntos-de-inmersión-destacados">Puntos de inmersión</a>
+          <a href="#vida-marina">Vida marina</a>
+          <a href="#liveaboards">Liveaboards</a>
+          <a href="#mejor-época-para-ir">Mejor época</a>
+          <a href="#cómo-llegar">Cómo llegar</a>
+          <a href="#nivel-requerido">Nivel requerido</a>
+          <div class="toc-title" style="margin-top: 1rem;">Reservar</div>
+          <a href="https://crucerobuceo.com" target="_blank" style="color: #059669; font-weight: 600;">Ver liveaboards →</a>
+        </div>
+      </aside>
+
+      <!-- Right: Infobox + Content -->
+      <div>
+
+        <!-- Infobox (floated right inside content) -->
+        <div class="infobox">
+          <div class="infobox-title">Datos técnicos</div>
+          <div class="infobox-row">
+            <span class="infobox-label">Profundidad</span>
+            <span class="infobox-value">{fm.profundidad_min}m – {fm.profundidad_max}m</span>
+          </div>
+          <div class="infobox-row">
+            <span class="infobox-label">Visibilidad</span>
+            <span class="infobox-value">{fm.visibilidad_media}</span>
+          </div>
+          <div class="infobox-row">
+            <span class="infobox-label">Temperatura</span>
+            <span class="infobox-value">{fm.temperatura_agua_min}°C – {fm.temperatura_agua_max}°C</span>
+          </div>
+          <div class="infobox-row">
+            <span class="infobox-label">Corrientes</span>
+            <span class="infobox-value">{fm.corrientes}</span>
+          </div>
+          <div class="infobox-row">
+            <span class="infobox-label">Cert. mínima</span>
+            <span class="infobox-value">
+              <span class={`cert-badge ${certClass(fm.certificacion_minima)}`}>{fm.certificacion_minima}</span>
+            </span>
+          </div>
+          <div class="infobox-row">
+            <span class="infobox-label">Temporada</span>
+            <span class="infobox-value">{fm.temporada_alta}</span>
+          </div>
+          {fm.precio_semana_aprox && (
+            <div class="infobox-row">
+              <span class="infobox-label">Precio aprox.</span>
+              <span class="infobox-value">{fm.precio_semana_aprox}</span>
+            </div>
+          )}
+          {fm.giora_estuvo && (
+            <div class="infobox-row" style="background: #ecfdf5;">
+              <span class="infobox-value" style="color: #065f46; font-weight: 600;">✓ Giora estuvo aquí</span>
+            </div>
+          )}
+          <!-- CTA dentro de infobox -->
+          <div style="padding: 0.75rem; border-top: 1px solid #e0f2fe; background: white;">
+            <p style="font-size: 0.75rem; color: #374151; margin-bottom: 0.5rem; font-weight: 500;">¿Quieres bucear en {fm.pais}?</p>
+            <a href="https://crucerobuceo.com" target="_blank" rel="noopener"
+               style="display: block; background: #0891b2; color: white; text-align: center; padding: 0.4rem 0.5rem; border-radius: 3px; font-size: 0.75rem; font-weight: 600; text-decoration: none; margin-bottom: 0.4rem;">
+              Ver liveaboards →
+            </a>
+            <a href="https://wa.me/34619401041" target="_blank" rel="noopener"
+               style="display: block; background: #25d366; color: white; text-align: center; padding: 0.4rem 0.5rem; border-radius: 3px; font-size: 0.75rem; font-weight: 600; text-decoration: none;">
+              WhatsApp Giora
+            </a>
+          </div>
+        </div>
+
+        <!-- Markdown content -->
+        <div class="ficha-content">
+          <slot />
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom CTA -->
+    <div style="margin-top: 3rem; padding: 1.5rem; background: #0d1b2a; color: white; border-top: 3px solid #0891b2;">
+      <div style="max-width: 600px;">
+        <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem;">¿Listo para bucear en {fm.pais}?</h3>
+        <p style="font-size: 0.875rem; color: #94a3b8; margin-bottom: 1rem;">
+          Llevo 20 años organizando liveaboards. Te armo la ruta, el barco y la logística completa.
+        </p>
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <a href="https://crucerobuceo.com" target="_blank" rel="noopener"
+             style="background: #0891b2; color: white; padding: 0.5rem 1.25rem; border-radius: 4px; text-decoration: none; font-size: 0.875rem; font-weight: 600;">
+            Ver liveaboards disponibles →
+          </a>
+          <a href="https://wa.me/34619401041" target="_blank" rel="noopener"
+             style="background: #25d366; color: white; padding: 0.5rem 1.25rem; border-radius: 4px; text-decoration: none; font-size: 0.875rem; font-weight: 600;">
+            WhatsApp: +34 619 401 041
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <style>
+    @media (min-width: 900px) {
+      .toc-sidebar { display: block !important; }
+    }
+  </style>
+
+</BaseLayout>

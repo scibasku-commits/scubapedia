@@ -1,0 +1,224 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const allEntries = await getCollection('buceo');
+
+// Normalize sub-regions to canonical region names
+function normalizeRegion(r: string): string {
+  if (!r) return 'Otros';
+  if (r.includes('Mar Rojo') || r.includes('Sinaí')) return 'Mar Rojo';
+  if (r.startsWith('Maldivas')) return 'Maldivas';
+  if (r.includes('Pacífico Sur') || r.includes('Patagonia')) return 'Pacífico Sur';
+  if (r.includes('Pacífico Central')) return 'Pacífico Central';
+  if (r.includes('Pacífico Este')) return 'Pacífico Este';
+  if (r.includes('Pacífico Occidental')) return 'Sudeste Asiático';
+  if (r.includes('Sudeste Asiático') || r === 'Filipinas' || r === 'Indonesia') return 'Sudeste Asiático';
+  if (r.includes('Atlántico')) return 'Atlántico';
+  if (r.includes('Mediterráneo')) return 'Mediterráneo';
+  if (r.includes('Índico')) return 'Océano Índico';
+  if (r.includes('Antártico') || r.includes('Antártida')) return 'Antártida';
+  if (r.includes('Sudáfrica') || r.includes('Índico Sur')) return 'Sudáfrica';
+  if (r.includes('Australia') || r.includes('Queensland')) return 'Australia';
+  return r;
+}
+
+// Group by normalized region
+const regionMap: Record<string, typeof allEntries> = {};
+for (const entry of allEntries) {
+  const r = normalizeRegion(entry.data.region || '');
+  if (!regionMap[r]) regionMap[r] = [];
+  regionMap[r].push(entry);
+}
+
+// Sort regions
+const regionOrder = [
+  'Mar Rojo', 'Maldivas', 'Sudeste Asiático', 'Pacífico Central',
+  'Pacífico Este', 'Pacífico Sur', 'Caribe', 'Atlántico', 'Mediterráneo',
+  'Océano Índico', 'Antártida', 'Sudáfrica', 'Australia', 'Otros'
+];
+const regions = Object.keys(regionMap).sort((a, b) => {
+  const ia = regionOrder.findIndex(r => a.includes(r.split(' ')[0]));
+  const ib = regionOrder.findIndex(r => b.includes(r.split(' ')[0]));
+  if (ia === -1 && ib === -1) return a.localeCompare(b);
+  if (ia === -1) return 1;
+  if (ib === -1) return -1;
+  return ia - ib;
+});
+
+const regionEmojis: Record<string, string> = {
+  'Mar Rojo': '🐠',
+  'Maldivas': '🌊',
+  'Sudeste Asiático': '🐠',
+  'Pacífico Central': '🐡',
+  'Pacífico Este': '🦈',
+  'Pacífico Sur': '🐧',
+  'Caribe': '🌴',
+  'Atlántico': '🐬',
+  'Mediterráneo': '⚓',
+  'Océano Índico': '🐠',
+  'Antártida': '🧊',
+  'Sudáfrica': '🦈',
+  'Australia': '🦅',
+};
+
+function getEmoji(region: string): string {
+  for (const [key, emoji] of Object.entries(regionEmojis)) {
+    if (region.includes(key.split(' ')[0])) return emoji;
+  }
+  return '🌍';
+}
+
+const totalFichas = allEntries.length;
+const totalRegiones = Object.keys(regionMap).length;
+const published = allEntries.filter(e => e.data.status === 'published').length;
+const gioraEstuvo = allEntries.filter(e => e.data.giora_estuvo).length;
+---
+
+<BaseLayout title="Inicio" description="La enciclopedia de destinos de buceo del mundo. 100+ destinos curados por Viajes Scibasku.">
+
+  <!-- Hero -->
+  <div style="background: linear-gradient(135deg, #0d1b2a 0%, #0c3547 100%); padding: 3rem 1.5rem; text-align: center; border-bottom: 3px solid #0891b2;">
+    <h1 style="font-size: 2.5rem; font-weight: 800; color: white; margin-bottom: 0.5rem; letter-spacing: -0.03em;">
+      🤿 Scuba-pedia
+    </h1>
+    <p style="font-size: 1.1rem; color: #7dd3fc; margin-bottom: 1.5rem;">
+      La enciclopedia de destinos de buceo del mundo
+    </p>
+    <!-- Stats bar -->
+    <div style="display: inline-flex; gap: 2rem; background: rgba(255,255,255,0.08); padding: 0.75rem 2rem; border-radius: 6px; flex-wrap: wrap; justify-content: center;">
+      <div style="text-align: center;">
+        <div style="font-size: 1.75rem; font-weight: 800; color: #38bdf8;">{totalFichas}</div>
+        <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">Destinos</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-size: 1.75rem; font-weight: 800; color: #38bdf8;">{totalRegiones}</div>
+        <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">Regiones</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-size: 1.75rem; font-weight: 800; color: #34d399;">{gioraEstuvo}</div>
+        <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">Con experiencia propia</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-size: 1.75rem; font-weight: 800; color: #fbbf24;">{totalFichas - published}</div>
+        <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">En revisión</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search -->
+  <div style="background: #e0f2fe; padding: 1rem 1.5rem; border-bottom: 1px solid #bae6fd;">
+    <div style="max-width: 600px; margin: 0 auto;">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Buscar destino (ej: Maldivas, tiburones, mola mola...)"
+        style="width: 100%; padding: 0.6rem 1rem; border: 1px solid #0891b2; border-radius: 4px; font-size: 0.9rem; outline: none; background: white;"
+      />
+    </div>
+  </div>
+
+  <!-- Regions grid -->
+  <div style="max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem;">
+
+    <div id="region-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem;">
+
+      {regions.map(region => {
+        const entries = regionMap[region].sort((a, b) => a.data.title.localeCompare(b.data.title));
+        return (
+          <div class="region-card" style="border: 1px solid #e0f2fe; border-top: 3px solid #0891b2; background: white;">
+            <div style="background: #f0f9ff; padding: 0.75rem 1rem; border-bottom: 1px solid #e0f2fe; display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-weight: 700; color: #0e7490; font-size: 0.95rem;">
+                {getEmoji(region)} {region}
+              </span>
+              <span style="background: #0891b2; color: white; font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.5rem; border-radius: 10px;">
+                {entries.length}
+              </span>
+            </div>
+            <ul style="padding: 0.5rem 0; margin: 0; list-style: none;">
+              {entries.map(entry => (
+                <li class="destino-item" data-title={entry.data.title.toLowerCase()} data-region={region.toLowerCase()} data-tags={(entry.data.tags || []).join(' ')}
+                    style="border-bottom: 1px solid #f0f9ff;">
+                  <a href={`/destinos/${entry.id.replace(/\.md$/, '')}`}
+                     style="display: flex; align-items: center; justify-content: space-between; padding: 0.4rem 1rem; text-decoration: none; color: #0369a1; font-size: 0.875rem;">
+                    <span>{entry.data.title}</span>
+                    <span style="font-size: 0.7rem; color: #94a3b8; flex-shrink: 0; margin-left: 0.5rem;">
+                      {entry.data.certificacion_minima.split(' ')[0]}
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      })}
+
+    </div>
+
+    <!-- No results message -->
+    <div id="no-results" style="display: none; text-align: center; padding: 3rem; color: #64748b;">
+      <p style="font-size: 1.1rem;">No se encontraron destinos para "<span id="search-term"></span>"</p>
+    </div>
+
+    <!-- About box -->
+    <div style="margin-top: 3rem; background: #0d1b2a; color: white; padding: 1.5rem 2rem; border-top: 3px solid #0891b2;">
+      <div style="display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; flex-wrap: wrap;">
+        <div>
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem;">Curado por Viajes Scibasku</h3>
+          <p style="font-size: 0.875rem; color: #94a3b8;">
+            Más de 20 años organizando liveaboards de buceo por todo el mundo. Cada ficha está escrita con datos técnicos reales,
+            sin marketing vacío. Cuando Giora ha estado en el destino, lo dice.
+          </p>
+        </div>
+        <div style="flex-shrink: 0;">
+          <a href="https://crucerobuceo.com" target="_blank" rel="noopener"
+             style="display: inline-block; background: #0891b2; color: white; padding: 0.6rem 1.5rem; border-radius: 4px; text-decoration: none; font-size: 0.875rem; font-weight: 600; white-space: nowrap;">
+            Reservar liveaboard →
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Search JS -->
+  <script>
+    const input = document.getElementById('search-input') as HTMLInputElement;
+    const items = document.querySelectorAll('.destino-item') as NodeListOf<HTMLElement>;
+    const cards = document.querySelectorAll('.region-card') as NodeListOf<HTMLElement>;
+    const noResults = document.getElementById('no-results') as HTMLElement;
+    const searchTerm = document.getElementById('search-term') as HTMLElement;
+
+    input.addEventListener('input', () => {
+      const q = input.value.toLowerCase().trim();
+
+      if (!q) {
+        items.forEach(item => item.style.display = '');
+        cards.forEach(card => card.style.display = '');
+        noResults.style.display = 'none';
+        return;
+      }
+
+      let anyVisible = false;
+
+      items.forEach(item => {
+        const title = item.dataset.title || '';
+        const region = item.dataset.region || '';
+        const tags = item.dataset.tags || '';
+        const match = title.includes(q) || region.includes(q) || tags.includes(q);
+        item.style.display = match ? '' : 'none';
+        if (match) anyVisible = true;
+      });
+
+      // Hide cards with no visible items
+      cards.forEach(card => {
+        const visibleItems = card.querySelectorAll('.destino-item:not([style*="display: none"])');
+        card.style.display = visibleItems.length > 0 ? '' : 'none';
+      });
+
+      noResults.style.display = anyVisible ? 'none' : 'block';
+      if (searchTerm) searchTerm.textContent = q;
+    });
+  </script>
+
+</BaseLayout>

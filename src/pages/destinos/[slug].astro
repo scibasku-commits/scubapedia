@@ -1,0 +1,19 @@
+---
+import { getCollection, render } from 'astro:content';
+import FichaLayout from '../../layouts/FichaLayout.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('buceo');
+  return entries.map(entry => ({
+    params: { slug: entry.id.replace(/\.md$/, '') },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<FichaLayout entry={entry}>
+  <Content />
+</FichaLayout>
