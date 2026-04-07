@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 import { remarkWikilinks } from './src/plugins/remark-wikilinks.mjs';
 
 export default defineConfig({
-  site: 'https://crucerobuceo.com',
+  site: 'https://destinos.crucerobuceo.com',
   vite: {
     plugins: [tailwindcss()]
   },

@@ -17,6 +17,18 @@ const { title = 'Scuba-pedia', description = 'La enciclopedia de destinos de buc
   <title>{title} — Scuba-pedia by Scibasku</title>
   <meta name="description" content={description} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Scuba-pedia",
+    "url": "https://destinos.crucerobuceo.com",
+    "description": "La enciclopedia de destinos de buceo del mundo",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Viajes Scibasku",
+      "url": "https://viajesscibasku.com"
+    }
+  })} />
 </head>
 <body>
 
@@ -28,9 +40,13 @@ const { title = 'Scuba-pedia', description = 'La enciclopedia de destinos de buc
       </a>
       <nav style="display: flex; gap: 1.5rem; align-items: center;">
         <a href="/destinos" style="color: #7dd3fc; text-decoration: none; font-size: 0.875rem; font-weight: 500;">Destinos</a>
-        <a href="https://crucerobuceo.com" rel="noopener"
+        <a href="https://crucerobuceo.com" rel="noopener" data-source="scubapedia-nav-to-crucerobuceo"
            style="color: #7dd3fc; text-decoration: none; font-size: 0.875rem; font-weight: 500;">
           Operadores
+        </a>
+        <a href="https://viajesscibasku.com" rel="noopener" data-source="scubapedia-nav-to-viajes"
+           style="color: #7dd3fc; text-decoration: none; font-size: 0.875rem; font-weight: 500;">
+          Viajes
         </a>
       </nav>
     </div>
@@ -47,8 +63,8 @@ const { title = 'Scuba-pedia', description = 'La enciclopedia de destinos de buc
       <img src="/logo-navbar.svg" alt="Scuba-pedia" style="height: 36px; width: auto; opacity: 0.85;" />
       <p style="margin: 0; text-align: center;">
         © Viajes Scibasku · CICMA 2283 ·
-        <a href="https://crucerobuceo.com" style="color: #7dd3fc;">crucerobuceo.com</a> ·
-        <a href="https://viajesscibasku.com" style="color: #7dd3fc;">viajesscibasku.com</a>
+        <a href="https://crucerobuceo.com" style="color: #7dd3fc;" data-source="scubapedia-footer-to-crucerobuceo">crucerobuceo.com</a> ·
+        <a href="https://viajesscibasku.com" style="color: #7dd3fc;" data-source="scubapedia-footer-to-viajes">viajesscibasku.com</a>
       </p>
     </div>
   </footer>

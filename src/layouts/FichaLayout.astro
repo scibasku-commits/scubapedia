@@ -24,6 +24,66 @@ function certClass(cert: string): string {
 // Breadcrumb
 const regionLabel = fm.region || 'Destinos';
 const paisLabel = fm.pais || '';
+
+// Cross-site linking: map scubapedia entry.id → crucerobuceo data-dest slug
+const DEST_MAP: Record<string, string> = {
+  // Mar Rojo
+  'mar-rojo-overview': 'mar-rojo', 'hurghada': 'mar-rojo', 'sharm-el-sheikh': 'mar-rojo',
+  'marsa-alam': 'mar-rojo', 'dahab': 'mar-rojo', 'ras-mohammed': 'mar-rojo',
+  'brother-islands': 'mar-rojo', 'daedalus-reef': 'mar-rojo', 'elphinstone-reef': 'mar-rojo',
+  'fury-shoals': 'mar-rojo', 'safaga-hurghada-norte': 'mar-rojo', 'strait-of-tiran': 'mar-rojo',
+  'sudan-mar-rojo': 'mar-rojo', 'st-johns': 'mar-rojo',
+  // Maldivas
+  'maldivas-south-ari': 'maldivas', 'maldivas-north-ari': 'maldivas',
+  'maldivas-baa-hanifaru': 'maldivas', 'maldivas-lhaviyani': 'maldivas',
+  'maldivas-fuvahmulah': 'maldivas', 'maldivas-huvadhoo': 'maldivas',
+  'maldivas-addu': 'maldivas', 'maldivas-south-male': 'maldivas',
+  'maldivas-atolones-norte': 'maldivas',
+  // Indonesia
+  'raja-ampat': 'indonesia', 'komodo': 'indonesia', 'bali-nusa-penida': 'indonesia',
+  'banda-sea': 'indonesia', 'alor': 'indonesia',
+  // Tailandia
+  'similan-surin-richelieu': 'tailandia', 'koh-tao': 'tailandia',
+  // Cuba
+  'jardines-reina-cuba': 'cuba',
+  // Filipinas
+  'anilao': 'filipinas', 'apo-island': 'filipinas', 'malapascua': 'filipinas',
+  'moalboal': 'filipinas', 'coron': 'filipinas', 'puerto-galera': 'filipinas',
+  'zamboanga': 'filipinas', 'tubbataha': 'filipinas',
+  // Palau
+  'palau': 'palau',
+  // Galápagos
+  'galapagos': 'galapagos',
+  // Cocos
+  'cocos-island': 'cocos',
+  // Belize
+  'belice': 'belize',
+  // Bahamas
+  'bahamas': 'bahamas',
+  // Arabia Saudita
+  'arabia-saudi': 'arabia-saudita',
+  // Honduras
+  'roatan-utila': 'honduras',
+  // Islas Caimán
+  'cayman-islands': 'cayman',
+  // Islas Salomón
+  'islas-salomon': 'salomon',
+  // México
+  'revillagigedo-socorro': 'mexico', 'baja-california-la-paz': 'mexico', 'cozumel': 'mexico',
+  // Australia
+  'gran-barrera': 'australia', 'ningaloo': 'australia', 'rowley-shoals': 'australia',
+  // Caribe
+  'bonaire': 'caribe', 'curacao': 'caribe', 'tobago': 'caribe',
+  // Pacífico
+  'fakarava': 'pacifico', 'rangiroa': 'pacifico', 'fiji': 'pacifico',
+  'tonga': 'pacifico', 'yap': 'pacifico', 'chuuk-lagoon': 'pacifico',
+  // Malasia
+  'sipadan-mabul': 'filipinas', 'layang-layang': 'filipinas',
+  'tioman-perhentian': 'filipinas',
+};
+
+const crucerobuceoSlug = DEST_MAP[entry.id] || null;
+const crucerobuceoUrl = crucerobuceoSlug ? `https://crucerobuceo.com/buceo-en/${crucerobuceoSlug}` : null;
 ---
 
 <BaseLayout title={fm.title} description={`Guía de buceo en ${fm.pais}: ${fm.visibilidad_media} visibilidad, ${fm.temperatura_agua_min}–${fm.temperatura_agua_max}°C. Cert. mínima: ${fm.certificacion_minima}.`}>
@@ -112,11 +172,13 @@ const paisLabel = fm.pais || '';
               <span class="infobox-value" style="color: #065f46; font-weight: 600;">✓ Giora estuvo aquí</span>
             </div>
           )}
-          <div style="padding: 0.6rem 0.75rem; border-top: 1px solid #e0f2fe; font-size: 0.7rem; color: #64748b; text-align: center;">
-            <a href={`https://crucerobuceo.com/buceo-en/${entry.id}`} style="color: #64748b; text-decoration: underline;">
-              Operadores con salidas a {fm.pais} →
-            </a>
-          </div>
+          {crucerobuceoUrl && (
+            <div style="padding: 0.6rem 0.75rem; border-top: 1px solid #e0f2fe; font-size: 0.7rem; color: #64748b; text-align: center;">
+              <a href={crucerobuceoUrl} data-source="ficha-infobox-to-crucerobuceo" style="color: #64748b; text-decoration: underline;">
+                Operadores con salidas a {fm.pais} →
+              </a>
+            </div>
+          )}
         </div>
 
         <!-- Markdown content -->
@@ -127,16 +189,29 @@ const paisLabel = fm.pais || '';
       </div>
     </div>
 
+    <!-- Notas de campo — Giora -->
     <div style="margin-top: 3rem; padding: 1.5rem; background: #f8fafc; border-left: 3px solid #0891b2; max-width: 720px;">
       <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; margin: 0 0 0.5rem 0;">Notas de campo — Giora</p>
       <p style="font-size: 0.875rem; color: #334155; margin: 0 0 0.75rem 0; line-height: 1.6;">
         Llevo 20 años organizando liveaboards de buceo. Si necesitas ayuda concreta para planificar un viaje a {fm.pais} —fechas, barcos, logística— escríbeme directamente.
       </p>
       <p style="font-size: 0.8rem; color: #64748b; margin: 0;">
-        <a href="https://wa.me/34619401041" style="color: #0891b2;">WhatsApp +34 619 401 041</a> ·
-        <a href={`https://crucerobuceo.com/buceo-en/${entry.id}`} style="color: #0891b2;">Salidas a {fm.pais}</a>
+        <a href="https://wa.me/34619401041" style="color: #0891b2;">WhatsApp +34 619 401 041</a>
+        {crucerobuceoUrl && (
+          <> · <a href={crucerobuceoUrl} data-source="ficha-footer-to-crucerobuceo" style="color: #0891b2;">Salidas a {fm.pais}</a></>
+        )}
       </p>
     </div>
+
+    <!-- Viajes Scibasku CTA -->
+    <div style="margin-top: 1.5rem; padding: 1rem 1.5rem; background: #f0f9ff; border-left: 3px solid #0891b2; max-width: 720px;">
+      <p style="font-size: 0.8rem; font-weight: 600; color: #0d1b2a; margin: 0 0 0.25rem 0;">Viaje completo a {fm.pais}</p>
+      <p style="font-size: 0.8rem; color: #334155; margin: 0 0 0.5rem 0;">Vuelos, alojamiento, transfers y seguro de buceo. Agencia CICMA 2283.</p>
+      <a href="https://viajesscibasku.com/buceo" data-source="ficha-to-viajes" rel="noopener" style="color: #0891b2; font-size: 0.8rem; font-weight: 500;">
+        Planificar viaje con Scibasku →
+      </a>
+    </div>
+
     {fm.updated && (
       <p style="font-size: 0.7rem; color: #94a3b8; margin-top: 1rem;">
         Última revisión: {fm.updated}
@@ -144,6 +219,24 @@ const paisLabel = fm.pais || '';
     )}
 
   </div>
+
+  <!-- Schema.org TouristAttraction -->
+  {crucerobuceoUrl && (
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "TouristAttraction",
+      "name": fm.title,
+      "description": `Guía de buceo en ${fm.title}, ${fm.pais}. ${fm.visibilidad_media} visibilidad, ${fm.temperatura_agua_min}–${fm.temperatura_agua_max}°C.`,
+      "url": `https://destinos.crucerobuceo.com/destinos/buceo/${entry.id}`,
+      "touristType": "Buceadores",
+      "containedInPlace": { "@type": "Country", "name": fm.pais },
+      "isPartOf": {
+        "@type": "TouristDestination",
+        "name": `Cruceros de Buceo en ${fm.pais}`,
+        "url": crucerobuceoUrl
+      }
+    })} />
+  )}
 
   <style>
     @media (min-width: 900px) {
