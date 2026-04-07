@@ -120,7 +120,7 @@ El buceo es viable los 12 meses del año. La temperatura nunca baja de 20°C.
 | Vuelo internacional | A Ammán (AMM / Queen Alia International Airport) |
 | Vuelo doméstico | Ammán → Aqaba (AQJ), ~1 hora |
 | Alternativa terrestre | Bus JETT Ammán → Aqaba, ~4 horas, ~8 JD |
-| Cruce fronterizo | Eilat (Israel) → Aqaba via Wadi Araba crossing |
+| Cruce fronterizo | Eilat (Israel) → Aqaba vía Wadi Araba crossing |
 
 **Visa:** Gratuita si se llega vía aeropuerto de Aqaba (con estancia mínima de 2 noches). 40 JD si se entra vía Ammán. El Jordan Pass (desde 70 JD, incluye entrada a Petra) cubre la visa con 3+ noches de estancia. Las condiciones en el cruce fronterizo desde Eilat han cambiado varias veces; verificar siempre con la embajada jordana antes del viaje.
 

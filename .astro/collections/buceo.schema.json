@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "default": "destino-buceo",
+      "type": "string"
+    },
+    "region": {
+      "default": "",
+      "type": "string"
+    },
+    "pais": {
+      "default": "",
+      "type": "string"
+    },
+    "puntos_inmersion_principales": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "profundidad_min": {
+      "default": 0,
+      "type": "number"
+    },
+    "profundidad_max": {
+      "default": 0,
+      "type": "number"
+    },
+    "visibilidad_media": {
+      "default": "",
+      "type": "string"
+    },
+    "temperatura_agua_min": {
+      "default": 0,
+      "type": "number"
+    },
+    "temperatura_agua_max": {
+      "default": 0,
+      "type": "number"
+    },
+    "corrientes": {
+      "default": "",
+      "type": "string"
+    },
+    "temporada_alta": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "temporada_baja": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "certificacion_minima": {
+      "default": "OW",
+      "type": "string"
+    },
+    "vida_marina_destacada": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "liveaboards_disponibles": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "centros_buceo_recomendados": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "proveedores_scibasku": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "precio_semana_aprox": {
+      "default": "",
+      "type": "string"
+    },
+    "giora_estuvo": {
+      "default": false,
+      "type": "boolean"
+    },
+    "updated": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string",
+          "format": "date-time"
+        }
+      ]
+    },
+    "status": {
+      "default": "draft",
+      "type": "string",
+      "enum": [
+        "draft",
+        "review",
+        "published"
+      ]
+    },
+    "tags": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title"
+  ],
+  "additionalProperties": {}
+}

@@ -91,7 +91,7 @@ Galápagos solo se bucea en liveaboard — no hay otra opción legal para accede
 
 ## Mejor época para ir
 
-- **Junio–Noviembre**: temporada principal. Tiburones ballena y martillo en Darwin, agua más fría (desde 18°C), corrientes más fuertes. El periodo de mayor espectáculo pelágico.
+- **Junio–Noviembre**: temporada principal. Tiburones ballena y martillo en Darwin, agua más fría (desde 18°C), corrientes más fuertes. El período de mayor espectáculo pelágico.
 - **Diciembre–Mayo**: agua más cálida (hasta 26°C), mantas activas, mola mola en Cabo Marshall (hasta noviembre). Menos corriente en algunos sites. Los martillos están todo el año, aunque en menor número fuera de Darwin.
 
 ## Cómo llegar

@@ -99,7 +99,7 @@ Segunda mayor biodiversidad coralina del Índico occidental según Wildlife Cons
 
 ## Mejor época para ir
 
-| Periodo | Clima | Buceo | Megafauna |
+| Período | Clima | Buceo | Megafauna |
 |---------|-------|-------|-----------|
 | Ene-Feb | Lluvias, riesgo ciclones | ** | — |
 | Mar-Abr | Transición | *** | — |

@@ -61,11 +61,11 @@ status: draft
 
 ## Resumen
 
-Daedalus es un arrecife oceanico aislado en medio del Mar Rojo, a mas de 80 km de la costa egipcia. Este ovalo de coral de unos 400 metros de longitud, coronado por un faro historico, es uno de los mejores puntos del mundo para observar tiburones martillo en estaciones de limpieza. Las paredes caen verticales a mas de 300 metros de profundidad en todas direcciones.
+Daedalus es un arrecife oceánico aislado en medio del Mar Rojo, a más de 80 km de la costa egipcia. Este ovalo de coral de unos 400 metros de longitud, coronado por un faro histórico, es uno de los mejores puntos del mundo para observar tiburones martillo en estaciones de limpieza. Las paredes caen verticales a más de 300 metros de profundidad en todas direcciones.
 
-Lo que diferencia Daedalus de las cercanas Brother Islands es la presencia de estaciones de limpieza activas en la pared norte. Los tiburones martillo no pasan de largo: se quedan. Se agrupan en bancos a 25-35 metros de profundidad y dejan que los peces limpiadores hagan su trabajo. Esto permite encuentros mas prolongados y predecibles que en la mayoria de sitios del Mar Rojo.
+Lo que diferencia Daedalus de las cercanas Brother Islands es la presencia de estaciones de limpieza activas en la pared norte. Los tiburones martillo no pasan de largo: se quedan. Se agrupan en bancos a 25-35 metros de profundidad y dejan que los peces limpiadores hagan su trabajo. Esto permite encuentros más prolongados y predecibles que en la mayoria de sitios del Mar Rojo.
 
-Solo accesible en liveaboard, Daedalus se suele combinar con Brothers en safaris de 7 noches, o con la ruta Deep South (Rocky Island, Zabargad, St. Johns). Giora ha buceado Daedalus multiples veces con Golden Dolphin. Es un sitio que nunca decepciona si vas en la epoca correcta.
+Solo accesible en liveaboard, Daedalus se suele combinar con Brothers en safaris de 7 noches, o con la ruta Deep South (Rocky Island, Zabargad, St. Johns). Giora ha buceado Daedalus múltiples veces con Golden Dolphin. Es un sitio que nunca decepciona si vas en la época correcta.
 
 ---
 
@@ -74,29 +74,29 @@ Solo accesible en liveaboard, Daedalus se suele combinar con Brothers en safaris
 | Parametro | Valor |
 |-----------|-------|
 | **Ubicacion** | ~80 km offshore, Mar Rojo central |
-| **Formacion** | Arrecife oceanico ovalado (~400 m), faro historico |
+| **Formacion** | Arrecife oceánico ovalado (~400 m), faro histórico |
 | **Profundidad** | 5 m - 40 m+ (paredes caen a 300 m+) |
 | **Visibilidad** | 30-50 m (puede superar 50 m) |
-| **Temperatura agua** | 24C (invierno) - 28C (verano) |
+| **Temperatura agua** | 24 °C (invierno) - 28 °C (verano) |
 | **Corrientes** | Moderadas a fuertes |
 | **Certificacion minima** | AOWD + 50 inmersiones recomendadas |
 | **Acceso** | Solo en liveaboard |
 | **Buceo nocturno** | PROHIBIDO (regulacion del parque marino) |
 | **Temporada** | Todo el ano. Mejor: marzo-mayo y octubre-noviembre |
-| **Navegacion desde Port Ghalib** | 6-8 horas |
-| **Navegacion desde Hurghada** | 12+ horas |
+| **Navegación desde Port Ghalib** | 6-8 horas |
+| **Navegación desde Hurghada** | 12+ horas |
 
 ---
 
 ## Puntos de inmersión destacados
 
-### Pared Norte - Estacion de limpieza
+### Pared Norte - Estación de limpieza
 
-El punto estrella de Daedalus. Aqui se concentran las estaciones de limpieza donde los tiburones martillo forman bancos a 25-35 metros. La corriente suele venir del norte, trayendo nutrientes y pelagicos. Se baja a la profundidad de la estacion, se busca una posicion estable en la pared, y se espera. Los mejores encuentros ocurren en las inmersiones del amanecer.
+El punto estrella de Daedalus. Aqui se concentran las estaciones de limpieza donde los tiburones martillo forman bancos a 25-35 metros. La corriente suele venir del norte, trayendo nutrientes y pelágicos. Se baja a la profundidad de la estación, se busca una posición estable en la pared, y se espera. Los mejores encuentros ocurren en las inmersiones del amanecer.
 
 ### Pared Sur
 
-Mas protegida de la corriente dominante. Buenos corales blandos y vida de arrecife. Alternativa cuando la pared norte esta inviable por corriente excesiva. Tiburones grises de arrecife patrullan regularmente.
+Más protegida de la corriente dominante. Buenos corales blandos y vida de arrecife. Alternativa cuando la pared norte esta inviable por corriente excesiva. Tiburones grises de arrecife patrullan regularmente.
 
 ### Pared Este - Deriva
 
@@ -104,7 +104,7 @@ Excelente para derivas controladas cuando la corriente es lateral. Gorgonias gra
 
 ### Meseta del Faro
 
-La zona mas somera del arrecife, directamente bajo el faro. Profundidad de 5-15 metros, ideal para la parada de seguridad despues de inmersiones profundas en las paredes. Coral duro en buen estado, vida de arrecife abundante. Los tiburones de punta plateada (silvertip) se ven ocasionalmente patrullando por aqui.
+La zona más somera del arrecife, directamente bajo el faro. Profundidad de 5-15 metros, ideal para la parada de seguridad después de inmersiones profundas en las paredes. Coral duro en buen estado, vida de arrecife abundante. Los tiburones de punta plateada (silvertip) se ven ocasionalmente patrullando por aqui.
 
 ---
 
@@ -113,13 +113,13 @@ La zona mas somera del arrecife, directamente bajo el faro. Profundidad de 5-15 
 Lo que atrae a Daedalus son las estaciones de limpieza:
 
 - **Tiburon martillo** (*Sphyrna lewini*): Bancos en las estaciones de limpieza de la pared norte. A diferencia de otros sitios donde los martillos pasan, aqui se quedan. Mejores avistamientos al amanecer, de marzo a mayo y octubre a noviembre.
-- **Tiburon gris de arrecife**: Residentes permanentes. Patrullan todas las paredes, especialmente la norte y la sur.
-- **Tiburon de punta plateada** (*Carcharhinus albimarginatus*): Presencia habitual. Mas confiados que los grises, se acercan a los buceadores.
-- **Tiburon zorro** (*Alopias*): Avistamientos raros pero documentados. Normalmente en la pared este, en aguas mas profundas.
+- **Tiburón gris de arrecife**: Residentes permanentes. Patrullan todas las paredes, especialmente la norte y la sur.
+- **Tiburón de punta plateada** (*Carcharhinus albimarginatus*): Presencia habitual. Más confiados que los grises, se acercan a los buceadores.
+- **Tiburon zorro** (*Alopias*): Avistamientos raros pero documentados. Normalmente en la pared este, en aguas más profundas.
 - **Atunes**: Grandes ejemplares en la columna de agua, especialmente cuando hay corriente.
 - **Barracudas**: Bancos impresionantes que forman murallas y tornados.
 - **Jureles gigantes**: Cazando activamente alrededor del arrecife.
-- **Mantas**: Estacionales, mas probables en periodos de plancton.
+- **Mantas**: Estacionales, más probables en períodos de plancton.
 
 ---
 
@@ -137,34 +137,34 @@ Daedalus solo se bucea desde vida a bordo. Normalmente se combina con Brothers y
 
 ### Otros liveaboards que operan la ruta
 
-- **Blue Force 3**: Flota espanola, guias hispanohablantes. ~1.500 EUR por safari.
+- **Blue Force 3**: Flota española, guias hispanohablantes. ~1.500 EUR por safari.
 - **South Moon**: Barco de calidad. ~1.125 EUR.
-- **JP Marine**: Ruta "Golden Mix" 8 dias/7 noches (Daedalus-Sataya-St Johns-Rocky-Zabargad). Desde 938-1.055 EUR.
+- **JP Marine**: Ruta "Golden Mix" 8 días/7 noches (Daedalus-Sataya-St Johns-Rocky-Zabargad). Desde 938-1.055 EUR.
 - **Scuba Scene**: Gama alta, hasta 2.050 EUR por safari.
 
 ---
 
 ## Mejor época para ir
 
-| Periodo | Condiciones | Para quien |
+| Período | Condiciones | Para quien |
 |---------|-------------|------------|
-| **Marzo-Mayo** | Agua calentandose (24-27C), visibilidad excelente, mar en calma, martillos en abundancia | La mejor ventana. Ideal primera visita. |
-| **Octubre-Noviembre** | Agua calida (26-28C), actividad pico de martillos, menos barcos | Segunda mejor ventana. Excelente para repetidores. |
-| **Septiembre** | Transicion, agua calida, condiciones variables | Buena opcion si octubre esta lleno. |
-| **Diciembre-Febrero** | Agua fria (24C), mar puede estar movido, menos martillos que primavera | Solo si se combina con Brothers para buscar oceanicos. |
+| **Marzo-Mayo** | Agua calentandose (24-27 °C), visibilidad excelente, mar en calma, martillos en abundancia | La mejor ventana. Ideal primera visita. |
+| **Octubre-Noviembre** | Agua cálida (26-28 °C), actividad pico de martillos, menos barcos | Segunda mejor ventana. Excelente para repetidores. |
+| **Septiembre** | Transicion, agua cálida, condiciones variables | Buena opcion si octubre esta lleno. |
+| **Diciembre-Febrero** | Agua fría (24 °C), mar puede estar movido, menos martillos que primavera | Solo si se combina con Brothers para buscar oceánicos. |
 | **Julio-Agosto** | Calor extremo en cubierta (45C+), viento sur | Evitar si es posible. |
 
-**Consejo clave**: Los mejores encuentros con martillos son al amanecer. Los liveaboards que programan la primera inmersion antes del sunrise en Daedalus dan una ventaja real.
+**Consejo clave**: Los mejores encuentros con martillos son al amanecer. Los liveaboards que programan la primera inmersión antes del sunrise en Daedalus dan una ventaja real.
 
 ---
 
 ## Cómo llegar
 
-1. **Vuelo internacional** a Marsa Alam (RMF) o Hurghada (HRG). Desde Espana hay vuelos charter directos en temporada, o conexion via El Cairo.
-2. **Traslado al puerto**: Los liveaboards salen de Port Ghalib (mas comun, 6-8 horas de navegacion) o Hurghada (12+ horas).
-3. **Navegacion**: Se sale por la tarde/noche, se amanece en Daedalus. Normalmente Daedalus no es el primer punto del safari si se combina con Brothers.
+1. **Vuelo internacional** a Marsa Alam (RMF) o Hurghada (HRG). Desde Espana hay vuelos charter directos en temporada, o conexión vía El Cairo.
+2. **Traslado al puerto**: Los liveaboards salen de Port Ghalib (más comun, 6-8 horas de navegación) o Hurghada (12+ horas).
+3. **Navegación**: Se sale por la tarde/noche, se amanece en Daedalus. Normalmente Daedalus no es el primer punto del safari si se combina con Brothers.
 
-**Visado Egipto**: VOA (Visa on Arrival) disponible para espanoles, 25 USD.
+**Visado Egipto**: VOA (Visa on Arrival) disponible para españoles, 25 USD.
 
 ---
 
@@ -172,7 +172,7 @@ Daedalus solo se bucea desde vida a bordo. Normalmente se combina con Brothers y
 
 Daedalus exige un buceador competente:
 
-- **Certificacion**: AOWD como minimo absoluto. Rescue recomendado.
+- **Certificación**: AOWD como mínimo absoluto. Rescue recomendado.
 - **Experiencia**: 50+ inmersiones reales en aguas abiertas. Necesitas experiencia en corriente y azul abierto.
 - **Buen control de flotabilidad**: Las paredes caen a 300 m. Bajar a 30-35 m para las estaciones de limpieza requiere precision. Si no controlas tu lastre, la profundidad te traga.
 - **Comodidad en azul abierto**: No hay fondo visible. Si te pone nervioso, entrena primero en el norte del Mar Rojo.
@@ -184,11 +184,11 @@ Si todavia no tienes 50 inmersiones, haz primero un safari norte ([[safaga-hurgh
 
 ## Consejo Scibasku
 
-> Daedalus tiene algo que Brothers no tiene: previsibilidad. En las estaciones de limpieza de la pared norte, los martillos estan ahi si llegas a la hora correcta. No es cuestion de suerte, es cuestion de disciplina.
+> Daedalus tiene algo que Brothers no tiene: previsibilidad. En las estaciones de limpieza de la pared norte, los martillos están ahi si llegas a la hora correcta. No es cuestion de suerte, es cuestion de disciplina.
 >
-> Pide al guia que la primera inmersion del dia sea en la pared norte, antes del amanecer. Baja a 30 metros, pegate a la pared, y no te muevas. El banco de martillos aparece casi siempre entre las 5:30 y las 6:30 de la manana. Si te mueves, te pierden el interes. Si te quedas quieto, se acercan.
+> Pide al guia que la primera inmersión del día sea en la pared norte, antes del amanecer. Baja a 30 metros, pegate a la pared, y no te muevas. El banco de martillos aparece casi siempre entre las 5:30 y las 6:30 de la manana. Si te mueves, te pierden el interés. Si te quedas quieto, se acercan.
 >
-> Una cosa mas: si tu safari combina Daedalus con Brothers, vas a tener 4-5 dias de buceo de primer nivel mundial. Pero no te obsesiones con verlo todo. Daedalus es para martillos. Brothers es para oceanicos. Enfoca cada sitio en lo que hace mejor.
+> Una cosa más: si tu safari combina Daedalus con Brothers, vas a tener 4-5 días de buceo de primer nivel mundial. Pero no te obsesiones con verlo todo. Daedalus es para martillos. Brothers es para oceánicos. Enfoca cada sitio en lo que hace mejor.
 >
 > -- Giora
 
@@ -197,7 +197,7 @@ Si todavia no tienes 50 inmersiones, haz primero un safari norte ([[safaga-hurgh
 ## Fichas relacionadas
 
 - [[brother-islands]] - Se combina frecuentemente con Daedalus en safaris de 7 noches
-- [[elphinstone-reef]] - Suele ser la ultima parada en rutas Brothers-Daedalus-Elphinstone
+- [[elphinstone-reef]] - Suele ser la última parada en rutas Brothers-Daedalus-Elphinstone
 - [[fury-shoals]] - Ruta alternativa Daedalus-Fury Shoals
 - [[st-johns]] - Ruta Deep South incluye Daedalus-Rocky-Zabargad-St Johns
 - [[safaga-hurghada-norte]] - Safari norte para coger experiencia antes de Daedalus

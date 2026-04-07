@@ -73,7 +73,7 @@ Cabo Verde es ese destino atlántico que muchos buceadores españoles ignoran mi
 
 ## Vida marina
 
-Los **tiburones limón** (*Negaprion brevirostris*) y **tiburones nodriza** (*Ginglymostoma cirratum*) son los encuentros más consistentes en algunas islas. Las **tortugas marinas** — loggerhead principalmente (*Caretta caretta*) — son especialmente abundantes en Boa Vista, donde anidan en las playas. Las **rayas** frecuentan los fondos arenosos. Los **bancos de pelágicos** — jurels, barracudas, bonitos — cruzan sobre los arrecifes según temporada. El **macro atlántico** ofrece nudibraquios, pulpos y crustáceos para quien no va solo a ver lo grande.
+Los **tiburones limón** (*Negaprion brevirostris*) y **tiburones nodriza** (*Ginglymostoma cirratum*) son los encuentros más consistentes en algunas islas. Las **tortugas marinas** — loggerhead principalmente (*Caretta caretta*) — son especialmente abundantes en Boa Vista, donde anidan en las playas. Las **rayas** frecuentan los fondos arenosos. Los **bancos de pelágicos** — jureles, barracudas, bonitos — cruzan sobre los arrecifes según temporada. El **macro atlántico** ofrece nudibraquios, pulpos y crustáceos para quien no va solo a ver lo grande.
 
 ## Liveaboards
 

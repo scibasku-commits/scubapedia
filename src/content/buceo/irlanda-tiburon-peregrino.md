@@ -94,7 +94,7 @@ No existe un liveaboard específico para Irlanda. El formato son **small-boats l
 
 ## Nivel requerido
 
-**OW con experiencia real en aguas frías** es la combinación mínima. Las condiciones del Atlántico irlandés no son técnicas en profundidad, pero el frio (8–14°C en primavera), las corrientes en los cabos y el mar atlántico abierto requieren comodidad en el agua y equipo adecuado. Para las salidas de tiburón peregrino en snorkel, la certificación no es requisito formal pero el confort con drysuit o traje grueso es esencial. Quien no tiene experiencia en aguas frías debe considerar empezar en una piscina con drysuit o en inmersiones más suaves antes de lanzarse al Atlántico irlandés en abril.
+**OW con experiencia real en aguas frías** es la combinación mínima. Las condiciones del Atlántico irlandés no son técnicas en profundidad, pero el frío (8–14°C en primavera), las corrientes en los cabos y el mar atlántico abierto requieren comodidad en el agua y equipo adecuado. Para las salidas de tiburón peregrino en snorkel, la certificación no es requisito formal pero el confort con drysuit o traje grueso es esencial. Quien no tiene experiencia en aguas frías debe considerar empezar en una piscina con drysuit o en inmersiones más suaves antes de lanzarse al Atlántico irlandés en abril.
 
 ## Consejo Scibasku
 

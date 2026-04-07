@@ -77,7 +77,7 @@ Hay dos modalidades principales:
 
 ## Mejor época para ir
 
-- **Agosto–Octubre (otoño–invierno austral):** Agua más fría (12–14°C) pero densidades más altas de tiburón blanco. Los ejemplares más grandes tienden a aparecer en este periodo.
+- **Agosto–Octubre (otoño–invierno austral):** Agua más fría (12–14°C) pero densidades más altas de tiburón blanco. Los ejemplares más grandes tienden a aparecer en este período.
 - **Febrero–Mayo (verano–otoño):** Agua algo más templada (16–18°C). Tiburones presentes pero con densidades algo menores que en el pico de invierno.
 - **Noviembre–Enero:** Menor actividad de tiburón blanco en la zona. No es la temporada principal.
 

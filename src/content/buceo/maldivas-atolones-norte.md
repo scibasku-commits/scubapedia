@@ -58,13 +58,13 @@ status: draft
 
 # Maldivas — Atolones del Norte
 
-> Maldivas · North Male, South Male, Ari, Baa, Raa, Lhaviyani, Rasdhoo · Cert. minima: AOWD
+> Maldivas · North Male, South Male, Ari, Baa, Raa, Lhaviyani, Rasdhoo · Cert. mínima: AOWD
 
 ## Resumen
 
-Los atolones del norte de Maldivas concentran lo mejor del buceo mundial en un radio relativamente compacto. Desde las agregaciones masivas de mantas en Hanifaru Bay (Baa) hasta los tiburones ballena residentes de Ari Sur, pasando por los thilas (pinaculos) cargados de vida pelagica de Male Norte y los canales con 15 especies de tiburones en Raa y Lhaviyani — esta zona ofrece una densidad de experiencias submarinas dificil de igualar en el planeta.
+Los atolones del norte de Maldivas concentran lo mejor del buceo mundial en un radio relativamente compacto. Desde las agregaciones masivas de mantas en Hanifaru Bay (Baa) hasta los tiburones ballena residentes de Ari Sur, pasando por los thilas (pinaculos) cargados de vida pelágica de Male Norte y los canales con 15 especies de tiburones en Raa y Lhaviyani — esta zona ofrece una densidad de experiencias submarinas difícil de igualar en el planeta.
 
-El buceo aqui se define por tres formaciones geologicas: los **thilas** (pinaculos sumergidos que concentran corriente y vida), los **kandus** (canales entre atolones donde se acumula la accion pelagica) y las **paredes exteriores** de los atolones. Es buceo de deriva por naturaleza: la corriente es tu motor y la planificacion de la inmersion depende enteramente de leerla bien.
+El buceo aqui se define por tres formaciones geológicas: los **thilas** (pinaculos sumergidos que concentran corriente y vida), los **kandus** (canales entre atolones donde se acumula la accion pelágica) y las **paredes exteriores** de los atolones. Es buceo de deriva por naturaleza: la corriente es tu motor y la planificación de la inmersión depende enteramente de leerla bien.
 
 Maldivas no es un destino para principiantes absolutos. Los kandus exigen nivel Advanced y experiencia en corrientes. Pero para un buceador con 50+ inmersiones y buen control de flotabilidad, es un paraiso accesible que justifica cada euro invertido.
 
@@ -76,47 +76,47 @@ Maldivas no es un destino para principiantes absolutos. Los kandus exigen nivel 
 | Visibilidad | 20-25m (mejor en temporada seca, dic-abr) |
 | Temperatura agua | 26-30°C todo el año (neopreno 3mm) |
 | Corrientes | Fuertes en kandus — drift diving obligatorio |
-| Certificacion minima | AOWD recomendado para kandus |
-| Temporada alta | Diciembre - Abril (monzon NE) |
-| Temporada baja | Mayo - Octubre (monzon SW) |
-| Precio por inmersion | 115-130 USD desde resort |
+| Certificación mínima | AOWD recomendado para kandus |
+| Temporada alta | Diciembre - Abril (monzón NE) |
+| Temporada baja | Mayo - Octubre (monzón SW) |
+| Precio por inmersión | 115-130 USD desde resort |
 
 ## Puntos de inmersión destacados
 
 ### Atolon de Baa (Reserva Biosfera UNESCO)
 
-- **Hanifaru Bay** — El espectaculo numero uno. Entre junio y octubre, cientos de mantas de arrecife (y ocasionalmente tiburones ballena) se concentran en esta bahia poco profunda para alimentarse de plancton. No se bucea: es snorkel controlado con cupo limitado de visitantes. Aun asi, es una de las experiencias marinas mas poderosas que existen.
+- **Hanifaru Bay** — El espectaculo número uno. Entre junio y octubre, cientos de mantas de arrecife (y ocasionalmente tiburones ballena) se concentran en esta bahía poco profunda para alimentarse de plancton. No se bucea: es snorkel controlado con cupo limitado de visitantes. Aun asi, es una de las experiencias marinas más poderosas que existen.
 
 ### Atolon de Male Norte
 
-- **Lankan Manta Point** — Estacion de limpieza de mantas a 10-15m. Fiable todo el año, con mayor concentracion en monzon SW. Te sientas en el fondo y esperas — las mantas vienen a ti.
-- **Banana Reef** — El primer punto de buceo "descubierto" en Maldivas (1972). Pared con cavernas, overhangs y una biodiversidad absurda para una inmersion tan accesible (12-30m).
-- **Okobe Thila** — Thila clasico con overhangs dramaticos, tiburones grises, napoleones y bancos de peces cristal. Corriente moderada a fuerte.
+- **Lankan Manta Point** — Estación de limpieza de mantas a 10-15m. Fiable todo el año, con mayor concentración en monzón SW. Te sientas en el fondo y esperas — las mantas vienen a ti.
+- **Banana Reef** — El primer punto de buceo "descubierto" en Maldivas (1972). Pared con cavernas, overhangs y una biodiversidad absurda para una inmersión tan accesible (12-30m).
+- **Okobe Thila** — Thila clásico con overhangs dramaticos, tiburones grises, napoleones y bancos de peces cristal. Corriente moderada a fuerte.
 - **Maldives Victory Wreck** — Carguero hundido en 1981 cerca de Male, ahora colonizado por coral blando y cardumenes. Profundidad 15-35m. Uno de los mejores pecios del Indico.
 
 ### Atolon de Ari Sur
 
 - **Kuda Rah Thila** — Muchos buceadores expertos lo consideran el mejor thila de Maldivas. Paredes verticales cubiertas de coral blando, tiburones grises patrullando, napoleones enormes. Corriente puede ser intensa.
-- **Broken Rock** — Canyon natural partido en dos que se nada de un lado a otro. Coral blando espectacular, peces escorpion, nudibranquios. Inmersion tecnica pero accesible a AOWD.
+- **Broken Rock** — Canyon natural partido en dos que se nada de un lado a otro. Coral blando espectacular, peces escorpión, nudibranquios. Inmersión técnica pero accesible a AOWD.
 - **Dhigurah Channel** — El "autopista de los tiburones ballena". Avistamientos durante todo el año, con pico entre septiembre y noviembre. Drift diving puro.
 
 ### Rasdhoo
 
-- **Rasdhoo Madivaru** — La inmersion de tiburones martillo. Se baja al amanecer a 25-35m en la esquina exterior del atolon y se espera en el azul. No es garantizado, pero cuando ocurre, es inolvidable. Solo para buceadores experimentados con comodidad en profundidad y corriente.
+- **Rasdhoo Madivaru** — La inmersión de tiburones martillo. Se baja al amanecer a 25-35m en la esquina exterior del atolon y se espera en el azul. No es garantizado, pero cuando ocurre, es inolvidable. Solo para buceadores experimentados con comodidad en profundidad y corriente.
 
 ### Raa y Lhaviyani
 
-- **Sola Corner (Lhaviyani)** — Esquina de corriente con tiburones grises, aguilas de mar y atunes. Uno de los puntos con mas diversidad de tiburones del archipielago.
-- **Labyrinth (Raa)** — Formacion laberintica de bloques de coral con canales estrechos. Habitat de tiburones nodriza, morenas y langostas. Inmersion exploratoria con un punto de aventura.
+- **Sola Corner (Lhaviyani)** — Esquina de corriente con tiburones grises, aguilas de mar y atunes. Uno de los puntos con más diversidad de tiburones del archipielago.
+- **Labyrinth (Raa)** — Formacion laberintica de bloques de coral con canales estrechos. Habitat de tiburones nodriza, morenas y langostas. Inmersión exploratoria con un punto de aventura.
 
 ## Vida marina
 
-Maldivas es sinonimo de **pelagicos grandes**. El elenco habitual en los atolones del norte incluye:
+Maldivas es sinonimo de **pelágicos grandes**. El elenco habitual en los atolones del norte incluye:
 
 - **Mantas de arrecife** — Presentes todo el año; concentraciones masivas en Baa (jun-oct) y estaciones de limpieza en Male Norte.
 - **Tiburones ballena** — Residentes en Ari Sur durante todo el año. El canal de Dhigurah es la mejor apuesta.
 - **Tiburones martillo** — Rasdhoo al amanecer, noviembre a abril.
-- **Tiburones grises de arrecife** — En practicamente todos los thilas con corriente.
+- **Tiburones grises de arrecife** — En prácticamente todos los thilas con corriente.
 - **Tiburones punta blanca y punta negra** — Ubicuos en arrecifes someros y profundos.
 - **Napoleones** — Grandes y confiados, frecuentes en thilas protegidos.
 - **Tortugas carey y verde** — Comunes en todo el archipielago.
@@ -129,8 +129,8 @@ Maldivas es sinonimo de **pelagicos grandes**. El elenco habitual en los atolone
 
 La opcion comoda. Sales de tu isla, buceas 2 inmersiones por la mañana en los puntos cercanos, y vuelves a comer. Ideal para viajes con pareja no buceadora o familias.
 
-**Ventajas:** Comodidad, flexibilidad de dias de buceo, acceso a snorkel del house reef.
-**Limitaciones:** Estas limitado a los puntos del atolon donde esta tu resort. No puedes cruzar a otro atolon facilmente.
+**Ventajas:** Comodidad, flexibilidad de días de buceo, acceso a snorkel del house reef.
+**Limitaciones:** Estas limitado a los puntos del atolon donde esta tu resort. No puedes cruzar a otro atolon fácilmente.
 
 **Resorts destacados con centros de buceo:**
 - **LUX* South Ari Atoll** — Euro-Divers. Acceso directo a Dhigurah y tiburones ballena.
@@ -139,7 +139,7 @@ La opcion comoda. Sales de tu isla, buceas 2 inmersiones por la mañana en los p
 - **Lily Beach** — All-inclusive premium en Ari Sur.
 - **Ritz-Carlton Fari Islands** — Dive Butler International. Lujo absoluto, Male Norte.
 - **Four Seasons Kuda Huraa** — Male Norte, acceso a Lankan Manta Point.
-- **Kurumba** — Clasico cerca de Male, PADI dive center historico.
+- **Kurumba** — Clasico cerca de Male, PADI dive center histórico.
 - **Amilla Maldives** — Dive Butler International, Baa Atoll, cerca de Hanifaru.
 - **Four Seasons Landaa Giraavaru** — Baa Atoll, programa de investigacion de mantas con Manta Trust.
 - **Kuramathi** — PADI 5-Star, Rasdhoo Atoll.
@@ -148,29 +148,29 @@ La opcion comoda. Sales de tu isla, buceas 2 inmersiones por la mañana en los p
 
 La opcion para maximizar el buceo. 3-4 inmersiones diarias, acceso a puntos remotos, posibilidad de cubrir varios atolones en una semana.
 
-**Ventajas:** Mayor numero de inmersiones, acceso a los mejores puntos sin limitacion de distancia, inmersiones nocturnas.
+**Ventajas:** Mayor número de inmersiones, acceso a los mejores puntos sin limitacion de distancia, inmersiones nocturnas.
 **Limitaciones:** Camarotes compactos, convivencia con grupo, menos tiempo de "resort".
 
-Los itinerarios tipicos cubren Male Norte + Ari (7 noches) o Male + Baa + Raa (7-10 noches). La ruta "Best of Maldivas" suele ser Male Norte → Ari → Male Sur en una semana.
+Los itinerarios típicos cubren Male Norte + Ari (7 noches) o Male + Baa + Raa (7-10 noches). La ruta "Best of Maldivas" suele ser Male Norte → Ari → Male Sur en una semana.
 
 ## Mejor época para ir
 
-### Monzon NE — Diciembre a Abril (temporada seca)
+### Monzón NE — Diciembre a Abril (temporada seca)
 
 - Cielos despejados, mar en calma, mejor visibilidad (25-30m).
 - Ideal para thilas y paredes: la visibilidad permite apreciar las formaciones.
-- Mantas presentes pero menos concentradas que en monzon SW.
-- **Temporada alta turistica** — precios mas altos, reservar con antelacion.
+- Mantas presentes pero menos concentradas que en monzón SW.
+- **Temporada alta turistica** — precios más altos, reservar con antelación.
 
-### Monzon SW — Mayo a Octubre (temporada humeda)
+### Monzón SW — Mayo a Octubre (temporada humeda)
 
-- Lluvias breves (no todo el dia), mar algo mas movido.
+- Lluvias breves (no todo el día), mar algo más movido.
 - **MEJOR para mantas**: Hanifaru Bay jun-oct, Lankan Manta Point.
-- **MEJOR para tiburones ballena**: mayor concentracion de plancton atrae pelagicos.
-- Visibilidad ligeramente reducida (15-20m) pero mas accion pelagica.
-- Precios mas bajos — buena relacion calidad-precio.
+- **MEJOR para tiburones ballena**: mayor concentración de plancton atrae pelágicos.
+- Visibilidad ligeramente reducida (15-20m) pero más accion pelágica.
+- Precios más bajos — buena relacion calidad-precio.
 
-### Meses optimos por objetivo
+### Meses óptimos por objetivo
 
 | Objetivo | Meses |
 |----------|-------|
@@ -185,41 +185,41 @@ Los itinerarios tipicos cubren Male Norte + Ari (7 noches) o Male + Baa + Raa (7
 | Opcion | Detalle |
 |--------|---------|
 | Aeropuerto | Male (Velana International Airport, MLE) |
-| Vuelos desde España | Varias escalas: via Dubai (Emirates/FlyDubai), Doha (Qatar), Estambul (Turkish). ~12-15h total |
-| Transfer a resort Male Norte | Lancha rapida 20-45 min |
+| Vuelos desde España | Varias escalas: vía Dubai (Emirates/FlyDubai), Doha (Qatar), Estambul (Turkish). ~12-15h total |
+| Transfer a resort Male Norte | Lancha rápida 20-45 min |
 | Transfer a Ari/Baa/Raa | Hidroavion (30-45 min) o vuelo domestico + lancha |
 | Transfer liveaboard | Normalmente desde Male directamente |
 
-**Nota importante sobre el hidroavion:** Los hidroaviones solo operan en horario diurno (aprox. 6:00-16:00). Si tu vuelo internacional llega de noche, necesitaras una noche en Male o en un hotel de transito. Esto es normal en Maldivas — no es un problema, es parte de la logistica.
+**Nota importante sobre el hidroavión:** Los hidroaviones solo operan en horario diurno (aprox. 6:00-16:00). Si tu vuelo internacional llega de noche, necesitaras una noche en Male o en un hotel de transito. Esto es normal en Maldivas — no es un problema, es parte de la logística.
 
 ## Nivel requerido
 
 - **Thilas con corriente moderada** (Banana Reef, Lankan): OWD con experiencia, idealmente 30+ inmersiones.
 - **Kandus y esquinas de corriente** (Dhigurah Channel, Sola Corner, Kuda Rah Thila): AOWD obligatorio. Experiencia en drift diving y buen control de flotabilidad.
-- **Rasdhoo Madivaru (martillos)**: AOWD + 50 inmersiones minimo. Profundidad 25-35m, corriente variable, inmersion en azul abierto.
+- **Rasdhoo Madivaru (martillos)**: AOWD + 50 inmersiones mínimo. Profundidad 25-35m, corriente variable, inmersión en azul abierto.
 - **Snorkel en Hanifaru Bay**: Apto para todos los niveles. No se permite buceo con botellas en Hanifaru.
 
-En general, un buceador con AOWD y 40-50 inmersiones puede disfrutar del 80% de los puntos. Para el 20% restante (inmersiones profundas, corrientes fuertes, martillos) se necesita mas experiencia.
+En general, un buceador con AOWD y 40-50 inmersiones puede disfrutar del 80% de los puntos. Para el 20% restante (inmersiones profundas, corrientes fuertes, martillos) se necesita más experiencia.
 
 ## Consejo Scibasku
 
-Maldivas es probablemente el destino de buceo mas versatil del planeta: combina pelagicos de primera division con logistica relativamente sencilla, resorts de calidad mundial y agua a 28°C todo el año. No hace falta ser Jacques Cousteau para disfrutarlo, pero si conviene tener un nivel AOWD solido antes de ir.
+Maldivas es probablemente el destino de buceo más versatil del planeta: combina pelágicos de primera division con logística relativamente sencilla, resorts de calidad mundial y agua a 28°C todo el año. No hace falta ser Jacques Cousteau para disfrutarlo, pero si conviene tener un nivel AOWD solido antes de ir.
 
 **Nuestra recomendacion:** Si es tu primera vez en Maldivas y quieres maximizar vida marina, ve entre julio y octubre: te coinciden las mantas de Hanifaru con los tiburones ballena de Ari. Si prefieres condiciones perfectas de mar y visibilidad, febrero-marzo es el sweet spot.
 
-**Resort vs liveaboard:** Para parejas donde uno bucea y otro no, resort sin duda. Para grupos de buceadores que quieren exprimir cada dia, liveaboard. Trabajamos con Cocoon Collection y Hummingbird Travel para montar el viaje a medida.
+**Resort vs liveaboard:** Para parejas donde uno bucea y otro no, resort sin duda. Para grupos de buceadores que quieren exprimir cada día, liveaboard. Trabajamos con Cocoon Collection y Hummingbird Travel para montar el viaje a medida.
 
-**Seguridad — regla de oro:** NO bucear en las 24 horas anteriores a un vuelo en hidroavion. El hidroavion no presuriza cabina y vuela a baja altitud, pero sigue siendo un vuelo. Planifica tu ultimo dia de buceo teniendo en cuenta el horario de tu transfer de vuelta. Esto no es opcional — es una norma de seguridad DAN.
+**Seguridad — regla de oro:** NO bucear en las 24 horas anteriores a un vuelo en hidroavión. El hidroavión no presuriza cabina y vuela a baja altitud, pero sigue siendo un vuelo. Planifica tu último día de buceo teniendo en cuenta el horario de tu transfer de vuelta. Esto no es opcional — es una norma de seguridad DAN.
 
 **Sobre Hanifaru Bay:** Desde 2023 se requiere permiso previo y hay cupo diario limitado. Tu resort o liveaboard gestiona esto, pero en temporada alta conviene tener alternativa por si el cupo esta lleno.
 
 ## Fichas relacionadas
 
-- [[maldivas-atolones-sur]] — Atolones de Vaavu, Meemu, Thaa, Laamu: menos trafico, mas tiburones
-- [[maldivas-liveaboard-rutas]] — Itinerarios tipicos por atolones
+- [[maldivas-atolones-sur]] — Atolones de Vaavu, Meemu, Thaa, Laamu: menos trafico, más tiburones
+- [[maldivas-liveaboard-rutas]] — Itinerarios típicos por atolones
 - [[cocoon-collection]] — Proveedor Scibasku, resorts en Maldivas
 - [[hummingbird-travel]] — Tour operador premium, resorts Maldivas/Seychelles
-- [[buceo-drift-diving]] — Tecnica y seguridad en buceo de deriva
+- [[buceo-drift-diving]] — Técnica y seguridad en buceo de deriva
 - [[certificaciones-buceo]] — AOWD, Rescue, especialidades
 
 ## Schema

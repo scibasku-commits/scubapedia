@@ -46,7 +46,7 @@ status: draft
 
 ## Resumen
 
-La Gran Barrera de Coral no necesita presentaciones: es el mayor sistema de arrecifes del planeta, visible desde el espacio, y uno de los ecosistemas marinos mas complejos que existen. Con 2.300 km de longitud, 344.400 km2 de superficie, 2.900 arrecifes individuales y mas de 600 islas, estamos hablando de un destino de buceo que podrias explorar durante meses sin repetir inmersion.
+La Gran Barrera de Coral no necesita presentaciones: es el mayor sistema de arrecifes del planeta, visible desde el espacio, y uno de los ecosistemas marinos más complejos que existen. Con 2.300 km de longitud, 344.400 km² de superficie, 2.900 arrecifes individuales y más de 600 islas, estamos hablando de un destino de buceo que podrias explorar durante meses sin repetir inmersión.
 
 Lo que muchos buceadores no saben es que la Gran Barrera no es un arrecife uniforme. Las condiciones, la vida marina y la experiencia cambian radicalmente entre el arrecife interior (cerca de costa), el arrecife exterior (Ribbon Reefs) y el Mar del Coral (Osprey Reef). Cada zona es un viaje diferente. Y luego esta el SS Yongala, que ni siquiera esta en el arrecife sino frente a Townsville, y que muchos consideran el mejor pecio de Australia.
 
@@ -54,13 +54,13 @@ Lo que muchos buceadores no saben es que la Gran Barrera no es un arrecife unifo
 
 | Dato | Valor |
 |------|-------|
-| Extension | 2.300 km de largo · 344.400 km2 |
+| Extensión | 2.300 km de largo · 344.400 km² |
 | Arrecifes | 2.900+ individuales · 600+ islas |
 | Profundidad | 5m - 40m+ |
-| Temperatura del agua | 22C (jun-ago) a 29C (dic-feb) |
+| Temperatura del agua | 22 °C (jun-ago) a 29 °C (dic-feb) |
 | Visibilidad | 10-30m (arrecife exterior hasta 40m en Cod Hole) |
-| Corrientes | Generalmente suaves, mas fuertes en pasos exteriores |
-| Certificacion minima | OWD para la mayoria · AOWD para paredes profundas y Cod Hole |
+| Corrientes | Generalmente suaves, más fuertes en pasos exteriores |
+| Certificación mínima | OWD para la mayoria · AOWD para paredes profundas y Cod Hole |
 | Temporada | Todo el ano. Mejor junio-noviembre |
 | Biodiversidad | 1.500+ peces · 400+ corales · 30+ cetaceos · 6 especies de tortuga |
 
@@ -68,25 +68,25 @@ Lo que muchos buceadores no saben es que la Gran Barrera no es un arrecife unifo
 
 ### Ribbon Reefs (arrecife exterior)
 
-Los Ribbon Reefs son la zona premium de la Gran Barrera: una cadena de arrecifes pristinos en el borde exterior, accesibles principalmente via liveaboard desde Cairns. Aqui estan dos de los puntos mas iconicos del mundo:
+Los Ribbon Reefs son la zona premium de la Gran Barrera: una cadena de arrecifes prístinos en el borde exterior, accesibles principalmente vía liveaboard desde Cairns. Aqui están dos de los puntos más iconicos del mundo:
 
-- **Cod Hole** — El punto de inmersion mas famoso de Australia. Meros gigantes (potato cod) de hasta 100 kg que se acercan a los buceadores sin timidez. Visibilidad que puede alcanzar 40m. Requiere AOWD por la profundidad.
+- **Cod Hole** — El punto de inmersión más famoso de Australia. Meros gigantes (potato cod) de hasta 100 kg que se acercan a los buceadores sin timidez. Visibilidad que puede alcanzar 40m. Requiere AOWD por la profundidad.
 - **Steve's Bommie** — Un pinaculo coralino aislado que concentra una biodiversidad absurda. Nudibranquios, peces pipa, caballitos de mar pigmeo. Un macrofotografo puede pasar tres inmersiones sin moverse del mismo bommie.
 
 ### Osprey Reef (Mar del Coral)
 
-Osprey Reef esta en mar abierto, a unas 12 horas de navegacion desde Cairns. Es otro nivel.
+Osprey Reef esta en mar abierto, a unas 12 horas de navegación desde Cairns. Es otro nivel.
 
 - **North Horn** — Shark feed organizado. Tiburones grises de arrecife, tiburones de punta blanca y ocasionalmente tiburones martillo. Paredes que caen a 1.000m de profundidad.
-- Las caidas verticales de Osprey son de las mas espectaculares del Pacifico. Agua azul profundo, pelagicos y una sensacion de inmensidad que no encuentras en el arrecife costero.
+- Las caidas verticales de Osprey son de las más espectaculares del Pacífico. Agua azul profundo, pelágicos y una sensacion de inmensidad que no encuentras en el arrecife costero.
 
 ### SS Yongala (Townsville)
 
-El mejor pecio de Australia y uno de los 10 mejores del mundo. Un buque de pasajeros de 109m hundido en 1911 durante un ciclon, que hoy es un arrecife artificial espectacular. Profundidad maxima 28m, pero las corrientes pueden ser fuertes. Rayas aguila, serpientes marinas, meros gigantes, tortugas y ocasionalmente mantas y tiburones toro.
+El mejor pecio de Australia y uno de los 10 mejores del mundo. Un buque de pasajeros de 109m hundido en 1911 durante un ciclon, que hoy es un arrecife artificial espectacular. Profundidad máxima 28m, pero las corrientes pueden ser fuertes. Rayas aguila, serpientes marinas, meros gigantes, tortugas y ocasionalmente mantas y tiburones toro.
 
 ### Agincourt Reef
 
-El arrecife exterior mas accesible desde Port Douglas. Excelente visibilidad, ideal para buceadores de todos los niveles. Operadores de day trip como Quicksilver ofrecen plataformas flotantes con facilidades completas.
+El arrecife exterior más accesible desde Port Douglas. Excelente visibilidad, ideal para buceadores de todos los niveles. Operadores de day trip como Quicksilver ofrecen plataformas flotantes con facilidades completas.
 
 ### Islas: Fitzroy Island y Lizard Island
 
@@ -95,12 +95,12 @@ El arrecife exterior mas accesible desde Port Douglas. Excelente visibilidad, id
 
 ## Vida marina
 
-La Gran Barrera es uno de los ecosistemas mas biodiversos del planeta:
+La Gran Barrera es uno de los ecosistemas más biodiversos del planeta:
 
 - **Tiburones:** Grises de arrecife, puntas blancas, puntas negras, wobbegongs. En Osprey Reef, martillos ocasionales.
 - **Rayas:** Mantas (estacionales), rayas aguila, rayas de arrecife.
-- **Ballenas minke enanas:** Junio-julio. Encuentros en el agua — una de las experiencias mas buscadas del mundo. Mike Ball opera salidas especificas para minke whales.
-- **Tortugas:** 6 de las 7 especies del mundo anidan aqui. Encuentros practicamente garantizados.
+- **Ballenas minke enanas:** Junio-julio. Encuentros en el agua — una de las experiencias más buscadas del mundo. Mike Ball opera salidas específicas para minke whales.
+- **Tortugas:** 6 de las 7 especies del mundo anidan aqui. Encuentros prácticamente garantizados.
 - **Macro:** Nudibranquios, peces pipa fantasma, caballitos de mar pigmeo (Steve's Bommie).
 - **Coral:** 400+ especies. Jardines de coral duro y blando en condiciones que pocas zonas del mundo pueden igualar.
 - **Iconicos:** Meros patata (Cod Hole), napoleones (Maori wrasse), peces payaso en todas sus variantes.
@@ -109,12 +109,12 @@ La Gran Barrera es uno de los ecosistemas mas biodiversos del planeta:
 
 El liveaboard es la forma seria de bucear la Gran Barrera. Los day trips cubren el arrecife interior y algunos puntos del exterior, pero los Ribbon Reefs, Osprey Reef y los mejores sitios solo se alcanzan embarcado.
 
-| Liveaboard | Itinerario principal | Duracion tipica | Precio aprox. |
+| Liveaboard | Itinerario principal | Duración típica | Precio aprox. |
 |------------|---------------------|-----------------|---------------|
-| **Mike Ball Spoilsport** | Cod Hole + Ribbon Reefs + Osprey Reef | 4-7 noches | 350-400 AUD/dia |
-| **Spirit of Freedom** | Ribbon Reefs + Cod Hole | 3-7 noches | 300-380 AUD/dia |
-| **Coral Sea Dreaming** | Osprey Reef + Mar del Coral | 5-7 noches | 280-350 AUD/dia |
-| **Reef Encounter** | Arrecife exterior desde Cairns | 2-3 noches | 250-320 AUD/dia |
+| **Mike Ball Spoilsport** | Cod Hole + Ribbon Reefs + Osprey Reef | 4-7 noches | 350-400 AUD/día |
+| **Spirit of Freedom** | Ribbon Reefs + Cod Hole | 3-7 noches | 300-380 AUD/día |
+| **Coral Sea Dreaming** | Osprey Reef + Mar del Coral | 5-7 noches | 280-350 AUD/día |
+| **Reef Encounter** | Arrecife exterior desde Cairns | 2-3 noches | 250-320 AUD/día |
 
 **Partnership Scibasku:** Mike Ball Dive Expeditions — 20% comision. Salidas especiales de ballenas minke en junio-julio.
 
@@ -122,7 +122,7 @@ El liveaboard es la forma seria de bucear la Gran Barrera. Los day trips cubren 
 
 | Operador | Desde | Tipo | Nota |
 |----------|-------|------|------|
-| **Quicksilver** | Port Douglas | Plataforma Agincourt Reef | El mas grande y establecido |
+| **Quicksilver** | Port Douglas | Plataforma Agincourt Reef | El más grande y establecido |
 | **Reef Magic** | Cairns | Plataforma arrecife exterior | Buena opcion economica |
 | **Sunlover Reef Cruises** | Cairns | Plataforma ponton | Partner Scibasku |
 | **Pro Dive Cairns** | Cairns | Day trip + cursos | Buenos precios para OWD |
@@ -133,14 +133,14 @@ Rango de precios day trip: 200-280 AUD por persona, inmersiones incluidas.
 
 ## Mejor época para ir
 
-| Periodo | Condiciones | Destacado |
+| Período | Condiciones | Destacado |
 |---------|-------------|-----------|
-| **Jun-Ago** (invierno) | Agua 22-24C, visibilidad maxima | Ballenas minke (jun-jul). Mejor visibilidad del ano |
-| **Sep-Nov** (primavera) | Agua 24-27C, buena visibilidad | Condiciones ideales, menos turismo que verano |
-| **Dic-Feb** (verano) | Agua 27-29C, visibilidad menor | Temporada de lluvias y medusas (stinger season) |
-| **Mar-May** (otono) | Agua 25-27C, mejorando | Transicion, buen compromiso temperatura/visibilidad |
+| **Jun-Ago** (invierno) | Agua 22-24 °C, visibilidad máxima | Ballenas minke (jun-jul). Mejor visibilidad del año |
+| **Sep-Nov** (primavera) | Agua 24-27 °C, buena visibilidad | Condiciones ideales, menos turismo que verano |
+| **Dic-Feb** (verano) | Agua 27-29 °C, visibilidad menor | Temporada de lluvias y medusas (stinger season) |
+| **Mar-May** (otono) | Agua 25-27 °C, mejorando | Transicion, buen compromiso temperatura/visibilidad |
 
-**Recomendacion Scibasku:** Junio a noviembre es la ventana optima. Si quieres ballenas minke, junio-julio es innegociable. Si priorizas comodidad termica, septiembre-noviembre combina buena visibilidad con agua mas calida.
+**Recomendacion Scibasku:** Junio a noviembre es la ventana óptima. Si quieres ballenas minke, junio-julio es innegociable. Si priorizas comodidad termica, septiembre-noviembre combina buena visibilidad con agua más cálida.
 
 **Nota sobre stinger season:** De noviembre a mayo hay presencia de medusas potencialmente peligrosas (box jellyfish, Irukandji). Se bucea con traje completo de lycra o neopreno fino. Los operadores proporcionan proteccion, pero es un factor a considerar.
 
@@ -150,11 +150,11 @@ Rango de precios day trip: 200-280 AUD por persona, inmersiones incluidas.
 |--------|---------|
 | Aeropuerto principal | Cairns (CNS) — puerta de entrada a la Gran Barrera norte |
 | Aeropuerto alternativo | Townsville (TSV) — para SS Yongala y arrecife central |
-| Vuelos internacionales | Via Sydney (SYD) o Melbourne (MEL) + vuelo domestico a Cairns |
+| Vuelos internacionales | Vía Sydney (SYD) o Melbourne (MEL) + vuelo domestico a Cairns |
 | Desde Espana | Madrid-Sydney/Melbourne (con escala) + Cairns. Total ~24-28h |
 | Lizard Island | Vuelo charter desde Cairns (~1h) |
 
-Cairns es la base logistica indiscutible. Todos los liveaboards y la mayoria de day trips salen de Cairns o Port Douglas (1h al norte de Cairns por carretera).
+Cairns es la base logística indiscutible. Todos los liveaboards y la mayoria de day trips salen de Cairns o Port Douglas (1h al norte de Cairns por carretera).
 
 ## Nivel requerido
 
@@ -167,21 +167,21 @@ La Gran Barrera tiene sitios para todos los niveles. Un buceador recien certific
 
 ## Consejo Scibasku
 
-La Gran Barrera es uno de esos destinos donde la diferencia entre un viaje bueno y uno extraordinario esta en la logistica. Un day trip desde Cairns al arrecife interior es agradable, pero no es la Gran Barrera que sale en los documentales. Para eso necesitas un liveaboard al arrecife exterior.
+La Gran Barrera es uno de esos destinos donde la diferencia entre un viaje bueno y uno extraordinario esta en la logística. Un day trip desde Cairns al arrecife interior es agradable, pero no es la Gran Barrera que sale en los documentales. Para eso necesitas un liveaboard al arrecife exterior.
 
-**Nuestra recomendacion:** Minimo 4 noches de liveaboard con Mike Ball (nuestro partner, 20% comision) cubriendo Cod Hole y Ribbon Reefs. Si el presupuesto y el tiempo lo permiten, la extension a Osprey Reef anade 2 noches y es un mundo aparte.
+**Nuestra recomendacion:** Mínimo 4 noches de liveaboard con Mike Ball (nuestro partner, 20% comision) cubriendo Cod Hole y Ribbon Reefs. Si el presupuesto y el tiempo lo permiten, la extensión a Osprey Reef anade 2 noches y es un mundo aparte.
 
-Para ballenas minke, las salidas especiales de Mike Ball en junio-julio son la referencia. Las plazas se agotan con meses de antelacion.
+Para ballenas minke, las salidas especiales de Mike Ball en junio-julio son la referencia. Las plazas se agotan con meses de antelación.
 
-Si combinas con un viaje terrestre por Australia, Cairns es perfecta como base: Gran Barrera + selva tropical de Daintree + Atherton Tablelands. Un combo de 10-12 dias cubre todo sin prisas.
+Si combinas con un viaje terrestre por Australia, Cairns es perfecta como base: Gran Barrera + selva tropical de Daintree + Atherton Tablelands. Un combo de 10-12 días cubre todo sin prisas.
 
 **Guia web Scibasku:** [Gran Barrera de Coral](https://gran-barrera-coral.vercel.app/)
 
 ## Fichas relacionadas
 
-- [[osprey-reef]] — Mar del Coral, pelagicos y paredes verticales
+- [[osprey-reef]] — Mar del Coral, pelágicos y paredes verticales
 - [[ss-yongala]] — El gran pecio de Australia
-- [[ribbon-reefs]] — Arrecife exterior pristino
+- [[ribbon-reefs]] — Arrecife exterior prístino
 - [[lizard-island]] — Resort de lujo con buceo directo
 - [[mar-rojo]] — Comparativa: otro gran destino de arrecife con liveaboards
 

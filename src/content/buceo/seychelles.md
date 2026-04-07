@@ -71,7 +71,7 @@ Seychelles es el destino del Índico occidental africano con más registro esté
 - **Brisants (Mahé)** — Inmersión icónica de Mahé; bloques de granito con esponjas y gorgonias, tiburones nodriza descansando en el fondo y vida de arrecife variada. Accesible desde OW y bien protegido del monzón en ambas estaciones.
 - **Shark Bank (Mahé)** — Montaña submarina a unos 20 minutos de Mahé en bote; punto de agregación de tiburones de arrecife, rayas y pelágicos de paso. Requiere algo de corriente y condiciones específicas — el nombre no engaña.
 - **Arrecifes de Praslin y La Digue** — Coral más sano que en zonas de Mahé; menos visitados y con buena diversidad. Las formaciones de granito crean paisajes únicos con luz filtrada.
-- **Aldabra (expedición)** — El atolón de Aldabra, Patrimonio de la Humanidad UNESCO y uno de los arrecifes más prístinos del mundo. Acceso exclusivamente en expedición liveaboard de lujo; corrientes fuertes, pelagicos grandes, tortugas gigantes de Aldabra en tierra. Una expedición de categoría mundial.
+- **Aldabra (expedición)** — El atolón de Aldabra, Patrimonio de la Humanidad UNESCO y uno de los arrecifes más prístinos del mundo. Acceso exclusivamente en expedición liveaboard de lujo; corrientes fuertes, pelágicos grandes, tortugas gigantes de Aldabra en tierra. Una expedición de categoría mundial.
 
 ## Vida marina
 
