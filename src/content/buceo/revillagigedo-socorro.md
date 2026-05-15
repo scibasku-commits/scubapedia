@@ -38,7 +38,7 @@ proveedores_scibasku: []
 precio_semana_aprox: "3.000–3.950 EUR (8–9 noches liveaboard, sin vuelos ni tasa parque)"
 giora_estuvo: false
 updated: 2026-05-15
-status: review
+status: published
 tags:
   - pacifico-este
   - pelagico
@@ -56,7 +56,9 @@ fuentes_principales:
   - "https://descubreanp.conanp.gob.mx/es/conanp/ANP?suri=143"
   - "https://www.fun-azulfleet.net/areaguide/168"
   - "https://www.zubludiving.com/s/liveaboards/mexico/baja-california/socorro-and-revillagigedo-islands"
-fuentes_doc: "docs/raw-revillagigedo-fuentes.md"
+fuentes_doc:
+  - "docs/raw-revillagigedo-fuentes.md"
+  - "docs/raw-revillagigedo-liveaboards.md"
 ---
 
 # Revillagigedo / Socorro — donde la manta gigante decide acercarse a ti
@@ -109,18 +111,41 @@ El elenco se completa con cardúmenes de **tiburones martillo (*Sphyrna lewini*)
 
 Sin liveaboard no hay buceo: el Parque no permite acceso desde tierra y las islas no tienen infraestructura turística. Las únicas instalaciones son dos bases de la Marina Mexicana cerradas al público.
 
-Seis embarcaciones operan rutas regulares según ZuBlu (mayo 2026):
+Seis embarcaciones tienen permiso CONANP para operar la temporada 2026/2027. Se reparten en tres operadores con filosofías muy distintas, y eso se nota a bordo. Datos cruzados con sus webs oficiales (ver `docs/raw-revillagigedo-liveaboards.md`).
 
-| Barco | Operador | Duración | Precio /huésped |
-|-------|----------|----------|-----------------|
-| Nautilus Explorer | Nautilus Liveaboards | 9D / 8N | US$3.245 |
-| Nautilus Belle Amie | Nautilus Liveaboards | 9D / 8N | US$3.245 |
-| Nautilus UnderSea | Nautilus Liveaboards | 9D / 8N | US$3.395–3.695 |
-| Rocio del Mar | — | 10D / 9N | US$4.295 |
-| Quino del Mar | — | 10D / 9N | US$4.295 |
-| M/V Valentina | Fun Azul Fleet | 10D / 9N | US$4.300 |
+| Barco | Operador | Año | Eslora | Pax | Cabinas | Duración | Precio /huésped |
+|-------|----------|-----|--------|-----|---------|----------|-----------------|
+| Nautilus Explorer | Nautilus Adventures | 2000 (refit 2018) | 40 m | 25 | 13 | 9D / 8N | US$3.245 |
+| Nautilus Belle Amie | Nautilus Adventures | 2015 | — | 32 | 17 | 9D / 8N | US$3.245 |
+| Nautilus UnderSea | Nautilus Adventures | 1968 (refit 2017) | 27–29 m | 19 | 9 | 9D / 8N | US$3.395–3.695 |
+| Rocio del Mar | Mexico Liveaboards | 2008 | 33 m | 20 | 10 | 10D / 9N | US$4.295 |
+| Quino del Mar | Mexico Liveaboards | 2025 | 36 m | 20 | 10 | 10D / 9N | US$4.295 |
+| M/V Valentina | Fun Azul Fleet | 1999 (refit 2013) | 38 m | 20 | 10 | 10D / 9N | US$4.300 |
 
-Salidas habituales desde Cabo San Lucas. La tasa del parque ($3.760 MXN/día/persona en 2026) se suma al precio del barco y se paga aparte.
+### Nautilus Adventures (Canadá / EE.UU.)
+
+Tres barcos de la flota más grande operando Socorro. Construcción de acero pesado canadiense, todos con certificación ISM y SOLAS — la misma que llevan los cruceros oceánicos. Hot tub a bordo, nitrox, rebreather friendly, wifi por satélite, bar bien surtido. Itinerarios de **8 noches desde Cabo San Lucas**, los más asequibles del destino.
+
+- **Nautilus Explorer** — el flagship, ampliado a 40 m en 2018 con un dive deck enorme y plataforma a nivel de agua. 13 cabinas, ratio crew/guest 1:2,5. Ventanas grandes en salón y comedor. Para quien quiere el clásico Nautilus probado.
+- **Nautilus Belle Amie** — el más nuevo y grande del fleet (2015). 17 cabinas, sun deck a toda eslora, suites premium tipo hotel boutique. Es el que más se asocia con la "Bait Ball Season" de junio. Hasta 32 huéspedes — si buscas ambiente íntimo, este no es.
+- **Nautilus UnderSea** — antigua *Undersea Hunter* de Cocos Island, reconstruida en 2017. Solo 19 huéspedes en 9 cabinas: el ratio crew/guest más bajo del destino (1:2). Más pequeño y más tranquilo, pensado para grupos íntimos y fotógrafos.
+
+### Mexico Liveaboards (Sonora, México)
+
+Operador familiar (Mark Moran) con dos barcos hermanos diseñados específicamente para buceadores. Itinerarios de **9 noches**, 20 inmersiones por viaje, salidas desde Cabo San Lucas. Coast Guard approved (US). Voltaje 110V, salones grandes con sofás oversize, dos duchas de agua dulce en dive deck.
+
+- **Rocio del Mar** — el veterano (2008), 33 m. Estabilización externa. 10 cabinas, todas ensuite, capacidad 20. Tiene una clientela fiel de fotógrafos.
+- **Quino del Mar** — el nuevo (2025), 36 m. Estabilización built-in *y* externa (mejor que Rocio en mar abierto). 10 cabinas privadas, layout idéntico a Rocio pero con más espacio en suites superiores. La opción si prefieres barco recién estrenado.
+
+### Fun Azul Fleet (Tokio / La Paz)
+
+- **M/V Valentina** — 38 m, refit 2013 sobre casco de 1999. 10 cabinas, capacidad 20, equipo bilingüe japonés/inglés/español. **Open bar incluido** (refrescos y draft beer; cócteles aparte) — el único de los seis con esta política. Cocina mexicana + europea + asiática + BBQ ocasional. En cooperación con Fun Baja (centro de buceo en La Paz) desde 2000. Para quien valora hospitalidad japonesa con sabor mexicano y buen comer a bordo.
+
+### Lectura rápida
+
+¿Primer Socorro y presupuesto controlado? Nautilus Explorer o Belle Amie (8N, US$3.245). ¿Grupo pequeño y fotografía? UnderSea o Rocio del Mar. ¿Barco recién estrenado? Quino del Mar. ¿Open bar y comida memorable? M/V Valentina.
+
+La tasa del parque ($3.760 MXN/persona/día en 2026) se suma al precio del barco y se paga aparte. Para 8 días son unos 30.080 MXN extra (~1.500 USD), para 9 días unos 33.840 MXN (~1.700 USD). No es una sorpresa al embarque — los operadores la facturan claramente desde la oferta.
 
 ## Mejor época para ir
 
