@@ -1,0 +1,58 @@
+---
+import '../styles/global.css';
+const CRUCERO = 'https://crucerobuceo.com';
+const WA = 'https://wa.me/34619401041';
+---
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página no encontrada — Scubapedia</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <style is:global>
+    :root{--aqua:#16A6C9;--azul:#0A5570;--azul-ink:#073f54;--deep:#06283a;
+      --serif:"Fraunces",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif;}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--sans);background:var(--deep);color:#eaf6f9;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;position:relative;overflow:hidden}
+    .bg{position:absolute;inset:0;z-index:0;background:
+      radial-gradient(120% 80% at 50% -10%, rgba(70,190,220,.30) 0%, rgba(70,190,220,0) 55%),
+      linear-gradient(180deg,#0c6884 0%,#0a4a63 42%,#04212f 100%)}
+    .rays{position:absolute;inset:0;z-index:1;opacity:.5;mix-blend-mode:screen;background:repeating-linear-gradient(101deg, rgba(180,235,250,.07) 0 2px, transparent 2px 46px)}
+    .wv{position:absolute;left:0;right:0;bottom:-2px;z-index:1;opacity:.2}
+    .wv svg{width:140%;margin-left:-20%;height:auto;display:block}
+    .inner{position:relative;z-index:2;max-width:560px}
+    .logo{width:min(360px,80vw);height:auto;margin:0 auto 36px;filter:brightness(0) invert(1)}
+    .code{font-family:var(--serif);font-size:clamp(64px,16vw,140px);line-height:.9;font-weight:500;color:#fff;letter-spacing:-.02em}
+    h1{font-family:var(--serif);font-weight:500;font-size:clamp(1.4rem,3.4vw,2.1rem);margin:14px 0 12px;color:#fff}
+    p{color:#cfe4ea;font-size:17px;line-height:1.55;max-width:46ch;margin:0 auto 30px}
+    .actions{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-size:15.5px;font-weight:600;text-decoration:none;transition:transform .15s ease,background .2s ease}
+    .btn:hover{transform:translateY(-2px)}
+    .btn.primary{background:#fff;color:var(--azul)}
+    .btn.ghost{border:1px solid #ffffff66;color:#eaf6f9}
+    .btn.ghost:hover{background:#ffffff14}
+  </style>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="rays"></div>
+  <div class="wv">
+    <svg viewBox="0 0 224.8 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 37s21.3-24.7 28-25.9c6.8-1.2 18.5 16.7 21.8 15.7 3.3-1 22.5-25.6 26.3-26.8 3.8-1.2 28.2 24.8 31.1 29.2 2.9 4.4 3.8 7.7-.9 3.5-5.9-5.1-18.1-18.9-18.9-18.6-.8.3-4.5 11.5-6.4 10.9-2-.6-6.1-12-6.9-11.4-.8.5-4.9 7-6 6.9s-3.3-4.9-3.3-4.9-11.6 16.3-15.1 15C46.3 29.4 39 22.3 39 22.3s-.4 5.1-.9 5.3c-.5.2-.7 1.7-8.5-5.4 0 0-3.3 8-4.9 8s-4.9-8.9-4.9-8.9S1 43.6 0 37z" fill="#cdeef6"/></svg>
+  </div>
+  <div class="inner">
+    <img class="logo" src="/scubapedia-logo-nav.png" alt="Scubapedia" />
+    <div class="code">404</div>
+    <h1>Esta inmersión no existe</h1>
+    <p>La página que buscabas se ha hundido, o nunca estuvo en la carta. Vuelve a la superficie y empieza de nuevo.</p>
+    <div class="actions">
+      <a class="btn primary" href="/">Volver a la portada</a>
+      <a class="btn ghost" href={WA} target="_blank" rel="noopener">Preguntarle a Giora</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -2,3 +2,10 @@ node_modules/
 dist/
 .env
 .DS_Store
+
+# build cache / herramientas / trabajo (no van a producción)
+.astro/
+.claude/
+screenshots/
+graphify-out/
+.graphifyignore

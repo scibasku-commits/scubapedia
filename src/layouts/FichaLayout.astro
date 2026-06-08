@@ -1,247 +1,503 @@
 ---
-import BaseLayout from './BaseLayout.astro';
+import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
-// Note: In Astro v6 glob loader, use entry.id (not entry.slug)
+import { normalizeZona, zonaSlug, zonaGradient } from '../lib/zonas';
+import { chips, lede, railRows, breadcrumb, liveaboards, certCorta } from '../lib/ficha-datos';
+import { crucerobuceoSlug, crucerobuceoUrl } from '../lib/crucerobuceo';
+import { destinoImage } from '../lib/imagen';
+import '../styles/global.css';
 
+interface Heading { depth: number; slug: string; text: string; }
 interface Props {
   entry: CollectionEntry<'buceo'>;
+  headings?: Heading[];
 }
 
-const { entry } = Astro.props;
-const fm = entry.data;
+const { entry, headings = [] } = Astro.props;
+const d = entry.data as Record<string, any>;
+const id = entry.id.replace(/\.md$/, '');
 
-// Cert badge class
-function certClass(cert: string): string {
-  const c = cert.toLowerCase();
-  if (c.includes('técnico') || c.includes('tecnico') || c.includes('tec ')) return 'cert-tech';
-  if (c.includes('aowd') || c.includes('advanced open')) return 'cert-aowd';
-  if (c.includes('advanced') || c.includes('avanzado')) return 'cert-advanced';
-  if (c.includes('ow') || c.includes('open water')) return 'cert-ow';
-  if (c.includes('no requerida') || c.includes('sin cert')) return 'cert-none';
-  return 'cert-ow';
-}
+const CRUCERO = 'https://crucerobuceo.com';
+const WA = 'https://wa.me/34619401041';
 
-// Breadcrumb
-const regionLabel = fm.region || 'Destinos';
-const paisLabel = fm.pais || '';
+const titleFull = d.title as string;
+const titleShort = titleFull.split(' - ')[0].split(' — ')[0].trim();
+const zona = normalizeZona(d.region || '');
+const grad = zonaGradient(zona);
+const regionShort = typeof d.region === 'string' ? d.region.split(',')[0].trim() : '';
 
-// Cross-site linking: map scubapedia entry.id → crucerobuceo data-dest slug
-const DEST_MAP: Record<string, string> = {
-  // Mar Rojo
-  'mar-rojo-overview': 'mar-rojo', 'hurghada': 'mar-rojo', 'sharm-el-sheikh': 'mar-rojo',
-  'marsa-alam': 'mar-rojo', 'dahab': 'mar-rojo', 'ras-mohammed': 'mar-rojo',
-  'brother-islands': 'mar-rojo', 'daedalus-reef': 'mar-rojo', 'elphinstone-reef': 'mar-rojo',
-  'fury-shoals': 'mar-rojo', 'safaga-hurghada-norte': 'mar-rojo', 'strait-of-tiran': 'mar-rojo',
-  'sudan-mar-rojo': 'mar-rojo', 'st-johns': 'mar-rojo',
-  // Maldivas
-  'maldivas-south-ari': 'maldivas', 'maldivas-north-ari': 'maldivas',
-  'maldivas-baa-hanifaru': 'maldivas', 'maldivas-lhaviyani': 'maldivas',
-  'maldivas-fuvahmulah': 'maldivas', 'maldivas-huvadhoo': 'maldivas',
-  'maldivas-addu': 'maldivas', 'maldivas-south-male': 'maldivas',
-  'maldivas-atolones-norte': 'maldivas',
-  // Indonesia
-  'raja-ampat': 'indonesia', 'komodo': 'indonesia', 'bali-nusa-penida': 'indonesia',
-  'banda-sea': 'indonesia', 'alor': 'indonesia',
-  // Tailandia
-  'similan-surin-richelieu': 'tailandia', 'koh-tao': 'tailandia',
-  // Cuba
-  'jardines-reina-cuba': 'cuba',
-  // Filipinas
-  'anilao': 'filipinas', 'apo-island': 'filipinas', 'malapascua': 'filipinas',
-  'moalboal': 'filipinas', 'coron': 'filipinas', 'puerto-galera': 'filipinas',
-  'zamboanga': 'filipinas', 'tubbataha': 'filipinas',
-  // Palau
-  'palau': 'palau',
-  // Galápagos
-  'galapagos': 'galapagos',
-  // Cocos
-  'cocos-island': 'cocos',
-  // Belize
-  'belice': 'belize',
-  // Bahamas
-  'bahamas': 'bahamas',
-  // Arabia Saudita
-  'arabia-saudi': 'arabia-saudita',
-  // Honduras
-  'roatan-utila': 'honduras',
-  // Islas Caimán
-  'cayman-islands': 'cayman',
-  // Islas Salomón
-  'islas-salomon': 'salomon',
-  // México
-  'revillagigedo-socorro': 'mexico', 'baja-california-la-paz': 'mexico', 'cozumel': 'mexico',
-  // Australia
-  'gran-barrera': 'australia', 'ningaloo': 'australia', 'rowley-shoals': 'australia',
-  // Caribe
-  'bonaire': 'caribe', 'curacao': 'caribe', 'tobago': 'caribe',
-  // Pacífico
-  'fakarava': 'pacifico', 'rangiroa': 'pacifico', 'fiji': 'pacifico',
-  'tonga': 'pacifico', 'yap': 'pacifico', 'chuuk-lagoon': 'pacifico',
-  // Malasia
-  'sipadan-mabul': 'filipinas', 'layang-layang': 'filipinas',
-  'tioman-perhentian': 'filipinas',
+const chipList = chips(d);
+const ledeParts = lede(d);
+const rows = railRows(d);
+const crumbs = breadcrumb(d);
+const lives = liveaboards(d, 5);
+
+// Cross-site → crucerobuceo (deep-link por destino si existe; si no, home)
+const cbSlug = crucerobuceoSlug(id);
+const cbUrl = crucerobuceoUrl(id);
+
+// Foto real del destino (Cloudinary, vía crucerobuceo); null → degradado de zona
+const heroImg = destinoImage(id, 'hero');
+
+// Relacionadas: hasta 4 de la misma zona (excluyendo la actual)
+const allBuceo = await getCollection('buceo');
+const cercanas = allBuceo
+  .filter((e) => e.id !== entry.id && normalizeZona(e.data.region || '') === zona)
+  .sort((a, b) => a.data.title.localeCompare(b.data.title))
+  .slice(0, 4)
+  .map((e) => {
+    const cid = e.id.replace(/\.md$/, '');
+    return {
+      id: cid,
+      title: (e.data.title as string).split(' - ')[0].split(' — ')[0].trim(),
+      region: (e.data.region || '').split(',')[0].trim(),
+      cert: certCorta(e.data.certificacion_minima || ''),
+      grad: zonaGradient(normalizeZona(e.data.region || '')),
+      img: destinoImage(cid, 'card'),
+    };
+  });
+
+const h2 = headings.filter((h) => h.depth === 2);
+
+const canonicalUrl = new URL(`/destinos/${id}/`, Astro.site ?? 'https://destinos.crucerobuceo.com').toString();
+const ogImage = destinoImage(id, 'og') ?? new URL('/og-default.png', Astro.site ?? 'https://destinos.crucerobuceo.com').toString();
+const pageTitle = `${titleShort} · Ficha de buceo — Scubapedia`;
+const desc = `Buceo en ${d.pais || titleShort}: ${d.visibilidad_media || 'visibilidad variable'}, ${d.temperatura_agua_min}–${d.temperatura_agua_max}°C. Cert. mínima: ${d.certificacion_minima || 'OW'}.`;
+const arrow = '<path d="M5 12h14M13 6l6 6-6 6"/>';
+
+const jsonLd: Record<string, unknown> = {
+  '@context': 'https://schema.org', '@type': 'TouristAttraction',
+  name: titleShort, url: canonicalUrl, description: desc, touristType: 'Buceadores',
 };
-
-const crucerobuceoSlug = DEST_MAP[entry.id] || null;
-const crucerobuceoUrl = crucerobuceoSlug ? `https://crucerobuceo.com/buceo-en/${crucerobuceoSlug}` : null;
+if (d.pais) jsonLd.containedInPlace = { '@type': 'Country', name: d.pais };
+if (cbSlug) jsonLd.isPartOf = { '@type': 'TouristDestination', name: `Cruceros de buceo en ${d.pais}`, url: cbUrl };
 ---
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{pageTitle}</title>
+  <meta name="description" content={desc} />
+  <link rel="canonical" href={canonicalUrl} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta property="og:title" content={pageTitle} />
+  <meta property="og:description" content={desc} />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:site_name" content="Scubapedia" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:image" content={ogImage} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={pageTitle} />
+  <meta name="twitter:description" content={desc} />
+  <meta name="twitter:image" content={ogImage} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-LHZYGMPX6K"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LHZYGMPX6K');
+  </script>
+  <style is:global>
+    :root{
+      --crema:#fbf8f3; --papel:#ffffff; --tinta:#1a1a1a; --gris:#8a8073; --borde:#e5ddd1;
+      --aqua:#16A6C9; --azul:#0A5570; --azul-ink:#073f54; --aqua-suave:#e7f5f9; --deep:#06283a;
+      --serif:"Fraunces",Georgia,serif; --sans:"DM Sans",system-ui,sans-serif; --maxw:1240px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:96px;background:var(--crema)}
+    body{margin:0;font-family:var(--sans);color:var(--tinta);background:var(--crema);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+    img{display:block;max-width:100%}
+    a{color:var(--azul);text-decoration:none}
+    a:hover{text-decoration:underline;text-underline-offset:3px}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+    .kicker{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gris);display:inline-flex;align-items:center;gap:10px}
+    .kicker::before{content:"";width:22px;height:2px;background:var(--aqua);display:inline-block}
 
-<BaseLayout title={fm.title} description={`Guía de buceo en ${fm.pais}: ${fm.visibilidad_media} visibilidad, ${fm.temperatura_agua_min}–${fm.temperatura_agua_max}°C. Cert. mínima: ${fm.certificacion_minima}.`}>
+    /* header */
+    header.top{position:sticky;top:0;z-index:60;background:rgba(251,248,243,.86);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--borde)}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;height:64px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand img{height:38px;width:auto}
+    .brand .sep{width:1px;height:24px;background:var(--borde)}
+    .brand .cat{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gris)}
+    .top nav{display:flex;align-items:center;gap:30px}
+    .top nav a{color:var(--tinta);font-size:14.5px;font-weight:500}
+    .top nav a:hover{color:var(--azul);text-decoration:none}
+    .top .cta-mini{display:inline-flex;align-items:center;gap:8px;background:var(--azul);color:#fff;padding:9px 16px;border-radius:999px;font-size:14px;font-weight:600;opacity:0;transform:translateY(-6px);pointer-events:none;transition:opacity .3s ease,transform .3s ease}
+    .top .cta-mini.show{opacity:1;transform:none;pointer-events:auto}
+    .top .cta-mini:hover{background:var(--azul-ink);text-decoration:none;color:#fff}
 
-  <div style="max-width: 1200px; margin: 0 auto; padding: 1.5rem;">
+    /* hero (fondo de profundidad por zona) */
+    .hero{position:relative;min-height:78vh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background:var(--deep)}
+    .hero .bg{position:absolute;inset:0;z-index:0}
+    .hero img.bg{width:100%;height:100%;object-fit:cover;object-position:center 42%}
+    .hero .rays{position:absolute;inset:0;z-index:1;opacity:.5;mix-blend-mode:screen;background:repeating-linear-gradient(101deg, rgba(180,235,250,.07) 0 2px, transparent 2px 46px);pointer-events:none}
+    .hero .scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(to top, rgba(4,18,28,.82) 0%, rgba(4,18,28,.34) 36%, rgba(4,18,28,0) 64%)}
+    .hero .wv{position:absolute;left:0;right:0;bottom:-2px;z-index:1;opacity:.18;pointer-events:none}
+    .hero .wv svg{width:130%;margin-left:-15%;height:auto;display:block}
+    .hero-content{position:relative;z-index:2;padding-bottom:54px}
+    .hero .breadcrumb{color:rgba(234,246,249,.8);font-size:13px;font-weight:500;letter-spacing:.04em;margin-bottom:22px}
+    .hero .breadcrumb a{color:rgba(234,246,249,.8)}
+    .hero .breadcrumb a:hover{color:#fff}
+    .hero .breadcrumb .here{color:#fff}
+    .hero-kicker{color:var(--aqua);font-size:12.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;display:flex;align-items:center;gap:12px;margin-bottom:18px}
+    .hero-kicker::before{content:"";width:30px;height:2px;background:var(--aqua)}
+    .hero h1{font-family:var(--serif);font-weight:500;font-optical-sizing:auto;color:#fff;font-size:clamp(2.6rem,7vw,6.4rem);line-height:.96;letter-spacing:-.02em;margin:0 0 22px;text-shadow:0 2px 40px rgba(0,0,0,.35);max-width:18ch}
+    .hero .lede{color:rgba(234,246,249,.92);font-size:clamp(1rem,1.9vw,1.32rem);font-weight:500;max-width:54ch;line-height:1.45;margin:0}
+    .hero .lede .dot{color:var(--aqua);padding:0 .35em}
+    .hero .giora-flag{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-size:13px;font-weight:600;letter-spacing:.04em;background:rgba(255,255,255,.92);color:var(--azul-ink);padding:7px 14px;border-radius:999px}
 
-    <!-- Breadcrumb -->
-    <nav style="font-size: 0.8rem; color: #64748b; margin-bottom: 1rem;">
-      <a href="/destinos" style="color: #0891b2; text-decoration: none;">Inicio</a>
-      <span style="margin: 0 0.4rem;">›</span>
-      <a href={`/destinos?region=${encodeURIComponent(regionLabel)}`} style="color: #0891b2; text-decoration: none;">{regionLabel}</a>
-      {paisLabel && <>
-        <span style="margin: 0 0.4rem;">›</span>
-        <span>{paisLabel}</span>
-      </>}
+    /* chipbar */
+    .chipbar{background:var(--papel);border-bottom:1px solid var(--borde)}
+    .chipbar .wrap{display:flex;flex-wrap:wrap;align-items:stretch;gap:0;padding-top:0;padding-bottom:0}
+    .chip{flex:1 1 0;min-width:140px;padding:22px 24px;border-right:1px solid var(--borde);display:flex;flex-direction:column;gap:4px}
+    .chip:last-child{border-right:none}
+    .chip .num{font-family:var(--serif);font-weight:600;font-size:1.4rem;line-height:1.05;color:var(--tinta);letter-spacing:-.01em}
+    .chip .lab{font-size:12.5px;color:var(--gris);font-weight:500;letter-spacing:.03em}
+    .chip.flag .num{color:var(--azul);font-size:1.2rem}
+
+    /* cta band */
+    .cta-band{background:var(--crema);padding:30px 0;border-bottom:1px solid var(--borde)}
+    .cta-band .wrap{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
+    .cta-copy{display:flex;flex-direction:column;gap:3px}
+    .cta-copy .t{font-family:var(--serif);font-size:1.4rem;font-weight:600;line-height:1.1}
+    .cta-copy .s{font-size:14px;color:var(--gris)}
+    .btn-primary{display:inline-flex;align-items:center;gap:12px;background:var(--azul);color:#fff;padding:17px 30px;border-radius:999px;font-size:17px;font-weight:600;box-shadow:0 10px 26px -10px rgba(10,85,112,.7);transition:transform .15s ease,background .2s ease,box-shadow .2s ease;white-space:nowrap}
+    .btn-primary:hover{background:var(--azul-ink);text-decoration:none;color:#fff;transform:translateY(-2px);box-shadow:0 16px 32px -12px rgba(10,85,112,.75)}
+    .btn-primary svg{width:18px;height:18px}
+    .btn-primary .arrow{transition:transform .2s ease}
+    .btn-primary:hover .arrow{transform:translateX(4px)}
+
+    /* body grid */
+    .body-section{padding:74px 0 30px}
+    .grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:60px;align-items:start}
+
+    /* editorial column */
+    .article{min-width:0}
+    .article h1{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+    .article h2{font-family:var(--serif);font-weight:600;font-optical-sizing:auto;font-size:clamp(1.7rem,3.2vw,2.4rem);line-height:1.1;letter-spacing:-.015em;margin:48px 0 16px;scroll-margin-top:96px}
+    .article h2:first-of-type{margin-top:0}
+    .article h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;margin:30px 0 8px;letter-spacing:-.01em}
+    .article p{margin:0 0 18px;max-width:64ch;color:#2a2622}
+    .article blockquote{margin:0 0 30px;font-size:1.3rem;line-height:1.5;color:var(--tinta);font-weight:500;max-width:60ch;border:0;padding:0;font-style:normal}
+    .article blockquote p{color:var(--tinta)}
+    .article strong{font-weight:600;color:var(--tinta)}
+    .article em{font-style:italic;color:var(--azul);font-weight:500}
+    .article a{color:var(--azul);text-decoration:underline;text-underline-offset:3px}
+    .article ul,.article ol{margin:0 0 18px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:10px;max-width:64ch}
+    .article ul li{position:relative;padding-left:26px;color:#2a2622;line-height:1.45}
+    .article ul li::before{content:"";position:absolute;left:6px;top:.7em;width:7px;height:7px;border-radius:50%;background:var(--aqua);transform:translateY(-50%)}
+    .article ol{counter-reset:li}
+    .article ol li{counter-increment:li;position:relative;padding-left:30px;color:#2a2622}
+    .article ol li::before{content:counter(li);position:absolute;left:0;top:0;font-family:var(--serif);font-weight:600;color:var(--azul)}
+    .article table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+    .article th,.article td{border:1px solid var(--borde);padding:8px 12px;text-align:left;vertical-align:top}
+    .article th{background:var(--aqua-suave)}
+    .article tr:nth-child(even) td{background:#faf7f1}
+    .article img{border-radius:14px;margin:24px 0}
+    .article hr{border:0;border-top:1px solid var(--borde);margin:40px 0}
+    /* ocultar bloques de código (la ficha guarda el JSON-LD en un code block) */
+    .article pre,.article :not(pre)>code{display:none}
+
+    /* sticky rail */
+    .rail{position:sticky;top:88px;display:flex;flex-direction:column;gap:22px}
+    .card{background:var(--papel);border:1px solid var(--borde);border-radius:16px;overflow:hidden}
+    .card .hd{padding:16px 22px;border-bottom:1px solid var(--borde);display:flex;align-items:center;justify-content:space-between}
+    .card .hd h2{margin:0;font-family:var(--serif);font-size:1.18rem;font-weight:600;white-space:nowrap}
+    .card .hd .tick{width:8px;height:8px;border-radius:50%;background:var(--aqua)}
+    .ficha-rows{padding:6px 22px 14px}
+    .ficha-rows .row{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid #f0e9dd;font-size:14.5px}
+    .ficha-rows .row:last-child{border-bottom:none}
+    .ficha-rows .row .k{color:var(--gris);flex:0 0 auto}
+    .ficha-rows .row .v{font-weight:600;text-align:right;flex:1 1 auto;min-width:0}
+    .ficha-rows .row .v.hi{color:var(--azul)}
+    .card .foot{padding:16px 22px;border-top:1px solid var(--borde);background:var(--crema)}
+    .btn-rail{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;background:var(--azul);color:#fff;padding:13px;border-radius:10px;font-size:15px;font-weight:600}
+    .btn-rail:hover{background:var(--azul-ink);text-decoration:none;color:#fff}
+    .lives{padding:8px 22px 16px;display:flex;flex-direction:column;gap:0}
+    .lives .lv{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid #f0e9dd;font-size:14.5px;color:var(--tinta)}
+    .lives .lv:last-child{border-bottom:none}
+    .lives .lv::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--aqua);flex:none}
+    .toc{padding:8px 0}
+    .toc a{display:flex;align-items:center;gap:12px;padding:9px 22px;color:var(--gris);font-size:14.5px;font-weight:500;border-left:2px solid transparent}
+    .toc a .n{font-family:var(--serif);font-size:12px;color:#c2b8a6;width:16px}
+    .toc a:hover{color:var(--tinta);text-decoration:none;background:var(--crema)}
+    .toc a.active{color:var(--azul);border-left-color:var(--aqua);background:var(--aqua-suave)}
+    .toc a.active .n{color:var(--azul)}
+
+    /* related */
+    .related{padding:80px 0;background:var(--crema);border-top:1px solid var(--borde)}
+    .related .head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:32px;flex-wrap:wrap}
+    .related h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.8rem,3.2vw,2.4rem);margin:10px 0 0;letter-spacing:-.015em}
+    .related .head p{margin:0;color:var(--gris);font-size:15px;max-width:40ch}
+    .cards4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+    .scard{background:var(--papel);border:1px solid var(--borde);border-radius:16px;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease;display:flex;flex-direction:column}
+    .scard:hover{transform:translateY(-4px);box-shadow:0 18px 38px -20px rgba(26,26,26,.3);text-decoration:none}
+    .scard .ph{aspect-ratio:4/3;position:relative;overflow:hidden;display:flex;align-items:flex-end}
+    .scard .ph .g{position:absolute;inset:0}
+    .scard .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+    .scard:hover .ph img{transform:scale(1.05)}
+    .scard .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(4,18,28,.5),transparent 55%)}
+    .scard .ph .tag{position:relative;z-index:2;font-family:"DM Sans",sans-serif;font-size:11px;letter-spacing:.06em;color:#eaf6f9;padding:5px 9px;margin:10px;text-shadow:0 2px 10px rgba(0,0,0,.4)}
+    .scard .meta{padding:16px 18px 18px;display:flex;flex-direction:column;gap:4px;flex:1}
+    .scard .meta .nm{font-family:var(--serif);font-weight:600;font-size:1.2rem;color:var(--tinta);letter-spacing:-.01em}
+    .scard .meta .st{font-size:13.5px;color:var(--gris)}
+    .scard .meta .go{margin-top:10px;font-size:13.5px;font-weight:600;color:var(--azul);display:flex;align-items:center;gap:6px}
+    .scard:hover .meta .go .arrow{transform:translateX(4px)}
+    .scard .meta .go .arrow{transition:transform .2s ease}
+
+    /* tags */
+    .tagrow{display:flex;flex-wrap:wrap;gap:8px;margin:36px 0 0;list-style:none;padding:0}
+    .tagrow span{font-size:12.5px;padding:6px 12px;border-radius:999px;border:1px solid var(--borde);color:var(--gris);background:var(--papel)}
+
+    /* closer */
+    .closer{background:var(--azul);color:#fff;padding:70px 0}
+    .closer .wrap{display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
+    .closer .lt{max-width:52ch}
+    .closer .kicker{color:rgba(255,255,255,.8)}
+    .closer .kicker::before{background:rgba(255,255,255,.7)}
+    .closer h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,3.4vw,2.7rem);line-height:1.1;margin:14px 0 8px;letter-spacing:-.01em}
+    .closer p{margin:0;color:rgba(255,255,255,.85);font-size:16px}
+    .btn-white{display:inline-flex;align-items:center;gap:12px;background:#fff;color:var(--azul);padding:18px 32px;border-radius:999px;font-size:17px;font-weight:700;white-space:nowrap;box-shadow:0 12px 30px -12px rgba(0,0,0,.4);transition:transform .15s ease}
+    .btn-white:hover{transform:translateY(-2px);text-decoration:none;color:var(--azul)}
+    .btn-white .arrow{transition:transform .2s ease}
+    .btn-white:hover .arrow{transform:translateX(4px)}
+
+    /* footer */
+    footer.foot{background:var(--crema);border-top:1px solid var(--borde);padding:40px 0}
+    footer.foot .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    footer.foot .back{font-size:14.5px;font-weight:600;display:inline-flex;align-items:center;gap:8px}
+    footer.foot img{height:30px;opacity:.85}
+    footer.foot .fine{font-size:12.5px;color:var(--gris)}
+
+    /* fab */
+    .fab{position:fixed;right:22px;bottom:22px;z-index:80;display:inline-flex;align-items:center;gap:10px;background:var(--azul);color:#fff;border:0;border-radius:999px;padding:13px 20px 13px 16px;font-family:var(--sans);font-size:15px;font-weight:600;cursor:pointer;box-shadow:0 16px 40px -14px rgba(4,18,28,.6);text-decoration:none;transition:transform .2s,background .2s}
+    .fab:hover{transform:translateY(-2px);background:var(--azul-ink);text-decoration:none;color:#fff}
+    .fab svg{width:20px;height:20px}
+
+    @media (max-width:980px){
+      .grid{grid-template-columns:1fr;gap:40px}
+      .rail{position:static}
+      .cards4{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:680px){
+      body{font-size:16.5px}
+      .wrap{padding:0 20px}
+      .top nav{display:none}
+      .chip{flex:1 1 50%;border-bottom:1px solid var(--borde)}
+      .chip:nth-child(odd){border-right:1px solid var(--borde)}
+      .chip:nth-child(even){border-right:none}
+      .cards4{grid-template-columns:1fr}
+      .cta-band .wrap{justify-content:center;text-align:center}
+      .btn-primary{width:100%;justify-content:center}
+      .fab span{display:none}
+    }
+    @media (prefers-reduced-motion:reduce){*{animation:none !important;scroll-behavior:auto !important}}
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="/" aria-label="Scubapedia — inicio">
+      <img src="/scubapedia-logo-nav.png" alt="Scubapedia" />
+      <span class="sep"></span>
+      <span class="cat">Ficha de buceo</span>
+    </a>
+    <nav>
+      {h2.slice(0, 4).map((h) => <a href={`#${h.slug}`}>{h.text}</a>)}
+      <a class="cta-mini" id="ctaMini" href={cbUrl} target="_blank" rel="noopener">Ver y reservar</a>
     </nav>
+  </div>
+</header>
 
-    <!-- Title -->
-    <h1 style="font-size: 1.75rem; font-weight: 700; color: #0d1b2a; margin-bottom: 0.25rem; line-height: 1.3;">
-      {fm.title}
-    </h1>
-    <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 1.5rem;">
-      {fm.region} · {fm.pais} ·
-      <span class={`cert-badge ${certClass(fm.certificacion_minima)}`}>{fm.certificacion_minima}</span>
-      {fm.giora_estuvo && <span class="giora-badge" style="margin-left: 0.5rem;">✓ Giora estuvo aquí</span>}
-    </p>
+<section class="hero">
+  {heroImg
+    ? <img class="bg" src={heroImg} alt={`Buceo en ${titleShort}`} fetchpriority="high" />
+    : <div class="bg" style={`background:${grad}`}></div>}
+  <div class="rays"></div>
+  <div class="scrim"></div>
+  <div class="wv">
+    <svg viewBox="0 0 224.8 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 37s21.3-24.7 28-25.9c6.8-1.2 18.5 16.7 21.8 15.7 3.3-1 22.5-25.6 26.3-26.8 3.8-1.2 28.2 24.8 31.1 29.2 2.9 4.4 3.8 7.7-.9 3.5-5.9-5.1-18.1-18.9-18.9-18.6-.8.3-4.5 11.5-6.4 10.9-2-.6-6.1-12-6.9-11.4-.8.5-4.9 7-6 6.9s-3.3-4.9-3.3-4.9-11.6 16.3-15.1 15C46.3 29.4 39 22.3 39 22.3s-.4 5.1-.9 5.3c-.5.2-.7 1.7-8.5-5.4 0 0-3.3 8-4.9 8s-4.9-8.9-4.9-8.9S1 43.6 0 37z" fill="#cdeef6"/></svg>
+  </div>
+  <div class="hero-content">
+    <div class="wrap">
+      <div class="breadcrumb">
+        <a href="/">Inicio</a>
+        {crumbs.map((c) => <> · <span>{c}</span></>)}
+        <> · <span class="here">{titleShort}</span></>
+      </div>
+      {(regionShort || d.pais) && <div class="hero-kicker">{[regionShort, d.pais].filter(Boolean).filter((v, i, a) => a.indexOf(v) === i).join(' · ')}</div>}
+      <h1>{titleShort}</h1>
+      {ledeParts.length > 0 && (
+        <p class="lede">{ledeParts.map((p, i) => <>{i > 0 && <span class="dot">·</span>}{p}</>)}</p>
+      )}
+      {d.giora_estuvo && <div class="giora-flag">✦ Giora buceó aquí</div>}
+    </div>
+  </div>
+</section>
 
-    <!-- Two-column layout: TOC left + content right -->
-    <div style="display: grid; grid-template-columns: 200px 1fr; gap: 2rem; align-items: start;">
+{chipList.length > 0 && (
+  <section class="chipbar" aria-label="Datos clave">
+    <div class="wrap">
+      {chipList.map((c) => (
+        <div class={`chip${c.flag ? ' flag' : ''}`}><span class="num">{c.num}</span><span class="lab">{c.lab}</span></div>
+      ))}
+    </div>
+  </section>
+)}
 
-      <!-- Left: TOC (desktop only) -->
-      <aside style="display: none;" class="toc-sidebar">
-        <div class="toc">
-          <div class="toc-title">Contenido</div>
-          <a href="#resumen">Resumen</a>
-          <a href="#datos-técnicos">Datos técnicos</a>
-          <a href="#puntos-de-inmersión-destacados">Puntos de inmersión</a>
-          <a href="#vida-marina">Vida marina</a>
-          <a href="#liveaboards">Liveaboards</a>
-          <a href="#mejor-época-para-ir">Mejor época</a>
-          <a href="#cómo-llegar">Cómo llegar</a>
-          <a href="#nivel-requerido">Nivel requerido</a>
+<section class="cta-band">
+  <div class="wrap">
+    <div class="cta-copy">
+      <span class="t">¿Te vienes a bucear {titleShort}?</span>
+      <span class="s">Liveaboards y viajes completos — fechas reales, barcos y reserva en un sitio.</span>
+    </div>
+    <a class="btn-primary" href={cbUrl} target="_blank" rel="noopener" data-source="ficha-cta-to-crucerobuceo">
+      Ver y reservar en crucerobuceo
+      <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" set:html={arrow} />
+    </a>
+  </div>
+</section>
+
+<div class="body-section">
+  <div class="wrap grid">
+    <article class="article" data-pagefind-body>
+      <slot />
+      {Array.isArray(d.tags) && d.tags.length > 0 && (
+        <ul class="tagrow">
+          {d.tags.slice(0, 12).map((t: string) => <li><span>#{t}</span></li>)}
+        </ul>
+      )}
+      {d.updated && <p style="margin-top:24px;font-size:12.5px;color:var(--gris)">Última revisión: {d.updated}</p>}
+    </article>
+
+    <aside class="rail" aria-label="Ficha técnica e índice">
+      {rows.length > 0 && (
+        <div class="card">
+          <div class="hd"><h2>Ficha técnica</h2><span class="tick"></span></div>
+          <div class="ficha-rows">
+            {rows.map((r) => (
+              <div class="row"><span class="k">{r.k}</span><span class={`v${r.hi ? ' hi' : ''}`}>{r.v}</span></div>
+            ))}
+          </div>
+          <div class="foot">
+            <a class="btn-rail" href={cbUrl} target="_blank" rel="noopener" data-source="ficha-rail-to-crucerobuceo">
+              Ver y reservar en crucerobuceo
+              <svg class="arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" set:html={arrow} />
+            </a>
+          </div>
         </div>
-      </aside>
-
-      <!-- Right: Infobox + Content -->
-      <div>
-
-        <!-- Infobox (floated right inside content) -->
-        <div class="infobox">
-          <div class="infobox-title">Datos técnicos</div>
-          <div class="infobox-row">
-            <span class="infobox-label">Profundidad</span>
-            <span class="infobox-value">{fm.profundidad_min}m – {fm.profundidad_max}m</span>
+      )}
+      {lives.length > 0 && (
+        <div class="card">
+          <div class="hd"><h2>Liveaboards</h2></div>
+          <div class="lives">
+            {lives.map((lv) => <div class="lv">{lv}</div>)}
           </div>
-          <div class="infobox-row">
-            <span class="infobox-label">Visibilidad</span>
-            <span class="infobox-value">{fm.visibilidad_media}</span>
-          </div>
-          <div class="infobox-row">
-            <span class="infobox-label">Temperatura</span>
-            <span class="infobox-value">{fm.temperatura_agua_min}°C – {fm.temperatura_agua_max}°C</span>
-          </div>
-          <div class="infobox-row">
-            <span class="infobox-label">Corrientes</span>
-            <span class="infobox-value">{fm.corrientes}</span>
-          </div>
-          <div class="infobox-row">
-            <span class="infobox-label">Cert. mínima</span>
-            <span class="infobox-value">
-              <span class={`cert-badge ${certClass(fm.certificacion_minima)}`}>{fm.certificacion_minima}</span>
-            </span>
-          </div>
-          <div class="infobox-row">
-            <span class="infobox-label">Temporada</span>
-            <span class="infobox-value">{fm.temporada_alta}</span>
-          </div>
-          {fm.precio_semana_aprox && (
-            <div class="infobox-row">
-              <span class="infobox-label">Precio aprox.</span>
-              <span class="infobox-value">{fm.precio_semana_aprox}</span>
-            </div>
-          )}
-          {fm.giora_estuvo && (
-            <div class="infobox-row" style="background: #ecfdf5;">
-              <span class="infobox-value" style="color: #065f46; font-weight: 600;">✓ Giora estuvo aquí</span>
-            </div>
-          )}
-          {crucerobuceoUrl && (
-            <div style="padding: 0.6rem 0.75rem; border-top: 1px solid #e0f2fe; font-size: 0.7rem; color: #64748b; text-align: center;">
-              <a href={crucerobuceoUrl} data-source="ficha-infobox-to-crucerobuceo" style="color: #64748b; text-decoration: underline;">
-                Operadores con salidas a {fm.pais} →
-              </a>
-            </div>
-          )}
         </div>
-
-        <!-- Markdown content -->
-        <div class="ficha-content">
-          <slot />
+      )}
+      {h2.length > 0 && (
+        <div class="card">
+          <div class="hd"><h2>En esta ficha</h2></div>
+          <nav class="toc" id="toc">
+            {h2.map((h, i) => (
+              <a href={`#${h.slug}`}><span class="n">{String(i + 1).padStart(2, '0')}</span> {h.text}</a>
+            ))}
+          </nav>
         </div>
+      )}
+    </aside>
+  </div>
+</div>
 
+{cercanas.length > 0 && (
+  <section class="related" id="relacionadas">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <span class="kicker">En el mismo mar</span>
+          <h2>Más buceo en {zona}</h2>
+        </div>
+        <p>Otros destinos de la misma zona para seguir comparando.</p>
+      </div>
+      <div class="cards4">
+        {cercanas.map((c) => (
+          <a class="scard" href={`/destinos/${c.id}`}>
+            <div class="ph">
+              <span class="g" style={`background:${c.grad}`}></span>
+              <span class="tag">{c.region}</span>
+            </div>
+            <div class="meta">
+              <span class="nm">{c.title}</span>
+              <span class="st">{c.cert}</span>
+              <span class="go">Ver ficha <svg class="arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" set:html={arrow} /></span>
+            </div>
+          </a>
+        ))}
       </div>
     </div>
+  </section>
+)}
 
-    <!-- Notas de campo — Giora -->
-    <div style="margin-top: 3rem; padding: 1.5rem; background: #f8fafc; border-left: 3px solid #0891b2; max-width: 720px;">
-      <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; margin: 0 0 0.5rem 0;">Notas de campo — Giora</p>
-      <p style="font-size: 0.875rem; color: #334155; margin: 0 0 0.75rem 0; line-height: 1.6;">
-        Llevo 20 años organizando liveaboards de buceo. Si necesitas ayuda concreta para planificar un viaje a {fm.pais} —fechas, barcos, logística— escríbeme directamente.
-      </p>
-      <p style="font-size: 0.8rem; color: #64748b; margin: 0;">
-        <a href="https://wa.me/34619401041" style="color: #0891b2;">WhatsApp +34 619 401 041</a>
-        {crucerobuceoUrl && (
-          <> · <a href={crucerobuceoUrl} data-source="ficha-footer-to-crucerobuceo" style="color: #0891b2;">Salidas a {fm.pais}</a></>
-        )}
-      </p>
+<section class="closer">
+  <div class="wrap">
+    <div class="lt">
+      <span class="kicker">Tu viaje empieza aquí</span>
+      <h2>Bucea {titleShort} esta temporada</h2>
+      <p>Comparamos liveaboards, fechas y logística para que reserves con cabeza. Agencia CICMA 2283, sin sorpresas.</p>
     </div>
-
-    <!-- Viajes Scibasku CTA -->
-    <div style="margin-top: 1.5rem; padding: 1rem 1.5rem; background: #f0f9ff; border-left: 3px solid #0891b2; max-width: 720px;">
-      <p style="font-size: 0.8rem; font-weight: 600; color: #0d1b2a; margin: 0 0 0.25rem 0;">Viaje completo a {fm.pais}</p>
-      <p style="font-size: 0.8rem; color: #334155; margin: 0 0 0.5rem 0;">Vuelos, alojamiento, transfers y seguro de buceo. Agencia CICMA 2283.</p>
-      <a href="https://viajesscibasku.com/buceo" data-source="ficha-to-viajes" rel="noopener" style="color: #0891b2; font-size: 0.8rem; font-weight: 500;">
-        Planificar viaje con Scibasku →
-      </a>
-    </div>
-
-    {fm.updated && (
-      <p style="font-size: 0.7rem; color: #94a3b8; margin-top: 1rem;">
-        Última revisión: {fm.updated}
-      </p>
-    )}
-
+    <a class="btn-white" href={cbUrl} target="_blank" rel="noopener" data-source="ficha-closer-to-crucerobuceo">
+      Ver y reservar en crucerobuceo
+      <svg class="arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" set:html={arrow} />
+    </a>
   </div>
+</section>
 
-  <!-- Schema.org TouristAttraction -->
-  {crucerobuceoUrl && (
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "TouristAttraction",
-      "name": fm.title,
-      "description": `Guía de buceo en ${fm.title}, ${fm.pais}. ${fm.visibilidad_media} visibilidad, ${fm.temperatura_agua_min}–${fm.temperatura_agua_max}°C.`,
-      "url": `https://destinos.crucerobuceo.com/destinos/buceo/${entry.id}`,
-      "touristType": "Buceadores",
-      "containedInPlace": { "@type": "Country", "name": fm.pais },
-      "isPartOf": {
-        "@type": "TouristDestination",
-        "name": `Cruceros de Buceo en ${fm.pais}`,
-        "url": crucerobuceoUrl
-      }
-    })} />
-  )}
+<footer class="foot">
+  <div class="wrap">
+    <a class="back" href="/"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> Volver a Scubapedia</a>
+    <img src="/scubapedia-logo-nav.png" alt="Scubapedia" />
+    <span class="fine">Scubapedia · La enciclopedia de buceo de Viajes Scibasku · CICMA 2283</span>
+  </div>
+</footer>
 
-  <style>
-    @media (min-width: 900px) {
-      .toc-sidebar { display: block !important; }
+<a class="fab" href={WA} target="_blank" rel="noopener" aria-label="Escribir a Giora por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.25.69-1.45 1.32-1.99 1.4-.53.08-1.02.29-3.43-.71-2.89-1.2-4.73-4.16-4.87-4.35-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08.99-2.37.25-.28.55-.35.73-.35.18 0 .37 0 .53.01.17.01.4-.06.62.48.25.6.85 2.07.92 2.22.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.69-.81.87-1.08.18-.28.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.66-.18 1.35Z"/></svg>
+  <span>Pregúntale a Giora</span>
+</a>
+
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+<script is:inline>
+  (function () {
+    var ctaMini = document.getElementById('ctaMini');
+    var hero = document.querySelector('.hero');
+    if (ctaMini && hero) {
+      window.addEventListener('scroll', function () {
+        ctaMini.classList.toggle('show', window.scrollY > (hero.offsetHeight - 120));
+      }, { passive: true });
     }
-  </style>
+    var tocLinks = Array.prototype.slice.call(document.querySelectorAll('#toc a'));
+    var sections = tocLinks.map(function (a) { return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+    if (sections.length && 'IntersectionObserver' in window) {
+      var spy = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            var id = '#' + e.target.id;
+            tocLinks.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === id); });
+          }
+        });
+      }, { rootMargin: '-30% 0px -60% 0px' });
+      sections.forEach(function (s) { spy.observe(s); });
+    }
+  })();
+</script>
 
-</BaseLayout>
+</body>
+</html>
