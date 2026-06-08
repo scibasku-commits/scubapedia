@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://scubapedia.vercel.app/sitemap-index.xml
+Sitemap: https://scubapedia.org/sitemap-index.xml

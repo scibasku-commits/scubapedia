@@ -59,8 +59,8 @@ const cercanas = allBuceo
 
 const h2 = headings.filter((h) => h.depth === 2);
 
-const canonicalUrl = new URL(`/destinos/${id}/`, Astro.site ?? 'https://scubapedia.vercel.app').toString();
-const ogImage = destinoImage(id, 'og') ?? new URL('/og-default.png', Astro.site ?? 'https://scubapedia.vercel.app').toString();
+const canonicalUrl = new URL(`/destinos/${id}/`, Astro.site ?? 'https://scubapedia.org').toString();
+const ogImage = destinoImage(id, 'og') ?? new URL('/og-default.png', Astro.site ?? 'https://scubapedia.org').toString();
 const pageTitle = `${titleShort} · Ficha de buceo — Scubapedia`;
 const desc = `Buceo en ${d.pais || titleShort}: ${d.visibilidad_media || 'visibilidad variable'}, ${d.temperatura_agua_min}–${d.temperatura_agua_max}°C. Cert. mínima: ${d.certificacion_minima || 'OW'}.`;
 const arrow = '<path d="M5 12h14M13 6l6 6-6 6"/>';
