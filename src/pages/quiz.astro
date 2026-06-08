@@ -1,0 +1,337 @@
+---
+// Quiz interactivo de buceo — Scubapedia.
+// Datos verificados (Perplexity + fuentes), 8-jun-2026. Página standalone,
+// misma paleta editorial que la home (index.astro): crema + azul mar.
+import '../styles/global.css';
+
+const QUESTIONS = [
+  {
+    q: 'En Cape Kri (Raja Ampat) se batió el récord mundial de especies de peces vistas en UNA sola inmersión. ¿Cuántas?',
+    opts: ['83', '150', '283', '500'],
+    correct: 2,
+    exp: '283 especies en una sola inmersión, en pleno corazón del Triángulo de Coral. Ningún punto del planeta concentra tanta vida.',
+    ficha: { label: 'Raja Ampat', url: '/destinos/raja-ampat/' },
+  },
+  {
+    q: 'El tiburón ballena es el pez más grande del mundo (hasta ~12–15 m). Para el buceador es…',
+    opts: ['Peligrosísimo, hay que huir', 'Inofensivo: es filtrador y come plancton', 'Venenoso al tacto', 'Un mamífero, como la ballena'],
+    correct: 1,
+    exp: 'Pese a su tamaño descomunal, se alimenta filtrando plancton. No hay registros de ataques a personas: nadar a su lado es uno de los grandes sueños del buceo.',
+    ficha: { label: 'Galápagos', url: '/destinos/galapagos/' },
+  },
+  {
+    q: 'El mola mola o pez luna es célebre por ser…',
+    opts: ['El pez más rápido del océano', 'El pez óseo más pesado del mundo (hasta ~2.300 kg)', 'El más venenoso', 'El más pequeño del arrecife'],
+    correct: 1,
+    exp: 'Puede pesar hasta 2,3 toneladas. Los buceadores lo buscan en aguas frías, como en Bali (Nusa Penida), donde sube a las estaciones de limpieza.',
+    ficha: { label: 'Bali — Nusa Penida', url: '/destinos/bali-nusa-penida/' },
+  },
+  {
+    q: '¿En qué destino se bucea LITERALMENTE entre dos placas tectónicas (la Norteamericana y la Euroasiática)?',
+    opts: ['Silfra, Islandia', 'Mar Rojo, Egipto', 'Galápagos', 'Palau'],
+    correct: 0,
+    exp: 'La grieta de Silfra (Parque Þingvellir) separa dos continentes. Agua de deshielo a 2–3 °C y visibilidad de hasta ~100 m, la mayor del mundo en agua dulce.',
+    ficha: { label: 'Islandia — Silfra', url: '/destinos/islandia-silfra/' },
+  },
+  {
+    q: '¿Por qué casi todas las inmersiones acaban con una "parada de seguridad" a unos 5 metros?',
+    opts: ['Para descansar las piernas', 'Para que el cuerpo elimine nitrógeno y reducir el riesgo de descompresión', 'Para ahorrar aire', 'Porque lo exige la ley'],
+    correct: 1,
+    exp: 'Unos 3 minutos a 5 m permiten liberar de forma gradual el nitrógeno acumulado en los tejidos. Rutina innegociable de todo ascenso.',
+    ficha: null,
+  },
+  {
+    q: 'Regla de oro del buceo: "nunca contengas la respiración". Según la ley de Boyle, si asciendes aguantando el aire…',
+    opts: ['No pasa nada', 'El aire de los pulmones se expande y puede lesionarlos', 'Te quedas sin aire antes', 'Solo te mareas un poco'],
+    correct: 1,
+    exp: 'Al subir baja la presión y el gas de los pulmones se expande. Si retienes el aire, esa sobrepresión puede dañar el pulmón. Por eso: respira siempre, despacio.',
+    ficha: null,
+  },
+  {
+    q: 'En Sipadan (Malasia) es famoso un espectáculo natural que deja sin aire a cualquiera. ¿Cuál?',
+    opts: ['Un tornado / remolino de miles de barracudas', 'Auroras boreales submarinas', 'Coral que emite luz propia', 'Olas gigantes bajo el agua'],
+    correct: 0,
+    exp: 'El "tornado de barracudas": un cardumen inmenso que gira en espiral formando una pared plateada. Sipadan también es santuario de tortugas y tiburones de arrecife.',
+    ficha: { label: 'Sipadan — Mabul', url: '/destinos/sipadan-mabul/' },
+  },
+  {
+    q: 'El SS Thistlegorm, uno de los pecios más visitados del Mar Rojo, transportaba en su bodega…',
+    opts: ['Oro y tesoros', 'Material de guerra: camiones, motos ¡y dos locomotoras de vapor!', 'Petróleo', 'Pasajeros de lujo'],
+    correct: 1,
+    exp: 'Carguero británico hundido por la aviación alemana en 1941. Hoy reposa a ~32 m con todo su cargamento militar intacto: un museo submarino de la 2ª Guerra Mundial.',
+    ficha: { label: 'Sharm el Sheikh', url: '/destinos/sharm-el-sheikh/' },
+  },
+  {
+    q: 'Para ver grandes bancos de tiburones martillo en Galápagos, los buceadores peregrinan a dos islas míticas:',
+    opts: ['Darwin y Wolf', 'Santa Cruz e Isabela', 'Baltra y Seymour', 'Floreana y Española'],
+    correct: 0,
+    exp: 'Darwin y Wolf, picos de volcanes submarinos al norte del archipiélago, reúnen escuelas de cientos de martillos. De los buceos más codiciados del planeta.',
+    ficha: { label: 'Galápagos', url: '/destinos/galapagos/' },
+  },
+  {
+    q: 'La narcosis de nitrógeno, que altera el juicio del buceador en profundidad, se conoce coloquialmente como…',
+    opts: ['El bajón', 'La "borrachera de las profundidades"', 'El vértigo azul', 'La fiebre del mar'],
+    correct: 1,
+    exp: 'El nitrógeno a presión produce un efecto parecido a la embriaguez (lentitud, euforia, peor juicio). Se controla subiendo unos metros: desaparece sola.',
+    ficha: null,
+  },
+];
+
+const title = 'Quiz de buceo: ¿cuánto sabes? — Scubapedia';
+const description = '10 preguntas sobre destinos, fauna y técnica de buceo. Datos verificables, sin trampas. ¿Cuántas aciertas?';
+const canonical = new URL('/quiz/', Astro.site ?? 'https://scubapedia.org').toString();
+const ogImage = new URL('/og-default.png', Astro.site ?? 'https://scubapedia.org').toString();
+const WA = 'https://wa.me/34619401041';
+---
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:site_name" content="Scubapedia" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:image" content={ogImage} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org', '@type': 'Quiz', name: title, url: canonical,
+    about: { '@type': 'Thing', name: 'Buceo' },
+    publisher: { '@type': 'Organization', name: 'Viajes Scibasku', url: 'https://viajesscibasku.com' },
+  })} />
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-LHZYGMPX6K"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LHZYGMPX6K');
+  </script>
+
+  <style is:global>
+    :root{
+      --paper:#f1ebdd; --paper-card:#faf6ec;
+      --ink:#1b211f; --ink-2:#30383a; --ink-muted:#647072;
+      --rule:#1b211f22; --rule-strong:#1b211f55;
+      --accent:#0A5570; --accent-ink:#073f54; --accent-decor:#16A6C9; --accent-soft:#16A6C91f;
+      --ok:#1f8a5b; --ok-soft:#1f8a5b1a; --bad:#b03b3b; --bad-soft:#b03b3b14;
+      --deep:#06283a; --maxw:760px;
+      --font-display:'Fraunces',Georgia,serif;
+      --font-body:'DM Sans',system-ui,-apple-system,sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;background:var(--paper)}
+    body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh}
+    a{color:var(--accent);text-decoration:none}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+    /* top bar */
+    .bar{border-bottom:1px solid var(--rule);background:var(--paper)}
+    .bar-inner{max-width:var(--maxw);margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
+    .bar-mark img{height:30px;width:auto;display:block}
+    .bar a{font-size:14px;color:var(--ink-muted);letter-spacing:.02em}
+    .bar a:hover{color:var(--accent)}
+
+    /* intro */
+    .intro{text-align:center;padding:54px 0 8px}
+    .eyebrow{font-size:12px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--accent-decor)}
+    .intro h1{font-family:var(--font-display);font-weight:600;font-size:clamp(2rem,5vw,3rem);line-height:1.08;margin:14px 0 12px;letter-spacing:-.01em}
+    .intro p{color:var(--ink-2);max-width:46ch;margin:0 auto}
+
+    /* progress */
+    .progress{height:5px;background:var(--rule);border-radius:999px;overflow:hidden;margin:30px 0 6px}
+    .progress > i{display:block;height:100%;width:0;background:var(--accent-decor);transition:width .4s ease}
+    .count{font-size:13px;color:var(--ink-muted);letter-spacing:.04em;text-align:right;margin-bottom:18px}
+
+    /* card */
+    .card{background:var(--paper-card);border:1px solid var(--rule);border-radius:16px;padding:30px 28px;box-shadow:0 1px 0 var(--rule)}
+    .qnum{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-decor);margin-bottom:10px}
+    .qtext{font-family:var(--font-display);font-weight:500;font-size:1.5rem;line-height:1.25;margin-bottom:22px}
+    .opts{display:flex;flex-direction:column;gap:11px}
+    .opt{display:flex;align-items:center;gap:13px;width:100%;text-align:left;background:var(--paper);border:1px solid var(--rule-strong);border-radius:11px;padding:15px 16px;font-family:var(--font-body);font-size:1.02rem;color:var(--ink);cursor:pointer;transition:border-color .18s,background .18s,transform .05s}
+    .opt:hover:not(:disabled){border-color:var(--accent-decor);background:var(--accent-soft)}
+    .opt:active:not(:disabled){transform:translateY(1px)}
+    .opt .key{flex:0 0 28px;height:28px;display:grid;place-items:center;border:1px solid var(--rule-strong);border-radius:50%;font-size:.85rem;font-weight:600;color:var(--ink-muted)}
+    .opt:disabled{cursor:default}
+    .opt.correct{border-color:var(--ok);background:var(--ok-soft)}
+    .opt.correct .key{background:var(--ok);border-color:var(--ok);color:#fff}
+    .opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+    .opt.wrong .key{background:var(--bad);border-color:var(--bad);color:#fff}
+    .opt.dim{opacity:.55}
+
+    .exp{margin-top:18px;padding:16px 18px;border-left:3px solid var(--accent-decor);background:var(--paper);border-radius:0 10px 10px 0;font-size:.98rem;color:var(--ink-2);display:none}
+    .exp.show{display:block;animation:fade .35s ease}
+    .exp .verdict{font-weight:600;font-family:var(--font-display);margin-bottom:5px}
+    .exp .verdict.ok{color:var(--ok)} .exp .verdict.bad{color:var(--bad)}
+    .exp a{color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+    @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+    .actions{margin-top:22px;display:flex;justify-content:flex-end}
+    .btn{font-family:var(--font-body);font-size:1rem;font-weight:600;border:0;border-radius:999px;padding:12px 26px;cursor:pointer;background:var(--accent);color:#f4eee1;transition:background .18s,transform .05s;letter-spacing:.01em}
+    .btn:hover{background:var(--accent-ink)} .btn:active{transform:translateY(1px)}
+    .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+    .btn.ghost:hover{background:var(--accent-soft)}
+    .btn[hidden]{display:none}
+
+    /* result */
+    .result{text-align:center;padding:8px 0}
+    .result .score{font-family:var(--font-display);font-weight:600;font-size:clamp(3rem,12vw,5rem);line-height:1;color:var(--accent);margin:6px 0}
+    .result .score small{font-size:.4em;color:var(--ink-muted)}
+    .result h2{font-family:var(--font-display);font-weight:600;font-size:1.6rem;margin:6px 0 8px;border:0}
+    .result p{color:var(--ink-2);max-width:44ch;margin:0 auto 8px}
+    .result .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+    .cta{margin-top:34px;padding-top:26px;border-top:1px solid var(--rule);font-size:.96rem;color:var(--ink-muted)}
+    .cta a{font-weight:600;text-decoration:underline;text-underline-offset:3px}
+
+    footer{text-align:center;padding:48px 0 40px;color:var(--ink-muted);font-size:13px}
+    footer a{color:var(--ink-muted);text-decoration:underline;text-underline-offset:2px}
+    @media(max-width:560px){ .card{padding:24px 18px} .qtext{font-size:1.3rem} }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <div class="bar-inner">
+      <a class="bar-mark" href="/" aria-label="Scubapedia"><img src="/scubapedia-logo-nav.png" alt="Scubapedia" /></a>
+      <a href="/">← Volver a la enciclopedia</a>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <section class="intro">
+      <p class="eyebrow">Quiz · Scubapedia</p>
+      <h1>¿Cuánto sabes de buceo?</h1>
+      <p>Diez preguntas sobre destinos, fauna y técnica. Datos verificables, sin trampas. ¿Cuántas aciertas?</p>
+    </section>
+
+    <div class="progress" aria-hidden="true"><i id="bar"></i></div>
+    <div class="count" id="count"></div>
+
+    <section id="stage"></section>
+  </main>
+
+  <footer>
+    Scubapedia · Enciclopedia editorial de destinos de buceo ·
+    <a href="/">Inicio</a>
+  </footer>
+
+  <script define:vars={{ QUESTIONS, WA }}>
+    const stage = document.getElementById('stage');
+    const bar = document.getElementById('bar');
+    const count = document.getElementById('count');
+    let i = 0, score = 0, locked = false;
+
+    const KEYS = ['A','B','C','D'];
+
+    function paintProgress(){
+      bar.style.width = (i / QUESTIONS.length * 100) + '%';
+      count.textContent = 'Pregunta ' + (i + 1) + ' de ' + QUESTIONS.length;
+    }
+
+    function renderQuestion(){
+      locked = false;
+      paintProgress();
+      const Q = QUESTIONS[i];
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML =
+        '<div class="qnum">Pregunta ' + (i+1) + '</div>' +
+        '<div class="qtext"></div>' +
+        '<div class="opts"></div>' +
+        '<div class="exp" id="exp"></div>' +
+        '<div class="actions"><button class="btn" id="next" hidden></button></div>';
+      card.querySelector('.qtext').textContent = Q.q;
+      const opts = card.querySelector('.opts');
+      Q.opts.forEach((text, idx) => {
+        const b = document.createElement('button');
+        b.className = 'opt';
+        b.innerHTML = '<span class="key">' + KEYS[idx] + '</span><span class="lbl"></span>';
+        b.querySelector('.lbl').textContent = text;
+        b.addEventListener('click', () => choose(idx, card));
+        opts.appendChild(b);
+      });
+      stage.innerHTML = '';
+      stage.appendChild(card);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function choose(idx, card){
+      if (locked) return;
+      locked = true;
+      const Q = QUESTIONS[i];
+      const buttons = [...card.querySelectorAll('.opt')];
+      const correct = idx === Q.correct;
+      if (correct) score++;
+      buttons.forEach((b, k) => {
+        b.disabled = true;
+        if (k === Q.correct) b.classList.add('correct');
+        else if (k === idx) b.classList.add('wrong');
+        else b.classList.add('dim');
+      });
+      const exp = card.querySelector('#exp');
+      let html = '<div class="verdict ' + (correct ? 'ok' : 'bad') + '">' +
+        (correct ? '¡Correcto!' : 'Casi…') + '</div>' + Q.exp;
+      if (Q.ficha) html += ' <a href="' + Q.ficha.url + '">Saber más: ' + Q.ficha.label + ' →</a>';
+      exp.innerHTML = html;
+      exp.classList.add('show');
+      try { gtag('event', 'quiz_answer', { q: i+1, correct: correct }); } catch(e){}
+      const next = card.querySelector('#next');
+      next.hidden = false;
+      next.textContent = (i === QUESTIONS.length - 1) ? 'Ver resultado' : 'Siguiente →';
+      next.addEventListener('click', () => { i++; (i < QUESTIONS.length) ? renderQuestion() : renderResult(); });
+    }
+
+    function renderResult(){
+      bar.style.width = '100%';
+      count.textContent = '';
+      const n = QUESTIONS.length;
+      let msg;
+      if (score === n) msg = '¡Perfecto! Eres pez de agua salada. Esto ya no es afición, es vocación.';
+      else if (score >= 8) msg = 'Nivel buceador avanzado. Te falta poquísimo para el pleno.';
+      else if (score >= 5) msg = 'Buen fondo. Con un par de inmersiones más subes de nivel.';
+      else if (score >= 3) msg = 'Open Water recién sacado. El mar tiene mucho que enseñarte todavía.';
+      else msg = 'Bautizo de buceo. ¡Pero todos empezamos por la primera burbuja!';
+      const shareText = 'He sacado ' + score + '/' + n + ' en el quiz de buceo de Scubapedia 🤿 ¿Te atreves?';
+      const url = 'https://scubapedia.org/quiz/';
+      const result = document.createElement('div');
+      result.className = 'card result';
+      result.innerHTML =
+        '<p class="eyebrow">Tu resultado</p>' +
+        '<div class="score">' + score + '<small>/' + n + '</small></div>' +
+        '<h2></h2>' +
+        '<p class="msg"></p>' +
+        '<div class="btns">' +
+          '<button class="btn" id="share">Compartir resultado</button>' +
+          '<button class="btn ghost" id="again">Repetir quiz</button>' +
+        '</div>' +
+        '<div class="cta">¿Te ha picado el gusanillo? <a id="plan" href="' + WA + '" target="_blank" rel="noopener">Cuéntale a Giora tu próximo viaje de buceo →</a></div>';
+      result.querySelector('h2').textContent = (score >= 8 ? '🌊 ' : '') + 'Has acertado ' + score + ' de ' + n;
+      result.querySelector('.msg').textContent = msg;
+      stage.innerHTML = '';
+      stage.appendChild(result);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      try { gtag('event', 'quiz_complete', { score: score, total: n }); } catch(e){}
+
+      result.querySelector('#again').addEventListener('click', () => { i = 0; score = 0; renderQuestion(); });
+      result.querySelector('#share').addEventListener('click', async () => {
+        try {
+          if (navigator.share) { await navigator.share({ title: 'Quiz de buceo · Scubapedia', text: shareText, url }); }
+          else { await navigator.clipboard.writeText(shareText + ' ' + url); const b = result.querySelector('#share'); b.textContent = '¡Copiado! Pégalo donde quieras'; }
+        } catch(e){}
+      });
+    }
+
+    renderQuestion();
+  </script>
+</body>
+</html>
