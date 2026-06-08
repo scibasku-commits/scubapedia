@@ -94,8 +94,8 @@ const gioraEstuvo = all.filter((e) => e.data.giora_estuvo).length;
 
 const title = 'Scubapedia — Enciclopedia editorial de destinos de buceo en castellano';
 const description = `Enciclopedia editorial de ${totalFichas} destinos de buceo en castellano. Profundidad, visibilidad, fauna, mejor época y nivel — datos verificables, sin marketing vacío.`;
-const canonical = new URL('/', Astro.site ?? 'https://destinos.crucerobuceo.com').toString();
-const ogImage = new URL('/og-default.png', Astro.site ?? 'https://destinos.crucerobuceo.com').toString();
+const canonical = new URL('/', Astro.site ?? 'https://scubapedia.vercel.app').toString();
+const ogImage = new URL('/og-default.png', Astro.site ?? 'https://scubapedia.vercel.app').toString();
 const CRUCERO = 'https://crucerobuceo.com';
 const WA = 'https://wa.me/34619401041';
 const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para el masthead
@@ -125,7 +125,7 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&display=swap" rel="stylesheet" />
   <script type="application/ld+json" set:html={JSON.stringify({
     '@context': 'https://schema.org', '@type': 'WebSite', name: 'Scubapedia',
-    url: 'https://destinos.crucerobuceo.com', description,
+    url: 'https://scubapedia.vercel.app', description,
     publisher: { '@type': 'Organization', name: 'Viajes Scibasku', url: 'https://viajesscibasku.com' },
   })} />
   <!-- Google Analytics (GA4) -->

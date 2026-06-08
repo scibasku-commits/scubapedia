@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 import { remarkWikilinks } from './src/plugins/remark-wikilinks.mjs';
 
 export default defineConfig({
-  site: 'https://destinos.crucerobuceo.com',
+  site: 'https://scubapedia.vercel.app',
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()]
