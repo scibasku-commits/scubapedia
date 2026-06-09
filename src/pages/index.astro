@@ -594,6 +594,8 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
     const md = (t) => esc(t).replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>').replace(/\*([^*]+)\*/g, '<i>$1</i>').replace(/\n/g, '<br/>');
     let history = [];
     let busy = false;
+    let sessionId = null;
+    try { sessionId = sessionStorage.getItem('giora_session'); } catch (e) {}
 
     function addUser(text) {
       const d = document.createElement('div'); d.className = 'msg u'; d.textContent = text;
@@ -624,10 +626,11 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
       const wrap = addGiora();
       const gb = wrap.querySelector('.gbody');
       try {
-        const res = await fetch('/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ messages: history }) });
+        const res = await fetch('/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ messages: history, sessionId }) });
         if (!res.ok) throw new Error('bad');
         const r = await res.json();
         if (!r || !r.content) throw new Error('nocontent');
+        if (r.sessionId) { sessionId = r.sessionId; try { sessionStorage.setItem('giora_session', sessionId); } catch (e) {} }
         wrap.classList.remove('thinking');
         gb.innerHTML = md(r.content);
         if (r.fuente) { const c = document.createElement('div'); c.className = 'cite'; c.textContent = 'Fuente: ' + r.fuente; wrap.appendChild(c); }

@@ -57,6 +57,7 @@
     const typingEl = document.getElementById('chat-typing');
     const WA = 'https://wa.me/34619401041';
     let history = [];
+    let chatSessionId = sessionStorage.getItem('scubapedia_chat_session') || null;
 
     const cached = sessionStorage.getItem('scubapedia_chat_history');
     if (cached) { try { history = JSON.parse(cached); history.forEach(m => appendMessageUI(m.role, m.content)); } catch (e) {} }
@@ -76,10 +77,11 @@
       saveHistory(); scrollToBottom();
       inputEl.disabled = true; sendBtn.disabled = true; typingEl.classList.remove('hidden');
       try {
-        const res = await fetch('/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ messages: history }) });
+        const res = await fetch('/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ messages: history, sessionId: chatSessionId }) });
         if (!res.ok) throw new Error('bad status');
         const reply = await res.json();
         if (!reply || !reply.content) throw new Error('no content');
+        if (reply.sessionId) { chatSessionId = reply.sessionId; try { sessionStorage.setItem('scubapedia_chat_session', chatSessionId); } catch (e) {} }
         appendMessageUI('assistant', reply.content);
         history.push({ role: 'assistant', content: reply.content });
         saveHistory();

@@ -8,7 +8,7 @@ export const prerender = false; // SSR en Vercel
 
 export const POST: APIRoute = async ({ request }) => {
   try {
-    const { messages } = await request.json();
+    const { messages, sessionId } = await request.json();
     if (!messages || !Array.isArray(messages)) {
       return new Response(JSON.stringify({ error: 'Faltan los mensajes en la petición.' }), {
         status: 400, headers: { 'Content-Type': 'application/json' },
@@ -158,8 +158,38 @@ ${ctx}
     if (selected[0]) sugerencias.push(`¿Mejor época para ${shortTitle(selected[0].title)}?`);
     sugerencias.push('¿Apto para mi nivel?');
 
+    // --- Mission Control: registrar la conversación (best-effort, nunca rompe el chat) ---
+    let mcSessionId: string | null = sessionId || null;
+    const MC_URL = process.env.SUPABASE_URL || '';
+    const MC_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || '';
+    if (MC_URL && MC_KEY) {
+      try {
+        const h = { apikey: MC_KEY, Authorization: `Bearer ${MC_KEY}`, 'Content-Type': 'application/json' };
+        const nowIso = new Date().toISOString();
+        if (!mcSessionId) {
+          const sRes = await fetch(`${MC_URL}/rest/v1/chat_sessions`, {
+            method: 'POST', headers: { ...h, Prefer: 'return=representation' },
+            body: JSON.stringify({ wallet_id: 'scubapedia', last_message_at: nowIso }),
+          });
+          if (sRes.ok) { const rows = await sRes.json(); mcSessionId = rows?.[0]?.id ?? null; }
+        }
+        if (mcSessionId) {
+          await fetch(`${MC_URL}/rest/v1/chat_messages`, {
+            method: 'POST', headers: h,
+            body: JSON.stringify([
+              { session_id: mcSessionId, role: 'user', content: last },
+              { session_id: mcSessionId, role: 'assistant', content: reply.content },
+            ]),
+          });
+          await fetch(`${MC_URL}/rest/v1/chat_sessions?id=eq.${mcSessionId}`, {
+            method: 'PATCH', headers: h, body: JSON.stringify({ last_message_at: nowIso }),
+          });
+        }
+      } catch (e) { console.error('MC log error:', e); }
+    }
+
     return new Response(
-      JSON.stringify({ role: reply.role || 'assistant', content: reply.content, fuente, sugerencias: sugerencias.slice(0, 3) }),
+      JSON.stringify({ role: reply.role || 'assistant', content: reply.content, fuente, sugerencias: sugerencias.slice(0, 3), sessionId: mcSessionId }),
       { headers: { 'Content-Type': 'application/json' } },
     );
   } catch (err) {
