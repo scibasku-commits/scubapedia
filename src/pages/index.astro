@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import { normalizeZona, zonaSlug, zonaRank, zonaBlurb, zonaGradient } from '../lib/zonas';
 import { certCorta } from '../lib/ficha-datos';
 import { destinoImage, slugImage } from '../lib/imagen';
+import ChatWidget from '../components/ChatWidget.astro';
 import '../styles/global.css';
 
 const all = await getCollection('buceo');
@@ -322,6 +323,12 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
     .chat-sample{padding:16px 20px;display:flex;gap:8px;flex-wrap:wrap;background:var(--paper-card);border-top:1px solid var(--rule)}
     .chip{font-size:12.5px;color:var(--accent);border:1px solid var(--rule-strong);border-radius:999px;padding:6px 12px;cursor:pointer;transition:.2s;background:transparent;font-family:var(--font-body);text-decoration:none}
     .chip:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+    .chat-ask{display:flex;gap:8px;padding:14px 20px;background:var(--paper-card);border-top:1px solid var(--rule)}
+    .chat-ask input{flex:1;border:1px solid var(--rule-strong);border-radius:999px;padding:11px 16px;font-size:14.5px;font-family:var(--font-body);background:#fff;color:var(--ink);outline:none}
+    .chat-ask input:focus{border-color:var(--accent)}
+    .chat-ask-send{flex:none;width:42px;border:0;border-radius:999px;background:var(--accent);color:#fff;font-size:15px;cursor:pointer;transition:opacity .2s}
+    .chat-ask-send:disabled{opacity:.45;cursor:default}
+    .msg.g.thinking .gbody{color:var(--ink-muted)}
 
     /* footer */
     .foot{background:var(--ink);color:#c5d2d4;padding:74px 0 40px}
@@ -386,7 +393,7 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
       <a class="nav-link" href="#conceptos">Conceptos</a>
       <a class="nav-link" href="/quiz/">Quiz</a>
       <a class="nav-link" href={CRUCERO} target="_blank" rel="noopener">Reservar</a>
-      <a class="nav-cta" href={WA} target="_blank" rel="noopener">Pregúntale a Giora</a>
+      <a class="nav-cta" href={WA} data-open-chat target="_blank" rel="noopener">Pregúntale a Giora</a>
     </div>
     <a class="nav-toggle nav-cta" href={WA} target="_blank" rel="noopener">Giora</a>
   </div>
@@ -543,7 +550,7 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
           <div class="gf"><b>Planifica</b><span>Qué barco, qué ruta y para qué nivel sirve cada zona.</span></div>
           <div class="gf"><b>Reserva</b><span>Del destino al liveaboard, con la agencia detrás (CICMA 2283).</span></div>
         </div>
-        <a class="giora-cta" href={WA} target="_blank" rel="noopener"><span class="star">✦</span> Escribir a Giora por WhatsApp</a>
+        <a class="giora-cta" href={WA} data-open-chat target="_blank" rel="noopener"><span class="star">✦</span> Preguntar a Giora ahora</a>
       </div>
 
       <div class="chat-card reveal">
@@ -552,7 +559,7 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
           <div class="chat-id"><b>Giora</b><span>Buceador · Scubapedia</span></div>
           <div class="chat-status"><span class="d"></span> En línea</div>
         </div>
-        <div class="chat-body">
+        <div class="chat-body" id="giora-body">
           <div class="msg u">¿Dónde veo mantas oceánicas en enero?</div>
           <div class="msg g">
             <div class="gtag">Giora</div>
@@ -560,15 +567,84 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
             <div class="cite">Fuente: fichas de Socorro y Maldivas (Baa · Hanifaru).</div>
           </div>
         </div>
-        <div class="chat-sample">
-          <a class="chip" href={WA} target="_blank" rel="noopener">¿Dónde veo mantas en enero?</a>
-          <a class="chip" href={WA} target="_blank" rel="noopener">Mar Rojo vs Maldivas</a>
-          <a class="chip" href={WA} target="_blank" rel="noopener">Primer liveaboard</a>
+        <div class="chat-sample" id="giora-chips">
+          <button type="button" class="chip" data-q="¿Dónde veo mantas oceánicas en enero?">¿Dónde veo mantas en enero?</button>
+          <button type="button" class="chip" data-q="Mar Rojo vs Maldivas, ¿cuál me recomiendas?">Mar Rojo vs Maldivas</button>
+          <button type="button" class="chip" data-q="Estoy empezando, ¿cuál es un buen primer liveaboard?">Primer liveaboard</button>
         </div>
+        <form class="chat-ask" id="giora-form">
+          <input id="giora-input" type="text" placeholder="Escríbele a Giora…" autocomplete="off" />
+          <button type="submit" class="chat-ask-send" aria-label="Enviar">✦</button>
+        </form>
       </div>
     </div>
   </div>
 </section>
+
+<script is:inline>
+  (() => {
+    const body = document.getElementById('giora-body');
+    const chips = document.getElementById('giora-chips');
+    const form = document.getElementById('giora-form');
+    const input = document.getElementById('giora-input');
+    const sendBtn = form ? form.querySelector('.chat-ask-send') : null;
+    if (!body || !form || !input) return;
+    const WA = 'https://wa.me/34619401041';
+    const esc = (t) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+    const md = (t) => esc(t).replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>').replace(/\*([^*]+)\*/g, '<i>$1</i>').replace(/\n/g, '<br/>');
+    let history = [];
+    let busy = false;
+
+    function addUser(text) {
+      const d = document.createElement('div'); d.className = 'msg u'; d.textContent = text;
+      body.appendChild(d); body.scrollTop = body.scrollHeight;
+    }
+    function addGiora() {
+      const wrap = document.createElement('div'); wrap.className = 'msg g thinking';
+      const tag = document.createElement('div'); tag.className = 'gtag'; tag.textContent = 'Giora'; wrap.appendChild(tag);
+      const gb = document.createElement('div'); gb.className = 'gbody'; gb.textContent = 'Giora está escribiendo…'; wrap.appendChild(gb);
+      body.appendChild(wrap); body.scrollTop = body.scrollHeight;
+      return wrap;
+    }
+    function setChips(arr) {
+      if (!chips) return;
+      const list = (arr && arr.length) ? arr : ['¿Mejor época para Raja Ampat?', 'Mar Rojo vs Maldivas', 'Primer liveaboard'];
+      chips.innerHTML = '';
+      list.forEach((q) => {
+        const b = document.createElement('button'); b.type = 'button'; b.className = 'chip';
+        b.textContent = q; b.dataset.q = q; chips.appendChild(b);
+      });
+    }
+    async function ask(text) {
+      text = (text || '').trim();
+      if (busy || !text) return;
+      busy = true; input.value = ''; if (sendBtn) sendBtn.disabled = true;
+      addUser(text);
+      history.push({ role: 'user', content: text });
+      const wrap = addGiora();
+      const gb = wrap.querySelector('.gbody');
+      try {
+        const res = await fetch('/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ messages: history }) });
+        if (!res.ok) throw new Error('bad');
+        const r = await res.json();
+        if (!r || !r.content) throw new Error('nocontent');
+        wrap.classList.remove('thinking');
+        gb.innerHTML = md(r.content);
+        if (r.fuente) { const c = document.createElement('div'); c.className = 'cite'; c.textContent = 'Fuente: ' + r.fuente; wrap.appendChild(c); }
+        history.push({ role: 'assistant', content: r.content });
+        setChips(r.sugerencias);
+        try { gtag('event', 'giora_panel_reply'); } catch (e) {}
+      } catch (e) {
+        wrap.classList.remove('thinking');
+        gb.innerHTML = 'Ahora mismo no puedo responderte por aquí. <a href="' + WA + '" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;font-weight:600">Escríbeme por WhatsApp</a> y te ayudo en persona.';
+      } finally {
+        busy = false; if (sendBtn) sendBtn.disabled = false; body.scrollTop = body.scrollHeight; input.focus();
+      }
+    }
+    form.addEventListener('submit', (e) => { e.preventDefault(); ask(input.value); });
+    if (chips) chips.addEventListener('click', (e) => { const b = e.target.closest('.chip'); if (b && b.dataset.q) ask(b.dataset.q); });
+  })();
+</script>
 
 <!-- ================= FOOTER ================= -->
 <footer class="foot">
@@ -603,10 +679,8 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
   </div>
 </footer>
 
-<a class="fab" href={WA} target="_blank" rel="noopener" aria-label="Escribir a Giora por WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.25.69-1.45 1.32-1.99 1.4-.53.08-1.02.29-3.43-.71-2.89-1.2-4.73-4.16-4.87-4.35-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08.99-2.37.25-.28.55-.35.73-.35.18 0 .37 0 .53.01.17.01.4-.06.62.48.25.6.85 2.07.92 2.22.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.69-.81.87-1.08.18-.28.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.66-.18 1.35Z"/></svg>
-  <span>Pregúntale a Giora</span>
-</a>
+
+<ChatWidget />
 
 <!-- ================= SCRIPTS ================= -->
 <script is:inline>
