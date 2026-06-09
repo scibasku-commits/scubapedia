@@ -39,6 +39,10 @@ function url(slug: string, preset: Preset): string {
 const ESTRELLA_HERO: ReadonlySet<string> = new Set([
   'raja-ampat', 'komodo', 'similan-surin-richelieu',
   'brother-islands', 'maldivas-baa-hanifaru', 'sipadan-mabul',
+  // Lote 2 fotos externas (Wikipedia/Commons, QC visual) — 2026-06-09
+  'aliwal-shoal', 'cabo-de-gata', 'coiba-panama', 'costa-brava', 'jordania-aqaba',
+  'kaikoura', 'kimbe-bay-png', 'poor-knights-nz', 'puerto-madryn', 'scapa-flow',
+  'sodwana-bay',
 ]);
 
 function estrellaUrl(id: string, preset: Preset): string {
