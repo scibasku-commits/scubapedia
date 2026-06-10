@@ -34,6 +34,19 @@ const SPOTS = Object.entries(coords).map(([id, c]) => {
 const total = SPOTS.length;
 const gioraN = SPOTS.filter((s) => s.giora).length;
 
+// Etiquetas de zona marina (texto de contexto sobre el mapa)
+const ZONAS_MAR = [
+  { t: 'Mar Rojo', lat: 21, lng: 36.5 },
+  { t: 'Mediterráneo', lat: 35.5, lng: 16 },
+  { t: 'Caribe', lat: 14.5, lng: -74 },
+  { t: 'Maldivas', lat: 1.5, lng: 73 },
+  { t: 'Sudeste Asiático', lat: 0, lng: 122 },
+  { t: 'Pacífico Sur', lat: -18, lng: -158 },
+  { t: 'Océano Índico', lat: -12, lng: 62 },
+  { t: 'Atlántico', lat: 33, lng: -42 },
+  { t: 'Pacífico Este', lat: 7, lng: -104 },
+];
+
 const title = 'Mapamundi del buceo · Scubapedia — el atlas de los destinos de buceo';
 const description = `Explora ${total} destinos de buceo geolocalizados en un mapamundi interactivo. Filtra, pincha cada punto y entra en su ficha.`;
 const canonical = new URL('/mapa/', Astro.site ?? 'https://scubapedia.org').toString();
@@ -125,10 +138,12 @@ const WA = 'https://wa.me/34619401041';
     .graticule{fill:none;stroke:var(--decor);stroke-width:.4;opacity:.12}
     .sphere{fill:#dceaf0;stroke:var(--borde);stroke-width:1}
     .spot{cursor:pointer;transition:opacity .25s ease}
-    .spot circle.pt{fill:var(--accent);stroke:#fff;stroke-width:1.1;transition:r .15s ease}
-    .spot circle.halo{fill:none;stroke:var(--accent);opacity:0;transition:opacity .2s ease}
-    .spot.giora circle.pt{fill:var(--giora)}
-    .spot.giora circle.halo{stroke:var(--giora)}
+    .spot circle.pt{fill:#0A5570;stroke:#fff;stroke-width:1.3;transition:r .15s ease}
+    .spot circle.halo{fill:none;stroke:#0A5570;opacity:0;transition:opacity .2s ease}
+    .spot.giora circle.pt{fill:#e0824a}
+    .spot.giora circle.halo{stroke:#e0824a}
+    .zlabel{fill:#0a5570;opacity:.5;font-family:var(--sans);font-weight:700;letter-spacing:.1em;text-transform:uppercase;pointer-events:none;text-anchor:middle}
+    .hovername{font-family:var(--sans);font-weight:700;fill:var(--tinta);paint-order:stroke;stroke:#faf6ec;stroke-width:3.5px;stroke-linejoin:round;pointer-events:none;text-anchor:middle}
     .spot.dim{opacity:.08;pointer-events:none}
     .spot:hover circle.halo,.spot.sel circle.halo{opacity:.4}
 
@@ -242,7 +257,7 @@ const WA = 'https://wa.me/34619401041';
     </p>
   </main>
 
-  <script is:inline define:vars={{ SPOTS }}>window.SPOTS = SPOTS;</script>
+  <script is:inline define:vars={{ SPOTS, ZONAS_MAR }}>window.SPOTS = SPOTS; window.ZONAS_MAR = ZONAS_MAR;</script>
   <script is:inline>
   (function () {
     if (typeof d3 === 'undefined') { console.error('d3 no cargó'); return; }
@@ -258,21 +273,34 @@ const WA = 'https://wa.me/34619401041';
     gZoom.append("path").datum(sphere).attr("class", "sphere").attr("d", path);
     gZoom.append("path").datum(d3.geoGraticule10()).attr("class", "graticule").attr("d", path);
     const gLand = gZoom.append("g");
+    const gLabels = gZoom.append("g");
     const gDots = gZoom.append("g");
+    const hoverName = gDots.append("text").attr("class", "hovername").style("display", "none");
 
     const setTxt = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
-    let dots = null; const BASE_R = 4.2; let curK = 1;
+    let dots = null; const BASE_R = 5; let curK = 1;
+
+    function showHover(d) {
+      const xy = projection([d.lon, d.lat]); if (!xy) return;
+      hoverName.attr("x", xy[0]).attr("y", xy[1] - (BASE_R + 6) / curK).attr("font-size", (13 / curK) + "px").text(d.n).style("display", null).raise();
+    }
+    function plotZonas() {
+      gLabels.selectAll("text").data(window.ZONAS_MAR || []).enter().append("text")
+        .attr("class", "zlabel").attr("font-size", "14px")
+        .attr("x", z => { const xy = projection([z.lng, z.lat]); return xy ? xy[0] : -99; })
+        .attr("y", z => { const xy = projection([z.lng, z.lat]); return xy ? xy[1] : -99; })
+        .text(z => z.t);
+    }
 
     function plotDots() {
       dots = gDots.selectAll("g.spot").data(data).enter().append("g")
         .attr("class", d => "spot " + (d.giora ? "giora" : "base"))
         .attr("transform", d => { const xy = projection([d.lon, d.lat]); return xy ? `translate(${xy[0]},${xy[1]})` : "translate(-99,-99)"; })
         .on("click", function (ev, d) { ev.stopPropagation(); openPopup(d, this); })
-        .on("mouseenter", function () { d3.select(this).select("circle.pt").attr("r", (BASE_R + 2) / curK); })
-        .on("mouseleave", function () { if (!this.classList.contains("sel")) d3.select(this).select("circle.pt").attr("r", BASE_R / curK); });
+        .on("mouseenter", function (ev, d) { d3.select(this).select("circle.pt").attr("r", (BASE_R + 2) / curK); showHover(d); })
+        .on("mouseleave", function () { if (!this.classList.contains("sel")) d3.select(this).select("circle.pt").attr("r", BASE_R / curK); hoverName.style("display", "none"); });
       dots.append("circle").attr("class", "halo").attr("r", BASE_R * 3.4);
       dots.append("circle").attr("class", "pt").attr("r", BASE_R);
-      dots.append("title").text(d => `${d.n} · ${d.c}`);
     }
 
     const zoom = d3.zoom().scaleExtent([1, 9]).translateExtent([[0, 0], [W, CROP]])
@@ -283,9 +311,10 @@ const WA = 'https://wa.me/34619401041';
         svg.select(".graticule").attr("stroke-width", 0.4 / curK);
         svg.select(".sphere").attr("stroke-width", 1 / curK);
         if (dots) {
-          dots.selectAll("circle.pt").attr("r", function () { return this.parentNode.classList.contains("sel") ? (BASE_R + 1.5) / curK : BASE_R / curK; }).attr("stroke-width", 1.1 / curK);
+          dots.selectAll("circle.pt").attr("r", function () { return this.parentNode.classList.contains("sel") ? (BASE_R + 1.5) / curK : BASE_R / curK; }).attr("stroke-width", 1.3 / curK);
           dots.selectAll("circle.halo").attr("r", (BASE_R * 3.4) / curK);
         }
+        gLabels.selectAll("text").attr("font-size", (14 / curK) + "px");
         if (selNode) positionPopup(selNode);
       })
       .on("start", () => svg.node().classList.add("grabbing"))
@@ -355,9 +384,9 @@ const WA = 'https://wa.me/34619401041';
       .then(world => {
         const countries = topojson.feature(world, world.objects.countries).features;
         gLand.selectAll("path").data(countries).enter().append("path").attr("class", "land").attr("d", path);
-        plotDots(); applyFilters();
+        plotZonas(); plotDots(); applyFilters();
       })
-      .catch(err => { console.error("No se pudo cargar el mapa base:", err); plotDots(); applyFilters(); });
+      .catch(err => { console.error("No se pudo cargar el mapa base:", err); plotZonas(); plotDots(); applyFilters(); });
   })();
   </script>
 </body>
