@@ -74,6 +74,14 @@ El reclamo de Sudán son los **tiburones martillo en cardumen**. Donde en Egipto
 
 Solo accesible en liveaboard. La oferta es extremadamente reducida — solo 2–3 barcos operan simultáneamente en toda la zona, lo que garantiza que los arrecifes están prácticamente sin presión turística. Entre los pocos que mantienen itinerarios sudaneses están el **Royal Evolution** (39 m, 24 plazas, certificación SOLAS de Bureau Veritas, temporada en Sudán de febrero a mayo) y el **M/Y Andromeda** (40 m de acero, 26 plazas, construido en 2009 y renovado en 2019 y 2022), que programa rutas South de una semana, Far North y Deep South de dos y un "Ultimate Sudan" de tres. Ambos combinan el resto del año rutas en Egipto y Arabia Saudí. Plazas pocas y fechas contadas: aquí no se improvisa.
 
+## Mejor época para ir
+
+La temporada va de **febrero a mayo**: es cuando los dos o tres liveaboards de la zona programan sus itinerarios sudaneses, con mar más estable y la mejor ventana para los cardúmenes de martillos. De octubre a noviembre hay una segunda ventana corta. De julio a septiembre, el calor extremo y la falta de barcos en la zona descartan el viaje: los operadores se trasladan a Egipto y Arabia Saudí.
+
+## Nivel requerido
+
+AOWD como mínimo razonable. No por una exigencia formal del destino, sino por el contexto: corrientes moderadas a fuertes en pasos y pináculos, paredes que caen a plomo, inmersiones desde zodiac y la cámara hiperbárica más cercana a un país de distancia. Es un viaje para buceadores con experiencia en azul y en corriente — si los Brothers o Daedalus te parecieron exigentes, Sudán es un paso más en la misma dirección, no un destino de iniciación.
+
 ## Cómo llegar
 
 **Vuelo:** Port Sudan (PZU) vía El Cairo u otras conexiones africanas. Liveaboards desde Port Sudan o en algunos casos con embarque en Egipto y tránsito sur.
