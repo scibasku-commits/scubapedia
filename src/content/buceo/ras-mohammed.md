@@ -28,12 +28,17 @@ vida_marina_destacada:
   - "Peces payaso"
 liveaboards_disponibles:
   - "Sea Serpent Fleet"
-centros_buceo_recomendados: []
+  - "Golden Dolphin Fleet"
+  - "Emperor Divers"
+  - "Blue Force Fleet"
+centros_buceo_recomendados:
+  - "Camel Dive Club & Hotel (Naama Bay)"
+  - "Sharks Bay Umbi"
 proveedores_scibasku: []
 precio_inmersion_aprox: "65-75 EUR (excursión día desde Sharm)"
 web_referencia: "https://www.cdws.travel"
 giora_estuvo: true
-updated: 2026-04-06
+updated: 2026-06-10
 status: draft
 ---
 
@@ -73,6 +78,24 @@ Pradera de anémonas con peces payaso de varias especies en alta densidad. Site 
 
 Ras Mohammed es probablemente el punto con mayor densidad de biomasa del norte del Mar Rojo. Los bancos de barracudas en Shark Reef pueden superar los 500 individuos. Napoleones de más de un metro se acercan a los buceadores sin timidez. Tiburones grises y de punta blanca patrullan las paredes. Tortugas carey y verdes, atunes de aleta amarilla, rayas águila.
 
+## Liveaboards
+
+Ras Mohammed es parada fija de los itinerarios Norte del Mar Rojo. Si embarcas en una ruta "North" o "North & Wrecks" — salen de Hurghada o de Sharm el Sheikh, normalmente de 7 noches — buceas el parque nacional, los pecios del Estrecho de Gubal (Thistlegorm, Rosalie Moller) y los arrecifes de Tirán en la misma semana.
+
+Flotas con salidas regulares por la zona:
+
+- **Golden Dolphin Fleet** — cuatro barcos con base en Hurghada para las rutas Norte, con salidas "North Classic" y combinadas con Tirán programadas a lo largo de todo 2026. Es la flota que Scibasku mejor conoce en el Mar Rojo: tripulación egipcia veterana que lleva años repitiendo estas rutas.
+- **Emperor Divers** — Elite, Superior y Asmaa cubren la ruta Norte (Thistlegorm, Ras Mohammed, Tirán) con nitrox incluido.
+- **Blue Force Fleet** — la flota española del Mar Rojo. El Red Sea Blue Force 2 (28 m, 18 buceadores) sale de Sharm el Sheikh; el Blue Force 3 (42 m, casco de acero) opera desde Hurghada. Briefings y guías en español.
+- **Sea Serpent Fleet** — yate de 34 m sobre casco Benetti Classic 35, 22 buceadores, nitrox y soporte para rebreather. Opera habitualmente la zona del parque.
+
+## Centros de buceo
+
+No necesitas liveaboard para bucear aquí: la mayoría de las inmersiones en Ras Mohammed se hacen en barco de día desde Sharm el Sheikh. Dos centros con trayectoria contrastada:
+
+- **Camel Dive Club & Hotel** (Naama Bay) — abierto en 1986, SSI Diamond Instructor Training Center y único centro de Egipto con certificación Gold Green Fins de sostenibilidad. Day boats a Ras Mohammed y Tirán, grupos de máximo 6 buceadores por guía y nitrox gratis para buceadores certificados. El embarcadero de Naama queda a 10 minutos a pie del hotel.
+- **Sharks Bay Umbi** — resort de buceo en la bahía de Sharks Bay, con arrecife propio frente al centro. Organiza salidas a Ras Mohammed y Tirán, incluye traslados de aeropuerto y además opera sus propios liveaboards (flota Freedom).
+
 ## Mejor época para ir
 
 Todo el año. Mejores condiciones de marzo a mayo y de septiembre a noviembre. En verano, el agua está en su punto más cálido y los bancos de peces son más densos.
@@ -97,6 +120,13 @@ Ras Mohammed es la primera inmersión que recomendamos a quien visita el Mar Roj
 - [[sharm-el-sheikh]] · [[strait-of-tiran]] · [[dahab]]
 - [[mar-rojo-overview]]
 
-## Schema
+## Fuentes
 
-<!-- JSON-LD se genera en fase de publicación -->
+- [Camel Dive Club & Hotel](https://www.cameldive.com/dive-and-stay-camel-hotel/) — day boats a Ras Mohammed y Tirán desde Naama Bay; respalda fundación (1986), certificación SSI y Green Fins.
+- [Sharks Bay Umbi](https://sharksbay.com) — web oficial del resort de buceo de Sharks Bay; salidas a Ras Mohammed y liveaboards propios.
+- [Golden Dolphin Fleet](https://www.golden-dolphin.net) — web oficial; rutas Norte del Mar Rojo con Ras Mohammed y Tirán.
+- [Emperor Divers](https://www.emperordivers.com) — web oficial; flota Mar Rojo con ruta Norte y nitrox incluido.
+- [Blue Force Fleet](https://www.blueforcefleet.com) — web oficial; barcos y rutas de la flota en el Mar Rojo.
+- [Sea Serpent Fleet](https://www.seaserpentfleet.com) — web oficial; especificaciones del barco y zona de operación.
+- [CDWS](https://www.cdws.travel) — Chamber of Diving and Watersports, referencia oficial del buceo recreativo en Egipto.
+- KB Scibasku: `raw/buceo/Camel Dive Club & Hotel.md`, `raw/buceo/proveedores/egipto-sharksbay-umbi.md`, `wiki/buceo/liveaboards/golden-dolphin.md`, `wiki/buceo/liveaboards/emperor-divers.md`, `wiki/buceo/liveaboards/blue-force-mar-rojo.md`, `raw/buceo/liveaboards/sea-serpent.md`, `raw/buceo/Liveaboards-MarRojo/Rutas/Norte.md`.

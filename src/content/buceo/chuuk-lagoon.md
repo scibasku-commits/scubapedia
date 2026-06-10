@@ -112,7 +112,3 @@ Chuuk es ideal en **liveaboard** (7 noches) que permite llegar a los pecios más
 - [[palau]] — Palau, pelágico y Blue Corner a poca distancia
 - [[yap]] — Yap, mantas residentes combinable en ruta
 - [[scapa-flow]] — Scapa Flow (Escocia), el otro gran cementerio de guerra submarino
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

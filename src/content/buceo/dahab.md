@@ -36,7 +36,7 @@ proveedores_scibasku: []
 precio_inmersion_aprox: "25-35 EUR/inmersión guiada"
 web_referencia: "https://www.cdws.travel"
 giora_estuvo: true
-updated: 2026-04-06
+updated: 2026-06-10
 status: draft
 ---
 
@@ -64,7 +64,7 @@ Lo que define a Dahab es el shore diving: todos los dive sites principales se ac
 ## Puntos de inmersión destacados
 
 ### Blue Hole
-Un sinkhole circular de 130 metros de profundidad con un arco a 56 metros que conecta con el mar abierto. El arco es territorio exclusivo de buceadores técnicos y ha cobrado vidas — más de 130 fallecidos documentados. Pero la parte superior del Blue Hole (hasta 20-25 metros) es un dive site espectacular y seguro para buceadores recreativos, con paredes de coral y una concentración de vida impresionante. La comunidad de freediving mundial considera Dahab y el Blue Hole como uno de sus lugares sagrados.
+Un sinkhole circular de 130 metros de profundidad con un arco a 56 metros que conecta con el mar abierto. El arco es territorio reservado a buceadores técnicos y ha cobrado vidas — más de 130 fallecidos documentados. Pero la parte superior del Blue Hole (hasta 20-25 metros) es un dive site espectacular y seguro para buceadores recreativos, con paredes de coral y una concentración de vida impresionante. La comunidad de freediving mundial considera Dahab y el Blue Hole como uno de sus lugares sagrados.
 
 ### The Canyon
 Sistema de fisuras verticales que desciende hasta 30 metros. Se entra por una abertura estrecha que se abre en una catedral submarina iluminada por rayos de luz filtrados. Uno de los dives más fotogénicos de Egipto.
@@ -87,6 +87,10 @@ Dahab es un paraíso del macro. Donde Sharm y Marsa Alam tienen pelágicos, Daha
 
 No es un destino para tiburones — para eso está el sur. Es un destino para fotógrafos macro, freedivers y buceadores que aprecian los detalles del arrecife.
 
+## Liveaboards
+
+Dahab no es base de liveaboards: aquí todo se bucea desde la orilla, y esa es justo su gracia. Pero la zona sí aparece en rutas de safari del norte del Mar Rojo. El **Golden Dolphin I** opera la ruta "North - Strait of Tiran - Dahab", de 7 noches con salida y regreso en Hurghada, con varias fechas programadas en 2026 (enero, marzo y noviembre). Es la forma de tocar los arrecifes del Sinaí sin renunciar al formato barco. ¿Cuál elegir? Si quieres flexibilidad, café en la orilla y bucear a tu ritmo, quédate en tierra; si quieres encadenar Tirán, Ras Mohammed y el Sinaí en una sola semana, el liveaboard hace ese trabajo por ti.
+
 ## Mejor época para ir
 
 Dahab se bucea todo el año. Las condiciones óptimas son de marzo a mayo y de septiembre a noviembre, con agua entre 24-28°C. El verano es caluroso pero el agua está perfecta. El invierno puede ser fresco (21°C) pero la visibilidad es excepcional y los precios bajan significativamente.
@@ -104,7 +108,7 @@ Dahab se bucea todo el año. Las condiciones óptimas son de marzo a mayo y de s
 
 ## Nivel requerido
 
-La mayoría de sites son aptos para **Open Water Diver**. Three Pools y Eel Garden funcionan para bautizos y Discover Scuba. El Blue Hole recreativo (hasta 25m) es seguro para OWD con guía. El arco del Blue Hole (56m) es **exclusivamente para buceadores técnicos con formación específica** — no es un site donde "probar suerte".
+La mayoría de sites son aptos para **Open Water Diver**. Three Pools y Eel Garden funcionan para bautizos y Discover Scuba. El Blue Hole recreativo (hasta 25m) es seguro para OWD con guía. El arco del Blue Hole (56m) es **solo para buceadores técnicos con formación específica** — no es un site donde "probar suerte".
 
 ## Alojamiento
 
@@ -115,18 +119,6 @@ La mayoría de sites son aptos para **Open Water Diver**. Three Pools y Eel Gard
 | Laguna | Zona resort, más tranquila | 40-100 EUR/noche |
 | Zona Blue Hole | Eco-lodges, campamentos, ambiente alternativo | 15-50 EUR/noche |
 
-## Precios orientativos (Scibasku)
-
-| Producto | Precio |
-|----------|--------|
-| Discovery (7 días, 3* + 10 inmersiones guiadas) | Desde 650 EUR |
-| Open Water Course (5 noches) | Desde 450 EUR |
-| Safari 2 semanas (14 días) | Desde 950 EUR |
-| Freediving Course (5 noches) | Desde 550 EUR |
-| Inmersión guiada | 25-35 EUR |
-| Alquiler equipo completo | 15-20 EUR/día |
-| PADI Open Water | 280-350 EUR |
-
 ## Consejo Scibasku
 
 Dahab es el destino que recomendamos para sacarse el título de buceo: precios bajos, shore diving sin presión, centros de calidad y un ambiente relajado donde aprender a tu ritmo. Para buceadores ya certificados, es el lugar perfecto para un viaje largo y económico con inmersiones diarias sin la logística de un barco. Y si te interesa el freediving, no hay mejor sitio en el Mediterráneo-Mar Rojo para iniciarte.
@@ -136,6 +128,7 @@ Dahab es el destino que recomendamos para sacarse el título de buceo: precios b
 - [[sharm-el-sheikh]] · [[hurghada]] · [[mar-rojo-overview]]
 - [[ras-mohammed]] · [[strait-of-tiran]]
 
-## Schema
+## Fuentes
 
-<!-- JSON-LD se genera en fase de publicación -->
+- [CDWS — Chamber of Diving and Watersports](https://www.cdws.travel/) — Organismo egipcio que regula los centros de buceo y deportes acuáticos del Mar Rojo
+- [PADI — Diving in Dahab](https://www.padi.com/diving-in/dahab/) — Panorámica del destino: Blue Hole, Canyon y shore diving del Sinaí

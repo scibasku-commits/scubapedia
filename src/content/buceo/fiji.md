@@ -116,7 +116,3 @@ El **Nai'a** es el liveaboard emblemático de Fiji, operando rutas de 10 noches 
 - [[palau]] — Palau, pelágicos y Blue Corner para un circuito Pacífico
 - [[kimbe-bay-png]] — Kimbe Bay, otro paraíso de biodiversidad en el Pacífico occidental
 - [[maldivas-fuvahmulah]] — Fuvahmulah, para comparar el tiburón tigre de Maldivas vs Beqa
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

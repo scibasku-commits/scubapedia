@@ -104,7 +104,3 @@ Hay dos modalidades principales:
 - [[ningaloo]] — Australia Occidental, tiburón ballena en snorkel
 - [[gran-barrera]] — Gran Barrera de Coral, arrecife y diversidad tropical
 - [[rowley-shoals]] — Australia Occidental, atolones remotos y coral prístino
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

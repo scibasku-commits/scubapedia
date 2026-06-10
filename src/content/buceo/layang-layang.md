@@ -31,7 +31,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.800–3.000 EUR sin vuelos (paquete resort 6-7 noches con 10-20 inmersiones)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-10
 status: draft
 tags:
   - sudeste-asiatico
@@ -74,7 +74,11 @@ Los **tiburones martillo** (*Sphyrna lewini*) en cardúmenes son el gran reclamo
 
 ## Liveaboards
 
-**Exclusivamente resort**: Layang Layang Dive Resort opera con vuelos charter desde Kota Kinabalu directos al aeródromo del atolón. Paquetes de 6–7 noches con 10–20 inmersiones incluidas. No hay liveaboard ni acceso alternativo. Las reservas se agotan en temporada de martillos (abril–mayo) meses antes.
+**Solo resort**: Layang Layang Dive Resort opera con vuelos charter desde Kota Kinabalu directos al aeródromo del atolón. Paquetes de 6–7 noches con 10–20 inmersiones incluidas. No hay liveaboard ni acceso alternativo. Las reservas se agotan en temporada de martillos (abril–mayo) meses antes.
+
+## Mejor época para ir
+
+El calendario manda más que en ningún otro destino: el resort solo opera de **marzo a agosto** y de septiembre a febrero el atolón queda cerrado, sin plan B. Dentro de esa ventana, **abril y mayo** son el motivo del viaje — los cardúmenes de tiburones martillo —, con el agua estable entre 27 y 29 °C. De junio a agosto el arrecife, las paredes y los dogtooth siguen ahí, pero los martillos ya no son la apuesta. ¿Quieres martillos? Reserva abril-mayo con muchos meses de antelación o cambia de destino.
 
 ## Cómo llegar
 
@@ -88,9 +92,7 @@ Los **tiburones martillo** (*Sphyrna lewini*) en cardúmenes son el gran reclamo
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+Layang-Layang es una apuesta a una sola carta. Si sale — martillos en cardumen sobre una pared que cae 2.000 metros, sin otro barco a la vista —, pocas inmersiones del Sudeste Asiático la igualan. Si no sale, has volado hasta una base naval en mitad del Mar de China para bucear un arrecife bonito que podrías haber encontrado más cerca. Por eso encaja en el buceador AOWD con varios viajes a la espalda, que entiende que la fauna pelágica no firma contratos y disfruta igualmente del atolón vacío. No encaja en quien hace su primer gran viaje de buceo, ni en quien necesita variedad de plan en tierra: aquí no hay pueblo, ni excursiones, ni alternativa al agua. Una carta. Tú decides si la juegas.
 
 ## Fichas relacionadas
 
@@ -98,6 +100,7 @@ Los **tiburones martillo** (*Sphyrna lewini*) en cardúmenes son el gran reclamo
 - [[banda-sea]] — Banda Sea, otro destino de martillos en temporada corta
 - [[palau]] — Palau, para comparar pelágico del Pacífico
 
-## Schema
+## Fuentes
 
-<!-- JSON-LD se genera en fase de publicación -->
+- [Layang Layang Island Resort](https://www.avillionlayanglayang.com/) — Web oficial del único resort del atolón; temporada operativa y logística de charters
+- [Dive The World — Layang Layang](https://www.dive-the-world.com/diving-sites-malaysia-layang-layang.php) — Guía de los sitios de buceo del atolón y la temporada de martillos

@@ -102,7 +102,3 @@ Puerto Madryn funciona exclusivamente en **dayboat** desde el puerto. No hay liv
 - [[rapa-nui]] — Otro destino único del Pacífico/Atlántico Sur
 - [[poor-knights-nz]] — Nueva Zelanda, aguas templadas del Pacífico Sur
 - [[neptune-islands]] — Australia del Sur, tiburones blancos en jaula
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

@@ -112,7 +112,3 @@ Scapa Flow funciona casi exclusivamente en **liveaboard estático**: barcos "har
 - [[islandia-silfra]] — Islandia, experiencia nórdica radicalmente diferente en la misma zona de agua fría
 - [[noruega-orcas]] — Noruega, fauna espectacular en fiordos árticos
 - [[irlanda-tiburon-peregrino]] — Irlanda, fauna atlántica norte en formato más accesible
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

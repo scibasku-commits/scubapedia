@@ -104,7 +104,3 @@ No existe liveaboard clásico consolidado en Mozambique. El formato es **resort 
 - [[sodwana-bay]] — Sodwana Bay, al sur, para combinar en un viaje por el litoral índico africano
 - [[tanzania-zanzibar]] — Tanzania y Zanzíbar, el siguiente destino al norte con tiburón ballena en Mafia
 - [[seychelles]] — Seychelles, para quienes buscan más comodidad con fauna similar
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

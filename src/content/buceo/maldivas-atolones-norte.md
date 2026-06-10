@@ -52,7 +52,7 @@ proveedores_scibasku:
 precio_inmersion_aprox: "115-130 USD por inmersion desde resort"
 web_referencia: "https://visitmaldives.com"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-10
 status: draft
 ---
 
@@ -102,7 +102,7 @@ Maldivas no es un destino para principiantes absolutos. Los kandus exigen nivel 
 
 ### Rasdhoo
 
-- **Rasdhoo Madivaru** — La inmersión de tiburones martillo. Se baja al amanecer a 25-35m en la esquina exterior del atolon y se espera en el azul. No es garantizado, pero cuando ocurre, es inolvidable. Solo para buceadores experimentados con comodidad en profundidad y corriente.
+- **Rasdhoo Madivaru** — La inmersión de tiburones martillo. Se baja al amanecer a 25-35m en la esquina exterior del atolon y se espera en el azul. No es garantizado, pero cuando ocurre, se te queda grabado para siempre. Solo para buceadores experimentados con comodidad en profundidad y corriente.
 
 ### Raa y Lhaviyani
 
@@ -136,7 +136,7 @@ La opcion comoda. Sales de tu isla, buceas 2 inmersiones por la mañana en los p
 - **LUX* South Ari Atoll** — Euro-Divers. Acceso directo a Dhigurah y tiburones ballena.
 - **Conrad Rangali Island** — Iconico resort sobre el agua en Ari Sur.
 - **Vilamendhoo** — Excelente house reef, buena relacion calidad-precio para Maldivas.
-- **Lily Beach** — All-inclusive premium en Ari Sur.
+- **Lily Beach** — All-inclusive de gama alta en Ari Sur.
 - **Ritz-Carlton Fari Islands** — Dive Butler International. Lujo absoluto, Male Norte.
 - **Four Seasons Kuda Huraa** — Male Norte, acceso a Lankan Manta Point.
 - **Kurumba** — Clasico cerca de Male, PADI dive center histórico.
@@ -152,6 +152,15 @@ La opcion para maximizar el buceo. 3-4 inmersiones diarias, acceso a puntos remo
 **Limitaciones:** Camarotes compactos, convivencia con grupo, menos tiempo de "resort".
 
 Los itinerarios típicos cubren Male Norte + Ari (7 noches) o Male + Baa + Raa (7-10 noches). La ruta "Best of Maldivas" suele ser Male Norte → Ari → Male Sur en una semana.
+
+## Liveaboards
+
+Barcos con itinerarios publicados que cubren los atolones del norte:
+
+- **Carpe Diem Fleet** — tres barcos (Carpe Diem, Carpe Vita, Carpe Novo) con la ruta "Best of Maldives" de 7 noches como producto base. Carpe Vita añade el itinerario "Reef, Rays & Hanifaru Bay" (5 noches por el atolón de Baa) y Carpe Novo programa además una "Deep North Route" de 12 noches. El Novo, 43 m, está pensado para fotógrafos submarinos: mesa de cámaras dedicada y cubierta propia para el equipo. Nitrox gratuito en Carpe Vita.
+- **Maldives Blue Force One** — 24 buceadores en 12 cabinas, premiado como mejor barco construido en Maldivas en 2018. Opera desde Male con itinerarios que incluyen Ari y Hanifaru Bay según calendario. Blue Force es flota española: guías y briefings en español, algo poco común en Maldivas.
+- **Scubaspa Yang** — el concepto "floating resort": centro PADI con nitrox incluido y un spa a bordo con yoga diario. Su ruta Far North incluye Hanifaru Bay (Reserva de la Biosfera UNESCO, atolón de Baa). Encaja bien cuando en la pareja solo bucea uno.
+- **Emperor Divers** — cinco barcos en Maldivas: Explorer, Serenity, Voyager, Virgo y Leo. El Serenity (26 plazas, 13 cabinas) salió de una reforma completa en 2023. Ojo: el Explorer (2019, 42 m, con dhoni de buceo dedicado de 24 m) se orienta más a los atolones centrales y del sur, así que revisa el itinerario concreto de cada salida antes de reservar.
 
 ## Mejor época para ir
 
@@ -218,41 +227,14 @@ Maldivas es probablemente el destino de buceo más versatil del planeta: combina
 - [[maldivas-atolones-sur]] — Atolones de Vaavu, Meemu, Thaa, Laamu: menos trafico, más tiburones
 - [[maldivas-liveaboard-rutas]] — Itinerarios típicos por atolones
 - [[cocoon-collection]] — Proveedor Scibasku, resorts en Maldivas
-- [[hummingbird-travel]] — Tour operador premium, resorts Maldivas/Seychelles
+- [[hummingbird-travel]] — Tour operador de gama alta, resorts Maldivas/Seychelles
 - [[buceo-drift-diving]] — Técnica y seguridad en buceo de deriva
 - [[certificaciones-buceo]] — AOWD, Rescue, especialidades
 
-## Schema
+## Fuentes
 
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "TouristDestination",
-  "name": "Maldivas — Atolones del Norte (North Male, Ari, Baa, Raa, Lhaviyani)",
-  "description": "Destino de buceo premium con mantas gigantes, tiburones ballena, drift diving en thilas y kandus. Atolones de North Male, South Male, Ari, Baa, Raa, Lhaviyani y Rasdhoo.",
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 4.1755,
-    "longitude": 73.5093
-  },
-  "touristType": ["Scuba Diving", "Snorkeling", "Marine Wildlife"],
-  "includesAttraction": [
-    {
-      "@type": "TouristAttraction",
-      "name": "Hanifaru Bay",
-      "description": "UNESCO Biosphere Reserve — masivas agregaciones de mantas de arrecife junio-octubre"
-    },
-    {
-      "@type": "TouristAttraction",
-      "name": "Kuda Rah Thila",
-      "description": "Pinaculo sumergido considerado uno de los mejores dive sites de Maldivas"
-    },
-    {
-      "@type": "TouristAttraction",
-      "name": "Lankan Manta Point",
-      "description": "Estacion de limpieza de mantas con avistamientos fiables todo el año"
-    }
-  ],
-  "isAccessibleForFree": false
-}
-```
+- [Carpe Diem Maldives](https://www.carpediemmaldives.com) — web oficial de la flota Carpe Diem, Carpe Vita y Carpe Novo.
+- [Blue Force Fleet — Buceo Maldivas](https://www.blueforcefleet.com/es/buceo-maldivas/) — rutas de Maldivas con Ari y Hanifaru; datos del Maldives Blue Force One.
+- [Scubaspa](https://scubaspa.com) — web oficial del Scubaspa Yang y sus rutas en Maldivas.
+- [Emperor Divers — Maldives](https://www.emperordivers.com/maldives/) — los cinco barcos de la flota Emperor en Maldivas.
+- KB Scibasku: `raw/buceo/liveaboards/carpe-diem.md`, `raw/buceo/liveaboards/carpe-vita.md`, `raw/buceo/liveaboards/carpe-novo.md`, `raw/buceo/liveaboards/maldives-blue-force-one.md`, `raw/buceo/liveaboards/maldives-blue-force-3.md`, `raw/buceo/liveaboards/scubaspa-yang.md`, `raw/buceo/liveaboards/emperor-explorer.md`, `raw/buceo/liveaboards/emperor-serenity.md`, `wiki/buceo/liveaboards/blue-force-mar-rojo.md`.

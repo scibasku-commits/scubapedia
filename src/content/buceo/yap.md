@@ -107,7 +107,3 @@ Yap funciona principalmente como **destino de resort**. Manta Ray Bay Resort & Y
 - [[palau]] — Palau, para combinar en una semana más de Micronesia
 - [[chuuk-lagoon]] — Chuuk/Truk, los pecios de la WWII
 - [[maldivas-baa-hanifaru]] — Hanifaru Bay, la otra concentración legendaria de mantas
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

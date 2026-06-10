@@ -116,7 +116,3 @@ Cabo de Palos no tiene liveaboard. El formato es **dayboat** desde el puerto de 
 - [[cabo-de-gata]] — Cabo de Gata, otro parque natural submarino en la costa sureste española
 - [[canarias-el-hierro]] — El Hierro, la mejor reserva marina española fuera del Mediterráneo
 - [[malta-gozo]] — Malta y Gozo, otra joya del Mediterráneo con aguas cristalinas
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

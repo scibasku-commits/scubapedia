@@ -32,7 +32,7 @@ centros_buceo_recomendados:
 proveedores_scibasku:
   - "Sarimanok"
 giora_estuvo: false
-updated: "2026-04-07"
+updated: "2026-06-10"
 status: draft
 tags:
   - "océano-índico"
@@ -97,6 +97,10 @@ Dos islotes unidos por un banco de arena que emerge en marea baja. Inmersiones e
 ### Corales
 Segunda mayor biodiversidad coralina del Índico occidental según Wildlife Conservation Society Madagascar. Gorgonias gigantes en Banc du Petit Castor. Corales duros y blandos en buen estado de conservación general.
 
+## Centros de buceo
+
+No hay liveaboards convencionales en Nosy Be; los arrecifes remotos de Mitsio y la ruta sur de Radames se alcanzan en cruceros de catamarán de 6 días / 5 noches. El centro de referencia es **Océane's Dream**, en el pueblo de Ambatoloaka: fundado en 1990, es el centro de buceo más antiguo de Nosy Be y de todo Madagascar, con equipo 100% malgache dirigido por Olivier Andrianantenaina. Opera como centro ADIP y PADI con nitrox, dos lanchas rápidas para el buceo diario (Tanikely, Sakatia, arrecifes locales) y un catamarán Lagoon 450 de 4 cabinas para los cruceros con inmersiones a Mitsio y Radames. Detalle que tranquiliza en un destino remoto: hay cámara hiperbárica operativa a un kilómetro del centro. El alojamiento asociado es el **Hotel Sarimanok**, un B&B de estilo criollo contiguo al centro y frente al mar, con paquetes combinados de estancia y buceo.
+
 ## Mejor época para ir
 
 | Período | Clima | Buceo | Megafauna |
@@ -143,12 +147,18 @@ El proveedor en la zona es **Sarimanok**, disponible a través de Viajes Scibask
 
 La infraestructura en Madagascar es rústica. No esperes el nivel de servicio de un resort en Maldivas. Pero para quien valora la autenticidad y los arrecifes sin otros buceadores, Nosy Be recompensa con creces.
 
+## Consejo Scibasku
+
+Nosy Be pide la mentalidad del viajero de mochila aunque duermas en hotel: las cosas funcionan, pero a ritmo malgache. Quien acepta ese trato recibe a cambio arrecifes de Mitsio sin otra burbuja a la vista, tortugas a tiro de aleta en Sakatia y, con suerte de calendario, jorobadas en superficie y tiburón ballena en el azul. Es el Índico para presupuestos que Maldivas expulsa y para parejas mixtas donde solo bucea uno. En cambio, quien mide un destino por la puntualidad del transfer, la variedad gastronómica o la visibilidad garantizada — aquí se mueve entre 10 y 25 metros — acabará frustrado. Madagascar no se adapta al visitante. El visitante se adapta a Madagascar, y ahí empieza lo bueno.
+
 ## Fichas relacionadas
 
 - [[maldivas]] — Alternativa Índico (más caro, más accesible, arrecifes diferentes)
 - [[mozambique]] — Vecino en el Canal de Mozambique, megafauna similar
 - [[seychelles]] — Otro destino Índico occidental con tortugas
 
-## Schema
+## Fuentes
 
-<!-- JSON-LD se genera en fase de publicación -->
+- [Océane's Dream](https://www.oceanesdream.com/) — Web oficial del centro de buceo más antiguo de Madagascar (Ambatoloaka, Nosy Be)
+- [Hôtel Sarimanok](https://www.hotel-sarimanok-nosy-be.com/) — Alojamiento asociado al centro de buceo, frente al mar en Ambatoloaka
+- [PADI — Diving in Madagascar](https://www.padi.com/diving-in/madagascar/) — Panorámica del buceo en Madagascar y la zona de Nosy Be

@@ -108,7 +108,3 @@ No existe un **liveaboard** consolidado en Cabo Verde. El formato es **resort + 
 - [[azores]] — Azores, pelágicos atlánticos con tiburón azul y mobulas
 - [[canarias-el-hierro]] — El Hierro, reserva marina española con fauna atlántica similar
 - [[madeira]] — Madeira, arrecife volcánico atlántico en aguas portuguesas
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

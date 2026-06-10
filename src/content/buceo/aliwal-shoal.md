@@ -105,7 +105,3 @@ El buceo en Aliwal Shoal funciona en formato **dayboat** exclusivamente: salidas
 - [[sardine-run]] — Sardine Run en la Wild Coast, el espectáculo pelágico más extremo de Sudáfrica
 - [[sodwana-bay]] — Sodwana Bay, arrecife tropical al norte; contraste total con Aliwal
 - [[mozambique-tofo]] — Mozambique Tofo, tiburones toro y mantas a pocas horas al norte
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

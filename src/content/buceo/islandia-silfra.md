@@ -99,7 +99,3 @@ No hay liveaboard ni barco involucrado — el acceso es **terrestre** directamen
 - [[noruega-orcas]] — Noruega, otra experiencia nórdica de agua fría extrema con fauna espectacular
 - [[scapa-flow]] — Scapa Flow, aguas frías con historia naval y pecios de la Primera Guerra Mundial
 - [[irlanda-tiburon-peregrino]] — Irlanda, aguas atlánticas menos extremas con tiburones peregrino
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

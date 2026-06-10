@@ -103,7 +103,3 @@ Madeira no tiene liveaboard — es un destino de **dayboat** y **shore diving**.
 - [[azores]] — Azores, para añadir pelágicos al viaje atlántico
 - [[canarias-el-hierro]] — El Hierro, reserva marina española con fauna similar
 - [[cabo-de-gata]] — Cabo de Gata, alternativa mediterránea OW-friendly
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

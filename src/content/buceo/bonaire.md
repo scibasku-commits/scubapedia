@@ -33,7 +33,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "900–1.800 EUR sin vuelos (alojamiento + coche + ilimitado shore diving)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-10
 status: draft
 tags:
   - caribe
@@ -74,17 +74,27 @@ Bonaire ha construido su reputación sobre un concepto simple y brillante: camio
 
 Bonaire destaca por la consistencia. No hay "el espectáculo" como en otros destinos, pero hay calidad constante en cada inmersión: tortugas omnipresentes, tarpones en los pecios, rayas descansando en la arena, nudibranquios en las esponjas. El coral duro está en mejor estado que en la mayoría del Caribe gracias a una gestión del Bonaire Marine Park seria desde los años 70.
 
+## Centros de buceo
+
+No hay liveaboards en Bonaire ni falta que hacen: el destino está diseñado alrededor del shore diving con coche de alquiler y botellas ilimitadas. Los centros funcionan como base logística más que como guía diaria. **Buddy Dive**, **Dive Friends Bonaire** y **Captain Don's Habitat** son los tres nombres de referencia, y los tres ofrecen el formato típico de la isla: paquete de alojamiento + camioneta + recogida libre de botellas para bucear por tu cuenta donde y cuando quieras. Dive Friends opera varias tiendas repartidas por la isla, lo que facilita recargar sin volver al punto de partida. Si prefieres inmersiones guiadas o salidas en barco a los sitios de Klein Bonaire, los tres las organizan también.
+
+## Mejor época para ir
+
+Bonaire es de los pocos destinos del Caribe sin temporada de buceo: el clima es muy estable, el agua se mueve entre 26 y 29 °C y la visibilidad de 25-35 m apenas varía a lo largo del año. No existe una temporada baja real. La decisión de fechas depende más de tarifas de vuelo y ocupación hotelera que de las condiciones del mar. ¿Cuándo ir? Cuando puedas.
+
 ## Cómo llegar
 
 **Vuelo:** Bonaire Flamingo Airport (BON). Vuelos directos desde Amsterdam (KLM), Nueva York, Miami. Desde España: conexión en Amsterdam o Miami.
 
 **Visado UE:** Territorio neerlandés especial — ciudadanos UE entran sin visado.
 
+## Nivel requerido
+
+**OW es suficiente** para toda la isla: las corrientes son leves y la mayoría de los sitios se bucean entre 3 y 30 m con entrada desde la orilla. Lo que Bonaire sí exige es autonomía: aquí no hay guía que planifique por ti. Buceas en pareja, calculas tu propio aire, navegas de vuelta a la entrada y cargas tú las botellas en la camioneta. Para un OW recién certificado es una escuela magnífica de independencia; para quien nunca ha buceado sin divemaster, conviene empezar con un par de salidas guiadas antes de soltarse.
+
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+Bonaire es al buceo lo que una autocaravana a un viaje organizado: tú decides la ruta, el horario y cuántas paradas haces. Le encaja al buceador autónomo, a las parejas que bucean juntas y al fotógrafo que necesita repetir el mismo sitio tres veces hasta clavar la foto. No le encaja a quien busca emociones de pelágico — aquí no hay tiburones ni grandes bancos —, ni a quien prefiere que un guía le resuelva la inmersión de principio a fin. Cinco inmersiones al día sin depender de nadie, o ninguna razón para venir. Así de claro es Bonaire.
 
 ## Fichas relacionadas
 
@@ -92,6 +102,9 @@ Bonaire destaca por la consistencia. No hay "el espectáculo" como en otros dest
 - [[cayman-islands]] — Cayman, para comparar shore diving premium
 - [[cozumel]] — Cozumel, para quien quiere drift diving en vez de shore
 
-## Schema
+## Fuentes
 
-<!-- JSON-LD se genera en fase de publicación -->
+- [STINAPA Bonaire](https://stinapa.org/) — Fundación que gestiona el Bonaire National Marine Park; reglas, tasas y conservación
+- [Buddy Dive Resort](https://www.buddydive.com/) — Resort de buceo de referencia con el formato camioneta + botellas ilimitadas
+- [Dive Friends Bonaire](https://divefriendsbonaire.com/) — Red de centros de buceo repartidos por la isla
+- [PADI — Diving in Bonaire](https://www.padi.com/diving-in/bonaire/) — Panorámica del destino y su modelo de shore diving

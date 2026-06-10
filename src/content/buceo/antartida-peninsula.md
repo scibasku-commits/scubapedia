@@ -107,7 +107,3 @@ No existe el liveaboard de buceo clásico en la Antártida. El formato es el **c
 - [[south-georgia]] — South Georgia, destino polar hermano habitualmente combinado en la misma expedición
 - [[sardine-run]] — Sardine Run en Sudáfrica, otro buceo de acción extremo en el hemisferio sur
 - [[norway-orcas]] — Noruega en invierno, para quienes buscan fauna polar sin cruzar el Drake
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

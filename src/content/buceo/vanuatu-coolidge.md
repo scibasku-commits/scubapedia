@@ -101,7 +101,3 @@ El Coolidge funciona exclusivamente en formato **resort con shore diving** — d
 - [[chuuk-lagoon]] — El mayor cementerio de pecios WWII del mundo; el siguiente escalón
 - [[islas-salomon]] — Iron Bottom Sound, pecios WWII en archipiélago remoto
 - [[fiji]] — Pacífico Sur con arrecifes de coral y liveaboards desde la misma región
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

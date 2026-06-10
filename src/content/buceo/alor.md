@@ -110,7 +110,3 @@ Alor se puede visitar en **liveaboard** (rutas de 10–12 noches conectando Flor
 - [[komodo]] — Komodo, el destino de referencia de corrientes en Indonesia
 - [[banda-sea]] — Banda Sea, la gran expedición de martillos
 - [[raja-ampat]] — Raja Ampat, para quien viene de Alor y quiere biodiversidad
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

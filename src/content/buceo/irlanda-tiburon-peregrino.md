@@ -107,7 +107,3 @@ No existe un liveaboard específico para Irlanda. El formato son **small-boats l
 - [[noruega-orcas]] — Noruega, fauna marina espectacular en aguas más frías y extremas
 - [[scapa-flow]] — Scapa Flow, buceo técnico de pecios en el mismo Atlántico norte
 - [[azores]] — Azores, tiburones pelágicos en aguas atlánticas más cálidas
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

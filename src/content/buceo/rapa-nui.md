@@ -99,7 +99,3 @@ Rapa Nui funciona exclusivamente en **dayboat** desde Hanga Roa. No existen live
 - [[fiji]] — Pacífico Sur con mayor biodiversidad y volumen de vida marina
 - [[kimbe-bay-png]] — Papua Nueva Guinea, topografía volcánica con mayor fauna
 - [[poor-knights-nz]] — Nueva Zelanda, otra joya del Pacífico Sur templado
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

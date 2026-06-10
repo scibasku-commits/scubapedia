@@ -112,7 +112,3 @@ Grecia opera principalmente en **dayboat** desde centros en cada isla. En el Ege
 - [[croacia]] — Adriático con pecios WWII y archipiélago similar
 - [[malta-gozo]] — Blue Hole y pecios mediterráneos en formato concentrado
 - [[baleares]] — Mediterráneo occidental con cuevas y posidonia
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

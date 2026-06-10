@@ -110,7 +110,3 @@ Croacia opera principalmente en formato **dayboat** desde centros en Split, Dubr
 - [[malta-gozo]] — Pecios WWII y Blue Hole; la otra gran referencia mediterránea en naufragios
 - [[grecia]] — Islas del Egeo y Jónico con pecios arqueológicos únicos
 - [[costa-brava]] — Fauna protegida y gorgonias en el Mediterráneo occidental
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

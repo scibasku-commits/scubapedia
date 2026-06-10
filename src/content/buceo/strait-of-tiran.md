@@ -27,12 +27,17 @@ vida_marina_destacada:
   - "Corales duros prístinos"
 liveaboards_disponibles:
   - "Sea Serpent Fleet"
-centros_buceo_recomendados: []
+  - "Golden Dolphin Fleet"
+  - "Emperor Divers"
+  - "Blue Force Fleet"
+centros_buceo_recomendados:
+  - "Camel Dive Club & Hotel (Naama Bay)"
+  - "Sharks Bay Umbi"
 proveedores_scibasku: []
 precio_inmersion_aprox: "70-80 EUR (excursión día desde Sharm)"
 web_referencia: "https://www.cdws.travel"
 giora_estuvo: true
-updated: 2026-04-06
+updated: 2026-06-10
 status: draft
 ---
 
@@ -75,6 +80,22 @@ El arrecife más meridional y más accesible. Jardín de coral poco profundo en 
 
 Tirán es el punto del norte del Mar Rojo con mayor probabilidad de encuentros con pelágicos. Tiburones martillo (verano), barracudas en bancos grandes, atunes de aleta amarilla, rayas águila, tiburones de punta blanca. Los corales duros de las cimas de los arrecifes están en estado excelente.
 
+## Liveaboards
+
+Tirán da nombre a una familia entera de itinerarios: la ruta "North & Strait of Tiran". La ventaja del liveaboard frente al day boat es simple — duermes fondeado en el estrecho y buceas Jackson o Thomas a primera hora, antes de que lleguen los barcos de día desde Sharm.
+
+- **Golden Dolphin Fleet** — programa la ruta "North - Strait of Tiran" durante todo 2026, en salidas de 7 noches Hurghada–Hurghada (de jueves a jueves). Hay variantes extendidas con Dahab y safaris de 10-14 días que combinan Tirán con Brother Islands. Cuatro barcos en la flota; es el operador de referencia de Scibasku en el Mar Rojo.
+- **Emperor Divers** — sus rutas Norte combinan Thistlegorm, Ras Mohammed y Tirán. Nitrox incluido en toda la flota.
+- **Blue Force Fleet** — el Red Sea Blue Force 2 (28 m, 18 buceadores) opera desde Sharm el Sheikh, el puerto más cercano al estrecho. Flota española: briefings y guías en español.
+- **Sea Serpent Fleet** — yate de 34 m con nitrox y soporte para rebreather que cubre los arrecifes de Tirán y Ras Mohammed en sus itinerarios del norte.
+
+## Centros de buceo
+
+Para bucear Tirán en excursión de día, sales desde Sharm el Sheikh (~1 hora de navegación). Dos centros con trayectoria contrastada:
+
+- **Camel Dive Club & Hotel** (Naama Bay) — desde 1986, SSI Diamond Instructor Training Center y único centro de Egipto con certificación Gold Green Fins. El Estrecho de Tirán figura entre sus sitios habituales de day boat, con grupos de máximo 6 buceadores por guía y nitrox gratis para certificados.
+- **Sharks Bay Umbi** — resort de buceo con arrecife propio en Sharks Bay, la zona de Sharm más próxima al estrecho. Organiza salidas a Tirán y Ras Mohammed, incluye traslados de aeropuerto y opera sus propios liveaboards (flota Freedom).
+
 ## Mejor época para ir
 
 Todo el año. Los martillos aparecen con más frecuencia en verano (junio-septiembre). La visibilidad es mejor de marzo a mayo. Las corrientes son más intensas en invierno, lo que puede limitar el acceso a Jackson y Thomas.
@@ -96,6 +117,13 @@ Tirán es la excursión de día perfecta para buceadores con AOWD que quieren al
 - [[sharm-el-sheikh]] · [[ras-mohammed]] · [[dahab]]
 - [[mar-rojo-overview]]
 
-## Schema
+## Fuentes
 
-<!-- JSON-LD se genera en fase de publicación -->
+- [Golden Dolphin Fleet](https://www.golden-dolphin.net) — web oficial; rutas Norte del Mar Rojo con el Estrecho de Tirán.
+- [Emperor Divers](https://www.emperordivers.com) — web oficial; flota Mar Rojo con ruta Norte y nitrox incluido.
+- [Blue Force Fleet](https://www.blueforcefleet.com) — web oficial; Red Sea Blue Force 2 con base en Sharm el Sheikh.
+- [Sea Serpent Fleet](https://www.seaserpentfleet.com) — web oficial; itinerarios por Tirán y especificaciones del barco.
+- [Camel Dive Club & Hotel](https://www.cameldive.com/dive-and-stay-camel-hotel/) — day boats al Estrecho de Tirán desde Naama Bay; datos del centro (1986, SSI, Green Fins).
+- [Sharks Bay Umbi](https://sharksbay.com) — web oficial del resort de buceo; salidas a Tiran Island.
+- [CDWS](https://www.cdws.travel) — Chamber of Diving and Watersports, referencia oficial del buceo recreativo en Egipto.
+- KB Scibasku: `wiki/buceo/liveaboards/golden-dolphin.md`, `raw/buceo/Liveaboards-MarRojo/Salidas/2026-06-11_GDI_North-Strait-of-Tiran.md` (y salidas hermanas de feb-nov 2026), `raw/buceo/Liveaboards-MarRojo/Rutas/Norte.md`, `wiki/buceo/liveaboards/emperor-divers.md`, `wiki/buceo/liveaboards/blue-force-mar-rojo.md`, `raw/buceo/liveaboards/sea-serpent.md`, `raw/buceo/Camel Dive Club & Hotel.md`, `raw/buceo/proveedores/egipto-sharksbay-umbi.md`.

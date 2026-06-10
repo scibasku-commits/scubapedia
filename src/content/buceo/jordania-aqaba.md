@@ -37,7 +37,7 @@ proveedores_scibasku:
   - "Sea Star Watersports"
   - "Red Sea Dive Center"
 giora_estuvo: false
-updated: "2026-04-07"
+updated: "2026-06-10"
 status: draft
 tags:
   - "mar-rojo"
@@ -78,7 +78,7 @@ Formaciones de coral masivas que recuerdan pagodas japonesas antiguas, con profu
 
 ### Power Station
 
-El único wall dive de Aqaba. La pared cae más de 200 metros en su punto más profundo (territorio exclusivamente técnico); la inmersión recreativa discurre entre 15 y 40 metros a lo largo de una pared de coral antiguo. Una corriente rica en nutrientes barre la pared y atrae fauna pelágica. Exige buen control de flotabilidad. Debe su nombre a la central eléctrica visible desde la superficie.
+El único wall dive de Aqaba. La pared cae más de 200 metros en su punto más profundo (territorio solo para buceadores técnicos); la inmersión recreativa discurre entre 15 y 40 metros a lo largo de una pared de coral antiguo. Una corriente rica en nutrientes barre la pared y atrae fauna pelágica. Exige buen control de flotabilidad. Debe su nombre a la central eléctrica visible desde la superficie.
 
 ### Eel Garden
 
@@ -103,6 +103,10 @@ El Golfo de Aqaba alberga más de 500 especies de peces documentadas. En la Rese
 Las especies más representativas en inmersión incluyen las grandes colonias de anguilas jardineras de Eel Garden, los peces león residentes del Cedar Pride, peces ángel emperador y peces loro en Japanese Garden, napoleón (especie amenazada IUCN) documentado en la reserva, tortugas verdes y carey en avistamientos ocasionales, peces payaso en anémonas de arrecifes someros, barracudas, rayas águila en fondos arenosos y nudibranquios para los fotógrafos macro. El tiburón ballena está documentado en el golfo pero los avistamientos son infrecuentes y no deben considerarse habituales.
 
 La densidad coralina es el verdadero protagonista: los arrecifes franqueantes de Aqaba están entre los más diversos por metro cuadrado del mundo.
+
+## Centros de buceo
+
+En Aqaba no operan liveaboards: el modelo local es shore diving con acceso en vehículo a los puntos del Parque Marino, y los centros se concentran en South Beach. **Sea Star Watersports** es el veterano — PADI 5 Star IDC desde 1988, el primer Instructor Development Centre de Aqaba —, con base en Club Murjan, piscina de entrenamiento y dos salidas diarias (mañana y tarde). **Red Sea Dive Center** funciona con el modelo contrario: hotel y centro de buceo integrados en un mismo recinto de 13 habitaciones, con salida de shore diving cada mañana a las 10:00 y los principales puntos de inmersión a cinco minutos en coche. Ambos cubren la gama PADI completa desde el bautizo. Existen además otros centros consolidados en la zona, como Arab Divers, Deep Blue Dive Center o Aqaba Adventure Divers.
 
 ## Mejor época para ir
 
@@ -143,12 +147,19 @@ Operadores: Sea Star Watersports y Red Sea Dive Center, ambos disponibles vía V
 
 El servicio se presta en inglés. No hay constancia de instructores de habla hispana en ninguno de los dos centros (pendiente verificación directa).
 
+## Consejo Scibasku
+
+Piensa en Aqaba como en ese restaurante de barrio que cocina mejor que muchos estrellados: sin colas, sin reserva con meses, sin espectáculo — solo producto bueno tratado con respeto. Es el destino correcto para quien quiere sumar buceo de calidad a un viaje por Jordania (Petra y Wadi Rum están a tiro de piedra), para buceadores OWD que prefieren empezar sin corrientes ni barcos, y para quien valora arrecifes densos por encima de animales grandes. No lo es para el cazador de pelágicos — aquí el napoleón es la estrella, no el martillo — ni para quien necesita diez puntos de inmersión nuevos cada día: el parque marino protege 7 km de costa con 21 puntos catalogados, y en una semana los habrás recorrido. Aqaba no compite con Egipto. Hace otra cosa, y la hace bien.
+
 ## Fichas relacionadas
 
 - [[mar-rojo-norte]] — La comparación directa: mismo mar, diferente experiencia
 - [[egipto-hermanos-daedalus-elphinstone]] — Para quien busca pelágicos en el Mar Rojo
 - [[eilat]] — La vecina israelí, mismo sistema de arrecife
 
-## Schema
+## Fuentes
 
-<!-- JSON-LD se genera en fase de publicación -->
+- [Sea Star Watersports](https://www.aqabadivingseastar.com/) — Web oficial del PADI 5 Star IDC más veterano de Aqaba (desde 1988)
+- [Red Sea Dive Center](https://redseadivecenter.com/) — Hotel + centro de buceo integrado en South Beach, Aqaba
+- [PADI — SeaStar Watersports](https://www.padi.com/dive-center/jordan/seastar-watersports/) — Ficha PADI del centro, con su clasificación oficial
+- [PADI — Red Sea Dive Centre](https://www.padi.com/dive-center/jordan/red-sea-dive-centre/) — Ficha PADI del centro

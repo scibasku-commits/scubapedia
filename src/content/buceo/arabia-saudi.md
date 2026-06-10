@@ -104,7 +104,3 @@ El mercado está en fase emergente. En Jeddah y Yanbu existen centros de buceo l
 - [[sudan-mar-rojo]] — Sudán, la extensión sur del Mar Rojo para buceadores avanzados
 - [[djibouti]] — Djibouti, tiburón ballena en el Golfo de Tadjoura
 - [[oman]] — Omán, Mar Arábigo con Musandam y las Daymaniyat
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

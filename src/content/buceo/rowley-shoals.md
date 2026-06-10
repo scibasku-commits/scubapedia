@@ -104,7 +104,3 @@ Los Rowley Shoals solo son accesibles en **liveaboard de expedición** desde Bro
 - [[ningaloo]] — Australia Occidental, tiburón ballena accesible desde la costa
 - [[gran-barrera]] — Gran Barrera de Coral, el arrecife de Queensland
 - [[chuuk-lagoon]] — Pacífico Oeste, otro destino de liveaboard expedition
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

@@ -110,7 +110,3 @@ Sipadan no tiene alojamiento — está protegida. Se duerme en **Mabul o Kapalai
 - [[layang-layang]] — Layang-Layang, martillos y arrecife virgen a pocas horas
 - [[komodo]] — Komodo, el otro clásico de corrientes de la región
 - [[raja-ampat]] — Raja Ampat, biodiversidad máxima del Pacífico
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

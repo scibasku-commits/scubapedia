@@ -104,7 +104,3 @@ Rangiroa opera principalmente en **dayboat** desde los resorts y centros de Avat
 - [[fakarava]] — El otro gran atolón de Tuamotu; la Wall of Sharks del South Pass
 - [[palau]] — Otra referencia mundial de tiburones y pelágico en el Pacífico
 - [[fiji]] — Pacífico Sur con buceo complementario y liveaboards desde la misma región
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

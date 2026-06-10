@@ -107,7 +107,3 @@ Buceo exclusivamente en formato **dayboat desde centros en resorts**. La mayor c
 - [[seychelles]] — Seychelles, para quienes quieren más fauna y un Índico más espectacular
 - [[tanzania-zanzibar]] — Zanzíbar, para combinar safari y buceo en el mismo viaje
 - [[mozambique-tofo]] — Mozambique Tofo, fauna pelágica intensa para el siguiente nivel
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

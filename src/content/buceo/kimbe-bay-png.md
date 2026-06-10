@@ -113,7 +113,3 @@ Kimbe Bay funciona principalmente en **formato resort**: Walindi Plantation Reso
 - [[raja-ampat]] — Raja Ampat, el otro gran destino de biodiversidad máxima del Pacífico
 - [[palau]] — Palau, combinable en circuito Pacífico de 3 semanas
 - [[tubbataha]] — Tubbataha (Filipinas), otro UNESCO de buceo en la región
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

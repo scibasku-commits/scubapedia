@@ -37,7 +37,7 @@ centros_buceo_recomendados:
   - "Coron Easy Diving"
 proveedores_scibasku: []
 giora_estuvo: false
-updated: "2026-04-07"
+updated: "2026-06-10"
 status: draft
 tags:
   - "filipinas"
@@ -49,7 +49,7 @@ tags:
 
 ## Resumen
 
-Coron, en la isla de Busuanga (Palawan), alberga entre 10 y 12 pecios de la Segunda Guerra Mundial buceables en un radio compacto. Los principales: Akitsushima (tender de hidroaviones, 22-36m), Irako (buque frigorífico, 28-42m), Kogyo Maru (carguero, 22-34m), Olympia Maru (carguero, 18-32m), Okikawa Maru (petrolero de 170m, 10-26m) y Lusong Gunboat (3-10m, apto para snorkel). Además, Barracuda Lake ofrece una experiencia única: un lago termal con termoclina donde el agua pasa de 28 °C a 38 °C en pocos metros. AOWD recomendado para los pecios principales; OW suficiente para Lusong, Terukaze y Barracuda Lake.
+Coron, en la isla de Busuanga (Palawan), alberga entre 10 y 12 pecios de la Segunda Guerra Mundial buceables en un radio compacto. Los principales: Akitsushima (tender de hidroaviones, 22-36m), Irako (buque frigorífico, 28-42m), Kogyo Maru (carguero, 22-34m), Olympia Maru (carguero, 18-32m), Okikawa Maru (petrolero de 170m, 10-26m) y Lusong Gunboat (3-10m, apto para snorkel). Además, Barracuda Lake ofrece algo que no esperabas sentir bajo el agua: un lago termal con termoclina donde pasas de 28 °C a 38 °C en pocos metros. AOWD recomendado para los pecios principales; OW suficiente para Lusong, Terukaze y Barracuda Lake.
 
 ## Datos técnicos
 
@@ -109,6 +109,10 @@ Lago de agua salada/dulce en cráter calcáreo. Termoclina espectacular: superfi
 
 El valor biológico de Coron está en la colonización de pecios como arrecifes artificiales maduros. Corales blandos (*Dendronephthya* spp.) en tonos naranjas, rosas y blancos cubren cada superficie metálica. Bancos de pargos, batfish, fusileros y barracudas rodean las estructuras. Pez león y pez escorpión son residentes habituales en zonas sombreadas. Los nudibranquios (*Chromodoris*, *Phyllidia*, *Nembrotha*) prosperan sobre el metal oxidado. Esponjas barril grandes en las cubiertas de Kogyo y Olympia. Tortugas verdes en Siete Picados. No es destino de pelágicos grandes — para tiburones y mantas, combinar con Tubbataha o Malapascua.
 
+## Liveaboards
+
+No hay liveaboards basados solo en Coron — los pecios están a 30-60 minutos en banca de Coron Town y el formato natural es centro de buceo + dayboat. Aun así, varios barcos incluyen los pecios en rutas más amplias por Palawan: **Philippines Siren** los toca en su ruta estacional Tubbataha-Coron, **Solitude One** los incorpora en algunos itinerarios por Palawan y **Discovery Palawan** es el liveaboard local que combina Coron con El Nido y Apo Reef. La disponibilidad de estas rutas varía según temporada — verificar fechas antes de planificar. ¿Tiene sentido el liveaboard aquí? Solo si Coron es una parada dentro de una ruta mayor; para bucear únicamente los pecios, dormir en tierra sale más flexible y más barato.
+
 ## Mejor época para ir
 
 - **Noviembre-Mayo:** Temporada seca. Mejor visibilidad, mar calmado. Pico óptimo: diciembre-marzo.
@@ -134,6 +138,10 @@ El valor biológico de Coron está en la colonización de pecios como arrecifes 
 
 Coron es wreck diving puro a 1 hora de vuelo de Manila. La visibilidad es modesta comparada con Chuuk (5-15m vs 15-30m), pero la accesibilidad y el precio no tienen comparación. Nitrox recomendado para días de múltiples inmersiones profundas. Llevar linterna potente para penetraciones. Los pecios son tumbas de guerra — tratar con respeto. Los centros de buceo de Coron Town son maduros y competitivos; reservar con antelación en temporada alta (diciembre-marzo).
 
+## Consejo Scibasku
+
+Bucear Coron es como visitar un museo de historia donde te dejan entrar en las vitrinas: si los pecios te emocionan -- el metal, la historia, la penetración con linterna --, pocas cosas en el buceo recreativo se le comparan a este precio de acceso logístico. Ahora bien, conviene venir con el carné adecuado: con solo OW te quedas en Lusong, Barracuda Lake y las cubiertas someras, que es ver el museo desde la puerta. El destino tampoco le va a quien mide las inmersiones en visibilidad y fauna grande: aquí el agua es verde-azulada (5-15 m) y los tiburones brillan por su ausencia. Saca el AOWD antes de venir, o ven a sacarlo aquí entre cargueros hundidos. Las dos opciones funcionan; ir sin él, no.
+
 ## Fichas relacionadas
 
 - [[tubbataha]] — Tubbataha, arrecife prístino en Palawan (combinable en ruta)
@@ -141,6 +149,8 @@ Coron es wreck diving puro a 1 hora de vuelo de Manila. La visibilidad es modest
 - [[chuuk-lagoon]] — Chuuk Lagoon, el otro gran cementerio WWII
 - [[puerto-galera]] — Puerto Galera, alternativa accesible desde Manila
 
-## Schema
+## Fuentes
 
-<!-- JSON-LD se genera en fase de publicación -->
+- [Pirates Diving Center](https://piratescoron.com/) — Centro PADI 5 Star operando en los pecios de Coron desde 1994
+- [Reggae Dive Center](https://reggaedivecenter.com.ph/) — PADI 5 Star IDC de Coron Town, formación y fun dives en los pecios
+- [Dive The World — Coron](https://www.dive-the-world.com/diving-sites-philippines-coron.php) — Guía de los sitios de buceo y pecios de la bahía de Coron

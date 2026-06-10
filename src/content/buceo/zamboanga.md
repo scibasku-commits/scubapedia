@@ -31,7 +31,7 @@ centros_buceo_recomendados:
 proveedores_scibasku:
   - "Dakak Park and Beach Resort"
 giora_estuvo: false
-updated: "2026-04-07"
+updated: "2026-06-10"
 status: draft
 tags:
   - "filipinas"
@@ -80,6 +80,10 @@ Arrecife accesible desde la playa del resort. Jardines de coral, anémonas, pece
 
 Fauna típica del Triángulo de Coral en arrecifes poco explorados. Bancos grandes de pargos en The Wreck. Tiburones punta blanca pequeños y rayas de arrecife en Buchok's Reef. Nudibranquios y macro en Liuay Rock. Sweepers masivos en las cuevas. Pulpos y corales blandos en los arrecifes. No se documentan pelágicos grandes en los dive sites de Dakak. La información específica de fauna proviene principalmente de una fuente (DiveResort.ph) — datos regionales de Mindanao sugieren mayor biodiversidad potencial.
 
+## Centros de buceo
+
+Aquí no hay donde elegir, y conviene saberlo antes de ir: el buceo organizado de Zamboanga del Norte pasa por un solo operador. **Aqua Sports**, la división de buceo de Dakak Park and Beach Resort, es un centro PADI con instructor residente que cubre desde el bautizo (Discover Scuba Diving) hasta cursos Open Water y superiores, fun dives guiados a los seis puntos del área y alquiler de equipo completo. Las salidas se hacen en bancas, normalmente por la mañana con dos botellas, y el resort gestiona la logística entera — alojamiento, inmersiones y transfer desde Dipolog. No se han identificado centros de buceo independientes activos en la zona de Dapitan o Dipolog, y tampoco operan liveaboards. Si Dakak no te convence como resort, no hay plan B de buceo en la región.
+
 ## Mejor época para ir
 
 - **Marzo-Septiembre:** Temporada seca, mar calmado, mejor visibilidad.
@@ -102,7 +106,11 @@ Fauna típica del Triángulo de Coral en arrecifes poco explorados. Bancos grand
 
 ## Notas de campo
 
-Dakak es un destino honesto: resort de playa con buceo en aguas poco exploradas. Funciona bien para familias o parejas mixtas (buceador + no buceador). No justifica un viaje exclusivamente de buceo para un buceador experimentado. El proveedor único (Dakak) simplifica la logística. Combinar con Dumaguete, Moalboal o Visayas mejora la ruta. Precios de inmersiones no publicados online — contactar directamente con el resort.
+Dakak es un destino honesto: resort de playa con buceo en aguas poco exploradas. Funciona bien para familias o parejas mixtas (buceador + no buceador). No justifica un viaje solo de buceo para un buceador experimentado. El proveedor único (Dakak) simplifica la logística. Combinar con Dumaguete, Moalboal o Visayas mejora la ruta. Precios de inmersiones no publicados online — contactar directamente con el resort.
+
+## Consejo Scibasku
+
+Zamboanga del Norte es al buceo filipino lo que un vino de mesa honrado a una carta de reservas: nadie viene buscándolo, pero acompaña bien la comida. Tiene sentido para la familia o la pareja que ya ha decidido descansar en Dakak y quiere añadir inmersiones tranquilas — o un bautizo — sin moverse del resort. ¿Buceas desde hace años y eliges destino por los dive sites? Entonces no es tu viaje: con el mismo vuelo largo, Visayas o Palawan ofrecen mucho más por el mismo esfuerzo. La gracia está en lo contrario de lo espectacular: arrecifes que casi nadie bucea, cero aglomeraciones y la sensación de tener el Triángulo de Coral en versión doméstica. Un destino de acompañamiento, no de plato principal.
 
 ## Fichas relacionadas
 
@@ -111,6 +119,8 @@ Dakak es un destino honesto: resort de playa con buceo en aguas poco exploradas.
 - [[malapascua]] — Malapascua, tiburones zorro
 - [[mindoro]] — Mindoro, alternativa accesible
 
-## Schema
+## Fuentes
 
-<!-- JSON-LD se genera en fase de publicación -->
+- [DiveResort.ph — Dakak](https://www.diveresort.ph/post579.html) — Descripción de los dive sites operados por Dakak (Liuay Rock, The Caves, Buchok's Reef, The Wreck)
+- [Dapitan City — Dakak Park & Beach Resort](https://dapitancity.gov.ph/dakak-park-beach-resort/) — Información oficial del municipio sobre el resort
+- [WayPH — Dakak Beach](https://wayph.com/dakak-beach-zamboanga/) — Guía local del resort y su entorno en Zamboanga del Norte

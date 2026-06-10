@@ -116,7 +116,3 @@ Palau funciona muy bien tanto en **liveaboard** (7–10 noches, acceso a puntos 
 - [[yap]] — Yap, mantas residentes a pocas horas de vuelo
 - [[chuuk-lagoon]] — Chuuk/Truk, los pecios de la WWII a poca distancia
 - [[raja-ampat]] — Raja Ampat, para comparar biodiversidad vs pelágico
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

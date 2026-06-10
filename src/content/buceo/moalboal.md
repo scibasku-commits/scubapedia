@@ -36,7 +36,7 @@ centros_buceo_recomendados:
   - "Neptune Diving"
 proveedores_scibasku: []
 giora_estuvo: false
-updated: "2026-04-07"
+updated: "2026-06-10"
 status: draft
 tags:
   - "filipinas"
@@ -91,6 +91,10 @@ Shore dive disponible día y noche. A 30 metros de la orilla el fondo cae en par
 
 La estrella indiscutible es el **sardine run**: millones de sardinas en una masa viva que cambia de forma constantemente, con jureles y barracudas lanzándose desde todos los ángulos. Las **tortugas verdes** son la segunda firma del destino, omnipresentes en Tongo Point y Pescador. Las **serpientes marinas** (banded sea krait) se ven regularmente en Pescador Island y Tongo. El **macro** es interesante sin llegar al nivel de destinos especializados como Anilao: nudibranquios variados, ghost pipefish ornamentados, pulpo de anillos azules, frogfish ocasionales. En la travesía en banca hacia Pescador se avistan **delfines** con frecuencia.
 
+## Centros de buceo
+
+No hay liveaboard en Moalboal ni hace falta: los puntos están a minutos de la costa y el formato es resort o centro de buceo con dayboat y shore dives. La oferta es madura. **Savedra Dive Center** es el pionero de la zona y un PADI 5-Star CDC con formación hasta nivel instructor — suyos son el proyecto del Airplane Wreck y varios puntos documentados. **Kasai Village Dive Resort** combina alojamiento, muelle propio, barco amplio, house reef y nitrox: el perfil más orientado al buceador serio. **Magic Island Dive Resort** juega la carta opuesta: solo 10 bungalows y máximo 20 huéspedes, ambiente familiar, combinable con su hermano Magic Oceans en Bohol. Completan la lista **Cebu Fun Divers** (cercano para principiantes, guías finos en macro) y **Neptune Diving**, con salidas diarias a Pescador y al sardine run.
+
 ## Mejor época para ir
 
 Las sardinas son permanentes, por lo que Moalboal funciona todo el año. Las mejores condiciones de visibilidad y mar se dan de **noviembre a mayo** (temporada seca). De junio a octubre la lluvia reduce la visibilidad y el mar puede estar movido, pero el buceo sigue operativo y las sardinas siguen ahí. No hay "mala temporada" real en Moalboal.
@@ -107,6 +111,10 @@ Vuelo internacional a **Cebu (CEB)**, aeropuerto Mactan-Cebu. Desde el aeropuert
 
 Moalboal combina naturalmente con Malapascua (thresher sharks, norte de Cebu) en un circuito de 2-3 semanas por Cebu. Nota práctica: no hay cajeros en Panagsama Beach; llevar efectivo suficiente desde Cebu City. Los resorts más orientados a buceadores serios son Kasai Village (mejor dive center, organizado, nitrox) y Magic Island (íntimo, máximo 20 huéspedes, combinable con su resort hermano Magic Oceans en Bohol).
 
+## Consejo Scibasku
+
+Hay conciertos que valen la entrada por una sola canción, y Moalboal es uno de ellos: el muro de sardinas a las seis de la mañana, con la luz entrando en diagonal y los jureles cazando, justifica el viaje por sí solo. Lo demás — tortugas fiables, paredes en Pescador, macro correcto — es un buen telonero. Le encaja al buceador de cualquier nivel que viaja con tiempo por Filipinas y a quien bucea con cámara gran angular. Le encaja menos a quien ya ha visto el sardine run y vuelve esperando algo más: sin las sardinas, Moalboal es un destino bueno entre muchos destinos buenos de Visayas. Y un aviso honesto: madrugar no es negociable. El banco está ahí todo el día, pero la función buena empieza al amanecer.
+
 ## Fichas relacionadas
 
 - [[malapascua]] -- Tiburones zorro, norte de Cebu, combinable en mismo viaje
@@ -115,6 +123,8 @@ Moalboal combina naturalmente con Malapascua (thresher sharks, norte de Cebu) en
 - [[tubbataha]] -- Destino premium Filipinas en liveaboard
 - [[donsol]] -- Whale sharks éticos
 
-## Schema
+## Fuentes
 
-<!-- JSON-LD se genera en fase de publicación -->
+- [Savedra Dive Center](https://www.savedra.com/) — PADI 5-Star CDC pionero de Moalboal, creador del Airplane Wreck
+- [Kasai Village Dive Resort](https://www.kasaivillage.com/) — Resort de buceo con house reef y nitrox en Panagsama
+- [PADI — Diving in Moalboal](https://www.padi.com/diving-in/moalboal/) — Panorámica del destino y el sardine run

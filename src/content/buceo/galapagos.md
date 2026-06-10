@@ -117,7 +117,3 @@ Galápagos solo se bucea en liveaboard — no hay otra opción legal para accede
 - [[palau]] — Palau, el otro destino del Pacífico con reef hooks y grandes pelágicos
 - [[cocos-island]] — Isla del Coco, el hermano más oscuro y remoto de Galápagos
 - [[revillagigedo-socorro]] — Socorro/Revillagigedo, México, para las mantas oceánicas más interactivas del mundo
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

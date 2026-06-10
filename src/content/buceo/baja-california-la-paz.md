@@ -38,7 +38,7 @@ centros_buceo_recomendados:
 proveedores_scibasku:
   - "Villa Carey"
 giora_estuvo: false
-updated: "2026-04-07"
+updated: "2026-06-10"
 status: draft
 tags:
   - "mexico"
@@ -56,7 +56,7 @@ tags:
 
 La Paz es la puerta de entrada al Mar de Cortes, uno de los ecosistemas marinos más productivos del planeta y Patrimonio Natural de la Humanidad (UNESCO, 2005). La combinación de corrientes frías del Pacífico con aguas cálidas tropicales genera una biodiversidad que supera las 6.000 especies marinas documentadas.
 
-El atractivo principal para buceadores es **Los Islotes**, donde una colonia de más de 900 leones marinos de California incluye juveniles extraordinariamente juguetones que nadan a centimetros de los buceadores. A esto se suma **El Bajo**, un grupo de tres seamounts donde se congregan tiburones martillo festoneados en bancos de decenas a cientos de individuos. Y como complemento, la experiencia de **tiburón ballena** en la bahía de La Paz (octubre a marzo), que es exclusivamente en snorkel -- nunca en buceo.
+El atractivo principal para buceadores es **Los Islotes**, donde una colonia de más de 900 leones marinos de California incluye juveniles extraordinariamente juguetones que nadan a centimetros de los buceadores. A esto se suma **El Bajo**, un grupo de tres seamounts donde se congregan tiburones martillo festoneados en bancos de decenas a cientos de individuos. Y como complemento, la experiencia de **tiburón ballena** en la bahía de La Paz (octubre a marzo), que es solo en snorkel -- nunca en buceo.
 
 A 2,5 horas por carretera, **Cabo Pulmo** es uno de los mayores éxitos de conservación marina del mundo: un parque nacional cuya biomasa ha aumentado un 500% desde su proteccion en 1995, con el celebre "jack ball" (tornado de jureles) como firma visual.
 
@@ -95,7 +95,11 @@ Parque Nacional Marino desde 1995, Patrimonio UNESCO. A 130 km al sur de La Paz 
 
 ## Vida marina
 
-Tres experiencias definen La Paz: los **leones marinos** de Los Islotes (todo el año excepto verano, interacción juguetona garantizada), los **tiburones martillo** de El Bajo (espectaculares pero NO garantizados, ene-may), y el **tiburón ballena** en la bahía (oct-mar, exclusivamente SNORKEL). Cabo Pulmo anade el jack ball y tiburones toro. Las **rayas mobula** aparecen en grupos de cientos entre abril y junio. El Mar de Cortes tiene fauna endemica notable: king angelfish, morena joya, Mexican hogfish, Cortez rainbow wrasse. Entre enero y marzo, las **ballenas jorobadas** transitan por la zona.
+Tres experiencias definen La Paz: los **leones marinos** de Los Islotes (todo el año excepto verano, interacción juguetona garantizada), los **tiburones martillo** de El Bajo (espectaculares pero NO garantizados, ene-may), y el **tiburón ballena** en la bahía (oct-mar, solo SNORKEL). Cabo Pulmo anade el jack ball y tiburones toro. Las **rayas mobula** aparecen en grupos de cientos entre abril y junio. El Mar de Cortes tiene fauna endemica notable: king angelfish, morena joya, Mexican hogfish, Cortez rainbow wrasse. Entre enero y marzo, las **ballenas jorobadas** transitan por la zona.
+
+## Centros de buceo
+
+La Paz no tiene liveaboards propios: el formato es dayboat desde el malecón, con salidas matinales de dos inmersiones (aprox. 8:00-15:00). La referencia veterana es **Carey Dive Center (Buceo Carey)**, operación familiar hispanohablante fundada en 1992, con certificación SNSI, tres barcos custom de hasta 12 buceadores y nitrox gratuito para todos los clientes; su alojamiento asociado, Villa Carey, está a 600 m del centro. Completan la oferta **Cortez Club** (PADI 5 Star, también organiza snorkel con tiburón ballena y kayak), **Koox Diving** (PADI, especializado en leones marinos y tiburón ballena), **Sea Lions Dive Center** y **La Paz Divers**, todos centros PADI consolidados. Para la excursión a Cabo Pulmo operan centros locales del parque como Cabo Pulmo Divers o Dive Nagual. ¿La salida a El Bajo? Depende de las condiciones del día: ningún operador la garantiza, y eso es buena señal.
 
 ## Mejor época para ir
 
@@ -113,6 +117,10 @@ Vuelo a **La Paz (LAP)** con conexión domestica desde Ciudad de Mexico, Guadala
 
 Distincion critica para comunicar a clientes: los leones marinos son buceo (todo el año), el tiburón ballena es snorkel (oct-mar, NO se bucea con ellos). Villa Carey / Carey Dive Center es el proveedor de referencia: operación familiar hispanohablante con más de 30 anos en el Mar de Cortes, centro SNSI, nitrox gratuito para todos los clientes. 14 habitaciones propias a 600m del centro. Cabo Pulmo merece la excursion de un día pero requiere planificación por la distancia (2,5h coche). Noviembre-marzo es la ventana donde se concentran más atractivos simultaneamente.
 
+## Consejo Scibasku
+
+La Paz funciona como un menú degustación: cada día un plato distinto -- leones marinos, seamount, pecio, parque nacional -- y ninguno se repite. Le encaja al buceador que valora la interacción con fauna por encima del paisaje coralino y acepta que el plato fuerte (los martillos de El Bajo) puede no salir de cocina: el avistamiento no está garantizado y exige AOWD. No es tu destino si buscas arrecifes de coral colorido tipo Caribe o Indo-Pacífico -- el Mar de Cortés es roca, arena y vida, no jardín -- ni si solo puedes viajar en verano, cuando Los Islotes cierra por cría. Y un matiz que evita decepciones: el tiburón ballena se ve haciendo snorkel, no buceando. Quien llega sabiendo esto vuelve convertido; quien llega esperando Maldivas, no.
+
 ## Fichas relacionadas
 
 - [[socorro]] -- Liveaboard a las Revillagigedo, mantas gigantes y tiburones
@@ -120,6 +128,9 @@ Distincion critica para comunicar a clientes: los leones marinos son buceo (todo
 - [[cocos-island]] -- Referencia pelágico comparativo
 - [[belice]] -- Alternativa caribeña mexicana
 
-## Schema
+## Fuentes
 
-<!-- JSON-LD se genera en fase de publicación -->
+- [Buceo Carey](http://www.buceocarey.com/) — Web oficial del centro de referencia en La Paz (SNSI, salidas a Espíritu Santo y Los Islotes)
+- [The Cortez Club](https://cortezclub.com/) — Centro PADI 5 Star en La Paz; buceo, snorkel con tiburón ballena y actividades en el Mar de Cortés
+- [La Paz Divers](https://lapazdivers.com/) — Centro PADI local con documentación de los sitios de buceo de la bahía
+- [PADI — Diving in La Paz](https://www.padi.com/diving-in/la-paz/) — Panorámica del destino: leones marinos, El Bajo y condiciones generales

@@ -111,7 +111,3 @@ Anilao es **100% resort con dayboat**. Hay docenas de resorts en Mabini/Anilao a
 - [[puerto-galera]] — Puerto Galera, combinable en el mismo circuito Manila-Batangas-Mindoro
 - [[malapascua]] — Malapascua, si quieres complementar macro con pelágico
 - [[kimbe-bay-png]] — Kimbe Bay, el otro gran destino de macro del Pacífico
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

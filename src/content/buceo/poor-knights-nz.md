@@ -105,7 +105,3 @@ Las Poor Knights se bucean principalmente en **dayboat** desde Tutukaka Marina (
 - [[kaikoura]] — Nueva Zelanda, fauna pelágica y delfines dusky
 - [[rapa-nui]] — Pacífico Sur remoto, visibilidad extrema
 - [[fiji]] — Pacífico tropical con mayor temperatura y diversidad de coral
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

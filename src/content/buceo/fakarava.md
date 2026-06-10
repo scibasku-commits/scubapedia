@@ -103,7 +103,3 @@ Fakarava funciona en **formato mixto**. El North Pass tiene centros de buceo y a
 - [[rangiroa]] — El otro gran atolón de Tuamotu; Tiputa Pass y delfines residentes
 - [[palau]] — Otra referencia mundial de tiburones y corrientes en el Pacífico
 - [[yap]] — Mantas de arrecife en corriente, misma familia de experiencias
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->
