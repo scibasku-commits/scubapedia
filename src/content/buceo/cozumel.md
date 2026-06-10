@@ -33,7 +33,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "800–1.800 EUR sin vuelos"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-10
 status: draft
 tags:
   - caribe
@@ -80,20 +80,32 @@ El coral de Cozumel es la estrella — no los pelágicos. Esponjas barril (*Xest
 
 **Hotel + dayboat** es el formato estándar. Los centros de buceo salen 2–3 veces al día con grupos de 6–10 buceadores en pangas (lanchas rápidas). Toda la infraestructura se concentra en la costa oeste de la isla. No hay liveaboard establecido.
 
+## Mejor época para ir
+
+La ventana clásica es **noviembre a mayo**: fuera de la temporada de huracanes, con mar más estable y la isla en pleno funcionamiento. De **junio a octubre** los huracanes son posibles — no frecuentes, pero capaces de cancelar días enteros de buceo — y el calor en superficie aprieta. El agua, en cambio, apenas cambia el guion: entre 26 y 29 °C todo el año, con la visibilidad de acuario como constante. ¿Viajas en verano igualmente? El buceo funciona y hay menos gente; solo asume el riesgo meteorológico que noviembre-mayo no tiene.
+
 ## Cómo llegar
 
 **Vuelo:** Aeropuerto de Cozumel (CZM) — vuelos directos desde EE.UU. y conexiones desde Europa vía Miami, Houston o Cancún. Desde Cancún (CUN): ferry 45 min desde Playa del Carmen.
 
 **Visado UE:** Exención con FMM (tarjeta de visitante) para turismo.
 
+## Nivel requerido
+
+La certificación mínima es **OW**, pero el requisito real es otro: sentirte cómodo en corriente. En Cozumel no se nada contra el agua, se vuela con ella — el barco te recoge donde emerjas. Eso pide buen control de flotabilidad, soltura con la boya de superficie y cabeza fría si el grupo se estira. Un OW recién titulado puede bucear los sitios suaves del centro de la isla con guía; para Punta Sur y los días de corriente fuerte conviene experiencia previa en deriva o un AOWD. No hay inmersiones técnicas obligatorias en el circuito recreativo.
+
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+Cozumel es como un disco de estudio impecable: ninguna sorpresa, todo suena bien, y precisamente por eso algunos lo encuentran previsible. Es el destino para quien quiere fiabilidad — visibilidad de acuario casi garantizada, logística sencilla, dos o tres inmersiones al día sin complicaciones — y para quien disfruta dejándose llevar literalmente por el agua. No es para cazadores de tiburones ni para quien necesita emoción nueva cada inmersión: aquí el espectáculo es el coral, no la megafauna. Tampoco para quien se agobia en corriente, porque la deriva no es opcional. Placer visual constante, adrenalina justa. Eso es Cozumel, y no pide perdón por ello.
 
 ## Fichas relacionadas
 
 - [[belice]] — Belice, el arrecife vecino con el Blue Hole
 - [[roatan-utila]] — Roatán/Utila, Bay Islands a pocas horas
 - [[cayman-islands]] — Cayman, el otro gran clásico del Caribe
+
+## Fuentes
+
+- [Dive Paradise Cozumel](https://diveparadise.com/) — Operador veterano de la isla; salidas diarias a los arrecifes del parque
+- [Cozumel Parks (FPMC)](https://cozumelparks.com/) — Fundación de Parques y Museos de Cozumel; gestión de las áreas naturales de la isla
+- [PADI — Diving in Cozumel](https://www.padi.com/diving-in/cozumel/) — Panorámica del destino y su buceo en deriva
