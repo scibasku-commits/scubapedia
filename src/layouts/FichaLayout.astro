@@ -5,6 +5,8 @@ import { normalizeZona, zonaSlug, zonaGradient } from '../lib/zonas';
 import { chips, lede, railRows, breadcrumb, liveaboards, certCorta } from '../lib/ficha-datos';
 import { crucerobuceoSlug, crucerobuceoUrl } from '../lib/crucerobuceo';
 import { destinoImage } from '../lib/imagen';
+import { datosClave, parseFaq } from '../lib/datos-clave';
+import coordenadas from '../lib/coordenadas.json';
 import '../styles/global.css';
 
 interface Heading { depth: number; slug: string; text: string; }
@@ -65,12 +67,78 @@ const pageTitle = `${titleShort} · Ficha de buceo — Scubapedia`;
 const desc = `Buceo en ${d.pais || titleShort}: ${d.visibilidad_media || 'visibilidad variable'}, ${d.temperatura_agua_min}–${d.temperatura_agua_max}°C. Cert. mínima: ${d.certificacion_minima || 'OW'}.`;
 const arrow = '<path d="M5 12h14M13 6l6 6-6 6"/>';
 
-const jsonLd: Record<string, unknown> = {
-  '@context': 'https://schema.org', '@type': 'TouristAttraction',
+// ---------- JSON-LD completo: Article + TouristAttraction (geo) + BreadcrumbList + autor E-E-A-T ----------
+const SITE = (Astro.site ?? 'https://scubapedia.org').toString().replace(/\/$/, '');
+const coords = (coordenadas as Record<string, { lat: number; lng: number }>)[id] ?? null;
+const realOgImage = destinoImage(id, 'og'); // null si el destino no tiene foto propia
+const AUTHOR_ID = `${SITE}/#giora`;
+const ORG_ID = `${SITE}/#viajes-scibasku`;
+
+const authorLd = {
+  '@type': 'Person', '@id': AUTHOR_ID,
+  name: 'Giora Gilead Elenberg',
+  jobTitle: 'Agente de viajes especializado en buceo y esquí',
+  worksFor: { '@id': ORG_ID },
+  knowsAbout: ['Buceo recreativo', 'Liveaboards', 'Viajes de buceo', 'Cruceros de buceo'],
+  url: 'https://viajesscibasku.com',
+};
+
+const orgLd = {
+  '@type': 'TravelAgency', '@id': ORG_ID,
+  name: 'Viajes Scibasku',
+  url: 'https://viajesscibasku.com',
+  identifier: { '@type': 'PropertyValue', propertyID: 'CICMA', value: '2283' },
+};
+
+const attractionLd: Record<string, unknown> = {
+  '@type': 'TouristAttraction', '@id': `${canonicalUrl}#destino`,
   name: titleShort, url: canonicalUrl, description: desc, touristType: 'Buceadores',
 };
-if (d.pais) jsonLd.containedInPlace = { '@type': 'Country', name: d.pais };
-if (cbSlug) jsonLd.isPartOf = { '@type': 'TouristDestination', name: `Cruceros de buceo en ${d.pais}`, url: cbUrl };
+if (coords) attractionLd.geo = { '@type': 'GeoCoordinates', latitude: coords.lat, longitude: coords.lng };
+if (d.pais) attractionLd.containedInPlace = { '@type': 'Country', name: d.pais };
+if (cbSlug) attractionLd.isPartOf = { '@type': 'TouristDestination', name: `Cruceros de buceo en ${d.pais}`, url: cbUrl };
+
+const articleLd: Record<string, unknown> = {
+  '@type': 'Article', '@id': `${canonicalUrl}#article`,
+  headline: `${titleShort}: ficha de buceo`,
+  description: desc,
+  inLanguage: 'es',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
+  author: { '@id': AUTHOR_ID },
+  publisher: { '@id': ORG_ID },
+  about: { '@id': `${canonicalUrl}#destino` },
+};
+if (d.updated) articleLd.dateModified = d.updated;
+if (d.published || d.created) articleLd.datePublished = d.published || d.created;
+if (realOgImage) articleLd.image = realOgImage;
+
+const breadcrumbLd = {
+  '@type': 'BreadcrumbList', '@id': `${canonicalUrl}#breadcrumb`,
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE}/` },
+    { '@type': 'ListItem', position: 2, name: zona, item: `${SITE}/#zonas` },
+    { '@type': 'ListItem', position: 3, name: titleShort },
+  ],
+};
+
+const graph: Record<string, unknown>[] = [articleLd, attractionLd, breadcrumbLd, authorLd, orgLd];
+
+// FAQPage solo si la ficha tiene sección "## Preguntas frecuentes" con ### preguntas
+const faqs = parseFaq(entry.body);
+if (faqs.length > 0) {
+  graph.push({
+    '@type': 'FAQPage', '@id': `${canonicalUrl}#faq`,
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question', name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  });
+}
+
+const jsonLd = { '@context': 'https://schema.org', '@graph': graph };
+
+// Sección "Datos clave" citable (desde frontmatter — toca el layout, impacta las 103)
+const datos = datosClave(d, zona, coords);
 ---
 <!doctype html>
 <html lang="es">
@@ -255,6 +323,24 @@ if (cbSlug) jsonLd.isPartOf = { '@type': 'TouristDestination', name: `Cruceros d
     .tagrow{display:flex;flex-wrap:wrap;gap:8px;margin:36px 0 0;list-style:none;padding:0}
     .tagrow span{font-size:12.5px;padding:6px 12px;border-radius:999px;border:1px solid var(--borde);color:var(--gris);background:var(--papel)}
 
+    /* datos clave (bloque citable) */
+    .datos-clave{margin:48px 0 0;padding:26px 28px;background:var(--papel);border:1px solid var(--borde);border-radius:16px}
+    .datos-clave h2{margin:0 0 6px;font-size:1.5rem}
+    .datos-clave .dc-intro{font-size:14px;color:var(--gris);margin:0 0 14px}
+    .datos-clave dl{margin:0;display:flex;flex-direction:column}
+    .datos-clave .dc-row{display:grid;grid-template-columns:200px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #f0e9dd}
+    .datos-clave .dc-row:last-child{border-bottom:none}
+    .datos-clave dt{font-size:13.5px;font-weight:600;color:var(--gris);margin:0}
+    .datos-clave dd{font-size:14.5px;color:var(--tinta);margin:0}
+    @media (max-width:680px){.datos-clave .dc-row{grid-template-columns:1fr;gap:2px}}
+
+    /* caja de autor E-E-A-T */
+    .autor-box{margin:32px 0 0;padding:20px 24px;background:var(--aqua-suave);border:1px solid var(--borde);border-left:3px solid var(--aqua);border-radius:12px}
+    .autor-box .ab-head{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--azul);margin-bottom:8px}
+    .autor-box .ab-body{font-size:14.5px;line-height:1.55;color:var(--tinta);margin:0;max-width:none}
+    .autor-box .ab-estuvo{display:block;margin-top:6px;font-weight:600;color:var(--azul-ink)}
+    .autor-box .ab-rev{font-size:12.5px;color:var(--gris);margin:10px 0 0}
+
     /* closer */
     .closer{background:var(--azul);color:#fff;padding:70px 0}
     .closer .wrap{display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
@@ -369,12 +455,35 @@ if (cbSlug) jsonLd.isPartOf = { '@type': 'TouristDestination', name: `Cruceros d
   <div class="wrap grid">
     <article class="article" data-pagefind-body>
       <slot />
+
+      {datos.length > 0 && (
+        <section class="datos-clave" id="datos-clave" aria-label={`Datos clave de buceo en ${titleShort}`}>
+          <h2>Datos clave</h2>
+          <p class="dc-intro">Resumen estructurado de la ficha de {titleShort}{d.pais && d.pais !== titleShort ? ` (${d.pais})` : ''}, mantenido por Viajes Scibasku.</p>
+          <dl>
+            {datos.map((r) => (
+              <div class="dc-row"><dt>{r.k}</dt><dd>{r.v}</dd></div>
+            ))}
+          </dl>
+        </section>
+      )}
+
       {Array.isArray(d.tags) && d.tags.length > 0 && (
         <ul class="tagrow">
           {d.tags.slice(0, 12).map((t: string) => <li><span>#{t}</span></li>)}
         </ul>
       )}
-      {d.updated && <p style="margin-top:24px;font-size:12.5px;color:var(--gris)">Última revisión: {d.updated}</p>}
+
+      <aside class="autor-box" aria-label="Autoría y revisión">
+        <div class="ab-head">Sobre esta ficha</div>
+        <p class="ab-body">
+          Escrita y revisada por <strong>Giora Gilead Elenberg</strong>, agente de viajes especializado
+          en buceo y fundador de <a href="https://viajesscibasku.com" target="_blank" rel="noopener">Viajes Scibasku</a>,
+          agencia de viajes española con licencia <strong>CICMA 2283</strong>.
+          {d.giora_estuvo && <span class="ab-estuvo">✦ Giora ha buceado en este destino.</span>}
+        </p>
+        {d.updated && <p class="ab-rev">Última revisión: {d.updated}</p>}
+      </aside>
     </article>
 
     <aside class="rail" aria-label="Ficha técnica e índice">
