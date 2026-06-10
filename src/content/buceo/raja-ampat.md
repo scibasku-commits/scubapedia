@@ -164,7 +164,3 @@ Trabajamos con **Emperor** como proveedor directo en Raja Ampat, lo que nos perm
 - [[mar-rojo-norte]] — Para comparar: biodiversidad vs. visibilidad
 - [[maldivas]] — Otro destino de mantas, diferente experiencia
 - [[liveaboard-emperor]] — Flota Emperor, nuestro proveedor en Raja Ampat
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

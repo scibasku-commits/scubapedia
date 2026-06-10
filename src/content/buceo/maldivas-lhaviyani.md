@@ -108,7 +108,3 @@ Lhaviyani se trabaja principalmente en **formato resort**. Kuredu Island Resort 
 - [[maldivas-baa-hanifaru]] — Baa Atoll y Hanifaru Bay, atolón vecino con las mantas
 - [[maldivas-atolones-norte]] — Overview de atolones del norte
 - [[maldivas-north-ari]] — North Ari, si quieres combinar resort norte con thilas de nivel
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

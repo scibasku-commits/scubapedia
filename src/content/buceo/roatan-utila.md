@@ -78,7 +78,3 @@ Las Bay Islands son el secreto mejor guardado del buceo caribeño. Roatán tiene
 - [[cozumel]] — Cozumel, más conocido pero similar nivel
 - [[belice]] — Belice, el arrecife vecino mesoamericano
 - [[coiba-panama]] — Coiba, Pacífico panameño para circuit completo
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

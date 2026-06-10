@@ -77,7 +77,3 @@ Las Bahamas son el destino de shark diving más diverso del Atlántico. Tiger Be
 
 - [[maldivas-fuvahmulah]] — Fuvahmulah, tiburón tigre residente en Maldivas
 - [[aliwal-shoal]] — Aliwal Shoal (Sudáfrica), otro tiger + bull shark dive
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

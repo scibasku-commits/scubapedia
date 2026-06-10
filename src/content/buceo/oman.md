@@ -75,7 +75,3 @@ Omán tiene dos caras de buceo completamente distintas. El Musandam — exclave 
 
 - [[mar-rojo-overview]] — Mar Rojo Egipcio, la gran alternativa regional
 - [[djibouti]] — Djibouti, otro destino emergente del Índico occidental
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

@@ -116,7 +116,3 @@ Bali y las Nusas funcionan principalmente en **dayboat** desde Sanur, Padang Bai
 - [[komodo]] — Komodo, el siguiente paso natural desde Bali
 - [[raja-ampat]] — Raja Ampat, para quien quiere la cumbre de Indonesia
 - [[maldivas-baa-hanifaru]] — Hanifaru Bay, para comparar cleaning stations de manta
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

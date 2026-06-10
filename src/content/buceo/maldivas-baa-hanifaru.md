@@ -110,7 +110,3 @@ Algunos liveaboards adaptan rutas de los atolones centrales para incluir Baa en 
 - [[maldivas-lhaviyani]] — Lhaviyani (Faadhippolhu), atolón norte con resorts orientados al buceo
 - [[maldivas-north-ari]] — North Ari, thilas legendarios a pocas horas en liveaboard
 - [[maldivas-atolones-norte]] — Overview de los atolones del norte incluyendo Baa
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

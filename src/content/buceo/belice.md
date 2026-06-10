@@ -76,7 +76,3 @@ Belice tiene el Blue Hole — la formación kárstica circular más famosa del m
 
 - [[cozumel]] — Cozumel, el otro clásico del Caribe mesoamericano
 - [[jardines-reina-cuba]] — Jardines de la Reina, para comparar calidad de arrecife en el Caribe
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

@@ -95,7 +95,3 @@ Tirán es la excursión de día perfecta para buceadores con AOWD que quieren al
 
 - [[sharm-el-sheikh]] · [[ras-mohammed]] · [[dahab]]
 - [[mar-rojo-overview]]
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

@@ -106,7 +106,3 @@ No hay liveaboard clásico establecido en el archipiélago tanzano. El formato h
 - [[mozambique-tofo]] — Mozambique Tofo, al sur, con mantas oceánicas y tiburones toro
 - [[seychelles]] — Seychelles, para quienes buscan más exclusividad en el Índico occidental
 - [[sodwana-bay]] — Sodwana Bay en Sudáfrica, para combinar con safari al sur
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

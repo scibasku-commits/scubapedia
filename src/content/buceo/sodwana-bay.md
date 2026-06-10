@@ -108,7 +108,3 @@ Sodwana funciona exclusivamente en formato **resort + dayboat**. Los botes de fi
 - [[aliwal-shoal]] — Aliwal Shoal, tiburones más grandes al sur; combina bien con Sodwana
 - [[sardine-run]] — Sardine Run, el evento pelágico de Sudáfrica en junio
 - [[mozambique-tofo]] — Mozambique Tofo, el siguiente nivel al norte con mantas oceánicas
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

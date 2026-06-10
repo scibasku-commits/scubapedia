@@ -105,7 +105,3 @@ Huvadhoo se visita casi exclusivamente en **liveaboard Deep South** de 7–10 no
 - [[maldivas-fuvahmulah]] — Fuvahmulah, la isla del tiburón tigre muy cerca
 - [[maldivas-addu]] — Addu Atoll, el extremo sur de Maldivas
 - [[maldivas-south-ari]] — South Ari, para quien quiere tiburones ballena en la misma ruta
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

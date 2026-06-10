@@ -117,17 +117,6 @@ La mayoría de los dive sites de Sharm son aptos para **Open Water Diver**. Los 
 | Nabq Bay | Resorts premium todo incluido | 80-200 EUR/noche |
 | Old Market | Auténtico, económico, mercado local | 20-60 EUR/noche |
 
-## Precios orientativos (Scibasku)
-
-| Producto | Precio |
-|----------|--------|
-| Paquete semanal (4* + 10 inmersiones) | Desde 890 EUR |
-| Excursión día (2 inmersiones) | 65-75 EUR |
-| Paquete Pyramisa AI + vuelo charter | 1.555 EUR/persona |
-| PADI Open Water | 350 EUR |
-| PADI Advanced | 280 EUR |
-| Vuelos desde España | 200-400 EUR ida/vuelta |
-
 ## Consejo Scibasku
 
 Sharm el Sheikh es la puerta de entrada natural al Mar Rojo para buceadores españoles. Si es tu primera vez, Naama Bay tiene todo a mano. Si buscas tranquilidad y un arrecife house reef de calidad, Sharks Bay es mejor opción. No te vayas sin hacer el Thistlegorm — es una de esas inmersiones que cambia la percepción de lo que es posible bajo el agua.
@@ -137,7 +126,3 @@ Sharm el Sheikh es la puerta de entrada natural al Mar Rojo para buceadores espa
 - [[dahab]] · [[hurghada]] · [[mar-rojo-overview]]
 - [[ras-mohammed]] · [[strait-of-tiran]]
 - [[ruta-bde]] · [[elphinstone-reef]]
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

@@ -171,7 +171,3 @@ Para un primer viaje de buceo en el Mar Rojo, Sharm el Sheikh o Dahab son la mej
 - [[elphinstone-reef]] · [[brothers-islands]] · [[daedalus-reef]]
 - [[fury-shoals]] · [[st-johns]] · [[ras-mohammed]] · [[strait-of-tiran]]
 - [[ruta-bde]] · [[ruta-deep-south]]
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

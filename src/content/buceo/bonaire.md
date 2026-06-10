@@ -91,7 +91,3 @@ Bonaire destaca por la consistencia. No hay "el espectáculo" como en otros dest
 - [[curacao]] — Curaçao, la isla hermana con más opciones culturales
 - [[cayman-islands]] — Cayman, para comparar shore diving premium
 - [[cozumel]] — Cozumel, para quien quiere drift diving en vez de shore
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

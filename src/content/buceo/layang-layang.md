@@ -97,7 +97,3 @@ Los **tiburones martillo** (*Sphyrna lewini*) en cardúmenes son el gran reclamo
 - [[sipadan-mabul]] — Sipadan y Mabul, el otro clásico de Sabah
 - [[banda-sea]] — Banda Sea, otro destino de martillos en temporada corta
 - [[palau]] — Palau, para comparar pelágico del Pacífico
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

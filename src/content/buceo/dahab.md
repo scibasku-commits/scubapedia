@@ -115,18 +115,6 @@ La mayoría de sites son aptos para **Open Water Diver**. Three Pools y Eel Gard
 | Laguna | Zona resort, más tranquila | 40-100 EUR/noche |
 | Zona Blue Hole | Eco-lodges, campamentos, ambiente alternativo | 15-50 EUR/noche |
 
-## Precios orientativos (Scibasku)
-
-| Producto | Precio |
-|----------|--------|
-| Discovery (7 días, 3* + 10 inmersiones guiadas) | Desde 650 EUR |
-| Open Water Course (5 noches) | Desde 450 EUR |
-| Safari 2 semanas (14 días) | Desde 950 EUR |
-| Freediving Course (5 noches) | Desde 550 EUR |
-| Inmersión guiada | 25-35 EUR |
-| Alquiler equipo completo | 15-20 EUR/día |
-| PADI Open Water | 280-350 EUR |
-
 ## Consejo Scibasku
 
 Dahab es el destino que recomendamos para sacarse el título de buceo: precios bajos, shore diving sin presión, centros de calidad y un ambiente relajado donde aprender a tu ritmo. Para buceadores ya certificados, es el lugar perfecto para un viaje largo y económico con inmersiones diarias sin la logística de un barco. Y si te interesa el freediving, no hay mejor sitio en el Mediterráneo-Mar Rojo para iniciarte.
@@ -135,7 +123,3 @@ Dahab es el destino que recomendamos para sacarse el título de buceo: precios b
 
 - [[sharm-el-sheikh]] · [[hurghada]] · [[mar-rojo-overview]]
 - [[ras-mohammed]] · [[strait-of-tiran]]
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

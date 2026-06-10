@@ -96,7 +96,3 @@ Los Jardines de la Reina son el arrecife de coral más grande y mejor conservado
 - [[cozumel]] — Cozumel, para comparar calidad caribeña
 - [[belice]] — Belice, el otro arrecife mesoamericano
 - [[bonaire]] — Bonaire, el shore diving del Caribe
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

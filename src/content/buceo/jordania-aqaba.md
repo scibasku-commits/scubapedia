@@ -148,7 +148,3 @@ El servicio se presta en inglés. No hay constancia de instructores de habla his
 - [[mar-rojo-norte]] — La comparación directa: mismo mar, diferente experiencia
 - [[egipto-hermanos-daedalus-elphinstone]] — Para quien busca pelágicos en el Mar Rojo
 - [[eilat]] — La vecina israelí, mismo sistema de arrecife
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

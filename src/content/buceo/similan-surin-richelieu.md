@@ -89,7 +89,3 @@ Los **Similan** tienen una riqueza de coral duro y blando excepcional, con densi
 - [[mergui-myanmar]] — Mergui/Myanmar, el norte salvaje del Andamán
 - [[koh-tao]] — Koh Tao, para comenzar en el Golfo de Tailandia
 - [[anilao]] — Anilao (Filipinas), para comparar macro de nivel
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

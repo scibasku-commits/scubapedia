@@ -105,7 +105,3 @@ Isla del Coco solo es accesible en liveaboard — no hay infraestructura en tier
 - [[galapagos]] — Galápagos, el Santo Grial del pelágico, con más variedad de especies
 - [[revillagigedo-socorro]] — Revillagigedo/Socorro, para las mantas oceánicas más interactivas del mundo
 - [[coiba-panama]] — Coiba, el otro Patrimonio UNESCO del Pacífico Este costarricense-panameño
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

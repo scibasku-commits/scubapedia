@@ -110,7 +110,3 @@ Dakak es un destino honesto: resort de playa con buceo en aguas poco exploradas.
 - [[moalboal]] — Moalboal, sardine run en Cebu (combinable vía Dumaguete)
 - [[malapascua]] — Malapascua, tiburones zorro
 - [[mindoro]] — Mindoro, alternativa accesible
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

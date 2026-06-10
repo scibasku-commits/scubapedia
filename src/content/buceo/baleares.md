@@ -112,7 +112,3 @@ No existe oferta de liveaboard en las Baleares. El formato es **dayboat** con ba
 - [[costa-brava]] — Islas Medas, la reserva marina de referencia del Mediterráneo español
 - [[malta-gozo]] — Pecios WWII y Blue Hole, el siguiente nivel mediterráneo
 - [[croacia]] — Adriático con islas, pecios y paredes similares
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

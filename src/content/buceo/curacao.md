@@ -74,7 +74,3 @@ Curaçao combina lo mejor de Bonaire (shore diving accesible, arrecife franjón)
 
 - [[bonaire]] — Bonaire, más focalizado en el shore diving puro
 - [[cayman-islands]] — Cayman, para quien quiere paredes más profundas
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

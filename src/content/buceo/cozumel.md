@@ -97,7 +97,3 @@ El coral de Cozumel es la estrella — no los pelágicos. Esponjas barril (*Xest
 - [[belice]] — Belice, el arrecife vecino con el Blue Hole
 - [[roatan-utila]] — Roatán/Utila, Bay Islands a pocas horas
 - [[cayman-islands]] — Cayman, el otro gran clásico del Caribe
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

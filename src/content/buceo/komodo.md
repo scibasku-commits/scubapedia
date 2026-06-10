@@ -116,7 +116,3 @@ Komodo funciona muy bien tanto en **liveaboard** (4–10 noches) como en **daybo
 - [[raja-ampat]] — Raja Ampat, biodiversidad máxima a pocas horas de vuelo
 - [[bali-nusa-penida]] — Bali/Nusa Penida, mantas y mola mola combinable en ruta
 - [[alor]] — Alor, buceo extremo para avanzados muy cerca
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

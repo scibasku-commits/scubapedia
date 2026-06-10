@@ -112,7 +112,3 @@ Hurghada no es el destino de buceo más emocionante del Mar Rojo para inmersione
 
 - [[sharm-el-sheikh]] · [[dahab]] · [[marsa-alam]]
 - [[ruta-bde]] · [[ruta-deep-south]] · [[mar-rojo-overview]]
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

@@ -119,7 +119,3 @@ Distincion critica para comunicar a clientes: los leones marinos son buceo (todo
 - [[galapagos]] -- Otro destino de martillos en el Pacífico americano
 - [[cocos-island]] -- Referencia pelágico comparativo
 - [[belice]] -- Alternativa caribeña mexicana
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

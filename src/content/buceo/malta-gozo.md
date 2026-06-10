@@ -110,7 +110,3 @@ Malta opera en formato **shore diving** y **dayboat**, sin oferta de liveaboard.
 - [[costa-brava]] — Reserva marina de las Medas, para comparar fauna mediterránea protegida
 - [[croacia]] — Adriático con pecios WWII y paredes similares
 - [[grecia]] — Pecios arqueológicos únicos y primera área marina protegida del Egeo
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

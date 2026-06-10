@@ -109,7 +109,3 @@ La Costa Brava funciona exclusivamente en formato **dayboat** y **shore diving**
 - [[baleares]] — Cuevas de Mallorca y posidonia de Formentera, el siguiente escalón mediterráneo
 - [[malta-gozo]] — Pecios y Blue Hole, la otra gran referencia del Mediterráneo
 - [[croacia]] — Adriático con paredes y pecios WWII
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

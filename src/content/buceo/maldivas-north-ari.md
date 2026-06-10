@@ -115,7 +115,3 @@ North Ari es escala obligatoria en todos los safaris de 7 noches de los atolones
 - [[maldivas-south-male]] — South Malé, los canales con más adrenalina
 - [[maldivas-south-ari]] — South Ari, el atolón del tiburón ballena
 - [[maldivas-atolones-norte]] — Overview de los atolones del norte
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

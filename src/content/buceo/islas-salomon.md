@@ -111,7 +111,3 @@ El destino funciona en dos formatos. El **liveaboard** — principalmente el Bil
 - [[chuuk-lagoon]] — El otro gran cementerio de pecios WWII del Pacífico
 - [[vanuatu-coolidge]] — El SS President Coolidge, el pecio más accesible del Pacífico
 - [[kimbe-bay-png]] — Papua Nueva Guinea, arrecifes vírgenes en el mismo rango de experiencia
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

@@ -72,7 +72,3 @@ Coiba es la isla más grande de Centroamérica y uno de los últimos arrecifes p
 
 - [[fiji]] — Fiji, para comparar shark diving del Pacífico
 - [[roatan-utila]] — Roatán/Utila, Caribe caribeño en el mismo circuito
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

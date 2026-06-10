@@ -96,7 +96,3 @@ Ras Mohammed es la primera inmersión que recomendamos a quien visita el Mar Roj
 
 - [[sharm-el-sheikh]] · [[strait-of-tiran]] · [[dahab]]
 - [[mar-rojo-overview]]
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

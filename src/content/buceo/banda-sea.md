@@ -107,7 +107,3 @@ Banda Sea es **exclusivamente liveaboard** de 10–12 noches. No hay infraestruc
 - [[raja-ampat]] — Raja Ampat, combinable en ruta gran expedición Indonesia
 - [[alor]] — Alor, otro destino de corriente extrema en Indonesia oriental
 - [[komodo]] — Komodo, accesible desde Bali como prólogo del viaje
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

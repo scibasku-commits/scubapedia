@@ -65,7 +65,3 @@ Tobago es el Caribe sin turistas masivos. La isla pequeña al norte de Trinidad 
 
 - [[bonaire]] — Bonaire, ABC Islands con más infraestructura de buceo
 - [[jardines-reina-cuba]] — Cuba, para comparar Caribe prístino
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

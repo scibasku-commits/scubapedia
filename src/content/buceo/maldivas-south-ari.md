@@ -115,7 +115,3 @@ Los liveaboards centrales de 7 noches incluyen 2–3 días en South Ari como par
 - [[maldivas-north-ari]] — North Ari, los thilas legendarios de Maaya y Fish Head
 - [[maldivas-south-male]] — South Malé, canales con tiburones grises
 - [[maldivas-baa-hanifaru]] — Baa Atoll y Hanifaru Bay, concentraciones masivas de mantas
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

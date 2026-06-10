@@ -77,7 +77,3 @@ El Archipiélago de Mergui es lo que el Andamán tailandés era antes de que lle
 
 - [[similan-surin-richelieu]] — Similan/Surin, el complemento tailandés del mismo viaje
 - [[raja-ampat]] — Raja Ampat, para comparar destinos remotos del Pacífico
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

@@ -108,7 +108,3 @@ Cabo de Gata no tiene liveaboard. El formato es **dayboat** con base en los pueb
 - [[madeira]] — Madeira, paso natural hacia el Atlántico con fauna similar y visibilidad superior
 - [[canarias-el-hierro]] — El Hierro, la mejor reserva marina española fuera del Mediterráneo
 - [[azores]] — Azores, para quien quiere el siguiente nivel pelágico en aguas europeas
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

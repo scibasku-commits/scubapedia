@@ -114,7 +114,3 @@ Moalboal combina naturalmente con Malapascua (thresher sharks, norte de Cebu) en
 - [[apo-island]] -- Otro destino accesible en Visayas
 - [[tubbataha]] -- Destino premium Filipinas en liveaboard
 - [[donsol]] -- Whale sharks éticos
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

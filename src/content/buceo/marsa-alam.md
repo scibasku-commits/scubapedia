@@ -137,18 +137,6 @@ Marsa Alam (Port Ghalib) es el punto de embarque para las rutas más prestigiosa
 | Centro Marsa Alam | Opciones económicas, menos infraestructura | 30-80 EUR/noche |
 | Hamata | Remoto, eco-lodges, acceso a sur profundo | 40-100 EUR/noche |
 
-## Precios orientativos (Scibasku)
-
-| Producto | Precio |
-|----------|--------|
-| Resort 4* + 10 inmersiones (semana) | 950 EUR |
-| All-inclusive 5* + buceo (semana) | 1.400 EUR |
-| Excursión Elphinstone (2 inmersiones) | 85 EUR |
-| Snorkel Sataya (día completo) | 75 EUR |
-| Abu Dabbab (entrada + equipo) | 45 EUR |
-| Liveaboard BDE 7 días | Desde 1.100 EUR |
-| Vuelos desde España | 250-450 EUR ida/vuelta |
-
 ## Consejo Scibasku
 
 Marsa Alam es para quien ya conoce el Mar Rojo y quiere ir un paso más allá — o para quien quiere empezar por lo mejor. Si tienes nivel Advanced, combina unos días de resort con shore dives en Abu Dabbab y una excursión a Elphinstone. Si tu objetivo son los grandes pelágicos, un liveaboard BDE desde Port Ghalib es la experiencia definitiva del Mar Rojo.
@@ -159,7 +147,3 @@ Marsa Alam es para quien ya conoce el Mar Rojo y quiere ir un paso más allá �
 - [[fury-shoals]] · [[st-johns]]
 - [[sharm-el-sheikh]] · [[dahab]] · [[hurghada]]
 - [[mar-rojo-overview]] · [[ruta-bde]] · [[ruta-deep-south]]
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

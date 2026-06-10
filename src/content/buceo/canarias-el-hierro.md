@@ -107,7 +107,3 @@ El Hierro funciona exclusivamente en **dayboat** con base en La Restinga. Los ce
 - [[azores]] — Azores, para pelágicos de nivel superior en el Atlántico
 - [[madeira]] — Madeira, arrecife volcánico atlántico similar pero en aguas portuguesas
 - [[cabo-verde]] — Cabo Verde, fauna atlántica en aguas tropicales
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

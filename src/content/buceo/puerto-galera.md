@@ -118,7 +118,3 @@ Verde Island Passage concentra una biodiversidad que científicos del Smithsonia
 - [[anilao]] — Anilao, macro capital a pocas horas de Manila en dirección contraria
 - [[tubbataha]] — Tubbataha, para complementar con el gran liveaboard filipino
 - [[apo-island]] — Apo Island, para combinar en circuito Filipinas de 2 semanas
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

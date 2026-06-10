@@ -73,7 +73,3 @@ Koh Tao es la isla donde más buceadores se certifican por año en todo el mundo
 
 - [[similan-surin-richelieu]] — Siguiente paso natural desde Koh Tao — el liveaboard del Andamán
 - [[apo-island]] — Apo Island, para comparar nivel OW en el Pacífico
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

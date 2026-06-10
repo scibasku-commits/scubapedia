@@ -67,7 +67,3 @@ Djibouti es uno de los secretos mejor guardados del turismo de naturaleza: un pe
 
 - [[maldivas-south-ari]] — South Ari Atoll, tiburón ballena más consistente
 - [[ningaloo]] — Ningaloo, Australia, el mejor whale shark del mundo
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

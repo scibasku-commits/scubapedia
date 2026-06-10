@@ -108,7 +108,3 @@ Las Azores funcionan principalmente en **dayboat** desde los puertos de cada isl
 - [[madeira]] — Madeira, buceo volcánico atlántico más accesible
 - [[cabo-verde]] — Cabo Verde, pelágicos atlánticos en aguas tropicales
 - [[canarias-el-hierro]] — El Hierro, reserva marina española en el Atlántico
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

@@ -81,7 +81,3 @@ Las islas de la costa este de Malasia peninsular — Tioman, Perhentian y Redang
 - [[sipadan-mabul]] — Sipadan, para quien quiere subir de nivel desde Perhentian
 - [[bali-nusa-penida]] — Bali, combinable en circuito SE Asia
 - [[apo-island]] — Apo Island (Filipinas), perfil similar pero más avanzado
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

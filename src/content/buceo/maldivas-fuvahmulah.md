@@ -109,7 +109,3 @@ Fuvahmulah funciona principalmente en **formato paquete local**: centros de buce
 - [[maldivas-huvadhoo]] — Huvadhoo/Gaafu, drift diving extremo en el sur profundo
 - [[maldivas-addu]] — Addu Atoll, el otro extremo sur de Maldivas
 - [[maldivas-south-ari]] — South Ari, para combinar tiburón tigre con tiburón ballena en 10 días
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

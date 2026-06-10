@@ -105,7 +105,3 @@ Addu se visita principalmente en **rutas Deep South** de 7–10 noches que suben
 - [[maldivas-huvadhoo]] — Huvadhoo/Gaafu, atolón profundo vecino con kanales potentes
 - [[maldivas-fuvahmulah]] — Fuvahmulah, la isla del tiburón tigre a pocas horas
 - [[maldivas-south-ari]] — South Ari, para combinar en ruta Deep South
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

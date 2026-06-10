@@ -106,7 +106,3 @@ Ningaloo funciona principalmente en **dayboat** desde Exmouth y Coral Bay. Los t
 - [[rowley-shoals]] — Australia Occidental, atolones remotos solo en liveaboard
 - [[gran-barrera]] — Gran Barrera de Coral, el arrecife tropical de Queensland
 - [[neptune-islands]] — Australia del Sur, tiburón blanco en jaula
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

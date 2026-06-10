@@ -111,7 +111,3 @@ La mayoría de liveaboards centrales de 7 noches incluyen 2–3 días en South M
 - [[maldivas-atolones-norte]] — North Malé, vecino accesible con puntos clásicos
 - [[maldivas-north-ari]] — North Ari Atoll, thilas legendarios como Fish Head y Maaya Thila
 - [[maldivas-south-ari]] — South Ari, el paraíso del tiburón ballena
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

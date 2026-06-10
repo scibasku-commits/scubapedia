@@ -148,7 +148,3 @@ La infraestructura en Madagascar es rústica. No esperes el nivel de servicio de
 - [[maldivas]] — Alternativa Índico (más caro, más accesible, arrecifes diferentes)
 - [[mozambique]] — Vecino en el Canal de Mozambique, megafauna similar
 - [[seychelles]] — Otro destino Índico occidental con tortugas
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

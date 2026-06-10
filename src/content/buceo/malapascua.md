@@ -109,7 +109,3 @@ Malapascua funciona como **destino de isla**: vuelo a Cebu + carretera hasta May
 - [[apo-island]] — Apo Island, tortugas y arrecife prístino a pocas horas
 - [[tubbataha]] — Tubbataha, el gran liveaboard Filipino
 - [[yap]] — Yap, el otro destino Pacific de mantas y mandarín
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

@@ -140,7 +140,3 @@ Coron es wreck diving puro a 1 hora de vuelo de Manila. La visibilidad es modest
 - [[malapascua]] — Malapascua, tiburones zorro en Visayas
 - [[chuuk-lagoon]] — Chuuk Lagoon, el otro gran cementerio WWII
 - [[puerto-galera]] — Puerto Galera, alternativa accesible desde Manila
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

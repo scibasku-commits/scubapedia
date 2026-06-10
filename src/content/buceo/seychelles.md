@@ -111,7 +111,3 @@ Dos formatos claramente distintos: en las **islas interiores** (Mahé, Praslin, 
 - [[mauricio]] — Mauricio, destino complementario cercano con perfil más tranquilo
 - [[tanzania-zanzibar]] — Zanzíbar, para combinar en la misma región con buceo más accesible
 - [[mozambique-tofo]] — Mozambique Tofo, fauna pelágica más intensa en el continente
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

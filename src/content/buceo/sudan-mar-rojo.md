@@ -73,7 +73,3 @@ Solo accesible en liveaboard. La oferta es extremadamente reducida — solo 2–
 
 - [[brother-islands]] — Brothers, el equivalente en Egipto para comparar
 - [[daedalus-reef]] — Daedalus, otro punto de martillos en el Mar Rojo Egipcio
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

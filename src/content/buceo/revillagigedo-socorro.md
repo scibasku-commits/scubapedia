@@ -183,7 +183,3 @@ Los buceadores que vuelven repiten la misma frase: *"Hay viajes que ordenas en l
 - [[galapagos]] — el siguiente nivel de exigencia: corrientes más duras, certificación + 100 dives, mismos pelágicos con otra escala
 - [[cocos-island]] — Isla del Coco (Costa Rica), el primo más remoto y oscuro del trío del Pacífico Este
 - [[coiba-panama]] — Coiba (Panamá), Patrimonio UNESCO panameño con tiburones de ballena estacionales
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

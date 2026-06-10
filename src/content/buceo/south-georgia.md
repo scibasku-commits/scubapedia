@@ -106,7 +106,3 @@ El formato es exclusivamente **crucero de expedición polar**. No existe infraes
 - [[antartida-peninsula]] — Península Antártica, habitualmente en la misma expedición
 - [[aliwal-shoal]] — Aliwal Shoal (Sudáfrica), para quienes prefieren fauna extrema en aguas más cálidas
 - [[sardine-run]] — Sardine Run, el otro gran espectáculo del hemisferio sur
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

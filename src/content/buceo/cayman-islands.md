@@ -75,7 +75,3 @@ Las tres islas Caimán tienen buceo de primer nivel pero con personalidades dist
 
 - [[bonaire]] — Bonaire, para shore diving más libre
 - [[cozumel]] — Cozumel, para deriva en coral sano
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

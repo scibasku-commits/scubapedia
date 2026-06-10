@@ -109,7 +109,3 @@ El formato predominante son los **barcos de expedición**: embarcaciones de 3–
 - [[islandia-silfra]] — Islandia, otro destino nórdico de aguas frías extremas con visibilidad excepcional
 - [[scapa-flow]] — Scapa Flow, aguas frías escocesas con pecios de guerra
 - [[irlanda-tiburon-peregrino]] — Irlanda, fauna espectacular en el Atlántico norte templado
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

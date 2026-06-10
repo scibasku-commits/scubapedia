@@ -106,7 +106,3 @@ No existe liveaboard clásico para el Sardine Run. El formato estándar es **lod
 - [[aliwal-shoal]] — Aliwal Shoal, tiburones sin jaula a 30 minutos de Durban
 - [[sodwana-bay]] — Sodwana Bay, arrecifes tropicales al norte de Durban
 - [[mozambique-tofo]] — Mozambique Tofo, tiburones toro y mantas oceánicas al norte
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

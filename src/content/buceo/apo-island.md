@@ -108,7 +108,3 @@ Apo Island funciona en **dayboat** desde Dauin (5 km en bangka, 15 min). Los res
 - [[malapascua]] — Malapascua, el tiburón zorro a pocas horas de vuelo
 - [[puerto-galera]] — Puerto Galera, combinable en circuito Filipinas
 - [[tubbataha]] — Tubbataha, el gran liveaboard filipino de temporada
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

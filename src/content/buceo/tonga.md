@@ -102,7 +102,3 @@ Tonga funciona en **dayboat** con base en Vava'u o 'Eua. Las salidas diarias son
 - [[rangiroa]] — Polinesia Francesa; pelágico en pasos con tiburones y delfines
 - [[fakarava]] — Wall of Sharks en el South Pass; misma región del Pacífico Sur
 - [[fiji]] — Pacífico Sur con buceo de arrecife y liveaboards complementarios
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->

@@ -98,7 +98,3 @@ Kaikōura funciona exclusivamente en **day tours** desde el puerto. No hay livea
 - [[poor-knights-nz]] — Poor Knights Islands, el buceo clásico de Nueva Zelanda
 - [[puerto-madryn]] — Patagonia argentina, lobos marinos y ballenas francas
 - [[neptune-islands]] — Australia del Sur, tiburones blancos en jaula
-
-## Schema
-
-<!-- JSON-LD se genera en fase de publicación -->
