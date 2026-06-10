@@ -1,0 +1,364 @@
+---
+// Mapamundi de destinos de buceo — Scubapedia.
+// Técnica: D3 + topojson + world-atlas (atlas vectorial gratuito, sin API de pago),
+// mismo motor que el mapa de SkiPedia. Coordenadas en lib/coordenadas.json.
+import { getCollection } from 'astro:content';
+import { certCorta } from '../lib/ficha-datos';
+import coordenadas from '../lib/coordenadas.json';
+import '../styles/global.css';
+
+const all = await getCollection('buceo');
+const byId = new Map(all.map((e) => [e.id.replace(/\.md$/, ''), e]));
+const coords = coordenadas as Record<string, { lat: number; lng: number }>;
+
+const SPOTS = Object.entries(coords).map(([id, c]) => {
+  const e = byId.get(id);
+  if (!e) return null;
+  const d = e.data as Record<string, any>;
+  const visRaw = String(d.visibilidad_media || '').split('(')[0].trim();
+  const tempRaw = (typeof d.temporada_alta === 'string' ? d.temporada_alta : '').split('(')[0].trim();
+  return {
+    id,
+    n: String(d.title || id).split(' — ')[0].split(' - ')[0].trim(),
+    c: d.pais || '',
+    r: String(d.region || '').split(/[\/,]/)[0].trim(),
+    lat: c.lat, lon: c.lng,
+    giora: !!d.giora_estuvo,
+    prof: Number(d.profundidad_max) || null,
+    vis: visRaw,
+    temp: tempRaw,
+    cert: certCorta(d.certificacion_minima || ''),
+  };
+}).filter((s): s is NonNullable<typeof s> => Boolean(s));
+
+const total = SPOTS.length;
+const gioraN = SPOTS.filter((s) => s.giora).length;
+
+const title = 'Mapamundi del buceo · Scubapedia — el atlas de los destinos de buceo';
+const description = `Explora ${total} destinos de buceo geolocalizados en un mapamundi interactivo. Filtra, pincha cada punto y entra en su ficha.`;
+const canonical = new URL('/mapa/', Astro.site ?? 'https://scubapedia.org').toString();
+const ogImage = new URL('/og-default.png', Astro.site ?? 'https://scubapedia.org').toString();
+const WA = 'https://wa.me/34619401041';
+---
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:site_name" content="Scubapedia" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:image" content={ogImage} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:image" content={ogImage} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <script is:inline src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script is:inline src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-LHZYGMPX6K"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LHZYGMPX6K');
+  </script>
+  <style is:global>
+    :root{
+      --paper:#f1ebdd; --papel:#faf6ec; --tinta:#1b211f; --gris:#647072;
+      --borde:#1b211f22; --decor:#16A6C9; --accent:#0A5570; --accent-link:#073f54;
+      --decor-soft:#16A6C91f; --decor-line:#16A6C940; --giora:#e0824a; --giora-soft:#e0824a1f;
+      --serif:"Fraunces",Georgia,serif; --sans:"DM Sans",system-ui,sans-serif;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{background:var(--paper);color:var(--tinta);font-family:var(--sans);-webkit-font-smoothing:antialiased;line-height:1.5}
+    a{color:var(--accent-link);text-decoration:none}
+
+    .bar{border-bottom:1px solid var(--borde);background:var(--paper);position:sticky;top:0;z-index:40}
+    .bar-inner{max-width:1320px;margin:0 auto;padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .bar-mark img{height:40px;width:auto;display:block}
+    .bar nav{display:flex;gap:6px;align-items:center}
+    .bar nav a{font-size:14px;font-weight:500;color:var(--tinta);padding:7px 13px;border-radius:8px;transition:background .15s,color .15s}
+    .bar nav a:hover{background:var(--decor-soft);color:var(--accent-link)}
+    .bar nav a.active{color:var(--accent-link);font-weight:600}
+
+    .page{max-width:1320px;margin:0 auto;padding:30px 32px 60px}
+    .crumbs{font-size:13px;color:var(--gris);display:flex;align-items:center;gap:9px;margin-bottom:18px}
+    .crumbs a:hover{text-decoration:underline}.crumbs .sep{color:var(--decor)}.crumbs .here{color:var(--tinta)}
+    .page-head{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-bottom:22px}
+    .page-head .eyebrow{font-weight:600;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-link);margin:0 0 12px;display:flex;align-items:center;gap:10px}
+    .page-head .eyebrow::before{content:"";width:26px;height:2px;background:var(--decor);border-radius:2px}
+    h1.title{font-family:var(--serif);font-weight:600;font-size:clamp(40px,6vw,68px);line-height:1;letter-spacing:-.02em;margin:0}
+    .lede{font-size:18px;color:var(--gris);max-width:430px;margin:0;line-height:1.55}
+    .lede b{color:var(--tinta);font-weight:600}
+
+    .filters{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:26px 0 16px}
+    .filter-label{font-size:12px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--gris);margin-right:4px}
+    .chip{font-family:var(--sans);font-size:14.5px;font-weight:500;color:var(--tinta);background:var(--papel);border:1px solid var(--borde);border-radius:999px;padding:9px 16px;cursor:pointer;transition:all .16s;display:inline-flex;align-items:center;gap:9px;line-height:1}
+    .chip:hover{border-color:var(--decor);background:var(--decor-soft)}
+    .chip .dot{width:9px;height:9px;border-radius:50%;flex:none;background:var(--giora)}
+    .chip.active{background:var(--tinta);color:var(--paper);border-color:var(--tinta)}
+    .chip .count{font-size:12px;font-variant-numeric:tabular-nums;opacity:.55;font-weight:600}
+
+    .map-card{position:relative;background:var(--papel);border:1px solid var(--borde);border-radius:22px;box-shadow:0 24px 60px -34px rgba(26,26,26,.34);overflow:hidden}
+    .map-card::after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,var(--decor),#6fd0ec 60%,transparent);opacity:.9;z-index:5;pointer-events:none}
+    .map-toolbar{position:absolute;top:18px;right:18px;z-index:12;display:flex;align-items:center;gap:8px}
+    .visible-count{background:rgba(255,255,255,.92);backdrop-filter:blur(4px);border:1px solid var(--borde);border-radius:999px;font-size:13px;font-weight:600;color:var(--tinta);padding:8px 14px;box-shadow:0 6px 18px -12px rgba(0,0,0,.4)}
+    .visible-count b{color:var(--accent-link)}
+    .zoombtns{display:flex;flex-direction:column;background:var(--papel);border:1px solid var(--borde);border-radius:10px;overflow:hidden;box-shadow:0 6px 18px -12px rgba(0,0,0,.4)}
+    .zoombtns button{width:36px;height:34px;border:none;background:var(--papel);cursor:pointer;font-size:18px;color:var(--tinta);display:grid;place-items:center}
+    .zoombtns button:first-child{border-bottom:1px solid var(--borde)}
+    .zoombtns button:hover{background:var(--decor-soft);color:var(--accent-link)}
+
+    #map{display:block;width:100%;height:auto;cursor:grab;background:radial-gradient(120% 120% at 50% 0%,#fcfdfe 0%,#f3f7f4 70%,#eef0e6 100%)}
+    #map.grabbing{cursor:grabbing}
+    .land{fill:#eef2ea;stroke:#d9ddd2;stroke-width:.6;stroke-linejoin:round}
+    .graticule{fill:none;stroke:var(--decor);stroke-width:.4;opacity:.12}
+    .sphere{fill:#dceaf0;stroke:var(--borde);stroke-width:1}
+    .spot{cursor:pointer;transition:opacity .25s ease}
+    .spot circle.pt{fill:var(--accent);stroke:#fff;stroke-width:1.1;transition:r .15s ease}
+    .spot circle.halo{fill:none;stroke:var(--accent);opacity:0;transition:opacity .2s ease}
+    .spot.giora circle.pt{fill:var(--giora)}
+    .spot.giora circle.halo{stroke:var(--giora)}
+    .spot.dim{opacity:.08;pointer-events:none}
+    .spot:hover circle.halo,.spot.sel circle.halo{opacity:.4}
+
+    .legend{position:absolute;left:18px;bottom:18px;z-index:12;background:rgba(255,255,255,.93);backdrop-filter:blur(5px);border:1px solid var(--borde);border-radius:14px;padding:13px 15px;box-shadow:0 12px 30px -18px rgba(0,0,0,.45)}
+    .legend h4{margin:0 0 9px;font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gris)}
+    .legend ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+    .legend li{display:flex;align-items:center;gap:10px;font-size:13.5px;font-weight:500;white-space:nowrap}
+    .legend .lk{width:11px;height:11px;border-radius:50%;flex:none}
+    .legend .lk.base{background:var(--accent)} .legend .lk.giora{background:var(--giora)}
+
+    .popup{position:absolute;z-index:30;width:296px;background:var(--papel);border:1px solid var(--borde);border-radius:16px;box-shadow:0 30px 70px -28px rgba(26,26,26,.55);opacity:0;transform:translateY(6px) scale(.98);transition:opacity .16s,transform .16s;overflow:hidden}
+    .popup.show{opacity:1;transform:translateY(0) scale(1)}
+    .popup .pu-accent{height:4px;width:100%;background:var(--accent)}
+    .popup.giora .pu-accent{background:var(--giora)}
+    .popup .pu-body{padding:17px 19px 19px}
+    .popup .pu-region{font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gris);margin:0 0 6px}
+    .popup .pu-name{font-family:var(--serif);font-weight:600;font-size:23px;line-height:1.05;margin:0 0 13px;color:var(--tinta);padding-right:18px}
+    .popup .pu-stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--borde);border-radius:10px;overflow:hidden;margin-bottom:14px}
+    .popup .pu-stat{padding:10px 8px;text-align:center;border-right:1px solid var(--borde)}
+    .popup .pu-stat:last-child{border-right:none}
+    .popup .pu-stat .v{font-family:var(--serif);font-weight:600;font-size:16px;color:var(--tinta);line-height:1;white-space:nowrap}
+    .popup .pu-stat .v small{font-size:10px;font-weight:600;color:var(--gris);margin-left:1px;font-family:var(--sans)}
+    .popup .pu-stat .k{font-size:9.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--gris);margin-top:5px}
+    .popup .pu-foot{display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .pu-badge{display:none;align-items:center;gap:7px;font-size:12px;font-weight:600;padding:6px 10px;border-radius:999px;background:var(--giora-soft);color:#a7541f}
+    .popup.giora .pu-badge{display:inline-flex}
+    .pu-badge .bd{width:8px;height:8px;border-radius:50%;background:var(--giora)}
+    .pu-cta{font-family:var(--sans);font-weight:600;font-size:14px;color:#fff;background:var(--accent);border:none;border-radius:9px;padding:9px 15px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;transition:background .15s;white-space:nowrap;margin-left:auto}
+    .pu-cta:hover{background:var(--accent-link)}
+    .pu-cta svg{width:14px;height:14px;stroke:#fff;fill:none;stroke-width:2}
+    .pu-close{position:absolute;top:11px;right:11px;width:26px;height:26px;border-radius:50%;border:1px solid var(--borde);background:var(--papel);cursor:pointer;color:var(--gris);display:grid;place-items:center;z-index:3;transition:all .15s}
+    .pu-close:hover{background:var(--paper);color:var(--tinta)}
+    .popup .pu-tail{position:absolute;width:14px;height:14px;background:var(--papel);border-right:1px solid var(--borde);border-bottom:1px solid var(--borde);transform:rotate(45deg);bottom:-8px;left:calc(var(--tail,50%) - 7px)}
+    .popup.flip .pu-tail{bottom:auto;top:-8px;transform:rotate(225deg)}
+
+    .hint{margin-top:15px;font-size:13.5px;color:var(--gris);display:flex;align-items:center;gap:8px}
+    .hint svg{width:15px;height:15px;stroke:var(--decor);fill:none;stroke-width:1.8}
+    @media(max-width:720px){ .bar-inner,.page{padding-left:18px;padding-right:18px} .legend{padding:10px 12px} .popup{width:256px} }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <div class="bar-inner">
+      <a class="bar-mark" href="/" aria-label="Scubapedia · inicio"><img src="/scubapedia-logo-nav.png" alt="Scubapedia" /></a>
+      <nav>
+        <a href="/">Inicio</a>
+        <a href="/mapa/" class="active">Mapa</a>
+        <a href="/quiz/">Quiz</a>
+        <a href={WA} target="_blank" rel="noopener">Pregúntale a Giora</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="page">
+    <div class="crumbs"><a href="/">Inicio</a><span class="sep">›</span><span class="here">Mapamundi</span></div>
+    <div class="page-head">
+      <div>
+        <p class="eyebrow">El atlas del buceo</p>
+        <h1 class="title">Mapamundi</h1>
+      </div>
+      <p class="lede">Los <b>{total} destinos</b> de buceo de Scubapedia, geolocalizados. Pincha cualquier punto y entra en su ficha.</p>
+    </div>
+
+    <div class="filters">
+      <span class="filter-label">Ver</span>
+      <button class="chip active" data-val="all">Todos <span class="count">{total}</span></button>
+      <button class="chip" data-val="giora"><span class="dot"></span>Donde ha buceado Giora <span class="count">{gioraN}</span></button>
+    </div>
+
+    <div class="map-card" id="mapCard">
+      <div class="map-toolbar">
+        <div class="visible-count"><b id="vis">0</b> destinos</div>
+        <div class="zoombtns">
+          <button id="zin" aria-label="Acercar">+</button>
+          <button id="zout" aria-label="Alejar">−</button>
+        </div>
+      </div>
+      <svg id="map" role="img" aria-label="Mapa mundial de destinos de buceo"></svg>
+      <div class="legend">
+        <h4>Leyenda</h4>
+        <ul>
+          <li><span class="lk base"></span>Destino de buceo</li>
+          <li><span class="lk giora"></span>Giora ha buceado aquí</li>
+        </ul>
+      </div>
+      <div class="popup" id="popup">
+        <button class="pu-close" id="puClose" aria-label="Cerrar">✕</button>
+        <div class="pu-accent"></div>
+        <div class="pu-body">
+          <p class="pu-region" id="puRegion"></p>
+          <h3 class="pu-name" id="puName"></h3>
+          <div class="pu-stats">
+            <div class="pu-stat"><div class="v" id="puProf"></div><div class="k">Prof. máx</div></div>
+            <div class="pu-stat"><div class="v" id="puVis"></div><div class="k">Visibilidad</div></div>
+            <div class="pu-stat"><div class="v" id="puCert"></div><div class="k">Nivel mín.</div></div>
+          </div>
+          <div class="pu-foot">
+            <span class="pu-badge"><span class="bd"></span>Giora estuvo aquí</span>
+            <button class="pu-cta" id="puCta">Ver ficha
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="pu-tail"></div>
+      </div>
+    </div>
+
+    <p class="hint">
+      <svg viewBox="0 0 24 24"><path d="M9 11.5a2.5 2.5 0 1 1 5 0c0 1.5-2.5 2.5-2.5 4"/><circle cx="12" cy="12" r="9"/></svg>
+      Pincha en cualquier punto para ver sus datos. Arrastra para mover y usa + / − para acercar.
+    </p>
+  </main>
+
+  <script is:inline define:vars={{ SPOTS }}>window.SPOTS = SPOTS;</script>
+  <script is:inline>
+  (function () {
+    if (typeof d3 === 'undefined') { console.error('d3 no cargó'); return; }
+    const data = window.SPOTS || [];
+    const W = 1600, CROP = 740;
+    const svg = d3.select("#map").attr("viewBox", `0 0 ${W} ${CROP}`);
+    const projection = d3.geoNaturalEarth1();
+    const path = d3.geoPath(projection);
+    const sphere = { type: "Sphere" };
+    projection.fitExtent([[14, 14], [W - 14, 798]], sphere);
+
+    const gZoom = svg.append("g").attr("class", "zoomable");
+    gZoom.append("path").datum(sphere).attr("class", "sphere").attr("d", path);
+    gZoom.append("path").datum(d3.geoGraticule10()).attr("class", "graticule").attr("d", path);
+    const gLand = gZoom.append("g");
+    const gDots = gZoom.append("g");
+
+    const setTxt = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+    let dots = null; const BASE_R = 4.2; let curK = 1;
+
+    function plotDots() {
+      dots = gDots.selectAll("g.spot").data(data).enter().append("g")
+        .attr("class", d => "spot " + (d.giora ? "giora" : "base"))
+        .attr("transform", d => { const xy = projection([d.lon, d.lat]); return xy ? `translate(${xy[0]},${xy[1]})` : "translate(-99,-99)"; })
+        .on("click", function (ev, d) { ev.stopPropagation(); openPopup(d, this); })
+        .on("mouseenter", function () { d3.select(this).select("circle.pt").attr("r", (BASE_R + 2) / curK); })
+        .on("mouseleave", function () { if (!this.classList.contains("sel")) d3.select(this).select("circle.pt").attr("r", BASE_R / curK); });
+      dots.append("circle").attr("class", "halo").attr("r", BASE_R * 3.4);
+      dots.append("circle").attr("class", "pt").attr("r", BASE_R);
+      dots.append("title").text(d => `${d.n} · ${d.c}`);
+    }
+
+    const zoom = d3.zoom().scaleExtent([1, 9]).translateExtent([[0, 0], [W, CROP]])
+      .on("zoom", (ev) => {
+        curK = ev.transform.k;
+        gZoom.attr("transform", ev.transform);
+        gLand.selectAll("path").attr("stroke-width", 0.6 / curK);
+        svg.select(".graticule").attr("stroke-width", 0.4 / curK);
+        svg.select(".sphere").attr("stroke-width", 1 / curK);
+        if (dots) {
+          dots.selectAll("circle.pt").attr("r", function () { return this.parentNode.classList.contains("sel") ? (BASE_R + 1.5) / curK : BASE_R / curK; }).attr("stroke-width", 1.1 / curK);
+          dots.selectAll("circle.halo").attr("r", (BASE_R * 3.4) / curK);
+        }
+        if (selNode) positionPopup(selNode);
+      })
+      .on("start", () => svg.node().classList.add("grabbing"))
+      .on("end", () => svg.node().classList.remove("grabbing"));
+    svg.call(zoom).on("dblclick.zoom", null);
+    document.getElementById("zin").onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1.6);
+    document.getElementById("zout").onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1 / 1.6);
+
+    let state = "all";
+    function applyFilters() {
+      let vis = 0;
+      if (dots) dots.each(function (d) {
+        const ok = (state === "all") || (state === "giora" && d.giora);
+        this.classList.toggle("dim", !ok);
+        if (ok) vis++;
+      });
+      setTxt("vis", vis);
+      if (selData) { const ok = (state === "all") || (state === "giora" && selData.giora); if (!ok) closePopup(); }
+    }
+    document.querySelectorAll(".chip").forEach(chip => {
+      chip.addEventListener("click", () => {
+        document.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+        chip.classList.add("active"); state = chip.dataset.val; applyFilters();
+      });
+    });
+
+    const popup = document.getElementById("popup");
+    const card = document.getElementById("mapCard");
+    let selNode = null, selData = null;
+
+    function openPopup(d, node) {
+      if (selNode) selNode.classList.remove("sel");
+      selNode = node; selData = d; node.classList.add("sel");
+      node.parentNode.appendChild(node);
+      d3.select(node).select("circle.pt").attr("r", (BASE_R + 1.5) / curK);
+      popup.className = "popup " + (d.giora ? "giora" : "base");
+      setTxt("puRegion", [d.r, d.c].filter(Boolean).join(" · "));
+      setTxt("puName", d.n);
+      document.getElementById("puProf").innerHTML = d.prof ? `${d.prof}<small>m</small>` : "—";
+      setTxt("puVis", d.vis || "—");
+      setTxt("puCert", d.cert || "—");
+      positionPopup(node); void popup.offsetWidth; popup.classList.add("show");
+      setTimeout(() => positionPopup(node), 0);
+    }
+    function positionPopup(node) {
+      const cr = card.getBoundingClientRect(), nr = node.getBoundingClientRect();
+      const cx = nr.left + nr.width / 2 - cr.left, cy = nr.top + nr.height / 2 - cr.top;
+      const pw = popup.offsetWidth || 296, ph = popup.offsetHeight || 230;
+      let left = Math.max(12, Math.min(cx - pw / 2, cr.width - pw - 12));
+      let top = cy - ph - 16, flip = false;
+      if (top < 12) { top = cy + 16; flip = true; }
+      popup.classList.toggle("flip", flip);
+      popup.style.left = left + "px"; popup.style.top = top + "px";
+      popup.style.setProperty("--tail", (cx - left) + "px");
+    }
+    function closePopup() {
+      popup.classList.remove("show");
+      if (selNode) { selNode.classList.remove("sel"); d3.select(selNode).select("circle.pt").attr("r", BASE_R / curK); }
+      selNode = null; selData = null;
+    }
+    document.getElementById("puClose").onclick = closePopup;
+    document.getElementById("puCta").onclick = () => { if (selData) window.location.href = `/destinos/${selData.id}/`; };
+    svg.on("click", closePopup);
+    window.addEventListener("keydown", e => { if (e.key === "Escape") closePopup(); });
+
+    d3.json("/countries-110m.json")
+      .then(world => {
+        const countries = topojson.feature(world, world.objects.countries).features;
+        gLand.selectAll("path").data(countries).enter().append("path").attr("class", "land").attr("d", path);
+        plotDots(); applyFilters();
+      })
+      .catch(err => { console.error("No se pudo cargar el mapa base:", err); plotDots(); applyFilters(); });
+  })();
+  </script>
+</body>
+</html>
