@@ -47,10 +47,10 @@ export function datosClave(
 // Si la ficha no tiene FAQ, devuelve [] y el layout no emite FAQPage.
 export function parseFaq(body: string | undefined): Array<{ q: string; a: string }> {
   if (!body) return [];
-  const section = body.match(/^##\s+(?:Preguntas frecuentes|FAQ)[^\n]*\n([\s\S]*?)(?=\n##\s|$)/im);
+  const section = body.match(/^##\s+(?:Preguntas frecuentes|FAQ)[^\n]*\n([\s\S]*?)(?=\n##\s|(?![\s\S]))/im);
   if (!section) return [];
   const out: Array<{ q: string; a: string }> = [];
-  const re = /^###\s+(.+?)\s*\n([\s\S]*?)(?=\n###\s|$)/gm;
+  const re = /^###\s+(.+?)\s*\n([\s\S]*?)(?=\n###\s|(?![\s\S]))/gm;
   let m: RegExpExecArray | null;
   while ((m = re.exec(section[1]))) {
     const q = m[1].replace(/[*_`]/g, '').trim();
