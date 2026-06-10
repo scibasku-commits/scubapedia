@@ -144,6 +144,7 @@ const WA = 'https://wa.me/34619401041';
     .spot.giora circle.halo{stroke:#e0824a}
     .zlabel{fill:#0a5570;opacity:.5;font-family:var(--sans);font-weight:700;letter-spacing:.1em;text-transform:uppercase;pointer-events:none;text-anchor:middle}
     .hovername{font-family:var(--sans);font-weight:700;fill:var(--tinta);paint-order:stroke;stroke:#faf6ec;stroke-width:3.5px;stroke-linejoin:round;pointer-events:none;text-anchor:middle}
+    .ptlabel{font-family:var(--sans);font-weight:600;fill:var(--tinta);paint-order:stroke;stroke:#faf6ec;stroke-width:3px;stroke-linejoin:round;pointer-events:none;text-anchor:middle}
     .spot.dim{opacity:.08;pointer-events:none}
     .spot:hover circle.halo,.spot.sel circle.halo{opacity:.4}
 
@@ -301,6 +302,16 @@ const WA = 'https://wa.me/34619401041';
         .on("mouseleave", function () { if (!this.classList.contains("sel")) d3.select(this).select("circle.pt").attr("r", BASE_R / curK); hoverName.style("display", "none"); });
       dots.append("circle").attr("class", "halo").attr("r", BASE_R * 3.4);
       dots.append("circle").attr("class", "pt").attr("r", BASE_R);
+      dots.append("text").attr("class", "ptlabel").attr("y", -(BASE_R + 3)).attr("font-size", "11px").style("display", "none").text(d => d.n);
+    }
+    // Muestra etiquetas: zonas al alejar, nombres de destino al acercar (curK>=2.4)
+    function syncLabels() {
+      const showPt = curK >= 2.4;
+      gLabels.style("display", showPt ? "none" : null);
+      gLabels.selectAll("text").attr("font-size", (14 / curK) + "px");
+      if (dots) dots.selectAll("text.ptlabel")
+        .attr("font-size", (11 / curK) + "px").attr("y", -(BASE_R + 3) / curK)
+        .style("display", function () { return showPt && !this.parentNode.classList.contains("dim") ? null : "none"; });
     }
 
     const zoom = d3.zoom().scaleExtent([1, 9]).translateExtent([[0, 0], [W, CROP]])
@@ -314,7 +325,7 @@ const WA = 'https://wa.me/34619401041';
           dots.selectAll("circle.pt").attr("r", function () { return this.parentNode.classList.contains("sel") ? (BASE_R + 1.5) / curK : BASE_R / curK; }).attr("stroke-width", 1.3 / curK);
           dots.selectAll("circle.halo").attr("r", (BASE_R * 3.4) / curK);
         }
-        gLabels.selectAll("text").attr("font-size", (14 / curK) + "px");
+        syncLabels();
         if (selNode) positionPopup(selNode);
       })
       .on("start", () => svg.node().classList.add("grabbing"))
@@ -332,6 +343,7 @@ const WA = 'https://wa.me/34619401041';
         if (ok) vis++;
       });
       setTxt("vis", vis);
+      syncLabels();
       if (selData) { const ok = (state === "all") || (state === "giora" && selData.giora); if (!ok) closePopup(); }
     }
     document.querySelectorAll(".chip").forEach(chip => {
