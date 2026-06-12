@@ -95,9 +95,8 @@ Rangiroa opera principalmente en **dayboat** desde los resorts y centros de Avat
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Tiputa se bucea con marea entrante, y eso condiciona vuelos, noches y plan.
+> [Yo me ocupo de esa cuadratura →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

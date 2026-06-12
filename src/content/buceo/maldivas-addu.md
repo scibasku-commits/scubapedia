@@ -96,9 +96,8 @@ Addu se visita principalmente en **rutas Deep South** de 7–10 noches que suben
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Addu está abajo del todo del archipiélago y requiere vuelo interno: compensa, si se planifica bien.
+> [Yo me encargo de esa parte →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

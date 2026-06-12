@@ -89,9 +89,8 @@ Kaikōura funciona exclusivamente en **day tours** desde el puerto. No hay livea
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Kaikoura encaja perfecto en una ruta por Nueva Zelanda si alguien te cuadra tiempos y reservas.
+> [Ese alguien puedo ser yo →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

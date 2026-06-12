@@ -98,9 +98,8 @@ No existe un liveaboard específico para Irlanda. El formato son **small-boats l
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> El peregrino pasa por Irlanda unas pocas semanas y el Atlántico decide si te deja verlo.
+> [Te aviso de la ventana buena →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

@@ -97,9 +97,8 @@ No hay liveaboard clásico establecido en el archipiélago tanzano. El formato h
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Zanzíbar es el postre perfecto de un safari: arrecife tranquilo y logística sencilla si alguien la engrasa.
+> [Yo la engraso →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

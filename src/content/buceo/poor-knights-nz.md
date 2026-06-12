@@ -96,9 +96,8 @@ Las Poor Knights se bucean principalmente en **dayboat** desde Tutukaka Marina (
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Poor Knights encaja en cualquier ruta por la Isla Norte si sabes cuadrar Tutukaka.
+> [Te lo dejo resuelto →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

@@ -98,9 +98,8 @@ El Hierro funciona exclusivamente en **dayboat** con base en La Restinga. Los ce
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> El Hierro es el secreto peor guardado del buceo español, pero La Restinga tiene camas contadas.
+> [Muévete antes de que se llene: escríbeme →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

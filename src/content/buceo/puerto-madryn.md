@@ -93,9 +93,8 @@ Puerto Madryn funciona exclusivamente en **dayboat** desde el puerto. No hay liv
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Madryn es fauna a lo grande y agua fría: entre ballenas y toninas, el mes lo decide todo.
+> [Pregúntame cuál te conviene →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

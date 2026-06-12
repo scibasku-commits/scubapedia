@@ -107,9 +107,8 @@ Bali y las Nusas funcionan principalmente en **dayboat** desde Sanur, Padang Bai
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> El mola mola tiene calendario y Penida tiene corrientes: el orden de las inmersiones importa.
+> [Te monto el plan con cabeza →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

@@ -99,9 +99,8 @@ Las Azores funcionan principalmente en **dayboat** desde los puertos de cada isl
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> En Azores, la diferencia entre ver mobulas o ver azul vacío es elegir bien isla, mes y operador.
+> [Pregúntame antes de reservar →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

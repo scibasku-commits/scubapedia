@@ -98,9 +98,8 @@ No existe el liveaboard de buceo clásico en la Antártida. El formato es el **c
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Una expedición antártica se reserva con uno o dos años de margen y no admite improvisación.
+> Si vas en serio, [hablamos hoy mejor que mañana →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

@@ -107,9 +107,8 @@ El **Nai'a** es el liveaboard emblemático de Fiji, operando rutas de 10 noches 
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Fiji está lejos y el jet lag es real: merece un itinerario pensado, no un paquete de catálogo.
+> [Lo diseñamos juntos →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

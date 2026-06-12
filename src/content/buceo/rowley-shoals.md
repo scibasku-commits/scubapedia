@@ -95,9 +95,8 @@ Los Rowley Shoals solo son accesibles en **liveaboard de expedición** desde Bro
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Rowley Shoals abre unas semanas al año con un puñado de barcos: o reservas pronto o esperas doce meses.
+> [Mejor lo primero: escríbeme →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

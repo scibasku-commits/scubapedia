@@ -106,9 +106,8 @@ North Ari es escala obligatoria en todos los safaris de 7 noches de los atolones
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> North Ari es el corazón clásico de Maldivas: mil maneras de hacerlo bien y otras tantas de hacerlo regular.
+> [Vamos a hacerlo bien →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

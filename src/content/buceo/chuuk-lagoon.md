@@ -103,9 +103,8 @@ Chuuk es ideal en **liveaboard** (7 noches) que permite llegar a los pecios más
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Llegar a Chuuk es media expedición: varios vuelos y hoteles contados. Los pecios te esperan; tu plaza no.
+> [Organízalo conmigo →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

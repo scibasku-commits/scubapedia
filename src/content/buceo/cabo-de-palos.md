@@ -107,9 +107,8 @@ Cabo de Palos no tiene liveaboard. El formato es **dayboat** desde el puerto de 
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> La reserva de Cabo de Palos pide plaza de barco y, en temporada, algo de mano izquierda con los cupos.
+> [Yo te lo dejo atado →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

@@ -98,9 +98,8 @@ Banda Sea es **exclusivamente liveaboard** de 10–12 noches. No hay infraestruc
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> La travesía del Banda Sea solo navega unas semanas al año y los buenos barcos vuelan.
+> Si quieres litera, [muévete pronto: escríbeme →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

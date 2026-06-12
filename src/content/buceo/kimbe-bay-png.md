@@ -104,9 +104,8 @@ Kimbe Bay funciona principalmente en **formato resort**: Walindi Plantation Reso
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Papúa Nueva Guinea no es un destino de "ya lo miraré": vuelos complejos y plazas limitadas.
+> [Escríbeme y trazamos la ruta →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

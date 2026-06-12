@@ -90,9 +90,8 @@ No hay liveaboard ni barco involucrado — el acceso es **terrestre** directamen
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Silfra exige traje seco y certificación específica, y los grupos de verano se llenan rápido.
+> [Confírmame tu nivel y te busco hueco →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

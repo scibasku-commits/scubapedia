@@ -102,9 +102,8 @@ El destino funciona en dos formatos. El **liveaboard** — principalmente el Bil
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Salomón es de los últimos rincones sin masificar del Pacífico, y por eso mismo cuesta organizarlo.
+> [Esa parte me toca a mí →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

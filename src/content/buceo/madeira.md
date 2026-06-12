@@ -94,9 +94,8 @@ Madeira no tiene liveaboard — es un destino de **dayboat** y **shore diving**.
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Madeira es escapada corta con vuelo directo: en tres días buceas Garajau y vuelves nuevo.
+> [Pídeme fechas y precio →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

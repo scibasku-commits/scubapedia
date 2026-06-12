@@ -94,9 +94,8 @@ Fakarava funciona en **formato mixto**. El North Pass tiene centros de buceo y a
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> La pared de grises de Fakarava merece más de un intento: calcula bien noches y mareas.
+> [Te preparo el itinerario polinesio →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

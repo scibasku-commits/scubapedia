@@ -95,9 +95,8 @@ El mercado está en fase emergente. En Jeddah y Yanbu existen centros de buceo l
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> El Mar Rojo saudí acaba de abrirse y la logística todavía tiene letra pequeña: visados, barcos, rutas.
+> Yo me peleo con eso. [Tú solo dime cuándo →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

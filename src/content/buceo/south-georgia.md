@@ -97,9 +97,8 @@ El formato es exclusivamente **crucero de expedición polar**. No existe infraes
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> South Georgia solo se toca en expedición y cada plaza cuesta lo que cuesta: aquí no se improvisa nada.
+> [Lo planificamos con tiempo →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

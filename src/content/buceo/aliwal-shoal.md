@@ -96,9 +96,8 @@ El buceo en Aliwal Shoal funciona en formato **dayboat** exclusivamente: salidas
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> ¿Tiburones sin jaula en un Índico que no perdona errores? Esto se organiza con cabeza.
+> [Cuéntame tu nivel y lo montamos →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

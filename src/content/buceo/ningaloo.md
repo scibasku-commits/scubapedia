@@ -97,9 +97,8 @@ Ningaloo funciona principalmente en **dayboat** desde Exmouth y Coral Bay. Los t
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> En Ningaloo manda la temporada: el tiburón ballena tiene fechas y los tours también.
+> [Te cuadro vuelo, tour y buceo →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

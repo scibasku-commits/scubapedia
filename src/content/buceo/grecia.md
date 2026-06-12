@@ -103,9 +103,8 @@ Grecia opera principalmente en **dayboat** desde centros en cada isla. En el Ege
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Bucear en Grecia es combinar islas, ferris y centros pequeños sin volverse loco.
+> [Déjame ese sudoku a mí →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

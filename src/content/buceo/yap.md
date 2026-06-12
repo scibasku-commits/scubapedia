@@ -98,9 +98,8 @@ Yap funciona principalmente como **destino de resort**. Manta Ray Bay Resort & Y
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Yap son mantas residentes y vuelos vía Guam que conviene atar con tiempo.
+> [Escríbeme y los atamos →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

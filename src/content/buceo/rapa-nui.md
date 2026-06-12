@@ -90,9 +90,8 @@ Rapa Nui funciona exclusivamente en **dayboat** desde Hanga Roa. No existen live
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Bucear en Rapa Nui añade 50 metros de visibilidad a un viaje que ya te iba a marcar.
+> [Te lo encajo en la ruta chilena →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

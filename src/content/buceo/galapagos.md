@@ -108,9 +108,8 @@ Galápagos solo se bucea en liveaboard — no hay otra opción legal para accede
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> En Galápagos el barco lo es todo, y los buenos se reservan con un año de antelación.
+> [Empezamos cuando quieras →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

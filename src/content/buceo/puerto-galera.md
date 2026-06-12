@@ -109,9 +109,8 @@ Verde Island Passage concentra una biodiversidad que científicos del Smithsonia
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Puerto Galera está a un ferry de Manila y tiene buceo para dos semanas sin repetir punto.
+> [Te armo la escapada filipina →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

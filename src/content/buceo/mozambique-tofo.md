@@ -95,9 +95,8 @@ No existe liveaboard clásico consolidado en Mozambique. El formato es **resort 
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Tofo es mantas, tiburón ballena y carreteras africanas: el orden de los factores sí altera el viaje.
+> [Déjame ordenarlos →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

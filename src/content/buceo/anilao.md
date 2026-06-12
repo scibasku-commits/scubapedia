@@ -102,9 +102,8 @@ Anilao es **100% resort con dayboat**. Hay docenas de resorts en Mabini/Anilao a
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Para exprimir el macro de Anilao importan más el resort y los guías que el propio mapa de puntos.
+> [Te digo cuáles valen la pena →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

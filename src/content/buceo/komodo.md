@@ -107,9 +107,8 @@ Komodo funciona muy bien tanto en **liveaboard** (4–10 noches) como en **daybo
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> ¿Liveaboard o resort en Labuan Bajo? En Komodo esa decisión define tu viaje entero.
+> [La resolvemos en un correo →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

@@ -101,9 +101,8 @@ Malta opera en formato **shore diving** y **dayboat**, sin oferta de liveaboard.
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Malta es el destino de pecios más fácil de cuadrar desde España: vuelo directo y agua clara.
+> [¿Una semana? Te la organizo →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

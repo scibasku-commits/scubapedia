@@ -92,9 +92,8 @@ El Coolidge funciona exclusivamente en formato **resort con shore diving** — d
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> El Coolidge es un pecio de los que justifican el billete, y el billete a Vanuatu tiene su miga.
+> [Le hincamos el diente juntos →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

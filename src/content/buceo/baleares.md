@@ -103,9 +103,8 @@ No existe oferta de liveaboard en las Baleares. El formato es **dayboat** con ba
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Una escapada de buceo en Baleares se arregla en una llamada: centro serio, barco y litera.
+> [Escríbeme y te la dejo cerrada →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

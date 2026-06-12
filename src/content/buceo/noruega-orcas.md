@@ -100,9 +100,8 @@ El formato predominante son los **barcos de expedición**: embarcaciones de 3–
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Las orcas noruegas se buscan en pleno invierno polar: traje seco, pocas horas de luz y nervios templados.
+> [¿Tienes lo que hace falta? Escríbeme →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

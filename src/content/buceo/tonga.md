@@ -93,9 +93,8 @@ Tonga funciona en **dayboat** con base en Vava'u o 'Eua. Las salidas diarias son
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Nadar con yubartas en Tonga exige licencias, cupos y bastante logística.
+> [De todo eso me ocupo yo →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

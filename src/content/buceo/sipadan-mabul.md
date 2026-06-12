@@ -101,9 +101,8 @@ Sipadan no tiene alojamiento — está protegida. Se duerme en **Mabul o Kapalai
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Sipadan funciona con permisos diarios limitados: sin ellos, te quedas mirando la isla desde Mabul.
+> [Los gestiono a tiempo →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

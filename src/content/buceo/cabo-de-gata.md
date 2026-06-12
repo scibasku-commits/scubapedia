@@ -99,9 +99,8 @@ Cabo de Gata no tiene liveaboard. El formato es **dayboat** con base en los pueb
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Si quieres estrenar el año de buceo cerca de casa, Cabo de Gata es la excusa perfecta.
+> [Dime un fin de semana y lo armo →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

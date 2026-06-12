@@ -98,9 +98,8 @@ Buceo exclusivamente en formato **dayboat desde centros en resorts**. La mayor c
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Mauricio mezcla buceo y descanso como pocos, si eliges bien la costa y el hotel.
+> [Te paso mi combinación favorita →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

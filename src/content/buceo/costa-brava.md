@@ -100,9 +100,8 @@ La Costa Brava funciona exclusivamente en formato **dayboat** y **shore diving**
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Las Medes funcionan casi todo el año, pero no todos los centros bucean igual de bien.
+> [Te recomiendo el que encaja contigo →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

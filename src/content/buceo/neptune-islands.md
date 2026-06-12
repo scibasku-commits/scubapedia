@@ -95,9 +95,8 @@ Hay dos modalidades principales:
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> El gran blanco de Neptune se ve desde jaula y con operador serio, o no se ve.
+> [Te pongo con el correcto →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

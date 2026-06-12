@@ -101,9 +101,8 @@ Alor se puede visitar en **liveaboard** (rutas de 10–12 noches conectando Flor
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Alor no se improvisa: vuelos internos contados, pocas plazas y operadores que se llenan meses antes.
+> Si te pica, [dime fechas y lo cuadramos →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

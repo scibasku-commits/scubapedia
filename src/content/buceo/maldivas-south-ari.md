@@ -106,9 +106,8 @@ Los liveaboards centrales de 7 noches incluyen 2–3 días en South Ari como par
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> El tiburón ballena de South Ari no entiende de prisas: cuantas más noches, más opciones.
+> [Ajustamos el plan a tu presupuesto →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

@@ -99,9 +99,8 @@ No existe un **liveaboard** consolidado en Cabo Verde. El formato es **resort + 
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Cabo Verde es vuelo corto y agua templada, pero no todos los centros juegan en la misma liga.
+> [Pídeme el plan concreto →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 

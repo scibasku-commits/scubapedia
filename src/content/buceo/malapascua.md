@@ -100,9 +100,8 @@ Malapascua funciona como **destino de isla**: vuelo a Cebu + carretera hasta May
 
 ## Consejo Scibasku
 
-> ¿Te encaja este destino pero no quieres pelearte con rutas, barcos y permisos?
-> Puedo armarte un viaje a medida —liveaboard o resort— adaptado a tu nivel y experiencia.
-> [Escríbeme y lo vemos →](mailto:info@viajesscibasku.com)
+> Los zorros de Malapascua madrugan más que tú: el resort y el centro adecuados te lo ponen fácil.
+> [Te digo dónde dormir y con quién bucear →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 
