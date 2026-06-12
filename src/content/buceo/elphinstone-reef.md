@@ -187,7 +187,5 @@ Los oceánicos de puntas blancas están presentes todo el año. No hay "mala tem
 - [[daedalus-reef]] - Se combina en la misma ruta BDE
 - [[fury-shoals]] - Alternativa Deep South desde Marsa Alam
 - [[safaga-hurghada-norte]] - Safari norte para ganar experiencia
-- [[golden-dolphin]] - Ficha de flota
-- [[sea-serpent]] - Ficha de flota
 
 ---

@@ -87,7 +87,7 @@ Base en [[hurghada]]. Hub logístico para liveaboards. Arrecifes de Giftun Islan
 Base en [[marsa-alam]]. Arrecifes más prístinos, menos masificados. Dugongos residentes en Abu Dabbab, delfines en Sataya, y acceso a [[elphinstone-reef]] — uno de los dive sites más emocionantes del planeta.
 
 ### Offshore — Solo liveaboard
-[[brothers-islands]], [[daedalus-reef]], [[fury-shoals]], [[st-johns]]. Paredes verticales de cientos de metros, encuentros con pelágicos, concentraciones de tiburones martillo. Requiere Advanced OWD y mínimo 50 inmersiones.
+[[brother-islands]], [[daedalus-reef]], [[fury-shoals]], [[st-johns]]. Paredes verticales de cientos de metros, encuentros con pelágicos, concentraciones de tiburones martillo. Requiere Advanced OWD y mínimo 50 inmersiones.
 
 ## Puntos de inmersión destacados
 
@@ -100,7 +100,7 @@ Base en [[marsa-alam]]. Arrecifes más prístinos, menos masificados. Dugongos r
 | [[elphinstone-reef]] | Marsa Alam | AOWD | Tiburones oceánicos, paredes verticales |
 | Abu Dabbab | [[marsa-alam]] | OWD | Dugongos y tortugas residentes |
 | Sataya / Dolphin House | [[marsa-alam]] | OWD | 200+ delfines spinner residentes |
-| [[brothers-islands]] | Offshore | AOWD+50 | Tiburones martillo, paredes épicas |
+| [[brother-islands]] | Offshore | AOWD+50 | Tiburones martillo, paredes épicas |
 | [[daedalus-reef]] | Offshore | AOWD+50 | Atolón oceánico, martillos al amanecer |
 | [[st-johns]] | Deep South | OWD-AOWD | Cuevas de luz, corales vírgenes |
 
@@ -127,8 +127,7 @@ El Mar Rojo tiene la mayor concentración de liveaboards de buceo del mundo. Las
 | Ruta | Desde | Duración | Nivel | Precio aprox. |
 |------|-------|----------|-------|---------------|
 | Norte y Pecios | Sharm el Sheikh | 7 noches | OWD | Desde 570 EUR |
-| [[ruta-bde]] | Hurghada / Port Ghalib | 7 noches | AOWD+50 | Desde 1.100 EUR |
-| [[ruta-deep-south]] | Hurghada / Port Ghalib | 7-10 noches | AOWD | Desde 900 EUR |
+| Ruta Deep South | Hurghada / Port Ghalib | 7-10 noches | AOWD | Desde 900 EUR |
 | Marine Parks | Hurghada | 7 noches | AOWD+50 | Desde 1.000 EUR |
 | Sudán | Port Sudan | 10 noches | AOWD+50 | Desde 1.500 EUR |
 
@@ -168,6 +167,5 @@ Para un primer viaje de buceo en el Mar Rojo, Sharm el Sheikh o Dahab son la mej
 ## Fichas relacionadas
 
 - [[sharm-el-sheikh]] · [[dahab]] · [[hurghada]] · [[marsa-alam]]
-- [[elphinstone-reef]] · [[brothers-islands]] · [[daedalus-reef]]
+- [[elphinstone-reef]] · [[brother-islands]] · [[daedalus-reef]]
 - [[fury-shoals]] · [[st-johns]] · [[ras-mohammed]] · [[strait-of-tiran]]
-- [[ruta-bde]] · [[ruta-deep-south]]

@@ -251,7 +251,5 @@ El norte tiene algo para cada nivel:
 - [[elphinstone-reef]] - Otro clásico del Mar Rojo
 - [[fury-shoals]] - Alternativa accesible en el Deep South
 - [[st-johns]] - Cuevas y tuneles en el sur
-- [[golden-dolphin]] - Ficha de flota
-- [[camel-dive-club]] - Ficha del centro de buceo
 
 ---

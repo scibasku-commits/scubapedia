@@ -161,6 +161,6 @@ Trabajamos con **Emperor** como proveedor directo en Raja Ampat, lo que nos perm
 ## Fichas relacionadas
 
 - [[komodo]] — El otro gigante del buceo indonesio (mantas, corrientes, paisajes)
-- [[mar-rojo-norte]] — Para comparar: biodiversidad vs. visibilidad
-- [[maldivas]] — Otro destino de mantas, diferente experiencia
-- [[liveaboard-emperor]] — Flota Emperor, nuestro proveedor en Raja Ampat
+- [[mar-rojo-overview]] — Para comparar: biodiversidad vs. visibilidad
+- [[maldivas-baa-hanifaru]] — Otro destino de mantas, diferente experiencia
+- Flota Emperor — nuestro proveedor de liveaboards en Raja Ampat (sin ficha propia)

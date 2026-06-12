@@ -125,4 +125,4 @@ Sharm el Sheikh es la puerta de entrada natural al Mar Rojo para buceadores espa
 
 - [[dahab]] · [[hurghada]] · [[mar-rojo-overview]]
 - [[ras-mohammed]] · [[strait-of-tiran]]
-- [[ruta-bde]] · [[elphinstone-reef]]
+- [[brother-islands]] · [[daedalus-reef]] · [[elphinstone-reef]]

@@ -198,8 +198,5 @@ Si tienes menos de 50 inmersiones pero muchas ganas, haz primero un safari por e
 - [[daedalus-reef]] - Suele combinarse con Brothers en safaris de 7 noches
 - [[safaga-hurghada-norte]] - Safaris para coger experiencia antes de Brothers
 - [[hurghada]] - Puerto de salida principal
-- [[golden-dolphin]] - Ficha de flota
-- [[sea-serpent]] - Ficha de flota
-- [[emperor-divers]] - Ficha de flota
 
 ---

@@ -117,7 +117,7 @@ Zamboanga del Norte es al buceo filipino lo que un vino de mesa honrado a una ca
 - [[coron]] — Coron, pecios WWII en Palawan
 - [[moalboal]] — Moalboal, sardine run en Cebu (combinable vía Dumaguete)
 - [[malapascua]] — Malapascua, tiburones zorro
-- [[mindoro]] — Mindoro, alternativa accesible
+- [[puerto-galera]] — Puerto Galera (Mindoro), alternativa accesible
 
 ## Fuentes
 

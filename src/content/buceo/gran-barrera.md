@@ -179,8 +179,7 @@ Si combinas con un viaje terrestre por Australia, Cairns es perfecta como base: 
 
 ## Fichas relacionadas
 
-- [[osprey-reef]] — Mar del Coral, pelágicos y paredes verticales
-- [[ss-yongala]] — El gran pecio de Australia
-- [[ribbon-reefs]] — Arrecife exterior prístino
-- [[lizard-island]] — Resort de lujo con buceo directo
-- [[mar-rojo]] — Comparativa: otro gran destino de arrecife con liveaboards
+- [[ningaloo]] — La otra cara de Australia: tiburón ballena en el arrecife del oeste
+- [[rowley-shoals]] — Atolones remotos de Australia Occidental, sin multitudes
+- [[neptune-islands]] — Gran blanco en jaula al sur de Australia
+- [[mar-rojo-overview]] — Comparativa: otro gran destino de arrecife con liveaboards

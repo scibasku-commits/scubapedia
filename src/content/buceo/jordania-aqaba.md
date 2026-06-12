@@ -153,9 +153,9 @@ Piensa en Aqaba como en ese restaurante de barrio que cocina mejor que muchos es
 
 ## Fichas relacionadas
 
-- [[mar-rojo-norte]] — La comparación directa: mismo mar, diferente experiencia
-- [[egipto-hermanos-daedalus-elphinstone]] — Para quien busca pelágicos en el Mar Rojo
-- [[eilat]] — La vecina israelí, mismo sistema de arrecife
+- [[mar-rojo-overview]] — La comparación directa: mismo mar, diferente experiencia
+- [[brother-islands]] — Para quien busca pelágicos en el Mar Rojo
+- [[dahab]] — El otro lado del Golfo de Aqaba, desde la orilla egipcia
 
 ## Fuentes
 

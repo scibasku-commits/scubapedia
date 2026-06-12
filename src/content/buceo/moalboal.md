@@ -121,7 +121,6 @@ Hay conciertos que valen la entrada por una sola canción, y Moalboal es uno de 
 - [[anilao]] -- Si el macro de Moalboal te sabe a poco
 - [[apo-island]] -- Otro destino accesible en Visayas
 - [[tubbataha]] -- Destino premium Filipinas en liveaboard
-- [[donsol]] -- Whale sharks éticos
 
 ## Fuentes
 

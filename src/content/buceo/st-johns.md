@@ -175,6 +175,5 @@ St. Johns requiere algo más de experiencia que [[fury-shoals]] por los entornos
 - [[brother-islands]] - Siguiente paso en dificultad
 - [[elphinstone-reef]] - Otro destino del Mar Rojo sur
 - [[safaga-hurghada-norte]] - Alternativa norte
-- [[golden-dolphin]] - Ficha de flota
 
 ---

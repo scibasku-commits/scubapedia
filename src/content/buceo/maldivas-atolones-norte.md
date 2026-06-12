@@ -224,12 +224,10 @@ Maldivas es probablemente el destino de buceo más versatil del planeta: combina
 
 ## Fichas relacionadas
 
-- [[maldivas-atolones-sur]] — Atolones de Vaavu, Meemu, Thaa, Laamu: menos trafico, más tiburones
-- [[maldivas-liveaboard-rutas]] — Itinerarios típicos por atolones
-- [[cocoon-collection]] — Proveedor Scibasku, resorts en Maldivas
-- [[hummingbird-travel]] — Tour operador de gama alta, resorts Maldivas/Seychelles
-- [[buceo-drift-diving]] — Técnica y seguridad en buceo de deriva
-- [[certificaciones-buceo]] — AOWD, Rescue, especialidades
+- [[maldivas-north-ari]] — El atolón clásico de los itinerarios del norte
+- [[maldivas-baa-hanifaru]] — Mantas en agregación en Baa, a un salto de los atolones del norte
+- [[maldivas-lhaviyani]] — Canales y tiburones al norte de Malé
+- [[maldivas-huvadhoo]] — El sur profundo: menos tráfico, más tiburones
 
 ## Fuentes
 

@@ -123,7 +123,7 @@ La Paz funciona como un menú degustación: cada día un plato distinto -- leone
 
 ## Fichas relacionadas
 
-- [[socorro]] -- Liveaboard a las Revillagigedo, mantas gigantes y tiburones
+- [[revillagigedo-socorro]] -- Liveaboard a las Revillagigedo, mantas gigantes y tiburones
 - [[galapagos]] -- Otro destino de martillos en el Pacífico americano
 - [[cocos-island]] -- Referencia pelágico comparativo
 - [[belice]] -- Alternativa caribeña mexicana

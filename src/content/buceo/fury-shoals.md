@@ -178,6 +178,5 @@ Fury Shoals es el destino más accesible del Mar Rojo en liveaboard:
 - [[brother-islands]] - Siguiente paso en dificultad después de Fury Shoals
 - [[elphinstone-reef]] - Otro destino accesible desde Marsa Alam
 - [[safaga-hurghada-norte]] - Alternativa norte para principiantes
-- [[golden-dolphin]] - Ficha de flota
 
 ---

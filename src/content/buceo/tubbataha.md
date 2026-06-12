@@ -109,7 +109,7 @@ Tubbataha es EXCLUSIVAMENTE accesible en liveaboard. No existe alternativa terre
 
 | Barco | Notas |
 |-------|-------|
-| **[[Seadoors]]** | Proveedor Scibasku. Operador de referencia en Filipinas, excelente tripulacion filipina, buena relacion calidad-precio |
+| **Seadoors** | Proveedor Scibasku. Operador de referencia en Filipinas, excelente tripulacion filipina, buena relacion calidad-precio |
 | Philippines Siren | Parte de la flota Siren, estandar premium, itinerarios bien planificados |
 | Resolute | Opcion solida con buena reputacion entre buceadores experimentados |
 | Discovery Palawan | Alternativa local con conocimiento profundo de la zona |
@@ -158,5 +158,5 @@ Para clientes que ya han buceado en Maldivas, Mar Rojo o el Caribe y buscan "el 
 
 - [[raja-ampat]] — Otro destino premium del Triángulo de Coral, corrientes más fuertes
 - [[komodo]] — Alternativa Indonesia, también liveaboard, más accesible en calendario
-- [[seadoors]] — Liveaboard partner Scibasku para Filipinas
-- [[filipinas-general]] — Información general del pais como destino de buceo
+- [[malapascua]] — Tiburones zorro al amanecer, el otro icono de Filipinas
+- [[coron]] — Pecios WWII en Palawan, combinable en el mismo viaje

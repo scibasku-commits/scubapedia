@@ -201,7 +201,5 @@ Si todavia no tienes 50 inmersiones, haz primero un safari norte ([[safaga-hurgh
 - [[fury-shoals]] - Ruta alternativa Daedalus-Fury Shoals
 - [[st-johns]] - Ruta Deep South incluye Daedalus-Rocky-Zabargad-St Johns
 - [[safaga-hurghada-norte]] - Safari norte para coger experiencia antes de Daedalus
-- [[golden-dolphin]] - Ficha de flota
-- [[sea-serpent]] - Ficha de flota
 
 ---

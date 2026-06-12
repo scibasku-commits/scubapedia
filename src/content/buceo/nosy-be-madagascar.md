@@ -153,8 +153,8 @@ Nosy Be pide la mentalidad del viajero de mochila aunque duermas en hotel: las c
 
 ## Fichas relacionadas
 
-- [[maldivas]] — Alternativa Índico (más caro, más accesible, arrecifes diferentes)
-- [[mozambique]] — Vecino en el Canal de Mozambique, megafauna similar
+- [[maldivas-south-ari]] — Alternativa Índico (más caro, más accesible, arrecifes diferentes)
+- [[mozambique-tofo]] — Vecino en el Canal de Mozambique, megafauna similar
 - [[seychelles]] — Otro destino Índico occidental con tortugas
 
 ## Fuentes

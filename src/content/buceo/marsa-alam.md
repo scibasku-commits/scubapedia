@@ -99,8 +99,8 @@ Marsa Alam (Port Ghalib) es el punto de embarque para las rutas más prestigiosa
 
 | Ruta | Duración | Nivel | Precio aprox. |
 |------|----------|-------|---------------|
-| [[ruta-bde]] (Brothers-Daedalus-Elphinstone) | 7 noches | AOWD+50 | Desde 1.100 EUR |
-| [[ruta-deep-south]] (St. John's, Fury Shoals) | 7-10 noches | AOWD | Desde 900 EUR |
+| Ruta BDE (Brothers-Daedalus-Elphinstone) | 7 noches | AOWD+50 | Desde 1.100 EUR |
+| Ruta Deep South (St. John's, Fury Shoals) | 7-10 noches | AOWD | Desde 900 EUR |
 | Marine Parks (Daedalus, Rocky, Zabargad) | 7 noches | AOWD+50 | Desde 1.000 EUR |
 
 ## Mejor época para ir
@@ -143,7 +143,7 @@ Marsa Alam es para quien ya conoce el Mar Rojo y quiere ir un paso más allá �
 
 ## Fichas relacionadas
 
-- [[elphinstone-reef]] · [[brothers-islands]] · [[daedalus-reef]]
+- [[elphinstone-reef]] · [[brother-islands]] · [[daedalus-reef]]
 - [[fury-shoals]] · [[st-johns]]
 - [[sharm-el-sheikh]] · [[dahab]] · [[hurghada]]
-- [[mar-rojo-overview]] · [[ruta-bde]] · [[ruta-deep-south]]
+- [[mar-rojo-overview]]

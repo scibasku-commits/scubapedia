@@ -86,8 +86,8 @@ Hurghada es el puerto de salida más importante del Mar Rojo para liveaboards:
 
 | Ruta | Duración | Nivel | Precio aprox. |
 |------|----------|-------|---------------|
-| [[ruta-bde]] | 7 noches | AOWD+50 | Desde 1.100 EUR |
-| [[ruta-deep-south]] | 7-10 noches | AOWD | Desde 900 EUR |
+| Ruta BDE (Brothers-Daedalus-Elphinstone) | 7 noches | AOWD+50 | Desde 1.100 EUR |
+| Ruta Deep South (St. John's, Fury Shoals) | 7-10 noches | AOWD | Desde 900 EUR |
 | Norte y Pecios | 7 noches | OWD | Desde 570 EUR |
 | Marine Parks | 7 noches | AOWD+50 | Desde 1.000 EUR |
 
@@ -116,7 +116,7 @@ Hurghada no es el destino de buceo más emocionante del Mar Rojo para inmersione
 ## Fichas relacionadas
 
 - [[sharm-el-sheikh]] · [[dahab]] · [[marsa-alam]]
-- [[ruta-bde]] · [[ruta-deep-south]] · [[mar-rojo-overview]]
+- [[brother-islands]] · [[daedalus-reef]] · [[st-johns]] · [[mar-rojo-overview]]
 
 ## Fuentes
 
