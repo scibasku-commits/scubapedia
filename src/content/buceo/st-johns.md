@@ -40,7 +40,7 @@ precio_inmersion_aprox: "Desde 895 EUR (GD III) por safari Deep South. JP Marine
 web_referencia:
   - "https://www.goldendolphin.com"
 giora_estuvo: true
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 ---
 
@@ -176,4 +176,8 @@ St. Johns requiere algo más de experiencia que [[fury-shoals]] por los entornos
 - [[elphinstone-reef]] - Otro destino del Mar Rojo sur
 - [[safaga-hurghada-norte]] - Alternativa norte
 
----
+## Fuentes
+
+- [CDWS — Chamber of Diving and Water Sports](https://www.cdws.travel/) — Organismo oficial egipcio que regula centros y barcos de buceo en el Mar Rojo
+- [Golden Dolphin Safari Fleet](https://www.goldendolphin.com/) — Web oficial de la flota citada en la ficha: barcos, rutas e itinerarios
+- [PADI — Diving in Egypt](https://www.padi.com/diving-in/egypt/) — Panorámica del destino, puntos de inmersión y condiciones generales

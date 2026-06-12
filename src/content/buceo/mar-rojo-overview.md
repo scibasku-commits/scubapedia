@@ -46,7 +46,7 @@ proveedores_scibasku:
 precio_inmersion_aprox: "25-85 EUR según zona y tipo"
 web_referencia: "https://www.cdws.travel"
 giora_estuvo: true
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 ---
 
@@ -169,3 +169,10 @@ Para un primer viaje de buceo en el Mar Rojo, Sharm el Sheikh o Dahab son la mej
 - [[sharm-el-sheikh]] · [[dahab]] · [[hurghada]] · [[marsa-alam]]
 - [[elphinstone-reef]] · [[brother-islands]] · [[daedalus-reef]]
 - [[fury-shoals]] · [[st-johns]] · [[ras-mohammed]] · [[strait-of-tiran]]
+
+## Fuentes
+
+- [CDWS — Chamber of Diving and Water Sports](https://www.cdws.travel/) — Organismo oficial egipcio que regula centros y barcos de buceo en el Mar Rojo
+- [Aggressor Adventures](https://www.aggressor.com/) — Flota citada en la ficha (Red Sea Aggressor)
+- [Master Liveaboards](https://www.masterliveaboards.com/) — Flota citada en la ficha con rutas por el Mar Rojo
+- [Liveaboard.com — Egipto](https://www.liveaboard.com/diving/egypt) — Comparador de liveaboards con itinerarios, barcos y temporadas

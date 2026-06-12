@@ -31,7 +31,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "700–1.400 EUR sin vuelos"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - atlantico
@@ -102,3 +102,8 @@ Madeira no tiene liveaboard — es un destino de **dayboat** y **shore diving**.
 - [[azores]] — Azores, para añadir pelágicos al viaje atlántico
 - [[canarias-el-hierro]] — El Hierro, reserva marina española con fauna similar
 - [[cabo-de-gata]] — Cabo de Gata, alternativa mediterránea OW-friendly
+
+## Fuentes
+
+- [Visit Madeira](https://www.visitmadeira.com/) — Web oficial de turismo de Madeira
+- [PADI — Diving in Portugal](https://www.padi.com/diving-in/portugal/) — Panorámica del destino, puntos de inmersión y condiciones generales

@@ -39,7 +39,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "2.300–4.500 EUR sin vuelos (liveaboard)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - pacifico-central
@@ -115,3 +115,9 @@ Palau funciona muy bien tanto en **liveaboard** (7–10 noches, acceso a puntos 
 - [[yap]] — Yap, mantas residentes a pocas horas de vuelo
 - [[chuuk-lagoon]] — Chuuk/Truk, los pecios de la WWII a poca distancia
 - [[raja-ampat]] — Raja Ampat, para comparar biodiversidad vs pelágico
+
+## Fuentes
+
+- [Fish 'n Fins](https://fishnfins.com/) — Centro citado en la ficha, veterano de Koror
+- [Sam's Tours](https://samstours.com/) — Centro citado en la ficha, con base en Koror
+- [Pristine Paradise Palau](https://pristineparadisepalau.com/) — Web oficial de turismo de Palaos

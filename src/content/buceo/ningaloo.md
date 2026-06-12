@@ -31,7 +31,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.500–3.000 EUR sin vuelos (whale shark tours + buceo arrecife)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - australia
@@ -105,3 +105,9 @@ Ningaloo funciona principalmente en **dayboat** desde Exmouth y Coral Bay. Los t
 - [[rowley-shoals]] — Australia Occidental, atolones remotos solo en liveaboard
 - [[gran-barrera]] — Gran Barrera de Coral, el arrecife tropical de Queensland
 - [[neptune-islands]] — Australia del Sur, tiburón blanco en jaula
+
+## Fuentes
+
+- [Exmouth Diving Centre](https://exmouthdiving.com.au/) — Centro citado en la ficha, con base en Exmouth
+- [Explore Parks WA (DBCA)](https://exploreparks.dbca.wa.gov.au/) — Autoridad de parques de Australia Occidental: Ningaloo Marine Park
+- [PADI — Diving in Australia](https://www.padi.com/diving-in/australia/) — Panorámica del destino, puntos de inmersión y condiciones generales

@@ -34,7 +34,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "600–1.400 EUR sin vuelos"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - mediterraneo
@@ -109,3 +109,8 @@ Croacia opera principalmente en formato **dayboat** desde centros en Split, Dubr
 - [[malta-gozo]] — Pecios WWII y Blue Hole; la otra gran referencia mediterránea en naufragios
 - [[grecia]] — Islas del Egeo y Jónico con pecios arqueológicos únicos
 - [[costa-brava]] — Fauna protegida y gorgonias en el Mediterráneo occidental
+
+## Fuentes
+
+- [Croatia.hr](https://croatia.hr/) — Web oficial de turismo de Croacia
+- [PADI — Diving in Croatia](https://www.padi.com/diving-in/croatia/) — Panorámica del destino, puntos de inmersión y condiciones generales

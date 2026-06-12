@@ -31,7 +31,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "3.500–6.500 EUR sin vuelos (liveaboard 6–8 noches)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - australia
@@ -103,3 +103,9 @@ Los Rowley Shoals solo son accesibles en **liveaboard de expedición** desde Bro
 - [[ningaloo]] — Australia Occidental, tiburón ballena accesible desde la costa
 - [[gran-barrera]] — Gran Barrera de Coral, el arrecife de Queensland
 - [[chuuk-lagoon]] — Pacífico Oeste, otro destino de liveaboard expedition
+
+## Fuentes
+
+- [Explore Parks WA (DBCA)](https://exploreparks.dbca.wa.gov.au/) — Autoridad de parques de Australia Occidental: Rowley Shoals Marine Park
+- [True North Adventure Cruises](https://northstarcruises.com.au/) — Operador de expediciones desde Broome que cubre Rowley Shoals
+- [PADI — Diving in Australia](https://www.padi.com/diving-in/australia/) — Panorámica del destino, puntos de inmersión y condiciones generales

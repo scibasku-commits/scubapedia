@@ -34,7 +34,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "600–1.400 EUR sin vuelos"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - mediterraneo
@@ -109,3 +109,9 @@ Malta opera en formato **shore diving** y **dayboat**, sin oferta de liveaboard.
 - [[costa-brava]] — Reserva marina de las Medas, para comparar fauna mediterránea protegida
 - [[croacia]] — Adriático con pecios WWII y paredes similares
 - [[grecia]] — Pecios arqueológicos únicos y primera área marina protegida del Egeo
+
+## Fuentes
+
+- [Visit Malta](https://www.visitmalta.com/) — Web oficial de turismo de Malta
+- [Underwater Malta](https://underwatermalta.org/) — Museo virtual oficial de pecios y patrimonio sumergido de Malta
+- [PADI — Diving in Malta](https://www.padi.com/diving-in/malta/) — Panorámica del destino, puntos de inmersión y condiciones generales

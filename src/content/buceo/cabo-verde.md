@@ -31,7 +31,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "900–1.700 EUR sin vuelos"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - atlantico
@@ -107,3 +107,8 @@ No existe un **liveaboard** consolidado en Cabo Verde. El formato es **resort + 
 - [[azores]] — Azores, pelágicos atlánticos con tiburón azul y mobulas
 - [[canarias-el-hierro]] — El Hierro, reserva marina española con fauna atlántica similar
 - [[madeira]] — Madeira, arrecife volcánico atlántico en aguas portuguesas
+
+## Fuentes
+
+- [Cabo Verde Diving](https://caboverdediving.net/) — Centro de buceo en Santa Maria (isla de Sal)
+- [PADI — Diving in Cape Verde](https://www.padi.com/diving-in/cape-verde/) — Panorámica del destino, puntos de inmersión y condiciones generales

@@ -30,7 +30,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.800–3.000 EUR sin vuelos (mercado emergente)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - indico
@@ -103,3 +103,10 @@ El mercado está en fase emergente. En Jeddah y Yanbu existen centros de buceo l
 - [[sudan-mar-rojo]] — Sudán, la extensión sur del Mar Rojo para buceadores avanzados
 - [[djibouti]] — Djibouti, tiburón ballena en el Golfo de Tadjoura
 - [[oman]] — Omán, Mar Arábigo con Musandam y las Daymaniyat
+
+## Fuentes
+
+- [Visit Saudi](https://www.visitsaudi.com/) — Web oficial de turismo de Arabia Saudí
+- [PADI — Diving in Saudi Arabia](https://www.padi.com/diving-in/saudi-arabia/) — Panorámica del destino, puntos de inmersión y condiciones generales
+
+<!-- TODO fuente: revisar — operadores locales de Jeddah/Yanbu aún sin web verificable -->

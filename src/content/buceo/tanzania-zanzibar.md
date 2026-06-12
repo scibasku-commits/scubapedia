@@ -31,7 +31,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.200–2.500 EUR sin vuelos"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - indico
@@ -105,3 +105,8 @@ No hay liveaboard clásico establecido en el archipiélago tanzano. El formato h
 - [[mozambique-tofo]] — Mozambique Tofo, al sur, con mantas oceánicas y tiburones toro
 - [[seychelles]] — Seychelles, para quienes buscan más exclusividad en el Índico occidental
 - [[sodwana-bay]] — Sodwana Bay en Sudáfrica, para combinar con safari al sur
+
+## Fuentes
+
+- [Marine Parks & Reserves Tanzania](https://www.marineparks.go.tz/) — Autoridad oficial de los parques marinos (incluido Mafia Island Marine Park)
+- [PADI — Diving in Tanzania](https://www.padi.com/diving-in/tanzania/) — Panorámica del destino, puntos de inmersión y condiciones generales

@@ -33,7 +33,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.200–2.500 EUR sin vuelos"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - sudafrica
@@ -107,3 +107,9 @@ Sodwana funciona exclusivamente en formato **resort + dayboat**. Los botes de fi
 - [[aliwal-shoal]] — Aliwal Shoal, tiburones más grandes al sur; combina bien con Sodwana
 - [[sardine-run]] — Sardine Run, el evento pelágico de Sudáfrica en junio
 - [[mozambique-tofo]] — Mozambique Tofo, el siguiente nivel al norte con mantas oceánicas
+
+## Fuentes
+
+- [iSimangaliso Wetland Park](https://isimangaliso.com/) — Autoridad del parque que engloba los arrecifes de Sodwana Bay
+- [Coral Divers](https://coraldivers.co.za/) — Centro de buceo histórico dentro de Sodwana Bay
+- [PADI — Diving in South Africa](https://www.padi.com/diving-in/south-africa/) — Panorámica del destino, puntos de inmersión y condiciones generales

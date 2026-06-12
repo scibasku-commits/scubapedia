@@ -37,7 +37,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "500–1.200 EUR sin vuelos (alojamiento + bonos de buceo)"
 giora_estuvo: false
-updated: 2026-04-15
+updated: 2026-06-12
 status: draft
 tags:
   - mediterraneo
@@ -115,3 +115,9 @@ Cabo de Palos no tiene liveaboard. El formato es **dayboat** desde el puerto de 
 - [[cabo-de-gata]] — Cabo de Gata, otro parque natural submarino en la costa sureste española
 - [[canarias-el-hierro]] — El Hierro, la mejor reserva marina española fuera del Mediterráneo
 - [[malta-gozo]] — Malta y Gozo, otra joya del Mediterráneo con aguas cristalinas
+
+## Fuentes
+
+- [Islas Hormigas Centro de Buceo](https://islashormigas.com/) — Centro citado en la ficha, en el puerto de Cabo de Palos
+- [Reservas Marinas de España — MITECO](https://www.miteco.gob.es/es/pesca/temas/proteccion-recursos-pesqueros/reservas-marinas-de-espana/) — Información oficial del Estado sobre la reserva marina de Cabo de Palos–Islas Hormigas
+- [PADI — Diving in Spain](https://www.padi.com/diving-in/spain/) — Panorámica del destino, puntos de inmersión y condiciones generales

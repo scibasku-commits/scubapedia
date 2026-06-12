@@ -33,7 +33,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.200–2.500 EUR sin vuelos (liveaboard semana)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - norte
@@ -111,3 +111,9 @@ Scapa Flow funciona casi exclusivamente en **liveaboard estático**: barcos "har
 - [[islandia-silfra]] — Islandia, experiencia nórdica radicalmente diferente en la misma zona de agua fría
 - [[noruega-orcas]] — Noruega, fauna espectacular en fiordos árticos
 - [[irlanda-tiburon-peregrino]] — Irlanda, fauna atlántica norte en formato más accesible
+
+## Fuentes
+
+- [Scapa Flow Wrecks](https://scapaflowwrecks.com/) — Base de datos de referencia de los pecios de la flota alemana hundida
+- [Orkney.com](https://www.orkney.com/) — Web oficial de turismo de las Orcadas
+- [PADI — Diving in Scotland](https://www.padi.com/diving-in/scotland/) — Panorámica del destino, puntos de inmersión y condiciones generales

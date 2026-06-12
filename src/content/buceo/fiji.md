@@ -37,7 +37,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.500–4.000 EUR sin vuelos (resort o liveaboard)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - pacifico-central
@@ -115,3 +115,9 @@ El **Nai'a** es el liveaboard emblemático de Fiji, operando rutas de 10 noches 
 - [[palau]] — Palau, pelágicos y Blue Corner para un circuito Pacífico
 - [[kimbe-bay-png]] — Kimbe Bay, otro paraíso de biodiversidad en el Pacífico occidental
 - [[maldivas-fuvahmulah]] — Fuvahmulah, para comparar el tiburón tigre de Maldivas vs Beqa
+
+## Fuentes
+
+- [Nai'a Liveaboard](https://naia.com.fj/) — Web oficial del liveaboard citado en la ficha
+- [Beqa Adventure Divers](https://fijisharkdive.com/) — Centro citado en la ficha, referencia del buceo con tiburones en Pacific Harbour
+- [Tourism Fiji](https://www.fiji.travel/) — Web oficial de turismo de Fiyi

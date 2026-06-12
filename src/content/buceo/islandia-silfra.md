@@ -25,7 +25,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "180–350 EUR por día (snorkel o 1–2 inmersiones, sin vuelos)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - norte
@@ -98,3 +98,9 @@ No hay liveaboard ni barco involucrado — el acceso es **terrestre** directamen
 - [[noruega-orcas]] — Noruega, otra experiencia nórdica de agua fría extrema con fauna espectacular
 - [[scapa-flow]] — Scapa Flow, aguas frías con historia naval y pecios de la Primera Guerra Mundial
 - [[irlanda-tiburon-peregrino]] — Irlanda, aguas atlánticas menos extremas con tiburones peregrino
+
+## Fuentes
+
+- [Þingvellir National Park](https://www.thingvellir.is/en/) — Web oficial del parque nacional: normas y permisos para bucear en Silfra
+- [DIVE.IS](https://www.dive.is/) — Operador de referencia para Silfra desde Reikiavik
+- [PADI — Diving in Iceland](https://www.padi.com/diving-in/iceland/) — Panorámica del destino, puntos de inmersión y condiciones generales

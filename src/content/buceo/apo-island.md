@@ -33,7 +33,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "800–1.600 EUR sin vuelos (alojamiento Dauin + buceo)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - sudeste-asiatico
@@ -107,3 +107,9 @@ Apo Island funciona en **dayboat** desde Dauin (5 km en bangka, 15 min). Los res
 - [[malapascua]] — Malapascua, el tiburón zorro a pocas horas de vuelo
 - [[puerto-galera]] — Puerto Galera, combinable en circuito Filipinas
 - [[tubbataha]] — Tubbataha, el gran liveaboard filipino de temporada
+
+## Fuentes
+
+- [Atmosphere Resorts & Spa](https://atmosphereresorts.com/) — Resort de buceo en Dauin citado en la ficha, con salidas a Apo Island
+- [Liberty Dive Resort](https://libertydiveresort.com/) — Centro de Dauin citado en la ficha con salidas regulares a Apo
+- [PADI — Diving in Philippines](https://www.padi.com/diving-in/philippines/) — Panorámica del destino, puntos de inmersión y condiciones generales

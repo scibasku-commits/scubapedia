@@ -32,7 +32,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "3.000–5.500 EUR sin vuelos (programa lodge + zodiac)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - sudafrica
@@ -105,3 +105,9 @@ No existe liveaboard clásico para el Sardine Run. El formato estándar es **lod
 - [[aliwal-shoal]] — Aliwal Shoal, tiburones sin jaula a 30 minutos de Durban
 - [[sodwana-bay]] — Sodwana Bay, arrecifes tropicales al norte de Durban
 - [[mozambique-tofo]] — Mozambique Tofo, tiburones toro y mantas oceánicas al norte
+
+## Fuentes
+
+- [Blue Wilderness](https://bluewilderness.co.za/) — Operador especializado en expediciones del Sardine Run
+- [Offshore Africa Port St Johns](https://offshoreportstjohns.com/) — Operador con base en Port St. Johns, en plena Wild Coast
+- [PADI — Diving in South Africa](https://www.padi.com/diving-in/south-africa/) — Panorámica del destino, puntos de inmersión y condiciones generales

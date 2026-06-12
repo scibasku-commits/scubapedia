@@ -39,7 +39,7 @@ proveedores_scibasku:
   - "Cocoon Collection"
 precio_semana_aprox: "1.700–3.200 EUR sin vuelos (liveaboard)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - maldivas
@@ -114,3 +114,9 @@ North Ari es escala obligatoria en todos los safaris de 7 noches de los atolones
 - [[maldivas-south-male]] — South Malé, los canales con más adrenalina
 - [[maldivas-south-ari]] — South Ari, el atolón del tiburón ballena
 - [[maldivas-atolones-norte]] — Overview de los atolones del norte
+
+## Fuentes
+
+- [Euro-Divers](https://www.euro-divers.com/) — Red de centros citada en la ficha, con bases en resorts de Ari
+- [Visit Maldives](https://visitmaldives.com/) — Web oficial de turismo de Maldivas
+- [Liveaboard.com — Maldivas](https://www.liveaboard.com/diving/maldives) — Comparador de liveaboards con itinerarios, barcos y temporadas

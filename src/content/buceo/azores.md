@@ -33,7 +33,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.200–2.500 EUR sin vuelos"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - atlantico
@@ -107,3 +107,9 @@ Las Azores funcionan principalmente en **dayboat** desde los puertos de cada isl
 - [[madeira]] — Madeira, buceo volcánico atlántico más accesible
 - [[cabo-verde]] — Cabo Verde, pelágicos atlánticos en aguas tropicales
 - [[canarias-el-hierro]] — El Hierro, reserva marina española en el Atlántico
+
+## Fuentes
+
+- [Visit Azores](https://www.visitazores.com/) — Web oficial de turismo de las Azores
+- [CW Azores](https://cwazores.com/) — Operador de buceo y pelágicos con base en Pico/Faial
+- [PADI — Diving in Portugal](https://www.padi.com/diving-in/portugal/) — Panorámica del destino, puntos de inmersión y condiciones generales

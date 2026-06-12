@@ -36,7 +36,7 @@ proveedores_scibasku:
   - "Cocoon Collection"
 precio_semana_aprox: "1.600–3.000 EUR sin vuelos (liveaboard)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - maldivas
@@ -110,3 +110,9 @@ La mayoría de liveaboards centrales de 7 noches incluyen 2–3 días en South M
 - [[maldivas-atolones-norte]] — North Malé, vecino accesible con puntos clásicos
 - [[maldivas-north-ari]] — North Ari Atoll, thilas legendarios como Fish Head y Maaya Thila
 - [[maldivas-south-ari]] — South Ari, el paraíso del tiburón ballena
+
+## Fuentes
+
+- [Emperor Divers Maldives](https://emperordivers.com/maldives/) — Web oficial de la flota Emperor en Maldivas: barcos y rutas
+- [Visit Maldives](https://visitmaldives.com/) — Web oficial de turismo de Maldivas
+- [PADI — Diving in Maldives](https://www.padi.com/diving-in/maldives/) — Panorámica del destino, puntos de inmersión y condiciones generales

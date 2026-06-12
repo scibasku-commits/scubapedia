@@ -35,7 +35,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "2.500–4.500 EUR sin vuelos (liveaboard)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - pacifico
@@ -110,3 +110,8 @@ El destino funciona en dos formatos. El **liveaboard** — principalmente el Bil
 - [[chuuk-lagoon]] — El otro gran cementerio de pecios WWII del Pacífico
 - [[vanuatu-coolidge]] — El SS President Coolidge, el pecio más accesible del Pacífico
 - [[kimbe-bay-png]] — Papua Nueva Guinea, arrecifes vírgenes en el mismo rango de experiencia
+
+## Fuentes
+
+- [Bilikiki Cruises](https://bilikiki.com/) — Web oficial del liveaboard citado en la ficha
+- [Tourism Solomons](https://www.visitsolomons.com.sb/) — Web oficial de turismo de las Islas Salomón

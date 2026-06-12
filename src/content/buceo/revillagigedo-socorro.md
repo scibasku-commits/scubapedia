@@ -37,7 +37,7 @@ centros_buceo_recomendados: []
 proveedores_scibasku: []
 precio_semana_aprox: "3.000–3.950 EUR (8–9 noches liveaboard, sin vuelos ni tasa parque)"
 giora_estuvo: false
-updated: 2026-05-15
+updated: 2026-06-12
 status: published
 tags:
   - pacifico-este
@@ -183,3 +183,9 @@ Los buceadores que vuelven repiten la misma frase: *"Hay viajes que ordenas en l
 - [[galapagos]] — el siguiente nivel de exigencia: corrientes más duras, certificación + 100 dives, mismos pelágicos con otra escala
 - [[cocos-island]] — Isla del Coco (Costa Rica), el primo más remoto y oscuro del trío del Pacífico Este
 - [[coiba-panama]] — Coiba (Panamá), Patrimonio UNESCO panameño con tiburones de ballena estacionales
+
+## Fuentes
+
+- [Nautilus Liveaboards](https://nautilusliveaboards.com/) — Flota citada en la ficha: Explorer, Belle Amie y UnderSea
+- [Rocio del Mar](https://rociodelmarliveaboard.com/) — Liveaboard citado en la ficha con rutas a Revillagigedo
+- [PADI — Diving in Mexico](https://www.padi.com/diving-in/mexico/) — Panorámica del destino, puntos de inmersión y condiciones generales

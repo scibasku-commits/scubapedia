@@ -27,7 +27,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.200–2.500 EUR sin vuelos (alojamiento + paquetes inmersión)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - pacifico
@@ -98,3 +98,10 @@ Rapa Nui funciona exclusivamente en **dayboat** desde Hanga Roa. No existen live
 - [[fiji]] — Pacífico Sur con mayor biodiversidad y volumen de vida marina
 - [[kimbe-bay-png]] — Papua Nueva Guinea, topografía volcánica con mayor fauna
 - [[poor-knights-nz]] — Nueva Zelanda, otra joya del Pacífico Sur templado
+
+## Fuentes
+
+- [Chile Travel](https://chile.travel/) — Web oficial de turismo de Chile
+- [PADI — Diving in Chile](https://www.padi.com/diving-in/chile/) — Panorámica del destino, puntos de inmersión y condiciones generales
+
+<!-- TODO fuente: revisar — añadir centro de buceo de Hanga Roa cuando se verifique (webs locales caídas en la comprobación) -->

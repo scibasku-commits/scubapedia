@@ -35,7 +35,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.200–2.500 EUR sin vuelos (resort Mabul + permisos Sipadan)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - sudeste-asiatico
@@ -109,3 +109,9 @@ Sipadan no tiene alojamiento — está protegida. Se duerme en **Mabul o Kapalai
 - [[layang-layang]] — Layang-Layang, martillos y arrecife virgen a pocas horas
 - [[komodo]] — Komodo, el otro clásico de corrientes de la región
 - [[raja-ampat]] — Raja Ampat, biodiversidad máxima del Pacífico
+
+## Fuentes
+
+- [Scuba Junkie](https://scuba-junkie.com/) — Centro citado en la ficha, con resort en Mabul
+- [Seaventures Dive Rig](https://seaventuresdive.com/) — El hotel-plataforma citado en la ficha, frente a Mabul
+- [Sabah Parks](https://sabahparks.org.my/) — Autoridad oficial que gestiona los permisos diarios de Sipadan

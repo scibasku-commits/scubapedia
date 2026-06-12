@@ -37,7 +37,7 @@ proveedores_scibasku:
   - "Sea Star Watersports"
   - "Red Sea Dive Center"
 giora_estuvo: false
-updated: "2026-06-10"
+updated: 2026-06-12
 status: draft
 tags:
   - "mar-rojo"

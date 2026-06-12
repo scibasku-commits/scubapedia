@@ -38,7 +38,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.700–3.500 EUR sin vuelos (liveaboard)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - sudeste-asiatico
@@ -115,3 +115,10 @@ Komodo funciona muy bien tanto en **liveaboard** (4–10 noches) como en **daybo
 - [[raja-ampat]] — Raja Ampat, biodiversidad máxima a pocas horas de vuelo
 - [[bali-nusa-penida]] — Bali/Nusa Penida, mantas y mola mola combinable en ruta
 - [[alor]] — Alor, buceo extremo para avanzados muy cerca
+
+## Fuentes
+
+- [Liveaboard.com — Indonesia](https://www.liveaboard.com/diving/indonesia) — Comparador de liveaboards con itinerarios, barcos y temporadas
+- [PADI — Diving in Indonesia](https://www.padi.com/diving-in/indonesia/) — Panorámica del destino, puntos de inmersión y condiciones generales
+
+<!-- TODO fuente: revisar — añadir web oficial del Parque Nacional de Komodo (tasas) cuando se verifique -->

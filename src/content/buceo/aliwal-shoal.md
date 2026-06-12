@@ -30,7 +30,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.500–3.000 EUR sin vuelos"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - sudafrica
@@ -104,3 +104,9 @@ El buceo en Aliwal Shoal funciona en formato **dayboat** exclusivamente: salidas
 - [[sardine-run]] — Sardine Run en la Wild Coast, el espectáculo pelágico más extremo de Sudáfrica
 - [[sodwana-bay]] — Sodwana Bay, arrecife tropical al norte; contraste total con Aliwal
 - [[mozambique-tofo]] — Mozambique Tofo, tiburones toro y mantas a pocas horas al norte
+
+## Fuentes
+
+- [Aliwal Dive Centre](https://aliwalshoal.co.za/) — Centro de buceo en Umkomaas con salidas en dayboat a Aliwal Shoal
+- [Blue Ocean Dive Resort](https://www.blueoceandive.co.za/) — Resort de buceo en Umkomaas especializado en inmersiones con tiburones
+- [PADI — Diving in South Africa](https://www.padi.com/diving-in/south-africa/) — Panorámica del destino, puntos de inmersión y condiciones generales

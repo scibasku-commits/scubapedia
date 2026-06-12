@@ -31,7 +31,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "12.000–20.000 EUR sin vuelos (expediciones de 15–20 noches)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - antartida
@@ -105,3 +105,8 @@ El formato es exclusivamente **crucero de expedición polar**. No existe infraes
 - [[antartida-peninsula]] — Península Antártica, habitualmente en la misma expedición
 - [[aliwal-shoal]] — Aliwal Shoal (Sudáfrica), para quienes prefieren fauna extrema en aguas más cálidas
 - [[sardine-run]] — Sardine Run, el otro gran espectáculo del hemisferio sur
+
+## Fuentes
+
+- [Government of South Georgia & the South Sandwich Islands](https://www.gov.gs/) — Autoridad oficial del territorio: permisos, biosseguridad y normativa de visita
+- [IAATO](https://iaato.org/) — Asociación Internacional de Operadores Turísticos Antárticos: normas y operadores autorizados

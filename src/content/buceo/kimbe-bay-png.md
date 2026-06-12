@@ -36,7 +36,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "2.000–3.800 EUR sin vuelos (resort + buceo)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - pacifico-central
@@ -112,3 +112,9 @@ Kimbe Bay funciona principalmente en **formato resort**: Walindi Plantation Reso
 - [[raja-ampat]] — Raja Ampat, el otro gran destino de biodiversidad máxima del Pacífico
 - [[palau]] — Palau, combinable en circuito Pacífico de 3 semanas
 - [[tubbataha]] — Tubbataha (Filipinas), otro UNESCO de buceo en la región
+
+## Fuentes
+
+- [Walindi Plantation Resort](https://walindifebrina.com/) — Resort citado en la ficha, base histórica del buceo en Kimbe Bay
+- [Papua New Guinea Tourism](https://www.papuanewguinea.travel/) — Web oficial de turismo de Papúa Nueva Guinea
+- [PADI — Diving in Papua New Guinea](https://www.padi.com/diving-in/papua-new-guinea/) — Panorámica del destino, puntos de inmersión y condiciones generales

@@ -37,7 +37,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "700–1.500 EUR sin vuelos (resort + buceo, muy variable)"
 giora_estuvo: false
-updated: 2026-04-15
+updated: 2026-06-12
 status: draft
 tags:
   - sudeste-asiatico
@@ -115,3 +115,10 @@ Bali y las Nusas funcionan principalmente en **dayboat** desde Sanur, Padang Bai
 - [[komodo]] — Komodo, el siguiente paso natural desde Bali
 - [[raja-ampat]] — Raja Ampat, para quien quiere la cumbre de Indonesia
 - [[maldivas-baa-hanifaru]] — Hanifaru Bay, para comparar cleaning stations de manta
+
+## Fuentes
+
+- [Blue Corner Dive](https://bluecornerdive.com/) — Centro citado en la ficha con base en Nusa Lembongan
+- [World Diving Lembongan](https://world-diving.com/) — Centro citado en la ficha, veterano de Lembongan/Penida
+- [Crystal Divers Bali](https://www.crystal-divers.com/) — Centro citado en la ficha con base en Sanur
+- [PADI — Diving in Indonesia](https://www.padi.com/diving-in/indonesia/) — Panorámica del destino, puntos de inmersión y condiciones generales

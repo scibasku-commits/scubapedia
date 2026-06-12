@@ -36,7 +36,7 @@ proveedores_scibasku:
 precio_inmersion_aprox: "65-75 EUR/día (2 inmersiones)"
 web_referencia: "https://www.cdws.travel"
 giora_estuvo: true
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 ---
 
@@ -126,3 +126,9 @@ Sharm el Sheikh es la puerta de entrada natural al Mar Rojo para buceadores espa
 - [[dahab]] · [[hurghada]] · [[mar-rojo-overview]]
 - [[ras-mohammed]] · [[strait-of-tiran]]
 - [[brother-islands]] · [[daedalus-reef]] · [[elphinstone-reef]]
+
+## Fuentes
+
+- [CDWS — Chamber of Diving and Water Sports](https://www.cdws.travel/) — Organismo oficial egipcio que regula centros y barcos de buceo en el Mar Rojo
+- [Sea Serpent Fleet](https://seaserpentfleet.com/) — Web oficial de la flota Sea Serpent: barcos y rutas por el Mar Rojo
+- [PADI — Diving in Egypt](https://www.padi.com/diving-in/egypt/) — Panorámica del destino, puntos de inmersión y condiciones generales

@@ -30,7 +30,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.200–2.500 EUR sin vuelos"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - indico
@@ -103,3 +103,10 @@ No existe liveaboard clásico consolidado en Mozambique. El formato es **resort 
 - [[sodwana-bay]] — Sodwana Bay, al sur, para combinar en un viaje por el litoral índico africano
 - [[tanzania-zanzibar]] — Tanzania y Zanzíbar, el siguiente destino al norte con tiburón ballena en Mafia
 - [[seychelles]] — Seychelles, para quienes buscan más comodidad con fauna similar
+
+## Fuentes
+
+- [Marine Megafauna Foundation](https://marinemegafauna.org/) — Fundación de investigación de megafauna con base histórica en Tofo
+- [PADI — Diving in Mozambique](https://www.padi.com/diving-in/mozambique/) — Panorámica del destino, puntos de inmersión y condiciones generales
+
+<!-- TODO fuente: revisar — añadir centro de buceo activo en Tofo cuando se verifique (webs locales caídas en la comprobación) -->

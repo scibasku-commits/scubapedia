@@ -32,7 +32,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.500–2.800 EUR sin vuelos (resort + buceo)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - pacifico-central
@@ -106,3 +106,8 @@ Yap funciona principalmente como **destino de resort**. Manta Ray Bay Resort & Y
 - [[palau]] — Palau, para combinar en una semana más de Micronesia
 - [[chuuk-lagoon]] — Chuuk/Truk, los pecios de la WWII
 - [[maldivas-baa-hanifaru]] — Hanifaru Bay, la otra concentración legendaria de mantas
+
+## Fuentes
+
+- [Manta Ray Bay Resort & Yap Divers](https://mantaray.com/) — Resort y centro citados en la ficha, referencia del buceo con mantas en Yap
+- [Visit Yap](https://visityap.com/) — Web oficial de turismo de Yap

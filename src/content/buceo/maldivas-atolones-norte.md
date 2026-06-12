@@ -52,7 +52,7 @@ proveedores_scibasku:
 precio_inmersion_aprox: "115-130 USD por inmersion desde resort"
 web_referencia: "https://visitmaldives.com"
 giora_estuvo: false
-updated: 2026-06-10
+updated: 2026-06-12
 status: draft
 ---
 

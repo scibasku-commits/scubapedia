@@ -31,7 +31,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "900–2.000 EUR sin vuelos"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - pacifico
@@ -104,3 +104,9 @@ Las Poor Knights se bucean principalmente en **dayboat** desde Tutukaka Marina (
 - [[kaikoura]] — Nueva Zelanda, fauna pelágica y delfines dusky
 - [[rapa-nui]] — Pacífico Sur remoto, visibilidad extrema
 - [[fiji]] — Pacífico tropical con mayor temperatura y diversidad de coral
+
+## Fuentes
+
+- [Dive! Tutukaka](https://diving.co.nz/) — Operador citado en la ficha, con base en la marina de Tutukaka
+- [Department of Conservation NZ](https://www.doc.govt.nz/) — Autoridad de la reserva marina de Poor Knights
+- [PADI — Diving in New Zealand](https://www.padi.com/diving-in/new-zealand/) — Panorámica del destino, puntos de inmersión y condiciones generales

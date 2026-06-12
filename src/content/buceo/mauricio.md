@@ -32,7 +32,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.000–2.200 EUR sin vuelos"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - indico
@@ -106,3 +106,9 @@ Buceo exclusivamente en formato **dayboat desde centros en resorts**. La mayor c
 - [[seychelles]] — Seychelles, para quienes quieren más fauna y un Índico más espectacular
 - [[tanzania-zanzibar]] — Zanzíbar, para combinar safari y buceo en el mismo viaje
 - [[mozambique-tofo]] — Mozambique Tofo, fauna pelágica intensa para el siguiente nivel
+
+## Fuentes
+
+- [Mauritius Now](https://mauritiusnow.com/) — Web oficial de turismo de Mauricio
+
+<!-- TODO fuente: revisar — añadir centro de buceo concreto de Grand Baie/Trou aux Biches cuando se verifique -->

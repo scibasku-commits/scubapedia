@@ -31,7 +31,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "700–1.500 EUR sin vuelos"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - atlantico
@@ -106,3 +106,9 @@ El Hierro funciona exclusivamente en **dayboat** con base en La Restinga. Los ce
 - [[azores]] — Azores, para pelágicos de nivel superior en el Atlántico
 - [[madeira]] — Madeira, arrecife volcánico atlántico similar pero en aguas portuguesas
 - [[cabo-verde]] — Cabo Verde, fauna atlántica en aguas tropicales
+
+## Fuentes
+
+- [El Hierro Travel](https://elhierro.travel/) — Web oficial de turismo de El Hierro
+- [Hello Canary Islands](https://www.hellocanaryislands.com/) — Web oficial de turismo de Canarias
+- [PADI — Diving in Spain](https://www.padi.com/diving-in/spain/) — Panorámica del destino, puntos de inmersión y condiciones generales

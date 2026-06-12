@@ -36,7 +36,7 @@ centros_buceo_recomendados:
   - "Neptune Diving"
 proveedores_scibasku: []
 giora_estuvo: false
-updated: "2026-06-10"
+updated: 2026-06-12
 status: draft
 tags:
   - "filipinas"

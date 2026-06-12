@@ -31,7 +31,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "2.000–3.500 EUR sin vuelos (Deep South liveaboard)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - maldivas
@@ -104,3 +104,11 @@ Huvadhoo se visita casi exclusivamente en **liveaboard Deep South** de 7–10 no
 - [[maldivas-fuvahmulah]] — Fuvahmulah, la isla del tiburón tigre muy cerca
 - [[maldivas-addu]] — Addu Atoll, el extremo sur de Maldivas
 - [[maldivas-south-ari]] — South Ari, para quien quiere tiburones ballena en la misma ruta
+
+## Fuentes
+
+- [Visit Maldives](https://visitmaldives.com/) — Web oficial de turismo de Maldivas
+- [Liveaboard.com — Maldivas](https://www.liveaboard.com/diving/maldives) — Comparador de liveaboards con itinerarios, barcos y temporadas
+- [PADI — Diving in Maldives](https://www.padi.com/diving-in/maldives/) — Panorámica del destino, puntos de inmersión y condiciones generales
+
+<!-- TODO fuente: revisar — añadir operador local de Huvadhoo cuando se verifique -->

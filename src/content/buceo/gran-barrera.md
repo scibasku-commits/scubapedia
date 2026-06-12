@@ -36,7 +36,7 @@ proveedores_scibasku: ["Mike Ball", "Sunlover", "Fitzroy Island", "Lizard Island
 web_guia_scibasku: "https://gran-barrera-coral.vercel.app/"
 web_oficial: "https://www.gbrmpa.gov.au"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 ---
 
@@ -183,3 +183,10 @@ Si combinas con un viaje terrestre por Australia, Cairns es perfecta como base: 
 - [[rowley-shoals]] — Atolones remotos de Australia Occidental, sin multitudes
 - [[neptune-islands]] — Gran blanco en jaula al sur de Australia
 - [[mar-rojo-overview]] — Comparativa: otro gran destino de arrecife con liveaboards
+
+## Fuentes
+
+- [Tourism and Events Queensland](https://www.queensland.com/) — Web oficial de turismo de Queensland
+- [Mike Ball Dive Expeditions](https://mikeball.com/) — Liveaboard veterano de la Gran Barrera con salidas desde Cairns
+- [Spirit of Freedom](https://spiritoffreedom.com.au/) — Liveaboard de referencia en Ribbon Reefs y Mar del Coral
+- [PADI — Diving in Australia](https://www.padi.com/diving-in/australia/) — Panorámica del destino, puntos de inmersión y condiciones generales

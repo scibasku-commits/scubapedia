@@ -40,7 +40,7 @@ precio_inmersion_aprox: "Desde 895 EUR (GD III) por safari Deep South. JP Marine
 web_referencia:
   - "https://www.goldendolphin.com"
 giora_estuvo: true
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 ---
 
@@ -48,7 +48,7 @@ status: draft
 
 ## Resumen
 
-Fury Shoals es un extenso sistema de arrecifes en el "Deep South" del Mar Rojo egipcio, una región remota y poco frecuentada que ofrece algunos de los corales más prístinos del pais. Es el polo opuesto a Brothers y Daedalus: aqui no vienes por pelágicos grandes, vienes por la belleza del arrecife, la macro fotografía, y una experiencia única con delfines.
+Fury Shoals es un extenso sistema de arrecifes en el "Deep South" del Mar Rojo egipcio, una región remota y poco frecuentada que ofrece algunos de los corales más prístinos del pais. Es el polo opuesto a Brothers y Daedalus: aqui no vienes por pelágicos grandes, vienes por la belleza del arrecife, la macro fotografía, y un encuentro con delfines que no esperabas.
 
 El gran atractivo de Fury Shoals es Shaab Satayah, conocido como "Dolphin House": una bahía protegida con una poblacion residente de delfines spinner que permite encuentros en el agua (snorkel y buceo) que son prácticamente imposibles de replicar en otro lugar del Mar Rojo. Si alguien te pregunta "donde puedo nadar con delfines de verdad, sin circo", la respuesta es Satayah.
 
@@ -179,4 +179,8 @@ Fury Shoals es el destino más accesible del Mar Rojo en liveaboard:
 - [[elphinstone-reef]] - Otro destino accesible desde Marsa Alam
 - [[safaga-hurghada-norte]] - Alternativa norte para principiantes
 
----
+## Fuentes
+
+- [CDWS — Chamber of Diving and Water Sports](https://www.cdws.travel/) — Organismo oficial egipcio que regula centros y barcos de buceo en el Mar Rojo
+- [Golden Dolphin Safari Fleet](https://www.goldendolphin.com/) — Web oficial de la flota citada en la ficha: barcos, rutas e itinerarios
+- [Liveaboard.com — Egipto](https://www.liveaboard.com/diving/egypt) — Comparador de liveaboards con itinerarios, barcos y temporadas

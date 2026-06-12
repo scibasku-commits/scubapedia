@@ -41,7 +41,7 @@ proveedores_scibasku:
 precio_inmersion_aprox: "$2,500-4,000 USD (safari 6-7 noches)"
 web_referencia: "https://tubbatahareef.org"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 ---
 
@@ -160,3 +160,9 @@ Para clientes que ya han buceado en Maldivas, Mar Rojo o el Caribe y buscan "el 
 - [[komodo]] — Alternativa Indonesia, también liveaboard, más accesible en calendario
 - [[malapascua]] — Tiburones zorro al amanecer, el otro icono de Filipinas
 - [[coron]] — Pecios WWII en Palawan, combinable en el mismo viaje
+
+## Fuentes
+
+- [Tubbataha Reefs Natural Park](https://tubbatahareef.org/) — Web oficial del parque: permisos, tasas y temporada (citada en la ficha)
+- [Seadoors Liveaboard](https://seadoors.net/) — Web oficial del liveaboard citado en la ficha
+- [Liveaboard.com — Filipinas](https://www.liveaboard.com/diving/philippines) — Comparador de liveaboards con itinerarios, barcos y temporadas

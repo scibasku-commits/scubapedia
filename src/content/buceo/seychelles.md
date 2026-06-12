@@ -34,7 +34,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.500–3.000 EUR sin vuelos (mucho más si incluye islas exteriores)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - indico
@@ -110,3 +110,8 @@ Dos formatos claramente distintos: en las **islas interiores** (Mahé, Praslin, 
 - [[mauricio]] — Mauricio, destino complementario cercano con perfil más tranquilo
 - [[tanzania-zanzibar]] — Zanzíbar, para combinar en la misma región con buceo más accesible
 - [[mozambique-tofo]] — Mozambique Tofo, fauna pelágica más intensa en el continente
+
+## Fuentes
+
+- [Seychelles Travel](https://www.seychelles.travel/) — Web oficial de turismo de Seychelles
+- [PADI — Diving in Seychelles](https://www.padi.com/diving-in/seychelles/) — Panorámica del destino, puntos de inmersión y condiciones generales

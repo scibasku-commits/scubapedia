@@ -34,7 +34,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "800–1.600 EUR sin vuelos (resort + múltiples madrugadas a Monad)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - sudeste-asiatico
@@ -108,3 +108,9 @@ Malapascua funciona como **destino de isla**: vuelo a Cebu + carretera hasta May
 - [[apo-island]] — Apo Island, tortugas y arrecife prístino a pocas horas
 - [[tubbataha]] — Tubbataha, el gran liveaboard Filipino
 - [[yap]] — Yap, el otro destino Pacific de mantas y mandarín
+
+## Fuentes
+
+- [Evolution Diving Resort](https://evolution.com.ph/) — Centro citado en la ficha, referencia técnica y recreativa en Malapascua
+- [Thresher Shark Divers](https://www.malapascua.net/) — Centro local especializado en las inmersiones con tiburón zorro
+- [PADI — Diving in Philippines](https://www.padi.com/diving-in/philippines/) — Panorámica del destino, puntos de inmersión y condiciones generales

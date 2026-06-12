@@ -32,7 +32,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "600–1.500 USD por paquete 3-7 días en resort local (sin vuelos)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - maldivas
@@ -108,3 +108,9 @@ Fuvahmulah funciona principalmente en **formato paquete local**: centros de buce
 - [[maldivas-huvadhoo]] — Huvadhoo/Gaafu, drift diving extremo en el sur profundo
 - [[maldivas-addu]] — Addu Atoll, el otro extremo sur de Maldivas
 - [[maldivas-south-ari]] — South Ari, para combinar tiburón tigre con tiburón ballena en 10 días
+
+## Fuentes
+
+- [Fuvahmulah Dive School](https://fuvahmulahdive.com/) — Centro citado en la ficha, pionero del buceo con tiburón tigre en la isla
+- [Visit Maldives](https://visitmaldives.com/) — Web oficial de turismo de Maldivas
+- [Liveaboard.com — Maldivas](https://www.liveaboard.com/diving/maldives) — Comparador de liveaboards con itinerarios, barcos y temporadas

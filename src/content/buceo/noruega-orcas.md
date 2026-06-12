@@ -31,7 +31,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "3.000–6.000 EUR sin vuelos (barco expedición o lodge + salidas)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - norte
@@ -108,3 +108,10 @@ El formato predominante son los **barcos de expedición**: embarcaciones de 3–
 - [[islandia-silfra]] — Islandia, otro destino nórdico de aguas frías extremas con visibilidad excepcional
 - [[scapa-flow]] — Scapa Flow, aguas frías escocesas con pecios de guerra
 - [[irlanda-tiburon-peregrino]] — Irlanda, fauna espectacular en el Atlántico norte templado
+
+## Fuentes
+
+- [Visit Tromsø](https://www.visittromso.no/) — Web oficial de turismo de Tromsø, base principal de las expediciones de orcas
+- [PADI — Diving in Norway](https://www.padi.com/diving-in/norway/) — Panorámica del buceo en Noruega y sus condiciones de agua fría
+
+<!-- TODO fuente: revisar — añadir operador concreto de expediciones de orcas en Skjervøy cuando se verifique -->

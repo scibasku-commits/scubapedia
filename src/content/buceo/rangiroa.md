@@ -30,7 +30,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "2.000–4.000 EUR sin vuelos (alojamiento atolón + paquete buceo)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - pacifico
@@ -103,3 +103,9 @@ Rangiroa opera principalmente en **dayboat** desde los resorts y centros de Avat
 - [[fakarava]] — El otro gran atolón de Tuamotu; la Wall of Sharks del South Pass
 - [[palau]] — Otra referencia mundial de tiburones y pelágico en el Pacífico
 - [[fiji]] — Pacífico Sur con buceo complementario y liveaboards desde la misma región
+
+## Fuentes
+
+- [Tahiti Tourisme](https://tahititourisme.com/) — Web oficial de turismo de la Polinesia Francesa
+- [TOPDIVE](https://topdive.com/) — Red de centros de buceo de Polinesia con base en Rangiroa
+- [PADI — Diving in French Polynesia](https://www.padi.com/diving-in/french-polynesia/) — Panorámica del destino, puntos de inmersión y condiciones generales

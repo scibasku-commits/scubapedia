@@ -33,7 +33,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "500–1.200 EUR sin vuelos (alojamiento + bonos de buceo)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - mediterraneo
@@ -107,3 +107,9 @@ Cabo de Gata no tiene liveaboard. El formato es **dayboat** con base en los pueb
 - [[madeira]] — Madeira, paso natural hacia el Atlántico con fauna similar y visibilidad superior
 - [[canarias-el-hierro]] — El Hierro, la mejor reserva marina española fuera del Mediterráneo
 - [[azores]] — Azores, para quien quiere el siguiente nivel pelágico en aguas europeas
+
+## Fuentes
+
+- [ISUB San José](https://isubsanjose.com/) — Centro de buceo en San José, dentro del Parque Natural Cabo de Gata-Níjar
+- [Andalucía.org](https://www.andalucia.org/) — Web oficial de turismo de Andalucía
+- [PADI — Diving in Spain](https://www.padi.com/diving-in/spain/) — Panorámica del destino, puntos de inmersión y condiciones generales

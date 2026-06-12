@@ -28,7 +28,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "2.000–5.000 EUR sin vuelos (programa 3–5 días)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - australia
@@ -103,3 +103,9 @@ Hay dos modalidades principales:
 - [[ningaloo]] — Australia Occidental, tiburón ballena en snorkel
 - [[gran-barrera]] — Gran Barrera de Coral, arrecife y diversidad tropical
 - [[rowley-shoals]] — Australia Occidental, atolones remotos y coral prístino
+
+## Fuentes
+
+- [Rodney Fox Shark Expeditions](https://rodneyfox.com.au/) — Operador citado en la ficha, pionero del buceo en jaula con gran blanco
+- [National Parks and Wildlife Service South Australia](https://www.parks.sa.gov.au/) — Autoridad de parques de Australia del Sur (Neptune Islands Group Marine Park)
+- [PADI — Diving in Australia](https://www.padi.com/diving-in/australia/) — Panorámica del destino, puntos de inmersión y condiciones generales

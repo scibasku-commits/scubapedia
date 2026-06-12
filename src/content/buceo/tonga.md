@@ -30,7 +30,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "3.000–6.000 EUR sin vuelos (paquetes especializados, pocas plazas)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - pacifico
@@ -101,3 +101,9 @@ Tonga funciona en **dayboat** con base en Vava'u o 'Eua. Las salidas diarias son
 - [[rangiroa]] — Polinesia Francesa; pelágico en pasos con tiburones y delfines
 - [[fakarava]] — Wall of Sharks en el South Pass; misma región del Pacífico Sur
 - [[fiji]] — Pacífico Sur con buceo de arrecife y liveaboards complementarios
+
+## Fuentes
+
+- [Tonga Tourism](https://thekingdomoftonga.com/) — Web oficial de turismo del Reino de Tonga
+- [WhaleSwim Adventures](https://whaleswim.com/) — Operador veterano de nado con yubartas en Vava'u
+- [PADI — Diving in Tonga](https://www.padi.com/diving-in/tonga/) — Panorámica del destino, puntos de inmersión y condiciones generales

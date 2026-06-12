@@ -30,7 +30,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.000–2.000 EUR sin vuelos (paquetes multi-día)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - norte
@@ -106,3 +106,9 @@ No existe un liveaboard específico para Irlanda. El formato son **small-boats l
 - [[noruega-orcas]] — Noruega, fauna marina espectacular en aguas más frías y extremas
 - [[scapa-flow]] — Scapa Flow, buceo técnico de pecios en el mismo Atlántico norte
 - [[azores]] — Azores, tiburones pelágicos en aguas atlánticas más cálidas
+
+## Fuentes
+
+- [Irish Basking Shark Group](https://baskingshark.ie/) — Grupo de investigación y conservación del tiburón peregrino en Irlanda
+- [Ireland.com](https://www.ireland.com/) — Web oficial de turismo de Irlanda
+- [PADI — Diving in Ireland](https://www.padi.com/diving-in/ireland/) — Panorámica del destino, puntos de inmersión y condiciones generales

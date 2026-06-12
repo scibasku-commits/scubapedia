@@ -28,7 +28,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "800–1.800 EUR sin vuelos (semana combinada con actividades)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - pacifico
@@ -97,3 +97,9 @@ Kaikōura funciona exclusivamente en **day tours** desde el puerto. No hay livea
 - [[poor-knights-nz]] — Poor Knights Islands, el buceo clásico de Nueva Zelanda
 - [[puerto-madryn]] — Patagonia argentina, lobos marinos y ballenas francas
 - [[neptune-islands]] — Australia del Sur, tiburones blancos en jaula
+
+## Fuentes
+
+- [Whale Watch Kaikōura](https://www.whalewatch.co.nz/) — Operador citado en la ficha para el avistamiento de cachalotes
+- [Dolphin Encounter Kaikōura](https://www.dolphinencounter.co.nz/) — Operador citado en la ficha para nado con delfines oscuros
+- [Department of Conservation NZ](https://www.doc.govt.nz/) — Autoridad de conservación neozelandesa: normativa de fauna marina

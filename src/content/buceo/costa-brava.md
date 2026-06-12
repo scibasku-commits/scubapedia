@@ -33,7 +33,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "500–1.200 EUR sin vuelos"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - mediterraneo
@@ -108,3 +108,9 @@ La Costa Brava funciona exclusivamente en formato **dayboat** y **shore diving**
 - [[baleares]] — Cuevas de Mallorca y posidonia de Formentera, el siguiente escalón mediterráneo
 - [[malta-gozo]] — Pecios y Blue Hole, la otra gran referencia del Mediterráneo
 - [[croacia]] — Adriático con paredes y pecios WWII
+
+## Fuentes
+
+- [Visit Estartit](https://visitestartit.com/) — Web oficial de turismo de L'Estartit, puerta de las Islas Medas
+- [Costa Brava Pirineu de Girona](https://www.costabrava.org/) — Patronato oficial de turismo de la Costa Brava
+- [PADI — Diving in Spain](https://www.padi.com/diving-in/spain/) — Panorámica del destino, puntos de inmersión y condiciones generales

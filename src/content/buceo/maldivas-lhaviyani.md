@@ -33,7 +33,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.700–3.200 EUR sin vuelos (rutas que incluyen Lhaviyani)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - maldivas
@@ -107,3 +107,9 @@ Lhaviyani se trabaja principalmente en **formato resort**. Kuredu Island Resort 
 - [[maldivas-baa-hanifaru]] — Baa Atoll y Hanifaru Bay, atolón vecino con las mantas
 - [[maldivas-atolones-norte]] — Overview de atolones del norte
 - [[maldivas-north-ari]] — North Ari, si quieres combinar resort norte con thilas de nivel
+
+## Fuentes
+
+- [Prodivers Maldives](https://prodivers.com/) — Centro citado en la ficha, con base en Kuredu y otros resorts de Lhaviyani
+- [Visit Maldives](https://visitmaldives.com/) — Web oficial de turismo de Maldivas
+- [PADI — Diving in Maldives](https://www.padi.com/diving-in/maldives/) — Panorámica del destino, puntos de inmersión y condiciones generales

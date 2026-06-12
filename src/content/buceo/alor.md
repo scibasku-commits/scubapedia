@@ -35,7 +35,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "3.000–5.000 EUR sin vuelos (rutas liveaboard 10-12 noches)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - sudeste-asiatico
@@ -109,3 +109,9 @@ Alor se puede visitar en **liveaboard** (rutas de 10–12 noches conectando Flor
 - [[komodo]] — Komodo, el destino de referencia de corrientes en Indonesia
 - [[banda-sea]] — Banda Sea, la gran expedición de martillos
 - [[raja-ampat]] — Raja Ampat, para quien viene de Alor y quiere biodiversidad
+
+## Fuentes
+
+- [Alor Divers](https://alor-divers.com/) — Web oficial del centro citado en la ficha, especializado en Alor y Pantar
+- [Liveaboard.com — Indonesia](https://www.liveaboard.com/diving/indonesia) — Comparador de liveaboards con itinerarios, barcos y temporadas
+- [PADI — Diving in Indonesia](https://www.padi.com/diving-in/indonesia/) — Panorámica del destino, puntos de inmersión y condiciones generales

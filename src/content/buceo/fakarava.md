@@ -29,7 +29,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "2.200–4.500 EUR sin vuelos (alojamiento atolón + paquete buceo; más caro en junio/julio)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - pacifico
@@ -102,3 +102,9 @@ Fakarava funciona en **formato mixto**. El North Pass tiene centros de buceo y a
 - [[rangiroa]] — El otro gran atolón de Tuamotu; Tiputa Pass y delfines residentes
 - [[palau]] — Otra referencia mundial de tiburones y corrientes en el Pacífico
 - [[yap]] — Mantas de arrecife en corriente, misma familia de experiencias
+
+## Fuentes
+
+- [Tahiti Tourisme](https://tahititourisme.com/) — Web oficial de turismo de la Polinesia Francesa
+- [TOPDIVE](https://topdive.com/) — Red de centros de buceo de Polinesia con base en Fakarava
+- [PADI — Diving in French Polynesia](https://www.padi.com/diving-in/french-polynesia/) — Panorámica del destino, puntos de inmersión y condiciones generales

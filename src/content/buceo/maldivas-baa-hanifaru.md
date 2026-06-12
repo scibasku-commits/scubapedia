@@ -33,7 +33,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.800–3.200 EUR sin vuelos (rutas que incluyen Baa)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - maldivas
@@ -109,3 +109,11 @@ Algunos liveaboards adaptan rutas de los atolones centrales para incluir Baa en 
 - [[maldivas-lhaviyani]] — Lhaviyani (Faadhippolhu), atolón norte con resorts orientados al buceo
 - [[maldivas-north-ari]] — North Ari, thilas legendarios a pocas horas en liveaboard
 - [[maldivas-atolones-norte]] — Overview de los atolones del norte incluyendo Baa
+
+## Fuentes
+
+- [Visit Maldives](https://visitmaldives.com/) — Web oficial de turismo de Maldivas
+- [PADI — Diving in Maldives](https://www.padi.com/diving-in/maldives/) — Panorámica del destino, puntos de inmersión y condiciones generales
+- [Liveaboard.com — Maldivas](https://www.liveaboard.com/diving/maldives) — Comparador de liveaboards con itinerarios, barcos y temporadas
+
+<!-- TODO fuente: revisar — añadir fuente oficial de la Reserva de la Biosfera de Baa (normas de Hanifaru) cuando se verifique -->

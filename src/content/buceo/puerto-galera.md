@@ -35,7 +35,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "800–1.600 EUR sin vuelos (resort + buceo)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - sudeste-asiatico
@@ -117,3 +117,9 @@ Verde Island Passage concentra una biodiversidad que científicos del Smithsonia
 - [[anilao]] — Anilao, macro capital a pocas horas de Manila en dirección contraria
 - [[tubbataha]] — Tubbataha, para complementar con el gran liveaboard filipino
 - [[apo-island]] — Apo Island, para combinar en circuito Filipinas de 2 semanas
+
+## Fuentes
+
+- [Atlantis Dive Resorts](https://atlantishotel.com/) — Resort citado en la ficha, con base en Sabang
+- [Action Divers](https://actiondivers.com/) — Centro citado en la ficha, en Small La Laguna
+- [PADI — Diving in Philippines](https://www.padi.com/diving-in/philippines/) — Panorámica del destino, puntos de inmersión y condiciones generales

@@ -36,7 +36,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "900–2.000 EUR sin vuelos (resort + buceo intensivo foto)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - sudeste-asiatico
@@ -110,3 +110,8 @@ Anilao es **100% resort con dayboat**. Hay docenas de resorts en Mabini/Anilao a
 - [[puerto-galera]] — Puerto Galera, combinable en el mismo circuito Manila-Batangas-Mindoro
 - [[malapascua]] — Malapascua, si quieres complementar macro con pelágico
 - [[kimbe-bay-png]] — Kimbe Bay, el otro gran destino de macro del Pacífico
+
+## Fuentes
+
+- [Crystal Blue Resort](https://divecbr.com/) — Resort de buceo citado en la ficha, referencia del macro en Anilao
+- [PADI — Diving in Philippines](https://www.padi.com/diving-in/philippines/) — Panorámica del destino, puntos de inmersión y condiciones generales

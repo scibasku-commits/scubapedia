@@ -31,7 +31,7 @@ centros_buceo_recomendados:
 proveedores_scibasku:
   - "Dakak Park and Beach Resort"
 giora_estuvo: false
-updated: "2026-06-10"
+updated: 2026-06-12
 status: draft
 tags:
   - "filipinas"
@@ -123,4 +123,3 @@ Zamboanga del Norte es al buceo filipino lo que un vino de mesa honrado a una ca
 
 - [DiveResort.ph — Dakak](https://www.diveresort.ph/post579.html) — Descripción de los dive sites operados por Dakak (Liuay Rock, The Caves, Buchok's Reef, The Wreck)
 - [Dapitan City — Dakak Park & Beach Resort](https://dapitancity.gov.ph/dakak-park-beach-resort/) — Información oficial del municipio sobre el resort
-- [WayPH — Dakak Beach](https://wayph.com/dakak-beach-zamboanga/) — Guía local del resort y su entorno en Zamboanga del Norte

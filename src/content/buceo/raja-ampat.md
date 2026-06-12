@@ -41,7 +41,7 @@ proveedores_scibasku: ["Emperor"]
 precio_inmersion_aprox: "3.000-5.000 USD (liveaboard 7-10 noches)"
 web_referencia: "https://www.stayrajaampat.com"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 ---
 
@@ -164,3 +164,10 @@ Trabajamos con **Emperor** como proveedor directo en Raja Ampat, lo que nos perm
 - [[mar-rojo-overview]] — Para comparar: biodiversidad vs. visibilidad
 - [[maldivas-baa-hanifaru]] — Otro destino de mantas, diferente experiencia
 - Flota Emperor — nuestro proveedor de liveaboards en Raja Ampat (sin ficha propia)
+
+## Fuentes
+
+- [Stay Raja Ampat](https://www.stayrajaampat.com/) — Guía de referencia del destino: tasas, logística y alojamiento (web citada en la ficha)
+- [Emperor Divers Raja Ampat](https://www.emperordivers.com/raja-ampat/) — Flota citada en la ficha con rutas por Raja Ampat
+- [Dewi Nusantara](https://dewinusantara.com/) — Liveaboard citado en la ficha
+- [Liveaboard.com — Indonesia](https://www.liveaboard.com/diving/indonesia) — Comparador de liveaboards con itinerarios, barcos y temporadas

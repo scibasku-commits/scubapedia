@@ -28,7 +28,7 @@ proveedores_scibasku:
   - "Aggressor Fleet"
 precio_semana_aprox: "3.000–6.000 EUR (liveaboard 7–10 noches, sin vuelos)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - pacifico-este
@@ -104,3 +104,9 @@ Isla del Coco solo es accesible en liveaboard — no hay infraestructura en tier
 - [[galapagos]] — Galápagos, el Santo Grial del pelágico, con más variedad de especies
 - [[revillagigedo-socorro]] — Revillagigedo/Socorro, para las mantas oceánicas más interactivas del mundo
 - [[coiba-panama]] — Coiba, el otro Patrimonio UNESCO del Pacífico Este costarricense-panameño
+
+## Fuentes
+
+- [Aggressor Adventures](https://www.aggressor.com/) — Flota citada en la ficha: itinerarios y barcos a la Isla del Coco
+- [SINAC Costa Rica](https://www.sinac.go.cr/) — Sistema Nacional de Áreas de Conservación: autoridad del Parque Nacional Isla del Coco
+- [Fundación Amigos de la Isla del Coco (FAICO)](https://cocosisland.org/) — Fundación dedicada a la conservación de la Isla del Coco

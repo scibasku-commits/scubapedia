@@ -53,10 +53,10 @@ proveedores_scibasku:
 precio_inmersion_aprox: "Desde 895 EUR (Sea Serpent Contessa) hasta 2.050 EUR (Scuba Scene) por safari completo"
 web_referencia:
   - "https://www.goldendolphin.com"
-  - "https://www.seaserpent.com"
+  - "https://seaserpentfleet.com"
   - "https://www.emperordivers.com"
 giora_estuvo: true
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 ---
 
@@ -199,4 +199,9 @@ Si tienes menos de 50 inmersiones pero muchas ganas, haz primero un safari por e
 - [[safaga-hurghada-norte]] - Safaris para coger experiencia antes de Brothers
 - [[hurghada]] - Puerto de salida principal
 
----
+## Fuentes
+
+- [CDWS — Chamber of Diving and Water Sports](https://www.cdws.travel/) — Organismo oficial egipcio que regula centros y barcos de buceo en el Mar Rojo
+- [Golden Dolphin Safari Fleet](https://www.goldendolphin.com/) — Web oficial de la flota citada en la ficha: barcos, rutas e itinerarios
+- [Sea Serpent Fleet](https://seaserpentfleet.com/) — Web oficial de la flota Sea Serpent: barcos y rutas por el Mar Rojo
+- [Emperor Divers](https://www.emperordivers.com/) — Web oficial de Emperor Divers: liveaboards y centros en el Mar Rojo

@@ -32,7 +32,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "8.000–18.000 EUR sin vuelos (expedición 10–12 noches con buceo)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - antartida
@@ -106,3 +106,8 @@ No existe el liveaboard de buceo clásico en la Antártida. El formato es el **c
 - [[south-georgia]] — South Georgia, destino polar hermano habitualmente combinado en la misma expedición
 - [[sardine-run]] — Sardine Run en Sudáfrica, otro buceo de acción extremo en el hemisferio sur
 - [[noruega-orcas]] — Noruega en invierno, para quienes buscan fauna polar sin cruzar el Drake
+
+## Fuentes
+
+- [IAATO](https://iaato.org/) — Asociación Internacional de Operadores Turísticos Antárticos: normas y operadores autorizados
+- [Oceanwide Expeditions](https://oceanwide-expeditions.com/) — Operador de expediciones polares con programas de buceo en la Península Antártica

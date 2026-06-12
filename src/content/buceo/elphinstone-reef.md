@@ -47,10 +47,10 @@ proveedores_scibasku:
 precio_inmersion_aprox: "Incluido en safaris Brothers-Daedalus-Elphinstone, desde 895 EUR por safari completo"
 web_referencia:
   - "https://www.goldendolphin.com"
-  - "https://www.seaserpent.com"
+  - "https://seaserpentfleet.com"
   - "https://www.emperordivers.com"
 giora_estuvo: true
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 ---
 
@@ -188,4 +188,9 @@ Los oceánicos de puntas blancas están presentes todo el año. No hay "mala tem
 - [[fury-shoals]] - Alternativa Deep South desde Marsa Alam
 - [[safaga-hurghada-norte]] - Safari norte para ganar experiencia
 
----
+## Fuentes
+
+- [CDWS — Chamber of Diving and Water Sports](https://www.cdws.travel/) — Organismo oficial egipcio que regula centros y barcos de buceo en el Mar Rojo
+- [Golden Dolphin Safari Fleet](https://www.goldendolphin.com/) — Web oficial de la flota citada en la ficha: barcos, rutas e itinerarios
+- [Sea Serpent Fleet](https://seaserpentfleet.com/) — Web oficial de la flota Sea Serpent: barcos y rutas por el Mar Rojo
+- [PADI — Diving in Egypt](https://www.padi.com/diving-in/egypt/) — Panorámica del destino, puntos de inmersión y condiciones generales

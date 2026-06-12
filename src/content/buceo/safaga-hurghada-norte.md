@@ -46,7 +46,7 @@ web_referencia:
   - "https://www.goldendolphin.com"
   - "https://www.cameldive.com"
 giora_estuvo: true
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 ---
 
@@ -252,4 +252,8 @@ El norte tiene algo para cada nivel:
 - [[fury-shoals]] - Alternativa accesible en el Deep South
 - [[st-johns]] - Cuevas y tuneles en el sur
 
----
+## Fuentes
+
+- [CDWS — Chamber of Diving and Water Sports](https://www.cdws.travel/) — Organismo oficial egipcio que regula centros y barcos de buceo en el Mar Rojo
+- [Golden Dolphin Safari Fleet](https://www.goldendolphin.com/) — Web oficial de la flota citada en la ficha: barcos, rutas e itinerarios
+- [Camel Dive Club](https://www.cameldive.com/) — Centro citado en la ficha, con base en Sharm El Sheikh

@@ -35,7 +35,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "600–1.500 EUR sin vuelos"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - mediterraneo
@@ -111,3 +111,9 @@ Grecia opera principalmente en **dayboat** desde centros en cada isla. En el Ege
 - [[croacia]] — Adriático con pecios WWII y archipiélago similar
 - [[malta-gozo]] — Blue Hole y pecios mediterráneos en formato concentrado
 - [[baleares]] — Mediterráneo occidental con cuevas y posidonia
+
+## Fuentes
+
+- [PADI — Diving in Greece](https://www.padi.com/diving-in/greece/) — Panorámica del destino, puntos de inmersión y condiciones generales
+
+<!-- TODO fuente: revisar — añadir web oficial de turismo griego o centros concretos cuando se verifiquen -->

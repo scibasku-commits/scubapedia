@@ -35,7 +35,7 @@ proveedores_scibasku:
 precio_inmersion_aprox: "45-85 EUR según excursión"
 web_referencia: "https://www.cdws.travel"
 giora_estuvo: true
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 ---
 
@@ -147,3 +147,10 @@ Marsa Alam es para quien ya conoce el Mar Rojo y quiere ir un paso más allá �
 - [[fury-shoals]] · [[st-johns]]
 - [[sharm-el-sheikh]] · [[dahab]] · [[hurghada]]
 - [[mar-rojo-overview]]
+
+## Fuentes
+
+- [CDWS — Chamber of Diving and Water Sports](https://www.cdws.travel/) — Organismo oficial egipcio que regula centros y barcos de buceo en el Mar Rojo
+- [Sea Serpent Fleet](https://seaserpentfleet.com/) — Web oficial de la flota Sea Serpent: barcos y rutas por el Mar Rojo
+- [Master Liveaboards](https://www.masterliveaboards.com/) — Flota citada en la ficha con rutas por el sur del Mar Rojo
+- [PADI — Diving in Egypt](https://www.padi.com/diving-in/egypt/) — Panorámica del destino, puntos de inmersión y condiciones generales

@@ -28,7 +28,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "900–2.000 EUR sin vuelos (alojamiento + buceo + whale watching)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - pacifico
@@ -101,3 +101,9 @@ Puerto Madryn funciona exclusivamente en **dayboat** desde el puerto. No hay liv
 - [[rapa-nui]] — Otro destino único del Pacífico/Atlántico Sur
 - [[poor-knights-nz]] — Nueva Zelanda, aguas templadas del Pacífico Sur
 - [[neptune-islands]] — Australia del Sur, tiburones blancos en jaula
+
+## Fuentes
+
+- [Madryn Travel](https://madryn.travel/) — Web oficial de turismo de Puerto Madryn
+- [Lobo Larsen Buceo](https://lobolarsen.com/) — Operador local especializado en buceo con lobos marinos
+- [PADI — Diving in Argentina](https://www.padi.com/diving-in/argentina/) — Panorámica del destino, puntos de inmersión y condiciones generales

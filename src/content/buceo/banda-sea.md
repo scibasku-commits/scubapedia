@@ -32,7 +32,7 @@ centros_buceo_recomendados: []
 proveedores_scibasku: []
 precio_semana_aprox: "3.500–6.000 EUR sin vuelos (rutas 10-12 noches)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - sudeste-asiatico
@@ -106,3 +106,9 @@ Banda Sea es **exclusivamente liveaboard** de 10–12 noches. No hay infraestruc
 - [[raja-ampat]] — Raja Ampat, combinable en ruta gran expedición Indonesia
 - [[alor]] — Alor, otro destino de corriente extrema en Indonesia oriental
 - [[komodo]] — Komodo, accesible desde Bali como prólogo del viaje
+
+## Fuentes
+
+- [The Seven Seas](https://thesevenseas.net/) — Liveaboard que opera travesías por el Mar de Banda e Indonesia oriental
+- [Liveaboard.com — Indonesia](https://www.liveaboard.com/diving/indonesia) — Comparador de liveaboards con itinerarios, barcos y temporadas
+- [PADI — Diving in Indonesia](https://www.padi.com/diving-in/indonesia/) — Panorámica del destino, puntos de inmersión y condiciones generales

@@ -37,7 +37,7 @@ proveedores_scibasku:
   - "Aggressor Fleet"
 precio_semana_aprox: "4.000–9.000 EUR (liveaboard 7–10 noches, sin vuelos)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - pacifico-este
@@ -116,3 +116,10 @@ Galápagos solo se bucea en liveaboard — no hay otra opción legal para accede
 - [[palau]] — Palau, el otro destino del Pacífico con reef hooks y grandes pelágicos
 - [[cocos-island]] — Isla del Coco, el hermano más oscuro y remoto de Galápagos
 - [[revillagigedo-socorro]] — Socorro/Revillagigedo, México, para las mantas oceánicas más interactivas del mundo
+
+## Fuentes
+
+- [Parque Nacional Galápagos](https://galapagos.gob.ec/) — Autoridad oficial del parque nacional y la reserva marina
+- [Master Liveaboards — Galapagos](https://www.masterliveaboards.com/galapagos/) — Web oficial del liveaboard citado en la ficha
+- [Aggressor Adventures](https://www.aggressor.com/) — Flota citada en la ficha con itinerarios en Galápagos
+- [PADI — Diving in Ecuador](https://www.padi.com/diving-in/ecuador/) — Panorámica del destino, puntos de inmersión y condiciones generales

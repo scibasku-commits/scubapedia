@@ -28,7 +28,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "1.500–3.000 EUR sin vuelos"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - pacifico
@@ -100,3 +100,9 @@ El Coolidge funciona exclusivamente en formato **resort con shore diving** — d
 - [[chuuk-lagoon]] — El mayor cementerio de pecios WWII del mundo; el siguiente escalón
 - [[islas-salomon]] — Iron Bottom Sound, pecios WWII en archipiélago remoto
 - [[fiji]] — Pacífico Sur con arrecifes de coral y liveaboards desde la misma región
+
+## Fuentes
+
+- [Vanuatu Travel](https://vanuatu.travel/) — Web oficial de turismo de Vanuatu
+- [Allan Power Dive Tours](https://allan-power-santo.com/) — Operador histórico del SS President Coolidge en Luganville
+- [PADI — Diving in Vanuatu](https://www.padi.com/diving-in/vanuatu/) — Panorámica del destino, puntos de inmersión y condiciones generales

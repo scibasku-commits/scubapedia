@@ -38,7 +38,7 @@ centros_buceo_recomendados:
 proveedores_scibasku:
   - "Villa Carey"
 giora_estuvo: false
-updated: "2026-06-10"
+updated: 2026-06-12
 status: draft
 tags:
   - "mexico"

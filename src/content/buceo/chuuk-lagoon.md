@@ -36,7 +36,7 @@ centros_buceo_recomendados:
 proveedores_scibasku: []
 precio_semana_aprox: "2.500–5.000 EUR sin vuelos (liveaboard recreativo o técnico)"
 giora_estuvo: false
-updated: 2026-04-06
+updated: 2026-06-12
 status: draft
 tags:
   - pacifico-central
@@ -111,3 +111,8 @@ Chuuk es ideal en **liveaboard** (7 noches) que permite llegar a los pecios más
 - [[palau]] — Palau, pelágico y Blue Corner a poca distancia
 - [[yap]] — Yap, mantas residentes combinable en ruta
 - [[scapa-flow]] — Scapa Flow (Escocia), el otro gran cementerio de guerra submarino
+
+## Fuentes
+
+- [Truk Stop Hotel & Dive Center](https://trukstop.com/) — Hotel y centro de buceo citado en la ficha, en Weno
+- [Master Liveaboards — Truk Lagoon](https://www.masterliveaboards.com/truk-lagoon/) — Liveaboard especializado en los pecios de la laguna
