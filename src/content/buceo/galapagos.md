@@ -1,125 +1,147 @@
 ---
-title: "Galápagos — El Santo Grial del Buceo Pelágico"
+title: "Galápagos"
 type: destino-buceo
-region: "Pacífico Este"
+region: "Pacífico Oriental / Ecuador"
 pais: "Ecuador"
 puntos_inmersion_principales:
-  - "Darwin's Arch"
-  - "Wolf Island"
+  - "Darwin Island — The Arch"
+  - "Wolf Island — Shark Bay"
+  - "Wolf — The Cleaning Station"
   - "Gordon Rocks"
-  - "Cousin's Rock"
-  - "Cabo Marshall"
+  - "Cousins Rock"
+  - "Kicker Rock (León Dormido)"
+  - "Devil's Crown"
+  - "Punta Vicente Roca"
 profundidad_min: 5
 profundidad_max: 40
-visibilidad_media: "10-25m (Darwin/Wolf: 15-25m; costas centrales: 8-15m)"
-temperatura_agua_min: 18
-temperatura_agua_max: 26
-corrientes: "Muy fuertes — Darwin/Wolf extremas; reef hooks obligatorios; mínimo 100 inmersiones"
-temporada_alta: "Junio–Noviembre (tiburones ballena y martillo en Darwin)"
-temporada_baja: "Diciembre–Mayo (agua más cálida, mantas y mola mola)"
-certificacion_minima: "Advanced Open Water + 100 inmersiones registradas"
+visibilidad_media: "10-30m (variable; el upwelling reduce vis pero trae tiburones; la Corriente de Cromwell)"
+temperatura_agua_min: 16
+temperatura_agua_max: 27
+corrientes: "muy fuertes en Darwin y Wolf; moderadas a fuertes en Santa Cruz; imprescindible corriente sólida"
+temporada_alta: "junio a noviembre (Corriente de Humboldt fría; más tiburones martillo; vis variable)"
+temporada_baja: "diciembre a mayo (agua más cálida; manta activa; vis más alta)"
+certificacion_minima: "AOWD con experiencia en corriente; Darwin y Wolf requieren mínimo 50 inmersiones"
 vida_marina_destacada:
-  - "Tiburones martillo (*Sphyrna lewini*) en cardúmenes de cientos"
-  - "Tiburones ballena hasta 15m (junio–noviembre en Darwin)"
-  - "Mantas gigantes oceánicas"
-  - "Mola mola (julio–noviembre en Cabo Marshall)"
-  - "Tiburones de Galápagos endémicos"
-  - "Iguanas marinas"
-  - "Tortugas endémicas"
-  - "Leones marinos"
-  - "Delfines"
+  - "Tiburón martillo (Sphyrna lewini) — Darwin y Wolf; cardúmenes de 100-300"
+  - "Tiburón ballena (Rhincodon typus) — Darwin Island; uno de los pocos puntos de buceo"
+  - "Tiburón sedoso (Carcharhinus falciformis) — Wolf Island en masa"
+  - "Tiburón de Galápagos (Carcharhinus galapagensis) — endémico del archipiélago"
+  - "León marino de Galápagos (Zalophus wollebaeki) — juega con buceadores"
+  - "Iguana marina (Amblyrhynchus cristatus) — buceo con iguanas; único en el mundo"
+  - "Pulpo de Galápagos (endémico)"
+  - "Pingüino de Galápagos (Spheniscus mendiculus) — buceo con pingüinos en el ecuador"
+  - "Manta del Pacífico (Mobula birostris)"
 liveaboards_disponibles:
-  - "Galapagos Master (Master Liveaboards)"
-  - "Galapagos Aggressor III (Aggressor Fleet)"
-centros_buceo_recomendados: []
-proveedores_scibasku:
-  - "Master Liveaboards"
-  - "Aggressor Fleet"
-precio_semana_aprox: "4.000–9.000 EUR (liveaboard 7–10 noches, sin vuelos)"
+  - "Aggressor Galápagos"
+  - "Nautilus Explorer Galápagos"
+  - "Calipso"
+  - "Humboldt Explorer"
+centros_buceo_recomendados:
+  - "Scuba Iguana (Puerto Ayora)"
+  - "Sub-Aqua (Puerto Ayora)"
+proveedores_scibasku: []
+precio_semana_aprox: "4.000-6.500 USD (liveaboard 7-10 noches desde Puerto Ayora o Baltra)"
 giora_estuvo: false
-updated: 2026-06-12
+updated: 2026-06-14
 status: draft
 tags:
+  - ecuador
   - pacifico-este
-  - pelagico
-  - tiburones-martillo
-  - tiburones-ballena
-  - mola-mola
-  - corriente-fuerte
+  - tiburon-martillo
+  - tiburon-ballena
   - liveaboard
-  - advanced
-  - UNESCO-adjacent
-  - endemico
+  - patrimonio-unesco
+  - endemismo
+  - darwin
+  - corriente-fria
 ---
 
-# Galápagos — El Santo Grial del Buceo Pelágico
+# Galápagos
 
-> Ecuador · Pacífico Este · Cert. mínima: Advanced + 100 inmersiones
+> Ecuador · Pacífico Oriental · Darwin llegó a las Galápagos y cambió la biología. Los buceadores llegan y no vuelven a ver los océanos igual
 
 ## Resumen
 
-Galápagos no es un destino de buceo — es el destino. Darwin's Arch (derrumbado en la superficie en 2021, intacto e impresionante bajo el agua) concentra algunos de los encuentros con grandes pelágicos más intensos del planeta: bancos de cientos de tiburones martillo (*Sphyrna lewini*), tiburones ballena de hasta 15 metros que aparecen junio–noviembre, y mantas oceánicas. Todo esto en agua fría traída por la corriente de Humboldt, con corrientes que pueden alcanzar 2–4 nudos y visibilidad que obliga a concentrarse en lo que pasa, no en lo que se ve. Solo 16 liveaboards tienen permiso del Parque Nacional Galápagos para operar aquí. Si te preguntas si merece el precio — lo merece.
+Las Islas Galápagos existen porque la Corriente de Cromwell —una corriente submarina que emerge del Pacífico profundo y asciende en el área del archipiélago— bombea nutrientes desde el abismo hacia la superficie en uno de los upwellings más productivos del océano. Ese frío nutriente es lo que alimenta la cadena trófica que hace de Galápagos el archipiélago con mayor densidad de tiburones martillo del Pacífico Oriental, el único lugar del mundo donde se puede bucear con iguanas marinas, y uno de los pocos destinos donde el encuentro con tiburón ballena en buceo (no snorkel) es posible.
+
+La declaración de Charles Darwin en 1835 de que "aquí, en tiempo y espacio, me parece que me he acercado un poco al gran hecho, ese misterio de misterios" fue sobre las aves y los lagartos. Si hubiera buceado en Darwin Island, habría necesitado un libro entero adicional.
 
 ## Datos técnicos
 
 | Dato | Valor |
 |------|-------|
 | Profundidad | 5m - 40m |
-| Visibilidad | 10–25m (Darwin/Wolf: 15–25m; costas centrales: 8–15m) |
-| Temperatura agua | 18°C - 26°C (corriente de Humboldt; Darwin/Wolf más cálido: 22–26°C) |
-| Corrientes | Muy fuertes — Darwin/Wolf: extremas e impredecibles |
-| Certificación mínima | Advanced Open Water + 100 inmersiones registradas |
-| Traje recomendado | 7mm semiseco obligatorio |
-| Acceso | Vuelo a Baltra (GPS), 8 días de navegación |
-| Temporada principal | Junio–Noviembre |
+| Visibilidad | 10-30m (extremadamente variable) |
+| Temperatura del agua | 16-27°C (estacional; en corriente fría puede estar a 16°C) |
+| Corrientes | Muy fuertes en Darwin y Wolf; siempre hay corriente |
+| Certificación mínima | AOWD; Darwin y Wolf: 50 inmersiones mínimo |
+| Acceso liveaboard obligatorio | Para Darwin y Wolf (las islas más remotas) |
+| Tipo de buceo | Pelágico extremo, mamíferos marinos, fauna endémica |
 
 ## Puntos de inmersión destacados
 
-- **Darwin's Arch** — El site más famoso del Pacífico Este. Derrumbado en superficie en mayo de 2021, pero bajo el agua la formación rocosa sigue intacta y sigue siendo el epicentro de los cardúmenes de martillo. En temporada (junio–noviembre) los tiburones ballena aparecen aquí. Reef hooks obligatorios — las corrientes no perdonan.
-- **Wolf Island** — La isla compañera de Darwin, a pocas horas de navegación. Tiburones de Galápagos endémicos, delfines, iguanas marinas, mantas. La combinación Darwin–Wolf es el core de cualquier ruta de 8 días desde Baltra.
-- **Gordon Rocks** — Tres picos volcánicos sumergidos frente a Santa Cruz. Cleaning station de tiburones martillo en aguas más centrales del archipiélago. Corriente intensa, inmersión exigente, recompensa proporcional.
-- **Cousin's Rock** — Uno de los sites más biodiversos del archipiélago: caballitos de mar, nudibranquios, peces de roca, leones marinos curiosos que juegan con buceadores. Contrasta con el puro pelagicismo de Darwin y Wolf.
-- **Cabo Marshall** — El site del mola mola (*Mola mola*) en Galápagos. De julio a noviembre, el pez más pesado del mundo sube desde las profundidades a ser limpiado por peces cleaner. Experiencia comparable a Crystal Bay en Bali pero en un contexto completamente diferente.
+### Darwin Island — The Arch
+El punto más famoso de Galápagos y uno de los más conocidos del mundo. La isla Darwin está a 45 minutos de barco al norte de Wolf — la posición más septentrional del archipiélago, directamente en la ruta migratoria de los tiburones martillo del Pacífico Este. The Arch es un arco de roca volcánica que emerge del mar en la punta norte de la isla. Bajo el agua, el upwelling crea una columna de plancton que atrae a los tiburones ballena — Darwin Island tiene el índice de avistamiento de tiburón ballena en buceo (no snorkel) más alto del mundo.
 
-## Vida marina
+Los tiburones martillo en Darwin se miden en centenares: 100-300 individuos en cardúmenes que se desplazan en la columna de agua a 20-30m. No es raro tener más de 100 tiburones en el campo visual simultáneamente.
 
-El protagonista absoluto es el **tiburón martillo** (*Sphyrna lewini*) — aquí no son individuos sueltos sino formaciones de cientos que giran en columnas frente a Darwin's Arch. El **tiburón ballena** aparece junio–noviembre en Darwin, con especímenes documentados de hasta 15 metros. Los **tiburones de Galápagos** (*Carcharhinus galapagensis*) son endémicos del archipiélago y están presentes en Wolf todo el año. El **mola mola** (*Mola mola*) tiene su cita en Cabo Marshall de julio a noviembre. Las **iguanas marinas** (*Amblyrhynchus cristatus*) son el animal terrestre más extraño que verás bajo el agua: el único lagarto marino del mundo, bucean a 15–20m para alimentarse de algas. Las **tortugas** y los **leones marinos** completan un ecosistema que lleva décadas sin presión humana significativa.
+### Wolf Island — Shark Bay
+Wolf Island está al sur de Darwin. Si Darwin es el punto del tiburón ballena, Wolf es el punto de los tiburones sedosos: miles de individuos que se agregan en corriente, formando una masa que oscurece la vis cuando giran en banco. La experiencia de nadar dentro de un banco de tiburones sedosos de 5.000 individuos es descrita por los operadores como "el punto con más tiburones por metro cuadrado del mundo".
 
-## Liveaboards
+### Gordon Rocks (Santa Cruz)
+El punto más asequible desde Puerto Ayora para los buceadores de día. Un cráter volcánico sumergido con corriente fuerte y tiburones martillo, tiburones de Galápagos y leones marinos que juegan activamente con los buceadores en el arrecife exterior. No Darwin, pero a 1h de barco desde el aeropuerto de Baltra.
 
-Galápagos solo se bucea en liveaboard — no hay otra opción legal para acceder a Darwin y Wolf. **Solo 16 embarcaciones tienen permiso del Parque Nacional Galápagos** para operar en las aguas protegidas del archipiélago, lo que limita las plazas disponibles y dispara los precios. La ruta estándar es de **8 días desde Baltra** (aeropuerto GPS, en la isla Baltra). Los itinerarios incluyen 3–4 inmersiones diarias con Darwin y Wolf como destino norte, más sites centrales en el retorno. En el mercado CB: el **Galapagos Master** (Master Liveaboards, 16 plazas, desde 6.141€/semana) y el **Galapagos Aggressor III** (Aggressor Fleet, desde 6.500€ aproximado en temporada alta).
-
-## Mejor época para ir
-
-- **Junio–Noviembre**: temporada principal. Tiburones ballena y martillo en Darwin, agua más fría (desde 18°C), corrientes más fuertes. El período de mayor espectáculo pelágico.
-- **Diciembre–Mayo**: agua más cálida (hasta 26°C), mantas activas, mola mola en Cabo Marshall (hasta noviembre). Menos corriente en algunos sites. Los martillos están todo el año, aunque en menor número fuera de Darwin.
+### La fauna endémica — El punto diferencial
+Lo que separa a Galápagos de todos los otros destinos de pelágicos:
+- **Iguana marina** — La única iguana del mundo que bucear en el océano. Se alimenta de algas en fondos de 3-10m. Bucear junto a una iguana marina de 1 metro que raspa algas de la roca volcánica es algo que no existe en ningún otro destino.
+- **Pingüino de Galápagos** — El único pingüino que vive en el Ecuador. Los buceadores los ven nadar a velocidades imposibles a 2-5m de profundidad en las islas Bartolomé e Isabela.
+- **León marino de Galápagos** — Totalmente desinhibido con los humanos. En algunos puntos de Santa Cruz, nadan alrededor de los buceadores invitándoles a jugar. Una sesión con leones marinos en corchetes es inombrable en términos de energía.
 
 ## Cómo llegar
 
-**Vuelo:** Vuelo internacional hasta Guayaquil (GYE) o Quito (UIO), Ecuador. Conexión doméstica a Baltra (GPS) — única puerta de entrada a la ruta norte Darwin/Wolf. Los vuelos a Galápagos están regulados por el estado ecuatoriano. Desde España: 14–18 horas con escala en Miami, Bogotá o Lima.
+| Tramo | Detalle |
+|-------|---------|
+| Vuelo internacional | Madrid → Guayaquil (GYE) o Quito (UIO) → Baltra (GPS) o San Cristóbal (SCY) |
+| Vuelo doméstico | 3h desde Guayaquil/Quito |
+| Total | ~16-20h puerta a puerta desde Madrid |
+| Tasa de Parque | 100 USD por persona, pagable en efectivo en el aeropuerto de Galápagos |
 
-**Tasa de entrada:** El Parque Nacional Galápagos cobra una tarifa de entrada obligatoria (actualmente 200 USD para extranjeros). Los liveaboards gestionan el permiso de navegación dentro del parque.
+**Visado:** Ecuador — ciudadanos españoles sin visado hasta 90 días.
 
-**Visado UE:** Ecuador no requiere visado para ciudadanos europeos (estancia hasta 90 días).
+**Nota Darwin/Wolf liveaboard:** Solo los liveaboards autorizados por el Parque Nacional pueden llegar a Darwin y Wolf. No se puede llegar desde tierra. Hay un cupo estricto de barcos autorizados.
+
+## Mejor época para ir
+
+- **Junio - Noviembre:** La Corriente de Humboldt domina. Agua fría (16-22°C), mayor concentración de tiburones martillo y tiburones ballena en Darwin, vis variable (puede ser baja por plancton). Es la temporada preferida para pelágicos extremos.
+- **Diciembre - Mayo:** Agua más cálida (23-27°C), mayor vis en algunos puntos, mantas más activas. Leones marinos criando en enero-marzo. Más cómodo para buceadores que no toleran el frío.
 
 ## Nivel requerido
 
-**Advanced Open Water mínimo, 100 inmersiones registradas obligatorio** — no es una sugerencia, es el requisito del parque para Darwin y Wolf. Las corrientes en el norte del archipiélago son impredecibles y potencialmente peligrosas. Los **reef hooks son obligatorios** — tendrás que anclar al fondo rocoso y dejarte llevar por la corriente mientras los tiburones pasan a tu alrededor. Sin experiencia real en corrientes oceánicas fuertes, este no es el destino adecuado. Los guides de los liveaboards son estrictos en la evaluación previa.
+**Darwin y Wolf son los puntos más exigentes del Pacífico Oriental.** Los operadores no llevan buceadores sin historial probado:
+- Mínimo 50 inmersiones (muchos operadores piden más)
+- Experiencia documentada en corriente fuerte
+- Capacidad de mantener la posición en corriente sin referencia de fondo
+
+La evacuación médica desde Darwin (el punto más remoto) es de 4-5 horas de navegación. Los operadores tienen oxígeno a bordo pero sin cámara hiperbárica. El sistema de Galápagos funciona porque los operadores son extremadamente cuidadosos con el perfil de sus huéspedes.
 
 ## Consejo Scibasku
 
-> En Galápagos el barco lo es todo, y los buenos se reservan con un año de antelación.
-> [Empezamos cuando quieras →](mailto:info@viajesscibasku.com)
+Galápagos es el destino de vuelta completa para el buceador avanzado. No está diseñado para la primera gran experiencia — está diseñado para el que ha hecho 10 destinos y quiere el que cambia la perspectiva de lo que es posible bajo el agua.
+
+El presupuesto total (vuelo + liveaboard 10 noches) supera los 5.000-7.000 EUR por persona. Es el viaje de buceo más importante de nuestra oferta en términos de experiencia transformativa.
+
+La ruta Galápagos de Santos → Cocos Island tiene lista de espera de 12-18 meses en los mejores barcos. Reservar con suficiente antelación es parte de la experiencia.
 
 ## Fichas relacionadas
 
-- [[palau]] — Palau, el otro destino del Pacífico con reef hooks y grandes pelágicos
-- [[cocos-island]] — Isla del Coco, el hermano más oscuro y remoto de Galápagos
-- [[revillagigedo-socorro]] — Socorro/Revillagigedo, México, para las mantas oceánicas más interactivas del mundo
+- [[cocos-island]] — El vecino al norte; solo tiburones, sin fauna endémica
+- [[revillagigedo-socorro]] — El Pacífico mexicano; 36h menos de avión desde España
+- [[darwin-island-link]] — Solo Darwin y Wolf en itinerario de 7 noches (itinerario específico)
+- [[patagonia-buceo]] — El otro Pacífico Sur sudamericano; diferente fauna fría
 
 ## Fuentes
 
-- [Parque Nacional Galápagos](https://galapagos.gob.ec/) — Autoridad oficial del parque nacional y la reserva marina
-- [Master Liveaboards — Galapagos](https://www.masterliveaboards.com/galapagos/) — Web oficial del liveaboard citado en la ficha
-- [Aggressor Adventures](https://www.aggressor.com/) — Flota citada en la ficha con itinerarios en Galápagos
-- [PADI — Diving in Ecuador](https://www.padi.com/diving-in/ecuador/) — Panorámica del destino, puntos de inmersión y condiciones generales
+- [Galápagos Aggressor](https://aggressor.com/destination/galapagos/) — Operador histórico; datos estadísticos de avistamiento en Darwin y Wolf
+- [Scuba Iguana Puerto Ayora](https://www.scubaiguana.com/) — Buceo de día desde Santa Cruz; Gordon Rocks
+- [Galápagos National Park](https://galapagospark.org/) — Regulación, cupos y tasa de Parque
+- [Charles Darwin Research Station](https://www.darwinfoundation.org/) — Investigación de fauna endémica y estado del ecosistema
