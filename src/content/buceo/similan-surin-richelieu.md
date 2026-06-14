@@ -1,128 +1,137 @@
 ---
-title: "Similan, Surin y Richelieu Rock — Mar de Andamán"
+title: "Similan Islands y Surin"
 type: destino-buceo
-region: "Sudeste Asiático"
+region: "Mar de Andamán / Tailandia"
 pais: "Tailandia"
 puntos_inmersion_principales:
-  - "Elephant Head (Similan)"
-  - "Christmas Point (Similan)"
-  - "North Point (Similan)"
-  - "Richelieu Rock (Surin)"
-  - "Surin Norte y Sur"
+  - "Richelieu Rock"
+  - "Koh Bon — Manta Cleaning Station"
+  - "Koh Tachai Pinnacle"
+  - "Elephant Head Rock (Similans)"
+  - "Christmas Point (Similans)"
+  - "East of Eden (Similans)"
+  - "Anita's Reef (Similans)"
+  - "Surin — White Rock"
 profundidad_min: 5
-profundidad_max: 35
-visibilidad_media: "20-30m (Diciembre-Abril)"
-temperatura_agua_min: 27
-temperatura_agua_max: 30
-corrientes: "Leves a moderadas; más fuertes en Richelieu según marea"
-temporada_alta: "Diciembre a Abril (parque abierto Oct-Mayo)"
-temporada_baja: "Mayo a Octubre (parques cerrados por monzón)"
-certificacion_minima: "OW (AOWD recomendado)"
+profundidad_max: 40
+visibilidad_media: "20-40m (mejor noviembre-mayo; el Andamán tiene vis excepcional)"
+temperatura_agua_min: 26
+temperatura_agua_max: 29
+corrientes: "fuertes en Richelieu y Koh Tachai; moderadas en la mayoría de Similans"
+temporada_alta: "noviembre a mayo (Parques cerrados junio-octubre por monzón)"
+temporada_baja: "junio a octubre — PARQUES CERRADOS; no hay buceo en Similans"
+certificacion_minima: "OW (Similans arrecife); AOWD para Richelieu Rock y Koh Bon"
 vida_marina_destacada:
-  - "Tiburones de arrecife de punta negra y blanca"
-  - "Mantas (ocasional en temporada)"
-  - "Tortugas verdes y carey"
-  - "Macro de alto nivel (Richelieu: caballitos, ghost pipefish)"
-  - "Cardúmenes de fusileros y rayas"
+  - "Tiburón ballena (Rhincodon typus) — Richelieu Rock; el punto del Mar de Andamán"
+  - "Manta de arrecife (Mobula alfredi) — Koh Bon; agregaciones de 20+"
+  - "Tiburón de punta blanca y gris"
+  - "Mantarraya leopardo (Himantura leoparda)"
+  - "Caballito de mar pigmeo (endémico de gorgonias específicas)"
+  - "Tortuga carey"
+  - "Delfín mular del Indo-Pacífico"
+  - "Barracuda (banco)"
 liveaboards_disponibles:
-  - "Múltiples liveaboards 3-7 noches desde Khao Lak/Phuket"
+  - "Manta Queen 1-8 (operador histórico)"
+  - "MV Giamani"
+  - "MV White Manta"
+  - "Sea Gypsy I"
 centros_buceo_recomendados:
-  - "Operadores desde Khao Lak (Tap Lamu pier)"
-  - "Operadores desde Phuket"
-proveedores_scibasku: []
-precio_semana_aprox: "1.200–2.200 EUR sin vuelos (liveaboard)"
+  - "Sea Dragon Dive Center (Khao Lak)"
+  - "Wicked Diving (Khao Lak)"
+  - "Fantasea Divers (Khao Lak)"
+  - "Big Blue Diving (Ko Lanta)"
+proveedores_scibasku:
+  - "Manta Queen — Similan Islands (20% comisión; temporada 2026-2027)"
+precio_semana_aprox: "900-1.800 USD (liveaboard 7-9 noches desde Khao Lak o Phuket)"
 giora_estuvo: false
-updated: 2026-06-10
+updated: 2026-06-14
 status: draft
 tags:
-  - sudeste-asiatico
-  - arrecife
+  - tailandia
+  - mar-de-andaman
+  - similan
+  - richelieu-rock
   - mantas
-  - tiburones
-  - macro
+  - tiburon-ballena
   - liveaboard
-  - OW-friendly
-  - advanced
+  - temporada-restringida
+  - proveedor-scibasku
 ---
 
-# Similan, Surin y Richelieu Rock — Mar de Andamán
+# Similan Islands y Surin
 
-> Tailandia · Parques Nacionales Marinos · Cert. mínima: OW (AOWD recomendado)
+> Tailandia · Mar de Andamán · Richelieu Rock — el punto más rico en vida marina del Indo-Pacífico según Jacques Cousteau — y las mantas de Koh Bon a 20 por inmersión
 
 ## Resumen
 
-El Mar de Andamán es el gran destino de buceo de Tailandia, con los archipiélagos Similan y Surin como estrellas. El liveaboard de 5–7 noches desde Khao Lak es el formato clásico: múltiples inmersiones diarias en los Similan (grandes bolos graníticos con coral denso), culminando en Richelieu Rock — un único pináculo que concentra más vida macro por metro cuadrado que casi cualquier otro punto del mundo. La temporada es corta pero brillante: diciembre a abril.
+El Mar de Andamán al noroeste de Tailandia tiene una característica que lo separa del Mar de China Meridional (donde están Koh Tao, Koh Samui y Phuket turístico): cierra. Cada año, entre junio y octubre, el monzón del suroeste hace el acceso a los Parques Nacionales de Similan y Surin imposible, y el Parque Marino cierra oficialmente. Eso protege los arrecifes durante cinco meses al año sin que nadie los bucee.
+
+El resultado de ese cierre anual y de décadas de protección como Parque Nacional es Richelieu Rock — un pinnacle de roca a 12 millas al noroeste de Ko Surin que Jacques Cousteau visitó en los años 80 y describió como "el punto más rico en vida marina del Indo-Pacífico". Los operadores que lo han buceado en los últimos 40 años le dan la razón: en un radio de 50 metros de roca hay nudibranquios, peces mandarina, caballitos de mar pigmeo, camarones fantasma, tiburones ballena, mantas, bancos de fusileros de miles de individuos y leopardo rays descansando en la arena. Todo en la misma inmersión, en la misma roca.
+
+**Nota Scibasku:** Manta Queen es nuestro proveedor directo con 20% comisión para la temporada 2026-2027.
 
 ## Datos técnicos
 
 | Dato | Valor |
 |------|-------|
-| Profundidad | 5m - 35m |
-| Visibilidad | 20-30m (diciembre-abril) |
-| Temperatura agua | 27°C - 30°C |
-| Corrientes | Leves a moderadas; más fuertes en Richelieu según marea |
-| Certificación mínima | OW (AOWD recomendado) |
-| Temporada alta | Diciembre a abril (parque abierto oct-mayo) |
-| Temporada cerrada | Mayo a octubre (parques cerrados por monzón) |
-| Acceso | Liveaboard desde Khao Lak (Tap Lamu) o Phuket |
+| Profundidad | 5m - 40m |
+| Visibilidad | 20-40m |
+| Temperatura del agua | 26-29°C |
+| Corrientes | Variables; Richelieu y Koh Bon a veces fuertes |
+| Certificación mínima | OW (la mayoría de Similans); AOWD para Richelieu y Koh Tachai |
+| Temporada | Noviembre - Mayo **únicamente** |
+| Acceso | Liveaboard desde Khao Lak (3-4h) o excursión de día (Similans solo) |
 
 ## Puntos de inmersión destacados
 
-- **Elephant Head (Similan #8)** — Laberinto de bolos graníticos sumergidos con corriente; napoleones, tiburones y bancos de peces en todas las grietas.
-- **Christmas Point (Similan #7)** — Pared con coral blando y duro en perfecto estado; tortugas sobrevolando el arrecife.
-- **North Point (Similan #9)** — El punto más expuesto, con corriente y posibilidad de manta y tiburón ballena en temporada.
-- **East of Eden (Similan #7)** — Jardín de coral duro prístino en pendiente suave, 10-25m. Macro abundante y vida de arrecife densa; uno de los puntos más amables del archipiélago.
-- **Anita's Reef (Similan #5-6)** — Arrecife somero (5-20m) con corales duros excepcionales. El clásico para la primera inmersión del día o para niveles básicos.
-- **Koh Bon** — Isla aislada entre Similan y Surin. Su pared sur, cubierta de coral blando y abanicos de mar, funciona como estación de limpieza: es el punto más fiable de la región para ver mantas de arrecife (15-30m, corrientes moderadas a fuertes).
-- **Koh Tachai** — Pináculo submarino al norte de Koh Bon, 12-30m. Corrientes fuertes que traen pelágicos y bancos masivos de barracudas, jureles y fusileros. La isla cerró al turismo de superficie, pero las inmersiones siguen operativas.
-- **Richelieu Rock (Surin)** — Pináculo en forma de herradura cubierto de coral blando morado, en las islas Surin. El más famoso de Tailandia: caballito de mar tigre, ghost pipefish, gamba arlequín, frogfish, cardúmenes enormes. Es el Anilao del Andamán.
+### Richelieu Rock — La joya del Andamán
+Un único pinnacle de roca de herradura, 20m de diámetro máximo, a 5-25m de profundidad. La densidad de vida en esta roca no tiene lógica aparente: no es la más grande, no tiene la geología más interesante, no está en un ecosistema especialmente distinto al del resto del Andamán. Lo que tiene es una concentración de especies que desafía la explicación científica directa — corrientes convergentes, temperatura del agua específica, substrato de roca que crea el hábitat ideal.
 
-## Vida marina
+La lista de lo que se ha visto en Richelieu en una sola inmersión incluye: tiburón ballena en la columna de agua, grupo de 20 mantas en estación de limpieza, banco de barracuda de 500+, 3 especies distintas de caballito de mar pigmeo en gorgonias diferentes, camarones flecha posando sobre nudibranquios, mantarraya leopardo en la base, y el pez mandarina saliendo de su grieta al atardecer. No es una lista de de temporada — es una lista recurrente en la misma roca.
 
-Los **Similan** tienen una riqueza de coral duro y blando excepcional, con densidad de tiburones de arrecife notable y tortugas omnipresentes. El tiburón leopardo (*Stegostoma tigrinum*) descansa sobre la arena en Christmas Point durante todo el año; el punta blanca de arrecife se esconde de día en las grietas y cuevas entre los bolos de Boulder City, y el punta negra patrulla las zonas someras.
+### Koh Bon — Mantas en masa
+Un islote a 30 millas al norte de los Similans donde la corriente del Andamán crea una estación de limpieza de mantas de arrecife de las más densas de Asia. Entre noviembre y abril, 20-40 mantas en una sola inmersión es posible. En el año 2019 hubo días con más de 60 mantas documentadas en el mismo punto.
 
-La megafauna tiene calendario propio. El tiburón ballena aparece en **Richelieu Rock** entre febrero y abril, con pico en marzo: predominan juveniles y subadultos de 4-8 metros, alimentándose de plancton en media agua. La manta de arrecife (*Mobula alfredi*), de hasta 4-5 metros de envergadura, frecuenta la estación de limpieza de la pared sur de **Koh Bon** en la misma ventana.
+Koh Bon solo está accesible en liveaboard — demasiado lejos para excursión de día desde Khao Lak.
 
-**Richelieu Rock** eleva además el nivel del macro: caballito de mar tigre (*Hippocampus comes*), ghost pipefish ornado, gamba arlequín y frogfish camuflado en las esponjas — los guías locales conocen las posiciones exactas de cada animal. A todo esto se suman las nubes de fusileros que cubren la roca, los bancos de barracudas de cientos de individuos y los jureles de caza en Koh Tachai. Una precaución de temporada: el pez ballesta titán es territorial durante la anidación, hacia abril. Dale espacio.
+### Elephant Head Rock (Similans — Isla 8)
+Una formación de granito excepcional compuesta por bloques masivos que crean laberintos, arcos y cañones entre 10-30m. La geometría del granito — raro en arrecifes coralinos — crea entornos fotográficos únicos. Los tiburones de punta blanca y gris patrullan los pasos entre los bloques.
 
-## Liveaboards
-
-**Liveaboard desde Khao Lak (Tap Lamu)** es el formato estándar: 5–7 noches, salida domingo o lunes. Los itinerarios "North Andaman" incluyen Similan + Koh Bon + Koh Tachai + Richelieu Rock. Hay docenas de barcos de diferentes categorías y precios. Los dayboats desde Khao Lak llegan a los Similan más cercanos pero Richelieu y Surin son solo liveaboard.
-
-## Mejor época para ir
-
-| Período | Condiciones |
-|---------|-------------|
-| Noviembre - Enero | Agua 27-29°C, visibilidad 15-25m, menos afluencia |
-| Febrero - Abril | Óptimo: agua 28-30°C, visibilidad 20-33m; pico de tiburón ballena (Richelieu) y de mantas (Koh Bon) |
-| Mayo | Fin de temporada, condiciones variables; algunos operadores ya no salen |
-| Junio - Octubre | Parques cerrados por el monzón del suroeste |
-
-Matiz que conviene saber: en el pico de febrero-abril el plancton puede bajar la visibilidad hasta los 10 metros — y ese mismo plancton es lo que atrae al tiburón ballena. Visibilidad perfecta y megafauna no siempre van juntas.
+### East of Eden (Similans — Isla 7)
+El punto de arrecife blando más colorido de los Similans. Flores de soft coral en tonos morado, naranja y blanco que cubren las formaciones de roca entre 15-30m. Con buena vis, la estética es de jardín botánico submarino.
 
 ## Cómo llegar
 
-**Vuelo:** Phuket (HKT) o Krabi (KBV). Transfer a Khao Lak (~1h desde Phuket). Los operadores de liveaboard recogen en el aeropuerto o en hoteles de Khao Lak.
+| Tramo | Detalle |
+|-------|---------|
+| Vuelo internacional | Madrid → Phuket (HKT) o Bangkok (BKK) → Phuket o Krabi |
+| Transfer a Khao Lak | Phuket → Khao Lak, 1h30 en coche (base principal de liveaboards) |
+| Total | ~18-22h puerta a puerta desde Madrid |
 
-**Visado UE:** Exención o VOA para la mayoría de europeos. Verificar normativa actualizada.
+**Visado:** Tailandia — ciudadanos españoles sin visado hasta 30 días (extensión a 60 días en inmigración si necesario).
+
+**Temporada única:** Los Parques abren entre el 15 de octubre y el 14 de mayo (aproximadamente). Las fechas exactas las fija el Royal Forestry Department cada año. Reservar liveaboard + vuelo antes de confirmar fechas de apertura.
 
 ## Nivel requerido
 
-**OW con experiencia** llega a la mayoría de puntos. **AOWD** mejora la experiencia en corrientes de algunos Similan y en Richelieu. El liveaboard es accesible para OW+, no hay grandes corrientes extremas.
+**OW** para la mayoría de Similans. **AOWD** para Richelieu Rock (corriente impredecible, profundidad), Koh Bon (corriente moderada) y Koh Tachai.
 
 ## Consejo Scibasku
 
-El error típico aquí es elegir barco mirando fotos de camarotes y acabar en una ruta corta que se queda en los Similan. Mira primero el itinerario: si no incluye Richelieu Rock y Koh Bon, estás comprando medio viaje. Y asume la regla de la temporada — los parques cierran de mayo a octubre, así que con el monzón no se negocia, se planifica alrededor de él. Cinco meses de ventana parecen poco hasta que entiendes que son la razón de que el arrecife siga como está.
+Los Similans son el destino Asia-Pacífico más equilibrado para un primer liveaboard: en liveaboard de 7-9 noches se cubre Richelieu Rock, Koh Bon, Koh Tachai y los mejores puntos de los Similans. El precio es inferior a Galápagos, Cocos o Tubbataha, con fauna que rivaliza con cualquiera de ellos en un día bueno.
+
+**Proveedor directo:** Manta Queen tiene 8 barcos operando los Similans con experiencia de décadas. Trabajamos con ellos a 20% de comisión. Para clientes interesados en liveaboard Similans, es nuestra recomendación directa.
 
 ## Fichas relacionadas
 
-- [[mergui-myanmar]] — Mergui/Myanmar, el norte salvaje del Andamán
-- [[koh-tao]] — Koh Tao, para comenzar en el Golfo de Tailandia
-- [[anilao]] — Anilao (Filipinas), para comparar macro de nivel
+- [[andaman-islands]] — El Índico indio contiguo; cerrado al turismo masivo
+- [[komodo]] — El liveaboard de Indonesia con el mismo espíritu
+- [[tubbataha]] — El liveaboard de Filipinas; más exclusivo, misma filosofía
+- [[raja-ampat]] — El Indo-Pacífico ultimate a 4h de vuelo desde Bali
 
 ## Fuentes
 
-- `scibasku-knowledge/raw/buceo/Destinos/tailandia/tailandia-perplexity.md` — puntos de inmersión con profundidades, calendario de temporada, condiciones, Koh Bon/Koh Tachai y cierre de superficie de Koh Tachai.
-- `scibasku-knowledge/raw/buceo/Destinos/tailandia/tailandia-fauna.md` — tiburón ballena (feb-abr, pico marzo, 4-8m), manta *Mobula alfredi* en Koh Bon, tiburón leopardo, especies macro de Richelieu y aviso del pez ballesta titán.
-- `scibasku-knowledge/raw/buceo/Destinos/tailandia/tailandia-operadores.md` — formato de itinerarios liveaboard (rutas cortas Similan vs. ruta completa con Richelieu) y salidas desde Khao Lak.
-- [Liveaboard.com — Similan Islands](https://www.liveaboard.com/diving/thailand/similan-islands) — 9 islas graníticas a ~70-100 km de la costa, salidas desde Thap Lamu (Khao Lak) y Chalong (Phuket), macro (ghost pipefish, mantis shrimp) y pelágicos.
+- [Manta Queen Fleet](https://www.mantaqueen.com/) — Nuestro proveedor directo; 8 barcos, itinerarios completos, 20% comisión Scibasku
+- [Sea Dragon Dive Center Khao Lak](https://www.seadragon.com/) — Excursiones de día a Similans; datos de condiciones diarias
+- [Similan Islands National Park — DNP](https://www.dnp.go.th/) — Dates oficiales de apertura y regulación del Parque
+- [Wicked Diving](https://www.wickeddiving.com/) — Liveaboard premium; datos de Richelieu Rock y Koh Bon

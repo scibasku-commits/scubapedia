@@ -1,114 +1,123 @@
 ---
-title: "Roatán y Utila — Bay Islands de Honduras"
+title: "Roatán y las Islas de la Bahía"
 type: destino-buceo
-region: "Caribe"
+region: "Caribe de Honduras / Islas de la Bahía"
 pais: "Honduras"
 puntos_inmersion_principales:
-  - "West End Wall (Roatán)"
-  - "Mary's Place (Roatán)"
-  - "Odyssey Wreck (Roatán)"
-  - "Chumphon (Utila)"
-  - "Black Coral Wall (Utila)"
+  - "Mary's Place (grieta vertical)"
+  - "Half Moon Bay Wall"
+  - "Spooky Channel"
+  - "Hole in the Wall"
+  - "Texas (arrecife)"
+  - "Pillar Coral Garden"
+  - "Cara a Cara"
+  - "Utila — The Pinnacles"
 profundidad_min: 5
-profundidad_max: 35
-visibilidad_media: "20-30m"
-temperatura_agua_min: 27
-temperatura_agua_max: 30
-corrientes: "Leves a moderadas"
-temporada_alta: "Febrero a Junio y Septiembre a Noviembre"
-temporada_baja: "Agosto (huracanes posibles)"
+profundidad_max: 40
+visibilidad_media: "20-40m"
+temperatura_agua_min: 26
+temperatura_agua_max: 29
+corrientes: "leves en su mayoría; algunas corrientes en puntos de pared y pasos; Utila más expuesta"
+temporada_alta: "marzo a septiembre"
+temporada_baja: "octubre a febrero (lluvias; mayor probabilidad de frentes)"
 certificacion_minima: "OW"
 vida_marina_destacada:
-  - "Tiburones de arrecife (shark dives en Roatán)"
-  - "Tortugas"
-  - "Rayas águila"
-  - "Tiburón ballena (Utila — picos Marzo-Mayo, Oct-Nov)"
-  - "Coral caribeño sano"
-liveaboards_disponibles:
-  - "Algunos liveaboards caribeños"
+  - "Tiburón ballena (Rhincodon typus) — Utila; uno de los puntos más fiables del Caribe"
+  - "Tiburón de arrecife caribeño (Carcharhinus perezi)"
+  - "Tiburón nodriza"
+  - "Tortuga carey y verde (alta densidad)"
+  - "Mero Nassau"
+  - "Manatí (Trichechus manatus) — lagunas de la costa norte de Honduras"
+  - "Barracuda (presencia constante)"
+  - "Coral estrella (Orbicella franksi) — formaciones excepcionales en Mary's Place)"
+liveaboards_disponibles: []
 centros_buceo_recomendados:
   - "Coconut Tree Divers (Roatán)"
-  - "Anthony's Key Resort (Roatán)"
-  - "Utila Dive Centre"
-  - "Alton's Dive Center (Utila)"
+  - "Subway Watersports (Roatán)"
+  - "Roatán Divers (West Bay)"
+  - "Utila Dive Centre (Utila)"
+  - "Deep Blue Resort Utila"
 proveedores_scibasku: []
-precio_semana_aprox: "900–1.900 EUR sin vuelos (Roatán); 700–1.600 EUR (Utila)"
+precio_semana_aprox: "400-750 USD (resort + paquete buceo 7 noches; una de las mejores relaciones calidad/precio del Caribe)"
 giora_estuvo: false
-updated: 2026-06-10
+updated: 2026-06-14
 status: draft
 tags:
+  - honduras
   - caribe
-  - tiburones
+  - islas-de-la-bahia
+  - roatan
+  - utila
+  - arrecife-mesoamericano
+  - economico
   - tiburon-ballena
-  - arrecife
-  - dayboat
-  - OW-friendly
 ---
 
-# Roatán y Utila — Bay Islands de Honduras
+# Roatán y las Islas de la Bahía
 
-> Honduras · Caribe (Bay Islands) · Cert. mínima: OW
+> Honduras · Caribe · El Caribe premium con precio centroamericano — segundo arrecife coralino del mundo y uno de los mejores presupuesto/calidad del hemisferio
 
 ## Resumen
 
-Las Bay Islands son el secreto mejor guardado del buceo caribeño. Roatán tiene la infraestructura más completa — resorts de nivel, shark dives organizados y el pecio Odyssey — con precios muy por debajo de Cozumel o Cayman. Utila es la isla budget: pequeña, informal, con los precios de curso de buceo más bajos del Caribe y la posibilidad de tiburón ballena en temporada. Juntas representan la mejor relación calidad-precio del Caribe continental.
+Roatán tiene un argumento contundente: forma parte de la **Gran Barrera de Arrecife Mesoamericano** — el segundo sistema de arrecifes coralinos más grande del mundo, después de la Gran Barrera de Australia, que se extiende desde Yucatán (México) hasta las Islas de la Bahía (Honduras). Y está en Honduras, no en México — lo que significa que los precios son centroamericanos, no caribeños del norte.
+
+La isla tiene 60 kilómetros de arrecife accesible desde la orilla occidental (West End y West Bay) y un sistema de paredes en el lado sur con geografía submarina que no tiene equivalente en el Caribe. Mary's Place es una grieta vertical en la pared occidental que tiene dos metros de ancho, 30 metros de paredes verticales de coral y la atmósfera de una catedral submarina — completamente diferente a cualquier punto de buceo de Cancún o Cozumel.
+
+A 30 minutos en ferry está Utila — la isla vecina más pequeña y más buscada para el tiburón ballena en el Caribe.
 
 ## Datos técnicos
 
 | Dato | Valor |
 |------|-------|
-| Profundidad | 5m - 35m |
-| Visibilidad | 20-30m |
-| Temperatura agua | 27°C - 30°C |
-| Corrientes | Leves a moderadas |
+| Profundidad | 5m - 40m |
+| Visibilidad | 20-40m |
+| Temperatura del agua | 26-29°C |
+| Corrientes | Leves aceptable; algunas paredes con corriente moderada |
 | Certificación mínima | OW |
-| Temporada alta | Febrero a junio y septiembre a noviembre |
-| Temporada baja | Agosto (huracanes posibles) |
+| Temporada alta | Marzo - Septiembre |
+| Tipo de buceo | Pared caribeña, grietas, arrecife de deriva, tiburón ballena |
 
 ## Puntos de inmersión destacados
 
-- **West End Wall (Roatán)** — Pared que cae desde 5m; coral muy sano, tortugas y tiburones de arrecife frecuentes. Accesible desde el muelle del resort.
-- **Mary's Place (Roatán)** — Sistema de grietas en la pared; morenas, langostas y una ambientación de película. El punto más fotogénico de Roatán.
-- **Odyssey Wreck (Roatán)** — Carguero hundido intencionalmente; bien colonizado por coral, con buena fauna de pecio.
-- **Black Coral Wall (Utila)** — Pared del norte de Utila con abundante coral negro a 20–30m; menos visitada que los puntos de Roatán.
+### Mary's Place
+El punto emblemático de Roatán. Una grieta vertical en la pared sur de la isla: 2 metros de ancho, 30 metros de altura de paredes verticales de coral, con la superficie visible desde los 15m de fondo al fondo de la grieta. Las paredes están cubiertas de coral estrella (*Orbicella franksi*) en algunos de los ejemplares más grandes del Caribe occidental. Esponjas tubulares de colores en las hendiduras, murenas en los recovecos, tortugas carey descansando al final de la grieta. No tiene corriente — se nada despacio entre las dos paredes y se sale por la sección norte. Profundidad práctica: 12-20m.
 
-## Vida marina
+### Half Moon Bay Wall
+La pared más representativa del sistema oeste de la isla. Cae desde 5m hasta 40m+ con la curva característica de la bahía creando dos exposiciones distintas a la corriente. El lado norte tiene barracudas y tiburones nodriza en el fondo arenoso. El lado sur tiene las esponjas barril más grandes del extremo occidental de la isla.
 
-Las Bay Islands se asientan sobre el Arrecife Mesoamericano, uno de los ecosistemas marinos más importantes del planeta, y eso se traduce en coral caribeño sano, tortugas en casi cada inmersión y rayas águila planeando sobre las paredes. Roatán añade los shark dives organizados con tiburones de arrecife del Caribe (*Carcharhinus perezi*), morenas y langostas en las grietas de Mary's Place, y la fauna de pecio del Odyssey. La carta fuerte de Utila es otra: el tiburón ballena (*Rhincodon typus*), con picos de avistamientos de marzo a mayo y de octubre a noviembre. En Roatán, la conservación del arrecife tiene nombre propio: el Roatan Marine Park, la organización local que protege la zona arrecifal de la isla.
+### Utila — Tiburón ballena
+Utila es la niña pequeña de las Islas de la Bahía — 12 km de largo, sin resort cinco estrellas, con una comunidad de buceo mochilero que lleva décadas operando. Y tiene los tiburones ballena. El norte de Utila tiene los mismos avistamientos de ballena que el Yucatán pero sin la regulación turística masiva. Los operadores salen en buscada activa — barcos con vigía, búsqueda de la mancha de plancton, entrada al agua cuando se confirma el tiburón.
 
-¿Buscas bicho grande garantizado cada día? Esto no es Galápagos. Aquí el guion es coral, paredes y vida de arrecife — con la lotería del tiburón ballena como premio extra.
-
-## Liveaboards
-
-La opción clásica es el **Roatan Aggressor**, un yate de 36 metros para 18 buceadores (9 camarotes, nitrox a bordo) que opera en Honduras desde 1989. Sus itinerarios de 7 a 10 noches combinan Roatán, Utila y los Cayos Cochinos con 2-3 inmersiones diarias más nocturnas — la única manera práctica de bucear las tres zonas del archipiélago en un solo viaje. Dicho esto, las Bay Islands son ante todo un destino de centro de buceo: con los puntos a minutos del muelle, el dayboat aquí no es un plan B, es el formato natural.
+No es garantizado como Oslob (donde los tiburones están condicionados), pero es un tiburón ballena en estado salvaje con protocolo respetuoso.
 
 ## Cómo llegar
 
-- **Roatán:** Aeropuerto de Roatán (RTB) con vuelos directos desde EE.UU. (Houston, Miami, Atlanta) y conexiones desde Europa.
-- **Utila:** Vuelo interno desde La Ceiba o ferry desde La Ceiba.
+| Tramo | Detalle |
+|-------|---------|
+| Vuelo directo | Madrid → Roatán (RTB) vuelo directo ocasional (Futura, Condor en temporada); más frecuente: con escala en Miami, Houston o San Pedro Sula |
+| Total | ~12-16h puerta a puerta desde Madrid |
+| Utila | Ferry desde Roatán (1h30) o vuelo doméstico desde La Ceiba |
 
-**Visado UE:** Exención para estancias cortas en Honduras.
+**Visado:** Honduras — ciudadanos españoles sin visado hasta 90 días.
 
-## Mejor época para ir
-
-Las dos ventanas buenas son **febrero-junio** y **septiembre-noviembre**: mar estable, visibilidad en su rango alto y, si vas a Utila, las dos coinciden con los picos de tiburón ballena (marzo-mayo y octubre-noviembre). **Agosto** es el mes a evitar — posibilidad de huracanes y mar revuelto. El agua se mantiene entre 27 y 30°C todo el año, así que el traje corto o el 3 mm sobran de sobra; lo que cambia con la estación no es la temperatura, es la lluvia y el estado del mar.
-
-## Nivel requerido
-
-**OW** es suficiente para casi todo: corrientes leves, puntos protegidos y paredes que empiezan a 5 metros. De hecho, Utila vive en buena parte de los cursos — es de lo más barato del Caribe para certificarse, y eso define el ambiente: mochilero, joven, social. Para los shark dives de Roatán y las paredes con algo de corriente conviene **AOWD** o al menos soltura demostrada. Si llevas años buceando y huyes de los grupos de curso, elige bien el centro y la zona: en Utila compartirás barco con gente en su inmersión número cuatro.
+**Nota:** Roatán tiene un aeropuerto internacional pequeño pero funcional. El acceso ha mejorado significativamente en los últimos años con chárter europeos directos en temporada.
 
 ## Consejo Scibasku
 
-Las Bay Islands son el destino lógico para dos momentos concretos de la vida de un buceador: cuando empiezas (cursos económicos, agua caliente, condiciones fáciles) y cuando quieres mucho buceo caribeño por un presupuesto contenido sin sacrificar calidad de arrecife. No son el sitio si buscas lujo pulido — la infraestructura es honesta pero sencilla, sobre todo en Utila — ni si tu única vara de medir son los grandes pelágicos diarios. Roatán para comodidad y shark dives; Utila para presupuesto y la posibilidad del tiburón ballena. Elegir mal entre las dos islas estropea el viaje; elegir bien lo redondea.
+Roatán es el argumento cuando alguien pide "Caribe de calidad con buen presupuesto". Es el destino que recomendamos cuando el cliente compara con Cozumel y quiere saber la diferencia de precio: Roatán tiene arrecife similar y precio 30-40% inferior. La infraestructura turística es menos abundante, el ambiente es más auténtico, y el buceo en Mary's Place no tiene equivalente en México.
+
+Utila complementa Roatán perfectamente con el tiburón ballena. La combinación 5N Roatán + 3N Utila es una de las mejores semanas de buceo del Caribe por precio.
 
 ## Fichas relacionadas
 
-- [[cozumel]] — Cozumel, más conocido pero similar nivel
-- [[belice]] — Belice, el arrecife vecino mesoamericano
-- [[coiba-panama]] — Coiba, Pacífico panameño para circuit completo
+- [[cozumel]] — El vecino del norte; más infraestructura, mayor precio
+- [[turks-caicos]] — El arrecife caribeño con mayor visibilidad
+- [[belize-great-blue-hole]] — El tercer lado del triángulo del Arrecife Mesoamericano
+- [[isla-mujeres]] — El tiburón ballena con más densidad del Caribe; Quintana Roo
 
 ## Fuentes
 
-- [Aggressor Adventures — Roatan Aggressor](https://www.aggressor.com/boat/ROA) — especificaciones del liveaboard y rutas Roatán-Utila-Cayos Cochinos
-- [Roatan Marine Park](https://www.roatanmarinepark.org) — organización de conservación del arrecife de Roatán
-- [Anthony's Key Resort](https://www.anthonyskey.com) — resort de buceo histórico de Roatán
+- [Coconut Tree Divers](https://www.coconuttreedivers.com/) — Operador de referencia; datos Mary's Place y condiciones
+- [Utila Dive Centre](https://www.utiladivecentre.com/) — Historial de avistamientos de tiburón ballena en Utila
+- [Bay Islands Tourism](https://www.bayislands.com/) — Información oficial de acceso y transporte inter-islas
+- [Mesoamerican Reef Alliance](https://www.maralliance.org/) — Estado de conservación del arrecife mesoamericano
