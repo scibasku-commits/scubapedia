@@ -1,116 +1,128 @@
 ---
-title: "Malapascua — El Tiburón Zorro de Monad Shoal"
+title: "Malapascua"
 type: destino-buceo
-region: "Sudeste Asiático"
+region: "Visayas del Norte / Cebú"
 pais: "Filipinas"
 puntos_inmersion_principales:
-  - "Monad Shoal (thresher cleaning station)"
-  - "Gato Island"
-  - "Kimud Shoal"
-  - "Lighthouse (pez mandarín)"
-  - "Lapus-Lapus Wreck"
+  - "Monad Shoal (tiburón zorro)"
+  - "Gato Island (tiburón toro nocturno)"
+  - "Kemod Shoal"
+  - "Logon Beach"
+  - "North Point"
+  - "Langub Beach"
 profundidad_min: 5
-profundidad_max: 35
-visibilidad_media: "10-25m (mejor temporada seca)"
-temperatura_agua_min: 27
+profundidad_max: 30
+visibilidad_media: "10-25m"
+temperatura_agua_min: 26
 temperatura_agua_max: 29
-corrientes: "Leves a moderadas en Monad Shoal; variables en otros puntos"
-temporada_alta: "Diciembre a Mayo (dry season; thresher todo el año)"
-temporada_baja: "Junio a Noviembre"
-certificacion_minima: "OW (AOWD recomendado por profundidad y horarios)"
+corrientes: "moderadas en la mayoría; corriente en Monad Shoal variable"
+temporada_alta: "noviembre a mayo"
+temporada_baja: "junio a octubre (tifones Filipinas; acceso a veces restringido)"
+certificacion_minima: "OW"
 vida_marina_destacada:
-  - "Tiburón zorro / thresher shark (Alopias pelagicus) — casi garantizado en sunrise"
-  - "Mantas y mobulas (ocasional)"
-  - "Tiburones de arrecife"
-  - "Pez mandarín (nocturnas en Lighthouse)"
-  - "Macro diverso en Gato Island"
-  - "Tiburón martillo (posible en Kimud Shoal)"
-liveaboards_disponibles:
-  - "Algunos liveaboards Visayas incluyen Malapascua"
+  - "Tiburón zorro pelágico (Alopias pelagicus) — Monad Shoal; el único punto fiable del mundo"
+  - "Tiburón toro (Carcharhinus leucas) — Gato Island nocturno"
+  - "Tiburón de puntas blancas de arrecife"
+  - "Raya mantarraya de arrecife (Mobula alfredi)"
+  - "Tortuga carey"
+  - "Nudibranquios (densidad alta)"
+  - "Pez mandarina (Synchiropus splendidus) — Langub Beach; avistamiento nocturno"
+liveaboards_disponibles: []
 centros_buceo_recomendados:
-  - "Evolution Diving (Malapascua)"
-  - "Cebu Divers"
-  - "Varios resorts con centro PADI en la isla"
+  - "Evolution Diving"
+  - "Thresher Shark Divers"
+  - "Sea Explorers Malapascua"
+  - "Exotic Dive Resort"
 proveedores_scibasku: []
-precio_semana_aprox: "800–1.600 EUR sin vuelos (resort + múltiples madrugadas a Monad)"
+precio_semana_aprox: "400-800 USD (resort + paquete buceo 7 noches; Malapascua es económico)"
 giora_estuvo: false
-updated: 2026-06-12
+updated: 2026-06-14
 status: draft
 tags:
-  - sudeste-asiatico
-  - tiburones
-  - pelagico
+  - filipinas
+  - visayas
+  - tiburon-zorro
+  - madrugada
+  - cebu
   - macro
-  - dayboat
-  - OW-friendly
-  - advanced
+  - pez-mandarina
 ---
 
-# Malapascua — El Tiburón Zorro de Monad Shoal
+# Malapascua
 
-> Filipinas · Cebu · Cert. mínima: OW (AOWD recomendado)
+> Filipinas · Cebú Norte · El único lugar del mundo con avistamiento fiable de tiburón zorro — todos los días, antes del amanecer
 
 ## Resumen
 
-Malapascua es la única isla del mundo donde el avistamiento de tiburón zorro (*thresher shark*) es casi una certeza diaria. Monad Shoal es una meseta submarina a 24–30m donde los threshers vienen cada madrugada a las estaciones de limpieza. Hay que madrugar — las inmersiones son al amanecer, con aguas oscuras y algo de frío — pero cuando el primer thresher con su cola desproporcionada aparece en el azul, entiende por qué vale la pena. Una isla pequeña y cálida con un producto único en el planeta.
+Malapascua es una isla con una única razón de ser en el mapa del buceo mundial: **Monad Shoal** — un banco marino a 20-30 metros de profundidad donde los tiburones zorros (*Alopias pelagicus*) acuden cada madrugada a que los peces limpiadores les retiren parásitos. No hay otro punto en el mundo con avistamiento consistente y diario de esta especie.
+
+El tiburón zorro pelágico (*thresher shark* en inglés) es uno de los animales más difíciles de ver en el océano. Una especie oceánica de aguas profundas, de hasta 6 metros de longitud total (la mitad es la aleta caudal superior), normalmente en el límite de la plataforma continental entre 200-500m. En Malapascua hace algo único: cada amanece —entre las 6am y las 8am— sube a la meseta de Monad Shoal para la limpieza, y puede observarse a 20-30m de profundidad desde barco de día.
+
+El factor "única vez" existe en muchos destinos. En Malapascua existe el factor "única vez, todos los días, durante décadas". Los guías de Malapascua conocen el protocolo exacto para no interferir con el comportamiento de los tiburones. El éxito de avistamiento en días con buenas condiciones es superior al 90%.
 
 ## Datos técnicos
 
 | Dato | Valor |
 |------|-------|
-| Profundidad | 5m - 35m (Monad Shoal: 24–30m) |
-| Visibilidad | 10–25m |
-| Temperatura agua | 27°C - 29°C |
-| Corrientes | Leves a moderadas en Monad |
-| Certificación mínima | OW (AOWD por profundidad de Monad y horarios nocturnos) |
-| Temporada alta | Diciembre–Mayo |
+| Profundidad | 5m (arrecife) - 30m (Monad Shoal) |
+| Visibilidad | 10-25m |
+| Temperatura del agua | 26-29°C |
+| Corrientes | Moderadas; Monad Shoal variable |
+| Certificación mínima | OW |
+| Temporada alta | Noviembre - Mayo |
+| Tipo de buceo | Tiburón pelágico en amanecer, arrecife, macro |
 
 ## Puntos de inmersión destacados
 
-- **Monad Shoal** — La razón de ir a Malapascua. Meseta a 24–30m donde los tiburones zorro (*Alopias pelagicus*) vienen a las cleaning stations antes del amanecer. Las inmersiones son a oscuras, en bangka, con salida a las 5am. Los threshers aparecen en el azul marino, su cola tan larga como el cuerpo, y dan vueltas sobre la meseta mientras los peces limpiadores los atienden. Un espectáculo de otro mundo.
-- **Gato Island** — Islote cercano con un sistema de cuevas y túneles habitados por tiburones blancos de punta de aleta y tiburones bambú; de noche, las cuevas se llenan de sharks durmiendo en el techo. Macro interesante en las paredes.
-- **Kimud Shoal** — Montaña submarina donde se avistan martillos ocasionalmente, especialmente en temporada.
-- **Lighthouse** — Muck diving cerca de la isla; el spot de pez mandarín de Malapascua es menos famoso que el de Yap pero igual de fotogénico.
-- **Lapus-Lapus Wreck** — Pequeño pecio cubierto de coral, accesible para OW; buena fauna de arrecife.
+### Monad Shoal — El tiburón zorro
+El shoal está a 20-30 minutos en barco seit Malapascua. Los barcos salen a las 5:30am para llegar antes del amanecer. Los buceadores descienden a la meseta a 20-30m y se posicionan en la corriente esperando que los tiburones zorros aparezcan desde debajo.
 
-## Vida marina
+El protocolo es fundamental: no flash, no luces blancas (las luces alejan a los tiburones), máxima quietud, sin tocar el fondo. Los guías locales conocen exactamente dónde posicionarse para maximum vis sin interferir. Los tiburones llegan, circulan durante 10-30 minutos en la estación de limpieza, y descienden de vuelta hacia aguas profundas.
 
-El **tiburón zorro** (*Alopias pelagicus*) es endémico de aguas tropicales del Indo-Pacífico y Malapascua tiene la cleaning station más accesible del mundo para observarlos. Su cola heterocerca (el lóbulo superior puede ser tan largo como el cuerpo) hace que sea inconfundible. No son grandes — 2,5–3m — pero son elegantes. Los guías conocen la meseta palmo a palmo y saben dónde posicionarse.
+El tiburón zorro tiene la aleta caudal superior tan larga como el resto del cuerpo — es el rasgo que hace que incluso los buceadores experimentados se queden sin aliento la primera vez que lo ven. Un animal de movimientos suaves, sin ningún interés en los buceadores.
 
-## Liveaboards
+### Gato Island — Tiburón toro nocturno
+Una isla pequeña al norte de Malapascua con una cueva submarina en la que los tiburones toro pasan las horas de bajo sol descansando. Por la noche, salen a cazar. Las inmersiones nocturnas frente a Gato Island tienen una probabilidad alta de encuentro con tiburones toro en comportamiento de caza activo — diferente de los encuentros diurnos pasivos de otros destinos.
 
-Malapascua funciona como **destino de isla**: vuelo a Cebu + carretera hasta Maya Port + bangka a Malapascua. Los resorts en la isla son de tamaño pequeño y muy focalizados en el buceo. Para Monad Shoal, la mayoría de centros hacen 1–2 inmersiones diarias al amanecer (5am). Se puede complementar con inmersiones vespertinas en otros puntos y nocturnas para el mandarín.
-
-## Mejor época para ir
-
-- **Diciembre–Mayo**: condiciones más calmadas, mejor visibilidad. Los threshers son residentes anuales — la temporada solo afecta a las condiciones de buceo, no a la probabilidad de avistamiento.
-- **Junio–Noviembre**: más lluvias y posibilidad de tifones, pero Monad Shoal sigue siendo buceable en muchos días. Los threshers no conocen de monzones.
+### Langub Beach — El pez mandarina
+Uno de los mejores puntos del mundo para el avistamiento del pez mandarina (*Synchiropus splendidus*). En la madrugada (5-6pm, justo antes de la puesta del sol), los peces mandarina salen de su escondite en el coral muerto de la bahía de Langub para reproducirse — 2-3 minutos de exposición máxima. El macho despliega su coloración azul-naranja neón completa en lo que es uno de los peces más fotogéniados del Índico-Pacífico.
 
 ## Cómo llegar
 
-**Vuelo:** Cebu (CEB) vía Manila (MNL) o vuelo internacional a Cebu. Desde Cebu, coche hasta Maya Port (norte de la isla, ~3h 30min) y bangka a Malapascua (~1h).
+| Tramo | Detalle |
+|-------|---------|
+| Vuelo internacional | Madrid → Cebú (CEB) vía Manila (MNL), vuelo doméstico 45 min o directo |
+| Ferry/barco | Maya Port (norte de Cebú) → Malapascua, 30-45 min en banca (barco local) |
+| Bus Maya | Cebú Norte Bus Terminal → Maya Port, ~3h |
+| Total | ~22-26h puerta a puerta desde Madrid |
 
-**Transfer:** Los resorts organizan transfers desde Cebu o desde Maya Port.
+**Nota:** La ruta Cebú-Maya-Malapascua es la ruta estándar. El puerto de Maya tiene bancos locales frecuentes.
 
-**Visado UE:** Exención automática hasta 30 días.
+**Visado:** Filipinas — ciudadanos españoles sin visado hasta 30 días.
+
+## Mejor época para ir
+
+- **Noviembre - Mayo:** La temporada óptima. Mar en calma para salir a Monad Shoal antes del amanecer — el mal tiempo cancela las excursiones. Noviembre-febrero tiene la vis más alta.
+- **Junio - Octubre:** Temporada de tifones en las Visayas. El acceso a Malapascua puede cortarse durante días. No recomendado para buceo programado.
 
 ## Nivel requerido
 
-**OW** puede ir a Monad Shoal — los fondos están a 24–30m, dentro del límite recreativo. Pero las inmersiones nocturnas en aguas oscuras, la gestión de la bangka en mar movido antes del amanecer y la necesidad de control fino de boyante para no molestar a los threshers hacen que **AOWD sea muy recomendable**. Los guías son estrictos con los briefings y el protocolo en Monad.
+**OW** para todos los puntos. Monad Shoal requiere solo cumplir el protocolo (no flash, quietud, no tocar fondo) — no es exigente técnicamente. Gato Island nocturno requiere experiencia en buceo nocturno (especialidad PADI o equivalente recomendada).
 
 ## Consejo Scibasku
 
-> Los zorros de Malapascua madrugan más que tú: el resort y el centro adecuados te lo ponen fácil.
-> [Te digo dónde dormir y con quién bucear →](mailto:info@viajesscibasku.com)
+Malapascua es la respuesta cuando alguien dice "quiero ver tiburones pero no quiero hacer un liveaboard de corriente extrema en el Pacífico". El tiburón zorro de Monad Shoal tiene la mejor relación esfuerzo/espectacularidad del buceo con tiburones en todo el mundo: barco de día, coste bajo, protocolo bien establecido, probabilidad alta. Y está en la misma ruta lógica que Dumaguete (3h al sur) — las dos islas juntas son la mejor semana de Filipinas.
 
 ## Fichas relacionadas
 
-- [[apo-island]] — Apo Island, tortugas y arrecife prístino a pocas horas
-- [[tubbataha]] — Tubbataha, el gran liveaboard Filipino
-- [[yap]] — Yap, el otro destino Pacific de mantas y mandarín
+- [[dumaguete]] — A 3h al sur; muck + Apo Island; la semana perfecta de Visayas
+- [[tubbataha]] — El Filipinas extremo; 4 meses al año, solo liveaboard
+- [[donsol]] — El otro tiburón de Filipinas: ballena en snorkel, Luzón Sur
+- [[cocos-island]] — El Pacífico Este extremo con tiburones en densidad máxima
 
 ## Fuentes
 
-- [Evolution Diving Resort](https://evolution.com.ph/) — Centro citado en la ficha, referencia técnica y recreativa en Malapascua
-- [Thresher Shark Divers](https://www.malapascua.net/) — Centro local especializado en las inmersiones con tiburón zorro
-- [PADI — Diving in Philippines](https://www.padi.com/diving-in/philippines/) — Panorámica del destino, puntos de inmersión y condiciones generales
+- [Evolution Diving Malapascua](https://www.evolution.com.ph/) — Operador de referencia para Monad Shoal; protocolo y estadísticas
+- [Thresher Shark Divers](https://www.threshersharkdivers.com/) — Datos específicos de avistamiento thresher
+- [Scuba Diving Magazine — Malapascua](https://www.scubadiving.com/) — Clasificación punto de tiburón zorro único en el mundo
+- [Marine Protected Area Network Philippines](https://mpa.bfar.da.gov.ph/) — Estado de protección de Monad Shoal
