@@ -1,112 +1,140 @@
 ---
-title: "Isla del Coco — El Filtro del Pacífico"
+title: "Isla Cocos"
 type: destino-buceo
-region: "Pacífico Este"
+region: "Pacífico Oriental Tropical / Costa Rica"
 pais: "Costa Rica"
 puntos_inmersion_principales:
-  - "Bajo Álcyone"
-  - "Manuelita"
-profundidad_min: 5
+  - "Bajo Alcyone"
+  - "Dirty Rock (Roca Sucia)"
+  - "Manuelita Reef"
+  - "Punta María"
+  - "Submerged Rock"
+  - "Dos Amigos"
+  - "Viking Rock"
+profundidad_min: 10
 profundidad_max: 40
-visibilidad_media: "10-25m (Bajo Álcyone y Manuelita: 15-25m; puede bajar a 8m)"
-temperatura_agua_min: 20
-temperatura_agua_max: 28
-corrientes: "Muy fuertes — oceánicas impredecibles, 'washing machine' con bajadas y subidas verticales; mínimo Advanced + 100 inmersiones"
-temporada_alta: "Junio–Noviembre (tiburones martillo en formaciones masivas; septiembre–noviembre: tiburones ballena)"
-temporada_baja: "Diciembre–Mayo (mantas y delfines presentes todo el año)"
-certificacion_minima: "Advanced Open Water + 100 inmersiones registradas"
+visibilidad_media: "15-30m (variable; la corriente y el plancton reducen vis pero traen los pelágicos)"
+temperatura_agua_min: 18
+temperatura_agua_max: 29
+corrientes: "muy fuertes; corriente oceánica constante; inmersiones de deriva obligatorias en puntos clave"
+temporada_alta: "junio a noviembre (agua cálida; mantas; tiburones activos en corriente)"
+temporada_baja: "diciembre a mayo (agua fría hasta 18°C; menos plancton; tiburones martillo más activos)"
+certificacion_minima: "AOWD con mínimo 100 inmersiones; experiencia en corriente fuerte obligatoria"
 vida_marina_destacada:
-  - "Tiburones martillo (*Sphyrna lewini*) en formaciones masivas (junio–noviembre)"
-  - "Tiburones ballena (septiembre–noviembre)"
-  - "Mantas oceánicas"
-  - "Delfines"
+  - "Tiburón martillo (Sphyrna lewini) — cardúmenes de 200-500 individuos"
+  - "Tiburón de Galápagos (Carcharhinus galapagensis)"
+  - "Tiburón tigre (Galeocerdo cuvier) — ocasional"
+  - "Tiburón toro (Carcharhinus leucas)"
+  - "Tiburón oceánico de punta blanca (Carcharhinus longimanus)"
+  - "Manta del Pacífico (Mobula birostris) — limpieza en Manuelita"
+  - "Delfín manchado del Pacífico (Stenella attenuata)"
+  - "Marlin rayado (Tetrapturus audax)"
+  - "Tortuga laúd"
 liveaboards_disponibles:
-  - "Okeanos Aggressor II (Aggressor Fleet)"
-  - "Cocos Island Aggressor (Aggressor Fleet)"
+  - "Okeanos Aggressor I & II"
+  - "Undersea Hunter / Sea Hunter"
+  - "Argo (Aggressor Fleet)"
+  - "Nautilus Under Sea"
 centros_buceo_recomendados: []
-proveedores_scibasku:
-  - "Aggressor Fleet"
-precio_semana_aprox: "3.000–6.000 EUR (liveaboard 7–10 noches, sin vuelos)"
+proveedores_scibasku: []
+precio_semana_aprox: "5.000-7.000 USD (liveaboard 10-12 noches desde Puntarenas, Costa Rica)"
 giora_estuvo: false
-updated: 2026-06-12
+updated: 2026-06-14
 status: draft
 tags:
-  - pacifico-este
-  - pelagico
-  - tiburones-martillo
-  - tiburones-ballena
-  - corriente-fuerte
-  - liveaboard
-  - advanced
-  - UNESCO
   - costa-rica
+  - pacifico-este
+  - tiburon-martillo
+  - liveaboard-obligatorio
+  - patrimonio-unesco
+  - remoto
+  - corriente-fuerte
+  - avanzado
 ---
 
-# Isla del Coco — El Filtro del Pacífico
+# Isla Cocos
 
-> Costa Rica · Pacífico Este · Cert. mínima: Advanced + 100 inmersiones
+> Costa Rica · Pacífico Oriental · El cardumen de tiburones martillo más grande del mundo — la isla más remota de Costa Rica
 
 ## Resumen
 
-Isla del Coco queda a 36 horas de navegación desde Puntarenas. La distancia no es un obstáculo — es el filtro. Patrimonio de la Humanidad UNESCO, esta isla deshabitada en medio del Pacífico Oriental concentra uno de los ecosistemas marinos más intactos del mundo: formaciones masivas de tiburones martillo (*Sphyrna lewini*) de junio a noviembre, tiburones ballena en otoño, y corrientes oceánicas que pueden llevar al buceador a sitios que no esperaba en cuestión de segundos. El "washing machine" de Bajo Álcyone — esa sensación de ser arrastrado hacia arriba y hacia abajo por columnas de agua — es una experiencia de buceo que no tiene equivalente. No es para todo el mundo. Y eso es precisamente lo que lo hace especial.
+Jacques Cousteau la llamó "la isla más bella del mundo". Los buceadores la llaman "el lugar donde vas a ver más tiburones martillo que en ningún otro sitio del planeta". Las dos descripciones son correctas.
+
+Isla Cocos es un Parque Nacional de Costa Rica ubicado a 550 kilómetros de la costa, en pleno Pacífico Oriental Tropical. No tiene infraestructura turística — ni hoteles, ni restaurantes, ni tiendas. Solo una estación de guardaparques de la marina costarricense y el muelle donde fondean los liveaboards. La única manera de llegar es en barco, 36 horas desde Puntarenas.
+
+La razón de ir es Bajo Alcyone. Una montaña submarina a 18-30 metros de profundidad donde la corriente oceánica ascendente concentra plancton, los planctívoros acuden al festín, y los tiburones martillo del Pacífico Oriental se agregan en cardúmenes de cientos de individuos que circulan en corriente. El récord documentado es de 500 tiburones martillo en una sola inmersión. No es garantizado. Pero si el número de tiburones martillo que quieres ver en un carrete fotográfico tiene más de un dígito, no hay otro destino en el planeta.
 
 ## Datos técnicos
 
 | Dato | Valor |
 |------|-------|
-| Profundidad | 5m - 40m |
-| Visibilidad | 10–25m (Bajo Álcyone y Manuelita: 15–25m; puede bajar a 8m) |
-| Temperatura agua | 20°C - 28°C (termoclinas frecuentes con bajadas a 20°C en profundidad) |
-| Corrientes | Muy fuertes — oceánicas impredecibles, efecto "washing machine" |
-| Certificación mínima | Advanced Open Water + 100 inmersiones registradas |
-| Traje recomendado | 5mm (7mm para buceadores que sienten el frío) |
-| Acceso | 36h en barco desde Puntarenas, Costa Rica |
-| Formato | Solo liveaboard, 7–10 noches |
+| Profundidad | 10m - 40m |
+| Visibilidad | 15-30m |
+| Temperatura del agua | 18-29°C (estacional) |
+| Corrientes | Muy fuertes; obligatorio manejo experto |
+| Certificación mínima | AOWD + 100 inmersiones mínimo recomendado |
+| Acceso | Solo liveaboard; 36h desde Puntarenas, Costa Rica |
+| Tipo de buceo | Pelágico extremo, corriente, tiburones en masa |
 
 ## Puntos de inmersión destacados
 
-- **Bajo Álcyone** — El site más icónico de Cocos y probablemente el más exigente. Una roca sumergida en medio de corrientes oceánicas donde los tiburones martillo se congregan en formaciones que pueden llegar a cientos de individuos. El "washing machine" es real: las corrientes verticales pueden subir o bajar al buceador varios metros en segundos sin previo aviso. Hay que tener criterio para no entrar en pánico y disfrutarlo.
-- **Manuelita** — Una isla pequeña adyacente a Cocos con un arrecife más accesible y visibilidad que puede alcanzar 15–25m. Tiburones de puntas blancas de arrecife, rayas, delfines y mantas hacen de este site una bocanada de aire (comparativamente) entre las inmersiones más intensas.
+### Bajo Alcyone
+La inmersión más icónica del destino. Una meseta submarina a 18-30m directamente en la ruta migratoria y de agregación de los tiburones martillo del Pacífico Este. Los buceadores se anclan detrás de las rocas con gancho (hook) para mantenerse en corriente sin derivar, y esperan a que los cardúmenes pasen. La corriente trae a los tiburones — si apagas el gancho y dejas que te lleve, emerges 500m mar adentro en cuestión de minutos. Requiere manejo experto de gancho, corriente, y profundidad.
 
-## Vida marina
+La visibilidad no es siempre las 30m de un arrecife tropical tranquilo. A veces el plancton la reduce a 10-15m. Eso es exactamente lo que atrae a los martillos. Si la vis es baja y hay suspensión, la probabilidad de tiburones sube.
 
-Los **tiburones martillo** (*Sphyrna lewini*) son el reclamo principal de junio a noviembre, cuando las corrientes frías traen el plancton que sustenta la cadena alimentaria. Las formaciones en Bajo Álcyone pueden ser masivas — docenas o cientos de individuos en columnas rotatorias. Los **tiburones ballena** aparecen de septiembre a noviembre, aprovechando la misma productividad oceánica. Las **mantas oceánicas** y los **delfines** están presentes todo el año. La diferencia con Galápagos es el contexto: Cocos es más oscuro, más crudo, más impredecible — no hay iguanas marinas ni leones marinos curiosos, solo pelágicos en un océano que manda.
+### Dirty Rock (Roca Sucia)
+Una roca volcánica que emerge del océano con pared vertical. En la cara norte: tiburones de Galápagos y oceánicos de punta blanca patrullando sin parar. En el fondo arenoso: tiburones leopardo y de punta negra descansando. Las mantas pasan en temporada (junio-noviembre) en el lado más expuesto a la corriente.
 
-## Liveaboards
+### Manuelita Reef
+La estación de limpieza clásica de Cocos. El arrecife tiene vaque de limpieza permanentes que atienden a mantas que se posicionan en columna de agua, con las alas extendidas y la boca abierta, esperando. Ver una manta del Pacífico de 5 metros inmóvil mientras peces limpiadores entran en su boca y branquias es una escena que en tierra no tiene equivalente.
 
-Isla del Coco solo es accesible en liveaboard — no hay infraestructura en tierra ni forma legal de bucear desde la costa. El acceso estándar es navegando **36 horas desde Puntarenas** (Costa Rica). En el mercado CB operan dos embarcaciones principales de la Aggressor Fleet: el **Okeanos Aggressor II** (36.5m, 22 pasajeros, desde 5.503€/semana) con más de 35 años de experiencia en estas aguas, y el **Cocos Island Aggressor** (37.8m, 22 pasajeros, desde 5.890€/semana, construido en 2022). Los itinerarios son de 7–10 noches con 3–4 inmersiones diarias.
-
-## Mejor época para ir
-
-- **Junio–Noviembre**: temporada principal para tiburones martillo en formaciones masivas. Septiembre–noviembre añade tiburones ballena. Agua más fría por corrientes de productividad.
-- **Septiembre–Noviembre**: el pico de la temporada para quien busca tanto martillos como ballenas en un mismo viaje.
-- **Todo el año**: mantas oceánicas y delfines presentes en cualquier mes. Cocos opera año redondo, aunque las condiciones de mar en el tránsito desde Puntarenas pueden ser duras en invierno del hemisferio norte.
+### Viking Rock
+El punto más profundo del itinerario clásico — pared que cae desde 10m hasta 40m+. Tiburones tigre en ocasiones en el límite del azul. Bancos de jureles y barracudas en el borde de la pared. La inmersión donde los buceadores gestionen bien el fondo de tiempo la recuerdan el resto de sus vidas.
 
 ## Cómo llegar
 
-**Vuelo:** Vuelo a San José (SJO) o Liberia (LIR), Costa Rica. Desde San José, traslado terrestre a Puntarenas (1.5–2 horas) donde embarca el liveaboard. Desde España: 14–16 horas con escala en Madrid o vía Miami/Bogotá.
+| Tramo | Detalle |
+|-------|---------|
+| Vuelo internacional | Madrid → San José, Costa Rica (SJO), directo en temporada o vía Miami/Madrid-Bogotá |
+| Transfer | San José → Puntarenas (1h30 en coche) |
+| Embarque | Puntarenas → Cocos en liveaboard: 36h de navegación oceánica |
 
-**Navegación:** 36 horas de tránsito en mar abierto desde Puntarenas hasta Isla del Coco. El Pacífico tropical puede ser generoso o muy movido — llevar medicación para el mareo si hay predisposición.
+**Nota:** Los liveaboards de Cocos hacen itinerarios de 10-12 noches mínimo — incluyendo 2 días de navegación ida y 2 de vuelta. El tiempo efectivo de buceo en el archipiélago son 6-8 días.
 
-**Visado UE:** Costa Rica no requiere visado para ciudadanos europeos (estancia hasta 90 días).
+**Visado:** Costa Rica — ciudadanos españoles sin visado hasta 90 días.
+
+**Tasa de Parque Nacional:** Obligatoria. Se paga al destino (parte de la tarifa del liveaboard habitualmente).
 
 ## Nivel requerido
 
-**Advanced Open Water mínimo, 100 inmersiones registradas** — el mismo umbral que Galápagos, con razón. Las corrientes oceánicas en Bajo Álcyone son impredecibles y el efecto "washing machine" puede desorientar incluso a buceadores experimentados. La diferencia con Galápagos es que aquí hay menos sites alternativos para retirarse si las condiciones están mal — o buceas en Cocos o esperas. Los guías de la Aggressor son experimentados en estas aguas y su criterio de go/no-go es definitivo.
+**Este es el destino más exigente del Pacífico Oriental para buceo recreativo.** Los operadores exigen historial real:
+
+- Mínimo 100 inmersiones (algunos operadores piden 200+)
+- Experiencia documentada en corriente fuerte
+- Certificación AOWD o equivalente
+- Conocimiento de uso de gancho (hook diving)
+
+La evacuación médica desde Cocos a San José tarda 36h de navegación + vuelo. Sin cámara hiperbárica en la isla. La gestión del plan de inmersión es responsabilidad del buceador.
 
 ## Consejo Scibasku
 
-> Treinta y seis horas de navegación se hacen muy largas en el barco equivocado.
-> [Te ayudo a elegir el correcto →](mailto:info@viajesscibasku.com)
+Cocos es el límite superior de la escala de buceo recreativo avanzado. No está recomendado para buceadores que quieren "una experiencia emocional" sin el kilometraje real. Sí está recomendado para el cliente que ya ha hecho Galápagos, quiere más tiburones martillo, y está dispuesto a invertir 36 horas de barco oceánico en cada dirección.
+
+El precio total (vuelo a San José + liveaboard 12 noches) supera los 6.000-7.000 EUR por persona. Es el destino de buceo más caro de nuestra cartera. El retorno en tiburones martillo por euro invertido es, estadísticamente, el más alto del mundo.
+
+Los operadores Undersea Hunter y Okeanos Aggressor llevan décadas en Cocos — son los de referencia. El Argo (Aggressor Fleet) es el barco más moderno y cómodo.
 
 ## Fichas relacionadas
 
-- [[galapagos]] — Galápagos, el Santo Grial del pelágico, con más variedad de especies
-- [[revillagigedo-socorro]] — Revillagigedo/Socorro, para las mantas oceánicas más interactivas del mundo
-- [[coiba-panama]] — Coiba, el otro Patrimonio UNESCO del Pacífico Este costarricense-panameño
+- [[galapagos]] — El vecino del Pacífico Este; más accesible y con más diversidad de especie
+- [[revillagigedo-socorro]] — El equivalente mexicano; 36h menos de barco
+- [[banda-sea]] — Liveaboard extremo del Indo-Pacífico; diferente fauna
+- [[osprey-reef]] — Liveaboard del Pacífico Sur australiano; tiburones en corriente
 
 ## Fuentes
 
-- [Aggressor Adventures](https://www.aggressor.com/) — Flota citada en la ficha: itinerarios y barcos a la Isla del Coco
-- [SINAC Costa Rica](https://www.sinac.go.cr/) — Sistema Nacional de Áreas de Conservación: autoridad del Parque Nacional Isla del Coco
-- [Fundación Amigos de la Isla del Coco (FAICO)](https://cocosisland.org/) — Fundación dedicada a la conservación de la Isla del Coco
+- [Undersea Hunter Group](https://www.underseahunter.com/) — Operador histórico; datos técnicos y estadísticas de avistamiento
+- [Okeanos Aggressor I & II](https://aggressor.com/vessel/okeanos-aggressor/) — Operador de referencia; calendario y precios
+- [UNESCO — Isla del Coco](https://whc.unesco.org/en/list/820/) — Ficha Patrimonio de la Humanidad
+- [Parque Nacional Isla del Coco — SINAC](https://www.sinac.go.cr/) — Regulación y permiso de Parque Nacional
