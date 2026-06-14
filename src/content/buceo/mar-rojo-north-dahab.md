@@ -67,6 +67,8 @@ Esa dualidad define el Mar Rojo Norte. La misma franja de agua que tiene el Blue
 
 Para un buceador español, el Mar Rojo Norte es el destino de "primera vez en aguas cálidas" más lógico del mundo: vuelo directo a Sharm el-Sheikh en 4 horas, temperatura del agua 26°C en noviembre, visibilidad de 30 metros, coste por inmersión más bajo de cualquier destino tropical accesible desde Europa.
 
+Para el detalle de Dahab como base, ver [[dahab]].
+
 ## Datos técnicos
 
 | Dato | Valor |
@@ -81,24 +83,24 @@ Para un buceador español, el Mar Rojo Norte es el destino de "primera vez en ag
 ## Puntos de inmersión destacados
 
 ### Blue Hole
-El point más fotografiado del Mar Rojo y el más malentendido. El Blue Hole de Dahab es un sumidero oceánico de aproximadamente 130 metros de diámetro y más de 100 metros de profundidad — una chimenea de roca coralina abierta al mar en su lado exterior por "The Arch", un arco a 52 metros de profundidad que conecta el interior del sumidero con el océano abierto.
+El point más fotografiado del Mar Rojo y el más malentendido. El Blue Hole de Dahab es un sumidero oceánico de aproximadamente 130 metros de diámetro y más de 100 metros de profundidad — una chimenea de roca coralina abierta al mar en su lado exterior por "The Arch", un arco a ~55 metros de profundidad que conecta el interior del sumidero con el océano abierto.
 
-Buckear en el Blue Hole es perfectamente seguro dentro de los límites de OW o AOWD: la pared interior del sumidero entre 0 y 30 metros es coral vertical espectacular, accesible desde la orilla, con visibilidad de 30-40 metros y sin corriente. Es una de las inmersiones de pared más bellas del Mar Rojo.
+Bucear en el Blue Hole es perfectamente seguro dentro de los límites de OW o AOWD: la pared interior del sumidero entre 0 y 30 metros es coral vertical espectacular, accesible desde la orilla, con visibilidad de 30-40 metros y sin corriente. Es una de las inmersiones de pared más bellas del Mar Rojo.
 
-Lo peligroso es The Arch — el arco a 52 metros. Numerosos buceadores sin certificación técnica han muerto intentando cruzarlo (narcosis de nitrógeno a esa profundidad, desorientación, pánico). **El Arch es territorio técnico (TDI/PADI Tec 50+). El Blue Hole hasta 30m es uno de los mejores arrecifes de Dahab.** Son dos experiencias distintas en el mismo lugar.
+Lo peligroso es The Arch — el arco a ~55 metros. Numerosos buceadores sin certificación técnica han muerto intentando cruzarlo (narcosis de nitrógeno a esa profundidad, desorientación, pánico). **El Arch es territorio técnico (TDI/PADI Tec 50+). El Blue Hole hasta 30m es uno de los mejores arrecifes de Dahab.** Son dos experiencias distintas en el mismo lugar.
 
 ### The Bell — La entrada profesional al Arch
 El punto de entrada al Blue Hole para los buceadores técnicos que quieren cruzar el Arch legalmente y con entrenamiento. Descenso exterior por la pared volcánica hasta 30+m, entrada por el Arch, ascenso interior. Con trimix o equipo doble, certificación Tec 45+. Solo con guía técnico local certificado y planificación previa de mezclas.
 
 ### The Lighthouse (Faro)
-El punto favorito de los operadores para segunda inmersión. Arrecife de coral duro en escalones desde 3m a 40m+, sin corriente, con diversidad de species comparable al Yongala pero en formato columna coralina. Pez ballonet de las Maldivas, murenas gigantes, leonfish abundante, tortuga carey que pasa sin mirarte. El ideal para el buceador que quiere 4 inmersiones al día sin stress logístico.
+El punto favorito de los operadores para segunda inmersión. Arrecife de coral duro en escalones desde 3m a 40m+, sin corriente, con diversidad de especies comparable al Yongala pero en formato columna coralina. Pez globo, murenas gigantes, leonfish abundante, tortuga carey que pasa sin mirarte. El ideal para el buceador que quiere 4 inmersiones al día sin stress logístico.
 
 ### Ras Mohammed — Shark Reef & Jolanda
 El Parque Nacional a 25km al sur de Sharm el-Sheikh, en la punta sur del Sinaí donde el Mar Rojo se divide en el Golfo de Suez y el Golfo de Aqaba. La corriente entre los dos golfos crea uno de los arrecifes más ricos del norte del Mar Rojo:
 
 **Shark Reef:** Pared de 800m con el napoleón residente más conocido del Mar Rojo (*Amos* — lleva décadas documentado con nombre), bancos de barracuda de 200-300 individuos, tiburones oceánicos de punta blanca en el azul profundo en temporada.
 
-**Jolanda Reef:** El pecio de un carguero cipriota que encalló en 1980 cargado de inodoros y accesorios de baño. El casco se ha separado en dos trozos que descansan en la pared exterior a 20-30m. La carga (cientos de inodoros de porcelana) está dispersa en la pendiente coralina. Los buceadores hacen fotos sentados en los inodoros colonizados de coral desde los años 80 — una de las imágenes más reproducidas del humor sumrino.
+**Jolanda Reef:** El pecio de un carguero cipriota que encalló en 1980 cargado de inodoros y accesorios de baño. El casco se ha separado en dos trozos que descansan en la pared exterior a 20-30m. La carga (cientos de inodoros de porcelana) está dispersa en la pendiente coralina. Los buceadores hacen fotos sentados en los inodoros colonizados de coral desde los años 80 — una de las imágenes más reproducidas del humor submarino.
 
 ## Cómo llegar
 
@@ -129,13 +131,12 @@ La combinación perfecta: **5 noches Dahab** (Blue Hole exterior, Lighthouse, Ca
 ## Fichas relacionadas
 
 - [[ss-thistlegorm]] — El Mar Rojo sur; el pecio más famoso; desde Hurghada o liveaboard
-- [[mar-rojo-sur]] — Las inmersiones más densas en biomasa del Mar Rojo
+- mar-rojo-sur — Las inmersiones más densas en biomasa del Mar Rojo
 - [[sharm-el-sheikh]] — El resort de Sharm propiamente; infraestructura diferente a Dahab
-- [[aqaba]] — El lado jordano del mismo Mar Rojo; menos turistas, misma agua
+- aqaba — El lado jordano del mismo Mar Rojo; menos turistas, misma agua
 
 ## Fuentes
 
-- [Dive Tribe Dahab](https://www.divetribedahab.com/) — Operador de referencia en Dahab; estadísticas Blue Hole
 - [Nesima Resort & Dive Center](https://www.nesima-resort.com/) — Resort-operador histórico; datos técnicos del arrecife
 - [Camel Dive Club](https://www.cameldive.com/) — Sharm el-Sheikh; excursiones Ras Mohammed y Jolanda
 - [Red Sea Diving Safari](https://www.redsea.net/) — Liveaboard Mar Rojo norte+sur; itinerarios completos

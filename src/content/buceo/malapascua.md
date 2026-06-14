@@ -56,7 +56,7 @@ tags:
 
 Malapascua es una isla con una única razón de ser en el mapa del buceo mundial: **Monad Shoal** — un banco marino a 20-30 metros de profundidad donde los tiburones zorros (*Alopias pelagicus*) acuden cada madrugada a que los peces limpiadores les retiren parásitos. No hay otro punto en el mundo con avistamiento consistente y diario de esta especie.
 
-El tiburón zorro pelágico (*thresher shark* en inglés) es uno de los animales más difíciles de ver en el océano. Una especie oceánica de aguas profundas, de hasta 6 metros de longitud total (la mitad es la aleta caudal superior), normalmente en el límite de la plataforma continental entre 200-500m. En Malapascua hace algo único: cada amanece —entre las 6am y las 8am— sube a la meseta de Monad Shoal para la limpieza, y puede observarse a 20-30m de profundidad desde barco de día.
+El tiburón zorro pelágico (*thresher shark* en inglés) es uno de los animales más difíciles de ver en el océano. Una especie oceánica de aguas profundas, de hasta ~3,5 metros de longitud total (la mitad es la aleta caudal superior), normalmente en el límite de la plataforma continental entre 200-500m. En Malapascua hace algo único: cada amanece —entre las 6am y las 8am— sube a la meseta de Monad Shoal para la limpieza, y puede observarse a 20-30m de profundidad desde barco de día.
 
 El factor "única vez" existe en muchos destinos. En Malapascua existe el factor "única vez, todos los días, durante décadas". Los guías de Malapascua conocen el protocolo exacto para no interferir con el comportamiento de los tiburones. El éxito de avistamiento en días con buenas condiciones es superior al 90%.
 
@@ -75,9 +75,9 @@ El factor "única vez" existe en muchos destinos. En Malapascua existe el factor
 ## Puntos de inmersión destacados
 
 ### Monad Shoal — El tiburón zorro
-El shoal está a 20-30 minutos en barco seit Malapascua. Los barcos salen a las 5:30am para llegar antes del amanecer. Los buceadores descienden a la meseta a 20-30m y se posicionan en la corriente esperando que los tiburones zorros aparezcan desde debajo.
+El shoal está a 20-30 minutos en barco desde Malapascua. Los barcos salen a las 5:30am para llegar antes del amanecer. Los buceadores descienden a la meseta a 20-30m y se posicionan en la corriente esperando que los tiburones zorros aparezcan desde debajo.
 
-El protocolo es fundamental: no flash, no luces blancas (las luces alejan a los tiburones), máxima quietud, sin tocar el fondo. Los guías locales conocen exactamente dónde posicionarse para maximum vis sin interferir. Los tiburones llegan, circulan durante 10-30 minutos en la estación de limpieza, y descienden de vuelta hacia aguas profundas.
+El protocolo es fundamental: no flash, no luces blancas (las luces alejan a los tiburones), máxima quietud, sin tocar el fondo. Los guías locales conocen exactamente dónde posicionarse para máxima visibilidad sin interferir. Los tiburones llegan, circulan durante 10-30 minutos en la estación de limpieza, y descienden de vuelta hacia aguas profundas.
 
 El tiburón zorro tiene la aleta caudal superior tan larga como el resto del cuerpo — es el rasgo que hace que incluso los buceadores experimentados se queden sin aliento la primera vez que lo ven. Un animal de movimientos suaves, sin ningún interés en los buceadores.
 
@@ -85,7 +85,7 @@ El tiburón zorro tiene la aleta caudal superior tan larga como el resto del cue
 Una isla pequeña al norte de Malapascua con una cueva submarina en la que los tiburones toro pasan las horas de bajo sol descansando. Por la noche, salen a cazar. Las inmersiones nocturnas frente a Gato Island tienen una probabilidad alta de encuentro con tiburones toro en comportamiento de caza activo — diferente de los encuentros diurnos pasivos de otros destinos.
 
 ### Langub Beach — El pez mandarina
-Uno de los mejores puntos del mundo para el avistamiento del pez mandarina (*Synchiropus splendidus*). En la madrugada (5-6pm, justo antes de la puesta del sol), los peces mandarina salen de su escondite en el coral muerto de la bahía de Langub para reproducirse — 2-3 minutos de exposición máxima. El macho despliega su coloración azul-naranja neón completa en lo que es uno de los peces más fotogéniados del Índico-Pacífico.
+Uno de los mejores puntos del mundo para el avistamiento del pez mandarina (*Synchiropus splendidus*). En el atardecer (5-6pm, justo antes de la puesta del sol), los peces mandarina salen de su escondite en el coral muerto de la bahía de Langub para reproducirse — 2-3 minutos de exposición máxima. El macho despliega su coloración azul-naranja neón completa en lo que es uno de los peces más fotografiados del Índico-Pacífico.
 
 ## Cómo llegar
 
@@ -117,7 +117,7 @@ Malapascua es la respuesta cuando alguien dice "quiero ver tiburones pero no qui
 
 - [[dumaguete]] — A 3h al sur; muck + Apo Island; la semana perfecta de Visayas
 - [[tubbataha]] — El Filipinas extremo; 4 meses al año, solo liveaboard
-- [[donsol]] — El otro tiburón de Filipinas: ballena en snorkel, Luzón Sur
+- donsol — El otro tiburón de Filipinas: ballena en snorkel, Luzón Sur
 - [[cocos-island]] — El Pacífico Este extremo con tiburones en densidad máxima
 
 ## Fuentes

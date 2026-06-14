@@ -102,7 +102,7 @@ Parte del Santuario de los Arcos, con el acceso más restringido del archipiéla
 |-------|---------|
 | Vuelo internacional | Madrid → Chennai (MAA) o Kolkata (CCU) → Port Blair (IXZ) vuelo doméstico, ~2h30 |
 | Total | ~16-20h puerta a puerta desde Madrid |
-| Inner Line Permit | No requerido para ciudadanos extranjeros en las islas turísticas principales (desde 2018), pero sí para islas tribales |
+| Restricted Area Permit (RAP) | No requerido para ciudadanos extranjeros en las islas turísticas principales (desde 2018), pero sí para islas tribales |
 
 **Nota:** La conectividad aérea a Port Blair mejora cada año. IndiGo y Air India operan vuelos frecuentes desde Chennai, Kolkata y Delhi. El vuelo internacional más eficiente es Bangalore (BLR) o Chennai (MAA) como hub.
 
@@ -135,6 +135,4 @@ La restricción geográfica (permiso para algunas zonas, isla tribal cerrada al 
 ## Fuentes
 
 - [Dive India Havelock](https://www.diveindia.com/) — Operador de referencia; datos de puntos y temporadas
-- [Barefoot Scuba](https://www.barefootscuba.com/) — Datos técnicos de Barren Island y liveaboard
 - [Andaman & Nicobar Islands Tourism](https://www.andamantourism.gov.in/) — Información oficial de permisos y acceso
-- [MV Cinque Explorer](https://www.cinque-explorer.com/) — Liveaboard local para Barren Island

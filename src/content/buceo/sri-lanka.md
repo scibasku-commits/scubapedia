@@ -4,7 +4,7 @@ type: destino-buceo
 region: "Océano Índico / Asia del Sur"
 pais: "Sri Lanka"
 puntos_inmersion_principales:
-  - "HMS Hermes (portaaviones 1942, Trincomalee)"
+  - "HMS Hermes (portaaviones 1942, Batticaloa)"
   - "Pigeon Island (Nilaveli)"
   - "Bar Reef (Kalpitiya)"
   - "Great Basses Reef (sur)"
@@ -59,7 +59,7 @@ tags:
 
 ## Resumen
 
-Sri Lanka tiene un problema de posicionamiento en el mundo del buceo: se asocia con templos, té y playas, no con vida marina de clase mundial. Es un error que los que han estado agradecen que persista, porque significa menos buceadores compitiendo por las mismas aguas. Lo cierto es que la isla tiene dos productos que no tienen equivalente simultáneo en ningún otro destino del mundo: la mayor concentración de **ballenas azules** accesibles a buceadores recreativos del planeta (frente a Mirissa, entre enero y abril), y el **HMS Hermes** — un portaaviones de la Royal Navy de 180 metros hundido en 1942 frente a Trincomalee, el pecio más grande accesible para buceo recreativo del Océano Índico.
+Sri Lanka tiene un problema de posicionamiento en el mundo del buceo: se asocia con templos, té y playas, no con vida marina de clase mundial. Es un error que los que han estado agradecen que persista, porque significa menos buceadores compitiendo por las mismas aguas. Lo cierto es que la isla tiene dos productos que no tienen equivalente simultáneo en ningún otro destino del mundo: la mayor concentración de **ballenas azules** accesibles a buceadores recreativos del planeta (frente a Mirissa, entre enero y abril), y el **HMS Hermes** — un portaaviones de la Royal Navy de 180 metros hundido en 1942 frente a Batticaloa, el pecio más grande accesible para buceo recreativo del Océano Índico.
 
 No hace falta elegir entre los dos. Están en la misma isla.
 
@@ -76,7 +76,7 @@ No hace falta elegir entre los dos. Están en la misma isla.
 
 ## Zonas y puntos de inmersión
 
-### HMS Hermes — Trincomalee (costa noreste)
+### HMS Hermes — Batticaloa (costa este)
 El portaaviones HMS Hermes fue hundido el 9 de abril de 1942 por la aviación japonesa en la Segunda Guerra Mundial — la primera vez en la historia que un portaaviones fue hundido por una fuerza aérea enemiga. Descansa a 27-54 metros de profundidad frente a la costa de Batticaloa, en la costa este de Sri Lanka.
 
 Es el portaaviones más grande accesible para buceo recreativo del mundo: 180 metros de eslora, cubierta de vuelo intacta, torre de mando en pie. Los cazas Swordfish que llevaba en cubierta han rodado por el fondo. La estructura completa está colonizada por coral duro y blando — el tiempo ha convertido el instrumento de guerra en un arrecife artificial.
@@ -134,7 +134,6 @@ La combinación óptima en 10-12 días: **3 noches Mirissa** (whale watching + b
 
 ## Fuentes
 
-- [Nilaveli Diving](https://www.nilveli-diving.com/) — Operador HMS Hermes; datos técnicos del portaaviones
+- [Nilaveli Diving](https://www.nilavelidivingcentre.com/) — Operador HMS Hermes; datos técnicos del portaaviones
 - [Mirissa Water Sports](https://www.mirissasrilanka.com/) — Whale watching; estadísticas de avistamiento por temporada
-- [Lanka Dive](https://www.lankadive.com/) — Operador nacional; datos de Bar Reef y Kalpitiya
 - [Sri Lanka Tourism Development Authority](https://www.srilanka.travel/) — Información oficial de acceso y visado

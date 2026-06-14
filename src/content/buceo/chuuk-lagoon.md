@@ -71,7 +71,7 @@ Chuuk Lagoon — conocida históricamente como Truk — es el cementerio de guer
 - **Fujikawa Maru** — El pecio estrella de Chuuk. Carguero japonés a 10–34m con la bodega llena de aviones Zero desmontados, cañones, bombas y coral blando naranja tapizando cada superficie. La inmersión más fotogénica del cementerio.
 - **San Francisco Maru** — El "navio de los tanques": en su bodega hay tres tanques M4 Sherman intactos. A 60m, territorio técnico, pero la experiencia es única.
 - **Heian Maru** — El buque más largo de Chuuk (160m), con torpedos Long Lance en las bodegas y un telegrafo de máquinas que parece sacado de una película. Principalmente en recreativo (hasta 33m).
-- **Shinkoku Maru** — Hospital ship japonés; sala de cirugía con equipamiento médico de los años 40 todavía en su sitio. Uno de los pecios más emotivos.
+- **Shinkoku Maru** — Petrolero de la flota japonesa (participó en el ataque a Pearl Harbor) con una enfermería a bordo: la sala con la mesa de operaciones y el instrumental médico de los años 40 sigue en su sitio. No era un buque hospital, pero es uno de los pecios más emotivos por ese detalle.
 - **Yamagiri Maru** — Bodegas llenas de proyectiles de 46cm destinados al acorazado Yamato. Estructura muy fotogénica cubierta de gorgonias.
 - **Emily Flying Boat** — Hidroavión japonés H8K sumergido en una bahía apartada. De las pocas aeronaves navegables que se pueden explorar con equipo de buceo.
 

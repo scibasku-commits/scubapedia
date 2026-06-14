@@ -29,7 +29,6 @@ vida_marina_destacada:
   - "Mantarraya de arrecife (Mobula alfredi) — Apo Island"
   - "Tortuga verde (alta densidad en Apo Island)"
   - "Nudibranquios (densidad excepcional; >300 especies zona)"
-  - "Pez dragón de hoja (Phycodurus eques) — residente conocido"
   - "Caballito de mar pigmeo"
   - "Pez fantasma enano (Solenostomus cyanopterus)"
 liveaboards_disponibles: []
@@ -84,7 +83,7 @@ No es el destino más glamouroso de Filipinas. Es el más completo.
 ### Dauin — Muck Diving
 La zona que pone a Dumaguete en el mapa macro. La costa de Dauin, al sur de la ciudad, tiene fondos de arena volcánica negra salpicados de esponjas, algas y tubos de bambú hundidos — el habitat perfecto para las criaturas más extrañas del Indo-Pacífico. Los operadores tienen guías especializados en macro que conocen los escondites fijos de cada especie: el pez fantasma ornamentado en las algas específicas, el calamar pigmeo en la esponja de la esquina, el pulpo mimético en el tramo de arena entre los dos pecios pequeños.
 
-**Sahara** — El punto más conocido de Dauin: fondo de arena blanca (el único blanco en un entorno volcánico negro) donde vive un residente de culto para los fotógrafos macro: el *pez dragón de hoja* (*Phycodurus*). Un pez que parece una rama de alga en movimiento. Hace décadas que los operadores tienen localizados individuos permanentes.
+**Sahara** — El punto más conocido de Dauin: fondo de arena blanca (el único blanco en un entorno volcánico negro), un escenario de culto para los fotógrafos macro. Hace décadas que los operadores tienen localizados los escondites fijos de las criaturas residentes.
 
 **Masaplod Norte** — El punto más rico en nudibranquios de la zona, con densidades que desafían la catalogación en una sola inmersión.
 

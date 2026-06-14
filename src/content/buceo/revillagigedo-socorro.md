@@ -9,7 +9,7 @@ puntos_inmersion_principales:
   - "Clarion"
   - "San Benedicto — El Cañón"
   - "Roca Partida"
-  - "Sop de Uva"
+  - "Punta Tosca"
 profundidad_min: 5
 profundidad_max: 40
 visibilidad_media: "20-40m"
@@ -88,6 +88,37 @@ La isla más remota y menos visitada del archipiélago — 120km más al oeste d
 
 ### Cabo Pearce (Socorro)
 El punto tranquilo del archipiélago por comparación. Pared de arrecife coralino con tiburones de punta blanca, morrenas, peces loro. El punto preferido cuando la corriente en Roca Partida hace imposible otro tipo de inmersión. También el lugar donde los delfines mulares interactúan con los buceadores en la columna de agua.
+
+## Vida marina
+
+Revillagigedo es un destino de grandes pelágicos: aquí no se bucea por el macro ni por el coral, sino por los encuentros con animales de gran tamaño en aguas abiertas.
+
+- **Mantas oceánicas gigantes** (*Mobula birostris*) — La estrella absoluta. Individuos de hasta 6 metros de envergadura con comportamiento de contacto y curiosidad: se acercan a los buceadores, se detienen frente a sus caras y orbitan al grupo durante largos minutos. Las burbujas del equipo parecen actuar como estímulo. No tiene equivalente en el Índico-Pacífico por su consistencia.
+- **Tiburón martillo** (*Sphyrna lewini*) — En cardúmenes de decenas de individuos, especialmente en los seamounts y bajos en corriente.
+- **Tiburón sedoso** (*Carcharhinus falciformis*) — Presencia constante en aguas abiertas, sobre todo en Roca Partida.
+- **Tiburón de Galápagos** (*Carcharhinus galapagensis*) — Densidad excepcional en los costados expuestos a corriente; especialmente abundante en Clarion.
+- **Delfines mulares** — Grupos interactivos que buscan el juego con los buceadores en la columna de agua, sobre todo en Cabo Pearce.
+- **Tiburón ballena** — Avistamientos estacionales en noviembre-diciembre.
+- **Ballenas jorobadas** — Entre enero y marzo, audibles bajo el agua y avistadas ocasionalmente desde los puntos más expuestos.
+
+## Liveaboards
+
+Revillagigedo es un destino **exclusivamente de liveaboard**: no hay alojamiento en tierra y la única forma de bucearlo es a bordo de un barco con varios días de itinerario. Las salidas parten de Cabo San Lucas o San José del Cabo, con unas 24 horas de navegación hasta San Benedicto, la primera isla del archipiélago.
+
+Operadores de referencia:
+
+- **Nautilus** — Belle Amie, Explorer y Gallant Lady; el operador histórico del archipiélago.
+- **Solmar V** — Décadas de operación; uno de los nombres clásicos del destino.
+- **Quino el Guardián** — Opción de buena relación calidad/precio.
+- **Rocio del Mar** — Itinerarios de temporada en el archipiélago.
+
+## Mejor época para ir
+
+- **Noviembre - Mayo:** Única temporada operativa; los liveaboards no salen en verano-otoño por el riesgo de ciclones en el Pacífico mexicano.
+- **Mantas y tiburones martillo** están presentes durante todo el periodo.
+- **Ballenas jorobadas** entre enero y marzo (audibles bajo el agua).
+- **Tiburón ballena** en noviembre-diciembre.
+- **Febrero - Abril:** Aguas más frías pero con mayor presencia de pelágico; traje de 7mm o seco recomendado.
 
 ## Cómo llegar
 

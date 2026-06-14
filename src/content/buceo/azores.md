@@ -23,7 +23,7 @@ temporada_baja: "noviembre a mayo (agua fría; mar más movido; menos pelágicos
 certificacion_minima: "OW (arrecife en calma); AOWD para banks oceánicos"
 vida_marina_destacada:
   - "Raya manta (Mobula birostris) — Banco Princesa Alice; ago-sep"
-  - "Mobula japonesa (Mobula japanica) — agregaciones estivales"
+  - "Manta diablo (Mobula tarapacana, sicklefin devil ray) — agregaciones estivales"
   - "Tiburón azul (Prionace glauca) — snorkel desde barco, verano"
   - "Tiburón sedoso (Carcharhinus falciformis) — Princesa Alice"
   - "Tiburón martillo (Sphyrna lewini) — ocasional en banks"
@@ -32,7 +32,7 @@ vida_marina_destacada:
   - "Delfín manchado del Atlántico (Stenella frontalis) — snorkel con delfines; residente"
   - "Mero (Epinephelus marginatus)"
 liveaboards_disponibles:
-  - "Atlantic Wings (liveaboard Azores)"
+  - "Sin liveaboard tradicional — buceo desde tierra/barco de día (CW Azores / Pico Sport)"
 centros_buceo_recomendados:
   - "Pico Sport (Pico)"
   - "Manta Diving (Faial)"
@@ -63,7 +63,7 @@ tags:
 
 Los Azores son el destino de buceo más infravalorado de Europa. A 4 horas de vuelo directo desde Madrid, en medio del Atlántico Norte, nueve islas volcánicas emergen de la Dorsal Mesoatlántica — la misma cadena montañosa que separa las placas Eurasiatica y Americana bajo el océano. Los bancos submarinos alrededor de las islas son seamounts que crean corrientes ascendentes que bombean nutrientes desde el abismo, y ese upwelling alimenta una de las cadenas tróficas más productivas del Atlántico Norte.
 
-El resultado: móbulas en agregaciones masivas en verano, tibackbones de Atlántico Norte — incluyendo el tiburón azul, el cetáceo más avistado del mundo en aguas europeas, y los cachalotes residentes que los de los Azores llevan décadas estudiando. Y todo esto sin necesidad de visado, en euros, con vuelo directo desde Madrid.
+El resultado: móbulas en agregaciones masivas en verano y los elasmobranquios estrella del Atlántico Norte — el tiburón azul y el mako, los escualos más accesibles en aguas europeas — junto con los cachalotes residentes, los cetáceos que los azorianos llevan décadas estudiando. Y todo esto sin necesidad de visado, en euros, con vuelo directo desde Madrid.
 
 Para el buceador español que quiere el primer gran destino europeo sin cruzar oceano ni Asia, los Azores es la respuesta que no sabía que tenía.
 
@@ -85,7 +85,7 @@ Para el buceador español que quiere el primer gran destino europeo sin cruzar o
 Un seamount a 60 millas al suroeste de Faial, en aguas abiertas del Atlántico. La meseta del banco está entre 30-50m, visible en fondo en los puntos de borde. Entre agosto y octubre, el banco actúa de punto de agregación para:
 
 - **Mantas oceánicas** (*Mobula birostris*) en grupos de 20-50 individuos — uno de los pocos puntos del Atlántico con mantas oceánicas en densidad.
-- **Mobulas japonesas** (*Mobula japanica*) en bancos de miles de individuos que forman tornados en la columna de agua. Uno de los espectáculos de elasmobranquios más grandes del Atlántico.
+- **Mantas diablo** (*Mobula tarapacana*) en bancos de decenas de individuos que forman agregaciones en la columna de agua. Uno de los espectáculos de elasmobranquios más grandes del Atlántico — el Banco Princesa Alice es uno de los pocos puntos del mundo donde esta especie se agrega de forma fiable.
 - **Tiburones sedosos y oceánicos** que siguen las agregaciones de plancton y peces.
 
 El banco está a 2-3h de barco de Faial u Horta y solo puede bucearse en condiciones de mar en calma — el Atlántico no siempre coopera. Pero cuando las condiciones alinean, es la inmersión más espectacular del Atlántico Norte.
@@ -134,7 +134,7 @@ El producto completo para un cliente con tiempo limitado: **5 noches en Faial** 
 ## Fichas relacionadas
 
 - [[madeira]] — El otro archipiélago atlántico portugués; más arrecife, menos pelágico
-- [[canarias]] — España: el Atlántico más cercano; angelotes + barracudas
+- canarias — España: el Atlántico más cercano; angelotes + barracudas
 - [[dominica]] — El Caribe atlántico con cachalotes residentes; diferente escala de viaje
 - [[fernando-noronha]] — El Atlántico Sur; visibilidad 40m; diferente distancia y coste
 

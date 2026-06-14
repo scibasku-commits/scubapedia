@@ -84,13 +84,13 @@ La inmersión más icónica del destino. Una meseta submarina a 18-30m directame
 La visibilidad no es siempre las 30m de un arrecife tropical tranquilo. A veces el plancton la reduce a 10-15m. Eso es exactamente lo que atrae a los martillos. Si la vis es baja y hay suspensión, la probabilidad de tiburones sube.
 
 ### Dirty Rock (Roca Sucia)
-Una roca volcánica que emerge del océano con pared vertical. En la cara norte: tiburones de Galápagos y oceánicos de punta blanca patrullando sin parar. En el fondo arenoso: tiburones leopardo y de punta negra descansando. Las mantas pasan en temporada (junio-noviembre) en el lado más expuesto a la corriente.
+Una roca volcánica que emerge del océano con pared vertical. En la cara norte: tiburones de Galápagos y oceánicos de punta blanca patrullando sin parar. En el fondo arenoso: tiburones de punta blanca de arrecife (whitetip reef) y de punta negra descansando. Las mantas pasan en temporada (junio-noviembre) en el lado más expuesto a la corriente.
 
 ### Manuelita Reef
-La estación de limpieza clásica de Cocos. El arrecife tiene vaque de limpieza permanentes que atienden a mantas que se posicionan en columna de agua, con las alas extendidas y la boca abierta, esperando. Ver una manta del Pacífico de 5 metros inmóvil mientras peces limpiadores entran en su boca y branquias es una escena que en tierra no tiene equivalente.
+La estación de limpieza clásica de Cocos. El arrecife tiene estaciones de limpieza permanentes que atienden a mantas que se posicionan en columna de agua, con las alas extendidas y la boca abierta, esperando. Ver una manta del Pacífico de 5 metros inmóvil mientras peces limpiadores entran en su boca y branquias es una escena que en tierra no tiene equivalente.
 
 ### Viking Rock
-El punto más profundo del itinerario clásico — pared que cae desde 10m hasta 40m+. Tiburones tigre en ocasiones en el límite del azul. Bancos de jureles y barracudas en el borde de la pared. La inmersión donde los buceadores gestionen bien el fondo de tiempo la recuerdan el resto de sus vidas.
+El punto más profundo del itinerario clásico — pared que cae desde 10m hasta 40m+. Tiburones tigre en ocasiones en el límite del azul. Bancos de jureles y barracudas en el borde de la pared. La inmersión donde los buceadores que gestionan bien el fondo de tiempo la recuerdan el resto de sus vidas.
 
 ## Cómo llegar
 

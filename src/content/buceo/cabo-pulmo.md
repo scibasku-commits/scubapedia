@@ -99,7 +99,7 @@ Cabo Pulmo demuestra en la práctica lo que los modelos matemáticos de ecologí
 - **Tiburón martillo** — En El Bajo durante la temporada de corriente (junio-octubre). No es garantizado como en Galápagos, pero los registros son consistentes.
 - **Mantas del Pacífico** — Paso ocasional, especialmente en verano. Los operadores avisan cuando hay avistamientos previos en los días previos.
 - **Rayas águila** — Presencia regular en los puntos de arena entre estructuras coralinas. En verano se agregan en grupos de 10-20 individuos.
-- **Cobertura de coral** — La estadística que lo dice todo: en 1995, el arrecife tenía menos del 5% de cobertura de coral vivo. En 2016, más del 60%. Los datos los publicó Enric Sala (National Geographic Society) en colaboración con UNAM.
+- **Cobertura de coral** — La estadística que lo dice todo: en 1995, el arrecife tenía menos del 5% de cobertura de coral vivo. En 2016, más del 60%. Los datos los publicaron Aburto-Oropeza et al., 2011 (con Enric Sala como coautor, National Geographic Society) en colaboración con UNAM.
 
 ## Cómo llegar
 
@@ -145,6 +145,6 @@ Lo que lo diferencia de Los Cabos turístico (que está a 90 minutos de distanci
 ## Fuentes
 
 - [Cabo Pulmo Divers](https://www.cabopulmodivers.com/) — Operador local de referencia; datos de sitios y temporadas
-- [Enric Sala / National Geographic — Cabo Pulmo Recovery Study](https://www.nationalgeographic.com/science/article/cabo-pulmo-biomass-recovery) — Estudio PLOS ONE sobre la recuperación del 463%
+- [Aburto-Oropeza et al., 2011 — Large Recovery of Fish Biomass in a No-Take Marine Reserve (PLOS ONE)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0023601) — Estudio PLOS ONE sobre la recuperación del 463%
 - [CONANP — Parque Nacional Cabo Pulmo](https://www.gob.mx/conanp) — Regulación, zonificación y normativa del Parque
 - [Cortez Club La Paz](https://cortezclub.com/) — Excursiones desde La Paz con datos técnicos de El Bajo

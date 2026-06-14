@@ -83,7 +83,7 @@ Este es el mejor buceo de cueva/caverna del mundo. No hay debate posible.
 El mejor punto de introducción para no-cuevistas y snorkelistas. Una plataforma abierta con vegetación tropical colgando sobre el agua, seguida de galerías iluminadas con formaciones de estalactitas intactas. Buceadores OW con guía y snorkelistas comparten el espacio en zonas distintas. Tortugas de agua dulce duermen en los fondos de arena.
 
 ### Dos Ojos ("Two Eyes")
-Dos aberturas de entrada — los ojos — conectadas por un sistema de galerías que es uno de los más fotografiados del mundo. El "Barbie Line", una galería con columnas de calcita blanca perfectamente simétricas a ambos lados del hilo de navegación, es la escena que aparece en todos los documentales de cueva. Sistema Sac Actun, del que forma parte, es el sistema acuático más largo del mundo con más de 347 km explorados.
+Dos aberturas de entrada — los ojos — conectadas por un sistema de galerías que es uno de los más fotografiados del mundo. El "Barbie Line", una galería con columnas de calcita blanca perfectamente simétricas a ambos lados del hilo de navegación, es la escena que aparece en todos los documentales de cueva. Sistema Sac Actun, del que forma parte, es uno de los sistemas de cuevas inundadas más largos del mundo (~376 km).
 
 ### The Pit (Cenote Pit)
 La inmersión más dramática del Yucatán. Un pozo vertical de 40 metros de profundidad con una halocline —la interfaz visual entre agua dulce y salada— a 30m que distorsiona toda perspectiva como si te sumergieras en aceite. Por encima de la halocline: azul transparente, rayos de luz filtrándose desde la abertura. Por debajo: negro y sulfuroso. Una capa de gas H₂S a 30m crea una niebla blanca sobre la que flotan los restos de árboles sumergidos en posición vertical, como un bosque fantasma. Solo para Advanced o Cave Diver.
@@ -157,6 +157,6 @@ Lo que nadie te dice: las colas del Gran Cenote en temporada alta (julio-agosto)
 ## Fuentes
 
 - [Koox Diving Tulum](https://kooxdiving.com/) — Operador de referencia local para cenotes y cursos de cave diving
-- [Sistema Sac Actun / CINDAQ](https://cindaq.org/) — Exploración y base de datos del sistema de cuevas más largo del mundo
+- [Sistema Sac Actun / CINDAQ](https://cindaq.org/) — Exploración y base de datos de uno de los sistemas de cuevas inundadas más largos del mundo
 - [Scuba Diving Magazine — Cenotes #1 Cave Diving](https://www.scubadiving.com/worlds-best-scuba-diving-destinations) — Referencia de ranking en categoría Cave Diving
-- [Aquatech Divers](https://www.cenoteaquatech.com/) — Centro Akumal; datos técnicos de sistemas y condiciones
+- [Aquatech Dive Center (Villas DeRosa, Akumal)](https://www.aquatechdivecenter.com/) — Centro Akumal / Dos Ojos; datos técnicos de sistemas y condiciones

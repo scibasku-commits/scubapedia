@@ -116,7 +116,7 @@ La combinación ideal es 7 noches en Koror: 3 días de pecios + Blue Corner + Ge
 
 ## Fichas relacionadas
 
-- [[truk-lagoon]] — Micronesia; el cementerio de guerra a 3h de vuelo
+- [[chuuk-lagoon]] — Micronesia; el cementerio de guerra a 3h de vuelo
 - [[revillagigedo-socorro]] — El Pacífico extremo con corriente; diferente escala
 - [[osprey-reef]] — Australia: tiburones en corriente oceánica; mismo espíritu
 - [[tubbataha]] — El Pacífico Filipino; liveaboard obligatorio; arrecife intacto
@@ -125,5 +125,3 @@ La combinación ideal es 7 noches en Koror: 3 días de pecios + Blue Corner + Ge
 
 - [Fish n Fins Palau](https://www.fishnfins.com/) — Operador histórico de Blue Corner; datos técnicos y condiciones
 - [Sam's Tours Palau](https://www.samstours.com/) — Excursiones Jellyfish Lake; estado actual del lago
-- [Palau National Marine Sanctuary](https://pnms.pw/) — Regulación y conservación del arrecife
-- [Koror State Government](https://www.koror.ps/) — Palau Pledge y tasa de Parque

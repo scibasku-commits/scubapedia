@@ -116,7 +116,7 @@ El itinerario típico de liveaboard Banda Sea cubre 8-10 islas del archipiélago
 - [[raja-ampat]] — El Indo-Pacífico ultimate; más accesible que Banda
 - [[komodo]] — El liveaboard de Indonesia con mejor accesibilidad
 - [[similan-surin-richelieu]] — El liveaboard del Andamán; más accesible desde Europa
-- [[truk-lagoon]] — El liveaboard extremo del Pacífico; diferente fauna
+- [[chuuk-lagoon]] — El liveaboard extremo del Pacífico; diferente fauna
 
 ## Fuentes
 

@@ -55,7 +55,7 @@ tags:
 
 ## Resumen
 
-Entre junio y septiembre, frente a la costa noreste de la Península de Yucatán, ocurre algo que no pasa en ningún otro lugar del planeta con esta regularidad y esta magnitud: cientos de tiburones ballena se congregan para alimentarse de los huevos de atún de aleta amarilla que flotan en la superficie del Caribe mexicano. El fenómeno se conoce como *Afuera* — literalmente "fuera", porque ocurre en aguas oceánicas a 15-40 millas de la costa. Y la base de operaciones es Isla Mujeres, la pequeña isla frente a Cancún que se ha convertido en la capital mundial del turismo con tiburones ballena.
+Entre junio y septiembre, frente a la costa noreste de la Península de Yucatán, ocurre algo que no pasa en ningún otro lugar del planeta con esta regularidad y esta magnitud: cientos de tiburones ballena se congregan para alimentarse de los huevos de bonito (little tunny, *Euthynnus alletteratus*) que flotan en la superficie del Caribe mexicano. El fenómeno se conoce como *Afuera* — literalmente "fuera", porque ocurre en aguas oceánicas a 15-40 millas de la costa. Y la base de operaciones es Isla Mujeres, la pequeña isla frente a Cancún que se ha convertido en la capital mundial del turismo con tiburones ballena.
 
 El número de individuos documentados en una sola temporada supera los 400. En un mismo día se han contado más de 100 tiburones ballena simultáneamente en el agua. No hay una experiencia equivalente en escala en ningún otro destino del mundo. Y es en snorkel — el mayor pez del océano a dos metros de tu cara sin necesidad de tanque.
 
@@ -74,7 +74,7 @@ El número de individuos documentados en una sola temporada supera los 400. En u
 ## La experiencia del tiburón ballena
 
 ### Cómo funciona
-Los operadores salen a las 7am desde Isla Mujeres o Cancún hacia las zonas oceánicas donde la mancha de huevos de atún (la *spawn slick*) atrae a los tiburones ballena. El acceso es en snorkel - nunca en buceo, por regulación desde 2013: el burbujeo aleja a los animales.
+Los operadores salen a las 7am desde Isla Mujeres o Cancún hacia las zonas oceánicas donde la mancha de huevos de bonito (la *spawn slick*) atrae a los tiburones ballena. El acceso es en snorkel - nunca en buceo, por regulación desde 2013: el burbujeo aleja a los animales.
 
 Protocolo estándar marcado por SEMARNAT (Secretaría de Medio Ambiente mexicana):
 - Máximo 2 snorkelistas + 1 guía por tiburón ballena simultáneamente
@@ -83,7 +83,7 @@ Protocolo estándar marcado por SEMARNAT (Secretaría de Medio Ambiente mexicana
 - Tiempo máximo de 30 minutos por grupo en el agua
 - Los barcos no pueden usar motor dentro de 200 metros
 
-El resultado es una rotación organizada pero con tiempo real en el agua con los animales. Un tiburón ballena de 8-10 metros alimentándose en superficie, boca abierta de 1.5 metros filtrando miles de litros, huevos de atún naranja flotando alrededor — y tú nadando a su lado.
+El resultado es una rotación organizada pero con tiempo real en el agua con los animales. Un tiburón ballena de 8-10 metros alimentándose en superficie, boca abierta de 1.5 metros filtrando miles de litros, huevos de bonito naranja flotando alrededor — y tú nadando a su lado.
 
 ### La Cueva de los Tiburones Dormidos
 Un fenómeno científicamente documentado único en el mundo: en las cuevas submarinas frente a la punta nordeste de Isla Mujeres, los tiburones de punta blanca y los tiburones nodriza se acumulan en estado de reposo — semi-inactivos, apilados en los ledges. Los científicos creen que la composición del agua (mezcla dulce y salada) actúa como anestésico natural. Los buceadores pueden descender a 20m y observar tiburones inmóviles a distancias de contacto visual extremo. Solo con guía; no tocar.
@@ -105,7 +105,7 @@ Más allá del tiburón ballena, el arrecife de Isla Mujeres tiene valor propio.
 
 ## Consejo Scibasku
 
-La experiencia del tiburón ballena en Isla Mujeres no tiene equivalente por escala. Oslob (Filipinas) tiene tiburones condicionados por pesca — los de Isla Mujeres están aquí por su propia agenda biológica, comiendo huevos de atún. Donsol (Filipinas) tiene más individuos en temporada punta pero menor regularidad. Ninguno tiene 400 individuos documentados en una temporada.
+La experiencia del tiburón ballena en Isla Mujeres no tiene equivalente por escala. Oslob (Filipinas) tiene tiburones condicionados por pesca — los de Isla Mujeres están aquí por su propia agenda biológica, comiendo huevos de bonito. Donsol (Filipinas) tiene más individuos en temporada punta pero menor regularidad. Ninguno tiene 400 individuos documentados en una temporada.
 
 Si un cliente tiene familia con niños mayores de 8 años y quiere la experiencia de vida del tiburón ballena — Isla Mujeres en julio es la respuesta. Combinar con [[cenotes-yucatan]] (1h30 al sur en coche) es la semana perfecta del Caribe mexicano.
 
@@ -113,7 +113,7 @@ Si un cliente tiene familia con niños mayores de 8 años y quiere la experienci
 
 - [[cenotes-yucatan]] — A 90min en coche; la otra experiencia única del Yucatán
 - [[cozumel]] — El arrecife de alta calidad a 45 min en ferry; para los días sin ballenas
-- [[donsol]] — El equivalente filipino; otra dinámica, mismo animal
+- donsol — El equivalente filipino; otra dinámica, mismo animal
 - [[cabo-pulmo]] — El Pacífico mexicano; tiburones toro y banco de jureles
 
 ## Fuentes

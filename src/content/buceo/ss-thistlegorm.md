@@ -56,7 +56,7 @@ tags:
 
 ## Resumen
 
-La noche del 5 al 6 de octubre de 1941, dos bombarderos alemanes encontraron en el Estrecho de Gubál — en el Mar Rojo — el SS Thistlegorm, un carguero británico de 126 metros cargado con suministros para el VIII Ejército de Montgomery en el norte de África. Las bombas alcanzaron el cargo: munición. La explosión partió el barco y lo hundió en minutos a 32 metros. Murieron nueve tripulantes. Los 4.000 toneladas de carga de guerra quedaron en el fondo.
+La noche del 5 al 6 de octubre de 1941, dos bombarderos alemanes encontraron en el Estrecho de Gubál — en el Mar Rojo — el SS Thistlegorm, un carguero británico de 128 metros cargado con suministros para el VIII Ejército de Montgomery en el norte de África. Las bombas alcanzaron el cargo: munición. La explosión partió el barco y lo hundió en minutos a 32 metros. Murieron nueve tripulantes. Los 4.000 toneladas de carga de guerra quedaron en el fondo.
 
 Jacques Cousteau lo encontró en 1955. Lo filmó. Y lo olvidó — en la transcripción de sus cuadernos, no publicó las coordenadas exactas. El Thistlegorm pasó 40 años prácticamente solo hasta que los operadores locales lo redescubrieron en los 90. Lo que encontraron en el fondo no tenía precedente en la experiencia de buceo mundial: motocicletas Norton 16H con sus sidecars, camiones Bedford intact, locomotoras de tren, cajas de botas de goma, radios de campaña, rifles Lee-Enfield en sus cajas originales. Una instantánea de la Segunda Guerra Mundial congelada bajo el agua. Desde entonces, el Thistlegorm se ha convertido sistemáticamente en el pecio más buceado del mundo y en la referencia del buceo de pecios en el Mar Rojo.
 
@@ -135,4 +135,3 @@ Combínalo con el circuito clásico del Mar Rojo Norte: Ras Mohammed → Shark R
 - [Emperor Divers — Thistlegorm](https://www.emperordivers.com/egypt/) — Proveedor local; itinerarios y datos de temporadas
 - [National Geographic — SS Thistlegorm](https://www.nationalgeographic.com/) — Historia del hundimiento y redescubrimiento por Cousteau
 - [Scuba Diving Magazine — Best Wrecks](https://www.scubadiving.com/) — Ranking pecio más buceado del mundo
-- [Wreck Map Egypt](https://www.egypt-wrecks.com/) — Coordenadas y datos técnicos del pecio

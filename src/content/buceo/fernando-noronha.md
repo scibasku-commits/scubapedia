@@ -128,8 +128,8 @@ El cliente ideal es el que ya ha hecho el Caribe y quiere algo que no comparte c
 
 - [[bahamas]] — El Atlántico accesible con tiburones; diferente registro
 - [[turks-caicos]] — Caribe con alta vis; más accesible desde Europa
-- [[colombia-caribe]] — El Atlántico sudamericano con malpelo en el Pacífico
-- [[abrolhos]] — El otro archipiélago atlántico de Brasil; ballenas jorobadas
+- colombia-caribe — El Atlántico sudamericano con malpelo en el Pacífico
+- abrolhos — El otro archipiélago atlántico de Brasil; ballenas jorobadas
 
 ## Fuentes
 

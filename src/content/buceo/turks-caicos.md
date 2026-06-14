@@ -32,7 +32,7 @@ vida_marina_destacada:
   - "Raya águila manchada"
   - "Mero Nassau"
 liveaboards_disponibles:
-  - "Turks & Caicos Explorer (liveaboard local)"
+  - "Turks & Caicos Explorer II (liveaboard local)"
 centros_buceo_recomendados:
   - "Provo Turtle Divers (Providenciales)"
   - "Big Blue Collective"
@@ -59,7 +59,7 @@ tags:
 
 ## Resumen
 
-Turks & Caicos tiene un problema de percepción: mucha gente lo asocia con resorts de lujo para famosos en Grace Bay y no sabe que debajo del agua que bordea esos resorts hay paredes verticales que caen 2.000 metros sin escalón. El arrecife de la plataforma insular de Caicos es el tercer mayor arrecife del Caribe, después de Belice y la Barrera de Coral de Florida, y tiene algo que muy pocos destinos caribeños pueden ofrecer: visibilidad de 30-60 metros en aguas sin sedimento continental, arrecifes sin presión turística masiva, y concentraciones de tiburones de arrecife que en zonas como French Cay recuerdan más a los vídeos de los años 90 que al Caribe actual.
+Turks & Caicos tiene un problema de percepción: mucha gente lo asocia con resorts de lujo para famosos en Grace Bay y no sabe que debajo del agua que bordea esos resorts hay paredes verticales que caen 2.000 metros sin escalón. El arrecife de la plataforma insular de Caicos es uno de los mayores sistemas de arrecife del mundo (tras la Gran Barrera australiana y el Mesoamericano de Belice), y tiene algo que muy pocos destinos caribeños pueden ofrecer: visibilidad de 30-60 metros en aguas sin sedimento continental, arrecifes sin presión turística masiva, y concentraciones de tiburones de arrecife que en zonas como French Cay recuerdan más a los vídeos de los años 90 que al Caribe actual.
 
 No es el destino más famoso del Caribe entre buceadores. Eso es exactamente lo que lo hace valioso.
 

@@ -15,7 +15,7 @@ puntos_inmersion_principales:
 profundidad_min: 5
 profundidad_max: 30
 visibilidad_media: "5-30m (extremadamente variable; el nutriente del Índico reduce vis pero trae la fauna)"
-temperatura_agua_min: 16
+temperatura_agua_min: 20
 temperatura_agua_max: 28
 corrientes: "muy fuertes; Komodo tiene algunas de las corrientes de buceo más fuertes del mundo; imprescindible experiencia"
 temporada_alta: "abril a agosto (agua más fría del norte; mantas activas; mejor vis)"
@@ -29,6 +29,7 @@ vida_marina_destacada:
   - "Tiburón sedoso"
   - "Caballito de mar pigmeo (Hippocampus bargibanti) — coral gorgonia"
   - "Pulpo mimético (Thaumoctopus mimicus)"
+  - "Mola mola (Mola mola) — sur de Komodo, temporada de upwelling frío (ago-oct)"
   - "Dugongo (Dugong dugon)"
   - "Dragón de Komodo (en tierra — Isla Komodo e Isla Rinca)"
 liveaboards_disponibles:
@@ -87,7 +88,7 @@ Una roca de 15 metros que emerge del mar, con pared submarina vertical que cae a
 El banco de coral plano en el centro del Parque donde las mantas de arrecife llegan para limpiarse. Con 10-20 mantas circulando simultáneamente sobre el banco a 10-20m, es la estación de limpieza de mantas más grande y consistente de Indonesia. A diferencia de las mantas que pasan en pelágico, las mantas de Manta Point están estacionarias (en estación de limpieza) — lo que permite observación prolongada.
 
 ### Cannibal Rock (Horseshoe Bay, Rinca)
-El punto de macro extremo de Komodo, en las aguas someras de la bahía de Rinca. Sin corriente, con temperatura alta (~28°C), el fondo tiene una diversidad de critters que rivaliza con Lembeh: caballitos de mar pigmeo en las gorgonias específicas, pulpos miméticos, peces fantasma ornamentados. Es el punto de descompresión mental entre las inmersiones de corriente fuerte del norte del Parque.
+El punto de macro extremo de Komodo, en las aguas someras de la bahía de Rinca. Sin corriente, con temperatura alta (~28°C), el fondo tiene una diversidad de critters que rivaliza con Lembeh: caballitos de mar pigmeo en las gorgonias específicas, pulpos miméticos, peces fantasma ornamentados. Es el punto de descompresión mental entre las inmersiones de corriente fuerte del norte del Parque. En el sur de Komodo, durante la temporada de upwelling frío (ago-oct), aparece además el **mola mola** (pez luna, *Mola mola*), atraído por las aguas frías ascendentes.
 
 ### GPS Point — Los tiburones martillo
 El punto más pelágico del Parque. Solo en temporada (mayo-agosto) y solo cuando la corriente del sur está activa. Tiburones martillo en grupos de 10-30 circulando en el azul a 25-30m. No tan consistente como Monad Shoal en Malapascua ni tan masivo como Cocos, pero en el contexto de Komodo — sumado al resto de fauna del Parque — es la guinda.
@@ -107,7 +108,7 @@ Los tours en barco incluyen visita a la isla de Rinca (más accesible) o Komodo 
 
 **Base:** Labuan Bajo (isla de Flores) — ciudad pequeña que ha crecido como hub turístico de Komodo. Hoteles de todos los rangos, restaurantes, operadores para buceo de día y liveaboards.
 
-**Nota Vercel/Liveaboard:** El liveaboard da acceso a los puntos más remotos del Parque (Siaba Besar, GPS Point) y evita los 1-2h de barco diarios desde Labuan Bajo.
+**Nota Liveaboard:** El liveaboard da acceso a los puntos más remotos del Parque (Siaba Besar, GPS Point) y evita los 1-2h de barco diarios desde Labuan Bajo.
 
 **Visado:** Indonesia — e-VOA (Visa on Arrival online), 35 USD. Para ciudadanos españoles.
 
@@ -131,7 +132,7 @@ La combinación perfecta del viaje es **Bali 2 noches** (tránsito logístico) +
 ## Fichas relacionadas
 
 - [[raja-ampat]] — El Indo-Pacífico ultimate; más diversidad, diferente perfil
-- [[bali-tulamben]] — El Bali submarino; accesible desde la misma isla de tránsito
+- bali-tulamben — El Bali submarino; accesible desde la misma isla de tránsito
 - [[lembeh-strait]] — El muck extremo de Indonesia; diferente fauna
 - [[banda-sea]] — El liveaboard extremo del Índico oriental; más remoto que Komodo
 
@@ -139,5 +140,5 @@ La combinación perfecta del viaje es **Bali 2 noches** (tránsito logístico) +
 
 - [Dive Komodo Labuan Bajo](https://www.divekomodo.com/) — Operador de base día; datos técnicos de puntos y condiciones
 - [Wicked Diving](https://www.wickeddiving.com/) — Liveaboard premium; itinerarios extendidos
-- [Komodo National Park — BTNK](https://www.komodo-nps.com/) — Regulación y permiso de Parque Nacional
+- [Komodo National Park — BTNK](https://komodonationalpark.org/) — Regulación y permiso de Parque Nacional
 - [UNESCO — Komodo National Park](https://whc.unesco.org/en/list/609/) — Ficha Patrimonio de la Humanidad

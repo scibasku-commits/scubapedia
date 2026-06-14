@@ -54,7 +54,7 @@ tags:
 
 En 1911, el vapor SS Yongala desapareció durante un ciclón frente a la costa de Queensland con 122 personas a bordo. No fue encontrado hasta 1958. En los 47 años que pasó en el fondo sin ser molestado, la naturaleza hizo su trabajo: lo convirtió en el pecio más densamente colonizado del mundo, y en lo que muchos considerandores veteranos — fotógrafos, instructores, guías — el mejor pecio del mundo sin excepción.
 
-No es una opinión marginal. DiveZone, Scuba Diving Magazine y listas independientes de los principales operadores de Australia lo colocan sistemáticamente en el #1 mundial. Lo que hace al Yongala diferente no es la historia ni el tamaño (110 metros de eslora a 15-30m de profundidad), sino lo que vive encima y alrededor: serpientes de mar que nadan entre tus piernas, tiburones toro patrullando en la termoclina, tortugas que duermen en la cubierta, bancos de trevally que te rodean como un tornado. Una sola inmersión es más densa en vida que un día entero en muchos arrecifes del mundo.
+No es una opinión marginal. DiveZone, Scuba Diving Magazine y listas independientes de los principales operadores de Australia lo colocan sistemáticamente en el #1 mundial. Lo que hace al Yongala diferente no es la historia ni el tamaño (109 metros de eslora a 15-30m de profundidad), sino lo que vive encima y alrededor: serpientes de mar que nadan entre tus piernas, tiburones toro patrullando en la termoclina, tortugas que duermen en la cubierta, bancos de trevally que te rodean como un tornado. Una sola inmersión es más densa en vida que un día entero en muchos arrecifes del mundo.
 
 ## Datos técnicos
 

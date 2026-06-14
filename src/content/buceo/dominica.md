@@ -121,13 +121,13 @@ El cliente ideal es el que ya tiene 10 destinos caribeños en el log y quiere el
 ## Fichas relacionadas
 
 - [[turks-caicos]] — El arrecife caribeño con más visibilidad; diferente perfil
-- [[statia]] — Otra Small Island de las Antillas con buceo sin multitudes
-- [[saba]] — La vecina holandesa: paredes verticales casi sin turistas
+- statia — Otra Small Island de las Antillas con buceo sin multitudes
+- saba — La vecina holandesa: paredes verticales casi sin turistas
 - [[tobago]] — El otro Caribe tranquilo con vida submarina excepcional
 
 ## Fuentes
 
-- [Dominica Sperm Whale Project](https://www.seasforlife.org/) — Investigación de la colonia residente; catálogo de individuos
+- [Dominica Sperm Whale Project](https://thespermwhaleproject.org) — Investigación de la colonia residente; catálogo de individuos
 - [Dive Dominica](https://www.divedominica.com/) — Operador de referencia; datos de Champagne Reef y temporadas
 - [Anchorage Hotel & Dive Center](https://anchoragehoteldominica.com/) — Whale watch + buceo combinado
 - [Discover Dominica Tourism](https://www.dominica.dm/) — Información oficial de acceso y regulaciones

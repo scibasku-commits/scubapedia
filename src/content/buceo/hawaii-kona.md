@@ -20,7 +20,7 @@ temporada_alta: "todo el año; mayo-septiembre tiene más días de calma"
 temporada_baja: "no aplica; las mantas están presentes los 365 días del año"
 certificacion_minima: "OW (snorkel también disponible para los sites de manta)"
 vida_marina_destacada:
-  - "Manta del Pacífico Norte (Mobula alfredi birostris)"
+  - "Manta de arrecife (Mobula alfredi)"
   - "Tortuga verde hawaiana (Chelonia mydas)"
   - "Delfín nariz de botella (Tursiops truncatus)"
   - "Tiburón tigre (Galeocerdo cuvier)"
@@ -92,7 +92,7 @@ Un tubo de lava volcánica con salidas naturales de luz. Buceo de caverna sin ne
 
 Hawaii está en medio del Pacífico, lejos de cualquier continente. Eso significa un porcentaje inusualmente alto de fauna endémica — especies que solo existen aquí — junto con las grandes especies oceánicas que recorren el Pacífico:
 
-- **Manta del Pacífico Norte** (*Mobula alfredi*) — La popolación de Kona es de individuos residentes identificados, no migratorios. Investigadores del Manta Ray Advocates llevan décadas fotocatalogando cada manta por su patrón de manchas ventrales. Son individuos conocidos, con nombre, que regresan a las mismas estaciones de limpieza noche tras noche.
+- **Manta del Pacífico Norte** (*Mobula alfredi*) — La población de Kona es de individuos residentes identificados, no migratorios. Investigadores del Manta Ray Advocates llevan décadas fotocatalogando cada manta por su patrón de manchas ventrales. Son individuos conocidos, con nombre, que regresan a las mismas estaciones de limpieza noche tras noche.
 - **Tortuga verde hawaiana** (*honu*, *Chelonia mydas*) — Protegida por ley federal. En Hawaii se le tiene un respeto cultural profundo. Las tortugas están en cada arrecife, sin miedo a los buceadores, durmiendo en grietas o comiendo algas. Los operadores recuerdan en el briefing: 3 metros de distancia mínima, prohibido tocarlas.
 - **Tiburón tigre** — Presencia ocasional en aguas profundas frente a la costa oeste. Avistamientos raros pero documentados en puntos oceánicos de la isla.
 - **Fauna endémica** — Hawaii tiene el mayor porcentaje de peces endémicos de cualquier archipiélago del mundo (aprox. 25%). El *humuhumunukunukuapua'a* (pez trigger hawaiano), el *moorish idol*, el *saddleback wrasse* hawaiano — fauna que no verás igual en ningún otro mar.
@@ -113,7 +113,7 @@ Hawaii está en medio del Pacífico, lejos de cualquier continente. Eso signific
 
 - **Mantas:** Todo el año, sin excepción. Las mantas son residentes permanentes de la costa de Kona. No hay mala época para las mantas.
 - **Condiciones de buceo:** Mayo-Septiembre tiene estadísticamente más días con mar en calma. Octubre-Abril tiene más lluvia ocasional, pero el buceo en agua no se afecta. La temperatura del agua varía poco (23-27°C).
-- **Baleines jorobados:** Diciembre-Abril. Se pueden ver desde embarcaciones mientras van a los puntos de inmersión. Snorkel con ballenas es posible en Kona con operadores especializados.
+- **Ballenas jorobadas:** Diciembre-Abril. Se pueden ver desde embarcaciones mientras van a los puntos de inmersión. Snorkel con ballenas es posible en Kona con operadores especializados.
 
 ## Nivel requerido
 

@@ -27,7 +27,6 @@ vida_marina_destacada:
   - "Calamar pigmeo (Idiosepius sp.)"
   - "Caballito de mar pigmeo (Hippocampus bargibanti)"
   - "Pez fantasma hoja (Solenostomus paradoxus)"
-  - "Tiburón guijarro (wobbegong)"
   - "Nudibranquios (más de 400 especies documentadas)"
   - "Pez escorpión piedra"
   - "Rana de mar (Histiophryne psychedelica)"
@@ -159,7 +158,7 @@ No es todos los destinos. Es el más específico de todos. Y los que han estado 
 - [[anilao]] — El otro capital del macro; Filipinas vs. Indonesia
 - [[dumaguete]] — Muck diving filipino con tiburón ballena de bonus
 - [[bali-nusa-penida]] — Indonesia accesible; arrecifes + Mola Mola
-- [[ambon]] — El vecino de Lembeh para especies aún más raras
+- ambon — El vecino de Lembeh para especies aún más raras
 
 ## Fuentes
 

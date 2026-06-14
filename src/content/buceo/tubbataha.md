@@ -58,7 +58,7 @@ tags:
 
 ## Resumen
 
-Tubbataha es el arrecife más protegido de Filipinas y uno de los ecosistemas marinos más prístinos de Asia. Está a 180 kilómetros al sureste de Puerto Princesa (Palawan), en pleno Mar de Sulu, sin tierra habitada a la vista. El gobierno filipino lo cerró al buceo comercial en 1988 y solo permite la entrada entre marzo y junio — la única ventana meteorológica con el mar en calma suficiente para navegar hasta allí.
+Tubbataha es el arrecife más protegido de Filipinas y uno de los ecosistemas marinos más prístinos de Asia. Está a ~150 kilómetros al sureste de Puerto Princesa (Palawan), en pleno Mar de Sulu, sin tierra habitada a la vista. El gobierno filipino lo cerró al buceo comercial en 1988 y solo permite la entrada entre marzo y junio — la única ventana meteorológica con el mar en calma suficiente para navegar hasta allí.
 
 El acceso es en liveaboard con permiso especial del PCSD (Palawan Council for Sustainable Development). El cupo de barcos es limitado. Las reservas para temporada siguiente se abren en septiembre del año anterior.
 
@@ -90,7 +90,7 @@ La inmersión de referencia del atolón norte. Una formación de roca coralina c
 El equivalente del atolón sur. Buceadores de la industria lo citan como el punto con mayor densidad de vida por metro cuadrado de Tubbataha. Coral tabular en perfecto estado de salud (difícil de encontrar en Asia post-blanqueamientos), bancos de fusileros que literalmente bloquean la vis, manta de arrecife en circulación si hay corriente suficiente.
 
 ### Jessie Beazley Reef
-Un arrecife de parche aislado entre los dos atolones principales. Difícil de bucear por la corriente imprebredecible, pero cuando las condiciones alinean tiene tiburones tigre con más frecuencia que cualquier otro punto del archipiélago.
+Un arrecife de parche aislado entre los dos atolones principales. Difícil de bucear por la corriente impredecible, pero cuando las condiciones alinean tiene tiburones tigre con más frecuencia que cualquier otro punto del archipiélago.
 
 ## Cómo llegar
 
@@ -112,7 +112,7 @@ Un arrecife de parche aislado entre los dos atolones principales. Difícil de bu
 
 Tubbataha es el arrecife que ponemos cuando el cliente quiere lo mejor de Filipinas sin concesiones. No es accesible como Tulamben, no es cómodo como El Nido, no tiene la logística fácil de Bohol. Requiere planificación con 6-12 meses de antelación y un presupuesto serio.
 
-Pero la experiencia es correspondiente: el único arreciife de Filipinas donde la densidad de tiburones, tortugas y napoleones recuerda lo que eran los mares antes de la pesca industrializada. Es el arrecife que va a desaparecer en algún momento — Tubbataha es lo que queda cuando no se pesea. Es un argumento para ir cuanto antes.
+Pero la experiencia es correspondiente: el único arrecife de Filipinas donde la densidad de tiburones, tortugas y napoleones recuerda lo que eran los mares antes de la pesca industrializada. Es el arrecife que va a desaparecer en algún momento — Tubbataha es lo que queda cuando no se pesca. Es un argumento para ir cuanto antes.
 
 ## Fichas relacionadas
 
