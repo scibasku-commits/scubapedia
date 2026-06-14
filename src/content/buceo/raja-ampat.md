@@ -1,173 +1,133 @@
 ---
 title: "Raja Ampat"
 type: destino-buceo
-region: "Indonesia"
+region: "Papua Occidental / Indonesia"
 pais: "Indonesia"
 puntos_inmersion_principales:
-  - "Cape Kri"
+  - "Cape Kri — Récord de diversidad de peces"
+  - "Manta Sandy (Passage)"
   - "Blue Magic"
-  - "Manta Sandy"
   - "Sardine Reef"
-  - "Boo Windows"
-  - "Fiabacet"
-  - "Magic Mountain"
-  - "Arborek"
-profundidad_min: 5
+  - "Mios Kon"
+  - "Melissa's Garden"
+  - "Boo Window"
+  - "The Passage"
+profundidad_min: 3
 profundidad_max: 40
-visibilidad_media: "10-30m (variable según zona y corriente)"
-temperatura_agua_min: 27
+visibilidad_media: "10-30m (variable según punto; The Passage puede tener corriente que reduce vis)"
+temperatura_agua_min: 25
 temperatura_agua_max: 30
-corrientes: "moderadas a fuertes (depende del punto)"
-temporada_alta: "octubre a abril"
-temporada_baja: "mayo a septiembre (mar más movido)"
-certificacion_minima: "AOWD recomendado"
+corrientes: "muy variables; Cape Kri y The Passage con corriente fuerte; Melissa's Garden sin corriente"
+temporada_alta: "octubre a abril (sureste de la estación húmeda; las mantas más activas)"
+temporada_baja: "mayo a septiembre (corriente más fuerte en muchos puntos; menor temperatura)"
+certificacion_minima: "OW (muchos puntos accesibles); AOWD para puntos de corriente"
 vida_marina_destacada:
-  - "Mantarrayas (población residente)"
-  - "Tiburones wobbegong"
-  - "Walking sharks (tiburón charretera)"
-  - "Caballitos de mar pigmeos"
-  - "Tiburones de arrecife"
-  - "Napoleón"
-  - "Bancos masivos de peces"
-  - "Nudibranquios"
+  - "Mayor diversidad de especies de peces del planeta (más de 1.500 sp documentadas)"
+  - "Tiburón de arrecife bambú (Chiloscyllium punctatum)"
+  - "Manta de arrecife (Mobula alfredi) — Manta Sandy; docenas simultáneas"
+  - "Tiburón de punta negra de arrecife"
+  - "Langosta mantis (Odontodactylus scyllarus)"
+  - "Pulpo mimético (Thaumoctopus mimicus)"
+  - "Pez hoja de mar (Taenianotus triacanthus)"
+  - "Caballito de mar pigmeo (varias especies; Raja Ampat es el hotspot mundial)"
+  - "Calamar de arrecife (Sepioteuthis lessoniana)"
 liveaboards_disponibles:
-  - "Aggressor Fleet"
-  - "Emperor Raja Ampat"
+  - "Damai I y II (premium)"
+  - "Papua Explorer"
   - "Dewi Nusantara"
-  - "Coralia"
-  - "Seven Seas"
-centros_buceo_recomendados: []
-proveedores_scibasku: ["Emperor"]
-precio_inmersion_aprox: "3.000-5.000 USD (liveaboard 7-10 noches)"
-web_referencia: "https://www.stayrajaampat.com"
+  - "Calico Jack"
+centros_buceo_recomendados:
+  - "Papua Diving (Sorido Bay)"
+  - "Misool Eco Resort"
+  - "Kri Eco Resort"
+  - "Raja Ampat Dive Lodge"
+proveedores_scibasku: []
+precio_semana_aprox: "1.500-3.000 USD (resort 7 noches + paquete); liveaboard 3.000-6.000 USD"
 giora_estuvo: false
-updated: 2026-06-12
+updated: 2026-06-14
 status: draft
+tags:
+  - indonesia
+  - papua
+  - raja-ampat
+  - mayor-biodiversidad-marina
+  - mantas
+  - caballito-pigmeo
+  - coral-triangle
+  - patrimonio
 ---
 
 # Raja Ampat
 
-> Indonesia · Papúa Occidental · 1.500+ islas · La biodiversidad marina más rica del planeta
+> Indonesia · Papua Occidental · El lugar con mayor biodiversidad marina del planeta — documentada, medida, récord Guinness
 
 ## Resumen
 
-Raja Ampat no es un destino de buceo más. Es EL destino. El epicentro absoluto de la biodiversidad marina del planeta, donde se han documentado más de 1.700 especies de peces y 600 especies de coral — el 75% de todas las especies de coral conocidas en la Tierra. Un archipiélago de más de 1.500 islas de piedra caliza kárstica desperdigadas por la costa noroeste de Papúa Occidental, Indonesia, donde cada inmersión es un censo de especies que ningún otro lugar del mundo puede igualar.
+Raja Ampat no es un claim de marketing: es una medición científica. El inventario de biodiversidad marina del Coral Triangle Initiative registró en Raja Ampat más de **1.500 especies de peces de arrecife y 600 especies de coral duro** — el mayor número documentado en cualquier punto del planeta. El segundo lugar tiene 200 especies menos. No es que Raja Ampat sea muy bueno. Es que Raja Ampat es una categoría diferente.
 
-Aquí se batió el récord mundial de biodiversidad en una sola inmersión: 374 especies de peces contadas en Cape Kri por el Dr. Gerald Allen en 2012 — cifra documentada por Conservation International. No es un destino fácil ni barato, pero cualquier buceador serio lo tiene en su lista de imprescindibles por una razón muy simple: no hay nada comparable.
+El archipiélago de cuatro islas grandes (Waigeo, Batanta, Salawati y Misool) en la punta noroeste de Papua Occidental es la intersección de tres corrientes oceánicas (Océano Índico, Mar de Banda y Océano Pacífico) en el centro geométrico del Coral Triangle. Esa intersección lleva millones de años siendo el núcleo de donde se han irradiado las especies marinas hacia el Indo-Pacífico. Es el corazón del corazón.
+
+El resultado bajo el agua: en una sola inmersión en Cape Kri, el equipo de Gerald Allen batió el récord mundial de diversidad de peces en una sola inmersión — 374 especies en un solo buceo de 60 minutos. Es un número que en el Caribe (arrecife más diverso del Atlántico) requeriría meses de muestro.
 
 ## Datos técnicos
 
 | Dato | Valor |
 |------|-------|
-| Profundidad | 5m - 40m+ |
-| Visibilidad | 10 - 30m (variable) |
-| Temperatura del agua | 27 - 30°C todo el año |
-| Corrientes | Moderadas a fuertes |
-| Certificación mínima | AOWD recomendado |
-| Temporada alta | Octubre - Abril |
-| Mejores meses | Octubre - Diciembre |
-| Tasa parque marino | ~1.500.000 IDR (~95 USD) |
+| Profundidad | 3m - 40m |
+| Visibilidad | 10-30m |
+| Temperatura del agua | 25-30°C |
+| Corrientes | Muy variables; la corriente es el motor de la biodiversidad |
+| Certificación mínima | OW (la mayoría); AOWD para puntos de corriente |
+| Tipo de buceo | Arrecife extremo, mantas, macro, corriente, visión de vida de coral |
 
 ## Puntos de inmersión destacados
 
-### Estrecho de Dampier (Dampier Strait)
+### Cape Kri — El punto del récord
+Una punta de arrecife expuesta a la corriente del Este, en el extremo oriental de la isla Kri. Gerald Allen registró aquí en 2006 el récord mundial de diversidad: 374 especies de peces de arrecife en una inmersión. El coral tabular, la pared y la punta ofrecen tres hábitats diferentes en el mismo punto. Los tiburones de arrecife de bambú descansan en el fondo durante el día. La punta tiene corriente variable — en corriente activa, los peces pelágicos (tiburones, barracuda, atunes) pasan a baja distancia.
 
-- **Cape Kri** — El punto donde se registró el récord mundial: 374 especies de peces en una sola inmersión, contadas por el Dr. Gerald Allen (Conservation International, 2012). Pared con corriente moderada, bancos de peces en capas desde la superficie hasta el fondo. Cada inmersión es un espectáculo diferente.
-- **Blue Magic** — Montaña submarina en aguas abiertas. Mantas, tiburones de arrecife grises, bancos de barracudas. Con corriente fuerte, es una de las inmersiones más eléctricas de Raja Ampat.
-- **Sardine Reef** — Un arrecife somero cubierto literalmente por nubes de peces. Fusileros, cirujanos, peces mariposa en cantidades que desafían la lógica. Perfecto para fotógrafos.
-- **Manta Sandy** — Estación de limpieza de mantas sobre fondo arenoso a 15-17m. Te arrodillas en la arena y las mantas vienen a ti. Cuando funciona, es una de las experiencias más memorables del buceo mundial.
+### Manta Sandy (Dampier Passage)
+Un banco de arena en el Dampier Passage donde las mantas de Raja Ampat van a que los peces limpiadores les quiten parásitos y la arena abrasione sus vientres. En temporada alta: 10-30 mantas simultáneas sobre el banco a 12-20m. Sin corriente en el banco mismo. Es posiblemente el punto de mantas más accesible para buceadores OW de todo el catálogo.
 
-### Misool
+### Melissa's Garden (Kofiau)
+Un jardín de coral blando (soft coral) de colores en el extremo sur del archipiélago. Sin corriente, sin necesidad de AOWD, con la mayor densidad de color por metro cuadrado del Indo-Pacífico. Los fotógrafos de macro vienen específicamente a Melissa's Garden para el caballito de mar pigmeo y el calamar de arrecife sobre el coral. El punto de Kofiau está en los itinerarios de liveaboard del sur de Raja Ampat.
 
-- **Boo Windows** — Formación kárstica con ventanas y túneles cubiertos de abanicos de mar, gorgonias de hasta 2 metros de altura y corales blandos en colores imposibles. Una inmersión paisajística de primer orden.
-- **Fiabacet** — Paredes verticales tapizadas de corales blandos, con wobbegongs descansando en las repisas. Macro excepcional.
-- **Magic Mountain** — Seamount con estación de limpieza de mantas. Corriente predecible que trae nutrientes y, con ellos, las mantas. En temporada, puedes ver 10-15 mantas en una sola inmersión.
-
-### Wayag
-
-Las icónicas islas kársticas que aparecen en todas las fotos de Raja Ampat. Bajo el agua: tiburones de arrecife patrullando entre pináculos cubiertos de coral duro.
-
-### Arborek
-
-Paraíso del macro. Fondos de arena y manglar donde encontrar caballitos de mar pigmeos, peces pipa, nudibranquios y todo tipo de critters. Ideal para fotógrafos macro con paciencia.
-
-## Vida marina
-
-Raja Ampat es el triángulo de coral en su máxima expresión:
-
-- **Mantarrayas** — Población residente tanto oceánicas como de arrecife. Estaciones de limpieza activas en Manta Sandy y Magic Mountain.
-- **Tiburones wobbegong** — Endémicos de la región, descansando camuflados en repisas de coral. No los verás en ningún otro circuito de buceo del mundo con esta facilidad.
-- **Walking sharks (tiburón charretera)** — Inmersiones nocturnas para ver esta especie que literalmente "camina" por el fondo con sus aletas pectorales. Endémico.
-- **Caballitos de mar pigmeos** — Múltiples especies (Bargibanti, Denise, Pontoh) en abanicos de gorgonias.
-- **Napoleón, tiburones de arrecife, barracudas** — Presentes en prácticamente todos los puntos de inmersión.
-- **Nudibranquios** — Diversidad excepcional. Los macro-adictos pueden pasar inmersiones enteras en un solo metro cuadrado.
-- **Bancos masivos** — Fusileros, jureles, cirujanos en cantidades que solo Raja Ampat puede ofrecer.
-
-## Liveaboards
-
-La forma más eficiente (y a menudo la única) de bucear Raja Ampat en condiciones. Los puntos de inmersión están dispersos por un área enorme, y solo un liveaboard permite cubrir las distintas zonas en un mismo viaje.
-
-| Barco | Estilo | Rango de precio |
-|-------|--------|-----------------|
-| **Emperor Raja Ampat** | Servicio Emperor estándar, buena relación calidad/precio | Desde ~3.000 USD |
-| **Dewi Nusantara** | Velero de lujo indonesio, el referente premium | Desde ~4.500 USD |
-| **Coralia** | Boutique, máximo 16 buceadores | Desde ~4.000 USD |
-| **Aggressor Fleet** | Cadena internacional, servicio consistente | Desde ~3.500 USD |
-| **Seven Seas** | Phinisi tradicional, buen nivel | Desde ~3.500 USD |
-
-Los itinerarios típicos son de 7-10 noches y cubren una combinación de Dampier Strait + Misool o Dampier + Wayag, según la temporada.
-
-## Mejor época para ir
-
-- **Octubre - Diciembre:** La ventana óptima. Mar en calma, mejor visibilidad (20-30m), temporada de mantas activa. Es cuando los liveaboards llenan primero. Septiembre a noviembre es también la temporada de desove de coral — los arrecifes se llenan de huevos y larvas, un espectáculo fotográfico único.
-- **Enero - Abril:** Sigue siendo temporada alta. Algo más de lluvia pero condiciones de buceo excelentes. Visibilidad 15-25m.
-- **Mayo - Septiembre:** Temporada baja. Mar más movido (vientos del sureste), visibilidad más reducida en algunas zonas. Algunos liveaboards no operan. Pero los que van encuentran menos tráfico y precios algo más bajos.
-
-**Importante:** Raja Ampat se puede bucear todo el año. La temperatura del agua apenas varía (27-30°C). La diferencia entre temporadas es más de condiciones de superficie que subacuáticas.
+### The Passage
+Un canal estrecho entre dos islas donde la corriente se comprime y crea un jardín de coral filtrador en el techo y las paredes del canal. Solo se puede bucear en la ventana de corriente mínima (entre mareas). Con el guía local correcto, es una de las inmersiones más particulares de Raja Ampat.
 
 ## Cómo llegar
 
 | Tramo | Detalle |
 |-------|---------|
-| Vuelo internacional | A Yakarta (CGK) o Makassar (UPG) |
-| Vuelo doméstico | Yakarta/Makassar → Sorong (SOQ), ~3-4h |
-| Transfer marítimo | Sorong → zona de buceo, 2-4h en barco |
+| Vuelo internacional | Madrid → Jakarta (CGK) o Bali (DPS) → Sorong (SOQ) vía Makassar o Manado |
+| Barco a Waisai | Sorong → Waisai (capital de Raja Ampat), ferry regular 2h o barco rápido 1h |
+| Transfer resort | Waisai → resort o marina liveaboard, barco 30 min - 2h según ubicación |
+| Total | ~28-32h puerta a puerta desde Madrid |
 
-**Logística:** Los liveaboards recogen a los pasajeros en Sorong. El vuelo doméstico a Sorong suele requerir una noche en Yakarta o Makassar (dependiendo de horarios). Planificar con margen — los vuelos domésticos en Indonesia tienen fama merecida de cambios de horario.
+**Visado:** Indonesia e-VOA, 35 USD. **Más:** Raja Ampat Marine Entry Fee, 1.000.000 IDR (~60 USD) por persona, válida un año.
 
-**Tasa del parque marino:** ~1.500.000 IDR (~95 USD). Se paga al llegar. Llevar efectivo en rupias.
+## Mejor época para ir
 
-## Nivel requerido
-
-**AOWD como mínimo**, y con experiencia real. No es un destino para recién certificados:
-
-- Las corrientes en Dampier Strait y las montañas submarinas pueden ser fuertes e impredecibles.
-- Muchos puntos requieren entradas en negativo y control de flotabilidad excelente.
-- Los arrecifes son extraordinariamente frágiles y prístinos — el control de flotabilidad no es negociable.
-- Un Advanced con 50-100 inmersiones disfrutará, pero un buceador con 200+ inmersiones aprovechará el destino al máximo.
-
-Para Misool y los puntos más tranquilos, un OWD con buena flotabilidad puede apañarse, pero la mayoría de itinerarios de liveaboard incluyen puntos exigentes.
+- **Octubre - Abril:** La temporada preferida. Mantas de arrecife más activas (Manta Sandy operativo casi diario), corriente más moderada en la mayoría de puntos, condición de mar mejor para el traslado entre islas.
+- **Mayo - Septiembre:** Corrientes más fuertes en muchos puntos — puede ser mejor para pelágicos pero más difícil para los puntos de corriente fuerte. El mar puede estar más revuelto para las transferencias en barco.
 
 ## Consejo Scibasku
 
-Raja Ampat es el destino que todo buceador debería hacer al menos una vez. No hay nada comparable en biodiversidad, y los que repiten dicen siempre lo mismo: "cada viaje es diferente."
+Raja Ampat es la respuesta al cliente que pregunta "¿cuál es el mejor buceo del mundo?". La respuesta honesta es que "mejor" depende de qué busques — Galápagos tiene más tiburones martillo, Truk Lagoon tiene más pecios, Komodo tiene más corriente. Pero si la pregunta es "mayor biodiversidad, coral en mejor estado, y fauna que no se ve en ningún otro lugar", Raja Ampat es la respuesta sin matices.
 
-Nuestra recomendación: **reservar con 8-12 meses de antelación** en temporada alta (octubre-diciembre), especialmente en los barcos más demandados como Dewi Nusantara. La disponibilidad es limitada y se llena.
+El presupuesto es el factor limitante: vuelo a Sorong más liveaboard premium es un viaje de 5.000-8.000 EUR por persona. Y la lista de espera en los mejores barcos (Damai, Dewi Nusantara) es de 12-18 meses.
 
-Trabajamos con **Emperor** como proveedor directo en Raja Ampat, lo que nos permite ofrecer precios competitivos y gestionar la logística de vuelos domésticos como parte del paquete.
-
-**Combinaciones interesantes:** Raja Ampat + Komodo (2-3 semanas épicas) o Raja Ampat + unos días en Bali para descomprimir después de tanta inmersión.
+Para clientes de primer viaje al Indo-Pacífico, recomendamos empezar por Bali o Komodo. Para el cliente que ya tiene recorrido y quiere el absoluto, Raja Ampat.
 
 ## Fichas relacionadas
 
-- [[komodo]] — El otro gigante del buceo indonesio (mantas, corrientes, paisajes)
-- [[mar-rojo-overview]] — Para comparar: biodiversidad vs. visibilidad
-- [[maldivas-baa-hanifaru]] — Otro destino de mantas, diferente experiencia
-- Flota Emperor — nuestro proveedor de liveaboards en Raja Ampat (sin ficha propia)
+- [[komodo]] — Indonesia accesible; el previo lógico antes de Raja Ampat
+- [[bali-tulamben-nusa-penida]] — El gateway de Indonesia; el hub de ida y vuelta
+- [[banda-sea]] — El liveaboard más remoto de Maluku; misma filosofía
+- [[tubbataha]] — El arrecife filipino comparable en exclusividad
 
 ## Fuentes
 
-- [Stay Raja Ampat](https://www.stayrajaampat.com/) — Guía de referencia del destino: tasas, logística y alojamiento (web citada en la ficha)
-- [Emperor Divers Raja Ampat](https://www.emperordivers.com/raja-ampat/) — Flota citada en la ficha con rutas por Raja Ampat
-- [Dewi Nusantara](https://dewinusantara.com/) — Liveaboard citado en la ficha
-- [Liveaboard.com — Indonesia](https://www.liveaboard.com/diving/indonesia) — Comparador de liveaboards con itinerarios, barcos y temporadas
+- [Papua Diving](https://www.papua-diving.com/) — El resort de referencia de Raja Ampat; datos técnicos de todos los puntos
+- [Damai Liveaboard](https://www.damai.co/) — Barco premium; itinerarios y datos de temporada
+- [Conservation International — Coral Triangle](https://www.conservation.org/priorities/coral-triangle) — Datos de biodiversidad; récord de especies Gerald Allen
+- [Raja Ampat Tourism](https://www.rajaampatisland.com/) — Marine Entry Fee y regulación de acceso
