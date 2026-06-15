@@ -121,7 +121,7 @@ Para clientes de primer viaje al Indo-Pacífico, recomendamos empezar por Bali o
 ## Fichas relacionadas
 
 - [[komodo]] — Indonesia accesible; el previo lógico antes de Raja Ampat
-- [[bali-tulamben-nusa-penida]] — El gateway de Indonesia; el hub de ida y vuelta
+- [[bali-nusa-penida]] — El gateway de Indonesia; el hub de ida y vuelta
 - [[banda-sea]] — El liveaboard más remoto de Maluku; misma filosofía
 - [[tubbataha]] — El arrecife filipino comparable en exclusividad
 
