@@ -64,7 +64,7 @@ Sudán es el Mar Rojo sin filtros. Menos regulado, menos visitado y por eso más
 
 - **Sha'ab Rumi** — Arrecife mítico con los restos del *Conshelf II* de Cousteau (1963), instalado a 10 metros de profundidad. Los pináculos exteriores tienen concentraciones de martillos y tiburones de arrecife notables.
 - **Sanganeb** — Arrecife aislado a 30 km de la costa, con faro; pared vertical con visibilidad hasta 40m y excelente vida pelágica. Banco de tiburones en la esquina norte.
-- **Umbria Wreck** — Carguero italiano de 155 metros de eslora, hundido en 1940 con carga de bombas y armas químicas sin detonar. Se bucea entre 10 y 36 metros de profundidad. Considerado uno de los 10 mejores pecios del mundo.
+- **Umbria Wreck** — Carguero italiano de 155 metros de eslora, hundido en 1940 con una carga de ~360.000 bombas de aviación convencionales (además de cemento y detonadores) sin detonar. Se bucea entre 10 y 36 metros de profundidad. Considerado uno de los 10 mejores pecios del mundo.
 
 ## Vida marina
 
