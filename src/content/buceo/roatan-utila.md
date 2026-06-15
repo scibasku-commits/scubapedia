@@ -117,7 +117,7 @@ Utila complementa Roatán perfectamente con el tiburón ballena. La combinación
 
 ## Fuentes
 
-- [Coconut Tree Divers](https://www.coconuttreedivers.com/) — Operador de referencia; datos Mary's Place y condiciones
-- [Utila Dive Centre](https://www.utiladivecentre.com/) — Historial de avistamientos de tiburón ballena en Utila
-- [Bay Islands Tourism](https://www.bayislands.com/) — Información oficial de acceso y transporte inter-islas
+- [Native Sons Roatán](https://www.nativesonsroatan.com/) — Operador de referencia; datos de Mary's Place y condiciones del arrecife
+- [Utila Dive Centre](https://utiladivecentre.weebly.com/) — Historial de avistamientos de tiburón ballena en Utila <!-- TODO: verificar URL actualizada -->
+- [Honduras Tourism](https://www.iht.hn/) — Información oficial de acceso y transporte; Islas de la Bahía
 - [Mesoamerican Reef Alliance](https://www.maralliance.org/) — Estado de conservación del arrecife mesoamericano
