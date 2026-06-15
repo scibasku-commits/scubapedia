@@ -53,7 +53,7 @@ tags:
 
 Donsol es la capital mundial no oficial del avistamiento ético de tiburón ballena. La diferencia con Oslob (Cebú) — el otro gran punto de tiburón ballena de Filipinas — es fundamental: en Oslob los tiburones están condicionados con comida (se les alimenta para que se queden); en Donsol, los tiburones vienen por el plancton natural de la bahía, sin intervención humana, de noviembre a junio (pico de abundancia de febrero a mayo) cuando el bloom de plancton es máximo.
 
-El WWF trabajó con las comunidades pesqueras de Donsol en los años 90 para crear el protocolo de interacción más respetoso documentado del mundo para el tiburón ballena: botes de madera tradicional con un máximo de 6 interactores por tiburón, sin aletas (solo snorkel), sin tocar, sin flash, sin accesorio de buceo que pueda dañar la piel del animal. El resultado lleva tres décadas siendo la referencia internacional de ecoturismo marino ético.
+El WWF trabajó con las comunidades pesqueras de Donsol en los años 90 para crear el protocolo de interacción más respetuoso documentado del mundo para el tiburón ballena: botes de madera tradicional con un máximo de 6 interactores por tiburón, sin aletas (solo snorkel), sin tocar, sin flash, sin accesorio de buceo que pueda dañar la piel del animal. El resultado lleva tres décadas siendo la referencia internacional de ecoturismo marino ético.
 
 La interacción no es en buceo — es en snorkel. Pero ver un tiburón ballena de 10 metros a 3m de distancia en superficie, sin ningún artificio, sabiendo que el animal está ahí por elección propia, tiene una carga emocional que los buceadores que han estado en Oslob describen como "completamente diferente" a pesar de haber visto el mismo animal.
 
@@ -71,7 +71,9 @@ Contiguo a Donsol, en el paso de Ticao, uno de los puntos de mantas más densos 
 | Temporada tiburón ballena | Nov - Jun (pico feb-may) |
 | Temporada mantas | Todo el año; máximo julio-diciembre |
 
-## Experiencia tiburón ballena
+## Puntos de inmersión destacados
+
+### Donsol Bay — Tiburón ballena (snorkel)
 
 El protocolo de Donsol es riguroso:
 
@@ -85,8 +87,40 @@ El protocolo de Donsol es riguroso:
 
 El éxito de avistamiento en temporada alta (nov-jun, pico feb-may) es del 70-90% por día. Los tiburones de Donsol son individuos reconocidos por los guías locales que llevan décadas haciendo el seguimiento fotográfico de aletas dorsales. Algunos tienen nombres. Los guías saben cuáles son juveniles y cuáles llevan 20 años viniendo.
 
-## Manta Bowl — Ticao Pass
+### Manta Bowl — Ticao Pass
 El Paso de Ticao, entre la isla de Ticao y la costa de Sorsogon, es uno de los canales con mayor densidad de mantas de arrecife de Filipinas. El Manta Bowl —un punto específico en el paso donde las mantas se agregan en estación de limpieza— tiene avistamientos de 20-50 mantas simultáneas en temporada óptima (julio-diciembre). Con corriente fuerte pero profundidad manejable (15-20m), es un punto AOWD ya que el acceso requiere bajar en corriente y mantenerse en el fondo esperando que las mantas lleguen.
+
+## Vida marina
+
+La fauna del destino se divide entre la bahía y el paso:
+
+- **Tiburón ballena** (*Rhincodon typus*) — protagonista absoluto de Donsol Bay. Los individuos visitantes son reconocidos por foto-ID (aleta dorsal). Agrupación natural por plancton, sin alimentación.
+- **Manta de arrecife** (*Mobula alfredi*) — Manta Bowl (Ticao); agregaciones de 20-50 individuos en estación de limpieza.
+- **Manta oceánica** (*Mobula birostris*) — avistamientos ocasionales en Ticao Pass en paso migratorio.
+- **Tiburón de punta blanca de arrecife** (*Triaenodon obesus*) — Ticao Pass; habitual en fondos de 10-25m.
+- **Tiburón de arrecife gris** (*Carcharhinus amblyrhynchos*) — corrientes de Ticao.
+- **Mantarraya de cola corta** (*Himantura fai*) — fondos arenosos de Ticao.
+
+## Mejor época para ir
+
+| Objetivo | Meses | Nota |
+|----------|-------|------|
+| Tiburón ballena | Noviembre – Junio | Pico feb-may; mayor densidad de individuos |
+| Mantas Ticao | Julio – Diciembre | Máxima actividad en Manta Bowl |
+| Combinado | Noviembre – Mayo | Superpone tiburón ballena con inicio de temporada de mantas |
+
+El monzón del SW (julio-octubre) reduce la visibilidad en Donsol Bay e interrumpe las salidas de tiburón ballena. Ticao Pass es operable casi todo el año salvo mal tiempo.
+
+## Nivel requerido
+
+- **Tiburón ballena (Donsol Bay):** Saber nadar. No se necesita ninguna certificación de buceo — la interacción es en snorkel en superficie. Apto para no buceadores.
+- **Ticao Pass / Manta Bowl:** AOWD mínimo recomendado por las corrientes. La bajada requiere capacidad de controlar la flotabilidad en corriente y mantenerse en el fondo sin tocar el arrecife.
+
+## Centros de buceo
+
+- **WWF Donsol Interaction Officers** — coordinación oficial de la interacción con tiburón ballena; briefing obligatorio antes de cada salida. El WWF gestiona el volumen de botes y el acceso.
+- **Pintuyan Dive Center** (pintuyan.com) — operador de referencia para la combinación tiburón ballena + buceo en Ticao Pass. Organiza packs de varios días.
+- **Donsol Whaleshark Interaction** — punto de registro municipal; se coordinan las embarcaciones y los Interaction Officers.
 
 ## Cómo llegar
 
@@ -105,6 +139,8 @@ El Paso de Ticao, entre la isla de Ticao y la costa de Sorsogon, es uno de los c
 Donsol es el destino que recomendamos cuando el cliente quiere tiburón ballena y tiene conciencia animal. Es el único destino de tiburón ballena del mundo donde el avistamiento es en estado completamente salvaje y el protocolo impide el condicionamiento.
 
 La ruta perfecta de Filipinas con Donsol es: Manila 1N → Donsol 3N (tiburón ballena + Manta Bowl) → Malapascua 4N (tiburón zorro en Monad Shoal) + Dumaguete 3N (muck + Apo Island). Es el itinerario de 12 días que cubre las tres experiencias únicas de Filipinas que no se repiten en ningún otro destino del mundo.
+
+[Escríbeme →](mailto:info@viajesscibasku.com)
 
 ## Fichas relacionadas
 
