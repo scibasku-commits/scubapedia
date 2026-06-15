@@ -135,6 +135,5 @@ Para quien ya conoce el Mar Rojo norte (Sharm, Hurghada, Thistlegorm), el Mar Ro
 ## Fuentes
 
 - [Emperor Divers](https://www.emperordivers.com/) — Flota de liveaboard; itinerarios completos Mar Rojo Norte y Sur
-- [Colona Divers](https://www.colonadivers.com/) — Operador histórico Hurghada; datos de condiciones actualizados
-- [Elphinstone Dive Center](https://www.elphinstonedivecenter.com/) — Base en Marsa Alam; datos de delfines y tiburones oceánicos
+- [Red Sea Diving Safari](https://www.redsea.net/) — Liveaboard clásico; itinerarios sur con Brothers y Elphinstone
 - [Ras Mohammed National Park — SRSE](https://www.egypt.travel/attractions/ras-mohammed-national-park) — Regulación del Parque Nacional y estado de conservación
