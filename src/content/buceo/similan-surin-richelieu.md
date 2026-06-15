@@ -132,6 +132,4 @@ Los Similans son el destino Asia-Pacífico más equilibrado para un primer livea
 ## Fuentes
 
 - [Manta Queen Fleet](https://www.mantaqueen.com/) — Nuestro proveedor directo; 8 barcos, itinerarios completos, 20% comisión Scibasku
-- [Sea Dragon Dive Center Khao Lak](https://www.seadragon.com/) — Excursiones de día a Similans; datos de condiciones diarias
-- [Similan Islands National Park — DNP](https://www.dnp.go.th/) — Dates oficiales de apertura y regulación del Parque
-- [Wicked Diving](https://www.wickeddiving.com/) — Liveaboard premium; datos de Richelieu Rock y Koh Bon
+- [Similan Islands National Park — DNP](https://www.dnp.go.th/) — Fechas oficiales de apertura y regulación del Parque
