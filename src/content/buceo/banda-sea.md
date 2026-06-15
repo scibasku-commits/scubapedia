@@ -122,5 +122,4 @@ El itinerario típico de liveaboard Banda Sea cubre 8-10 islas del archipiélago
 
 - [Indo Siren - Banda Sea Expedition](https://www.sirenfleet.com/) — Liveaboard premium; itinerarios Banda Sea con fechas
 - [Archipelago Adventurer II](https://www.archipelago-fleet.com/) — Operador de Maluku; único con programación regular Banda
-- [Banda Tourism](https://www.bandaatourism.com/) — Información local de la isla; ferry y vuelos Susi Air
 - [Coral Triangle Initiative](https://www.coraltriangleinitiative.org/) — Estado de conservación del Mar de Banda
