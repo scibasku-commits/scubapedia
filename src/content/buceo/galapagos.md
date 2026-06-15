@@ -136,12 +136,12 @@ La ruta Galápagos de Santos → Cocos Island tiene lista de espera de 12-18 mes
 
 - [[cocos-island]] — El vecino al norte; solo tiburones, sin fauna endémica
 - [[revillagigedo-socorro]] — El Pacífico mexicano; 36h menos de avión desde España
-- [[darwin-island-link]] — Solo Darwin y Wolf en itinerario de 7 noches (itinerario específico)
-- [[patagonia-buceo]] — El otro Pacífico Sur sudamericano; diferente fauna fría
+- Darwin y Wolf en itinerario específico de 7 noches (itinerario disponible bajo consulta)
+- Patagonia y Tierra del Fuego — buceo en aguas frías del sur; fauna totalmente diferente
 
 ## Fuentes
 
 - [Galápagos Aggressor](https://aggressor.com/destination/galapagos/) — Operador histórico; datos estadísticos de avistamiento en Darwin y Wolf
 - [Scuba Iguana Puerto Ayora](https://www.scubaiguana.com/) — Buceo de día desde Santa Cruz; Gordon Rocks
-- [Galápagos National Park](https://galapagospark.org/) — Regulación, cupos y tasa de Parque
+- [Galápagos National Park](https://galapagos.gob.ec/) — Regulación, cupos y tasa de Parque
 - [Charles Darwin Research Station](https://www.darwinfoundation.org/) — Investigación de fauna endémica y estado del ecosistema
