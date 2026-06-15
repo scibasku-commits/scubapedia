@@ -1,0 +1,133 @@
+# FICHAS EXISTENTES EN SCUBAPEDIA — 122 destinos de buceo
+# Generado: 2026-06-15 · commit base: 694883e
+#
+# REGLA ANTI-DUPLICADO (obligatoria antes de crear cualquier ficha nueva):
+#   1. Busca el destino aquí por slug Y por título (un sitio puede existir bajo otro nombre:
+#      p.ej. 'Truk Lagoon' ya existe como chuuk-lagoon; 'Tulamben' está en bali-nusa-penida).
+#   2. Si aparece, NO lo recrees. Si crees que falta algo, edita la ficha existente.
+#   3. Comprueba también en disco:  ls src/content/buceo/ | grep -i <destino>
+#
+# Formato:  slug  —  título
+# ============================================================================
+aliwal-shoal                     — Aliwal Shoal — Tiburones sin Jaula, KwaZulu-Natal
+alor                             — Alor — Pelágico Extremo y Macro de Élite
+andaman-islands                  — Islas Andamán
+anilao                           — Anilao — Macro Capital del Mundo
+antartida-peninsula              — Antártida — Buceo en la Península Antártica
+apo-island                       — Apo Island — Reserva Marina de Negrós
+arabia-saudi                     — Arabia Saudí — Mar Rojo Virgen: Farasan Banks, Yanbu y Jeddah
+azores                           — Azores
+bahamas                          — Bahamas — Tiger Beach y Great Hammerhead
+baja-california-la-paz           — Baja California - La Paz
+baleares                         — Baleares — Mallorca, Menorca, Ibiza y Formentera
+bali-nusa-penida                 — Bali y las Nusas — Mantas y Mola Mola
+banda-sea                        — Banda Sea — Banda Neira
+belice                           — Belice — Blue Hole y Atolones del Caribe
+belize-great-blue-hole           — Belice — Great Blue Hole
+bonaire                          — Bonaire — El Paraíso del Shore Diving
+brother-islands                  — Brother Islands (Islas Brothers) - Mar Rojo
+cabo-de-gata                     — Cabo de Gata — Parque Natural Submarino en Almería
+cabo-de-palos                    — Cabo de Palos e Islas Hormigas — Reserva Marina del Mediterráneo
+cabo-pulmo                       — Cabo Pulmo
+cabo-verde                       — Cabo Verde — Arrecifes, Pecios y Pelágicos del Atlántico
+canarias-el-hierro               — El Hierro — Reserva Marina Mar de las Calmas
+cayman-islands                   — Islas Cayman — Bloody Bay Wall y Stingray City
+cenotes-yucatan                  — Cenotes del Yucatán
+chuuk-lagoon                     — Chuuk Lagoon (Truk) — Pecios de la WWII
+cocos-island                     — Isla Cocos
+coiba-panama                     — Isla Coiba — Parque Nacional del Pacífico Panameño
+coron                            — Coron
+costa-brava                      — Costa Brava — Islas Medas y Cap de Creus
+cozumel                          — Cozumel
+croacia                          — Croacia — Buceo en el Adriático
+curacao                          — Curaçao — Shore y Boat Diving del Caribe Holandés
+daedalus-reef                    — Daedalus Reef - Mar Rojo
+dahab                            — Dahab
+djibouti                         — Djibouti — Tiburón Ballena del Golfo de Tadjoura
+dominica                         — Dominica
+donsol-tiburon-ballena           — Donsol — Tiburón ballena
+dumaguete                        — Dumaguete
+elphinstone-reef                 — Elphinstone Reef - Mar Rojo
+fakarava                         — Fakarava — Wall of Sharks en el South Pass
+fernando-noronha                 — Fernando de Noronha
+fiji                             — Fiji — Bligh Waters y Shark Diving en Beqa
+fury-shoals                      — Fury Shoals - Mar Rojo
+galapagos                        — Galápagos
+gran-barrera                     — Gran Barrera de Coral
+grecia                           — Grecia — Buceo en el Jónico y el Egeo
+hawaii-kona                      — Hawaii — Buceo con Mantas de Kona
+hurghada                         — Hurghada
+irlanda-tiburon-peregrino        — Irlanda — Tiburón Peregrino en la Costa Oeste
+isla-mujeres                     — Isla Mujeres
+islandia-silfra                  — Islandia — Silfra, la Fisura Entre Continentes
+islas-salomon                    — Islas Salomón — Pecios WWII y Arrecifes Vírgenes
+jardines-reina-cuba              — Jardines de la Reina — Cuba
+jordania-aqaba                   — Jordania - Aqaba
+kaikoura                         — Kaikōura — Delfines Dusky y Cachalotes en la Costa Sur de Nueva Zelanda
+kimbe-bay-png                    — Kimbe Bay — Papua Nueva Guinea
+koh-tao                          — Koh Tao — La Isla de las Certificaciones
+komodo                           — Komodo
+layang-layang                    — Layang-Layang — Tiburones Martillo en el Atolón Remoto
+lembeh-strait                    — Lembeh Strait
+madeira                          — Madeira — Reserva de Garajau y Meros Atlánticos
+malapascua                       — Malapascua
+maldivas-addu                    — Maldivas — Addu Atoll
+maldivas-atolones-norte          — Maldivas — Atolones del Norte
+maldivas-baa-hanifaru            — Maldivas — Baa Atoll y Hanifaru Bay
+maldivas-fuvahmulah              — Maldivas — Fuvahmulah (Tiburón Tigre)
+maldivas-huvadhoo                — Maldivas — Huvadhoo Atoll (Gaafu)
+maldivas-lhaviyani               — Maldivas — Lhaviyani Atoll (Faadhippolhu)
+maldivas-north-ari               — Maldivas — North Ari Atoll
+maldivas-south-ari               — Maldivas — South Ari Atoll (Tiburón Ballena)
+maldivas-south-male              — Maldivas — Atolón Sur de Malé (South Malé)
+malta-gozo                       — Malta, Gozo y Comino — Pecios y Blue Hole
+mar-rojo-north-dahab             — Mar Rojo Norte — Dahab y Ras Mohammed
+mar-rojo-overview                — Mar Rojo
+mar-rojo-sur-liveaboard          — Mar Rojo — Liveaboard
+marsa-alam                       — Marsa Alam
+mauricio                         — Mauricio — Arrecifes, Pecios y Cañones Volcánicos
+mergui-myanmar                   — Mergui — El Andamán Salvaje de Myanmar
+moalboal                         — Moalboal
+mozambique-tofo                  — Mozambique — Tofo y Barra, Buceo Pelágico
+neptune-islands                  — Neptune Islands — Cage Diving con Tiburón Blanco en Australia del Sur
+ningaloo                         — Ningaloo Reef — Tiburón Ballena y Mantas en Australia Occidental
+noruega-orcas                    — Noruega — Snorkel con Orcas en los Fiordos del Norte
+nosy-be-madagascar               — Nosy Be - Madagascar
+oman                             — Omán — Musandam y Daymaniyat
+osprey-reef                      — Osprey Reef — North Horn
+palau                            — Palau
+poor-knights-nz                  — Poor Knights Islands — La joya volcánica del Pacífico templado
+puerto-galera                    — Puerto Galera y Verde Island Passage
+puerto-madryn                    — Puerto Madryn — Lobos Marinos y Ballenas Francas en Patagonia
+raja-ampat                       — Raja Ampat
+rangiroa                         — Rangiroa — Tiputa Pass y Pelágico en el Pacífico
+rapa-nui                         — Rapa Nui (Isla de Pascua) — Visibilidad extrema y endemismo del océano más aislado
+ras-mohammed                     — Ras Mohammed
+revillagigedo-socorro            — Revillagigedo — Socorro
+roatan-utila                     — Roatán y las Islas de la Bahía
+rowley-shoals                    — Rowley Shoals — Tres Atolones Prístinos al Límite de Australia
+safaga-hurghada-norte            — Safaga, Hurghada y Norte del Mar Rojo
+sardine-run                      — Sardine Run — Wild Coast, Sudáfrica
+scapa-flow                       — Scapa Flow — La Flota Alemana en el Fondo de Orkney
+seychelles                       — Seychelles — Granito, Pelágico y Aldabra
+sharm-el-sheikh                  — Sharm el Sheikh
+similan-surin-richelieu          — Similan Islands y Surin
+sipadan-mabul                    — Sipadan y Mabul — El Mejor Buceo de Malasia
+sodwana-bay                      — Sodwana Bay — Arrecifes Tropicales en el Sur de África
+south-georgia                    — South Georgia — Buceo Subantártico y Fauna Polar
+sri-lanka                        — Sri Lanka
+ss-thistlegorm                   — SS Thistlegorm
+ss-yongala                       — SS Yongala
+st-johns                         — St. Johns - Mar Rojo
+strait-of-tiran                  — Estrecho de Tirán
+sudan-mar-rojo                   — Sudán — Mar Rojo Virgen (Sha'ab Rumi y Sanganeb)
+tanzania-zanzibar                — Tanzania — Zanzíbar, Pemba y Mafia
+tioman-perhentian                — Tioman, Perhentian y Redang — Malasia Peninsular
+tobago                           — Tobago — Arrecifes de Drift del Caribe Sur
+tonga                            — Tonga — Natación con Ballenas Jorobadas
+tubbataha                        — Tubbataha Reef
+turks-caicos                     — Turks & Caicos
+vanuatu-coolidge                 — Vanuatu — SS President Coolidge, Espíritu Santo
+wakatobi                         — Wakatobi
+yap                              — Yap — Mantas Residentes y Peces Mandarín
+zamboanga                        — Zamboanga
