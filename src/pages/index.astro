@@ -125,10 +125,29 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&display=swap" rel="stylesheet" />
   <script type="application/ld+json" set:html={JSON.stringify({
-    '@context': 'https://schema.org', '@type': 'WebSite', name: 'Scubapedia',
-    url: 'https://scubapedia.org', description,
-    publisher: { '@type': 'Organization', name: 'Viajes Scibasku', url: 'https://viajesscibasku.com' },
-  })} />
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebSite', '@id': 'https://scubapedia.org/#website', name: 'Scubapedia',
+        url: 'https://scubapedia.org', description,
+        publisher: { '@id': 'https://scubapedia.org/#viajes-scibasku' },
+      },
+      {
+        '@type': 'TravelAgency', '@id': 'https://scubapedia.org/#viajes-scibasku',
+        name: 'Viajes Scibasku', url: 'https://viajesscibasku.com',
+        identifier: { '@type': 'PropertyValue', propertyID: 'CICMA', value: '2283' },
+      },
+      {
+        '@type': 'ItemList', '@id': 'https://scubapedia.org/#catalogo',
+        name: `Catálogo de ${totalFichas} destinos de buceo`,
+        numberOfItems: totalFichas,
+        itemListElement: searchIdx.map((d, i) => ({
+          '@type': 'ListItem', position: i + 1, name: d.t,
+          url: new URL(d.u, 'https://scubapedia.org').toString(),
+        })),
+      },
+    ],
+  }).replace(/</g, '\\u003c')} />
   <!-- Google Analytics (GA4) -->
   <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-LHZYGMPX6K"></script>
   <script is:inline>
