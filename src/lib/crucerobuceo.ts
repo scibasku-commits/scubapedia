@@ -36,6 +36,12 @@ export const DEST_MAP: Record<string, string> = {
   'fakarava': 'pacifico', 'rangiroa': 'pacifico', 'fiji': 'pacifico',
   'tonga': 'pacifico', 'yap': 'pacifico', 'chuuk-lagoon': 'pacifico',
   'sipadan-mabul': 'filipinas', 'layang-layang': 'filipinas', 'tioman-perhentian': 'filipinas',
+  // Huecos mecánicos verificados 2026-07-07 (Tarea 6, estudio-maestro-optimizacion-webs):
+  // el destino ya existe en el catálogo real de crucerobuceo (dest-mapping.json /
+  // HERO_SLUGS / landing publicada), pero faltaba la entrada en este DEST_MAP.
+  'turks-caicos': 'turks-caicos', // landing /buceo-en/turks-caicos.html ya existe (HERO_SLUGS)
+  'neptune-islands': 'australia', // listado explícito en dest-mapping.json → australia.fichas
+  'nosy-be-madagascar': 'madagascar', // listado explícito en dest-mapping.json → madagascar.fichas
 };
 
 // Slugs de crucerobuceo que SÍ tienen foto destinos/<slug>/<slug>-hero.jpg en Cloudinary
