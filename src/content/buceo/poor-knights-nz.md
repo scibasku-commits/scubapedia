@@ -48,7 +48,7 @@ tags:
 
 ## Resumen
 
-Las Poor Knights Islands son una reserva marina protegida a 24 km de la costa de Northland (Nueva Zelanda) y están consideradas uno de los mejores destinos de buceo del hemisferio sur templado. El escritor Jacques Cousteau las situó entre los diez mejores sitios de buceo del mundo — y la afirmación se sostiene: arcos de roca volcánica, cuevas submarinas enormes, jardines de esponjas de colores imposibles y bancos densos de peces forman un paisaje que no tiene equivalente en el Pacífico. El agua no es tropical —14°C en invierno— pero en otoño austral (marzo–mayo) sube a 20–23°C y la visibilidad llega a 30 metros.
+Las Poor Knights Islands son una reserva marina protegida a 24 km de la costa de Northland (Nueva Zelanda) y están consideradas uno de los mejores destinos de buceo del hemisferio sur templado. Lo que hay bajo el agua justifica la fama: arcos de roca volcánica, cuevas submarinas enormes, jardines de esponjas de colores imposibles y bancos densos de peces forman un paisaje que no tiene equivalente en el Pacífico. El agua no es tropical —14°C en invierno— pero en otoño austral (marzo–mayo) sube a 20–23°C y la visibilidad llega a 30 metros.
 
 ## Datos técnicos
 

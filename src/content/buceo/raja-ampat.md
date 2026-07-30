@@ -83,7 +83,7 @@ El resultado bajo el agua: en una sola inmersión en Cape Kri, el equipo de Gera
 ## Puntos de inmersión destacados
 
 ### Cape Kri — El punto del récord
-Una punta de arrecife expuesta a la corriente del Este, en el extremo oriental de la isla Kri. Gerald Allen registró aquí en 2006 el récord mundial de diversidad: 374 especies de peces de arrecife en una inmersión. El coral tabular, la pared y la punta ofrecen tres hábitats diferentes en el mismo punto. Los tiburones de arrecife de bambú descansan en el fondo durante el día. La punta tiene corriente variable — en corriente activa, los peces pelágicos (tiburones, barracuda, atunes) pasan a baja distancia.
+Una punta de arrecife expuesta a la corriente del Este, en el extremo oriental de la isla Kri. Gerald Allen registró aquí en abril de 2012 el récord mundial de diversidad: 374 especies de peces de arrecife en una inmersión. El coral tabular, la pared y la punta ofrecen tres hábitats diferentes en el mismo punto. Los tiburones de arrecife de bambú descansan en el fondo durante el día. La punta tiene corriente variable — en corriente activa, los peces pelágicos (tiburones, barracuda, atunes) pasan a baja distancia.
 
 ### Manta Sandy (Dampier Passage)
 Un banco de arena en el Dampier Passage donde las mantas de Raja Ampat van a que los peces limpiadores les quiten parásitos y la arena abrasione sus vientres. En temporada alta: 10-30 mantas simultáneas sobre el banco a 12-20m. Sin corriente en el banco mismo. Es posiblemente el punto de mantas más accesible para buceadores OW de todo el catálogo.
@@ -130,4 +130,5 @@ Para clientes de primer viaje al Indo-Pacífico, recomendamos empezar por Bali o
 - [Papua Diving](https://www.papua-diving.com/) — El resort de referencia de Raja Ampat; datos técnicos de todos los puntos
 - [Damai Liveaboard](https://www.damai.co/) — Barco premium; itinerarios y datos de temporada
 - [Conservation International — Coral Triangle](https://www.conservation.org/priorities/coral-triangle) — Datos de biodiversidad; récord de especies Gerald Allen
+- [Papua Diving — Biodiversity Hotspot: Cape Kri](https://papua-diving.com/hotspot-cape-kri-dive-site/) — Fecha del récord de Gerry Allen: abril de 2012, 374 especies en una inmersión
 - [Raja Ampat Tourism](https://www.rajaampatisland.com/) — Marine Entry Fee y regulación de acceso

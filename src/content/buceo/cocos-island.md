@@ -58,7 +58,7 @@ tags:
 
 ## Resumen
 
-Jacques Cousteau la llamó "la isla más bella del mundo". Los buceadores la llaman "el lugar donde vas a ver más tiburones martillo que en ningún otro sitio del planeta". Las dos descripciones son correctas.
+Los buceadores la llaman "el lugar donde vas a ver más tiburones martillo que en ningún otro sitio del planeta". La frase, atribuida a Cousteau, de que es "la isla más bella del mundo" se repite en todas partes sin fuente primaria; el buceo no la necesita.
 
 Isla Cocos es un Parque Nacional de Costa Rica ubicado a 550 kilómetros de la costa, en pleno Pacífico Oriental Tropical. No tiene infraestructura turística — ni hoteles, ni restaurantes, ni tiendas. Solo una estación de guardaparques de la marina costarricense y el muelle donde fondean los liveaboards. La única manera de llegar es en barco, 36 horas desde Puntarenas.
 
@@ -121,7 +121,7 @@ La evacuación médica desde Cocos a San José tarda 36h de navegación + vuelo.
 
 Cocos es el límite superior de la escala de buceo recreativo avanzado. No está recomendado para buceadores que quieren "una experiencia emocional" sin el kilometraje real. Sí está recomendado para el cliente que ya ha hecho Galápagos, quiere más tiburones martillo, y está dispuesto a invertir 36 horas de barco oceánico en cada dirección.
 
-El precio total (vuelo a San José + liveaboard 12 noches) supera los 6.000-7.000 EUR por persona. Es el destino de buceo más caro de nuestra cartera. El retorno en tiburones martillo por euro invertido es, estadísticamente, el más alto del mundo.
+El precio total (vuelo a San José + liveaboard 12 noches) supera los 6.000-7.000 EUR por persona. Es el destino de buceo más caro de nuestra cartera, y el único donde el argumento es un solo animal: si vas por los martillos, no hay sustituto.
 
 Los operadores Undersea Hunter y Okeanos Aggressor llevan décadas en Cocos — son los de referencia. El Argo (Aggressor Fleet) es el barco más moderno y cómodo.
 

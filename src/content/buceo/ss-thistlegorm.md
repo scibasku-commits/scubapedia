@@ -133,5 +133,4 @@ Combínalo con el circuito clásico del Mar Rojo Norte: Ras Mohammed → Shark R
 ## Fuentes
 
 - [Emperor Divers — Thistlegorm](https://www.emperordivers.com/egypt/) — Proveedor local; itinerarios y datos de temporadas
-- [National Geographic — SS Thistlegorm](https://www.nationalgeographic.com/) — Historia del hundimiento y redescubrimiento por Cousteau
-- [Scuba Diving Magazine — Best Wrecks](https://www.scubadiving.com/) — Ranking pecio más buceado del mundo
+- [Wikipedia — SS Thistlegorm](https://en.wikipedia.org/wiki/SS_Thistlegorm) — Hundimiento (1941), carga y localización por Cousteau en 1955

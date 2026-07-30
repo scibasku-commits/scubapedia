@@ -58,7 +58,7 @@ tags:
 
 ## Resumen
 
-La tercera roca del sol no tiene arrecifes de coral bajo la jungla del Yucatán. Tiene algo diferente: 10.000 kilómetros de galerías inundadas bajo la piedra caliza, conectadas por un acuífero que alimenta el Caribe. Los Maya las llamaban cenotes — entradas al inframundo, puertas al Xibalbá. Los buceadores las llaman el lugar con la mejor visibilidad del planeta.
+La tercera roca del sol no tiene arrecifes de coral bajo la jungla del Yucatán. Tiene algo diferente: los dos sistemas de cuevas subacuáticas más largos del mundo — Ox Bel Ha y Sac Actun, este último con 371,9 km cartografiados por el Quintana Roo Speleological Survey — bajo la piedra caliza, conectados por un acuífero que alimenta el Caribe. Los Maya las llamaban cenotes: entradas al inframundo, puertas al Xibalbá. Los buceadores van por el agua, que en muchos cenotes es de las más transparentes que existen.
 
 No hay sedimento. El agua de lluvia tarda décadas en filtrarse a través de la roca kárstica antes de llegar a las galerías; cuando llega, es tan pura que puedes ver a 60, 80, 100 metros de distancia. La luz solar entra por las aberturas y crea columnas de luz que convierten estas cuevas en catedrales naturales. Las estalactitas, formadas durante las eras glaciales cuando las cuevas estaban secas, cuelgan sobre ti con la precisión de un órgano de iglesia. Dos sistemas —Dos Ojos y Sistema Sac Actun— suman juntos más de 350 kilómetros de galerías exploradas. Y solo se ha explorado un 5%.
 
@@ -158,5 +158,6 @@ Lo que nadie te dice: las colas del Gran Cenote en temporada alta (julio-agosto)
 
 - [Koox Diving Tulum](https://kooxdiving.com/) — Operador de referencia local para cenotes y cursos de cave diving
 - [Sistema Sac Actun / CINDAQ](https://cindaq.org/) — Exploración y base de datos de uno de los sistemas de cuevas inundadas más largos del mundo
+- [Guinness World Records — Longest underwater cave system explored](https://www.guinnessworldrecords.com/world-records/66725-longest-cave-system-underwater-explored) — 371,958 km medidos por el Quintana Roo Speleological Survey (jul. 2019)
 - [Scuba Diving Magazine — Cenotes #1 Cave Diving](https://www.scubadiving.com/worlds-best-scuba-diving-destinations) — Referencia de ranking en categoría Cave Diving
 - [Aquatech Dive Center (Villas DeRosa, Akumal)](https://www.aquatechdivecenter.com/) — Centro Akumal / Dos Ojos; datos técnicos de sistemas y condiciones

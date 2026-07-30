@@ -15,7 +15,7 @@ temperatura_agua_max: 4
 corrientes: "Corriente suave pero continua dentro de la fisura"
 temporada_alta: "Todo el año (verano más amable; invierno espectacular)"
 temporada_baja: "No aplica"
-certificacion_minima: "Drysuit (snorkel sin cert; buceo requiere cert drysuit)"
+certificacion_minima: "Certificación drysuit + experiencia en aguas frías (el snorkel no requiere certificación de buceo)"
 vida_marina_destacada:
   - "Prácticamente nula — el atractivo es geológico y visual"
   - "Algas dreamlike (Drepanocladus)"

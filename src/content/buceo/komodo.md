@@ -66,7 +66,7 @@ tags:
 
 Komodo hace lo que ningún otro destino puede hacer en el mismo viaje: te da un pico de adrenalina buceando en las corrientes más fuertes del Indo-Pacífico con mantas de arrecife en grupos de 20 individuos, y luego te saca del agua y te pone frente a frente con el dragón de Komodo — el mayor lagarto del mundo — en la isla de al lado.
 
-El Parque Nacional de Komodo ocupa 1.800 km² de agua entre las islas de Flores y Sumbawa, en la frontera ecológica entre el Mar de Java (aguas cálidas empobrecidas en nutrientes del norte) y el Mar de Banda (aguas frías ricas en nutrientes del sur). El encuentro de estas dos masas de agua crea corrientes de hasta 8 nudos en algunos pasos entre islas — las más fuertes documentadas en buceo recreativo mundial. Y esa misma corriente es lo que hace que Komodo tenga la densidad de fauna más alta de Indonesia fuera de Raja Ampat.
+El Parque Nacional de Komodo abarca 219.322 hectáreas (2.193 km²) según la ficha UNESCO, la mayor parte superficie marina, entre las islas de Flores y Sumbawa, en la frontera ecológica entre el Mar de Java (aguas cálidas empobrecidas en nutrientes del norte) y el Mar de Banda (aguas frías ricas en nutrientes del sur). El encuentro de estas dos masas de agua crea corrientes muy fuertes en los pasos entre islas, de las más exigentes que se bucean en recreativo. Y esa misma corriente es lo que hace que Komodo tenga la densidad de fauna más alta de Indonesia fuera de Raja Ampat.
 
 ## Datos técnicos
 

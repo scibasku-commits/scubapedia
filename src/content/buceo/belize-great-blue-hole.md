@@ -54,11 +54,11 @@ tags:
 
 # Belice — Great Blue Hole
 
-> Belice · Caribe · El hoyo azul más grande del mundo — icono global del buceo que Jacques Cousteau declaró uno de los 10 mejores destinos en 1971
+> Belice · Caribe · El hoyo azul marino más grande del mundo — icono global del buceo desde que el Calypso de Cousteau lo exploró en 1971
 
 ## Resumen
 
-El **Great Blue Hole** de Belice es el agujero azul marino más grande del mundo: ~318 metros de diámetro, 124 metros de profundidad, visible desde el espacio. Está en el centro del Lighthouse Reef, un atolón a 70 kilómetros de la costa de Belice. Jacques Cousteau lo incluyó en 1971 en su lista de los diez mejores destinos de buceo del mundo — lo que lo convirtió en el icono pop del buceo global décadas antes de que existiera Instagram.
+El **Great Blue Hole** de Belice es el agujero azul marino más grande del mundo: ~318 metros de diámetro y 124 de profundidad. Está en el centro del Lighthouse Reef, un atolón a 70 kilómetros de la costa de Belice. Lo que lo convirtió en icono pop del buceo, décadas antes de que existiera Instagram, fue la expedición de Jacques Cousteau con el *Calypso* en 1971 y el episodio que rodó allí. (La lista de "los diez mejores destinos de buceo de Cousteau" que se le atribuye después circula sin fuente primaria; no la damos por buena.)
 
 La experiencia de bucear en el Blue Hole es particular: no es la inmersión de más fauna del catálogo de ScubaPedia. A 40 metros de profundidad en el interior del hoyo, la vis es de 60m hacia arriba (el sol ilumina la columna de agua azul desde la entrada circular), la temperatura baja (termoclina a 30m, el interior está más fresco) y las únicas estructuras son las estalactitas — formaciones de espeleotema de piedra caliza del Pleistoceno que demuestran que este hoyo estuvo sobre el nivel del mar hace 15.000 años y se formó como cueva en tierra firme.
 

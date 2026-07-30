@@ -51,7 +51,7 @@ tags:
 
 ## Resumen
 
-Belice tiene el Blue Hole — la formación kárstica circular más famosa del mundo después de ser sobrevolada por Cousteau en 1971 — y el Sistema Arrecifal Mesoamericano más largo del hemisferio norte. Los atolones exteriores de Turneffe y Lighthouse Reef tienen una calidad de buceo que muchos visitantes consideran superior al Blue Hole mismo: paredes largas, visibilidad excepcional y tiburones de arrecife en números muy saludables. ¿Vas por la foto aérea o por el buceo? La pregunta importa, porque el Blue Hole es un hito, no necesariamente la mejor inmersión. Es como visitar un museo por un solo cuadro: el cuadro justifica el viaje, pero las salas de al lado son las que te quedas mirando.
+Belice tiene el Blue Hole — la formación kárstica circular más famosa del mundo desde que Cousteau la exploró con el *Calypso* en 1971 — y el Sistema Arrecifal Mesoamericano más largo del hemisferio norte. Los atolones exteriores de Turneffe y Lighthouse Reef tienen una calidad de buceo que muchos visitantes consideran superior al Blue Hole mismo: paredes largas, visibilidad excepcional y tiburones de arrecife en números muy saludables. ¿Vas por la foto aérea o por el buceo? La pregunta importa, porque el Blue Hole es un hito, no necesariamente la mejor inmersión. Es como visitar un museo por un solo cuadro: el cuadro justifica el viaje, pero las salas de al lado son las que te quedas mirando.
 
 ## Datos técnicos
 

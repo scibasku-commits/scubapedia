@@ -91,7 +91,7 @@ El arrecife exterior más accesible desde Port Douglas. Excelente visibilidad, i
 ### Islas: Fitzroy Island y Lizard Island
 
 - **Fitzroy Island** — Arrecife accesible desde la playa, buena opcion para snorkel y bautismos. A 45 min de Cairns en ferry.
-- **Lizard Island** — Resort de lujo (partner Scibasku, 15% comision) con buceo directo desde la isla. Cod Hole esta a tiro de piedra.
+- **Lizard Island** — Resort de lujo (partner Scibasku) con buceo directo desde la isla. Cod Hole esta a tiro de piedra.
 
 ## Vida marina
 
@@ -116,7 +116,7 @@ El liveaboard es la forma seria de bucear la Gran Barrera. Los day trips cubren 
 | **Coral Sea Dreaming** | Osprey Reef + Mar del Coral | 5-7 noches | 280-350 AUD/día |
 | **Reef Encounter** | Arrecife exterior desde Cairns | 2-3 noches | 250-320 AUD/día |
 
-**Partnership Scibasku:** Mike Ball Dive Expeditions — 20% comision. Salidas especiales de ballenas minke en junio-julio.
+**Partner Scibasku:** Mike Ball Dive Expeditions. Salidas especiales de ballenas minke en junio-julio.
 
 ## Desde resort / day trip
 
@@ -169,7 +169,7 @@ La Gran Barrera tiene sitios para todos los niveles. Un buceador recien certific
 
 La Gran Barrera es uno de esos destinos donde la diferencia entre un viaje bueno y uno extraordinario esta en la logística. Un day trip desde Cairns al arrecife interior es agradable, pero no es la Gran Barrera que sale en los documentales. Para eso necesitas un liveaboard al arrecife exterior.
 
-**Nuestra recomendacion:** Mínimo 4 noches de liveaboard con Mike Ball (nuestro partner, 20% comision) cubriendo Cod Hole y Ribbon Reefs. Si el presupuesto y el tiempo lo permiten, la extensión a Osprey Reef anade 2 noches y es un mundo aparte.
+**Nuestra recomendacion:** Mínimo 4 noches de liveaboard con Mike Ball (nuestro partner) cubriendo Cod Hole y Ribbon Reefs. Si el presupuesto y el tiempo lo permiten, la extensión a Osprey Reef anade 2 noches y es un mundo aparte.
 
 Para ballenas minke, las salidas especiales de Mike Ball en junio-julio son la referencia. Las plazas se agotan con meses de antelación.
 

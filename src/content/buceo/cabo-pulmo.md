@@ -62,7 +62,7 @@ En 1995, la familia Murillo de Cabo Pulmo dejó de pescar. Convencieron a todo e
 
 Cabo Pulmo es hoy el arrecife coralino más sano del hemisferio occidental. El único arrecife coralino vivo del Mar de Cortés —el "acuario del mundo" según Cousteau. No es grande (27 kilómetros cuadrados) ni tiene la diversidad exótica de los trópicos asiáticos. Lo que tiene es algo más difícil: un ecosistema completo con todos sus niveles tróficos en equilibrio, incluyendo los depredadores tope, en un mar que lleva décadas sin ellos en casi ningún sitio.
 
-El banco de jureles de Cabo Pulmo —decenas de miles de jureles girando en tornado sobre el arrecife— es uno de los espectáculos de vida marina más filmados del Pacífico mexicano. Jacques Cousteau filmó aquí. David Attenborough filmó aquí. Y cada año, los buceadores que llegan esperando un arrecife más lo que encuentran es un ecosistema vivo que no saben que aún existía.
+El banco de jureles de Cabo Pulmo —decenas de miles de jureles girando en tornado sobre el arrecife— es uno de los espectáculos de vida marina más filmados del Pacífico mexicano. Y cada año, los buceadores que llegan esperando un arrecife más lo que encuentran es un ecosistema vivo que no saben que aún existía.
 
 ## Datos técnicos
 

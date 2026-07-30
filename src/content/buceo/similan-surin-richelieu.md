@@ -41,7 +41,7 @@ centros_buceo_recomendados:
   - "Fantasea Divers (Khao Lak)"
   - "Big Blue Diving (Ko Lanta)"
 proveedores_scibasku:
-  - "Manta Queen — Similan Islands (20% comisión; temporada 2026-2027)"
+  - "Manta Queen — Similan Islands (temporada 2026-2027)"
 precio_semana_aprox: "900-1.800 USD (liveaboard 7-9 noches desde Khao Lak o Phuket)"
 giora_estuvo: false
 updated: 2026-06-14
@@ -60,15 +60,15 @@ tags:
 
 # Similan Islands y Surin
 
-> Tailandia · Mar de Andamán · Richelieu Rock — el punto más rico en vida marina del Indo-Pacífico según Jacques Cousteau — y las mantas de Koh Bon a 20 por inmersión
+> Tailandia · Mar de Andamán · Richelieu Rock, el pinnacle con más vida del Andamán tailandés — y las mantas de Koh Bon
 
 ## Resumen
 
 El Mar de Andamán al noroeste de Tailandia tiene una característica que lo separa del Mar de China Meridional (donde están Koh Tao, Koh Samui y Phuket turístico): cierra. Cada año, entre junio y octubre, el monzón del suroeste hace el acceso a los Parques Nacionales de Similan y Surin imposible, y el Parque Marino cierra oficialmente. Eso protege los arrecifes durante cinco meses al año sin que nadie los bucee.
 
-El resultado de ese cierre anual y de décadas de protección como Parque Nacional es Richelieu Rock — un pinnacle de roca a 12 millas al noroeste de Ko Surin que Jacques Cousteau visitó en los años 80 y describió como "el punto más rico en vida marina del Indo-Pacífico". Los operadores que lo han buceado en los últimos 40 años le dan la razón: en un radio de 50 metros de roca hay nudibranquios, peces mandarina, caballitos de mar pigmeo, camarones fantasma, tiburones ballena, mantas, bancos de fusileros de miles de individuos y leopardo rays descansando en la arena. Todo en la misma inmersión, en la misma roca.
+El resultado de ese cierre anual y de décadas de protección como Parque Nacional es Richelieu Rock — un pinnacle de roca a 12 millas al noroeste de Ko Surin. (Se repite mucho que Cousteau lo descubrió y lo llamó el punto más rico del Indo-Pacífico; no hay fuente que lo sostenga: en su expedición al Andamán no pasó de Koh Bon, y la roca ya figuraba con ese nombre en cartas de la Marina tailandesa.) Lo que sí sostienen los operadores que lo bucean desde hace 40 años es la densidad: en un radio de 50 metros de roca hay nudibranquios, peces mandarina, caballitos de mar pigmeo, camarones fantasma, tiburones ballena, mantas, bancos de fusileros de miles de individuos y leopardo rays descansando en la arena. Todo en la misma inmersión, en la misma roca.
 
-**Nota Scibasku:** Manta Queen es nuestro proveedor directo con 20% comisión para la temporada 2026-2027.
+**Nota Scibasku:** Manta Queen es nuestro proveedor directo para la temporada 2026-2027.
 
 ## Datos técnicos
 
@@ -120,7 +120,7 @@ El punto de arrecife blando más colorido de los Similans. Flores de soft coral 
 
 Los Similans son el destino Asia-Pacífico más equilibrado para un primer liveaboard: en liveaboard de 7-9 noches se cubre Richelieu Rock, Koh Bon, Koh Tachai y los mejores puntos de los Similans. El precio es inferior a Galápagos, Cocos o Tubbataha, con fauna que rivaliza con cualquiera de ellos en un día bueno.
 
-**Proveedor directo:** Manta Queen tiene 8 barcos operando los Similans con experiencia de décadas. Trabajamos con ellos a 20% de comisión. Para clientes interesados en liveaboard Similans, es nuestra recomendación directa.
+**Proveedor directo:** Manta Queen tiene 8 barcos operando los Similans con experiencia de décadas. Trabajamos con ellos directamente. Para clientes interesados en liveaboard Similans, es nuestra recomendación directa.
 
 ## Fichas relacionadas
 
@@ -131,5 +131,7 @@ Los Similans son el destino Asia-Pacífico más equilibrado para un primer livea
 
 ## Fuentes
 
-- [Manta Queen Fleet](https://www.mantaqueen.com/) — Nuestro proveedor directo; 8 barcos, itinerarios completos, 20% comisión Scibasku
+- [Manta Queen Fleet](https://www.mantaqueen.com/) — Nuestro proveedor directo; 8 barcos, itinerarios completos
 - [Similan Islands National Park — DNP](https://www.dnp.go.th/) — Fechas oficiales de apertura y regulación del Parque
+- [Aum Scuba Phuket — Scuba Divers and The Naming of Richelieu Rock](https://www.aumscuba.com/scuba-divers-and-richelieu-rock/) — Desmonta la atribución a Cousteau: no pasó de Koh Bon; el nombre viene del almirante Richelieu de la Marina tailandesa
+- [Wikipedia — Richelieu Rock](https://en.wikipedia.org/wiki/Richelieu_Rock) — Origen del topónimo y estado de la atribución

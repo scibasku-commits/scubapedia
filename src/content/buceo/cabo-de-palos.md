@@ -56,7 +56,7 @@ tags:
 
 ## Resumen
 
-La Reserva Marina de Cabo de Palos e Islas Hormigas es, según la Fundación Cousteau, el mejor sitio de buceo del Mediterráneo — y muchos la consideran la mejor de Europa. Protegida desde 1995, sus 19 km² albergan los meros más grandes del Mediterráneo, bancos de barracudas que quitan el hipo y campos de gorgonias en paredes verticales que recuerdan a destinos tropicales. Añade varios pecios históricos en los bajos y una infraestructura de centros de buceo madura, y tienes el destino de buceo español más completo: pelágico, pared, macro y pecios en una misma reserva.
+La Reserva Marina de Cabo de Palos e Islas Hormigas es el destino de buceo de referencia del Mediterráneo español (la cita que la nombra "mejor del Mediterráneo según la Fundación Cousteau" circula por medio internet sin fuente primaria, así que aquí no la usamos). Protegida desde 1995, sus 19 km² albergan los meros más grandes del Mediterráneo, bancos de barracudas que quitan el hipo y campos de gorgonias en paredes verticales que recuerdan a destinos tropicales. Añade varios pecios históricos en los bajos y una infraestructura de centros de buceo madura, y tienes el destino de buceo español más completo: pelágico, pared, macro y pecios en una misma reserva.
 
 ## Datos técnicos
 
