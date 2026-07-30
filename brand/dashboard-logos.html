@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkiPedia ↔ Scubapedia · logos</title>
+<style>
+  :root{
+    --crema:#fbf8f3; --tinta:#1a1a1a; --muted:#8a8073; --border:#e5ddd1;
+    --ski:#1EB4DC; --ski-link:#0c7491;
+    --scuba:#16A6C9; --scuba-deep:#0A5570;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'DM Sans','Avenir Next',system-ui,sans-serif;background:#f3eee5;color:var(--tinta);padding:32px}
+  h1{font-family:'Fraunces',Georgia,serif;font-weight:800;font-size:30px;margin:0 0 4px}
+  .sub{color:var(--muted);margin:0 0 28px;font-size:15px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1200px;margin:0 auto}
+  @media(max-width:880px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .card h2{margin:0;padding:16px 20px;font-family:'Fraunces',serif;font-size:18px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+  .tag{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:4px 10px;border-radius:999px;color:#fff}
+  .logo-stage{padding:28px;display:flex;align-items:center;justify-content:center;min-height:230px}
+  .logo-stage.crema{background:var(--crema)}
+  .logo-stage img,.logo-stage svg{max-width:100%;height:auto}
+  .meta{padding:16px 20px;border-top:1px solid var(--border);font-size:13px;line-height:1.6;color:#444}
+  .sw{display:inline-block;width:13px;height:13px;border-radius:3px;vertical-align:-2px;margin-right:5px;border:1px solid rgba(0,0,0,.1)}
+  .full{max-width:1200px;margin:32px auto 0;background:#fff;border:1px solid var(--border);border-radius:16px;padding:24px 28px}
+  .full h2{font-family:'Fraunces',serif;margin:0 0 14px;font-size:20px}
+  .anatomy{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center}
+  @media(max-width:880px){.anatomy{grid-template-columns:1fr}}
+  .stage2{background:var(--crema);border-radius:12px;padding:20px;position:relative}
+  ol{margin:0;padding-left:20px;line-height:1.9}
+  ol b{color:var(--scuba-deep)}
+  code{background:#f3eee5;padding:1px 6px;border-radius:5px;font-size:12px}
+  .note{margin-top:18px;padding:14px 16px;background:#fff8e8;border:1px solid #f0e2bf;border-radius:10px;font-size:13px;line-height:1.6}
+  .files{font-size:12px;color:var(--muted);margin-top:10px}
+  .files code{font-size:11px}
+</style>
+</head>
+<body>
+  <h1>SkiPedia &nbsp;↔&nbsp; Scubapedia — sistema de logo</h1>
+  <p class="sub">Misma familia Scibasku · mismo lockup · SkiPedia lleva la <b>montaña arriba</b>; Scubapedia lleva la <b>ola debajo</b> y el texto encima.</p>
+
+  <!-- LOGO MADRE -->
+  <div class="full" style="margin:0 auto 28px;max-width:1200px">
+    <h2>Logo madre — Viajes Scibasku <span class="tag" style="background:#16A6C9;font-size:10px">FUENTE DE VERDAD</span></h2>
+    <div class="anatomy" style="grid-template-columns:1.2fr 1fr">
+      <div style="background:#16A6C9;border-radius:12px;padding:20px;display:flex;justify-content:center">
+        <img src="_madre-scibasku.png" alt="logo madre Viajes Scibasku" style="max-width:100%;border-radius:6px">
+      </div>
+      <div style="font-size:14px;line-height:1.7">
+        El logo tiene <b>dos</b> elementos gráficos que reparten las marcas hijas:
+        <ul style="padding-left:20px;margin:10px 0">
+          <li>⛰️ <b>Las montañas</b> (encima del wordmark) → las hereda <b style="color:#1EB4DC">SkiPedia</b>.</li>
+          <li>🌊 <b>La ola / swoosh</b> (bajo “SCIBA<u>SKU</u>”) → la hereda <b style="color:#16A6C9">Scubapedia</b>.</li>
+        </ul>
+        Tagline madre: <code>SKI &amp; SCUBA</code> — literalmente las dos verticales. Cada hija coge su mitad del ADN.
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <!-- SKIPEDIA -->
+    <div class="card">
+      <h2>SkiPedia <span class="tag" style="background:#1EB4DC">existente</span></h2>
+      <div class="logo-stage crema">
+        <img src="skipedia-ref.png" alt="logo SkiPedia">
+      </div>
+      <div class="meta">
+        Icono = <b>montaña</b> EXACTA de Scibasku, encima del wordmark.<br>
+        <span class="sw" style="background:#1EB4DC"></span><code>#1EB4DC</code> cian marca (decorativo + wordmark)<br>
+        <span class="sw" style="background:#0c7491"></span><code>#0c7491</code> cian texto AA<br>
+        Tipo: Avenir Next Heavy · MAYÚSCULAS · tagline “ENCICLOPEDIA DE ESQUÍ”.
+      </div>
+    </div>
+
+    <!-- SCUBAPEDIA -->
+    <div class="card">
+      <h2>Scubapedia <span class="tag" style="background:#16A6C9">NUEVO</span></h2>
+      <div class="logo-stage crema">
+        <img src="scuba-final.png" alt="logo Scubapedia">
+      </div>
+      <div class="meta">
+        Icono = <b>ola</b> REAL de Scibasku (swoosh bajo “SCIBASKU”), extraída del SVG madre, tucada bajo el
+        wordmark y desplazada a la izquierda — igual que el original.<br>
+        <span class="sw" style="background:#1EB4DC"></span><code>#1EB4DC</code> cian de marca (mismo que SkiPedia y el logo madre)<br>
+        Tipo: Avenir Next Heavy · MAYÚSCULAS · tagline “ENCICLOPEDIA DE BUCEO”.
+      </div>
+    </div>
+  </div>
+
+  <!-- ANATOMÍA / ESQUEMA -->
+  <div class="full">
+    <h2>Esquema de construcción — Scubapedia</h2>
+    <div class="anatomy">
+      <div class="stage2">
+        <img src="scuba-final.png" alt="anatomía Scubapedia" style="width:100%">
+      </div>
+      <div>
+        <ol>
+          <li><b>Wordmark arriba</b> — <code>SCUBAPEDIA</code>, Avenir Next 800, 88px, centrado, color aqua <code>#16A6C9</code>.</li>
+          <li><b>Ola debajo</b> — la ola real del logo madre Scibasku, aislada limpia (punta fina izq. → cola/aleta que sube a la dcha.). Reemplaza a la montaña de SkiPedia.</li>
+          <li><b>Tagline</b> — <code>ENCICLOPEDIA DE BUCEO</code>, 19px, tracking 9, azul océano <code>#0A5570</code>.</li>
+          <li><b>Lienzo</b> — 760×360, idéntico a SkiPedia. Fondo crema <code>#fbf8f3</code> en el máster de presentación; transparente para web.</li>
+        </ol>
+        <div class="files">
+          Archivos máster (en <code>~/projects/scubapedia/brand/</code>):<br>
+          <code>scubapedia-logo.svg</code> · <code>-transparent.svg</code> · <code>-nav.svg</code> · <code>-onaqua.svg</code> · <code>scibasku-ola.svg</code> (ola aislada)
+        </div>
+      </div>
+    </div>
+    <div class="note">
+      <b>Pendiente de tu OK</b> — esto es solo el diseño/máster (reversible, en git). <u>No</u> he re-horneado los PNG de <code>public/</code> ni desplegado: el sitio sigue en producción con el logo anterior (la “montaña invertida”). Si te gusta esta ola, lo siguiente es hornear PNG @3x y desplegar — me lo dices y voy.
+    </div>
+  </div>
+</body>
+</html>

@@ -53,7 +53,7 @@ tags:
 
 ## Resumen
 
-Sipadan es una isla oceánica única: un pináculo volcánico que sube de 600m de profundidad hasta la superficie, rodeado de paredes verticales densísimas en vida. Jacques Cousteau la visitó en 1989 y declaró que había "un arte viviente inigualable". Hoy el acceso está estrictamente controlado — solo 120 permisos diarios para todo el mundo — lo que mantiene la magia intacta. Mabul es la isla vecina donde se duerme: sus fondos de muck albergan el macro más diverso del Triángulo de Coral.
+Sipadan es una isla oceánica única: un pináculo volcánico que sube de 600m de profundidad hasta la superficie, rodeado de paredes verticales densísimas en vida. Jacques Cousteau la filmó en 1989 para *Borneo: The Ghost of the Sea Turtle* y dejó la frase que la hizo famosa: *"He visto otros sitios como Sipadan, hace 45 años, pero ya no. Ahora hemos encontrado una obra de arte intacta."* Hoy el acceso está estrictamente controlado por un cupo diario de permisos que reparte Sabah Parks entre los operadores autorizados; el cupo se ha revisado varias veces (120 en el sistema original, 176 durante años, y por encima de 250 desde el reparto de 2022), así que **la cifra vigente hay que confirmarla con Sabah Parks o con el resort antes de reservar**. Mabul es la isla vecina donde se duerme: sus fondos de muck son de los más ricos en macro del Triángulo de Coral.
 
 ## Datos técnicos
 
@@ -115,3 +115,6 @@ Sipadan no tiene alojamiento — está protegida. Se duerme en **Mabul o Kapalai
 - [Scuba Junkie](https://scuba-junkie.com/) — Centro citado en la ficha, con resort en Mabul
 - [Seaventures Dive Rig](https://seaventuresdive.com/) — El hotel-plataforma citado en la ficha, frente a Mabul
 - [Sabah Parks](https://sabahparks.org.my/) — Autoridad oficial que gestiona los permisos diarios de Sipadan
+- [Daily Express Malaysia — Concern over extra Sipadan diving permits and rules (2022)](https://www.dailyexpress.com.my/news/200577/concern-over-extra-sipadan-diving-permits-and-rules/) — Histórico del cupo (120 → 176 → ~254) y regla de certificación AOW
+- [Sabah Tourism Board — Sipadan Island](https://sabahtourism.com/destination/sipadan-island/) — Junta de Turismo de Sabah: cupo diario de 252 permisos
+- [EWS-WWF / Cousteau (1989)](https://www.facebook.com/emiratesnaturewwf/videos/remember-1989-28-years-ago-jacques-cousteau-called-sipadan-an-untouched-piece-of/10155839113679650/) — Cita textual "an untouched piece of art", del documental *Borneo: The Ghost of the Sea Turtle*

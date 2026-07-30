@@ -113,24 +113,30 @@ Conocimiento actual de Scubapedia (destinos relevantes para esta pregunta):
 ${ctx}
 `;
 
-    const apiKey = process.env.OPENROUTER_API_KEY || '';
+    const apiKey = process.env.ANTHROPIC_API_KEY || '';
     if (!apiKey) {
-      return new Response(JSON.stringify({ error: 'API key de OpenRouter no configurada.' }), {
+      return new Response(JSON.stringify({ error: 'API key del asistente no configurada.' }), {
         status: 500, headers: { 'Content-Type': 'application/json' },
       });
     }
 
-    const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+    // Anthropic exige que la conversación empiece por 'user' y alterne roles
+    const cleanMsgs = (messages as Array<{ role: string; content: string }>)
+      .filter((m) => m && (m.role === 'user' || m.role === 'assistant') && typeof m.content === 'string')
+      .map((m) => ({ role: m.role, content: m.content }));
+    while (cleanMsgs.length && cleanMsgs[0].role !== 'user') cleanMsgs.shift();
+
+    const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`,
-        'HTTP-Referer': 'https://scubapedia.org',
-        'X-Title': 'Scubapedia Chatbot',
+        'content-type': 'application/json',
+        'x-api-key': apiKey,
+        'anthropic-version': '2023-06-01',
       },
       body: JSON.stringify({
-        model: 'google/gemini-2.5-flash',
-        messages: [{ role: 'system', content: systemPrompt }, ...messages],
+        model: 'claude-haiku-4-5-20251001',
+        system: systemPrompt,
+        messages: cleanMsgs,
         temperature: 0.5,
         max_tokens: 800,
       }),
@@ -138,14 +144,14 @@ ${ctx}
 
     if (!response.ok) {
       const errText = await response.text();
-      console.error('Error de OpenRouter:', errText);
+      console.error('Error de Anthropic:', response.status, errText.slice(0, 500));
       return new Response(JSON.stringify({ error: 'Error en la llamada al modelo de IA.' }), {
         status: 502, headers: { 'Content-Type': 'application/json' },
       });
     }
 
     const completion = await response.json();
-    const reply = completion.choices?.[0]?.message || { role: 'assistant', content: 'Lo siento, he tenido un problema al procesar tu pregunta. Escríbeme por WhatsApp y te ayudo.' };
+    const reply = { role: 'assistant', content: completion.content?.[0]?.text || 'Lo siento, he tenido un problema al procesar tu pregunta. Escríbeme por WhatsApp y te ayudo.' };
 
     // Fuente + sugerencias derivadas server-side de las fichas que SÍ se usaron
     // (robusto: no depende de que el modelo devuelva JSON).

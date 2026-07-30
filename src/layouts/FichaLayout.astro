@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import { normalizeZona, zonaSlug, zonaGradient } from '../lib/zonas';
-import { chips, lede, railRows, breadcrumb, liveaboards, certCorta } from '../lib/ficha-datos';
+import { chips, lede, railRows, breadcrumb, liveaboards, etiquetaCorta } from '../lib/ficha-datos';
 import { crucerobuceoSlug, crucerobuceoUrl } from '../lib/crucerobuceo';
 import { destinoImage } from '../lib/imagen';
 import { datosClave, parseFaq } from '../lib/datos-clave';
@@ -53,7 +53,7 @@ const cercanas = allBuceo
       id: cid,
       title: (e.data.title as string).split(' - ')[0].split(' — ')[0].trim(),
       region: (e.data.region || '').split(',')[0].trim(),
-      cert: certCorta(e.data.certificacion_minima || ''),
+      cert: etiquetaCorta(e.data.certificacion_minima) ?? '',
       grad: zonaGradient(normalizeZona(e.data.region || '')),
       img: destinoImage(cid, 'card'),
     };
@@ -231,6 +231,9 @@ const datos = datosClave(d, zona, coords);
     .chip .num{font-family:var(--serif);font-weight:600;font-size:1.4rem;line-height:1.05;color:var(--tinta);letter-spacing:-.01em}
     .chip .lab{font-size:12.5px;color:var(--gris);font-weight:500;letter-spacing:.03em}
     .chip.flag .num{color:var(--azul);font-size:1.2rem}
+    /* chips de texto (visibilidad, corriente, cert. mínima): valor literal de la ficha, puede ser largo */
+    .chip.txt .num{font-family:var(--sans);font-size:1rem;font-weight:600;line-height:1.32}
+    .chip.txt .num::first-letter{text-transform:uppercase}
 
     /* cta band */
     .cta-band{background:var(--crema);padding:30px 0;border-bottom:1px solid var(--borde)}
@@ -435,7 +438,7 @@ const datos = datosClave(d, zona, coords);
   <section class="chipbar" aria-label="Datos clave">
     <div class="wrap">
       {chipList.map((c) => (
-        <div class={`chip${c.flag ? ' flag' : ''}`}><span class="num">{c.num}</span><span class="lab">{c.lab}</span></div>
+        <div class={`chip${c.flag ? ' flag' : ''}${c.txt ? ' txt' : ''}`}><span class="num">{c.num}</span><span class="lab">{c.lab}</span></div>
       ))}
     </div>
   </section>

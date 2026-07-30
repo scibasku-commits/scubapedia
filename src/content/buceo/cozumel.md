@@ -54,11 +54,13 @@ tags:
 
 # Cozumel
 
-> México · Caribe · El arrecife más fotografiado del Caribe y el destino de deriva más técnicamente perfecto del mundo
+> México · Caribe · Buceo en deriva con 25-50 m de visibilidad sobre el arrecife más famoso del Caribe mexicano
 
 ## Resumen
 
-Cozumel tiene dos claims que resisten el paso del tiempo: es el arrecife que Jacques Cousteau filmó en 1961 en "Le Monde du Silence" y describió como "el más espectacular del mundo", y sigue siendo hoy, 65 años después, el arrecife coralino con mayor visibilidad consistente del Caribe — 25-50 metros de vis en condiciones normales, gracias a la corriente continua que barre la plataforma occidental de la isla de norte a sur.
+Cozumel es uno de los arrecifes con mejor visibilidad del Caribe — 25-50 metros en condiciones normales, gracias a la corriente continua que barre la plataforma occidental de la isla de norte a sur y se lleva el sedimento. Esa misma corriente es la que define su forma de bucear.
+
+> **Nota de la casa sobre el mito de Cousteau.** Se repite en medio internet que Jacques Cousteau filmó Palancar en *Le Monde du Silence* y lo declaró el mejor arrecife del mundo. No es cierto: la película es de **1956** y se rodó en el Mediterráneo, el Mar Rojo, el Golfo Pérsico y el Índico — no en México. La supuesta visita posterior a Cozumel es leyenda turística sin documentar. Cozumel no la necesita.
 
 Esa corriente lo define todo. Cozumel se bucea en deriva — la mayoría de inmersiones van con la corriente a 1-2 nudos, el buceador flota pasivamente mientras el arrecife pasa como una película. No requiere esfuerzo físico. Hace que el 90% del buceo en Cozumel sea posible incluso para buceadores con poca experiencia — el arrecife es accesible — mientras que la complejidad de los puntos más profundos y los sistemas de cuevas dan material para buceadores avanzados durante semanas.
 
@@ -76,7 +78,7 @@ Esa corriente lo define todo. Cozumel se bucea en deriva — la mayoría de inme
 
 ## Puntos de inmersión destacados
 
-### Palancar — El Arrecife de Cousteau
+### Palancar — El arrecife insignia de Cozumel
 Palancar no es un punto — es un ecosistema de 5km de arrecife dividido en cuatro zonas:
 
 **Palancar Gardens:** La sección de arrecife poco profundo (5-15m) con el coral más sano. Coral Diploria (cerebro) de 3-4m de diámetro que llevan décadas creciendo, esponjas barril de tamaño inhabitual, gorgonias. La vis de 30-40m permite ver la estructura del arrecife en perspectiva imposible en la mayoría de destinos.
@@ -133,3 +135,5 @@ El añadido del tiburón ballena en Isla Mujeres (junio-septiembre) convierte Co
 - [Dive Paradise Cozumel](https://www.diveparadise.com/) — Operador histórico; datos de Palancar y corriente
 - [Cozumel Reefs National Marine Park](https://www.conanp.gob.mx/) — Regulación y estado de conservación
 - [Reef Environmental Education Foundation — Cozumel](https://www.reef.org/) — Estado del arrecife; censos de biodiversidad
+- [Everything Cozumel — The Documentary of Cozumel that Jacques Cousteau Never Made](https://everythingcozumel.com/the-documentary-of-cozumel-that-jacques-cousteau-never-made/) — Desmontaje del mito: la Cousteau Society niega el documental sobre Palancar
+- [Wikipedia — Le Monde du silence (1956)](https://en.wikipedia.org/wiki/Le_Monde_du_silence) — Año real y localizaciones de rodaje (Mediterráneo, Mar Rojo, Golfo Pérsico, Índico)

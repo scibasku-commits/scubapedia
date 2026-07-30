@@ -1,8 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="210" viewBox="0 0 700 210">
-  <!-- Wordmark ARRIBA -->
-  <text x="350" y="118" text-anchor="middle" font-family="Avenir Next" font-weight="800" font-size="96" letter-spacing="1" fill="#16A6C9">SCUBAPEDIA</text>
-  <!-- Ola ABAJO -->
-  <g transform="translate(210,205) scale(1.25,-1.25)">
-    <path d="M0 37s21.3-24.7 28-25.9c6.8-1.2 18.5 16.7 21.8 15.7 3.3-1 22.5-25.6 26.3-26.8 3.8-1.2 28.2 24.8 31.1 29.2 2.9 4.4 3.8 7.7-.9 3.5-5.9-5.1-18.1-18.9-18.9-18.6-.8.3-4.5 11.5-6.4 10.9-2-.6-6.1-12-6.9-11.4-.8.5-4.9 7-6 6.9s-3.3-4.9-3.3-4.9-11.6 16.3-15.1 15C46.3 29.4 39 22.3 39 22.3s-.4 5.1-.9 5.3c-.5.2-.7 1.7-8.5-5.4 0 0-3.3 8-4.9 8s-4.9-8.9-4.9-8.9S1 43.6 0 37z" fill="#16A6C9"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="170" viewBox="0 0 620 170">
+  <!-- Nav (sin tagline): wordmark + ola a la derecha. Mono cian. -->
+  <text x="310" y="96" text-anchor="middle" font-family="Avenir Next" font-weight="800" font-size="76" letter-spacing="1" fill="#1EB4DC">SCUBAPEDIA</text>
+  <g transform="translate(-27,-57) scale(2.4)">
+    <path d="M224.1 63.4 C210 91 169.7 73.3 155 69 C152 68.9 148 68.8 145.7 68.8 C139.5 70.4 134.2 75.2 131.6 81.2 C137.7 77.7 145.4 74 154.6 76.3 C165 78.9 172.1 83.4 180.2 85.1 C193.1 88 211.3 89.2 220.7 77.8 C223 75 224.3 71.6 224.5 68 C224.5 67.1 224.8 65.2 224.1 63.4 Z" fill="#1EB4DC"/>
   </g>
 </svg>

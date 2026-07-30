@@ -3,7 +3,7 @@
 // Técnica: D3 + topojson + world-atlas (atlas vectorial gratuito, sin API de pago),
 // mismo motor que el mapa de SkiPedia. Coordenadas en lib/coordenadas.json.
 import { getCollection } from 'astro:content';
-import { certCorta } from '../lib/ficha-datos';
+import { etiquetaCorta } from '../lib/ficha-datos';
 import coordenadas from '../lib/coordenadas.json';
 import '../styles/global.css';
 
@@ -27,7 +27,7 @@ const SPOTS = Object.entries(coords).map(([id, c]) => {
     prof: Number(d.profundidad_max) || null,
     vis: visRaw,
     temp: tempRaw,
-    cert: certCorta(d.certificacion_minima || ''),
+    cert: etiquetaCorta(d.certificacion_minima) ?? '',
   };
 }).filter((s): s is NonNullable<typeof s> => Boolean(s));
 

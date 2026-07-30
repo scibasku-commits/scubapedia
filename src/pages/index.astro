@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import { normalizeZona, zonaSlug, zonaRank, zonaBlurb, zonaGradient } from '../lib/zonas';
-import { certCorta } from '../lib/ficha-datos';
+import { etiquetaCorta } from '../lib/ficha-datos';
 import { destinoImage, slugImage } from '../lib/imagen';
 import ChatWidget from '../components/ChatWidget.astro';
 import '../styles/global.css';
@@ -30,7 +30,7 @@ const zonaBlocks = zonas.map((z) => ({
     .map((e: any) => ({
       title: e.data.title,
       url: `/destinos/${idOf(e)}`,
-      cert: certCorta(e.data.certificacion_minima || ''),
+      cert: etiquetaCorta(e.data.certificacion_minima) ?? '',
       giora: !!e.data.giora_estuvo,
     })),
 }));
@@ -64,7 +64,7 @@ const destacadas = DESTACADAS_SEED.map((d) => {
     url: `/destinos/${d.id}`,
     region: reg || e.data.pais || '',
     pais: e.data.pais || '',
-    cert: certCorta(e.data.certificacion_minima || ''),
+    cert: etiquetaCorta(e.data.certificacion_minima) ?? '',
     giora: !!e.data.giora_estuvo,
     grad: zonaGradient(z),
     img: destinoImage(d.id, 'card'),
@@ -76,7 +76,7 @@ const searchIdx = all.map((e) => ({
   t: e.data.title.split(' - ')[0].split(' — ')[0].trim(),
   u: `/destinos/${idOf(e)}`,
   c: normalizeZona(e.data.region || ''),
-  m: certCorta(e.data.certificacion_minima || ''),
+  m: etiquetaCorta(e.data.certificacion_minima) ?? '',
 })).sort((a, b) => a.t.localeCompare(b.t));
 
 // ---- glosario de buceo ----

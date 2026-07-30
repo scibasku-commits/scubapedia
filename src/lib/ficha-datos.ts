@@ -21,17 +21,6 @@ export function profundidad(d: FichaData): string | null {
   return null;
 }
 
-// Visibilidad → toma el primer rango numérico de la cadena ("10-30m (variable)" → "10–30 m")
-export function visibilidad(d: FichaData): string | null {
-  const s = typeof d.visibilidad_media === 'string' ? d.visibilidad_media : '';
-  if (!s) return null;
-  const m = s.match(/(\d+)\s*[-–a]\s*(\d+)/);
-  if (m) return `${m[1]}–${m[2]} m`;
-  const one = s.match(/(\d+)\s*m/);
-  if (one) return `${one[1]} m`;
-  return s.length <= 16 ? s : null;
-}
-
 // Temperatura → "21–30 °C"
 export function temperatura(d: FichaData): string | null {
   const a = num(d.temperatura_agua_min), b = num(d.temperatura_agua_max);
@@ -40,28 +29,25 @@ export function temperatura(d: FichaData): string | null {
   return null;
 }
 
-// Corriente → etiqueta corta a partir de la descripción larga.
-export function corrienteCorta(d: FichaData): string | null {
-  const s = (typeof d.corrientes === 'string' ? d.corrientes : '').toLowerCase();
+// Etiqueta corta para chips y tarjetas (corriente, certificación mínima).
+//
+// SEGURIDAD: devuelve siempre un PREFIJO LITERAL del campo del frontmatter, jamás
+// una reinterpretación. Las versiones anteriores (corrienteCorta / certCorta)
+// buscaban subcadenas sueltas sobre prosa y leían el matiz como titular:
+//   "raramente fuerte"            → "Fuerte"      (cozumel)
+//   "snorkel sin cert; buceo…"    → "Sin cert."   (islandia-silfra — peligroso)
+//   "OW (AOWD para canales)"      → "Advanced"    (yap)
+// Eso hacía que la cabecera contradijera a "Datos clave" y a la ficha técnica,
+// que imprimen el campo completo. Cortando por el primer separador de matiz
+// (";", "(", raya) y marcando con "…" que hay más, la cabecera no puede
+// contradecir a la tabla: es literalmente su comienzo.
+export function etiquetaCorta(v: unknown): string | null {
+  const s = typeof v === 'string' ? v.trim() : '';
   if (!s) return null;
-  const fuerte = s.includes('fuerte') || s.includes('intens');
-  const moderada = s.includes('moderad');
-  const suave = s.includes('suave') || s.includes('leve') || s.includes('débil') || s.includes('debil') || s.includes('nula') || s.includes('ninguna');
-  if (fuerte && moderada) return 'Moderada–fuerte';
-  if (fuerte) return 'Fuerte';
-  if (moderada) return 'Moderada';
-  if (suave) return 'Suave';
-  return null;
-}
-
-// Certificación corta para el chip / badge.
-export function certCorta(cert: string): string {
-  const c = (cert || '').toLowerCase();
-  if (c.includes('técnic') || c.includes('tecnic') || c.includes('tec ')) return 'Técnico';
-  if (c.includes('aowd') || c.includes('advanced') || c.includes('avanzad')) return 'Advanced';
-  if (c.includes('open water') || /\bow\b/.test(c)) return 'Open Water';
-  if (c.includes('no requer') || c.includes('sin cert')) return 'Sin cert.';
-  return (cert || 'Open Water').split(/[ ,(]/)[0];
+  const cut = s.search(/[;(—–]|\s-\s/);
+  if (cut < 0) return s;
+  const head = s.slice(0, cut).trim().replace(/[,.]+$/, '');
+  return head ? `${head}…` : s;
 }
 
 // Tipo de buceo a partir de los tags (arrecife, pecio, liveaboard, cenote, pelágico…).
@@ -90,19 +76,20 @@ export function temporada(d: FichaData): string | null {
 }
 
 // Hasta 6 chips para la barra bajo el hero.
-export function chips(d: FichaData): Array<{ num: string; lab: string; flag?: boolean }> {
-  const out: Array<{ num: string; lab: string; flag?: boolean }> = [];
+export function chips(d: FichaData): Array<{ num: string; lab: string; flag?: boolean; txt?: boolean }> {
+  const out: Array<{ num: string; lab: string; flag?: boolean; txt?: boolean }> = [];
   const prof = profundidad(d);
   if (prof) out.push({ num: prof, lab: 'profundidad' });
-  const viz = visibilidad(d);
-  if (viz) out.push({ num: viz, lab: 'visibilidad' });
+  const viz = etiquetaCorta(d.visibilidad_media);
+  if (viz) out.push({ num: viz, lab: 'visibilidad', txt: true });
   const temp = temperatura(d);
   if (temp) out.push({ num: temp, lab: 'temperatura' });
-  const corr = corrienteCorta(d);
-  if (corr) out.push({ num: corr, lab: 'corriente' });
+  const corr = etiquetaCorta(d.corrientes);
+  if (corr) out.push({ num: corr, lab: 'corriente', txt: true });
   const tipo = tipoBuceo(d);
   if (tipo) out.push({ num: tipo, lab: 'tipo' });
-  if (d.certificacion_minima) out.push({ num: certCorta(d.certificacion_minima), lab: 'cert. mínima', flag: true });
+  const cert = etiquetaCorta(d.certificacion_minima);
+  if (cert) out.push({ num: cert, lab: 'cert. mínima', flag: true, txt: true });
   return out.slice(0, 6);
 }
 
@@ -126,8 +113,7 @@ export function railRows(d: FichaData): Array<{ k: string; v: string; hi?: boole
   if (d.region) rows.push({ k: 'Zona', v: String(d.region) });
   const prof = profundidad(d);
   if (prof) rows.push({ k: 'Profundidad', v: prof });
-  const viz = visibilidad(d);
-  if (viz) rows.push({ k: 'Visibilidad', v: viz });
+  if (d.visibilidad_media) rows.push({ k: 'Visibilidad', v: String(d.visibilidad_media) });
   const temp = temperatura(d);
   if (temp) rows.push({ k: 'Temperatura', v: temp });
   if (d.corrientes) rows.push({ k: 'Corrientes', v: String(d.corrientes) });

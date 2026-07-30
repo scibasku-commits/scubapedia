@@ -57,7 +57,7 @@ tags:
 
 ## Resumen
 
-El Archipiélago de Revillagigedo tiene cuatro islas, ninguna con hotel, a 400 kilómetros al sur de la punta de Baja California. Solo se llega en liveaboard desde Manzanillo o Cabo San Lucas. Fue declarado Patrimonio Natural de la UNESCO en 2016 y Reserva de la Biosfera. La pesca comercial está prohibida en 250.000 km² de océano alrededor del archipiélago.
+El Archipiélago de Revillagigedo tiene cuatro islas, ninguna con hotel, a 400 kilómetros al sur de la punta de Baja California. Solo se llega en liveaboard desde Manzanillo o Cabo San Lucas. Fue declarado Patrimonio Natural de la UNESCO en 2016 y Reserva de la Biosfera. En noviembre de 2017 México lo declaró Parque Nacional: **148.087 km²** en los que quedan prohibidas la pesca y cualquier otra actividad extractiva — la mayor reserva marina totalmente protegida de Norteamérica.
 
 El resultado es el banco de peces pelágicos más denso del Pacífico Oriental Tropical: tiburones martillo en cardúmenes de 50-100, tiburones sedosos y de Galápagos como presencia constante, ballenas jorobadas entre diciembre y marzo, y mantas oceánicas (*Mobula birostris*) con un comportamiento que no tiene equivalente en ningún otro destino del mundo.
 
@@ -162,3 +162,5 @@ El Solmar V y el Nautilus son los operadores históricos. Los dos tienen década
 - [Solmar V](https://www.solmarv.com/) — Segundo operador de referencia desde Cabo San Lucas
 - [UNESCO — Archipielago de Revillagigedo](https://whc.unesco.org/en/list/1510/) — Ficha oficial de Patrimonio de la Humanidad
 - [CONABIO — Reserva de Biosfera Revillagigedo](https://www.gob.mx/conanp) — Zonificación y regulación científica
+- [National Geographic — Mexico Announces Expansion of Revillagigedo Into Largest Marine Park of Its Kind](https://www.nationalgeographic.com/science/article/mexico-revillagigedo-oceans-pristine-seas-conservation-environment-spd) — Superficie del parque nacional: 148.087 km² sin pesca (declaración de 2017)
+- [IUCN — Mexico's largest Marine Protected Area: Revillagigedo](https://iucn.org/news/protected-areas/201711/mexicos-largest-marine-protected-area-revillagigedo-mexican-gal%C3%A1pagos) — Confirma la superficie protegida (~147.000–148.000 km²)
