@@ -1,0 +1,65 @@
+---
+/**
+ * /gracias — la única página que cuenta una conversión de verdad.
+ *
+ * Hasta hoy, el único evento que parecía un lead en scubapedia era «pulsar
+ * WhatsApp», así que Google aprendía a traer gente que pulsa botones en vez de
+ * gente que deja sus datos. El clic de WhatsApp se sigue midiendo, pero como
+ * CONTACTO (`contact`), nunca como lead.
+ *
+ * A esta página solo se llega tras un envío correcto: /api/lead redirige aquí
+ * con un 303 y un token `ok`.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Petición recibida" description="Hemos recibido tu petición de viaje de buceo." noindex={true}>
+  <div style="max-width:640px;margin:0 auto;padding:4rem 1.5rem;text-align:center;color:#334155;">
+    <div style="width:64px;height:64px;border-radius:50%;border:2px solid #0891b2;color:#0891b2;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 1.5rem;">✓</div>
+    <h1 style="font-size:1.8rem;margin:0 0 1rem;color:#0d1b2a;">Petición recibida</h1>
+    <p style="line-height:1.65;margin:0 0 1rem;">
+      Tu solicitud ha quedado registrada. Te contestamos con una propuesta en menos de 24 horas laborables.
+      <strong>Todavía no se ha reservado ni cobrado nada.</strong>
+    </p>
+    <p style="line-height:1.65;margin:0 0 1.5rem;">
+      Si tienes prisa, escríbenos por WhatsApp al
+      <a href="https://wa.me/34619401041" rel="noopener" style="color:#0891b2;">+34 619 40 10 41</a>
+      o a <a href="mailto:info@viajesscibasku.com" style="color:#0891b2;">info@viajesscibasku.com</a>.
+    </p>
+    <a href="/destinos" style="display:inline-block;background:#0891b2;color:#fff;text-decoration:none;font-weight:700;padding:.8rem 1.6rem;border-radius:8px;">Seguir explorando destinos</a>
+  </div>
+
+  <!-- [PENDIENTE] GA_ADS_ID y GA_ADS_LEAD_LABEL: la etiqueta de conversión de
+       Google Ads. Sin ellos se envía igualmente generate_lead a GA4 (y Lead a
+       Meta si algún día hay píxel). -->
+  <script is:inline>
+    (function () {
+      var GA_ADS_ID = '';         // Ej. 'AW-123456789'
+      var GA_ADS_LEAD_LABEL = ''; // Ej. 'AbC-D_efGh12'
+
+      // Solo cuenta si venimos de un envío real. Abrir esta URL a pelo —un
+      // marcador, el historial, un rastreador que ejecuta JS— inflaría las
+      // conversiones y Google acabaría optimizando hacia visitas fantasma.
+      if (!new URLSearchParams(location.search).get('ok')) return;
+
+      // Una sola vez por envío: recargar o volver atrás no cuenta dos veces.
+      try {
+        var ya = sessionStorage.getItem('scubapedia_lead_enviado');
+        var sello = String(Date.now());
+        if (ya && Number(sello) - Number(ya) < 60000) return;
+        sessionStorage.setItem('scubapedia_lead_enviado', sello);
+      } catch (e) { /* modo privado: preferimos medir de más a no medir */ }
+
+      var params = { form: 'captacion', page_path: location.pathname };
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', params);
+        if (GA_ADS_ID && GA_ADS_LEAD_LABEL) {
+          gtag('event', 'conversion', { send_to: GA_ADS_ID + '/' + GA_ADS_LEAD_LABEL });
+        }
+      }
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead', { content_name: 'form_submit', page_path: location.pathname });
+      }
+    })();
+  </script>
+</BaseLayout>

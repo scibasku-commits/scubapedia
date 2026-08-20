@@ -1,0 +1,201 @@
+---
+/**
+ * Formulario de captación de leads — scubapedia.org
+ * =================================================
+ * Por qué existe (auditoría 20-ago-2026): ninguna de las 122 fichas de destino
+ * ofrecía más contacto que el botón de WhatsApp y el enlace a crucerobuceo.com.
+ * Quien no estaba listo para escribir por WhatsApp se iba sin dejar rastro.
+ *
+ * Va en FichaLayout, así que entra de una vez en TODAS las fichas — no hay que
+ * tocar 122 archivos. También en la portada y en el listado de destinos.
+ *
+ * El botón «Pedir presupuesto» se pone arriba (bajo el H1) y abajo (en el
+ * cierre), no escondido a media página: el visitante decide en el primer
+ * scroll o cuando ya ha terminado de leer.
+ *
+ * La casilla de consentimiento tiene `required` aquí Y candado fail-closed en
+ * el servidor (src/lib/leads.mjs): el `required` del navegador se salta con un
+ * POST a mano. Control: tests/captacion.test.mjs.
+ */
+interface Props {
+  /** De qué destino habla la página. Viaja con el lead. */
+  destino?: string;
+  /** ficha | portada | listado */
+  source?: string;
+}
+const { destino = '', source = 'ficha' } = Astro.props;
+---
+
+<section class="scp-cap" id="pedir-presupuesto">
+  <div class="scp-cap-in">
+    <h2>{destino ? `¿Te preparamos el viaje de buceo a ${destino}?` : '¿Te preparamos tu viaje de buceo?'}</h2>
+    <p class="scp-cap-sub">
+      Déjanos tus datos y te enviamos una propuesta con precio cerrado —liveaboard o resort, vuelos y logística—
+      sin compromiso. Contestamos en menos de 24 horas laborables.
+    </p>
+
+    <form method="POST" action="/api/lead">
+      <input type="hidden" name="source" value={source} />
+      <input type="hidden" name="destino" value={destino} />
+      <input type="hidden" name="contexto" value="" />
+      <input type="hidden" name="origen_url" value="" />
+
+      <!-- Trampa para bots: ningún humano la ve, y quien la rellena no se guarda. -->
+      <div class="scp-cap-trap" aria-hidden="true">
+        <label>No rellenar<input type="text" name="apellido_2" tabindex="-1" autocomplete="off" /></label>
+      </div>
+
+      <div class="scp-cap-row">
+        <div class="scp-cap-f">
+          <label for="scp-cap-name">Nombre *</label>
+          <input id="scp-cap-name" name="name" type="text" required minlength="2" maxlength="80" autocomplete="name" />
+        </div>
+        <div class="scp-cap-f">
+          <label for="scp-cap-email">Email *</label>
+          <input id="scp-cap-email" name="email" type="email" required maxlength="120" autocomplete="email" />
+        </div>
+      </div>
+
+      <div class="scp-cap-row">
+        <div class="scp-cap-f">
+          <label for="scp-cap-phone">Teléfono (opcional)</label>
+          <input id="scp-cap-phone" name="phone" type="tel" maxlength="30" autocomplete="tel" />
+        </div>
+        <div class="scp-cap-f">
+          <label for="scp-cap-fechas">Fechas aproximadas</label>
+          <input id="scp-cap-fechas" name="fechas" type="text" maxlength="60" placeholder="Ej. dos semanas de marzo" />
+        </div>
+        <div class="scp-cap-f">
+          <label for="scp-cap-nivel">Nivel / certificación</label>
+          <input id="scp-cap-nivel" name="nivel" type="text" maxlength="60" placeholder="Ej. Advanced, 80 inmersiones" />
+        </div>
+      </div>
+
+      <div class="scp-cap-f">
+        <label for="scp-cap-msg">Cuéntanos qué buscas</label>
+        <textarea id="scp-cap-msg" name="message" rows="3" maxlength="1500"></textarea>
+      </div>
+
+      <label class="scp-cap-consent">
+        <input type="checkbox" name="acepta_privacidad" value="on" required />
+        <span>
+          He leído y acepto que Viajes Scibasku trate mis datos para responder a esta petición, conforme a la
+          <a href="/politica-de-privacidad" target="_blank" rel="noopener">política de privacidad</a>.
+          Puedo retirar el consentimiento cuando quiera escribiendo a info@viajesscibasku.com.
+        </span>
+      </label>
+
+      <button type="submit">Pedir presupuesto</button>
+
+      <p class="scp-cap-nota">
+        Viajes Scibasku · CICMA 2283 · No se reserva ni se cobra nada con este envío.
+        Si lo prefieres, escríbenos por <a href="https://wa.me/34619401041" rel="noopener">WhatsApp</a>.
+      </p>
+    </form>
+  </div>
+</section>
+
+<style is:global>
+  .scp-cap {
+    background: linear-gradient(135deg, #0a1628, #0d2847) !important;
+    border-top: 3px solid #1fb4d1 !important;
+    padding: 2.8rem 1.2rem !important;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif !important;
+    color: #b8c5d6 !important;
+    scroll-margin-top: 80px !important;
+  }
+  .scp-cap-in { max-width: 720px !important; margin: 0 auto !important; }
+  .scp-cap h2 {
+    color: #fff !important; font-size: 1.5rem !important; margin: 0 0 .5rem !important;
+    border-left: 4px solid #1fb4d1 !important; padding-left: .7rem !important; line-height: 1.25 !important;
+  }
+  .scp-cap-sub { font-size: .92rem !important; line-height: 1.55 !important; margin: 0 0 1.4rem !important; color: #b8c5d6 !important; }
+  .scp-cap-row { display: flex !important; flex-wrap: wrap !important; gap: .9rem !important; margin-bottom: .9rem !important; }
+  .scp-cap-f { flex: 1 1 200px !important; display: flex !important; flex-direction: column !important; gap: .3rem !important; }
+  .scp-cap label { font-size: .7rem !important; font-weight: 600 !important; text-transform: uppercase !important; letter-spacing: .08em !important; color: #1fb4d1 !important; }
+  .scp-cap input, .scp-cap textarea {
+    background: #0d2847 !important; border: 1px solid rgba(255,255,255,.14) !important; border-radius: 8px !important;
+    padding: .7rem .85rem !important; color: #fff !important; font-size: .95rem !important;
+    font-family: inherit !important; width: 100% !important; box-sizing: border-box !important;
+  }
+  .scp-cap input:focus, .scp-cap textarea:focus { outline: none !important; border-color: #1fb4d1 !important; }
+  .scp-cap-consent {
+    display: flex !important; align-items: flex-start !important; gap: .6rem !important; margin: 1rem 0 !important;
+    font-size: .8rem !important; line-height: 1.45 !important; color: #b8c5d6 !important; cursor: pointer !important;
+    text-transform: none !important; letter-spacing: normal !important; font-weight: 400 !important;
+  }
+  .scp-cap-consent input { width: 16px !important; height: 16px !important; flex: 0 0 16px !important; margin-top: .15rem !important; accent-color: #1fb4d1 !important; }
+  .scp-cap-consent a, .scp-cap-nota a { color: #1fb4d1 !important; text-decoration: underline !important; }
+  .scp-cap button {
+    background: #1fb4d1 !important; color: #04202a !important; border: none !important; border-radius: 8px !important;
+    padding: .85rem 1.8rem !important; font-size: 1rem !important; font-weight: 700 !important;
+    font-family: inherit !important; cursor: pointer !important;
+  }
+  .scp-cap button:hover { background: #3fc9e4 !important; }
+  .scp-cap-nota { font-size: .72rem !important; color: #8fa0b5 !important; margin: .9rem 0 0 !important; line-height: 1.45 !important; }
+  .scp-cap-trap { position: absolute !important; left: -9999px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
+
+  /* Botón «Pedir presupuesto» — arriba (bajo el H1) y abajo (en el cierre). */
+  .scp-cap-cta {
+    display: inline-block !important; background: #1fb4d1 !important; color: #04202a !important;
+    border-radius: 999px !important; padding: .7rem 1.5rem !important; font-weight: 700 !important;
+    text-decoration: none !important; font-size: .95rem !important;
+    font-family: system-ui, -apple-system, sans-serif !important;
+  }
+  .scp-cap-cta:hover { background: #3fc9e4 !important; color: #04202a !important; text-decoration: none !important; }
+</style>
+
+<script is:inline>
+  /* El lead viaja con su origen: página exacta, idioma, campaña (utm_*, gclid,
+     fbclid) y referer. Y ese mismo contexto se pega a los enlaces de WhatsApp,
+     para que la conversación empiece sabiendo de qué destino hablamos. */
+  (function () {
+    var f = document.querySelector('#pedir-presupuesto form');
+    if (!f) return;
+
+    function campana() {
+      var q = new URLSearchParams(location.search);
+      return ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid']
+        .map(function (k) { return q.get(k) ? k + '=' + q.get(k) : ''; })
+        .filter(Boolean).join(' · ');
+    }
+    function producto() {
+      var h1 = document.querySelector('h1');
+      var t = h1 && h1.textContent ? h1.textContent.replace(/\s+/g, ' ').trim() : '';
+      return t || (document.title || '').split('—')[0].trim() || location.pathname;
+    }
+
+    f.contexto.value = [
+      location.href,
+      'lang=' + (document.documentElement.lang || 'es'),
+      campana() || 'no-campaign',
+      document.referrer ? 'referrer=' + document.referrer : 'direct'
+    ].join(' | ').slice(0, 900);
+    f.origen_url.value = location.href.slice(0, 500);
+    if (!f.destino.value) f.destino.value = producto().slice(0, 120);
+
+    // WhatsApp con el contexto pegado. Delegado y en captura: cubre también
+    // los enlaces que la página crea por JS después de cargar.
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href*="wa.me"]');
+      if (!a) return;
+      var href = a.getAttribute('href') || '';
+      if (href.indexOf(encodeURIComponent(location.pathname)) > -1) return; // ya lo lleva
+      var i = href.indexOf('?');
+      var base = i > -1 ? href.slice(0, i) : href;
+      var previo = i > -1 ? new URLSearchParams(href.slice(i + 1)).get('text') : null;
+      // El clic de WhatsApp es un CONTACTO, nunca un lead: el lead se cuenta
+      // solo en /gracias, tras un envío real del formulario.
+      if (typeof gtag === 'function') {
+        gtag('event', 'contact', { method: 'whatsapp', page_path: location.pathname });
+      }
+      var cola = '\n\n— Consultando: ' + producto() + '\n' + location.href;
+      var camp = campana();
+      if (camp) cola += '\n' + camp;
+      // encodeURIComponent y no URLSearchParams: este último codifica el
+      // espacio como «+» y WhatsApp lo enseña como un «+» literal.
+      a.setAttribute('href', base + '?text=' +
+        encodeURIComponent((previo || 'Hola Giora, me interesa un viaje de buceo.') + cola));
+    }, true);
+  })();
+</script>

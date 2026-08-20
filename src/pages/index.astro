@@ -4,6 +4,7 @@ import { normalizeZona, zonaSlug, zonaRank, zonaBlurb, zonaGradient } from '../l
 import { etiquetaCorta } from '../lib/ficha-datos';
 import { destinoImage, slugImage } from '../lib/imagen';
 import ChatWidget from '../components/ChatWidget.astro';
+import CaptacionForm from '../components/CaptacionForm.astro';
 import '../styles/global.css';
 
 const all = await getCollection('buceo');
@@ -444,6 +445,8 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
       <span class="dot">·</span><b>Datos verificables, sin marketing vacío.</b>
     </p>
 
+    <p style="margin:0 0 1.4rem"><a class="scp-cap-cta" href="#pedir-presupuesto">Pedir presupuesto a medida</a></p>
+
     <div class="search" id="search">
       <div class="search-box">
         <svg class="search-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"></circle><line x1="16.5" y1="16.5" x2="21" y2="21"></line></svg>
@@ -637,6 +640,19 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
         b.textContent = q; b.dataset.q = q; chips.appendChild(b);
       });
     }
+    // Misma idea que en ChatWidget: tras dos preguntas, ofrecer el formulario.
+    // Se recoge el contacto donde ya vive el candado de consentimiento, no en
+    // el chat.
+    let contactoPedido = false;
+    function pedirContacto() {
+      if (contactoPedido || history.filter((m) => m.role === 'user').length < 2) return;
+      contactoPedido = true;
+      const d = document.createElement('div'); d.className = 'msg g';
+      d.innerHTML = '<div class="gtag">Giora</div><div class="gbody">¿Quieres que te prepare una propuesta con precio cerrado? ' +
+        '<a href="#pedir-presupuesto" style="color:var(--accent);text-decoration:underline;font-weight:600">Déjame tus datos aquí</a> ' +
+        'y te contesto en menos de 24 horas laborables.</div>';
+      body.appendChild(d); body.scrollTop = body.scrollHeight;
+    }
     async function ask(text) {
       text = (text || '').trim();
       if (busy || !text) return;
@@ -655,6 +671,7 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
         gb.innerHTML = md(r.content);
         if (r.fuente) { const c = document.createElement('div'); c.className = 'cite'; c.textContent = 'Fuente: ' + r.fuente; wrap.appendChild(c); }
         history.push({ role: 'assistant', content: r.content });
+        pedirContacto();
         setChips(r.sugerencias);
         try { gtag('event', 'giora_panel_reply'); } catch (e) {}
       } catch (e) {
@@ -668,6 +685,8 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
     if (chips) chips.addEventListener('click', (e) => { const b = e.target.closest('.chip'); if (b && b.dataset.q) ask(b.dataset.q); });
   })();
 </script>
+
+<CaptacionForm source="portada" />
 
 <!-- ================= FOOTER ================= -->
 <footer class="foot">
@@ -687,6 +706,7 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
         <h4>Reservar</h4>
         <a href="https://crucerobuceo.com" target="_blank" rel="noopener">Cruceros de buceo</a>
         <a href="https://viajesscibasku.com" target="_blank" rel="noopener">Viajes Scibasku</a>
+        <a href="#pedir-presupuesto">Pedir presupuesto a medida</a>
         <a href={WA} target="_blank" rel="noopener">WhatsApp de Giora</a>
       </div>
       <div class="foot-col">

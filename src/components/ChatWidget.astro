@@ -21,7 +21,7 @@
     <div class="flex items-center gap-2.5">
       <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[var(--color-link)] text-white font-serif font-semibold">G</span>
       <div>
-        <span class="font-serif text-base font-semibold block text-[var(--color-ink)] leading-tight">Giora <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 align-middle ml-1 animate-pulse"></span></span>
+        <span class="font-serif text-base font-semibold block text-[var(--color-ink)] leading-tight">Giora AI <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 align-middle ml-1 animate-pulse"></span></span>
         <span class="text-[10px] text-[var(--color-muted)] block">Asistente de buceo · Scubapedia</span>
       </div>
     </div>
@@ -30,15 +30,21 @@
     </button>
   </header>
 
+  <!-- AI Act art. 50 — transparencia: el visitante debe saber que habla con una IA -->
+  <p class="px-4 py-2 text-[10px] leading-snug text-[var(--color-muted)] bg-[color-mix(in_oklab,var(--color-paper),black_2%)] border-b border-[var(--color-border)] m-0">
+    Asistente de IA. Responde con el criterio de Giora, pero no es Giora.
+    Para hablar con una persona: <a href="tel:+34619401041" class="underline">+34 619 40 10 41</a>.
+  </p>
+
   <div id="chat-messages" class="flex-1 min-h-0 p-4 overflow-y-auto space-y-3.5 bg-[color-mix(in_oklab,var(--color-bg),transparent_50%)]">
     <div class="chat-message assistant flex gap-2">
       <div class="px-3.5 py-2.5 rounded-lg bg-[var(--color-paper)] border border-[var(--color-border)] text-[13px] leading-relaxed text-[var(--color-ink)] max-w-[88%]">
-        Hola, soy <b>Giora</b>. Llevo más de 20 años organizando viajes de buceo. Pregúntame sin rodeos: <b>dónde ver mantas o tiburones</b>, qué <b>nivel</b> necesitas, la <b>mejor época</b>, o qué liveaboard encaja contigo. ¿Qué buscas?
+        Hola, soy <b>Giora AI</b>, el asistente de inteligencia artificial de Scubapedia. Respondo con el criterio de Giora, que lleva más de 20 años organizando viajes de buceo. Pregúntame sin rodeos: <b>dónde ver mantas o tiburones</b>, qué <b>nivel</b> necesitas, la <b>mejor época</b>, o qué liveaboard encaja contigo. ¿Qué buscas?
       </div>
     </div>
   </div>
 
-  <div id="chat-typing" class="hidden px-4 py-2 text-[10px] text-[var(--color-muted)] italic bg-transparent">Giora está escribiendo…</div>
+  <div id="chat-typing" class="hidden px-4 py-2 text-[10px] text-[var(--color-muted)] italic bg-transparent">Giora AI está escribiendo…</div>
 
   <footer class="p-3 border-t border-[var(--color-border)] bg-[var(--color-paper)] flex gap-2">
     <input type="text" id="chat-input" placeholder="¿Dónde veo mantas en enero?" class="flex-1 px-3 py-2 text-[13px] border border-[var(--color-border)] rounded-md focus:outline-none focus:border-[var(--color-accent)] bg-[var(--color-bg)] text-[var(--color-ink)]" />
@@ -86,6 +92,7 @@
         history.push({ role: 'assistant', content: reply.content });
         saveHistory();
         try { gtag('event', 'chat_reply'); } catch(e){}
+        pedirContacto();
       } catch (err) {
         appendMessageUI('assistant', 'Ahora mismo no puedo responderte por aquí. <a href="' + WA + '" target="_blank" rel="noopener" style="color:var(--color-link);text-decoration:underline;font-weight:600">Escríbeme por WhatsApp</a> y te ayudo en persona.');
       } finally {
@@ -103,6 +110,22 @@
       bubble.innerHTML = text.replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>').replace(/\*([^*]+)\*/g, '<i>$1</i>').replace(/\n/g, '<br/>');
       wrapper.appendChild(bubble); messagesEl.appendChild(wrapper);
     }
+    // El chat conversaba y no pedía nada: quedaban transcripciones sin manera
+    // de contestarlas. En vez de pedir el email dentro del chat —otro sitio
+    // donde recoger un dato personal, con su propio consentimiento que
+    // mantener—, se manda al formulario, que ya tiene el candado.
+    let contactoPedido = false;
+    function pedirContacto() {
+      if (contactoPedido) return;
+      if (history.filter(m => m.role === 'user').length < 2) return;
+      contactoPedido = true;
+      appendMessageUI('assistant',
+        '¿Quieres que te prepare una propuesta con precio cerrado? ' +
+        '<a href="#pedir-presupuesto" style="color:var(--color-link);text-decoration:underline;font-weight:600">Déjame tus datos aquí</a> ' +
+        'y te contesto en menos de 24 horas laborables.');
+      scrollToBottom();
+    }
+
     function scrollToBottom() { messagesEl.scrollTop = messagesEl.scrollHeight; }
     function saveHistory() { sessionStorage.setItem('scubapedia_chat_history', JSON.stringify(history)); }
   })();
