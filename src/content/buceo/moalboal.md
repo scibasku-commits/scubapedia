@@ -82,7 +82,7 @@ Santuario marino a 15 minutos en banca. Pared vertical que cae a más de 40 metr
 Reef top cubierto de corales duros diversos con un drop-off pronunciado. Las tortugas verdes son prácticamente residentes permanentes: se alimentan de algas en el reef top y descansan en las repisas de la pared. Ghost pipefish ornamentados, sweetlips, batfish, peces escorpión. Profundidad 5-25m.
 
 ### White Beach / Saavedra
-Pendiente arenosa con bucket sponges hasta 25m, colonias de garden eels, flounders. A partir de 22m la pendiente se transforma en pared cubierta de corales blandos coloridos. Buen sitio de macro: nudibranquios, ghost pipefish, peces escorpión. Incluye el Airplane Wreck, un biplaza americano hundido hace 30+ años como arrecife artificial (18-20m).
+Pendiente arenosa con bucket sponges hasta 25m, colonias de garden eels, flounders. A partir de 22m la pendiente se transforma en pared cubierta de corales blandos coloridos. Buen sitio de macro: nudibranquios, ghost pipefish, peces escorpión. Incluye el Airplane Wreck, un biplaza americano hundido hace desde los años 80 como arrecife artificial (18-20m).
 
 ### House Reef
 Shore dive disponible día y noche. A 30 metros de la orilla el fondo cae en pared vertical hasta 60-70 metros. Nocturnas excelentes. Fauna: pulpo de anillos azules, sepia flamboyant (rara), nudibranquios, cangrejos, camarones.

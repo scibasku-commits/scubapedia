@@ -88,7 +88,7 @@ La zona que pone a Dumaguete en el mapa macro. La costa de Dauin, al sur de la c
 **Masaplod Norte** — El punto más rico en nudibranquios de la zona, con densidades que desafían la catalogación en una sola inmersión.
 
 ### Apo Island — El santuario de las tortugas
-A 7 kilómetros de la costa de Dauin, Apo Island es un santuario marino comunitario con historia de éxito de conservación documentada en libros de texto. Cerrado a la pesca desde 1982, el arrecife ha recuperado una densidad de tortugas verdes excepcional: es habitual tener 10-15 tortugas en una sola inmersión de 60 minutos. En temporada de mantas (octubre-mayo), las mantas de arrecife aparecen en los puntos del lado sur de la isla.
+A 7 kilómetros de la costa de Dauin, Apo Island es un santuario marino comunitario con historia de éxito de conservación documentada en libros de texto. Cerrado a la pesca desde los años 80, el arrecife ha recuperado una densidad de tortugas verdes excepcional: es habitual tener 10-15 tortugas en una sola inmersión de 60 minutos. En temporada de mantas (octubre-mayo), las mantas de arrecife aparecen en los puntos del lado sur de la isla.
 
 El coral de Apo Island tiene cobertura viva en zonas superiores al 80% — una rareza en Filipinas, donde el blanqueamiento y la presión turística han degradado muchos arrecifes icónicos.
 
