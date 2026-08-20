@@ -4,9 +4,10 @@ import '../styles/global.css';
 interface Props {
   title?: string;
   description?: string;
+  noindex?: boolean;
 }
 
-const { title = 'Scuba-pedia', description = 'La enciclopedia de destinos de buceo del mundo, curada por Viajes Scibasku.' } = Astro.props;
+const { title = 'Scuba-pedia', description = 'La enciclopedia de destinos de buceo del mundo, curada por Viajes Scibasku.', noindex = false } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -16,6 +17,7 @@ const { title = 'Scuba-pedia', description = 'La enciclopedia de destinos de buc
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title} — Scuba-pedia by Scibasku</title>
   <meta name="description" content={description} />
+  {noindex && <meta name="robots" content="noindex, follow" />}
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
@@ -74,6 +76,11 @@ const { title = 'Scuba-pedia', description = 'La enciclopedia de destinos de buc
         <a href="https://crucerobuceo.com" style="color: #7dd3fc;" data-source="scubapedia-footer-to-crucerobuceo">crucerobuceo.com</a> ·
         <a href="https://viajesscibasku.com" style="color: #7dd3fc;" data-source="scubapedia-footer-to-viajes">viajesscibasku.com</a> ·
         <a href="https://www.google.com/maps?cid=14195325859324172180" target="_blank" rel="noopener" style="color: #7dd3fc;">Encuéntranos en Google</a>
+      </p>
+      <p style="margin: 0; text-align: center;">
+        <a href="/aviso-legal" style="color: #7dd3fc;">Aviso legal</a> ·
+        <a href="/politica-de-privacidad" style="color: #7dd3fc;">Política de privacidad</a> ·
+        <a href="/politica-de-cookies" style="color: #7dd3fc;">Política de cookies</a>
       </p>
     </div>
   </footer>
