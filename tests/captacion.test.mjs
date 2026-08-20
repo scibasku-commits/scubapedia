@@ -27,10 +27,12 @@ const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const lee = (p) => readFileSync(resolve(RAIZ, p), 'utf8');
 
 /** Opciones REALES del desplegable «Marca» (base appvV6S8P2HkRqPni, tabla
- *  Reservas), leídas del esquema el 20-ago-2026. No hay «Scubapedia». */
+ *  Reservas), leídas del esquema el 20-ago-2026 DESPUÉS de añadir a mano
+ *  America Motorhome, Ilovecanada y Scubapedia. */
 const MARCAS_REALES = [
   'Skialpes', 'Viajesdeski', 'Japow', 'Crucerobuceo',
   'Lujosinartificios', 'Recableado', 'Wallet cliente', 'Aspenski',
+  'America Motorhome', 'Ilovecanada', 'Scubapedia',
 ];
 
 const LEAD_OK = {
@@ -103,8 +105,8 @@ test('la Marca que se manda existe en el desplegable de Airtable', async () => {
   await procesarLead(LEAD_OK, deps);
   assert.equal(llamadas[0].fields['Marca'], MARCA_AIRTABLE);
   assert.equal(llamadas[0].fields['Tipo'], 'Lead');
-  // La marca real no se pierde aunque el desplegable no la tenga.
-  assert.match(llamadas[0].fields['Notas'], /Marca real: Scubapedia/);
+  // Ya no hace falta el apaño de las Notas: «Scubapedia» existe en el desplegable.
+  assert.equal(MARCA_AIRTABLE, 'Scubapedia');
 });
 
 test('si Airtable rechaza el lead, el visitante ve un error, no un falso «gracias»', async () => {

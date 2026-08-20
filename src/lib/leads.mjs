@@ -93,7 +93,7 @@ export function _reiniciarLimite() {
  * sus conversiones— y la marca real queda escrita en las Notas, para no perder
  * el dato mientras Giora no añada la opción a mano en Airtable.
  */
-export const MARCA_AIRTABLE = 'Crucerobuceo';
+export const MARCA_AIRTABLE = 'Scubapedia';
 
 const ORIGENES = {
   ficha: 'Ficha de destino',
@@ -145,7 +145,6 @@ export async function procesarLead(datos, deps = {}) {
     String(datos?.message ?? '').trim(),
     String(datos?.fechas ?? '').trim() ? `[Fechas aproximadas: ${String(datos.fechas).trim()}]` : '',
     String(datos?.nivel ?? '').trim() ? `[Nivel/certificación: ${String(datos.nivel).trim()}]` : '',
-    `[Marca real: Scubapedia — guardado como ${MARCA_AIRTABLE} porque el desplegable Marca no tiene la opción]`,
     `[Origen: ${origen}]`,
     contexto ? `[Contexto: ${contexto}]` : '',
     consent.prueba,
