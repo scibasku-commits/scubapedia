@@ -19,7 +19,7 @@ const SPOTS = Object.entries(coords).map(([id, c]) => {
   const tempRaw = (typeof d.temporada_alta === 'string' ? d.temporada_alta : '').split('(')[0].trim();
   return {
     id,
-    n: String(d.title || id).split(' — ')[0].split(' - ')[0].trim(),
+    n: String(d.title || id).trim(),
     c: d.pais || '',
     r: String(d.region || '').split(/[\/,]/)[0].trim(),
     lat: c.lat, lon: c.lng,

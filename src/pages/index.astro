@@ -74,7 +74,7 @@ const destacadas = DESTACADAS_SEED.map((d) => {
 
 // ---- índice de búsqueda (todas las fichas) ----
 const searchIdx = all.map((e) => ({
-  t: e.data.title.split(' - ')[0].split(' — ')[0].trim(),
+  t: e.data.title.trim(),
   u: `/destinos/${idOf(e)}`,
   c: normalizeZona(e.data.region || ''),
   m: etiquetaCorta(e.data.certificacion_minima) ?? '',
@@ -297,7 +297,7 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
     .idx-row{display:flex;align-items:baseline;gap:10px;padding:11px 6px;cursor:pointer;transition:background .2s,padding-left .25s;border-bottom:1px solid var(--rule);color:var(--ink)}
     .idx-row:hover{background:#00000008;padding-left:13px}
     .idx-name{font-family:var(--font-display);font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
-    .idx-giora{color:var(--accent-decor);font-style:normal;margin-left:6px;font-size:13px}
+    .idx-giora{color:#107c96;font-style:normal;margin-left:6px;font-size:13px}
     .idx-lead{flex:1;border-bottom:1px dotted var(--rule-strong);transform:translateY(-4px)}
     .idx-cert{font-size:13px;color:var(--ink-2);white-space:nowrap}
     .idx-arrow{color:var(--accent);opacity:0;transform:translateX(-6px);transition:.25s;font-size:14px}
