@@ -1,6 +1,17 @@
 {
   "redirects": [
     {
+      "source": "/sitemap.xml",
+      "has": [{ "type": "host", "value": "destinos.crucerobuceo.com" }],
+      "destination": "https://www.scubapedia.org/sitemap-index.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap-index.xml",
+      "statusCode": 301
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "destinos.crucerobuceo.com" }],
       "destination": "https://scubapedia.org/:path*",
