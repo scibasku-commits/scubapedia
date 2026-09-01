@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
+import { ipDe, dentroDelLimite } from '../../lib/rate-limit.mjs';
 
 const norm = (s: string): string =>
   s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
@@ -14,6 +15,33 @@ export const POST: APIRoute = async ({ request }) => {
         status: 400, headers: { 'Content-Type': 'application/json' },
       });
     }
+
+    // Rate limiting: máx 10 peticiones por minuto por IP
+    const ip = ipDe(request);
+    if (!dentroDelLimite(ip)) {
+      return new Response(JSON.stringify({ error: 'Demasiadas peticiones. Espera un minuto e inténtalo otra vez.' }), {
+        status: 429,
+        headers: {
+          'Content-Type': 'application/json',
+          'Retry-After': '60',
+        },
+      });
+    }
+
+    // Validaciones de tamaño
+    if (messages.length > 40) {
+      return new Response(JSON.stringify({ error: 'El historial no puede tener más de 40 mensajes.' }), {
+        status: 400, headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
+    const totalChars = messages.reduce((sum, m) => sum + (m?.content?.length ?? 0), 0);
+    if (totalChars > 20_000) {
+      return new Response(JSON.stringify({ error: 'El contenido total supera el límite de 20.000 caracteres.' }), {
+        status: 400, headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
     const last = messages[messages.length - 1]?.content || '';
     const query = norm(last);
 
