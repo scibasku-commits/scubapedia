@@ -9,22 +9,39 @@ export const prerender = false; // SSR en Vercel
 
 export const POST: APIRoute = async ({ request }) => {
   try {
-    const { messages, sessionId } = await request.json();
-    if (!messages || !Array.isArray(messages)) {
-      return new Response(JSON.stringify({ error: 'Faltan los mensajes en la petición.' }), {
-        status: 400, headers: { 'Content-Type': 'application/json' },
-      });
-    }
-
-    // Rate limiting: máx 10 peticiones por minuto por IP
+    // EL FRENO VA PRIMERO, ANTES DE LEER NADA DEL CUERPO.
+    // Estaba detrás de `await request.json()`, así que un cuerpo de 38 MB se procesaba
+    // entero antes de que nada lo parara, y una petición con JSON roto ni siquiera
+    // llegaba a contar: se podían mandar infinitas sin gastar cupo.
     const ip = ipDe(request);
     if (!dentroDelLimite(ip, Date.now(), 'chat')) {
       return new Response(JSON.stringify({ error: 'Demasiadas peticiones. Espera un minuto e inténtalo otra vez.' }), {
         status: 429,
-        headers: {
-          'Content-Type': 'application/json',
-          'Retry-After': '60',
-        },
+        headers: { 'Content-Type': 'application/json', 'Retry-After': '60' },
+      });
+    }
+
+    // Corte por tamaño ANTES de parsear: 200 KB de JSON dan de sobra para 40 mensajes
+    // de 20.000 caracteres en total. Lo que pase de ahí no se lee siquiera.
+    const declarado = Number(request.headers.get('content-length') ?? 0);
+    if (declarado > 200_000) {
+      return new Response(JSON.stringify({ error: 'La petición es demasiado grande.' }), {
+        status: 413, headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
+    let cuerpo: any;
+    try {
+      cuerpo = await request.json();
+    } catch {
+      return new Response(JSON.stringify({ error: 'La petición no es JSON válido.' }), {
+        status: 400, headers: { 'Content-Type': 'application/json' },
+      });
+    }
+    const { messages, sessionId } = cuerpo ?? {};
+    if (!messages || !Array.isArray(messages)) {
+      return new Response(JSON.stringify({ error: 'Faltan los mensajes en la petición.' }), {
+        status: 400, headers: { 'Content-Type': 'application/json' },
       });
     }
 
