@@ -6,7 +6,9 @@ import { getCollection } from 'astro:content';
 import { normalizeZona, zonaRank, ZONA_ORDER } from '../lib/zonas';
 import coordenadas from '../lib/coordenadas.json';
 
-const SITE = 'https://scubapedia.org';
+// Sale de `site` de astro.config.mjs. Escrito a mano se queda desfasado en silencio
+// y contradice al <link rel=canonical>, que sí sale de ahí.
+const SITE = 'https://www.scubapedia.org';
 
 export const GET: APIRoute = async () => {
   const entries = await getCollection('buceo');

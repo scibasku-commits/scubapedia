@@ -53,15 +53,19 @@ export { ipDe, dentroDelLimite, limpiarGolpes as _reiniciarLimite } from './rate
 
 // --- Airtable ------------------------------------------------------------
 /**
- * ⚠️ El desplegable «Marca» de la tabla Reservas (base appvV6S8P2HkRqPni) NO
- * tiene la opción «Scubapedia» — verificado contra el esquema real el
- * 20-ago-2026: Skialpes, Viajesdeski, Japow, Crucerobuceo, Lujosinartificios,
- * Recableado, Wallet cliente, Aspenski. El PAT no puede escribir esquema, así
- * que mandar «Scubapedia» rompería el guardado del lead.
+ * El desplegable «Marca» de la tabla Reservas (base appvV6S8P2HkRqPni,
+ * tabla tblPnUE7rxDpoBAM6, campo fldaSCKneLMQ0537T) SÍ tiene «Scubapedia»
+ * — opción sel39uPBSr1olXhw5, leída del esquema real el 1-sep-2026.
  *
- * Se guarda como «Crucerobuceo» —es la marca a la que scubapedia manda todas
- * sus conversiones— y la marca real queda escrita en las Notas, para no perder
- * el dato mientras Giora no añada la opción a mano en Airtable.
+ * El comentario anterior decía lo contrario y llevaba aquí desde el 20-ago:
+ * afirmaba que había que guardar «Crucerobuceo» y anotar la marca real en las
+ * Notas. El código nunca hizo eso. Tres revisores distintos señalaron la
+ * contradicción; quien se hubiera fiado del comentario y «corregido» la
+ * constante habría atribuido mal todos los leads de scubapedia.org.
+ *
+ * Las once opciones del esquema, hoy: Skialpes, Viajesdeski, Japow,
+ * Crucerobuceo, Lujosinartificios, Recableado, Wallet cliente, Aspenski,
+ * America Motorhome, Ilovecanada, Scubapedia.
  */
 export const MARCA_AIRTABLE = 'Scubapedia';
 

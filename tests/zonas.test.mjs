@@ -104,31 +104,24 @@ test('todas las regiones se normalizan a zonas conocidas (en ZONA_ORDER)', () =>
     `hay zonas fuera de ZONA_ORDER:\n${Array.from(zonasDesconocidas).join('\n')}`);
 });
 
-test('el reparto de fichas por zona es exactamente el esperado', () => {
+test('ninguna ficha se queda fuera y ninguna zona sale vacía por una regla muerta', () => {
   const fichas = leerFichas();
   const reparto = calcularReparto(fichas);
 
-  const esperado = {
-    'Sudeste Asiático': 24,
-    'Mar Rojo': 19,
-    'Caribe': 14,
-    'Maldivas': 9,
-    'Pacífico Sur': 9,
-    'Atlántico': 9,
-    'Océano Índico': 9,
-    'Mediterráneo': 7,
-    'Australia': 6,
-    'Pacífico Este': 6,
-    'Pacífico Central': 5,
-    'Sudáfrica': 3,
-    'Aguas polares': 2,
-    'Otros': 0,
-  };
+  // Nada de cifras escritas a mano: publicar una ficha nueva es lo normal en una
+  // enciclopedia y no debe poner la suite en rojo. Lo que sí es un defecto:
+  // que una ficha se pierda, o que una zona del índice no la alcance ninguna regla
+  // (que es como «Sudáfrica» y «Pacífico Este» llevaban tiempo a cero).
+  const suma = ZONA_ORDER.reduce((n, z) => n + (reparto[z] ?? 0), 0);
+  assert.equal(suma, fichas.length,
+    `las zonas suman ${suma} pero hay ${fichas.length} fichas: alguna se ha perdido`);
 
-  ZONA_ORDER.forEach((zona) => {
-    assert.equal(reparto[zona], esperado[zona],
-      `zona ${zona}: esperadas ${esperado[zona]}, hay ${reparto[zona]}`);
-  });
+  const vacias = ZONA_ORDER.filter((z) => z !== 'Otros' && !reparto[z]);
+  assert.deepEqual(vacias, [],
+    `zonas del índice sin ninguna ficha (regla inalcanzable): ${vacias.join(', ')}`);
+
+  assert.equal(reparto['Otros'] ?? 0, 0,
+    `${reparto['Otros']} fichas han caído en «Otros»: hay regiones que ninguna regla reconoce`);
 });
 
 test('casos específicos de prueba: raja-ampat → Sudeste Asiático', () => {
@@ -205,4 +198,22 @@ test('una región desconocida cae en Otros, no inventa una zona', () => {
     );
   }
   assert.equal(normalizeZona(''), 'Otros', 'una región vacía tiene que caer en Otros');
+});
+
+// Los tres que destapó la revisión adversarial: reglas que se tapaban unas a otras.
+test('Puerto Madryn es Atlántico, no Pacífico', () => {
+  const f = leerFichas().find((x) => x.slug === 'puerto-madryn');
+  assert.ok(f, 'no existe la ficha puerto-madryn');
+  assert.equal(normalizeZona(f.region), 'Atlántico',
+    `su región dice "${f.region}" y la ficha habla del Atlántico Sur`);
+});
+
+test('las orcas de Noruega y Silfra son aguas polares, no Atlántico medio', () => {
+  const fichas = leerFichas();
+  for (const slug of ['noruega-orcas', 'islandia-silfra']) {
+    const f = fichas.find((x) => x.slug === slug);
+    assert.ok(f, `no existe la ficha ${slug}`);
+    assert.equal(normalizeZona(f.region), 'Aguas polares',
+      `${slug}: región "${f.region}" → ${normalizeZona(f.region)}`);
+  }
 });

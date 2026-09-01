@@ -79,8 +79,8 @@ const QUESTIONS = [
 
 const title = 'Quiz de buceo: ¿cuánto sabes? — Scubapedia';
 const description = '10 preguntas sobre destinos, fauna y técnica de buceo. Datos verificables, sin trampas. ¿Cuántas aciertas?';
-const canonical = new URL('/quiz/', Astro.site ?? 'https://scubapedia.org').toString();
-const ogImage = new URL('/og-default.png', Astro.site ?? 'https://scubapedia.org').toString();
+const canonical = new URL('/quiz/', Astro.site ?? 'https://www.scubapedia.org').toString();
+const ogImage = new URL('/og-default.png', Astro.site ?? 'https://www.scubapedia.org').toString();
 const WA = 'https://wa.me/34619401041';
 ---
 <!doctype html>
@@ -303,7 +303,7 @@ const WA = 'https://wa.me/34619401041';
       else if (score >= 3) msg = 'Open Water recién sacado. El mar tiene mucho que enseñarte todavía.';
       else msg = 'Bautizo de buceo. ¡Pero todos empezamos por la primera burbuja!';
       const shareText = 'He sacado ' + score + '/' + n + ' en el quiz de buceo de Scubapedia 🤿 ¿Te atreves?';
-      const url = 'https://scubapedia.org/quiz/';
+      const url = 'https://www.scubapedia.org/quiz/';
       const result = document.createElement('div');
       result.className = 'card result';
       result.innerHTML =

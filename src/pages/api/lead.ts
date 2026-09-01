@@ -27,7 +27,7 @@ export const POST: APIRoute = async ({ request }) => {
     const form = await request.formData();
     const datos = Object.fromEntries(form.entries());
 
-    if (!dentroDelLimite(ipDe(request))) {
+    if (!dentroDelLimite(ipDe(request), Date.now(), 'lead')) {
       return new Response('Demasiadas peticiones. Espera un minuto e inténtalo otra vez.', { status: 429 });
     }
 

@@ -7,7 +7,7 @@ export function normalizeZona(r) {
   if (r.includes('Mar Rojo') || r.includes('Sinaí')) return 'Mar Rojo';
   if (r.startsWith('Maldivas')) return 'Maldivas';
   // Pacífico rules BEFORE Caribe (coiba-panama case: Caribe / Pacífico → Pacífico Este)
-  if (r.includes('Pacífico Sur') || r.includes('Patagonia')) return 'Pacífico Sur';
+  if (r.includes('Pacífico Sur')) return 'Pacífico Sur';
   if (r.includes('Pacífico Central')) return 'Pacífico Central';
   if (r.includes('Micronesia') || r.includes('Hawaii')) return 'Pacífico Central';
   if (r.includes('Pacífico Oriental') || r.includes('Pacífico Americano') || r.includes('Baja California')) return 'Pacífico Este';
@@ -18,12 +18,15 @@ export function normalizeZona(r) {
   if (r.includes('Caribe') && !r.includes('Pacífico')) return 'Caribe';
   if (r.includes('Riviera Maya') || r.includes('Yucatán')) return 'Caribe';
   if (r.includes('Sudeste Asiático') || r === 'Filipinas' || r === 'Indonesia' || r.includes('Maluku') || r.includes('Nusa Tenggara') || r.includes('Sulawesi') || r.includes('Visayas') || r.includes('Papua Occidental') || r.includes('Luzón') || r.includes('Negros') || r.includes('Cebú') || r.includes('Andamán') || r.includes('Sulu') || r.includes('Tailandia')) return 'Sudeste Asiático';
+  // Las polares van ANTES que el Atlántico: «Atlántico Norte — Noruega Ártica» e
+  // «Atlántico Norte — Islandia» casaban con Atlántico y dejaban esta rama muerta,
+  // con la zona «Aguas polares» prometiendo orcas que estaban archivadas en otro sitio.
+  if (r.includes('Antártico') || r.includes('Antártida')) return 'Aguas polares';
+  if (r.includes('Ártic') || r.includes('Islandia') || r.includes('Noruega')) return 'Aguas polares';
   if (r.includes('Atlántico')) return 'Atlántico';
   if (r.includes('Mediterráneo')) return 'Mediterráneo';
   if (r.includes('Sudáfrica')) return 'Sudáfrica';
   if (r.includes('Índico')) return 'Océano Índico';
-  if (r.includes('Antártico') || r.includes('Antártida')) return 'Aguas polares';
-  if (r.includes('Ártico') || r.includes('Islandia') || r.includes('Noruega')) return 'Aguas polares';
   if (r.includes('Australia') || r.includes('Queensland')) return 'Australia';
   return 'Otros';
 }

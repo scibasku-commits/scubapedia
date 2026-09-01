@@ -6,10 +6,22 @@ import assert from 'node:assert';
 import { ipDe, dentroDelLimite, limpiarGolpes } from '../src/lib/rate-limit.mjs';
 
 test('rate-limit: extrae IP correctamente', () => {
+  // Del x-forwarded-for se toma el ULTIMO valor, no el primero: el primero lo
+  // escribe quien llama, así que cogerlo permitía inventarse una identidad nueva
+  // en cada petición y saltarse el límite entero.
   const req1 = {
     headers: new Map([['x-forwarded-for', '203.0.113.45, 198.51.100.1']]),
   };
-  assert.strictEqual(ipDe(req1), '203.0.113.45');
+  assert.strictEqual(ipDe(req1), '198.51.100.1');
+
+  // Y si la plataforma pone x-real-ip, esa manda sobre cualquier XFF del cliente.
+  const suplantado = {
+    headers: new Map([
+      ['x-forwarded-for', '1.2.3.4'],
+      ['x-real-ip', '192.0.2.99'],
+    ]),
+  };
+  assert.strictEqual(ipDe(suplantado), '192.0.2.99');
 
   const req2 = {
     headers: new Map([['x-real-ip', '192.0.2.1']]),

@@ -96,8 +96,11 @@ const gioraEstuvo = all.filter((e) => e.data.giora_estuvo).length;
 
 const title = 'Scubapedia — Enciclopedia editorial de destinos de buceo en castellano';
 const description = `Enciclopedia editorial de ${totalFichas} destinos de buceo en castellano. Profundidad, visibilidad, fauna, mejor época y nivel — datos verificables, sin marketing vacío.`;
-const canonical = new URL('/', Astro.site ?? 'https://scubapedia.org').toString();
-const ogImage = new URL('/og-default.png', Astro.site ?? 'https://scubapedia.org').toString();
+const canonical = new URL('/', Astro.site ?? 'https://www.scubapedia.org').toString();
+const ogImage = new URL('/og-default.png', Astro.site ?? 'https://www.scubapedia.org').toString();
+// Un solo sitio del que sale el dominio, para que canonical, og:url y el JSON-LD
+// no puedan discrepar como discrepaban.
+const SITE_URL = (Astro.site ?? new URL('https://www.scubapedia.org')).toString().replace(/\/$/, '');
 const CRUCERO = 'https://crucerobuceo.com';
 const WA = 'https://wa.me/34619401041';
 const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para el masthead
@@ -129,22 +132,22 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': 'WebSite', '@id': 'https://scubapedia.org/#website', name: 'Scubapedia',
-        url: 'https://scubapedia.org', description,
-        publisher: { '@id': 'https://scubapedia.org/#viajes-scibasku' },
+        '@type': 'WebSite', '@id': `${SITE_URL}/#website`, name: 'Scubapedia',
+        url: SITE_URL, description,
+        publisher: { '@id': `${SITE_URL}/#viajes-scibasku` },
       },
       {
-        '@type': 'TravelAgency', '@id': 'https://scubapedia.org/#viajes-scibasku',
+        '@type': 'TravelAgency', '@id': `${SITE_URL}/#viajes-scibasku`,
         name: 'Viajes Scibasku', url: 'https://viajesscibasku.com',
         identifier: { '@type': 'PropertyValue', propertyID: 'CICMA', value: '2283' },
       },
       {
-        '@type': 'ItemList', '@id': 'https://scubapedia.org/#catalogo',
+        '@type': 'ItemList', '@id': `${SITE_URL}/#catalogo`,
         name: `Catálogo de ${totalFichas} destinos de buceo`,
         numberOfItems: totalFichas,
         itemListElement: searchIdx.map((d, i) => ({
           '@type': 'ListItem', position: i + 1, name: d.t,
-          url: new URL(d.u, 'https://scubapedia.org').toString(),
+          url: new URL(d.u, SITE_URL).toString(),
         })),
       },
     ],

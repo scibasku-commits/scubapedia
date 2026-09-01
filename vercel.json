@@ -14,7 +14,7 @@
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "destinos.crucerobuceo.com" }],
-      "destination": "https://scubapedia.org/:path*",
+      "destination": "https://www.scubapedia.org/:path*",
       "permanent": true
     }
   ]

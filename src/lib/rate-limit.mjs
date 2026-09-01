@@ -7,16 +7,36 @@
 
 const VENTANA_MS = 60_000;
 const MAX_POR_VENTANA = 10;
-const golpes = new Map();
+
+// Un cubo POR ENDPOINT. Compartir uno solo hacía que diez preguntas al chat
+// dejaran al visitante sin poder enviar el formulario de presupuesto: el camino
+// que menos vale bloqueaba al que más.
+const cubos = new Map();
+function cubo(ambito) {
+  let m = cubos.get(ambito);
+  if (!m) { m = new Map(); cubos.set(ambito, m); }
+  return m;
+}
 
 export function ipDe(request) {
+  // `x-real-ip` lo fija la plataforma (Vercel) y el cliente no puede falsearla.
+  // `x-forwarded-for` sí la puede escribir quien llama: si se cogiera su primer
+  // valor, bastaría cambiar la cabecera en cada petición para tener identidad
+  // nueva y saltarse el límite. Por eso va de respaldo y se toma el ÚLTIMO
+  // valor, que es el que añade el proxy más cercano.
+  const real = request?.headers?.get?.('x-real-ip');
+  if (real) return String(real).trim();
   const fwd = request?.headers?.get?.('x-forwarded-for');
-  if (fwd) return String(fwd).split(',')[0].trim();
-  return request?.headers?.get?.('x-real-ip') ?? 'desconocida';
+  if (fwd) {
+    const partes = String(fwd).split(',').map((s) => s.trim()).filter(Boolean);
+    if (partes.length) return partes[partes.length - 1];
+  }
+  return 'desconocida';
 }
 
 /** true = deja pasar. false = ha superado el límite en el último minuto. */
-export function dentroDelLimite(ip, ahora = Date.now()) {
+export function dentroDelLimite(ip, ahora = Date.now(), ambito = 'general') {
+  const golpes = cubo(ambito);
   const previos = (golpes.get(ip) ?? []).filter((t) => ahora - t < VENTANA_MS);
   if (previos.length >= MAX_POR_VENTANA) {
     golpes.set(ip, previos);
@@ -32,5 +52,5 @@ export function dentroDelLimite(ip, ahora = Date.now()) {
 
 /** Solo para los tests. */
 export function limpiarGolpes() {
-  golpes.clear();
+  cubos.clear();
 }

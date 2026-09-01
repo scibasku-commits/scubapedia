@@ -18,7 +18,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     // Rate limiting: máx 10 peticiones por minuto por IP
     const ip = ipDe(request);
-    if (!dentroDelLimite(ip)) {
+    if (!dentroDelLimite(ip, Date.now(), 'chat')) {
       return new Response(JSON.stringify({ error: 'Demasiadas peticiones. Espera un minuto e inténtalo otra vez.' }), {
         status: 429,
         headers: {

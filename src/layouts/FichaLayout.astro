@@ -62,8 +62,8 @@ const cercanas = allBuceo
 
 const h2 = headings.filter((h) => h.depth === 2);
 
-const canonicalUrl = new URL(`/destinos/${id}/`, Astro.site ?? 'https://scubapedia.org').toString();
-const ogImage = destinoImage(id, 'og') ?? new URL('/og-default.png', Astro.site ?? 'https://scubapedia.org').toString();
+const canonicalUrl = new URL(`/destinos/${id}/`, Astro.site ?? 'https://www.scubapedia.org').toString();
+const ogImage = destinoImage(id, 'og') ?? new URL('/og-default.png', Astro.site ?? 'https://www.scubapedia.org').toString();
 const pageTitle = `${titleFull} · Ficha de buceo — Scubapedia`;
 const tempDesc = (d.temperatura_agua_min || d.temperatura_agua_max)
   ? `, ${d.temperatura_agua_min}–${d.temperatura_agua_max}°C`
@@ -72,7 +72,7 @@ const desc = `Buceo en ${d.pais || titleShort}: ${d.visibilidad_media || 'visibi
 const arrow = '<path d="M5 12h14M13 6l6 6-6 6"/>';
 
 // ---------- JSON-LD completo: Article + TouristAttraction (geo) + BreadcrumbList + autor E-E-A-T ----------
-const SITE = (Astro.site ?? 'https://scubapedia.org').toString().replace(/\/$/, '');
+const SITE = (Astro.site ?? 'https://www.scubapedia.org').toString().replace(/\/$/, '');
 const coords = (coordenadas as Record<string, { lat: number; lng: number }>)[id] ?? null;
 const realOgImage = destinoImage(id, 'og'); // null si el destino no tiene foto propia
 const AUTHOR_ID = `${SITE}/#giora`;

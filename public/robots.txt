@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://scubapedia.org/sitemap-index.xml
+Sitemap: https://www.scubapedia.org/sitemap-index.xml
 # LLM-readable content: https://www.scubapedia.org/llms.txt
 
 User-agent: GPTBot

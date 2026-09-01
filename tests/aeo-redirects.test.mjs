@@ -24,7 +24,7 @@ test('los redirects de sitemap son 301 y preceden al catch-all de destinos', () 
   assert.deepEqual(destinosCatchAll, {
     source: '/:path*',
     has: [{ type: 'host', value: 'destinos.crucerobuceo.com' }],
-    destination: 'https://scubapedia.org/:path*',
+    destination: 'https://www.scubapedia.org/:path*',
     permanent: true,
   });
 });
