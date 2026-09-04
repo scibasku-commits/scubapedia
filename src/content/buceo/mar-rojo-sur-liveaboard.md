@@ -38,7 +38,7 @@ centros_buceo_recomendados:
   - "Blue Paradise (Marsa Alam)"
   - "Camel Dive Club (Sharm el-Sheikh)"
 proveedores_scibasku:
-  - "Operadores locales Mar Rojo (contactos activos via viajaraegipto.com)"
+  - "Operadores locales Mar Rojo (contactos activos via viajaraegipto.es)"
 precio_semana_aprox: "700-1.200 USD (liveaboard 7 noches desde Hurghada o Marsa Alam)"
 giora_estuvo: false
 updated: 2026-06-14
@@ -67,7 +67,7 @@ El Mar Rojo es un brazo del Océano Índico sellado por el estrecho de Bab el-Ma
 
 El liveaboard del Mar Rojo es el formato más desarrollado del mundo en términos de infraestructura: decenas de barcos de todos los niveles desde Hurghada y Marsa Alam, con itinerarios de 4 a 14 noches que cubren desde los puntos turísticos del norte hasta los remotos del sur con tiburones oceánicos.
 
-**Conexión Scibasku:** El destino Egipto tiene su vertical en **viajaraegipto.com** con contenido específico de buceo y contexto del destino.
+**Conexión Scibasku:** El destino Egipto tiene su vertical en **viajaraegipto.es** con contenido específico de buceo y contexto del destino.
 
 ## Datos técnicos
 
@@ -123,7 +123,7 @@ El Mar Rojo es el destino que ponemos siempre para el cliente que quiere su prim
 
 Para quien ya conoce el Mar Rojo norte (Sharm, Hurghada, Thistlegorm), el Mar Rojo sur (Brothers, Elphinstone, Daedalus, St. John's) es un destino diferente — más fauna pelágica, menos turismo, más buceo de verdad. Es el itinerario que recomendamos en segunda o tercera visita.
 
-**Vertical Scibasku:** viajaraegipto.com tiene artículos específicos de buceo en el Mar Rojo con información de operadores locales.
+**Vertical Scibasku:** viajaraegipto.es tiene artículos específicos de buceo en el Mar Rojo con información de operadores locales.
 
 ## Fichas relacionadas
 
