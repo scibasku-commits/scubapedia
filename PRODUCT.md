@@ -16,7 +16,7 @@ Enciclopedia editorial de destinos de buceo en castellano. 122 fichas de destino
 
 ## Positioning
 
-Ningún competidor puede copiar dos cosas a la vez: (1) las fichas se escriben desde la experiencia de una agencia que lleva más de 20 años fletando liveaboards —13 de los 122 destinos están buceados por el propio Giora y así se marcan—, y (2) no hay comisión escondida decidiendo qué destino sale destacado. El resto del sector en castellano es folleto de operador o foro sin revisar. Frase de la casa: «datos verificables, sin marketing vacío».
+Ningún competidor puede copiar dos cosas a la vez: (1) las fichas se escriben desde la experiencia de una agencia que fleta liveaboards desde 2006 —13 de los 122 destinos están buceados por el propio Giora y así se marcan—, y (2) no hay comisión escondida decidiendo qué destino sale destacado. El resto del sector en castellano es folleto de operador o foro sin revisar. Frase de la casa: «datos verificables, sin marketing vacío».
 
 ## Capabilities
 
