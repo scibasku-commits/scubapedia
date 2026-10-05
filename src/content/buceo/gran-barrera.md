@@ -127,7 +127,7 @@ El liveaboard es la forma seria de bucear la Gran Barrera. Los day trips cubren 
 | **Sunlover Reef Cruises** | Cairns | Plataforma ponton | Partner Scibasku |
 | **Pro Dive Cairns** | Cairns | Day trip + cursos | Buenos precios para OWD |
 | **Fitzroy Island Resort** | Cairns (45 min ferry) | Isla + arrecife | Partner Scibasku |
-| **Lizard Island Resort** | Vuelo desde Cairns | Resort lujo + buceo | Partner Scibasku (15%) |
+| **Lizard Island Resort** | Vuelo desde Cairns | Resort lujo + buceo | Partner Scibasku |
 
 Rango de precios day trip: 200-280 AUD por persona, inmersiones incluidas.
 
