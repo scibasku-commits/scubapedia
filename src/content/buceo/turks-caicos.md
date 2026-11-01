@@ -55,7 +55,7 @@ tags:
 
 # Turks & Caicos
 
-> Reino Unido (Caribe) · El Caribe con la visibilidad más alta del mundo y arrecifes que todavía no han visto a Booking.com
+> Reino Unido (Caribe) · El Caribe con la visibilidad más alta del mundo
 
 ## Resumen
 
