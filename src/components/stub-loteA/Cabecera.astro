@@ -1,0 +1,27 @@
+---
+// STUB DEL LOTE A — se borra al integrar: la buena es src/components/Cabecera.astro (Lote B,
+// DECISION.md §3.3). Solo está para que la portada se pueda medir con una cabecera de 60 px.
+interface Props { activa?: string }
+const { activa = '' } = Astro.props;
+const links = [
+  { id: 'sondas', href: '/#sondas', t: 'Tabla de sondas' },
+  { id: 'indice', href: '/#indice', t: 'Índice' },
+  { id: 'mapa', href: '/mapa/', t: 'Mapa' },
+  { id: 'quiz', href: '/quiz/', t: 'Quiz' },
+];
+---
+<header class="stubcab">
+  <a href="/" class="stubcab-logo" aria-label="Scubapedia, inicio"><img src="/scubapedia-logo-nav-white.png" alt="Scubapedia" width="112" height="28" /></a>
+  <nav aria-label="Principal">
+    {links.map((l) => <a class:list={['lab', { on: activa === l.id }]} href={l.href}>{l.t}</a>)}
+    <a class="lab stubcab-giora" href="/#giora">Pregúntale a Giora</a>
+  </nav>
+</header>
+<style is:global>
+  .stubcab{position:fixed;top:0;left:0;right:0;z-index:80;height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 var(--gutter);background:var(--paper);border-bottom:1px solid var(--ink)}
+  .stubcab-logo img{height:28px;width:auto;filter:brightness(0)}
+  .stubcab nav{display:flex;gap:26px;align-items:center}
+  .stubcab .on{border-bottom:1px solid var(--mag)}
+  .stubcab-giora{border:1px solid var(--ink);padding:8px 12px}
+  @media (max-width:760px){.stubcab nav a:not(.stubcab-giora){display:none}}
+</style>
