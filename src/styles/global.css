@@ -1,20 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  /* Base editorial (idéntica a SkiPedia — familia Scibasku) */
-  --color-bg: #fbf8f3;          /* crema */
-  --color-paper: #ffffff;
-  --color-ink: #1a1a1a;
-  --color-ink-soft: #555;
-  --color-muted: #8a8073;
-  --color-border: #e5ddd1;
+  /* Las variables --color-* (las usa ChatWidget vía Tailwind) apuntan a los tokens de la
+     carta náutica (src/styles/carta.css). Fuente: DECISION.md 13-nov-2026, tarea A1. */
+  --color-bg: #e9ece4;          /* --paper */
+  --color-paper: #fbfcf9;       /* --white */
+  --color-ink: #12242b;         /* --ink */
+  --color-ink-soft: #3c626e;    /* --ink-2 */
+  --color-muted: #52646a;       /* --ink-3 */
+  --color-border: #12242b22;    /* --rule */
+  --color-accent: #d6006f;      /* --mag: trazo, bordes, foco. Para texto pequeño, --mag-ink */
+  --color-link: #12242b;        /* --ink */
 
-  /* Acento BUCEO — azul mar profundo (diferencia del esquí, sigue en la familia Scibasku) */
-  --color-accent: #16A6C9;      /* aqua mar — SOLO decorativo (logo, olas, fondos, bordes hover). NO texto. */
-  --color-link: #0A5570;        /* azul océano — texto/enlaces/botones (texto blanco encima), pasa WCAG AA */
-
-  --font-serif: 'Fraunces', Georgia, serif;
-  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-serif: 'Bodoni Moda', Didot, 'Times New Roman', serif;
+  --font-sans: 'Archivo Narrow', 'Helvetica Neue', Arial, sans-serif;
 }
 
 html { background: var(--color-bg); color: var(--color-ink); }
