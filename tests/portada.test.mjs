@@ -104,7 +104,7 @@ test('número en letras para la frase-tesis (100-130) y cifras fuera de ese tram
   assert.equal(numeroEnLetras(122), 'ciento veintidós');
   assert.equal(numeroEnLetras(130), 'ciento treinta');
   assert.equal(numeroEnLetras(131), '131');
-  assert.equal(fraseTesis(122), 'Ciento veintidós destinos levantados uno a uno, con la sonda y no con el folleto.');
+  assert.equal(fraseTesis(122), 'Ciento veintidós destinos de buceo, cada uno con su profundidad, visibilidad y temporada.');
 });
 
 // ---------------------------------------------------------------- 2 · HTML servido

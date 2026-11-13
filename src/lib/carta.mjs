@@ -263,7 +263,7 @@ export function numeroEnLetras(n) {
 export function fraseTesis(n) {
   const letras = numeroEnLetras(n);
   const cap = letras.charAt(0).toUpperCase() + letras.slice(1);
-  return `${cap} destinos levantados uno a uno, con la sonda y no con el folleto.`;
+  return `${cap} destinos de buceo, cada uno con su profundidad, visibilidad y temporada.`;
 }
 
 // Estilo en línea de una pieza o caja: left/top/width/height en %.

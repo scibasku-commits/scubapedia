@@ -115,7 +115,7 @@ const { destino = '', source = 'ficha' } = Astro.props;
   .scp-cap-sub { font-size: 1.05rem !important; line-height: 1.55 !important; margin: 0 0 1.4rem !important; color: #e9ece4 !important; }
   .scp-cap-row { display: flex !important; flex-wrap: wrap !important; gap: .9rem !important; margin-bottom: .9rem !important; }
   .scp-cap-f { flex: 1 1 200px !important; display: flex !important; flex-direction: column !important; gap: .3rem !important; }
-  .scp-cap label { font-size: .72rem !important; font-weight: 500 !important; text-transform: uppercase !important; letter-spacing: .15em !important; color: #e9ece4 !important; }
+  .scp-cap label:not(.scp-cap-consent) { font-size: .72rem !important; font-weight: 500 !important; text-transform: uppercase !important; letter-spacing: .15em !important; color: #e9ece4 !important; }
   .scp-cap input, .scp-cap textarea {
     background: var(--white, #fbfcf9) !important; border: 1px solid #e9ece4 !important; border-radius: 0 !important;
     padding: .7rem .85rem !important; color: var(--ink, #12242b) !important; font-size: 1.02rem !important;

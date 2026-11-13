@@ -240,7 +240,6 @@ const WA = 'https://wa.me/34619401041';
 
   <style is:global>
     html,body{overflow-x:clip}
-    main{padding-top:var(--nav-h)}
     .visualmente-oculto{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
     .salto{position:absolute;left:12px;top:12px;z-index:9;background:var(--white);border:1px solid var(--ink);padding:10px 14px}
     .salto:not(:focus){position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;padding:0;border:0}
@@ -362,7 +361,7 @@ const WA = 'https://wa.me/34619401041';
     .sondas-t tbody tr:hover{background:var(--white)}
     .sondas-t tr[hidden]{display:none}
     .sondas-t td{font-size:15px}
-    .dest{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+    .dest-in{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
     .dest a{font-family:var(--rot);font-style:italic;font-size:22px;line-height:1.2;color:var(--ink)}
     .dest a:hover{color:var(--mag-ink)}
     .dest .pais{font-size:10.5px;color:var(--ink-3);letter-spacing:.15em}
@@ -540,7 +539,7 @@ const WA = 'https://wa.me/34619401041';
       </div>
 
       <div class="counts">
-        <div><b>{totalFichas}</b><span class="lab">Fichas revisadas</span></div>
+        <div><b>{totalFichas}</b><span class="lab">Fichas publicadas</span></div>
         <div><b>{totalZonas}</b><span class="lab">Zonas</span></div>
         <div><b>{gioraEstuvo}</b><span class="lab">Con Giora</span></div>
       </div>
@@ -657,11 +656,11 @@ const WA = 'https://wa.me/34619401041';
       <tbody>
         {filas.map((f) => (
           <tr data-zona={f.z} data-u={f.u}>
-            <td class="dest">
+            <td class="dest"><div class="dest-in">
               <a href={f.u}>{f.t}</a>
               {f.pais && <span class="lab pais">{f.pais}</span>}
               {f.giora && <TrianguloGiora size={14} />}
-            </td>
+            </div></td>
             <td class="deep num" data-h="Prof. m">
               {f.prof === SIN ? <span class="nodata">{SIN}</span> : <>{f.prof}<span class="scale" aria-hidden="true"><span class="seg" style={f.bar}></span></span></>}
             </td>
@@ -684,7 +683,7 @@ const WA = 'https://wa.me/34619401041';
     <div class="sec-h">
       <div>
         <h2>Índice por zonas</h2>
-        <p>{totalFichas} destinos agrupados por mar y océano. El número es de fichas publicadas y revisadas, no de folletos vendidos.</p>
+        <p>{totalFichas} destinos agrupados por mar y océano. El número es de fichas publicadas.</p>
       </div>
     </div>
     <div class="regions">
