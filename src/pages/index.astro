@@ -369,6 +369,9 @@ const WA = 'https://wa.me/34619401041';
     .deep .seg{position:absolute;top:0;bottom:0;background:var(--ink-2)}
     .nodata{color:var(--ink-3);font-size:13px}
     .sin-fila{padding:24px 0;color:var(--ink-2)}
+    .ver-todas-w{margin:var(--s-6) 0 0;text-align:center}
+    .ver-todas-w .btn[hidden]{display:none}
+    #chat-trigger.oculto-carta{opacity:0;pointer-events:none;visibility:hidden}
 
     /* ══ 5 · índice por zonas ══ */
     .index{padding:0 0 112px;scroll-margin-top:calc(var(--nav-h) + 16px)}
@@ -672,6 +675,7 @@ const WA = 'https://wa.me/34619401041';
         ))}
       </tbody>
     </table>
+    <p class="ver-todas-w"><button type="button" class="btn ver-todas" id="ver-todas" hidden>Ver las {totalFichas} fichas</button></p>
     <p class="sin-fila" id="sin-fila" hidden>Ninguna ficha coincide. Prueba con un mar, un país o una especie.</p>
   </div>
 </section>
@@ -907,17 +911,32 @@ const WA = 'https://wa.me/34619401041';
     var activeIdx = -1, results = [];
 
     // ---- la tabla: zona de la pestaña Y texto del buscador ----
+    // En pantallas estrechas la tabla completa se pliega a 12 filas hasta que se pide verla entera
+    // (sin JS se ven las 122). Con un filtro activo se ven todas las que coinciden.
+    var PLIEGUE = 12;
+    var plegada = true;
+    var estrecha = window.matchMedia('(max-width: 1000px)');
+    var verTodas = document.getElementById('ver-todas');
     function filtra() {
       var v = norm(q.value.trim());
       var n = 0;
+      var pliega = plegada && estrecha.matches && !zona && !v;
       rows.forEach(function (tr) {
         var ok = (!zona || tr.dataset.zona === zona) && (!v || (hay[tr.dataset.u] || '').indexOf(v) >= 0);
-        tr.hidden = !ok;
         if (ok) n++;
+        tr.hidden = !ok || (pliega && n > PLIEGUE);
       });
       if (nVis) nVis.textContent = String(n);
       if (sinFila) sinFila.hidden = n > 0;
+      if (verTodas) verTodas.hidden = !(pliega && n > PLIEGUE);
     }
+    if (verTodas) verTodas.addEventListener('click', function () {
+      plegada = false;
+      filtra();
+      var sig = rows[PLIEGUE] && rows[PLIEGUE].querySelector('a');
+      if (sig) sig.focus();
+    });
+    if (estrecha.addEventListener) estrecha.addEventListener('change', filtra);
 
     // ---- el recuadro magenta viaja a la pestaña activa (también si hay varias filas) ----
     function mueveMarca() {
@@ -1002,7 +1021,25 @@ const WA = 'https://wa.me/34619401041';
     if (formB) formB.addEventListener('submit', function (e) { e.preventDefault(); });
     document.addEventListener('click', function (e) { if (!search.contains(e.target)) cierra(); });
     // /?q=… (el formulario sin JS manda aquí): se aplica al cargar
-    try { var pq = new URLSearchParams(location.search).get('q'); if (pq) { q.value = pq; filtra(); } } catch (e) {}
+    try { var pq = new URLSearchParams(location.search).get('q'); if (pq) { q.value = pq; } } catch (e) {}
+    filtra();
+  })();
+</script>
+<script is:inline>
+  // El botón del chat no tapa la rosa ni las sondas mientras la carta está en pantalla (escritorio).
+  (function () {
+    var carta = document.querySelector('header.chart');
+    var boton = document.getElementById('chat-trigger');
+    var ventana = document.getElementById('chat-window');
+    if (!carta || !boton || !('IntersectionObserver' in window)) return;
+    var ancha = window.matchMedia('(min-width: 1001px)');
+    var visible = false;
+    function aplica() {
+      var abierta = ventana && !ventana.classList.contains('hidden');
+      boton.classList.toggle('oculto-carta', visible && ancha.matches && !abierta);
+    }
+    new IntersectionObserver(function (e) { visible = e[0].isIntersecting && e[0].intersectionRatio > 0.35; aplica(); }, { threshold: [0, 0.35, 0.6, 1] }).observe(carta);
+    if (ancha.addEventListener) ancha.addEventListener('change', aplica);
   })();
 </script>
 
