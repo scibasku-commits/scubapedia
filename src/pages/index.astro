@@ -1,14 +1,32 @@
 ---
+// Portada «Carta náutica» (DECISION.md 13-nov-2026, §3.4). Todo lo que se pinta sale de
+// las 122 fichas reales: las sondas de la carta son sus profundidades máximas, la tabla
+// son sus datos publicados y, donde una ficha no trae un dato, se escribe «sin dato».
 import { getCollection } from 'astro:content';
-import { normalizeZona, zonaSlug, zonaRank, zonaBlurb, zonaGradient } from '../lib/zonas';
-import { etiquetaCorta } from '../lib/ficha-datos';
+import { normalizeZona, zonaSlug, zonaRank, zonaBlurb } from '../lib/zonas';
+import { etiquetaCorta, num, temperatura } from '../lib/ficha-datos';
 import { destinoImage, slugImage } from '../lib/imagen';
+import { sondas, ZONA_BOX, PIEZAS, ZONA_GRANDE, estiloCaja, textoSonda, fraseTesis } from '../lib/carta';
 import ChatWidget from '../components/ChatWidget.astro';
 import CaptacionForm from '../components/CaptacionForm.astro';
+// STUB del Lote A: al integrar con el Lote B, estas tres líneas pasan a
+// '../components/Cabecera.astro', '../components/Pie.astro' y '../components/TrianguloGiora.astro'
+// y se borra la carpeta src/components/stub-loteA.
+import Cabecera from '../components/stub-loteA/Cabecera.astro';
+import Pie from '../components/stub-loteA/Pie.astro';
+import TrianguloGiora from '../components/stub-loteA/TrianguloGiora.astro';
 import '../styles/global.css';
+import '../styles/carta.css';
 
 const all = await getCollection('buceo');
 const idOf = (e: any) => e.id.replace(/\.md$/, '');
+
+// Título corto («Brother Islands — …» → «Brother Islands»). Si dos fichas comparten el
+// corto («Maldivas»), se usa el título completo: misma regla que FichaLayout (titleNombre).
+const corto = (t: string) => t.split(' - ')[0].split(' — ')[0].trim();
+const nCortos = new Map<string, number>();
+for (const e of all) nCortos.set(corto(e.data.title), (nCortos.get(corto(e.data.title)) ?? 0) + 1);
+const nombre = (e: any) => ((nCortos.get(corto(e.data.title)) ?? 0) > 1 ? e.data.title.trim() : corto(e.data.title));
 
 // ---- agrupación por ZONA ----
 const byZona = new Map<string, typeof all>();
@@ -21,6 +39,7 @@ const zonas = [...byZona.keys()].sort((a, b) => {
   const ra = zonaRank(a), rb = zonaRank(b);
   return ra !== rb ? ra - rb : a.localeCompare(b);
 });
+const nZona = (z: string) => (byZona.get(z) as any[]).length;
 const zonaBlocks = zonas.map((z) => ({
   zona: z,
   slug: zonaSlug(z),
@@ -45,40 +64,100 @@ for (const blk of zonaBlocks) {
 
 const byId = new Map(all.map((e) => [idOf(e), e]));
 
+// ---- la carta: una sonda por ficha (src/lib/carta.mjs lanza error si algo no cuadra) ----
+const sondasCarta = sondas(all.map((e) => ({
+  slug: idOf(e),
+  title: nombre(e),
+  zona: normalizeZona(e.data.region || ''),
+  prof: num(e.data.profundidad_max) ?? 0,
+})));
+// Los cuatro topónimos que se quedan en móvil: las cuatro zonas con más fichas
+// (a igualdad, el orden editorial de ZONA_ORDER).
+const mayores4 = new Set([...zonas].sort((a, b) => nZona(b) - nZona(a) || zonaRank(a) - zonaRank(b)).slice(0, 4));
+// Posición de esos cuatro en el campo de móvil (390 px de ancho, 360 de alto): la caja de
+// escritorio no sirve ahí. Se colocan en la columna izquierda, lejos de los dos recuadros.
+const POS_MOVIL = ['left:5%;top:6%', 'left:5%;top:20%', 'left:5%;top:34%', 'left:5%;top:48%'];
+const toponimos = zonas.map((z) => {
+  const b = ZONA_BOX[z];
+  const palabras = z.split(' ');
+  return {
+    zona: z,
+    slug: zonaSlug(z),
+    n: nZona(z),
+    renglones: b.lineas === 2 && palabras.length > 1 ? palabras : [z],
+    style: `left:${b.x + 0.4}%;top:${b.y + 0.4}%`,
+    menor: nZona(z) < ZONA_GRANDE,
+    m4: mayores4.has(z),
+  };
+});
+let iMovil = 0;
+for (const t of toponimos) if (t.m4) (t as any).movil = POS_MOVIL[iMovil++];
+const insetMarRojo = slugImage('mar-rojo', 'card'); // la foto hero de producción, ahora en su recuadro
+const insetBrother = destinoImage('brother-islands', 'card');
+const brother = byId.get('brother-islands');
+// Manchas de coral: puro dibujo de carta (no marcan sitios reales), en zonas libres.
+const REEFS = [[12, 20, 6.5], [32, 16, 5.5], [58, 13, 6], [52, 90, 6], [74, 92, 5.5], [84, 50, 6.5]];
+
 // ---- 6 destacadas curadas (variedad geográfica; nota editorial real) ----
 const DESTACADAS_SEED = [
-  { id: 'raja-ampat',           idx: '01', note: 'El epicentro de la biodiversidad marina: 1.700 especies de peces sobre 1.500 islas kársticas.' },
-  { id: 'brother-islands',      idx: '02', note: 'Dos montañas submarinas en pleno Mar Rojo: pecios, paredes verticales y tiburones oceánicos.' },
-  { id: 'maldivas-baa-hanifaru', idx: '03', note: 'Hanifaru Bay: cientos de mantas alimentándose a la vez. Reserva de la Biosfera UNESCO.' },
-  { id: 'galapagos',            idx: '04', note: 'Martillos en cardumen, tiburón ballena e iguanas marinas. Corrientes que lo deciden todo.' },
-  { id: 'palau',                idx: '05', note: 'Blue Corner y el Jellyfish Lake: el Pacífico en su versión más salvaje y vertical.' },
-  { id: 'cozumel',              idx: '06', note: 'Deriva sobre arrecife caribeño, agua tibia y visibilidad de postal. El clásico para volar.' },
+  { id: 'raja-ampat',           note: 'El epicentro de la biodiversidad marina: 1.700 especies de peces sobre 1.500 islas kársticas.' },
+  { id: 'brother-islands',      note: 'Dos montañas submarinas en pleno Mar Rojo: pecios, paredes verticales y tiburones oceánicos.' },
+  { id: 'maldivas-baa-hanifaru', note: 'Hanifaru Bay: cientos de mantas alimentándose a la vez. Reserva de la Biosfera UNESCO.' },
+  { id: 'galapagos',            note: 'Martillos en cardumen, tiburón ballena e iguanas marinas. Corrientes que lo deciden todo.' },
+  { id: 'palau',                note: 'Blue Corner y el Jellyfish Lake: el Pacífico en su versión más salvaje y vertical.' },
+  { id: 'cozumel',              note: 'Deriva sobre arrecife caribeño, agua tibia y visibilidad de postal. El clásico para volar.' },
 ];
 const destacadas = DESTACADAS_SEED.map((d) => {
   const e = byId.get(d.id);
   if (!e) return null;
-  const z = normalizeZona(e.data.region || '');
   const reg = (e.data.region || '').split(',')[0].trim();
   return {
     ...d,
-    title: e.data.title.split(' - ')[0].split(' — ')[0].trim(),
+    title: corto(e.data.title),
     url: `/destinos/${d.id}`,
     region: reg || e.data.pais || '',
     pais: e.data.pais || '',
     cert: etiquetaCorta(e.data.certificacion_minima) ?? '',
     giora: !!e.data.giora_estuvo,
-    grad: zonaGradient(z),
     img: destinoImage(d.id, 'card'),
   };
 }).filter((d): d is NonNullable<typeof d> => Boolean(d));
 
-// ---- índice de búsqueda (todas las fichas) ----
+// ---- índice de búsqueda (todas las fichas; país y fauna incluidos) ----
 const searchIdx = all.map((e) => ({
   t: e.data.title.trim(),
   u: `/destinos/${idOf(e)}`,
   c: normalizeZona(e.data.region || ''),
+  p: e.data.pais || '',
+  f: Array.isArray(e.data.vida_marina_destacada) ? e.data.vida_marina_destacada.join(' ') : '',
   m: etiquetaCorta(e.data.certificacion_minima) ?? '',
 })).sort((a, b) => a.t.localeCompare(b.t));
+
+// ---- tabla de sondas: las 122 filas, solo con lo que trae cada ficha ----
+const SIN = 'sin dato';
+const ESCALA = 60; // la barra de profundidad va de 0 a 60 m
+const filas = all.map((e) => {
+  const d = e.data;
+  const a = num(d.profundidad_min), b = num(d.profundidad_max);
+  const tieneProf = b != null && b > 0;
+  const ini = tieneProf ? Math.max(0, a ?? 0) : 0;
+  const left = tieneProf ? Math.min(100, (ini / ESCALA) * 100) : 0;
+  const width = tieneProf ? Math.max(2, Math.min(100 - left, ((b! - ini) / ESCALA) * 100)) : 0;
+  const temp = temperatura(d);
+  return {
+    t: nombre(e),
+    u: `/destinos/${idOf(e)}`,
+    z: zonaSlug(normalizeZona(d.region || '')),
+    pais: d.pais || '',
+    giora: !!d.giora_estuvo,
+    prof: tieneProf ? (a != null && a > 0 ? `${a}–${b}` : `${b}`) : SIN,
+    bar: tieneProf ? `left:${left.toFixed(1)}%;width:${width.toFixed(1)}%` : '',
+    vis: (d.visibilidad_media || '').trim() || SIN,
+    agua: temp ? temp.replace(/\s*°C$/, '') : SIN,
+    nivel: etiquetaCorta(d.certificacion_minima) ?? SIN,
+    epoca: (Array.isArray(d.temporada_alta) ? d.temporada_alta.join(' · ') : String(d.temporada_alta || '')).trim() || SIN,
+  };
+}).sort((x, y) => x.t.localeCompare(y.t));
 
 // ---- glosario de buceo ----
 const GLOSARIO = [
@@ -101,15 +180,14 @@ const ogImage = new URL('/og-default.png', Astro.site ?? 'https://www.scubapedia
 // Un solo sitio del que sale el dominio, para que canonical, og:url y el JSON-LD
 // no puedan discrepar como discrepaban.
 const SITE_URL = (Astro.site ?? new URL('https://www.scubapedia.org')).toString().replace(/\/$/, '');
-const CRUCERO = 'https://crucerobuceo.com';
 const WA = 'https://wa.me/34619401041';
-const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para el masthead
 ---
 <!doctype html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
   <title>{title}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
@@ -127,7 +205,7 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
   <meta name="twitter:image" content={ogImage} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href={insetMarRojo ?? ''} fetchpriority="high" />
   <script type="application/ld+json" set:html={JSON.stringify({
     '@context': 'https://schema.org',
     '@graph': [
@@ -162,378 +240,467 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
   </script>
 
   <style is:global>
-    :root{
-      --paper:#f1ebdd; --paper-2:#e9e1cf; --paper-card:#faf6ec;
-      --ink:#1b211f; --ink-2:#30383a; --ink-muted:#647072;
-      --rule:#1b211f22; --rule-strong:#1b211f55;
-      --accent:#0A5570; --accent-ink:#073f54; --accent-decor:#16A6C9; --accent-soft:#16A6C91f;
-      --deep:#06283a; --maxw:1200px;
-      --font-display:'Fraunces',Georgia,serif;
-      --font-body:'DM Sans',system-ui,-apple-system,sans-serif;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;background:var(--paper)}
-    body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-weight:400;font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
-    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 36px}
-    a{color:inherit;text-decoration:none}
-    img{display:block;max-width:100%}
-    ::selection{background:var(--accent);color:#f4eee1}
-    .eyebrow{font-family:var(--font-body);font-size:12px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-muted)}
+    html,body{overflow-x:clip}
+    main{padding-top:var(--nav-h)}
+    .visualmente-oculto{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+    .salto{position:absolute;left:12px;top:12px;z-index:9;background:var(--white);border:1px solid var(--ink);padding:10px 14px}
+    .salto:not(:focus){position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;padding:0;border:0}
+    .tri-giora{display:inline-block;flex:none;vertical-align:baseline}
+    section h2{margin:0}
 
-    /* top nav */
-    .nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .4s ease, box-shadow .4s ease, color .4s ease;color:#eaf6f9}
-    .nav-inner{max-width:var(--maxw);margin:0 auto;padding:16px 36px;display:flex;align-items:center;justify-content:space-between}
-    .nav-mark{display:flex;align-items:center;line-height:0}
-    .nav-mark img{height:48px;width:auto;display:block}
-    .nav:not(.solid) .nav-mark img{filter:brightness(0) invert(1) drop-shadow(0 2px 10px rgba(4,20,30,.5))}
-    .nav-links{display:flex;gap:30px;align-items:center}
-    .nav-links a,.nav-links button{font-size:14px;letter-spacing:.04em;opacity:.88;position:relative;padding:4px 0;transition:opacity .2s;background:none;border:0;color:inherit;font-family:var(--font-body);cursor:pointer}
-    .nav-links a:hover,.nav-links button:hover{opacity:1}
-    .nav-links a::after,.nav-links .nav-link::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:currentColor;transition:right .28s ease}
-    .nav-links a:hover::after,.nav-links .nav-link:hover::after{right:0}
-    .nav-cta{border:1px solid currentColor;border-radius:999px;padding:7px 16px !important;opacity:1 !important;letter-spacing:.02em}
-    .nav-cta::after{display:none}
-    .nav-cta:hover{background:#eaf6f9;color:var(--deep)}
-    .nav.solid{background:rgba(241,235,221,.93);backdrop-filter:saturate(120%) blur(8px);color:var(--ink);box-shadow:0 1px 0 var(--rule)}
-    .nav.solid .nav-cta:hover{background:var(--accent);color:#f4eee1;border-color:var(--accent)}
-    .nav-toggle{display:none}
-
-    /* hero — fondo de profundidad (sin foto en FASE 1) */
-    .hero{position:relative;min-height:100svh;display:flex;flex-direction:column;color:#eaf6f9;overflow:hidden;background:#06283a}
-    .hero-bg{position:absolute;inset:0;z-index:0;background:
-      radial-gradient(120% 80% at 50% -10%, rgba(70,190,220,.30) 0%, rgba(70,190,220,0) 55%),
-      radial-gradient(90% 70% at 80% 10%, rgba(34,150,180,.22) 0%, rgba(34,150,180,0) 60%),
-      linear-gradient(180deg,#0c6884 0%,#0a4a63 40%,#072e44 72%,#04212f 100%)}
-    .hero-photo{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;object-position:center 58%}
-    .hero-scrim{position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(4,28,42,.62) 0%,rgba(4,28,42,.40) 38%,rgba(4,28,42,.52) 68%,rgba(3,20,30,.82) 100%)}
-    /* rayos de luz */
-    .hero-rays{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.5;mix-blend-mode:screen;
-      background:repeating-linear-gradient(101deg, rgba(180,235,250,.07) 0 2px, transparent 2px 46px)}
-    .hero-grain{position:absolute;inset:0;z-index:1;opacity:.4;mix-blend-mode:overlay;background-image:repeating-linear-gradient(0deg, #ffffff10 0 1px, transparent 1px 3px);pointer-events:none}
-    .hero-wave{position:absolute;left:0;right:0;bottom:-2px;z-index:1;opacity:.22;pointer-events:none}
-    .hero-wave svg{width:140%;margin-left:-20%;height:auto;display:block}
-    .hero-inner{position:relative;z-index:2;flex:1;max-width:var(--maxw);width:100%;margin:0 auto;padding:0 36px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding-top:120px;padding-bottom:56px}
-    .masthead-rule{display:flex;align-items:center;gap:20px;width:min(640px,86vw);margin-bottom:26px}
-    .masthead-rule .line{flex:1;height:1px;background:#eaf6f9aa}
-    .masthead-rule .label{font-size:11.5px;letter-spacing:.28em;text-transform:uppercase;white-space:nowrap;color:#eaf6f9cc}
-    .wordmark{line-height:0}
-    .wordmark img{width:min(620px,84vw);height:auto;display:block;margin:0 auto;filter:brightness(0) invert(1) drop-shadow(0 8px 34px rgba(4,18,28,.55))}
-    .slogan{margin-top:24px;max-width:760px;font-size:clamp(17px,2.1vw,23px);line-height:1.5;color:#eaf6f9;font-weight:400}
-    .slogan b{font-weight:500}
-    .slogan .dot{color:#eaf6f999;padding:0 .4em}
-
-    /* search */
-    .search{margin-top:40px;width:min(720px,92vw);position:relative;text-align:left}
-    .search-box{display:flex;align-items:center;gap:14px;background:#faf6ecf2;border:1px solid #faf6ec;border-radius:4px;padding:0 18px;height:66px;box-shadow:0 24px 60px -28px rgba(4,18,28,.7);transition:box-shadow .25s, transform .25s}
-    .search-box:focus-within{box-shadow:0 30px 70px -26px rgba(4,18,28,.78);transform:translateY(-1px)}
-    .search-ico{width:22px;height:22px;flex:none;color:var(--accent-decor)}
-    .search input{flex:1;border:0;background:transparent;outline:0;font-family:var(--font-body);font-size:19px;color:var(--ink)}
-    .search input::placeholder{color:#647072;font-style:italic;opacity:.9}
-    .search-kbd{font-size:11px;letter-spacing:.12em;color:#647072;border:1px solid var(--rule-strong);border-radius:4px;padding:4px 8px;white-space:nowrap}
-    .search-sub{margin-top:12px;display:flex;gap:18px;flex-wrap:wrap;color:#eaf6f9cc;font-size:13.5px;letter-spacing:.02em}
-    .search-sub span{display:inline-flex;align-items:center;gap:8px}
-    .search-sub .pip{width:5px;height:5px;border-radius:50%;background:#eaf6f9aa}
-    .suggest{position:absolute;left:0;right:0;top:74px;z-index:30;background:var(--paper-card);border:1px solid var(--rule);border-radius:4px;box-shadow:0 30px 70px -30px rgba(4,18,28,.6);overflow:hidden;max-height:340px;overflow-y:auto;display:none}
+    /* ══ 1 · la carta ══ */
+    .chart{position:relative;display:flex;align-items:stretch;min-height:calc(100svh - var(--nav-h));border-bottom:1px solid var(--ink)}
+    .cartela{width:428px;flex:none;position:relative;background:var(--paper);border-right:1px solid var(--ink);z-index:3}
+    .cartela .box{position:absolute;inset:20px;border:1px solid var(--ink);pointer-events:none}
+    .cartela .box2{position:absolute;inset:26px;border:.5px solid var(--ink);pointer-events:none}
+    .cartela .inner{position:relative;height:100%;padding:48px 46px 44px;display:flex;flex-direction:column;gap:22px}
+    .cartela h1{margin:0;line-height:0}
+    .cartela h1 img{width:220px;height:auto;filter:brightness(0)}
+    .cartela .sub{color:var(--ink-2);margin-top:12px}
+    .thesis{font-family:var(--rot);font-style:italic;font-size:clamp(19px,1.5vw,23px);line-height:1.38;
+      border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:16px 0;margin:0;text-wrap:balance}
+    .busca{position:relative;z-index:20}
+    .busca label.lab{display:block;color:var(--ink-2);margin-bottom:9px}
+    .busca form{display:flex;align-items:center;gap:12px;border:1px solid var(--ink);background:var(--white);padding:0 15px;height:48px}
+    .busca form:focus-within{outline:2px solid var(--mag);outline-offset:2px}
+    .busca input{flex:1 1 auto;min-width:0;border:0;background:transparent;font-family:var(--rot);font-style:italic;font-size:16px;color:var(--ink);padding:0;height:100%}
+    .busca input:focus{outline:none}
+    .busca input::-webkit-search-cancel-button{display:none}
+    .suggest{position:absolute;left:0;right:0;top:calc(100% + 4px);z-index:30;background:var(--white);border:1px solid var(--ink);
+      box-shadow:5px 6px 0 rgba(18,36,43,.10);max-height:330px;overflow-y:auto;display:none}
     .suggest.open{display:block}
-    .suggest .sg-head{padding:11px 18px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-muted);border-bottom:1px solid var(--rule)}
-    .sg-item{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:12px 18px;cursor:pointer;border-bottom:1px solid var(--rule);color:var(--ink)}
+    .sg-head{padding:10px 14px;color:var(--ink-2);border-bottom:1px solid var(--ink)}
+    .sg-item{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:11px 14px;border-bottom:1px dotted var(--dots);color:var(--ink)}
     .sg-item:last-child{border-bottom:0}
-    .sg-item:hover,.sg-item.active{background:#efe6d2}
-    .sg-name{font-family:var(--font-display);font-size:18px;color:var(--ink)}
-    .sg-name b{color:var(--accent);font-style:normal}
-    .sg-meta{font-size:13px;color:var(--ink-muted);white-space:nowrap}
-    .sg-empty{padding:18px;color:var(--ink-muted);font-style:italic}
+    .sg-item:hover,.sg-item.active{background:var(--paper-2);color:var(--ink)}
+    .sg-item.active{outline:1px solid var(--mag);outline-offset:-1px}
+    .sg-name{font-family:var(--rot);font-style:italic;font-size:17px;line-height:1.25}
+    .sg-meta{font-size:13px;color:var(--ink-2);white-space:nowrap}
+    .sg-empty{padding:14px;color:var(--ink-2)}
+    .leyenda .lab{color:var(--ink-2);margin-bottom:11px}
+    .leyenda ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;font-size:14px;color:var(--ink-2);line-height:1.35}
+    .leyenda li{display:flex;align-items:center;gap:13px}
+    .leyenda .sim{width:26px;flex:none;display:flex;justify-content:center;font-size:11px;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+    .leyenda .sim-ovp{width:22px;height:14px;border:1px dashed var(--mag)}
+    .counts{margin-top:auto;border-top:1px solid var(--ink);padding-top:14px;display:flex;flex-wrap:wrap;row-gap:12px}
+    .counts div{flex:1 1 0;min-width:84px;border-left:1px solid var(--ink);padding-left:14px}
+    .counts div:first-child{border-left:0;padding-left:0}
+    .counts b{display:block;font-family:var(--rot);font-weight:400;font-size:32px;line-height:1;font-variant-numeric:tabular-nums}
+    .counts span{display:block;color:var(--ink-2);font-size:10.5px;margin-top:6px}
+    .cartela .pedir{align-self:flex-start;padding:12px 18px}
 
-    .hero-foot{position:relative;z-index:2;max-width:var(--maxw);width:100%;margin:0 auto;padding:0 36px 26px;display:flex;justify-content:space-between;align-items:flex-end;gap:20px;color:#eaf6f9cc;font-size:12.5px;letter-spacing:.04em}
-    .hero-foot .scrollhint{display:inline-flex;align-items:center;gap:10px}
-    .hero-foot .scrollhint .v{display:inline-block;animation:bob 2s ease-in-out infinite}
-    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+    .field{position:relative;flex:1 1 auto;min-width:0;min-height:560px;overflow:hidden;background:var(--paper)}
+    svg.water{position:absolute;inset:0;width:100%;height:100%;display:block}
+    .contour{stroke-dasharray:1;stroke-dashoffset:1;animation:entinta 1.5s var(--ease) forwards}
+    .contour:nth-child(2){animation-delay:.12s}.contour:nth-child(3){animation-delay:.24s}
+    .contour:nth-child(4){animation-delay:.36s}.contour:nth-child(5){animation-delay:.48s}.contour:nth-child(6){animation-delay:.6s}
+    @keyframes entinta{to{stroke-dashoffset:0}}
+    .reef{position:absolute;z-index:1;border-radius:48%;opacity:.85;pointer-events:none;border:1px dotted rgba(90,124,134,.5);
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cg stroke='%235f818b' stroke-width='0.85' stroke-linecap='round'%3E%3Cpath d='M4 7h4.4M6.2 4.8v4.4M20 17h4.4M22.2 14.8v4.4M12.5 23h3.6M14.3 21.2v3.6'/%3E%3C/g%3E%3Ccircle cx='23' cy='6' r='.85' fill='%235f818b'/%3E%3Ccircle cx='8' cy='19' r='.85' fill='%235f818b'/%3E%3Ccircle cx='27' cy='26' r='.7' fill='%235f818b'/%3E%3C/svg%3E")}
+    .sonda{position:absolute;z-index:2;transform:translate(-50%,-50%);font-family:var(--lab);font-size:10px;line-height:1;
+      font-variant-numeric:tabular-nums;color:var(--ink-2);white-space:nowrap;padding:2px 1px}
+    .sonda:hover,.sonda:focus-visible{color:var(--mag-ink);z-index:6}
+    .place{position:absolute;z-index:4;display:block;color:var(--ink)}
+    .place b{display:block;font-family:var(--rot);font-style:italic;font-weight:400;font-size:25px;line-height:1.08;letter-spacing:.04em;
+      white-space:nowrap;text-shadow:0 0 6px var(--paper),0 0 12px var(--paper)}
+    .place small{display:block;font-family:var(--lab);text-transform:uppercase;letter-spacing:.18em;font-size:10px;line-height:1.2;
+      color:var(--ink-2);margin-top:3px;white-space:nowrap;text-shadow:0 0 6px var(--paper)}
+    .place:hover b{color:var(--mag-ink)}
+    .ovp{position:absolute;z-index:3;border:1px dashed var(--mag);pointer-events:none}
+    .aviso{position:absolute;z-index:4;font-family:var(--lab);text-transform:uppercase;letter-spacing:.15em;font-size:10px;line-height:1.2;
+      color:var(--ink);background:var(--paper);border:1px solid var(--mag);padding:4px 7px;white-space:nowrap}
+    svg.rose{position:absolute;z-index:4;right:3%;bottom:4.5%;height:11%;min-height:48px;width:auto;aspect-ratio:1/1;display:block}
+    .inset{position:absolute;z-index:4;display:flex;flex-direction:column;border:1px solid var(--ink);background:var(--paper);
+      box-shadow:5px 6px 0 rgba(18,36,43,.10);color:var(--ink)}
+    .inset img{flex:1 1 auto;min-height:0;width:100%;object-fit:cover;filter:saturate(.84) contrast(1.05)}
+    .inset .cap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:2px 8px;padding:6px 9px;border-top:1px solid var(--ink);background:var(--paper);color:var(--ink-2);font-size:10.5px}
+    .inset .cap span{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+    .inset:hover .cap{color:var(--ink)}
+    .inset-a{transform:rotate(-.6deg)}
+    .inset-b{transform:rotate(.7deg)}
 
-    /* section scaffolding */
-    section{position:relative}
-    .band{padding:104px 0}
-    .band.alt{background:var(--paper-2)}
-    .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:46px}
-    .sec-head .h-l{max-width:680px}
-    .sec-title{font-family:var(--font-display);font-weight:600;font-size:clamp(34px,4.6vw,56px);line-height:1.02;letter-spacing:-.01em;margin-top:14px;color:var(--ink)}
-    .standfirst{margin-top:16px;font-size:19px;color:var(--ink-2);max-width:560px;text-wrap:pretty}
-    .more-link{font-size:15px;letter-spacing:.02em;white-space:nowrap;border-bottom:1px solid var(--rule-strong);padding-bottom:3px;transition:border-color .2s,color .2s;color:var(--ink)}
-    .more-link:hover{color:var(--accent);border-color:var(--accent)}
-    .topline{height:1px;background:var(--rule-strong);margin-bottom:0}
+    /* ══ 2 · aviso a los navegantes ══ */
+    .notices{border-bottom:1px solid var(--ink);background:var(--paper-2);overflow:hidden;padding:13px 0}
+    .ticker{display:flex;width:max-content;animation:deriva 90s linear infinite}
+    .notices:hover .ticker,.notices:focus-within .ticker{animation-play-state:paused}
+    .ticker ul{display:flex;list-style:none;margin:0;padding:0;white-space:nowrap}
+    .ticker li{display:flex;align-items:center}
+    .ticker a{font-family:var(--rot);font-style:italic;font-size:20px;color:var(--ink-2);padding:6px 4px}
+    .ticker a:hover,.ticker a:focus-visible{color:var(--mag-ink)}
+    .ticker li::after{content:'·';color:var(--ink-3);padding:0 18px;font-family:var(--lab)}
+    @keyframes deriva{to{transform:translateX(-50%)}}
+    @media (prefers-reduced-motion:reduce){.ticker{animation:none!important;width:auto;flex-wrap:wrap}.ticker ul{flex-wrap:wrap;white-space:normal}.ticker ul[aria-hidden]{display:none}}
 
-    /* destacadas */
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--rule);border:1px solid var(--rule)}
-    .card{background:var(--paper);padding:26px 26px 30px;display:flex;flex-direction:column;transition:background .3s}
-    .card:hover{background:var(--paper-card)}
-    .card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
-    .card-idx{font-family:var(--font-body);font-size:13px;letter-spacing:.18em;color:var(--ink-muted)}
-    .card-region{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
-    .card-figure{position:relative;aspect-ratio:4/3;overflow:hidden;border:1px solid var(--rule);margin-bottom:20px;display:flex;align-items:flex-end;justify-content:flex-start}
-    .card-figure .fg-grad{position:absolute;inset:0;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
-    .card:hover .card-figure .fg-grad{transform:scale(1.05)}
-    .card-figure .fg-wave{position:absolute;left:0;right:0;bottom:-1px;opacity:.5}
-    .card-figure .fg-wave svg{width:130%;margin-left:-15%;height:auto;display:block}
-    .card-figure .fg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
-    .card:hover .card-figure .fg-img{transform:scale(1.05)}
-    .card-figure::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(4,18,28,.55),transparent 52%);z-index:1}
-    .card-figure .fg-z{position:relative;z-index:2;margin:12px 14px;font-family:var(--font-display);font-style:italic;font-size:16px;color:#eaf6f9;letter-spacing:.02em;text-shadow:0 2px 14px rgba(0,0,0,.4)}
-    .card-figure .fg-giora{position:absolute;z-index:2;top:12px;right:12px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.9);color:var(--accent-ink);padding:5px 9px;border-radius:999px;font-weight:600}
-    .card-name{font-family:var(--font-display);font-weight:600;font-size:26px;line-height:1.08;letter-spacing:-.01em}
-    .card-name a{color:var(--ink);background-image:linear-gradient(var(--accent),var(--accent));background-size:0% 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .3s;padding-bottom:2px}
-    .card:hover .card-name a{background-size:100% 1px}
-    .card-note{margin-top:9px;color:var(--ink-muted);font-size:15.5px;font-style:italic;line-height:1.45;flex:1}
-    .card-meta{margin-top:18px;padding-top:14px;border-top:1px solid var(--rule);display:flex;align-items:baseline;justify-content:space-between}
-    .card-country{font-size:14px;letter-spacing:.04em;color:var(--ink-2)}
-    .card-cert{font-family:var(--font-display);font-size:16px;color:var(--accent)}
+    /* ══ 3 · la sobreimpresión ══ */
+    .over{padding:120px 0 104px;text-align:center}
+    .over p{font-family:var(--rot);font-size:clamp(23px,2.7vw,40px);line-height:1.32;max-width:19em;margin:0 auto;text-wrap:balance}
+    .over .m{color:var(--mag)}
+    .over .rule{width:1px;height:64px;background:var(--ink);margin:38px auto 0}
 
-    /* directorio por zonas */
-    .regions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 64px;border-top:1px solid var(--rule-strong)}
-    .region-col{padding:34px 0}
-    .region-col:first-child{border-right:1px solid var(--rule);padding-right:48px}
-    .region-col:last-child{padding-left:48px}
-    .zona-blk{margin-bottom:30px}
-    .zona-h{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:4px}
-    .zona-h h3{font-family:var(--font-display);font-weight:600;font-size:26px;color:var(--ink)}
-    .zona-h .tot{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-muted)}
-    .zona-h .tot b{font-family:var(--font-display);font-size:16px;color:var(--accent);font-style:italic}
-    .zona-sub{font-size:14.5px;color:var(--ink-muted);font-style:italic;margin-bottom:10px;text-wrap:pretty}
-    .idx-row{display:flex;align-items:baseline;gap:10px;padding:11px 6px;cursor:pointer;transition:background .2s,padding-left .25s;border-bottom:1px solid var(--rule);color:var(--ink)}
-    .idx-row:hover{background:#00000008;padding-left:13px}
-    .idx-name{font-family:var(--font-display);font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
-    .idx-giora{color:#0e6b82;font-style:normal;margin-left:6px;font-size:13px}
-    .idx-lead{flex:1;border-bottom:1px dotted var(--rule-strong);transform:translateY(-4px)}
+    /* cabeceras de sección */
+    .sec-h{display:flex;justify-content:space-between;align-items:flex-end;gap:24px 40px;flex-wrap:wrap;border-bottom:1px solid var(--ink);padding-bottom:18px}
+    .sec-h h2{font-family:var(--rot);font-style:normal;font-weight:400;font-size:clamp(30px,3.4vw,48px);line-height:1.05}
+    .sec-h p{margin:10px 0 0;color:var(--ink-2);max-width:46em}
+    .sec-h .lab{color:var(--ink-2)}
+
+    /* ══ 4 · tabla de sondas ══ */
+    .sound{padding:0 0 112px;scroll-margin-top:calc(var(--nav-h) + 16px)}
+    .panels{display:flex;flex-wrap:wrap;border-bottom:1px solid var(--ink);position:relative}
+    .panel{position:relative;z-index:1;border:0;border-right:1px solid var(--rule-strong);background:transparent;cursor:pointer;padding:13px 16px;min-height:44px;
+      font-family:var(--lab);text-transform:uppercase;letter-spacing:.15em;font-size:10.5px;color:var(--ink-2);flex:1 1 auto;text-align:left;border-radius:0}
+    .panel:last-of-type{border-right:0}
+    .panel[aria-selected="true"]{color:var(--ink)}
+    .panel:hover{color:var(--mag-ink);background:transparent}
+    .panel .n{font-variant-numeric:tabular-nums;margin-left:8px}
+    .mark-box{position:absolute;top:0;left:0;width:0;height:0;border:1.4px solid var(--mag);z-index:2;pointer-events:none;
+      transition:transform var(--t-med) var(--ease),width var(--t-med) var(--ease),height var(--t-med) var(--ease)}
+    .cuenta{margin:14px 0 0;color:var(--ink-2);font-size:14px}
+    .cuenta b{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums}
+    .sondas-t{margin-top:4px}
+    .sondas-t th{white-space:nowrap}
+    .sondas-t th:first-child{width:30%}
+    .sondas-t tbody tr{transition:background var(--t-fast)}
+    .sondas-t tbody tr:hover{background:var(--white)}
+    .sondas-t tr[hidden]{display:none}
+    .sondas-t td{font-size:15px}
+    .dest{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+    .dest a{font-family:var(--rot);font-style:italic;font-size:22px;line-height:1.2;color:var(--ink)}
+    .dest a:hover{color:var(--mag-ink)}
+    .dest .pais{font-size:10.5px;color:var(--ink-3);letter-spacing:.15em}
+    .deep .scale{display:block;position:relative;height:6px;margin-top:7px;background:var(--paper-2);border:1px solid var(--ink-3);overflow:hidden;max-width:160px}
+    .deep .seg{position:absolute;top:0;bottom:0;background:var(--ink-2)}
+    .nodata{color:var(--ink-3);font-size:13px}
+    .sin-fila{padding:24px 0;color:var(--ink-2)}
+
+    /* ══ 5 · índice por zonas ══ */
+    .index{padding:0 0 112px;scroll-margin-top:calc(var(--nav-h) + 16px)}
+    .regions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 64px}
+    .region-col{padding:30px 0 0}
+    .zona-blk{margin-bottom:34px;scroll-margin-top:calc(var(--nav-h) + 16px)}
+    .zona-h{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:4px}
+    .zona-h h3{font-family:var(--rot);font-style:normal;font-weight:400;font-size:26px;line-height:1.15}
+    .zona-h .tot{color:var(--ink-2);white-space:nowrap}
+    .zona-sub{font-size:15px;color:var(--ink-2);margin:0 0 8px;text-wrap:pretty}
+    .idx-row{display:flex;align-items:baseline;gap:10px;padding:10px 2px;border-bottom:1px dotted var(--dots);color:var(--ink)}
+    .idx-row:hover{background:var(--white);color:var(--ink)}
+    .idx-name{font-family:var(--rot);font-style:italic;font-size:18px;line-height:1.3;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .idx-row:hover .idx-name{color:var(--mag-ink)}
+    .idx-row .tri-giora{margin-left:2px;transform:translateY(1px)}
+    .idx-lead{flex:1;min-width:16px;border-bottom:1px dotted var(--dots);transform:translateY(-4px)}
     .idx-cert{font-size:13px;color:var(--ink-2);white-space:nowrap}
-    .idx-arrow{color:var(--accent);opacity:0;transform:translateX(-6px);transition:.25s;font-size:14px}
-    .idx-row:hover .idx-arrow{opacity:1;transform:translateX(0)}
 
-    /* glosario */
-    .glossary{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 64px;border-top:1px solid var(--rule-strong)}
-    .entry{padding:26px 0;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:auto 1fr;gap:20px}
-    .entry .term{font-family:var(--font-display);font-size:24px;line-height:1.1;color:var(--ink)}
-    .entry .term .pos{display:block;font-family:var(--font-body);font-style:italic;font-size:14px;color:var(--ink-muted);font-weight:400;margin-top:3px}
-    .entry .term .en{font-size:14px;color:var(--accent);font-style:italic;font-family:var(--font-body);font-weight:400;margin-left:.5em}
-    .entry .def{font-size:16.5px;color:var(--ink-2);line-height:1.55;text-wrap:pretty}
+    /* ══ 6 · recuadros de la redacción ══ */
+    .feat{padding:0 0 112px;scroll-margin-top:calc(var(--nav-h) + 16px)}
+    .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 32px;margin-top:36px}
+    .card{display:flex;flex-direction:column;color:var(--ink)}
+    .card-fig{display:block;border:1px solid var(--ink);background:var(--paper);box-shadow:5px 6px 0 rgba(18,36,43,.10)}
+    .card-fig img{width:100%;aspect-ratio:4/3;object-fit:cover;filter:saturate(.84) contrast(1.05)}
+    .card-fig .cap{display:flex;justify-content:space-between;gap:10px;padding:7px 10px;border-top:1px solid var(--ink);color:var(--ink-2)}
+    .card-fig .cap span{display:inline-flex;align-items:center;gap:6px}
+    .card h3{margin:18px 0 0;font-family:var(--rot);font-style:italic;font-weight:400;font-size:27px;line-height:1.12}
+    .card h3 a:hover{color:var(--mag-ink)}
+    .card-note{margin:8px 0 0;color:var(--ink-2);font-size:16px;line-height:1.5;flex:1}
+    .card-meta{margin-top:14px;padding-top:10px;border-top:1px dotted var(--dots);display:flex;justify-content:space-between;gap:12px;color:var(--ink-2);font-size:14px}
 
-    /* asistente */
-    .giora-band{background:var(--accent);color:#eef6f9}
-    .giora-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-    .giora-eyebrow{color:#b6d6e2;letter-spacing:.26em}
-    .giora-title{font-family:var(--font-display);font-weight:600;font-size:clamp(34px,4.4vw,52px);line-height:1.04;margin-top:14px;color:#eef6f9}
-    .giora-title i{color:#fff}
-    .giora-copy{margin-top:20px;font-size:18.5px;color:#d4e6ee;line-height:1.6;max-width:480px;text-wrap:pretty}
-    .giora-feat{margin-top:26px;display:flex;flex-direction:column;gap:2px;border-top:1px solid #ffffff2e}
-    .giora-feat .gf{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid #ffffff2e;font-size:15.5px;color:#c7dde6}
-    .giora-feat .gf b{font-family:var(--font-display);font-weight:500;color:#fff;font-size:16px;min-width:120px}
-    .giora-cta{margin-top:30px;display:inline-flex;align-items:center;gap:12px;background:#faf6ec;color:var(--accent-ink);font-family:var(--font-body);font-size:16px;padding:14px 26px;border-radius:3px;cursor:pointer;border:1px solid #faf6ec;transition:transform .2s,background .2s}
-    .giora-cta:hover{transform:translateY(-2px);background:#fff}
-    .giora-cta .star{font-size:14px}
-    .chat-card{background:#faf6ec;color:var(--ink);border-radius:6px;overflow:hidden;box-shadow:0 40px 90px -40px rgba(0,0,0,.6);border:1px solid #00000022}
-    .chat-head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--rule);background:var(--paper-card)}
-    .chat-ava{width:38px;height:38px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-style:italic;font-size:19px;flex:none}
-    .chat-id{display:flex;flex-direction:column}
-    .chat-id b{font-family:var(--font-display);font-weight:600;font-size:17px}
-    .chat-id span{font-size:12px;color:var(--ink-muted);letter-spacing:.04em}
-    .chat-status{margin-left:auto;display:inline-flex;align-items:center;gap:7px;font-size:12px;color:var(--ink-muted)}
-    .chat-status .d{width:7px;height:7px;border-radius:50%;background:#3f8a52}
-    .chat-body{padding:20px;display:flex;flex-direction:column;gap:14px;max-height:330px;overflow-y:auto}
-    .msg{max-width:84%;font-size:15.5px;line-height:1.5}
-    .msg.u{align-self:flex-end;background:var(--accent);color:#f1f4f8;padding:11px 15px;border-radius:14px 14px 4px 14px}
-    .msg.g{align-self:flex-start;color:var(--ink-2)}
-    .msg.g .gtag{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
-    .msg.g .gbody{background:#fff;border:1px solid var(--rule);padding:13px 16px;border-radius:4px 14px 14px 14px}
-    .msg.g .cite{margin-top:9px;font-size:12.5px;color:var(--ink-muted);font-style:italic;display:flex;gap:8px;align-items:center}
-    .msg.g .cite::before{content:"";width:14px;height:1px;background:var(--rule-strong)}
-    .chat-sample{padding:16px 20px;display:flex;gap:8px;flex-wrap:wrap;background:var(--paper-card);border-top:1px solid var(--rule)}
-    .chip{font-size:12.5px;color:var(--accent);border:1px solid var(--rule-strong);border-radius:999px;padding:6px 12px;cursor:pointer;transition:.2s;background:transparent;font-family:var(--font-body);text-decoration:none}
-    .chip:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
-    .chat-ask{display:flex;gap:8px;padding:14px 20px;background:var(--paper-card);border-top:1px solid var(--rule)}
-    .chat-ask input{flex:1;border:1px solid var(--rule-strong);border-radius:999px;padding:11px 16px;font-size:14.5px;font-family:var(--font-body);background:#fff;color:var(--ink);outline:none}
-    .chat-ask input:focus{border-color:var(--accent)}
-    .chat-ask-send{flex:none;width:42px;border:0;border-radius:999px;background:var(--accent);color:#fff;font-size:15px;cursor:pointer;transition:opacity .2s}
+    /* ══ 7 · conceptos ══ */
+    .conceptos{padding:0 0 112px}
+    .glossary{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 64px}
+    .entry{padding:22px 0;border-bottom:1px dotted var(--dots);display:grid;grid-template-columns:200px 1fr;gap:20px}
+    .entry .term{font-family:var(--rot);font-style:normal;font-size:23px;line-height:1.15}
+    .entry .term .pos{display:block;margin-top:6px;color:var(--ink-3)}
+    .entry .term .en{display:block;margin-top:4px;font-family:var(--lab);font-size:14px;color:var(--ink-2)}
+    .entry .def{margin:0;font-size:16px;color:var(--ink-2);line-height:1.55;text-wrap:pretty}
+
+    /* ══ 8 · pregúntale a Giora ══ */
+    .giora-band{background:var(--ink);color:var(--paper);padding:104px 0;scroll-margin-top:var(--nav-h)}
+    .giora-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center}
+    .giora-band h2{font-family:var(--rot);font-weight:400;font-size:clamp(32px,4vw,50px);line-height:1.05;color:var(--paper)}
+    .giora-copy{margin-top:20px;font-size:18px;color:#d5dcd8;line-height:1.6;max-width:480px;text-wrap:pretty}
+    .giora-feat{margin-top:26px;border-top:1px solid #e9ece433}
+    .giora-feat .gf{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid #e9ece433;font-size:15.5px;color:#d5dcd8}
+    .giora-feat .gf b{font-family:var(--rot);font-weight:400;color:var(--paper);font-size:17px;min-width:110px}
+    .giora-cta{margin-top:30px;background:var(--paper);color:var(--ink);border-color:var(--paper)}
+    .giora-cta:hover{background:var(--mag);border-color:var(--mag);color:#fff}
+    .chat-card{background:var(--white);color:var(--ink);border:1px solid var(--paper)}
+    .chat-head{display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid var(--ink)}
+    .chat-ava{width:36px;height:36px;border:1px solid var(--ink);display:flex;align-items:center;justify-content:center;font-family:var(--rot);font-size:19px;flex:none}
+    .chat-id{display:flex;flex-direction:column;line-height:1.3}
+    .chat-id b{font-family:var(--rot);font-weight:400;font-size:18px}
+    .chat-id span{font-size:12px;color:var(--ink-2)}
+    .chat-status{margin-left:auto;display:inline-flex;align-items:center;gap:7px;font-size:12px;color:var(--ink-2)}
+    .chat-status .d{width:7px;height:7px;background:#3f8a52}
+    .chat-body{padding:18px;display:flex;flex-direction:column;gap:14px;max-height:330px;overflow-y:auto;background:var(--paper)}
+    .msg{max-width:86%;font-size:15.5px;line-height:1.5}
+    .msg.u{align-self:flex-end;background:var(--ink);color:var(--paper);padding:10px 14px;border:1px solid var(--ink)}
+    .msg.g{align-self:flex-start;color:var(--ink)}
+    .msg.g .gtag{font-family:var(--lab);text-transform:uppercase;letter-spacing:.17em;font-size:10.5px;color:var(--ink-2);margin-bottom:6px}
+    .msg.g .gbody{background:var(--white);border:1px solid var(--ink);padding:12px 15px}
+    .msg.g .cite{margin-top:8px;font-size:12.5px;color:var(--ink-2);display:flex;gap:8px;align-items:center}
+    .msg.g .cite::before{content:"";width:14px;height:1px;background:var(--ink-2)}
+    .msg.g.thinking .gbody{color:var(--ink-2)}
+    .chat-sample{padding:14px 18px;display:flex;gap:8px;flex-wrap:wrap;border-top:1px solid var(--ink)}
+    .chip{font-family:var(--lab);font-size:13px;color:var(--ink);background:var(--white);border:1px solid var(--ink);border-radius:0;padding:8px 12px;min-height:36px;cursor:pointer}
+    .chip:hover{background:var(--ink);color:var(--paper)}
+    .chat-ask{display:flex;gap:0;padding:14px 18px;border-top:1px solid var(--ink)}
+    .chat-ask input{flex:1;min-width:0;border:1px solid var(--ink);border-right:0;padding:0 14px;height:46px;font-size:15px;background:var(--white);color:var(--ink)}
+    .chat-ask input:focus{outline:2px solid var(--mag);outline-offset:-2px}
+    .chat-ask-send{flex:none;width:52px;height:46px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer;display:flex;align-items:center;justify-content:center}
+    .chat-ask-send:hover{background:var(--mag);border-color:var(--mag)}
     .chat-ask-send:disabled{opacity:.45;cursor:default}
-    .msg.g.thinking .gbody{color:var(--ink-muted)}
 
-    /* footer */
-    .foot{background:var(--ink);color:#c5d2d4;padding:74px 0 40px}
-    .foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:48px;border-bottom:1px solid #ffffff1f}
-    .foot-mark{line-height:0}
-    .foot-mark img{height:54px;width:auto;display:block}
-    .foot-blurb{margin-top:16px;font-size:15px;color:#94a3a5;max-width:300px;line-height:1.6}
-    .foot-col h4{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#86989a;margin-bottom:16px}
-    .foot-col a,.foot-col button{display:block;padding:6px 0;font-size:15.5px;color:#c5d2d4;transition:color .2s;background:none;border:0;font-family:var(--font-body);cursor:pointer;text-align:left}
-    .foot-col a:hover,.foot-col button:hover{color:#eaf6f9}
-    .foot-bottom{padding-top:26px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:#86989a}
-    .foot-bottom .method{font-style:italic}
-    .foot-bottom a{color:#c5d2d4;text-decoration:underline;text-underline-offset:2px}
-
-    /* chat flotante (WhatsApp de Giora) */
-    .fab{position:fixed;right:22px;bottom:22px;z-index:80;display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#fff;border:0;border-radius:999px;padding:13px 20px 13px 16px;font-family:var(--font-body);font-size:15px;font-weight:600;cursor:pointer;box-shadow:0 16px 40px -14px rgba(4,18,28,.6);text-decoration:none;transition:transform .2s,background .2s}
-    .fab:hover{transform:translateY(-2px);background:var(--accent-ink)}
-    .fab svg{width:20px;height:20px}
-
-    /* reveal */
-    .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
-    .reveal.in{opacity:1;transform:none}
-    @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
-
-    /* responsive */
-    @media(max-width:900px){
-      .cards{grid-template-columns:repeat(2,1fr)}
-      .giora-grid{grid-template-columns:1fr;gap:40px}
-      .foot-top{grid-template-columns:1fr 1fr}
-      .nav-links{display:none}
-      .nav-toggle{display:inline-flex}
+    /* ══ responsive ══ */
+    @media (max-height:820px) and (min-width:1001px){
+      .cartela .inner{padding:38px 42px 34px;gap:16px}
+      .cartela h1 img{width:190px}
+      .thesis{padding:12px 0}
+      .counts b{font-size:27px}
+      .leyenda ul{gap:6px}
     }
-    @media(max-width:680px){
-      .wrap{padding:0 22px}
-      .hero-inner,.hero-foot{padding-left:22px;padding-right:22px}
-      body{font-size:17px}
-      .band{padding:72px 0}
-      .sec-head{flex-direction:column;align-items:flex-start;gap:14px}
-      .cards{grid-template-columns:1fr}
-      .regions,.glossary{grid-template-columns:minmax(0,1fr);gap:0}
-      .region-col:first-child{border-right:0;border-bottom:1px solid var(--rule);padding-right:0}
-      .region-col:last-child{padding-left:0}
+    @media (max-width:1240px){
+      .cartela{width:35%}
+      .cartela .inner{padding:44px 36px 40px}
+      .place.menor{display:none}
+      .place b{font-size:19px}
+    }
+    @media (max-width:1000px){
+      .chart{flex-direction:column;min-height:0}
+      .cartela{width:100%;border-right:0;border-bottom:1px solid var(--ink)}
+      .cartela .inner{padding:44px 40px 40px}
+      .field{height:56vh;min-height:360px;flex:none}
+      .sonda{font-size:11px}
+      .sonda.menor{display:none}
+      .place small{display:none}
+      .inset .cap{font-size:10px;padding:4px 7px}
+      .sondas-t thead{display:none}
+      .sondas-t,.sondas-t tbody{display:block}
+      .sondas-t tbody tr{display:grid;grid-template-columns:1fr 1fr;gap:0 14px;padding:12px 0;border-bottom:1px dotted var(--dots)}
+      .sondas-t td{display:block;border:0;padding:6px 0}
+      .sondas-t td.dest{grid-column:1 / -1}
+      .sondas-t td[data-h]::before{content:attr(data-h);display:block;font-family:var(--lab);text-transform:uppercase;letter-spacing:.15em;font-size:11px;color:var(--ink-2);margin-bottom:3px}
+      .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .giora-grid{grid-template-columns:minmax(0,1fr);gap:40px}
       .entry{grid-template-columns:1fr;gap:8px}
-      .foot-top{grid-template-columns:1fr 1fr;gap:30px}
-      .search-box{height:60px}
-      .search input{font-size:17px}
-      .search-kbd{display:none}
-      .fab span{display:none}
     }
-    @media(max-width:460px){.foot-top{grid-template-columns:1fr}}
+    @media (max-width:760px){
+      .cartela .box{inset:10px}
+      .cartela .box2{inset:14px}
+      .cartela .inner{padding:36px 30px 32px;gap:20px}
+      .thesis{font-size:23px}
+      .field{height:360px;min-height:0}
+      .sonda,.reef,.ovp,.aviso{display:none}
+      .place{display:none}
+      .place.m4{display:block;left:var(--mx)!important;top:var(--my)!important}
+      .inset{width:150px!important;height:124px!important}
+      .inset-a{left:auto!important;right:5%;top:6%!important}
+      .inset-b{left:auto!important;right:8%;top:auto!important;bottom:22%}
+      .inset .cap{font-size:10px}
+      .regions,.glossary{grid-template-columns:minmax(0,1fr);gap:0}
+      .cards{grid-template-columns:minmax(0,1fr)}
+      .dest a{font-size:20px}
+      .over{padding:84px 0 72px}
+      .giora-band{padding:72px 0}
+      .panel{flex:1 1 40%}
+    }
   </style>
 <!-- Umami (analitica propia, sin cookies ni datos personales) -->
 <script defer src="https://umami-scibasku.vercel.app/script.js" data-website-id="49faed99-e484-4618-8f78-e095cf9f421e"></script>
 </head>
 <body>
 
-<!-- ================= NAV ================= -->
-<nav class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="#top" class="nav-mark" aria-label="Scubapedia — inicio"><img src="/scubapedia-logo-nav.png" alt="Scubapedia" /></a>
-    <div class="nav-links">
-      <a class="nav-link" href="#destacadas">Destacadas</a>
-      <a class="nav-link" href="#zonas">Zonas</a>
-      <a class="nav-link" href="#conceptos">Conceptos</a>
-      <a class="nav-link" href="/mapa/">Mapa</a>
-      <a class="nav-link" href="/quiz/">Quiz</a>
-      <a class="nav-link" href={CRUCERO} target="_blank" rel="noopener">Reservar</a>
-      <a class="nav-cta" href={WA} data-open-chat target="_blank" rel="noopener">Pregúntale a Giora</a>
-    </div>
-    <a class="nav-toggle nav-cta" href={WA} target="_blank" rel="noopener">Giora</a>
-  </div>
-</nav>
+<Cabecera activa="" />
 
-<!-- ================= HERO ================= -->
-<header class="hero" id="top">
-  {heroPhoto
-    ? <><img class="hero-photo" src={heroPhoto} alt="" fetchpriority="high" /><div class="hero-scrim"></div></>
-    : <div class="hero-bg"></div>}
-  <div class="hero-rays"></div>
-  <div class="hero-grain"></div>
-  <div class="hero-wave">
-    <svg viewBox="0 0 224.8 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 37s21.3-24.7 28-25.9c6.8-1.2 18.5 16.7 21.8 15.7 3.3-1 22.5-25.6 26.3-26.8 3.8-1.2 28.2 24.8 31.1 29.2 2.9 4.4 3.8 7.7-.9 3.5-5.9-5.1-18.1-18.9-18.9-18.6-.8.3-4.5 11.5-6.4 10.9-2-.6-6.1-12-6.9-11.4-.8.5-4.9 7-6 6.9s-3.3-4.9-3.3-4.9-11.6 16.3-15.1 15C46.3 29.4 39 22.3 39 22.3s-.4 5.1-.9 5.3c-.5.2-.7 1.7-8.5-5.4 0 0-3.3 8-4.9 8s-4.9-8.9-4.9-8.9S1 43.6 0 37z" fill="#cdeef6"/></svg>
-  </div>
-
-  <div class="hero-inner">
-    <div class="masthead-rule">
-      <span class="line"></span>
-      <span class="label">Est. 2026 · Edición de profundidad</span>
-      <span class="line"></span>
-    </div>
-
-    <h1 class="wordmark"><img src="/scubapedia-logo.png" alt="Scubapedia — Enciclopedia de buceo" /></h1>
-
-    <p class="slogan">
-      Enciclopedia editorial de destinos de buceo en castellano.
-      <span class="dot">·</span><b>Datos verificables, sin marketing vacío.</b>
-    </p>
-
-    <p style="margin:0 0 1.4rem"><a class="scp-cap-cta" href="#pedir-presupuesto">Pedir presupuesto a medida</a></p>
-
-    <div class="search" id="search">
-      <div class="search-box">
-        <svg class="search-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"></circle><line x1="16.5" y1="16.5" x2="21" y2="21"></line></svg>
-        <input id="q" type="text" autocomplete="off" placeholder="Busca un destino, un mar o una especie…" aria-label="Buscar destino de buceo" />
-        <span class="search-kbd">{totalFichas} fichas</span>
+<main id="top">
+<!-- ══════════ 1 · LA CARTA ══════════ -->
+<header class="chart">
+  <div class="cartela">
+    <div class="box" aria-hidden="true"></div><div class="box2" aria-hidden="true"></div>
+    <div class="inner">
+      <div>
+        <h1><img src="/scubapedia-logo-white.png" alt="Scubapedia — Enciclopedia de buceo" width="220" height="70" /></h1>
+        <p class="lab sub">Carta de destinos de buceo</p>
       </div>
-      <div class="suggest" id="suggest"></div>
-      <div class="search-sub">
-        <span><i class="pip"></i> {totalFichas} destinos documentados</span>
-        <span><i class="pip"></i> {totalZonas} zonas, del Mar Rojo al Pacífico</span>
-        <span><i class="pip"></i> {gioraEstuvo} buceados por Giora</span>
+
+      <p class="thesis">{fraseTesis(totalFichas)}</p>
+
+      <div class="busca" id="search">
+        <label class="lab" for="q">Localizar destino</label>
+        <form role="search" action="#sondas" method="get" id="busca-form">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#12242b" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+          <input id="q" name="q" type="search" role="combobox" autocomplete="off" placeholder="Un mar, un país, una especie…" aria-controls="suggest" aria-autocomplete="list" aria-expanded="false" />
+        </form>
+        <div class="suggest" id="suggest" role="listbox" aria-label="Destinos que coinciden"></div>
       </div>
+
+      <div class="leyenda">
+        <p class="lab">Cómo se lee la carta</p>
+        <ul>
+          <li><span class="sim" aria-hidden="true">40</span>Sonda: profundidad máxima de una ficha, en metros. Cada una lleva a su ficha.</li>
+          <li><span class="sim" aria-hidden="true"><TrianguloGiora size={16} label="" /></span>Buceado por Giora</li>
+          <li><span class="sim" aria-hidden="true"><span class="sim-ovp"></span></span>Acceso solo con vida a bordo</li>
+        </ul>
+      </div>
+
+      <div class="counts">
+        <div><b>{totalFichas}</b><span class="lab">Fichas revisadas</span></div>
+        <div><b>{totalZonas}</b><span class="lab">Zonas</span></div>
+        <div><b>{gioraEstuvo}</b><span class="lab">Con Giora</span></div>
+      </div>
+      <a class="btn sec pedir" href="#pedir-presupuesto">Pedir presupuesto a medida</a>
     </div>
   </div>
 
-  <div class="hero-foot">
-    <span class="scrollhint"><span class="v">↓</span> La selección de la redacción</span>
-    <span>Portada · Edición 2026</span>
+  <div class="field" id="field">
+    <a class="salto" href="#sondas">Saltar las sondas e ir a la tabla</a>
+    <svg class="water" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M-10 -10 H1210 V196 C980 240, 640 152, 380 210 S60 268, -10 232 Z" fill="#d7e8e7"/>
+      <path d="M-10 -10 H1210 V104 C1010 148, 660 68, 400 124 S60 176, -10 142 Z" fill="#c9dfe1"/>
+      <path d="M-10 810 H1210 V600 C990 646, 650 566, 390 622 S60 678, -10 644 Z" fill="#e0eae6"/>
+      <path d="M-10 810 H1210 V704 C1000 748, 660 672, 400 726 S60 780, -10 748 Z" fill="#d7e8e7"/>
+      <g fill="none" stroke="#3c626e">
+        <path class="contour" pathLength="1" d="M-20 128 C180 96, 340 168, 520 138 S880 70, 1220 118" stroke-width=".9"/>
+        <path class="contour" pathLength="1" d="M-20 236 C200 202, 366 272, 540 238 S900 174, 1220 222" stroke-width=".55"/>
+        <path class="contour" pathLength="1" d="M-20 358 C220 326, 380 398, 560 358 S920 300, 1220 346" stroke-width=".9"/>
+        <path class="contour" pathLength="1" d="M-20 486 C206 452, 396 520, 578 482 S930 424, 1220 470" stroke-width=".55"/>
+        <path class="contour" pathLength="1" d="M-20 610 C232 578, 410 642, 592 604 S940 550, 1220 596" stroke-width=".9"/>
+        <path class="contour" pathLength="1" d="M-20 726 C216 696, 400 756, 584 720 S936 668, 1220 714" stroke-width=".55"/>
+      </g>
+    </svg>
+
+    {REEFS.map(([x, y, r]) => (
+      <div class="reef" aria-hidden="true" style={`left:${(x - r).toFixed(1)}%;top:${(y - r * 0.62).toFixed(1)}%;width:${(r * 2).toFixed(1)}%;height:${(r * 1.24).toFixed(1)}%`}></div>
+    ))}
+
+    {sondasCarta.map((s) => (
+      <a class:list={['sonda', { menor: !s.grande }]} href={`/destinos/${s.slug}`} style={`left:${s.x}%;top:${s.y}%`}
+        title={textoSonda(s.prof) === '·' ? s.title : `${s.title} · ${textoSonda(s.prof)} m`}>{textoSonda(s.prof)}<span class="visualmente-oculto"> {textoSonda(s.prof) === '·' ? '' : 'm, '}{s.title}</span></a>
+    ))}
+
+    {toponimos.map((t) => (
+      <a class:list={['place', { menor: t.menor, m4: t.m4 }]} href={`#zona-${t.slug}`}
+        style={`${t.style};${(t as any).movil ? (t as any).movil.replace('left:', '--mx:').replace('top:', '--my:') : ''}`}>
+        <b>{t.renglones.map((r, i) => <>{i > 0 && <br />}{r}</>)}</b><small>{t.n} fichas</small>
+      </a>
+    ))}
+
+    <div class="ovp" style={estiloCaja(PIEZAS.ovp)} aria-hidden="true"></div>
+    <p class="aviso" style={`left:${PIEZAS.aviso.x}%;top:${PIEZAS.aviso.y}%;margin:0`}>Acceso solo con vida a bordo</p>
+
+    {insetMarRojo && (
+      <a class="inset inset-a" href="#zona-mar-rojo" style={estiloCaja(PIEZAS.insetMarRojo)}>
+        <img src={insetMarRojo} alt="Buceo en el Mar Rojo" fetchpriority="high" decoding="async" />
+        <span class="cap lab"><span>Mar Rojo</span><span>{nZona('Mar Rojo')} fichas</span></span>
+      </a>
+    )}
+    {insetBrother && (
+      <a class="inset inset-b" href="/destinos/brother-islands" style={estiloCaja(PIEZAS.insetBrother)}>
+        <img src={insetBrother} alt="Buceo en Brother Islands, Mar Rojo" loading="lazy" decoding="async" />
+        <span class="cap lab"><span>Brother Islands{brother?.data.giora_estuvo && <TrianguloGiora size={12} />}</span><span>Solo vida a bordo</span></span>
+      </a>
+    )}
+
+    <svg class="rose" viewBox="0 0 92 92" aria-hidden="true">
+      <circle cx="46" cy="46" r="43" fill="rgba(233,236,228,.76)" stroke="#12242b" stroke-width=".7"/>
+      <circle cx="46" cy="46" r="32" fill="none" stroke="#12242b" stroke-width=".35"/>
+      <g>
+        <path d="M46 6 L51 46 L46 86 L41 46 Z" fill="#12242b"/>
+        <path d="M46 6 L51 46 L46 46 Z" fill="#e9ece4" stroke="#12242b" stroke-width=".5"/>
+        <path d="M6 46 L46 42 L86 46 L46 50 Z" fill="none" stroke="#12242b" stroke-width=".5"/>
+      </g>
+      <text x="46" y="13" text-anchor="middle" font-family="'Archivo Narrow',sans-serif" font-size="9.6" letter-spacing="1.4" fill="#12242b">N</text>
+    </svg>
   </div>
 </header>
 
-<!-- ================= DESTACADAS ================= -->
-<section class="band" id="destacadas">
-  <div class="wrap">
-    <div class="topline reveal"></div>
-    <div class="sec-head reveal" style="margin-top:28px">
-      <div class="h-l">
-        <span class="eyebrow">Selección de la redacción</span>
-        <h2 class="sec-title">Destacados</h2>
-        <p class="standfirst">Seis destinos que vale la pena entender antes de sumergirte. Elegidos por su fauna y su carácter, no por su presupuesto de publicidad.</p>
-      </div>
-      <a href="#zonas" class="more-link">Ver los {totalFichas} destinos →</a>
-    </div>
+<!-- ══════════ 2 · AVISO A LOS NAVEGANTES ══════════ -->
+<nav class="notices" aria-label="Destinos destacados">
+  <div class="ticker">
+    <ul>
+      {searchIdx.slice(0, 20).map((d) => <li><a href={d.u}>{corto(d.t)}</a></li>)}
+    </ul>
+    <ul aria-hidden="true">
+      {searchIdx.slice(0, 20).map((d) => <li><a href={d.u} tabindex="-1">{corto(d.t)}</a></li>)}
+    </ul>
+  </div>
+</nav>
 
-    <div class="cards reveal">
-      {destacadas.map((d) => (
-        <article class="card">
-          <div class="card-top"><span class="card-idx">{d.idx} / 06</span><span class="card-region">{d.region}</span></div>
-          <a href={d.url} class="card-figure" aria-label={d.title}>
-            {d.img
-              ? <img class="fg-img" src={d.img} alt={d.title} loading="lazy" decoding="async" />
-              : <><span class="fg-grad" style={`background:${d.grad}`}></span><span class="fg-wave"><svg viewBox="0 0 224.8 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 37s21.3-24.7 28-25.9c6.8-1.2 18.5 16.7 21.8 15.7 3.3-1 22.5-25.6 26.3-26.8 3.8-1.2 28.2 24.8 31.1 29.2 2.9 4.4 3.8 7.7-.9 3.5-5.9-5.1-18.1-18.9-18.9-18.6-.8.3-4.5 11.5-6.4 10.9-2-.6-6.1-12-6.9-11.4-.8.5-4.9 7-6 6.9s-3.3-4.9-3.3-4.9-11.6 16.3-15.1 15C46.3 29.4 39 22.3 39 22.3s-.4 5.1-.9 5.3c-.5.2-.7 1.7-8.5-5.4 0 0-3.3 8-4.9 8s-4.9-8.9-4.9-8.9S1 43.6 0 37z" fill="#bfe8f2"/></svg></span></>}
-            {d.giora && <span class="fg-giora">✦ Giora buceó aquí</span>}
-            <span class="fg-z">{d.region}</span>
-          </a>
-          <h3 class="card-name"><a href={d.url}>{d.title}</a></h3>
-          <p class="card-note">{d.note}</p>
-          <div class="card-meta">
-            <span class="card-country">{d.pais}</span>
-            <span class="card-cert">{d.cert}</span>
-          </div>
-        </article>
-      ))}
-    </div>
+<!-- ══════════ 3 · LA SOBREIMPRESIÓN ══════════ -->
+<section class="over" aria-label="Qué mide Scubapedia">
+  <div class="wrap">
+    <p>La foto te trae hasta aquí. Lo que decide tu viaje son <span class="m">seis datos</span>: profundidad, visibilidad, agua, nivel, época y corriente.</p>
+    <div class="rule" aria-hidden="true"></div>
   </div>
 </section>
 
-<!-- ================= ZONAS (directorio) ================= -->
-<section class="band alt" id="zonas">
+<!-- ══════════ 4 · TABLA DE SONDAS ══════════ -->
+<section class="sound" id="sondas">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="h-l">
-        <span class="eyebrow">Índice por zonas</span>
-        <h2 class="sec-title">El mapa, ordenado</h2>
-        <p class="standfirst">{totalFichas} destinos agrupados por mar y océano. El número es de fichas publicadas y revisadas, no de folletos vendidos.</p>
+    <div class="sec-h">
+      <div>
+        <h2>Tabla de sondas</h2>
+        <p>Los datos publicados en cada ficha. Donde no consta, no se rellena a ojo. La corriente se lee en cada ficha, tal como la describe.</p>
       </div>
-      <a href={CRUCERO} target="_blank" rel="noopener" class="more-link">Reservar en crucerobuceo →</a>
+      <span class="lab">Profundidades en metros</span>
     </div>
 
-    <div class="regions reveal">
+    <div class="panels" role="tablist" aria-label="Filtrar por zona" id="panels">
+      <span class="mark-box" id="markBox" aria-hidden="true"></span>
+      <button type="button" class="panel" role="tab" aria-selected="true" aria-controls="tabla-sondas" data-zona="">Toda la carta <span class="n">{totalFichas}</span></button>
+      {zonaBlocks.map((b) => (
+        <button type="button" class="panel" role="tab" aria-selected="false" aria-controls="tabla-sondas" data-zona={b.slug}>{b.zona} <span class="n">{b.destinos.length}</span></button>
+      ))}
+    </div>
+    <p class="cuenta" aria-live="polite"><b id="n-vis">{totalFichas}</b> de {totalFichas} fichas</p>
+
+    <table class="sondas-t" id="tabla-sondas">
+      <thead>
+        <tr><th scope="col">Destino</th><th scope="col">Prof. m</th><th scope="col">Vis.</th><th scope="col">Agua °C</th><th scope="col">Nivel</th><th scope="col">Mejor época</th></tr>
+      </thead>
+      <tbody>
+        {filas.map((f) => (
+          <tr data-zona={f.z} data-u={f.u}>
+            <td class="dest">
+              <a href={f.u}>{f.t}</a>
+              {f.pais && <span class="lab pais">{f.pais}</span>}
+              {f.giora && <TrianguloGiora size={14} />}
+            </td>
+            <td class="deep num" data-h="Prof. m">
+              {f.prof === SIN ? <span class="nodata">{SIN}</span> : <>{f.prof}<span class="scale" aria-hidden="true"><span class="seg" style={f.bar}></span></span></>}
+            </td>
+            <td class="num" data-h="Vis.">{f.vis === SIN ? <span class="nodata">{SIN}</span> : f.vis}</td>
+            <td class="num" data-h="Agua °C">{f.agua === SIN ? <span class="nodata">{SIN}</span> : f.agua}</td>
+            <td data-h="Nivel">{f.nivel === SIN ? <span class="nodata">{SIN}</span> : f.nivel}</td>
+            <td data-h="Mejor época">{f.epoca === SIN ? <span class="nodata">{SIN}</span> : f.epoca}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <p class="sin-fila" id="sin-fila" hidden>Ninguna ficha coincide. Prueba con un mar, un país o una especie.</p>
+  </div>
+</section>
+
+<!-- ══════════ 5 · ÍNDICE POR ZONAS ══════════ -->
+<section class="index" id="indice">
+  <span id="zonas"></span>
+  <div class="wrap">
+    <div class="sec-h">
+      <div>
+        <h2>Índice por zonas</h2>
+        <p>{totalFichas} destinos agrupados por mar y océano. El número es de fichas publicadas y revisadas, no de folletos vendidos.</p>
+      </div>
+    </div>
+    <div class="regions">
       {[colA, colB].map((col) => (
         <div class="region-col">
           {col.map((blk) => (
-            <div class="zona-blk">
-              <div class="zona-h"><h3>{blk.zona}</h3><span class="tot"><b>{blk.destinos.length}</b> destinos</span></div>
+            <div class="zona-blk" id={`zona-${blk.slug}`}>
+              <div class="zona-h"><h3>{blk.zona}</h3><span class="lab tot">{blk.destinos.length} fichas</span></div>
               <p class="zona-sub">{blk.blurb}</p>
               {blk.destinos.map((dest) => (
                 <a class="idx-row" href={dest.url}>
-                  <span class="idx-name">{dest.title}{dest.giora && <span class="idx-giora">✦</span>}</span>
-                  <span class="idx-lead"></span>
+                  <span class="idx-name">{dest.title}</span>
+                  {dest.giora && <TrianguloGiora size={13} />}
+                  <span class="idx-lead" aria-hidden="true"></span>
                   <span class="idx-cert">{dest.cert}</span>
-                  <span class="idx-arrow">→</span>
                 </a>
               ))}
             </div>
@@ -544,20 +711,44 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
   </div>
 </section>
 
-<!-- ================= CONCEPTOS ================= -->
-<section class="band" id="conceptos">
+<!-- ══════════ 6 · RECUADROS DE LA REDACCIÓN ══════════ -->
+<section class="feat" id="destacadas">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="h-l">
-        <span class="eyebrow">Glosario</span>
-        <h2 class="sec-title">Conceptos</h2>
-        <p class="standfirst">Un vocabulario breve para leer el mar. Lo que de verdad cambia una inmersión, definido sin rodeos.</p>
+    <div class="sec-h">
+      <div>
+        <h2>Destacados</h2>
+        <p>Seis destinos que vale la pena entender antes de sumergirte. Elegidos por su fauna y su carácter, no por su presupuesto de publicidad.</p>
       </div>
     </div>
-    <div class="glossary reveal">
+    <div class="cards">
+      {destacadas.map((d) => (
+        <article class="card">
+          <a href={d.url} class="card-fig" aria-label={d.title}>
+            {d.img && <img src={d.img} alt={d.title} loading="lazy" decoding="async" />}
+            <span class="cap lab"><span>{d.region}{d.giora && <TrianguloGiora size={12} />}</span><span>{d.cert}</span></span>
+          </a>
+          <h3><a href={d.url}>{d.title}</a></h3>
+          <p class="card-note">{d.note}</p>
+          <div class="card-meta"><span>{d.pais}</span></div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 7 · CONCEPTOS ══════════ -->
+<section class="conceptos" id="conceptos">
+  <div class="wrap">
+    <div class="sec-h">
+      <div>
+        <h2>Conceptos</h2>
+        <p>Un vocabulario breve para leer el mar. Lo que de verdad cambia una inmersión, definido sin rodeos.</p>
+      </div>
+    </div>
+    <div class="glossary">
       {GLOSARIO.map((g) => (
         <div class="entry">
-          <div class="term">{g.term}<span class="en">{g.en}</span><span class="pos">{g.pos}</span></div>
+          <div class="term">{g.term}<span class="en">{g.en}</span><span class="lab pos">{g.pos}</span></div>
           <p class="def">{g.def}</p>
         </div>
       ))}
@@ -565,27 +756,26 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
   </div>
 </section>
 
-<!-- ================= ASISTENTE ================= -->
-<section class="band giora-band" id="giora">
+<!-- ══════════ 8 · PREGÚNTALE A GIORA ══════════ -->
+<section class="giora-band" id="giora">
   <div class="wrap">
     <div class="giora-grid">
-      <div class="reveal">
-        <span class="eyebrow giora-eyebrow">El asistente de Scubapedia</span>
-        <h2 class="giora-title">Pregúntale a <i>Giora</i></h2>
+      <div>
+        <h2>Pregúntale a Giora</h2>
         <p class="giora-copy">Giora organiza liveaboards de buceo por todo el mundo desde los años 80. Cuéntale qué buscas —fechas, fauna, nivel, presupuesto— y te dice dónde y cuándo, con la experiencia de quien ha estado allí.</p>
         <div class="giora-feat">
           <div class="gf"><b>Compara</b><span>Profundidad, visibilidad y mejor época entre dos o más destinos.</span></div>
           <div class="gf"><b>Planifica</b><span>Qué barco, qué ruta y para qué nivel sirve cada zona.</span></div>
           <div class="gf"><b>Reserva</b><span>Del destino al liveaboard, con la agencia detrás (CICMA 2283).</span></div>
         </div>
-        <a class="giora-cta" href={WA} data-open-chat target="_blank" rel="noopener"><span class="star">✦</span> Preguntar a Giora ahora</a>
+        <a class="btn giora-cta" href={WA} data-open-chat target="_blank" rel="noopener">Preguntar a Giora ahora</a>
       </div>
 
-      <div class="chat-card reveal">
+      <div class="chat-card">
         <div class="chat-head">
-          <div class="chat-ava">G</div>
+          <div class="chat-ava" aria-hidden="true">G</div>
           <div class="chat-id"><b>Giora</b><span>Buceador · Scubapedia</span></div>
-          <div class="chat-status"><span class="d"></span> En línea</div>
+          <div class="chat-status"><span class="d" aria-hidden="true"></span> En línea</div>
         </div>
         <div class="chat-body" id="giora-body">
           <div class="msg u">¿Dónde veo mantas oceánicas en enero?</div>
@@ -601,8 +791,9 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
           <button type="button" class="chip" data-q="Estoy empezando, ¿cuál es un buen primer liveaboard?">Primer liveaboard</button>
         </div>
         <form class="chat-ask" id="giora-form">
+          <label for="giora-input" class="visualmente-oculto">Escríbele a Giora</label>
           <input id="giora-input" type="text" placeholder="Escríbele a Giora…" autocomplete="off" />
-          <button type="submit" class="chat-ask-send" aria-label="Enviar">✦</button>
+          <button type="submit" class="chat-ask-send" aria-label="Enviar"><svg width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M0 5h14M10.5 1 14.5 5 10.5 9"/></svg></button>
         </form>
       </div>
     </div>
@@ -654,7 +845,7 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
       contactoPedido = true;
       const d = document.createElement('div'); d.className = 'msg g';
       d.innerHTML = '<div class="gtag">Giora</div><div class="gbody">¿Quieres que te prepare una propuesta con precio cerrado? ' +
-        '<a href="#pedir-presupuesto" style="color:var(--accent);text-decoration:underline;font-weight:600">Déjame tus datos aquí</a> ' +
+        '<a href="#pedir-presupuesto" style="color:var(--ink);text-decoration:underline;font-weight:600">Déjame tus datos aquí</a> ' +
         'y te contesto en menos de 24 horas laborables.</div>';
       body.appendChild(d); body.scrollTop = body.scrollHeight;
     }
@@ -681,7 +872,7 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
         try { gtag('event', 'giora_panel_reply'); } catch (e) {}
       } catch (e) {
         wrap.classList.remove('thinking');
-        gb.innerHTML = 'Ahora mismo no puedo responderte por aquí. <a href="' + WA + '" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;font-weight:600">Escríbeme por WhatsApp</a> y te ayudo en persona.';
+        gb.innerHTML = 'Ahora mismo no puedo responderte por aquí. <a href="' + WA + '" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline;font-weight:600">Escríbeme por WhatsApp</a> y te ayudo en persona.';
       } finally {
         busy = false; if (sendBtn) sendBtn.disabled = false; body.scrollTop = body.scrollHeight; input.focus();
       }
@@ -692,116 +883,128 @@ const heroPhoto = slugImage('mar-rojo', 'hero'); // foto real de arrecife para e
 </script>
 
 <CaptacionForm source="portada" />
+</main>
 
-<!-- ================= FOOTER ================= -->
-<footer class="foot">
-  <div class="wrap">
-    <div class="foot-top">
-      <div>
-        <div class="foot-mark"><img src="/scubapedia-logo.png" alt="Scubapedia" /></div>
-        <p class="foot-blurb">Enciclopedia editorial de destinos de buceo en castellano. Escrita por gente que bucea; verificada dato a dato.</p>
-      </div>
-      <div class="foot-col">
-        <h4>Explora</h4>
-        <a href="#destacadas">Destacados</a>
-        <a href="#zonas">Zonas</a>
-        <a href="#conceptos">Conceptos</a>
-      </div>
-      <div class="foot-col">
-        <h4>Reservar</h4>
-        <a href="https://crucerobuceo.com" target="_blank" rel="noopener">Cruceros de buceo</a>
-        <a href="https://viajesscibasku.com" target="_blank" rel="noopener">Viajes Scibasku</a>
-        <a href="#pedir-presupuesto">Pedir presupuesto a medida</a>
-        <a href={WA} target="_blank" rel="noopener">WhatsApp de Giora</a>
-      </div>
-      <div class="foot-col">
-        <h4>Scibasku</h4>
-        <a href="https://viajesscibasku.com" target="_blank" rel="noopener">Agencia · CICMA 2283</a>
-        <a href="https://www.google.com/maps?cid=14195325859324172180" target="_blank" rel="noopener">Encuéntranos en Google</a>
-      </div>
-      <div class="foot-col">
-        <h4>Legal</h4>
-        <a href="/aviso-legal">Aviso legal</a>
-        <a href="/politica-de-privacidad">Política de privacidad</a>
-        <a href="/politica-de-cookies">Política de cookies</a>
-        <a href="https://boletin.viajesscibasku.es/subscription/form" target="_blank" rel="noopener">Boletín</a>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span class="method">Cada ficha se revisa contra fuentes oficiales y se contrasta sobre el terreno antes de publicarse.</span>
-      <span>© 2026 Scubapedia · Proyecto editorial de <a href="https://viajesscibasku.com" target="_blank" rel="noopener">Viajes Scibasku</a> · CICMA 2283</span>
-    </div>
-  </div>
-</footer>
-
+<Pie />
 
 <ChatWidget />
 
-<!-- ================= SCRIPTS ================= -->
-<script is:inline>
-  (function () {
-    var nav = document.getElementById('nav');
-    var hero = document.getElementById('top');
-    if (nav && hero && 'IntersectionObserver' in window) {
-      new IntersectionObserver(function (entries) {
-        nav.classList.toggle('solid', !entries[0].isIntersecting);
-      }, { rootMargin: '-72px 0px 0px 0px', threshold: 0 }).observe(hero);
-    }
-    if ('IntersectionObserver' in window) {
-      var ro = new IntersectionObserver(function (ents) {
-        ents.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); ro.unobserve(en.target); } });
-      }, { threshold: 0.12 });
-      document.querySelectorAll('.reveal').forEach(function (n) { ro.observe(n); });
-    } else {
-      document.querySelectorAll('.reveal').forEach(function (n) { n.classList.add('in'); });
-    }
-  })();
-</script>
-
+<!-- ══════════ buscador (propone y filtra la tabla) + pestañas de zona ══════════ -->
 <script is:inline define:vars={{ idx: searchIdx }}>
   (function () {
     var q = document.getElementById('q');
     var suggest = document.getElementById('suggest');
     var search = document.getElementById('search');
+    var formB = document.getElementById('busca-form');
+    var rows = Array.prototype.slice.call(document.querySelectorAll('#tabla-sondas tbody tr'));
+    var nVis = document.getElementById('n-vis');
+    var sinFila = document.getElementById('sin-fila');
+    var panels = document.getElementById('panels');
+    var mark = document.getElementById('markBox');
     if (!q || !suggest || !search) return;
+    var norm = function (s) { return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); };
+    var hay = {};
+    idx.forEach(function (s) { hay[s.u] = norm([s.t, s.c, s.p, s.f].join(' ')); });
+    var zona = '';
     var activeIdx = -1, results = [];
-    var norm = function (s) { return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); };
+
+    // ---- la tabla: zona de la pestaña Y texto del buscador ----
+    function filtra() {
+      var v = norm(q.value.trim());
+      var n = 0;
+      rows.forEach(function (tr) {
+        var ok = (!zona || tr.dataset.zona === zona) && (!v || (hay[tr.dataset.u] || '').indexOf(v) >= 0);
+        tr.hidden = !ok;
+        if (ok) n++;
+      });
+      if (nVis) nVis.textContent = String(n);
+      if (sinFila) sinFila.hidden = n > 0;
+    }
+
+    // ---- el recuadro magenta viaja a la pestaña activa (también si hay varias filas) ----
+    function mueveMarca() {
+      if (!panels || !mark) return;
+      var act = panels.querySelector('[aria-selected="true"]');
+      if (!act) return;
+      mark.style.transform = 'translate(' + act.offsetLeft + 'px,' + act.offsetTop + 'px)';
+      mark.style.width = act.offsetWidth + 'px';
+      mark.style.height = act.offsetHeight + 'px';
+    }
+    if (panels) {
+      var tabs = Array.prototype.slice.call(panels.querySelectorAll('[role="tab"]'));
+      var elige = function (t, foco) {
+        tabs.forEach(function (x) { var on = x === t; x.setAttribute('aria-selected', String(on)); x.tabIndex = on ? 0 : -1; });
+        zona = t.dataset.zona || '';
+        if (foco) t.focus();
+        mueveMarca(); filtra();
+      };
+      tabs.forEach(function (t, i) {
+        t.tabIndex = i === 0 ? 0 : -1;
+        t.addEventListener('click', function () { elige(t, false); });
+        t.addEventListener('keydown', function (e) {
+          var j = tabs.indexOf(t);
+          if (e.key === 'ArrowRight') { e.preventDefault(); elige(tabs[(j + 1) % tabs.length], true); }
+          else if (e.key === 'ArrowLeft') { e.preventDefault(); elige(tabs[(j - 1 + tabs.length) % tabs.length], true); }
+          else if (e.key === 'Home') { e.preventDefault(); elige(tabs[0], true); }
+          else if (e.key === 'End') { e.preventDefault(); elige(tabs[tabs.length - 1], true); }
+        });
+      });
+      mueveMarca();
+      window.addEventListener('resize', mueveMarca);
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(mueveMarca);
+    }
+
+    // ---- el desplegable del buscador ----
+    function cierra() {
+      suggest.classList.remove('open'); q.setAttribute('aria-expanded', 'false'); q.removeAttribute('aria-activedescendant'); activeIdx = -1;
+    }
     function go(item) { if (item && item.u) window.location.href = item.u; }
     function runSearch() {
+      filtra();
       var v = norm(q.value.trim());
-      if (!v) { suggest.classList.remove('open'); return; }
-      results = idx.filter(function (s) { return norm(s.t).indexOf(v) >= 0 || norm(s.c).indexOf(v) >= 0; }).slice(0, 7);
+      if (!v) { cierra(); return; }
+      results = idx.filter(function (s) { return hay[s.u].indexOf(v) >= 0; });
       activeIdx = -1;
+      q.removeAttribute('aria-activedescendant');
+      suggest.replaceChildren();
       if (!results.length) {
-        suggest.innerHTML = '<div class="sg-empty">Sin resultados para “' + q.value.trim() + '”. Prueba con un mar o un país.</div>';
+        var empty = document.createElement('div');
+        empty.className = 'sg-empty';
+        empty.textContent = 'Sin resultados para «' + q.value.trim() + '». Prueba con un mar, un país o una especie.';
+        suggest.appendChild(empty);
+        q.setAttribute('aria-expanded', 'true');
         suggest.classList.add('open'); return;
       }
-      var re = new RegExp('(' + v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'i');
-      suggest.innerHTML = '<div class="sg-head">' + results.length + ' de ' + idx.length + ' fichas</div>' + results.map(function (s, i) {
-        var hl = s.t.replace(re, '<b>$1</b>');
-        var meta = s.c + (s.m ? ' · ' + s.m : '');
-        return '<div class="sg-item" data-i="' + i + '"><span class="sg-name">' + hl + '</span><span class="sg-meta">' + meta + '</span></div>';
-      }).join('');
-      suggest.classList.add('open');
-      suggest.querySelectorAll('.sg-item').forEach(function (it) {
-        it.addEventListener('click', function () { go(results[+it.dataset.i]); });
+      var head = document.createElement('div'); head.className = 'sg-head lab'; head.textContent = results.length + ' de ' + idx.length + ' fichas'; suggest.appendChild(head);
+      results.slice(0, 8).forEach(function (s, i) {
+        var item = document.createElement('a'); item.className = 'sg-item'; item.dataset.i = String(i); item.id = 'suggest-option-' + i; item.href = s.u; item.setAttribute('role', 'option'); item.setAttribute('aria-selected', 'false'); item.tabIndex = -1;
+        var name = document.createElement('span'); name.className = 'sg-name'; name.textContent = s.t; item.appendChild(name);
+        var meta = document.createElement('span'); meta.className = 'sg-meta'; meta.textContent = s.c + (s.m ? ' · ' + s.m : ''); item.appendChild(meta);
+        suggest.appendChild(item);
       });
+      q.setAttribute('aria-expanded', 'true');
+      suggest.classList.add('open');
     }
     q.addEventListener('input', runSearch);
     q.addEventListener('focus', function () { if (q.value.trim()) runSearch(); });
     q.addEventListener('keydown', function (e) {
       var items = suggest.querySelectorAll('.sg-item');
-      if (e.key === 'ArrowDown') { e.preventDefault(); activeIdx = Math.min(activeIdx + 1, items.length - 1); }
+      if (e.key === 'Escape') { if (suggest.classList.contains('open')) { e.preventDefault(); cierra(); } return; }
+      if (e.key === 'ArrowDown') { e.preventDefault(); if (!suggest.classList.contains('open')) runSearch(); activeIdx = Math.min(activeIdx + 1, items.length - 1); }
       else if (e.key === 'ArrowUp') { e.preventDefault(); activeIdx = Math.max(activeIdx - 1, 0); }
       else if (e.key === 'Enter') {
         e.preventDefault();
         if (activeIdx >= 0 && results[activeIdx]) go(results[activeIdx]);
-        else if (results[0]) go(results[0]);
+        else if (results[0] && q.value.trim()) go(results[0]);
         return;
       } else return;
-      items.forEach(function (it, i) { it.classList.toggle('active', i === activeIdx); });
+      items.forEach(function (it, i) { var on = i === activeIdx; it.classList.toggle('active', on); it.setAttribute('aria-selected', String(on)); });
+      if (items[activeIdx]) { q.setAttribute('aria-activedescendant', items[activeIdx].id); items[activeIdx].scrollIntoView({ block: 'nearest' }); }
     });
-    document.addEventListener('click', function (e) { if (!search.contains(e.target)) suggest.classList.remove('open'); });
+    if (formB) formB.addEventListener('submit', function (e) { e.preventDefault(); });
+    document.addEventListener('click', function (e) { if (!search.contains(e.target)) cierra(); });
+    // /?q=… (el formulario sin JS manda aquí): se aplica al cargar
+    try { var pq = new URLSearchParams(location.search).get('q'); if (pq) { q.value = pq; filtra(); } } catch (e) {}
   })();
 </script>
 

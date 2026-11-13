@@ -16,13 +16,16 @@
   --font-sans: 'Archivo Narrow', 'Helvetica Neue', Arial, sans-serif;
 }
 
-html { background: var(--color-bg); color: var(--color-ink); }
-body { font-family: var(--font-sans); line-height: 1.65; }
+/* Reglas de elemento con especificidad 0 (:where): en el build esta hoja se sirve DESPUÉS
+   de la de cada página, y sin :where su «a { text-decoration: underline }» o su
+   «h2 { margin-top }» pisaban a carta.css. Así solo actúan donde nadie dice otra cosa. */
+:where(html) { background: var(--color-bg); color: var(--color-ink); }
+:where(body) { font-family: var(--font-sans); line-height: 1.65; }
 
-h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 400; letter-spacing: -0.01em; color: var(--color-ink); }
-h1 { font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.1; }
-h2 { font-size: clamp(1.4rem, 2.5vw, 1.9rem); margin-top: 2.5rem; }
-h3 { font-size: 1.2rem; margin-top: 1.75rem; }
+:where(h1, h2, h3, h4) { font-family: var(--font-serif); font-weight: 400; letter-spacing: -0.01em; color: var(--color-ink); }
+:where(h1) { font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.1; }
+:where(h2) { font-size: clamp(1.4rem, 2.5vw, 1.9rem); margin-top: 2.5rem; }
+:where(h3) { font-size: 1.2rem; margin-top: 1.75rem; }
 
-a { color: var(--color-link); text-decoration: underline; text-underline-offset: 3px; }
-a:hover { opacity: 0.8; }
+:where(a) { color: var(--color-link); text-decoration: underline; text-underline-offset: 3px; }
+:where(a:hover) { opacity: 0.8; }

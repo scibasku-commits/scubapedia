@@ -1,0 +1,27 @@
+---
+// STUB DEL LOTE A — se borra al integrar: el bueno es src/components/Pie.astro (Lote B,
+// DECISION.md §3.3). Lleva los mismos enlaces que el pie de main para no perder ninguno.
+const WA = 'https://wa.me/34619401041';
+---
+<footer class="stubpie">
+  <div class="wrap stubpie-top">
+    <div>
+      <img src="/scubapedia-logo-nav-white.png" alt="Scubapedia" width="160" height="40" />
+      <p>Enciclopedia editorial de destinos de buceo en castellano. Verificada dato a dato.</p>
+    </div>
+    <div><p class="lab">Explora</p><a href="/#sondas">Tabla de sondas</a><a href="/#indice">Índice</a><a href="/mapa/">Mapa</a><a href="/quiz/">Quiz</a><a href="/#conceptos">Conceptos</a></div>
+    <div><p class="lab">Scibasku</p><a href="https://viajesscibasku.com" target="_blank" rel="noopener">Viajes Scibasku · CICMA 2283</a><a href="https://crucerobuceo.com" target="_blank" rel="noopener">crucerobuceo.com</a><a href="https://www.google.com/maps?cid=14195325859324172180" target="_blank" rel="noopener">Encuéntranos en Google</a><a href="https://boletin.viajesscibasku.es/subscription/form" target="_blank" rel="noopener">Boletín</a><a href={WA} target="_blank" rel="noopener">WhatsApp</a></div>
+  </div>
+  <div class="wrap stubpie-bottom">
+    <a href="/aviso-legal">Aviso legal</a> · <a href="/politica-de-privacidad">Política de privacidad</a> · <a href="/politica-de-cookies">Política de cookies</a>
+    <span>© 2026 Scubapedia · Proyecto editorial de Viajes Scibasku · CICMA 2283</span>
+  </div>
+</footer>
+<style is:global>
+  .stubpie{border-top:1px solid var(--ink);padding:48px 0 32px;margin-top:0}
+  .stubpie-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+  .stubpie-top img{height:40px;width:auto;filter:brightness(0)}
+  .stubpie-top a{display:block;padding:5px 0}
+  .stubpie-bottom{margin-top:32px;padding-top:16px;border-top:1px dotted var(--dots);display:flex;gap:10px;flex-wrap:wrap;font-size:14px;color:var(--ink-2)}
+  @media (max-width:680px){.stubpie-top{grid-template-columns:1fr}}
+</style>
