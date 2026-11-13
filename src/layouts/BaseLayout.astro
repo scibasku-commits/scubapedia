@@ -1,5 +1,8 @@
 ---
+import Cabecera from '../components/Cabecera.astro';
+import Pie from '../components/Pie.astro';
 import '../styles/global.css';
+import '../styles/carta.css';
 
 interface Props {
   title?: string;
@@ -19,6 +22,8 @@ const { title = 'Scuba-pedia', description = 'La enciclopedia de destinos de buc
   <meta name="description" content={description} />
   {noindex && <meta name="robots" content="noindex, follow" />}
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -41,52 +46,47 @@ const { title = 'Scuba-pedia', description = 'La enciclopedia de destinos de buc
   </script>
 <!-- Umami (analitica propia, sin cookies ni datos personales) -->
 <script defer src="https://umami-scibasku.vercel.app/script.js" data-website-id="49faed99-e484-4618-8f78-e095cf9f421e"></script>
+<style is:global>
+  html,body{overflow-x:clip}
+  /* páginas legales y de gracias: una sola hoja de estilo, con los tokens de la carta */
+  .lg-wrap{max-width:820px;margin:0 auto;padding:var(--s-13) var(--s-6) var(--s-20);line-height:1.7;color:var(--ink);font-size:17px}
+  .lg-wrap h1{font-style:italic;font-size:clamp(34px,5vw,52px);margin:0 0 var(--s-2);line-height:1.1;letter-spacing:0}
+  .lg-wrap .lg-sub{color:var(--ink-2);font-size:16px;margin:0 0 var(--s-8);padding-bottom:var(--s-6);border-bottom:1px solid var(--ink)}
+  .lg-wrap h2{font-size:clamp(22px,2.8vw,28px);margin:var(--s-10) 0 var(--s-3);padding-top:var(--s-3);border-top:1px solid var(--rule-strong);line-height:1.2}
+  .lg-wrap h3{font-style:italic;font-size:20px;margin:var(--s-6) 0 var(--s-2)}
+  .lg-wrap p{margin:0 0 var(--s-3)}
+  .lg-wrap ul{margin:0 0 var(--s-4);padding-left:22px}
+  .lg-wrap li{margin:0 0 var(--s-2)}
+  .lg-wrap strong{font-weight:600}
+  .lg-wrap .lg-a,.lg-wrap p a,.lg-wrap li a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--rule-strong)}
+  .lg-wrap .lg-a:hover,.lg-wrap p a:hover,.lg-wrap li a:hover{color:var(--mag-ink);text-decoration-color:var(--mag)}
+  .lg-wrap .lg-pend{border:1px solid var(--mag);background:var(--white);padding:12px 14px;margin:0 0 var(--s-4)}
+  .lg-wrap .lg-tw{overflow-x:auto;margin:0 0 var(--s-5)}
+  .lg-wrap .lg-t{width:100%;border-collapse:collapse;font-size:15px;border:1px solid var(--ink)}
+  .lg-wrap .lg-t th{text-align:left;padding:8px;background:var(--paper-2);color:var(--ink);font-weight:500;border-bottom:1px solid var(--ink)}
+  .lg-wrap .lg-t td{padding:8px;border-bottom:1px dotted var(--dots);vertical-align:top}
+  .lg-wrap .lg-t code{font-family:inherit;font-size:14px}
+  .lg-wrap .lg-hr{border:0;border-top:1px solid var(--rule-strong);margin:var(--s-10) 0 var(--s-5)}
+  .lg-wrap .lg-foot{font-size:15px;color:var(--ink-2)}
+  .lg-back{display:inline-block;margin-bottom:var(--s-6);font-size:15px;color:var(--ink)}
+  /* gracias */
+  .gr-wrap{max-width:640px;margin:0 auto;padding:var(--s-16) var(--s-6);text-align:left}
+  .gr-ok{width:56px;height:56px;border:1px solid var(--mag);color:var(--mag-ink);display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin:0 0 var(--s-6)}
+  .gr-wrap h1{font-style:italic;font-size:clamp(34px,5vw,52px);margin:0 0 var(--s-4);letter-spacing:0}
+  .gr-wrap p{line-height:1.65;margin:0 0 var(--s-4);font-size:19px}
+  .gr-a{text-decoration:underline;text-underline-offset:3px;color:var(--ink)}
+  .gr-wrap .btn{text-decoration:none;margin-top:var(--s-2)}
+</style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header style="background: #0d1b2a; border-bottom: 3px solid #0891b2;">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 0.75rem 1.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
-      <a href="/destinos" style="text-decoration: none; display: flex; align-items: center;">
-        <img src="/logo-navbar.svg" alt="Scuba-pedia" style="height: 48px; width: auto;" />
-      </a>
-      <nav style="display: flex; gap: 1.5rem; align-items: center;">
-        <a href="/destinos" style="color: #7dd3fc; text-decoration: none; font-size: 0.875rem; font-weight: 500;">Destinos</a>
-        <a href="https://crucerobuceo.com" rel="noopener" data-source="scubapedia-nav-to-crucerobuceo"
-           style="color: #7dd3fc; text-decoration: none; font-size: 0.875rem; font-weight: 500;">
-          Operadores
-        </a>
-        <a href="https://viajesscibasku.com" rel="noopener" data-source="scubapedia-nav-to-viajes"
-           style="color: #7dd3fc; text-decoration: none; font-size: 0.875rem; font-weight: 500;">
-          Viajes
-        </a>
-      </nav>
-    </div>
-  </header>
+  <Cabecera />
 
-  <!-- Content -->
   <main>
     <slot />
   </main>
 
-  <!-- Footer -->
-  <footer style="background: #0d1b2a; color: #94a3b8; padding: 2rem 1.5rem; margin-top: 3rem; font-size: 0.8rem; border-top: 1px solid #1e3a5f;">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
-      <img src="/logo-navbar.svg" alt="Scuba-pedia" style="height: 44px; width: auto; opacity: 0.85;" />
-      <p style="margin: 0; text-align: center;">
-        © Viajes Scibasku · CICMA 2283 ·
-        <a href="https://crucerobuceo.com" style="color: #7dd3fc;" data-source="scubapedia-footer-to-crucerobuceo">crucerobuceo.com</a> ·
-        <a href="https://viajesscibasku.com" style="color: #7dd3fc;" data-source="scubapedia-footer-to-viajes">viajesscibasku.com</a> ·
-        <a href="https://www.google.com/maps?cid=14195325859324172180" target="_blank" rel="noopener" style="color: #7dd3fc;">Encuéntranos en Google</a>
-      </p>
-      <p style="margin: 0; text-align: center;">
-        <a href="/aviso-legal" style="color: #7dd3fc;">Aviso legal</a> ·
-        <a href="/politica-de-privacidad" style="color: #7dd3fc;">Política de privacidad</a> ·
-        <a href="https://boletin.viajesscibasku.es/subscription/form" target="_blank" rel="noopener" style="color: #7dd3fc;">Boletín</a> ·
-        <a href="/politica-de-cookies" style="color: #7dd3fc;">Política de cookies</a>
-      </p>
-    </div>
-  </footer>
+  <Pie />
 
 </body>
 </html>
