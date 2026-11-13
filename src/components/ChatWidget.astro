@@ -5,7 +5,7 @@
 ---
 <button
   id="chat-trigger"
-  class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--color-link)] text-white shadow-xl hover:scale-105 transition-transform cursor-pointer border-0"
+  class="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center bg-[var(--ink)] text-[var(--paper)] border border-[var(--ink)] hover:bg-[var(--mag)] transition-colors cursor-pointer "
   aria-label="Abrir asistente Giora AI"
 >
   <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
@@ -15,17 +15,17 @@
 
 <div
   id="chat-window"
-  class="fixed bottom-24 right-6 z-50 hidden h-[520px] w-[370px] max-w-[calc(100vw-2rem)] flex flex-col rounded-xl bg-[var(--color-paper)] border border-[var(--color-border)] shadow-2xl overflow-hidden font-sans"
+  class="fixed bottom-24 right-6 z-50 hidden h-[520px] w-[370px] max-w-[calc(100vw-2rem)] flex flex-col bg-[var(--white)] border border-[var(--ink)] overflow-hidden font-sans"
 >
   <header class="flex items-center justify-between px-4 py-3 bg-[color-mix(in_oklab,var(--color-paper),black_4%)] border-b border-[var(--color-border)]">
     <div class="flex items-center gap-2.5">
-      <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[var(--color-link)] text-white font-serif font-semibold">G</span>
+      <span class="inline-flex h-9 w-9 items-center justify-center bg-[var(--ink)] text-[var(--paper)] font-serif font-semibold">G</span>
       <div>
-        <span class="font-serif text-base font-semibold block text-[var(--color-ink)] leading-tight">Giora AI <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 align-middle ml-1 animate-pulse"></span></span>
+        <span class="font-serif text-base font-semibold block text-[var(--color-ink)] leading-tight">Giora AI <span class="inline-block w-2 h-2 bg-[var(--mag)] align-middle ml-1 animate-pulse"></span></span>
         <span class="text-[10px] text-[var(--color-muted)] block">Asistente de buceo · Scubapedia</span>
       </div>
     </div>
-    <button id="chat-close" class="text-[var(--color-muted)] hover:text-[var(--color-ink)] cursor-pointer border-0 bg-transparent p-1 rounded" aria-label="Cerrar chat">
+    <button id="chat-close" class="text-[var(--color-muted)] hover:text-[var(--color-ink)] cursor-pointer border-0 bg-transparent p-1" aria-label="Cerrar chat">
       <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
     </button>
   </header>
@@ -38,7 +38,7 @@
 
   <div id="chat-messages" class="flex-1 min-h-0 p-4 overflow-y-auto space-y-3.5 bg-[color-mix(in_oklab,var(--color-bg),transparent_50%)]">
     <div class="chat-message assistant flex gap-2">
-      <div class="px-3.5 py-2.5 rounded-lg bg-[var(--color-paper)] border border-[var(--color-border)] text-[13px] leading-relaxed text-[var(--color-ink)] max-w-[88%]">
+      <div class="px-3.5 py-2.5  bg-[var(--color-paper)] border border-[var(--color-border)] text-[13px] leading-relaxed text-[var(--color-ink)] max-w-[88%]">
         Hola, soy <b>Giora AI</b>, el asistente de inteligencia artificial de Scubapedia. Respondo con el criterio de Giora, que organiza viajes de buceo desde los años 80. Pregúntame sin rodeos: <b>dónde ver mantas o tiburones</b>, qué <b>nivel</b> necesitas, la <b>mejor época</b>, o qué liveaboard encaja contigo. ¿Qué buscas?
       </div>
     </div>
@@ -47,8 +47,8 @@
   <div id="chat-typing" class="hidden px-4 py-2 text-[10px] text-[var(--color-muted)] italic bg-transparent">Giora AI está escribiendo…</div>
 
   <footer class="p-3 border-t border-[var(--color-border)] bg-[var(--color-paper)] flex gap-2">
-    <input type="text" id="chat-input" placeholder="¿Dónde veo mantas en enero?" class="flex-1 px-3 py-2 text-[13px] border border-[var(--color-border)] rounded-md focus:outline-none focus:border-[var(--color-accent)] bg-[var(--color-bg)] text-[var(--color-ink)]" />
-    <button id="chat-send" class="px-4 py-2 bg-[var(--color-link)] text-white text-[13px] font-semibold rounded-md hover:opacity-90 transition-opacity cursor-pointer border-0">Enviar</button>
+    <input type="text" id="chat-input" placeholder="¿Dónde veo mantas en enero?" class="flex-1 px-3 py-2 text-[13px] border border-[var(--color-border)]  focus:outline-none focus:border-[var(--color-accent)] bg-[var(--color-bg)] text-[var(--color-ink)]" />
+    <button id="chat-send" class="px-4 py-2 bg-[var(--ink)] text-[var(--paper)] text-[13px] font-semibold  hover:opacity-90 transition-opacity cursor-pointer border-0">Enviar</button>
   </footer>
 </div>
 
@@ -106,7 +106,7 @@
       const wrapper = document.createElement('div');
       wrapper.className = `chat-message ${role} flex gap-2 ${role === 'user' ? 'justify-end' : ''}`;
       const bubble = document.createElement('div');
-      bubble.className = `px-3.5 py-2.5 rounded-lg text-[13px] leading-relaxed max-w-[88%] ${role === 'user' ? 'bg-[var(--color-link)] text-white border border-transparent' : 'bg-[var(--color-paper)] text-[var(--color-ink)] border border-[var(--color-border)]'}`;
+      bubble.className = `px-3.5 py-2.5  text-[13px] leading-relaxed max-w-[88%] ${role === 'user' ? 'bg-[var(--ink)] text-[var(--paper)] border border-transparent' : 'bg-[var(--color-paper)] text-[var(--color-ink)] border border-[var(--color-border)]'}`;
       bubble.innerHTML = text.replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>').replace(/\*([^*]+)\*/g, '<i>$1</i>').replace(/\n/g, '<br/>');
       wrapper.appendChild(bubble); messagesEl.appendChild(wrapper);
     }

@@ -96,53 +96,57 @@ const { destino = '', source = 'ficha' } = Astro.props;
 </section>
 
 <style is:global>
+  /* Mundo «Carta náutica»: panel de tinta, controles de papel, esquinas rectas.
+     Solo estilos: campos, required, consentimiento y action no se tocan (tests/captacion.test.mjs). */
   .scp-cap {
-    background: linear-gradient(135deg, #0a1628, #0d2847) !important;
-    border-top: 3px solid #1fb4d1 !important;
-    padding: 2.8rem 1.2rem !important;
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif !important;
-    color: #b8c5d6 !important;
+    background: var(--ink, #12242b) !important;
+    border-top: 1px solid var(--ink, #12242b) !important;
+    padding: 3.2rem 1.2rem !important;
+    font-family: var(--lab, 'Archivo Narrow', Arial, sans-serif) !important;
+    color: #e9ece4 !important;
     scroll-margin-top: 80px !important;
   }
   .scp-cap-in { max-width: 720px !important; margin: 0 auto !important; }
   .scp-cap h2 {
-    color: #fff !important; font-size: 1.5rem !important; margin: 0 0 .5rem !important;
-    border-left: 4px solid #1fb4d1 !important; padding-left: .7rem !important; line-height: 1.25 !important;
+    color: #e9ece4 !important; font-family: var(--rot, 'Bodoni Moda', Didot, serif) !important; font-weight: 400 !important;
+    font-size: clamp(1.5rem, 3vw, 2rem) !important; margin: 0 0 .6rem !important;
+    border: 0 !important; border-bottom: 1px solid #e9ece466 !important; padding: 0 0 .7rem !important; line-height: 1.2 !important;
   }
-  .scp-cap-sub { font-size: .92rem !important; line-height: 1.55 !important; margin: 0 0 1.4rem !important; color: #b8c5d6 !important; }
+  .scp-cap-sub { font-size: 1.05rem !important; line-height: 1.55 !important; margin: 0 0 1.4rem !important; color: #e9ece4 !important; }
   .scp-cap-row { display: flex !important; flex-wrap: wrap !important; gap: .9rem !important; margin-bottom: .9rem !important; }
   .scp-cap-f { flex: 1 1 200px !important; display: flex !important; flex-direction: column !important; gap: .3rem !important; }
-  .scp-cap label { font-size: .7rem !important; font-weight: 600 !important; text-transform: uppercase !important; letter-spacing: .08em !important; color: #1fb4d1 !important; }
+  .scp-cap label { font-size: .72rem !important; font-weight: 500 !important; text-transform: uppercase !important; letter-spacing: .15em !important; color: #e9ece4 !important; }
   .scp-cap input, .scp-cap textarea {
-    background: #0d2847 !important; border: 1px solid rgba(255,255,255,.14) !important; border-radius: 8px !important;
-    padding: .7rem .85rem !important; color: #fff !important; font-size: .95rem !important;
+    background: var(--white, #fbfcf9) !important; border: 1px solid #e9ece4 !important; border-radius: 0 !important;
+    padding: .7rem .85rem !important; color: var(--ink, #12242b) !important; font-size: 1.02rem !important;
     font-family: inherit !important; width: 100% !important; box-sizing: border-box !important;
   }
-  .scp-cap input:focus, .scp-cap textarea:focus { outline: none !important; border-color: #1fb4d1 !important; }
+  .scp-cap input::placeholder, .scp-cap textarea::placeholder { color: var(--ink-3, #52646a) !important; opacity: 1 !important; }
+  .scp-cap input:focus, .scp-cap textarea:focus { outline: 2px solid var(--mag, #d6006f) !important; outline-offset: 2px !important; }
   .scp-cap-consent {
     display: flex !important; align-items: flex-start !important; gap: .6rem !important; margin: 1rem 0 !important;
-    font-size: .8rem !important; line-height: 1.45 !important; color: #b8c5d6 !important; cursor: pointer !important;
+    font-size: .95rem !important; line-height: 1.45 !important; color: #e9ece4 !important; cursor: pointer !important;
     text-transform: none !important; letter-spacing: normal !important; font-weight: 400 !important;
   }
-  .scp-cap-consent input { width: 16px !important; height: 16px !important; flex: 0 0 16px !important; margin-top: .15rem !important; accent-color: #1fb4d1 !important; }
-  .scp-cap-consent a, .scp-cap-nota a { color: #1fb4d1 !important; text-decoration: underline !important; }
+  .scp-cap-consent input { width: 18px !important; height: 18px !important; flex: 0 0 18px !important; margin-top: .15rem !important; accent-color: var(--mag, #d6006f) !important; padding: 0 !important; }
+  .scp-cap-consent a, .scp-cap-nota a { color: #e9ece4 !important; text-decoration: underline !important; text-underline-offset: 3px !important; }
   .scp-cap button {
-    background: #1fb4d1 !important; color: #04202a !important; border: none !important; border-radius: 8px !important;
-    padding: .85rem 1.8rem !important; font-size: 1rem !important; font-weight: 700 !important;
-    font-family: inherit !important; cursor: pointer !important;
+    background: #e9ece4 !important; color: var(--ink, #12242b) !important; border: 1px solid #e9ece4 !important; border-radius: 0 !important;
+    padding: .9rem 1.8rem !important; font-size: .78rem !important; font-weight: 600 !important; text-transform: uppercase !important; letter-spacing: .17em !important;
+    font-family: inherit !important; cursor: pointer !important; min-height: 48px !important;
   }
-  .scp-cap button:hover { background: #3fc9e4 !important; }
-  .scp-cap-nota { font-size: .72rem !important; color: #8fa0b5 !important; margin: .9rem 0 0 !important; line-height: 1.45 !important; }
+  .scp-cap button:hover { background: var(--mag, #d6006f) !important; border-color: var(--mag, #d6006f) !important; color: #fff !important; }
+  .scp-cap-nota { font-size: .9rem !important; color: #d9dfd9 !important; margin: .9rem 0 0 !important; line-height: 1.45 !important; }
   .scp-cap-trap { position: absolute !important; left: -9999px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
 
   /* Botón «Pedir presupuesto» — arriba (bajo el H1) y abajo (en el cierre). */
   .scp-cap-cta {
-    display: inline-block !important; background: #1fb4d1 !important; color: #04202a !important;
-    border-radius: 999px !important; padding: .7rem 1.5rem !important; font-weight: 700 !important;
-    text-decoration: none !important; font-size: .95rem !important;
-    font-family: system-ui, -apple-system, sans-serif !important;
+    display: inline-flex !important; background: var(--ink, #12242b) !important; color: #e9ece4 !important;
+    border: 1px solid var(--ink, #12242b) !important; border-radius: 0 !important; padding: 16px 24px !important;
+    font-weight: 500 !important; text-decoration: none !important; font-size: 11px !important; letter-spacing: .17em !important; text-transform: uppercase !important;
+    font-family: var(--lab, 'Archivo Narrow', Arial, sans-serif) !important;
   }
-  .scp-cap-cta:hover { background: #3fc9e4 !important; color: #04202a !important; text-decoration: none !important; }
+  .scp-cap-cta:hover { background: var(--mag, #d6006f) !important; border-color: var(--mag, #d6006f) !important; color: #fff !important; text-decoration: none !important; }
 </style>
 
 <script is:inline>
