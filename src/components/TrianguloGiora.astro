@@ -1,0 +1,10 @@
+---
+// Marca «Giora buceó aquí»: triángulo magenta de la leyenda de la carta.
+// Fuente: DECISION.md §3.3 (SVG del prototipo, trazo #d6006f).
+interface Props { size?: number; label?: string }
+const { size = 14, label = 'Giora buceó aquí' } = Astro.props;
+---
+<svg class="tri-giora" viewBox="0 0 15 13" width={size} height={Math.round(size * 13 / 15)} role="img" aria-label={label} focusable="false"><path d="M7.5 1 14 12H1Z" fill="none" stroke="#d6006f" stroke-width="1.6" stroke-linejoin="round"/></svg>
+<style>
+  .tri-giora{display:inline-block;flex:none;vertical-align:-1px}
+</style>

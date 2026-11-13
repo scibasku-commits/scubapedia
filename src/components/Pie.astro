@@ -1,0 +1,49 @@
+---
+// Pie común del sitio «Carta náutica». Fuente: DECISION.md §3.3.
+// Conserva todos los enlaces del pie anterior de la portada.
+const WA = 'https://wa.me/34619401041';
+---
+<footer class="pie">
+  <div class="pie-in">
+    <div class="pie-col">
+      <a class="pie-logo" href="/" aria-label="Scubapedia, inicio"><img src="/scubapedia-logo-nav-white.png" alt="Scubapedia" width="156" height="39" /></a>
+      <p>Enciclopedia editorial de destinos de buceo en castellano. Verificada dato a dato.</p>
+    </div>
+    <div class="pie-col">
+      <h2 class="lab">Explora</h2>
+      <a href="/#sondas">Tabla de sondas</a>
+      <a href="/#indice">Índice</a>
+      <a href="/mapa/">Mapa</a>
+      <a href="/quiz/">Quiz</a>
+      <a href="/#conceptos">Conceptos</a>
+    </div>
+    <div class="pie-col">
+      <h2 class="lab">Scibasku</h2>
+      <a href="https://viajesscibasku.com" target="_blank" rel="noopener">Viajes Scibasku · CICMA 2283</a>
+      <a href="https://crucerobuceo.com" target="_blank" rel="noopener">crucerobuceo.com</a>
+      <a href="https://www.google.com/maps?cid=14195325859324172180" target="_blank" rel="noopener">Encuéntranos en Google</a>
+      <a href="https://boletin.viajesscibasku.es/subscription/form" target="_blank" rel="noopener">Boletín</a>
+      <a href={WA} target="_blank" rel="noopener">WhatsApp de Giora</a>
+      <a href="/#pedir-presupuesto">Pedir presupuesto a medida</a>
+    </div>
+  </div>
+  <div class="pie-fin">
+    <span><a href="/aviso-legal">Aviso legal</a> · <a href="/politica-de-privacidad">Política de privacidad</a> · <a href="/politica-de-cookies">Política de cookies</a></span>
+    <span>© 2026 Scubapedia · Proyecto editorial de Viajes Scibasku · CICMA 2283</span>
+  </div>
+</footer>
+
+<style>
+  .pie{border-top:1px solid var(--ink);background:var(--paper);color:var(--ink)}
+  .pie-in{max-width:var(--maxw);margin:0 auto;padding:var(--s-13) var(--gutter) var(--s-8);display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:var(--s-10)}
+  .pie-logo img{height:39px;width:auto;filter:brightness(0);margin-bottom:var(--s-4)}
+  .pie-col p{margin:0;max-width:34ch;color:var(--ink-2);font-size:16px;line-height:1.5}
+  .pie-col{display:flex;flex-direction:column;align-items:flex-start;gap:var(--s-2)}
+  .pie-col h2{color:var(--ink-2);margin:0 0 var(--s-2)}
+  .pie-col a:not(.pie-logo){font-size:16px;padding:4px 0;min-height:28px;display:inline-flex;align-items:center}
+  .pie-col a:not(.pie-logo):hover{color:var(--mag-ink)}
+  .pie-fin{max-width:var(--maxw);margin:0 auto;padding:var(--s-5) var(--gutter) var(--s-8);display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--s-3);border-top:1px dotted var(--dots);font-size:14px;color:var(--ink-2)}
+  .pie-fin a{text-decoration:underline;text-underline-offset:3px}
+  .pie-fin a:hover{color:var(--mag-ink)}
+  @media (max-width:680px){.pie-in{grid-template-columns:1fr;gap:var(--s-8);padding-top:var(--s-10)}.pie-col a:not(.pie-logo){min-height:44px}}
+</style>

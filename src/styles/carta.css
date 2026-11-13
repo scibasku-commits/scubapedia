@@ -1,0 +1,52 @@
+/* Mundo visual «Carta náutica» — scubapedia.org. Fuente: DECISION.md 13-nov-2026. */
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Archivo+Narrow:wght@400;500;600&display=swap");
+
+:root{
+  color-scheme: light;
+  /* papel y tintas (del contrato OWN-WORLD de carta.template.html) */
+  --paper:#e9ece4; --paper-2:#dfe3da; --white:#fbfcf9; --sand:#dcd8c8;
+  --water-1:#d3e2e2; --water-2:#c2d9dc; --water-3:#aecdd4;
+  --ink:#12242b; --ink-2:#3c626e; --ink-3:#52646a;
+  --rule:#12242b22; --rule-strong:#12242b66; --dots:#6f8288;
+  /* un solo color de aviso */
+  --mag:#d6006f;      /* trazo, bordes, recuadros, foco */
+  --mag-ink:#a8005a;  /* magenta para texto pequeño (contraste) */
+  /* tipografía */
+  --rot:'Bodoni Moda',Didot,'Times New Roman',serif;   /* topónimos, titulares, cifras grandes */
+  --lab:'Archivo Narrow','Helvetica Neue',Arial,sans-serif; /* cuerpo, etiquetas, sondas, tablas */
+  /* escala (base 4 px) */
+  --s-1:4px; --s-2:8px; --s-3:12px; --s-4:16px; --s-5:20px; --s-6:24px; --s-8:32px; --s-10:40px; --s-13:52px; --s-16:64px; --s-20:80px;
+  --maxw:1420px; --gutter:40px; --nav-h:60px;
+  --t-fast:.16s; --t-med:.4s; --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html{background:var(--paper);scroll-padding-top:calc(var(--nav-h) + 16px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--lab);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:var(--mag);color:#fff}
+:focus-visible{outline:2px solid var(--mag);outline-offset:3px}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--mag)}
+img{display:block;max-width:100%}
+h1,h2,h3{margin:0;font-weight:400;font-family:var(--rot);letter-spacing:.01em}
+.rot{font-family:var(--rot)}
+.lab{font-family:var(--lab);text-transform:uppercase;letter-spacing:.17em;font-size:11px}
+.num{font-family:var(--lab);font-variant-numeric:tabular-nums}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter)}
+/* grano de papel */
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.42;
+  background-image:radial-gradient(circle at 23% 41%,rgba(18,36,43,.05) 0 1px,transparent 1px),
+                   radial-gradient(circle at 71% 77%,rgba(18,36,43,.04) 0 1px,transparent 1px);
+  background-size:31px 31px,43px 43px}
+/* controles: color explícito siempre (el modo oscuro del sistema no debe pintarlos) */
+input,select,textarea,button{font-family:var(--lab);color:var(--ink);background:var(--white);border:1px solid var(--ink);border-radius:0}
+input::placeholder,textarea::placeholder{color:var(--ink-3);opacity:1}
+.btn{display:inline-flex;align-items:center;gap:14px;background:var(--ink);color:var(--paper);border:1px solid var(--ink);padding:16px 24px;
+  font-family:var(--lab);text-transform:uppercase;letter-spacing:.17em;font-size:11px;cursor:pointer;transition:background var(--t-fast),color var(--t-fast)}
+.btn:hover{background:var(--mag);border-color:var(--mag);color:#fff}
+.btn.sec{background:transparent;color:var(--ink)}
+.btn.sec:hover{background:var(--ink);color:var(--paper)}
+table{border-collapse:collapse;width:100%}
+th{font-family:var(--lab);text-transform:uppercase;letter-spacing:.15em;font-size:10.5px;color:var(--ink-2);font-weight:400;text-align:left;padding:12px 12px 12px 0;border-bottom:1px solid var(--ink)}
+td{padding:14px 12px 14px 0;border-bottom:1px dotted var(--dots);vertical-align:baseline}
+@media (max-width:1000px){:root{--gutter:20px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}}
