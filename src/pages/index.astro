@@ -92,7 +92,9 @@ const toponimos = zonas.map((z) => {
 });
 let iMovil = 0;
 for (const t of toponimos) if (t.m4) (t as any).movil = POS_MOVIL[iMovil++];
-const insetMarRojo = slugImage('mar-rojo', 'card'); // la foto hero de producción, ahora en su recuadro
+// La foto hero de producción, ahora en su recuadro. Misma URL exacta que en main (preset
+// hero) para que el manifiesto de fotos (criterio 5.6) la reconozca tal cual.
+const insetMarRojo = slugImage('mar-rojo', 'hero');
 const insetBrother = destinoImage('brother-islands', 'card');
 const brother = byId.get('brother-islands');
 // Manchas de coral: puro dibujo de carta (no marcan sitios reales), en zonas libres.
@@ -333,7 +335,7 @@ const WA = 'https://wa.me/34619401041';
 
     /* ══ 3 · la sobreimpresión ══ */
     .over{padding:120px 0 104px;text-align:center}
-    .over p{font-family:var(--rot);font-size:clamp(23px,2.7vw,40px);line-height:1.32;max-width:19em;margin:0 auto;text-wrap:balance}
+    .over p{font-family:var(--rot);font-size:clamp(24px,2.7vw,40px);line-height:1.32;max-width:19em;margin:0 auto;text-wrap:balance}
     .over .m{color:var(--mag)}
     .over .rule{width:1px;height:64px;background:var(--ink);margin:38px auto 0}
 
