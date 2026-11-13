@@ -152,7 +152,7 @@ test('estilo de la casa en la portada: sin Fraunces, DM Sans, píldoras, eyebrow
   for (const p of PROHIBIDOS) assert.ok(!p.test(todo), `aparece ${p}`);
 });
 
-test('estilo de la casa también en el formulario de captación incrustado', { todo: 'CaptacionForm.astro es del Lote B (B6): aún lleva border-radius:999px y #1fb4d1' }, () => {
+test('estilo de la casa también en el formulario de captación incrustado', () => {
   const h = html();
   for (const p of PROHIBIDOS) assert.ok(!p.test(h), `aparece ${p}`);
 });
