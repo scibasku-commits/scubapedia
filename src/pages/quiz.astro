@@ -1,8 +1,11 @@
 ---
 // Quiz interactivo de buceo — Scubapedia.
 // Datos verificados (Perplexity + fuentes), 8-jun-2026. Página standalone,
-// misma paleta editorial que la home (index.astro): crema + azul mar.
+// mundo «Carta náutica»: papel, tinta y un solo aviso magenta.
+import Cabecera from '../components/Cabecera.astro';
+import Pie from '../components/Pie.astro';
 import '../styles/global.css';
+import '../styles/carta.css';
 
 const QUESTIONS = [
   {
@@ -105,7 +108,6 @@ const WA = 'https://wa.me/34619401041';
   <meta name="twitter:image" content={ogImage} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
   <script type="application/ld+json" set:html={JSON.stringify({
     '@context': 'https://schema.org', '@type': 'Quiz', name: title, url: canonical,
     about: { '@type': 'Thing', name: 'Buceo' },
@@ -120,98 +122,65 @@ const WA = 'https://wa.me/34619401041';
   </script>
 
   <style is:global>
-    :root{
-      --paper:#f1ebdd; --paper-card:#faf6ec;
-      --ink:#1b211f; --ink-2:#30383a; --ink-muted:#647072;
-      --rule:#1b211f22; --rule-strong:#1b211f55;
-      --accent:#0A5570; --accent-ink:#073f54; --accent-decor:#16A6C9; --accent-soft:#16A6C91f;
-      --ok:#1f8a5b; --ok-soft:#1f8a5b1a; --bad:#b03b3b; --bad-soft:#b03b3b14;
-      --deep:#06283a; --maxw:760px;
-      --font-display:'Fraunces',Georgia,serif;
-      --font-body:'DM Sans',system-ui,-apple-system,sans-serif;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;background:var(--paper)}
-    body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh}
-    a{color:var(--accent);text-decoration:none}
-    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+    html,body{overflow-x:clip}
+    :root{--ok:#1c6b47;--ok-soft:#1c6b4714;--bad:#9a2f2f;--bad-soft:#9a2f2f12;--qmax:760px}
+    .qwrap{max-width:var(--qmax);margin:0 auto;padding:0 var(--s-6) var(--s-20)}
+    .intro{text-align:left;padding:var(--s-13) 0 var(--s-2)}
+    .intro h1{font-size:clamp(40px,6vw,64px);line-height:1.04;margin:0 0 var(--s-4);letter-spacing:0}
+    .intro p{color:var(--ink-2);max-width:46ch;margin:0;font-size:19px}
 
-    /* top bar */
-    .bar{border-bottom:1px solid var(--rule);background:var(--paper)}
-    .bar-inner{max-width:var(--maxw);margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
-    .bar-mark img{height:48px;width:auto;display:block}
-    .bar a{font-size:14px;color:var(--ink-muted);letter-spacing:.02em}
-    .bar a:hover{color:var(--accent)}
+    .progress{height:3px;background:var(--rule);overflow:hidden;margin:var(--s-8) 0 var(--s-2)}
+    .progress > i{display:block;height:100%;width:0;background:var(--mag);transition:width .4s ease}
+    .count{font-family:var(--lab);font-size:11px;text-transform:uppercase;letter-spacing:.17em;color:var(--ink-2);text-align:right;margin-bottom:var(--s-4)}
 
-    /* intro */
-    .intro{text-align:center;padding:54px 0 8px}
-    .eyebrow{font-size:12px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#0e6b82}
-    .intro h1{font-family:var(--font-display);font-weight:600;font-size:clamp(2rem,5vw,3rem);line-height:1.08;margin:14px 0 12px;letter-spacing:-.01em}
-    .intro p{color:var(--ink-2);max-width:46ch;margin:0 auto}
-
-    /* progress */
-    .progress{height:5px;background:var(--rule);border-radius:999px;overflow:hidden;margin:30px 0 6px}
-    .progress > i{display:block;height:100%;width:0;background:var(--accent-decor);transition:width .4s ease}
-    .count{font-size:13px;color:var(--ink-muted);letter-spacing:.04em;text-align:right;margin-bottom:18px}
-
-    /* card */
-    .card{background:var(--paper-card);border:1px solid var(--rule);border-radius:16px;padding:30px 28px;box-shadow:0 1px 0 var(--rule)}
-    .qnum{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#0e6b82;margin-bottom:10px}
-    .qtext{font-family:var(--font-display);font-weight:500;font-size:1.5rem;line-height:1.25;margin-bottom:22px}
-    .opts{display:flex;flex-direction:column;gap:11px}
-    .opt{display:flex;align-items:center;gap:13px;width:100%;text-align:left;background:var(--paper);border:1px solid var(--rule-strong);border-radius:11px;padding:15px 16px;font-family:var(--font-body);font-size:1.02rem;color:var(--ink);cursor:pointer;transition:border-color .18s,background .18s,transform .05s}
-    .opt:hover:not(:disabled){border-color:var(--accent-decor);background:var(--accent-soft)}
-    .opt:active:not(:disabled){transform:translateY(1px)}
-    .opt .key{flex:0 0 28px;height:28px;display:grid;place-items:center;border:1px solid var(--rule-strong);border-radius:50%;font-size:.85rem;font-weight:600;color:var(--ink-muted)}
+    .card{background:var(--white);border:1px solid var(--ink);padding:var(--s-8) var(--s-8);box-shadow:5px 6px 0 rgba(18,36,43,.10)}
+    .qnum{font-family:var(--lab);font-size:11px;text-transform:uppercase;letter-spacing:.17em;color:var(--ink-2);margin-bottom:var(--s-3)}
+    .qtext{font-family:var(--rot);font-size:1.6rem;line-height:1.25;margin-bottom:var(--s-6)}
+    .opts{display:flex;flex-direction:column;gap:var(--s-3)}
+    .opt{display:flex;align-items:center;gap:var(--s-4);width:100%;text-align:left;background:var(--paper);border:1px solid var(--ink);border-radius:0;padding:14px 16px;min-height:52px;font-family:var(--lab);font-size:1.1rem;color:var(--ink);cursor:pointer;transition:background var(--t-fast),border-color var(--t-fast)}
+    .opt:hover:not(:disabled){border-color:var(--mag);background:var(--white)}
+    .opt .key{flex:0 0 28px;height:28px;display:grid;place-items:center;border:1px solid var(--ink);font-size:.9rem;font-weight:600;color:var(--ink)}
     .opt:disabled{cursor:default}
-    .opt.correct{border-color:var(--ok);background:var(--ok-soft)}
+    .opt.correct{border-color:var(--ok);background:var(--ok-soft);border-width:2px}
     .opt.correct .key{background:var(--ok);border-color:var(--ok);color:#fff}
-    .opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+    .opt.wrong{border-color:var(--bad);background:var(--bad-soft);border-width:2px}
     .opt.wrong .key{background:var(--bad);border-color:var(--bad);color:#fff}
-    .opt.dim{opacity:.55}
+    .opt.dim{opacity:.7}
 
-    .exp{margin-top:18px;padding:16px 18px;border-left:3px solid var(--accent-decor);background:var(--paper);border-radius:0 10px 10px 0;font-size:.98rem;color:var(--ink-2);display:none}
+    .exp{margin-top:var(--s-5);padding:var(--s-4) var(--s-5);border:1px solid var(--ink);background:var(--paper);font-size:1.05rem;color:var(--ink);display:none}
     .exp.show{display:block;animation:fade .35s ease}
-    .exp .verdict{font-weight:600;font-family:var(--font-display);margin-bottom:5px}
+    .exp .verdict{font-family:var(--rot);font-size:1.2rem;margin-bottom:5px}
     .exp .verdict.ok{color:var(--ok)} .exp .verdict.bad{color:var(--bad)}
-    .exp a{color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+    .exp a{font-weight:600;text-decoration:underline;text-underline-offset:3px;color:var(--ink)}
+    .exp a:hover{color:var(--mag-ink)}
     @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 
-    .actions{margin-top:22px;display:flex;justify-content:flex-end}
-    .btn{font-family:var(--font-body);font-size:1rem;font-weight:600;border:0;border-radius:999px;padding:12px 26px;cursor:pointer;background:var(--accent);color:#f4eee1;transition:background .18s,transform .05s;letter-spacing:.01em}
-    .btn:hover{background:var(--accent-ink)} .btn:active{transform:translateY(1px)}
-    .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
-    .btn.ghost:hover{background:var(--accent-soft)}
+    .actions{margin-top:var(--s-5);display:flex;justify-content:flex-end}
+    .qwrap .btn{min-height:48px;justify-content:center}
     .btn[hidden]{display:none}
+    .btn.ghost{background:transparent;color:var(--ink)}
+    .btn.ghost:hover{background:var(--ink);color:var(--paper)}
 
-    /* result */
-    .result{text-align:center;padding:8px 0}
-    .result .score{font-family:var(--font-display);font-weight:600;font-size:clamp(3rem,12vw,5rem);line-height:1;color:var(--accent);margin:6px 0}
-    .result .score small{font-size:.4em;color:var(--ink-muted)}
-    .result h2{font-family:var(--font-display);font-weight:600;font-size:1.6rem;margin:6px 0 8px;border:0}
-    .result p{color:var(--ink-2);max-width:44ch;margin:0 auto 8px}
-    .result .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
-    .cta{margin-top:34px;padding-top:26px;border-top:1px solid var(--rule);font-size:.96rem;color:var(--ink-muted)}
-    .cta a{font-weight:600;text-decoration:underline;text-underline-offset:3px}
-
-    footer{text-align:center;padding:48px 0 40px;color:var(--ink-muted);font-size:13px}
-    footer a{color:var(--ink-muted);text-decoration:underline;text-underline-offset:2px}
-    @media(max-width:560px){ .card{padding:24px 18px} .qtext{font-size:1.3rem} }
+    .result{text-align:left;padding:var(--s-8)}
+    .result .lab{color:var(--ink-2);margin:0}
+    .result .score{font-family:var(--rot);font-size:clamp(3.4rem,12vw,5.5rem);line-height:1;color:var(--ink);margin:var(--s-2) 0}
+    .result .score small{font-size:.4em;color:var(--ink-2)}
+    .result h2{font-family:var(--rot);font-size:1.8rem;margin:var(--s-2) 0 var(--s-2);border:0;padding:0}
+    .result p.msg{color:var(--ink);max-width:44ch;margin:0 0 var(--s-2);font-size:1.1rem}
+    .result .btns{display:flex;gap:var(--s-3);flex-wrap:wrap;margin-top:var(--s-6)}
+    .cta{margin-top:var(--s-8);padding-top:var(--s-6);border-top:1px dotted var(--dots);font-size:1.05rem;color:var(--ink-2)}
+    .cta a{font-weight:600;text-decoration:underline;text-underline-offset:3px;color:var(--ink)}
+    .cta a:hover{color:var(--mag-ink)}
+    @media(max-width:560px){ .card,.result{padding:var(--s-6) var(--s-4)} .qtext{font-size:1.35rem} .qwrap .btn{width:100%} .actions{justify-content:stretch} .result .btns .btn{width:100%} }
   </style>
 <!-- Umami (analitica propia, sin cookies ni datos personales) -->
 <script defer src="https://umami-scibasku.vercel.app/script.js" data-website-id="49faed99-e484-4618-8f78-e095cf9f421e"></script>
 </head>
 <body>
-  <div class="bar">
-    <div class="bar-inner">
-      <a class="bar-mark" href="/" aria-label="Scubapedia"><img src="/scubapedia-logo-nav.png" alt="Scubapedia" /></a>
-      <a href="/">← Volver a la enciclopedia</a>
-    </div>
-  </div>
+  <Cabecera activa="quiz" />
 
-  <main class="wrap">
+  <main class="qwrap">
     <section class="intro">
-      <p class="eyebrow">Quiz · Scubapedia</p>
       <h1>¿Cuánto sabes de buceo?</h1>
       <p>Diez preguntas sobre destinos, fauna y técnica. Datos verificables, sin trampas. ¿Cuántas aciertas?</p>
     </section>
@@ -222,11 +191,7 @@ const WA = 'https://wa.me/34619401041';
     <section id="stage"></section>
   </main>
 
-  <footer>
-    Scubapedia · Enciclopedia editorial de destinos de buceo ·
-    <a href="/">Inicio</a>
-    <br /><a href="/aviso-legal">Aviso legal</a> · <a href="/politica-de-privacidad">Política de privacidad</a> · <a href="/politica-de-cookies">Política de cookies</a>
-  </footer>
+  <Pie />
 
   <script define:vars={{ QUESTIONS, WA }}>
     const stage = document.getElementById('stage');
@@ -309,7 +274,7 @@ const WA = 'https://wa.me/34619401041';
       const result = document.createElement('div');
       result.className = 'card result';
       result.innerHTML =
-        '<p class="eyebrow">Tu resultado</p>' +
+        '<p class="lab">Tu resultado</p>' +
         '<div class="score">' + score + '<small>/' + n + '</small></div>' +
         '<h2></h2>' +
         '<p class="msg"></p>' +
@@ -318,7 +283,7 @@ const WA = 'https://wa.me/34619401041';
           '<button class="btn ghost" id="again">Repetir quiz</button>' +
         '</div>' +
         '<div class="cta">¿Te ha picado el gusanillo? <a id="plan" href="' + WA + '" target="_blank" rel="noopener">Cuéntale a Giora tu próximo viaje de buceo →</a></div>';
-      result.querySelector('h2').textContent = (score >= 8 ? '🌊 ' : '') + 'Has acertado ' + score + ' de ' + n;
+      result.querySelector('h2').textContent = 'Has acertado ' + score + ' de ' + n;
       result.querySelector('.msg').textContent = msg;
       stage.innerHTML = '';
       stage.appendChild(result);
